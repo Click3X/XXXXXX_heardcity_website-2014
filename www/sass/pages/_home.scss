@@ -1,5 +1,10 @@
 // HOME page SCSS
 
+.home {
+	overflow-x: hidden;
+	width: 100%;
+}
+
 .logo-bg {
 	background-image:url('../img/build/logos/logo-heard-marquee.png');
 	background-repeat:no-repeat;
