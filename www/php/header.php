@@ -31,7 +31,9 @@ include('functions.php');
     <?php if(isset($single)) {$page = 'single';} ?>
     <body class="<?php echo formatLink($page); ?>">
 
-        <?php if($page == 'Home') { ?>
+        <?php 
+        // echo 'This is page: '.$page;
+        if($page == 'Home') { ?>
             
             <!-- Home Page Slider -->
             <div id="home-slider-holder" class="container clearfix">

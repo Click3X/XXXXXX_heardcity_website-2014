@@ -10,8 +10,6 @@ $sitePages = [
 	'Our Team', 
 	'Contact'
 ];
-// Declare Single page to ensure error offsets
-$single='';
 
 // Site ADDRESS info
 $address = array();
