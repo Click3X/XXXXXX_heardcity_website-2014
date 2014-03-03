@@ -24,6 +24,16 @@ $address['city'] = 'New York, NY 10010';
 $contact['name'] = 'Gloria Pitagorsky';
 $contact['email'] = 'gloria@heardcity.com';
 
+// F O O T E R
+$social=array(
+	'twitter' => 'https://twitter.com/heardcity',
+	'facebook' => 'https://www.facebook.com/heardcity',
+	'instagram' => 'http://www.instagram.com',
+	'email' => 'mailto:gloria@heardcity.com',
+	'youtube' => 'http://www.youtube.com',
+	'map' => 'https://www.google.com/maps/place/16+W+22nd+St/@40.7412435,-73.9913197,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259a386c20bd5:0x6da26b75635d4e84'
+	);
+
 
 // TEAM MEMBER ARRAY
 $members = array(
