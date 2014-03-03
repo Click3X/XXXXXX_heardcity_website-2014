@@ -1,5 +1,5 @@
-<?php // HOME
-
+<?php
+// HOME
 $page='Home';
 
 include('php/header.php');
