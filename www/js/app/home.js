@@ -25,8 +25,6 @@ define(["jquery", "util/helper", "util/nav", "util/carousel"], function($) {
             var top = $(this).scrollTop();                
             homeLogo.css('transform', 'translateY(' + (top/-1.625) + 'px)'); 
             slide.css('transform', 'translate3d(0,' + (-top/-6) + 'px, 0)');                 
-            
-            // homePara = requestAnimationFrame(homeParallax);
         }
 
         var halfPara;
@@ -34,8 +32,6 @@ define(["jquery", "util/helper", "util/nav", "util/carousel"], function($) {
             var top = $(this).scrollTop(),
             ratio = top/-18;    
             jeanJacket.css('transform', 'translate3d(' + ratio + 'px, 0, 0)'); 
-
-            // halfPara = requestAnimationFrame(halfParallax);
         }
 
 
@@ -49,7 +45,7 @@ define(["jquery", "util/helper", "util/nav", "util/carousel"], function($) {
 
             offset =  firstCon.offset();
             offsetY = offset.top-w.scrollTop();
-            console.log('THis is offsetY '+offsetY+'\n');
+            // console.log('THis is offsetY '+offsetY+'\n');
 
             // STICKY NAV
             if(offsetY <= 49) {
