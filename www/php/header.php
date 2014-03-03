@@ -17,7 +17,7 @@ include('functions.php');
         <![endif]-->
 
         <?php 
-            if($page == 'Home') { 
+            if(isset($page) && ($page == 'Home')) { 
                 // Include Responsive BG script for smaller images
                 include('responsive-styles.php'); 
             }

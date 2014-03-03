@@ -1,7 +1,7 @@
 <?php
 // include('php/config.php');
 // include('php/functions.php'); 
-
+include('php/header.php'); 
 $file ='php/functions.php';
 
 $read = is_readable($file);
@@ -11,5 +11,6 @@ echo 'This is read: '.$read.', and this is file: '.$file;
 echo 'This is php and you are a BITCH BOY MAHN!';
 echo 'Current PHP version '.phpversion();
 
+include('php/footer.php');
 
 ?>
