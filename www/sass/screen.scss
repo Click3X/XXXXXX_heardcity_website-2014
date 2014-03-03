@@ -1,0 +1,71 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@import "compass";
+
+
+// FONTS
+
+@font-face {
+  font-family: 'Track';
+  src: url('fonts/Track.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'TrackItalic';
+  src: url('fonts/TrackItalic.otf') format("opentype");
+}
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,500);
+
+// SITE VARIABLES and LAYOUT STYLES
+
+@import "partials/variables";
+
+@import "partials/layout";
+
+@import "partials/typography";
+
+
+// COMPONENT styles
+
+@import "component/base";
+
+@import "component/nav";
+
+@import "component/footer";
+
+@import "component/buttons";
+
+@import "component/textslider";
+
+@import "component/teammember";
+
+@import "component/projects-video";
+
+
+// PAGE specific SASS FILES
+
+@import "pages/home";
+
+@import "pages/contact";
+
+// @import "pages/projects";
+
+@import "pages/ourteam";
+
+@import "pages/single-person";
+
+
+// INCLUDE VENDOR STYLES
+// CAROUSEL styles for HOME page Slider
+@import "vendor/carousel/owl.carousel.css";
+
+@import "vendor/carousel/owl.theme.css";
+
+@import "vendor/carousel/owl.transitions.css";
+

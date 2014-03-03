@@ -1,0 +1,342 @@
+// HOME page SCSS
+
+.logo-bg {
+	background-image:url('../../img/build/logos/logo-heard-marquee.png');
+	background-repeat:no-repeat;
+	background-size:contain;
+	width:30%; max-width:320px; height:0;
+	margin:auto; padding-bottom:29%;
+	z-index: 1;
+	position: fixed;
+	left:0;right:0; top:9%;
+
+	@media(min-width:768px) { 
+		top:13%; 
+	}
+	@media(min-width:1024px) { 
+		top: 209px;
+		
+	}
+}
+
+
+#home-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev {
+	z-index:10;
+}
+
+.home-slider {
+
+	.slide {
+		background-repeat:no-repeat; 
+		background-position: 50% 50%;
+		background-size:100%; 
+		background-position: contain;
+		z-index: -1;
+		padding-bottom: 66%;
+
+		@include prefix(transform, translateZ(0));
+	}
+}
+
+.image-spread {
+	background-color: #fff;
+	.half-image {
+		// padding-bottom:75%;
+		padding-bottom:100%;
+
+		@media(min-width:1270px) {
+			padding-bottom:950px;
+		}
+	}
+	.full-image {
+		padding-bottom: 66.6666666666%;
+
+		@media(min-width:980px) {
+		padding-bottom:670px;
+		}
+	}
+}
+
+// VIRTUAL PHOTO
+.container.virtual-photo {
+	text-align: center;
+	.grey-theme {
+		padding:3em 0;
+	}
+}
+
+@media(min-width:1040px) {
+	.logo-bg {padding-bottom:305px;}
+
+	.home-slider {
+		.slide {
+			padding-bottom: 695px;
+		}
+	}
+}
+
+// FEATURED WORK slider on HOME page
+.featured-work {
+	padding:2em 0 0;
+	.section-title {
+		margin-bottom:1.75em;
+	}
+}
+
+.feat-work-slider-holder {
+	position: relative;
+	.feat-work-slider {
+
+		.work-slide {
+
+			.img-holder {
+
+				img {
+					width:100%;
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}
+
+#image-spread-1 {
+	.image-holder:first-of-type {
+		z-index: 1;
+	}
+}
+
+
+.feat-work-slider { 
+	li {
+		.img-holder {
+			width:82.03125%; 
+			margin:0 auto;
+			max-width: 840px;
+			margin-bottom: 1.75em;
+		}
+
+		.grey-theme {
+			color:#000;
+			text-align: center;
+
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+
+			.section-title {
+				padding-top:1.75em;
+			}
+		}
+	}
+}
+
+.work-slide {
+	height: 0;
+	padding-bottom:110%;
+
+	@media(min-width: 480px) {
+		padding-bottom:95%;
+	}
+
+	@media(min-width: 600px) {
+		padding-bottom:90%;
+	}
+
+	@media(min-width: 768px) {
+		padding-bottom:75%;
+	}
+
+	@media(min-width: 900px) {
+		padding-bottom: 720px;
+	}
+}
+
+// NAV BULLETS
+.container .owl-controls { margin-top: 0; }
+
+.container  .owl-pagination {
+	position: absolute;
+	z-index: 10;
+	bottom: 0; left: 0; right: 0;
+}
+
+
+// ARROWS for OWL SLIDER 
+#home-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
+#home-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
+#grey-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
+#grey-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
+#black-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
+#black-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
+#team-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
+#team-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
+#featured-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
+#featured-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next {
+	position: absolute;
+	top: 25%; margin-top:-15px;
+	margin: auto;
+	display: inline-block;
+	height: 25px; width: 25px;
+	background-image: url('../img/build/sprites/arrow.png');
+	background-size:cover;
+	border-radius: 0;
+
+	@media(min-width:768px) {
+		top:31%;
+	}
+}
+
+#home-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
+#grey-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
+#team-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev {
+	background-image: url('../img/build/sprites/grey-left.png');
+	background-size:cover;
+	height: 25px; width: 25px;
+	left: 1.5em; top: 44%;
+}
+
+#home-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
+#grey-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
+#team-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next {
+	background-image: url('../img/build/sprites/grey-right.png');
+	background-size:cover;
+	height: 25px; width: 25px;	
+	right: 1.5em; top: 44%;
+}
+
+#black-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
+#featured-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev {
+
+	@include prefix(transform, rotate(180deg));
+
+	left: 1.5em;
+}
+
+#black-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
+#featured-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next {
+	right: 1.5em;
+}
+
+#home-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
+#home-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
+#grey-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
+#grey-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
+#black-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
+#black-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next {
+	top:50%;
+}
+
+// JUST TEXT - for text slider on home . php
+.just-text {
+	color: #222222;
+	max-width: 30em;
+	margin: 4em auto 6em;
+	padding: 1em 0;
+	border-top: 1px solid $menu-grey;
+	border-bottom: 1px solid $menu-grey;
+
+	div {
+		font-size: .938em;
+		margin: .35em 0;
+		letter-spacing: .15em;
+		@media(min-width: 480px) {
+			font-size:1.125rem;
+		}
+	}
+
+	p {line-height: 1.8em;}
+}
+
+// GREENSOCK styles for MOVING BG IMAGES
+
+.half-pad {
+	background-repeat:no-repeat; 
+	padding-bottom: 31.7%;
+	background-position: 50%;
+}
+
+#girl-large {
+	background-size: 100%;
+	background-position: center center;
+
+	@include prefix(transform, translateZ(0));
+}
+#stairs {
+	background-size:100%;
+	background-position: center center;
+
+	@include prefix(transform, translateZ(0));
+}
+
+
+
+.image-spread {
+	.image-holder {
+		width:50%; 
+		float:left; 
+		position: relative;
+		// overflow: hidden;
+		overflow: visible;
+
+		.half-image {
+			width:100%;
+		}
+
+	}
+}
+
+#guitar-nord {
+	background-size: cover;
+	background-position: center bottom;
+	
+	@include prefix(transform, translateZ(0));
+
+}
+
+
+#jean-jacket {
+	background-size: 100%;
+	width:117%;
+	background-position: center center;
+
+	@include prefix(transform, translateZ(0));
+}
+
+#dude-on-phone {
+	background-size: 100%;
+	padding-bottom: 52%;
+
+	@include prefix(transform, translateZ(0));
+
+	@media(min-width: 1290px) {
+		padding-bottom: 700px;
+		background-position: center center;
+	}
+}
+
+.dog-windows {
+	background-size:100%;
+	background-position: 0% 50%;
+	padding-bottom: 43.666667%;
+	background-repeat: no-repeat;
+
+	@include prefix(transform, translateZ(0));
+
+	@media(min-width: 1260px) {
+		padding-bottom: 615px;
+		background-position: center bottom;
+	}
+}
+
+// RESIZE CAROUSEL to go Full Width while keeping slides fixed width
+#black-text-slider{
+	.owl-carousel .owl-wrapper-outer {
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+}
+
+#first-container {
+	z-index: 1;
+}

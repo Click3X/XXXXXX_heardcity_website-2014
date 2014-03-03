@@ -1,0 +1,81 @@
+// Styles for Text Slider
+.arrow {
+	width:30px; height:30px;
+	margin-top: -15px;
+	background-image:url(../img/build/sprites/arrow.png);
+	background-size: contain;
+	position: absolute; top:50%;
+}
+
+.black-arrow-left { 
+
+	@include prefix(transform, rotate(180deg));
+
+	left:.5em;
+}
+.black-arrow-right { right:.5em;}
+
+// TEXT SLIDER
+.text-slider {
+	text-align: center;
+	font-size: .938em;
+
+	li {
+		.slide-text {
+			text-transform: uppercase;
+			display: inline-block;
+			letter-spacing: .15em;
+
+			@media(min-width:480px) {
+				// font-size:1.250em;
+				font-size: 1.125rem;
+			}
+		}
+	}
+}
+
+.black-theme {
+
+	.noise {opacity: .5;}
+
+	.text-slider {
+		color:$white;
+		
+		li {
+			padding:5em 0;
+
+			.slide-text {
+				position: relative;
+				display: inline-block;
+				&:before {
+					content: '';
+					display:block;
+					border-top: 1px solid rgb(64, 64, 64);
+					padding-top:1em;
+					width:110%; margin-left:-5%;
+				}
+
+				&:after {
+					content: '';
+					display:block;
+					border-bottom: 1px solid rgb(64, 64, 64);
+					padding-bottom:.7em;
+					width:110%; margin-left:-5%;
+				}
+			}
+		}
+	}
+}
+
+
+@media(min-width:480px) {
+	.black-theme {
+		.text-slider {
+			li {padding:15% 0;}
+		}
+	}
+}
+
+@media(min-width:1024px) {
+	.black-theme .text-slider li {padding: 148px 0;}
+}

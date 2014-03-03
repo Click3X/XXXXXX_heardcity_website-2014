@@ -1,0 +1,25 @@
+// LAYOUT styles: LAYOUT STYLES that are relevant across all pages
+
+// Clearfix
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+} 
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+// Container
+.container {position: relative;}
+
+.half-image, .full-image {
+	float:left;
+	background-repeat:no-repeat;
+}
+
+.half-image {width:50%;}
+.full-image {width:100%;}

@@ -1,0 +1,120 @@
+// BASE SCSS * Utility Layout Styles
+
+body {
+	font-size: 16px;
+	font-family:'Track' sans-serif;
+	background-color:$black;
+}
+
+// Disable FULL-SCREEN / enable MAX-WIDTH 1024px; MARGIN: 0 auto
+body.ourteam > .container,
+// body.projects > .container,
+body.home > div {
+	// max-width: 1024px;
+	margin:0 auto;
+}
+
+a {
+	text-decoration: none;
+	color:inherit;
+}
+
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;
+}
+
+.wrap {
+	position: relative;
+	max-width:1024px;
+	margin:0 auto;
+}
+
+.bold {font-weight: 600;}
+
+.img-holder {
+	img {
+		display:block;
+		width:100%;
+	}
+}
+
+.ab-center {
+	position: absolute;
+	top:0; bottom:0; left:0; right:0;
+	margin:auto !important;
+}
+
+.noise {
+	background-image:url('../img/build/sprites/noise.png');
+	background-repeat:repeat;
+	display: block;
+	position: absolute;
+	width: 100%; height: 100%;
+	top: 0; left: 0;
+}
+
+// border-holder 
+.section-title {
+	.grey {
+		border-top:2px solid $white;
+		border-bottom:2px solid $white;
+		color:$black;
+	}
+
+	.black {
+		border-top:2px solid $white;
+		border-bottom:2px solid $white;
+		color:#ffffff;
+	}
+
+	.border-holder { 
+		display: inline-block;
+		margin:1em auto 0;
+
+		div {
+			padding: .8em 1em .45em;
+			line-height: 1.2em;
+			letter-spacing: .15em;
+			font-size: .938em;
+
+			@media (min-width: 480px) { 
+				// font-size: 1.2em;
+				font-size: .9em;
+			}
+		}
+	}
+}
+
+.desktop-hidden {visibility: visible;}
+.invisible {visibility: hidden;}
+
+@media(min-width:480px) {
+	.invisible {visibility: visible;}
+	.desktop-hidden {visibility: hidden;}
+}
+
+// credits 
+.credits {
+	display: inline-block;
+	font-family:$serif;
+	text-align: left;
+	line-height:1.5em;
+	font-size: 1rem;
+	margin-bottom:2.25em;
+}
+
+// Hidden Class for Projects Page commercial/features tupe button
+.project-hidden {
+	visibility: hidden;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  	/* IE 5-7 */
+  	filter: alpha(opacity=0);
+  	-moz-opacity: 0;
+  	/* Safari 1.x */
+  	-khtml-opacity: 0;
+  	
+	@include prefix(transition, all 500ms);
+}

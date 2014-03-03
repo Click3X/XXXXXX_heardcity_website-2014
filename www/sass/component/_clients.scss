@@ -1,0 +1,88 @@
+// CLIENTS
+.clients {
+	border-bottom: 1px solid #d1cfcf;
+	border-right:1px solid #d1cfcf;
+	li {
+		width:50%;
+		display: block;
+		position: relative;
+		float:left;
+		padding-bottom: 35%;
+		border-left: 1px solid #d1cfcf;
+		border-top: 1px solid #d1cfcf;
+		a {
+			background-image: url("../img/build/clients.png");
+			background-repeat: no-repeat;
+			display: inline-block;
+			margin:0 auto;
+		}
+
+		.google {
+			width: 145px;
+			height: 56px;
+			background-position: -8px -16px;
+		}
+
+		.mcdonalds {
+			width: 95px;
+			height: 56px;
+			background-position: -8px -93px;
+		}
+
+		.canon {
+			background-position: -25px -256px;
+			width: 140px;
+			height: 39px;
+		}
+
+		.chevy {
+			background-position: -17px -184px;
+			height: 40px;
+			width: 120px;
+		}
+
+		.amex {
+			width: 65px;
+			height: 65px;
+			background-position: -15px -322px;
+		}
+
+		.landrover {
+			background-position: -15px -410px;
+			width: 92px;
+			height: 51px;
+		}
+
+		.hbo {
+			background-position: -10px -481px;
+			height: 43px;
+			width: 106px;
+		}
+
+		.dell {
+			background-position: -10px -544px;
+			width: 73px;
+			height: 73px;
+		}
+	}
+
+	li:nth-child(2n+1) {clear:left;}
+
+	@media(min-width:480px) {
+		li {
+			width:33.333333%;
+			padding-bottom: 25%;
+		}
+		li:nth-child(2n+1) {clear:none;}
+		li:nth-child(3n+1) {clear:left;}
+	}
+
+	@media(min-width:768px) {
+		li {
+			width:25%;
+			padding-bottom: 17.1875%;
+		}
+		li:nth-child(3n+1) {clear:none;}
+		li:nth-child(4n+1) {clear:left;}
+	}
+}

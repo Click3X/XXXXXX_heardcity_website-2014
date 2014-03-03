@@ -1,0 +1,124 @@
+// SINGLE PERSON
+
+.single { background-color:#fff;}
+
+.pop-up {
+	position: relative;
+	top:2em; left:0; right:0;
+	margin:auto;
+	z-index: 5;
+	background-color:#ffffff;
+
+	.team-member {
+		.image {
+			width:28%;
+			max-width: 170px;
+		}
+		.member-text {
+			margin-top:0;
+			width:69%;
+
+			.misc-text {
+				font-size: .8rem;
+				margin-bottom:.75em;
+			}
+
+			.name {
+				margin-bottom:.5rem;
+				font-size: 1.3em;
+			}
+		}
+	}
+}
+
+// Side Bar Nav
+#slide-menu,
+#side-bar-nav {
+    margin-right: -250px;
+    right: 60px; top:0;
+    width: 250px;
+    background: #fff;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 5;
+}
+
+.side-bar-nav {
+	height: 100%;
+	padding-bottom:100%;
+	border-left: 1px solid silver;
+	text-align: center;
+
+	.head-icon {
+		height:51px; width:51px;
+		margin: 4em 0 1em .3333em;
+		background-image: url('../img/build/team-members/keith-silo-small.png');
+		background-repeat:no-repeat;
+		background-size:contain;
+		@include prefix(transition, all 400ms);
+	}
+
+	.arrow-toggle {
+		display: block;
+		background-image: url('../img/build/sprites/toggle-arrow.png');
+		background-repeat:no-repeat;
+		width:23px; height:29px;
+		margin:0 auto;
+		@include prefix(transition, all 400ms);
+	}
+
+	.members-list {
+		font-size: .75em;
+		color:$menu-grey;
+		display: inline-block;
+		text-align: left;
+
+		li {
+			line-height: 2.2em;
+			position: relative;
+
+			&:hover {
+				color:black;
+
+				@include prefix(transition, all 500ms);
+
+			}
+
+			&:hover:before {
+				content: url('../img/build/sprites/toggle-arrow.png');
+				position: absolute;
+				top: -12px; left: -49px;
+
+			    @include prefix(transform, rotate(180deg));
+			}
+		}
+	}
+}
+
+.open-nav {	
+	.head-icon { margin-left: 60px; }
+
+	#push {
+		.arrow-toggle {
+			display: block;
+			
+			@include prefix(transform, rotate(180deg));
+
+		    @include prefix(transition, all 500ms);
+		}
+	}
+}
+
+.hide-push {
+	visibility: 0; opacity: 0;
+	
+	@include prefix(transition, all 500ms);
+}
+
+#push .arrow-toggle {
+    float:left;
+    margin-left: 19px;
+    margin-top: -2px;
+}
+

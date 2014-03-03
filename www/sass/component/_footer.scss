@@ -1,0 +1,112 @@
+// FOOTER SCSS
+.footer {
+	color:$footer-grey;
+	font-family:'sans-serif';
+	background-color: #1f1f1f;
+	z-index: 10;
+	position: relative;
+
+	.footer-inner {
+		padding:2em 0 15em;
+
+		.footer-logo{
+			background-image:url('../../img/build/logos/footer-logo.png');
+			background-repeat:no-repeat;
+			background-size:contain;
+			width:124px;
+			height:124px;
+			float:left;
+			margin: 0 .5em;
+		}
+
+		.address {float:left;}
+
+		.social-icons {
+			float:right;
+			margin-top:.5em;
+			margin-right:2em;
+
+			.icon-holder {
+				position: relative;
+				float:left;
+				display:block; float:left;
+				
+				a {
+					display: block;
+					width:90px; height:90px;
+					background-repeat:no-repeat;
+				}
+				// .map {background-image:url('../img/build/social/map.png');}
+				// .email {background-image:url('../img/build/social/email.png');}
+				// .facebook {background-image:url('../img/build/social/facebook.png');}
+				// .twitter {background-image:url('../img/build/social/twitter.png');}
+				// .youtube {background-image:url('../img/build/social/you-tube.png');}
+				// .instagram {background-image:url('../img/build/social/instagram.png');}
+			}
+
+			@media(min-width:768px) {
+				.icon-holder:nth-child(2) {
+					margin-right:4em;
+				}
+			}
+		}
+	}
+}
+
+
+.address {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	margin: .5em 1em;
+	font-size:.938em;
+
+	ul {
+		li {
+			line-height: 1.6em;
+		}
+	}
+}
+
+// SOCIAL ICONS
+
+.sprite {
+    background-image: url(../img/social/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-email {
+    width: 90px;
+    height: 90px;
+    background-position: 0 0;
+}
+
+.sprite-facebook {
+    width: 90px;
+    height: 90px;
+    background-position: -90px 0;
+}
+
+.sprite-instagram {
+    width: 90px;
+    height: 90px;
+    background-position: 0 -90px;
+}
+
+.sprite-map {
+    width: 90px;
+    height: 90px;
+    background-position: -90px -90px;
+}
+
+.sprite-twitter {
+    width: 90px;
+    height: 90px;
+    background-position: -180px 0;
+}
+
+.sprite-you-tube {
+    width: 90px;
+    height: 90px;
+    background-position: -180px -90px;
+}

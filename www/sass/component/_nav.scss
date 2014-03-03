@@ -1,0 +1,184 @@
+// MAIN NAV SCSS
+
+.new-menu-holder {
+	background-color:$grey;
+
+	.new-menu {
+		width:100%; max-width:700px;
+		margin:0 auto; 
+		padding: 0;
+		text-align: justify; text-transform: uppercase;
+		position: relative;
+		background-color: rgb(224, 224, 226);
+
+		@media(min-width:480px) {
+			padding: 4px 0;
+		}
+
+		li {
+			width:100%;
+			display:block;
+			padding: 4px 0;
+
+			&:first-of-type { border-top:1px solid $menu-grey;}
+			&:last-of-type { border-bottom:0;} 
+
+			@media(min-width:480px) {
+				
+				&:first-of-type { border-top:0;}
+				
+				padding: 0;
+				width:25%;
+				display:inline-block;
+				border-bottom:0;
+				text-align: center;
+			}
+
+			a, .current-page {
+				
+				display:block;
+				font-size: .75em;
+				text-align: center;
+				padding: 14px 0 10px;
+				@include prefix(transition, all 250ms);
+
+				@media(min-width:480px) {
+					font-size: .938em;
+				}
+			}
+
+			a.current-page { 
+				color:$hover-black;
+				@include prefix(transition, all 250ms);
+			}
+		}
+	}
+}
+
+#new-menu-collapse {
+	@media(min-width:480px) {
+		border-top: 1px solid silver;
+	}
+}
+
+
+.top {
+	height:42px;
+	position: relative;
+	text-align: center;
+
+	.navLink {
+		display:block;
+		width:24px; height:24px;
+		position: absolute;
+		top: 14px;
+		left: 14px;
+	}
+}
+
+.nav-page-title {
+	font-size: .75em;
+	display: inline-block;
+	padding-top:17px;
+}
+
+@media(min-width:480px) {
+	.desktop-hidden { display:none; }
+}
+
+body.home,
+body.ourteam,
+body.projects,
+body.contact,
+body.single {
+	padding-top:42px;
+	
+	.main-menu-holder {
+		width: 100%;
+		z-index: 10;
+		position: fixed;
+		top: 0;
+	}
+}
+
+
+// --------------- NEW MENU ------------ //
+body.home,
+body.ourteam,
+body.projects,
+body.contact,
+body.single {
+	padding-top:42px;
+
+.new-menu-holder {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	border-bottom: 1px solid silver;
+	}
+}
+
+body.home {
+	.new-menu-holder { border-bottom: 0px; }
+}
+
+body.home {
+	#new-menu-holder.sticky-top	{border-bottom: 1px solid silver;}
+}
+
+
+@media(min-width:480px) {
+	body.ourteam,
+	body.projects,
+	body.contact,
+	body.single {
+		padding-top:49px;
+	
+		.new-menu-holder {
+			position: fixed;
+			width: 100%;
+			z-index: 100;
+			background: $grey;
+			height: 49px;
+		}
+	}
+
+	body.home {
+		padding-top:0;
+
+		.new-menu-holder {
+			position: relative;
+			width: 100%;
+			z-index: 100;
+			background: $grey;
+			height: 49px;
+		}
+	}
+}
+
+
+// STICKY NAV for HOME php
+
+.sticky-top {
+	position: fixed !important;
+	top:0 !important;
+	left:0 !important;
+	right:0 !important;
+	width:100% !important;
+	max-width: none !important;
+	z-index:1000;
+	border-bottom: 1px solid silver;
+	
+	@include prefix(transform, translate3d(0,0,0));
+}
+
+.sticky-top + #first-container { padding-top:52px; }
+
+// Nav - current page schema
+.projects .main-menu-holder .main-menu .menu-projects a {color:$black;}
+.contact .main-menu-holder .main-menu .menu-contact a {color:$black;}
+.home .main-menu-holder .main-menu .menu-home a {color:$black;}
+.ourteam .main-menu-holder .main-menu .menu-ourteam a,
+.single .main-menu-holder .main-menu .menu-ourteam a 
+{color:$black;}
