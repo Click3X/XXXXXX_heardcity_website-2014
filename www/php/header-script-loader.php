@@ -1,6 +1,6 @@
 <?php   // HEADER SCRIPT LOADER for loading correct
         // Require js script
-$page = '';   
+$script = '';
 // Load different Javascript for each page
 switch ($page) {
     case 'Home':

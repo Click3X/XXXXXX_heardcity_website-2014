@@ -22,8 +22,14 @@ include('functions.php');
                 include('responsive-styles.php'); 
             }
 
+            // echo 'This is page: '.$page;
+
+
             // Decide what requireJs script to load based on current page
-            include('header-script-loader.php'); ?>
+            include('header-script-loader.php'); 
+            
+            // echo 'This is script: '.$script;
+            ?>
         
         <script data-main="<?php echo $script; ?>" src="js/lib/require.js"></script>
                
