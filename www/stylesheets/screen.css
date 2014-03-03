@@ -534,7 +534,7 @@ body.home #new-menu-holder.sticky-top {
 }
 /* line 12, ../sass/component/_footer.scss */
 .footer .footer-inner .footer-logo {
-  background-image: url("../../img/build/logos/footer-logo.png");
+  background-image: url("../img/build/logos/footer-logo.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 124px;
@@ -567,67 +567,67 @@ body.home #new-menu-holder.sticky-top {
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
-  /* line 48, ../sass/component/_footer.scss */
+  /* line 42, ../sass/component/_footer.scss */
   .footer .footer-inner .social-icons .icon-holder:nth-child(2) {
     margin-right: 4em;
   }
 }
 
-/* line 57, ../sass/component/_footer.scss */
+/* line 51, ../sass/component/_footer.scss */
 .address {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   margin: .5em 1em;
   font-size: .938em;
 }
-/* line 64, ../sass/component/_footer.scss */
+/* line 58, ../sass/component/_footer.scss */
 .address ul li {
   line-height: 1.6em;
 }
 
-/* line 72, ../sass/component/_footer.scss */
+/* line 66, ../sass/component/_footer.scss */
 .sprite {
   background-image: url(../img/social/spritesheet.png);
   background-repeat: no-repeat;
   display: block;
 }
 
-/* line 78, ../sass/component/_footer.scss */
+/* line 72, ../sass/component/_footer.scss */
 .sprite-email {
   width: 90px;
   height: 90px;
   background-position: 0 0;
 }
 
-/* line 84, ../sass/component/_footer.scss */
+/* line 78, ../sass/component/_footer.scss */
 .sprite-facebook {
   width: 90px;
   height: 90px;
   background-position: -90px 0;
 }
 
-/* line 90, ../sass/component/_footer.scss */
+/* line 84, ../sass/component/_footer.scss */
 .sprite-instagram {
   width: 90px;
   height: 90px;
   background-position: 0 -90px;
 }
 
-/* line 96, ../sass/component/_footer.scss */
+/* line 90, ../sass/component/_footer.scss */
 .sprite-map {
   width: 90px;
   height: 90px;
   background-position: -90px -90px;
 }
 
-/* line 102, ../sass/component/_footer.scss */
+/* line 96, ../sass/component/_footer.scss */
 .sprite-twitter {
   width: 90px;
   height: 90px;
   background-position: -180px 0;
 }
 
-/* line 108, ../sass/component/_footer.scss */
+/* line 102, ../sass/component/_footer.scss */
 .sprite-you-tube {
   width: 90px;
   height: 90px;
