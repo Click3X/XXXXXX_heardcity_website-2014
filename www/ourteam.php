@@ -8,7 +8,7 @@ include('php/header.php');
 	<div class="items-holder wrap">	
 		
 		<div class="items items-1" style="background-image:url('img/ourteam/stuff-1.jpg');">
-			<a class="item-link jean-jacket" href="single-person.php"></a>
+			<a class="item-link wallet" href="single-person.php"></a>
 			<?php include('php/pop-up.php'); ?>
 		</div>
 

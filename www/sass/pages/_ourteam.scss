@@ -12,24 +12,32 @@
 
 		@media(min-width:1024px) {padding-bottom: 927px;}
 
-		.item-link {
+		.wallet {
 			display: block;
-			width: 40%; height: inherit;
-			padding-bottom:96.9%;
-			position: absolute; top:0; right:10%;
-			background-color:rgba(0, 0, 0, 0);
+			position: absolute;
+			top: 7%;
+			left: 34.1%;
+			
+			width: 7.5%;
+			padding-bottom: 9%;
 
 			@include prefix(transition, all 500ms);
-
 			&:hover {background-color:rgba(0, 0, 0, 0.2);}
 
-			@media(min-width:1024px) {padding-bottom: 927px;}
 		}
+
 	}
+}
+
+.show-hover {
+	opacity:1 !important;
+	@include prefix(transition, all 500ms);
 }
 
 .hover-bubble {
 	width: 50%; min-width:280px; max-width: 512px;
+	opacity: 0;
+	@include prefix(transition, all 500ms);
 
 	position: absolute;
 	// Temp values to be dynamically generated

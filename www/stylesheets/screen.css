@@ -203,8 +203,8 @@ a {
 
 /* line 60, ../sass/component/_base.scss */
 .section-title .grey {
-  border-top: 2px solid #1f1f1f;
-  border-bottom: 2px solid #1f1f1f;
+  border-top: 1px solid #1f1f1f;
+  border-bottom: 1px solid #1f1f1f;
   color: #1f1f1f;
 }
 /* line 68, ../sass/component/_base.scss */
@@ -2947,7 +2947,7 @@ body.home {
 }
 /* line 21, ../sass/pages/_contact.scss */
 .contact-container .map {
-  background-image: url("../img/build/contact/google-map.png");
+  background-color: black;
   padding-bottom: 63.1%;
 }
 @media (min-width: 1024px) {
@@ -2956,18 +2956,18 @@ body.home {
     padding-bottom: 641.516px;
   }
 }
-/* line 28, ../sass/pages/_contact.scss */
+/* line 29, ../sass/pages/_contact.scss */
 .contact-container .city {
   background-image: url("../img/build/contact/city.jpg");
   padding-bottom: 75.5%;
 }
 @media (min-width: 980px) {
-  /* line 28, ../sass/pages/_contact.scss */
+  /* line 29, ../sass/pages/_contact.scss */
   .contact-container .city {
     padding-bottom: 670px;
   }
 }
-/* line 38, ../sass/pages/_contact.scss */
+/* line 39, ../sass/pages/_contact.scss */
 .contact-container .address {
   font-size: .938em;
   display: inline-block;
@@ -2976,15 +2976,15 @@ body.home {
   padding: 0 1.5em;
   font-size: 500;
 }
-/* line 46, ../sass/pages/_contact.scss */
+/* line 47, ../sass/pages/_contact.scss */
 .contact-container .address a {
   color: #c84938;
 }
-/* line 48, ../sass/pages/_contact.scss */
+/* line 49, ../sass/pages/_contact.scss */
 .contact-container .address li {
   font-weight: 500;
 }
-/* line 50, ../sass/pages/_contact.scss */
+/* line 51, ../sass/pages/_contact.scss */
 .contact-container .address .city-li, .contact-container .address .email {
   margin-bottom: 1em;
 }
@@ -3009,51 +3009,59 @@ body.home {
   }
 }
 /* line 15, ../sass/pages/_ourteam.scss */
-.items-holder .items .item-link {
+.items-holder .items .wallet {
   display: block;
-  width: 40%;
-  height: inherit;
-  padding-bottom: 96.9%;
   position: absolute;
-  top: 0;
-  right: 10%;
-  background-color: rgba(0, 0, 0, 0);
+  top: 7%;
+  left: 34.1%;
+  width: 7.5%;
+  padding-bottom: 9%;
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   -o-transition: all 500ms;
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 24, ../sass/pages/_ourteam.scss */
-.items-holder .items .item-link:hover {
+/* line 25, ../sass/pages/_ourteam.scss */
+.items-holder .items .wallet:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
-@media (min-width: 1024px) {
-  /* line 15, ../sass/pages/_ourteam.scss */
-  .items-holder .items .item-link {
-    padding-bottom: 927px;
-  }
+
+/* line 32, ../sass/pages/_ourteam.scss */
+.show-hover {
+  opacity: 1 !important;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+  transition: all 500ms;
 }
 
-/* line 31, ../sass/pages/_ourteam.scss */
+/* line 37, ../sass/pages/_ourteam.scss */
 .hover-bubble {
   width: 50%;
   min-width: 280px;
   max-width: 512px;
+  opacity: 0;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+  transition: all 500ms;
   position: absolute;
   top: 1%;
   left: 5%;
   font-size: 75%;
 }
 @media (min-width: 768px) {
-  /* line 31, ../sass/pages/_ourteam.scss */
+  /* line 37, ../sass/pages/_ourteam.scss */
   .hover-bubble {
     font-size: 100%;
     top: 3.5%;
     left: 13%;
   }
 }
-/* line 45, ../sass/pages/_ourteam.scss */
+/* line 53, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up {
   border: 1px solid #989899;
   -webkit-box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.75);
@@ -3062,7 +3070,7 @@ body.home {
   -ms-box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.75);
 }
-/* line 50, ../sass/pages/_ourteam.scss */
+/* line 58, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up:after {
   content: '';
   display: block;
@@ -3087,37 +3095,37 @@ body.home {
   0pxbox-shadow: -8px 8px 12px 0px rgba(50, 50, 50, 0.75);
   rgba(50, 50, 50, 0.75)box-shadow: -8px 8px 12px 0px rgba(50, 50, 50, 0.75);
 }
-/* line 66, ../sass/pages/_ourteam.scss */
+/* line 74, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up .team-member {
   position: relative;
   z-index: 1;
 }
-/* line 70, ../sass/pages/_ourteam.scss */
+/* line 78, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up .team-member .image {
   width: 20%;
   max-width: 102px;
 }
-/* line 75, ../sass/pages/_ourteam.scss */
+/* line 83, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up .team-member .member-text {
   width: 75%;
 }
-/* line 78, ../sass/pages/_ourteam.scss */
+/* line 86, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up .team-member .member-text li {
   margin-bottom: .25em;
 }
-/* line 80, ../sass/pages/_ourteam.scss */
+/* line 88, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up .team-member .member-text .misc-text {
   color: #1f1f1f;
 }
-/* line 81, ../sass/pages/_ourteam.scss */
+/* line 89, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up .team-member .member-text .bio {
   letter-spacing: .05em;
 }
-/* line 82, ../sass/pages/_ourteam.scss */
+/* line 90, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up .team-member .member-text .permalink {
   margin-top: 1em;
 }
-/* line 84, ../sass/pages/_ourteam.scss */
+/* line 92, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up .team-member .member-text .permalink a {
   font-weight: 100;
   letter-spacing: .05em;
