@@ -11,5 +11,5 @@ echo 'This is read: '.$read.', and this is file: '.$file;
 echo 'This is php and you are a BITCH BOY MAHN!';
 echo 'Current PHP version '.phpversion();
 
-echo print_r($address);
+
 ?>
