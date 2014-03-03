@@ -1,6 +1,7 @@
 <?php
 // include('php/config.php');
 // include('php/functions.php'); 
+include('php/config.php');
 include('php/newnames.php'); 
 $file ='php/functions.php';
 
