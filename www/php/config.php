@@ -4,12 +4,12 @@
 $siteName = "Heardcity";
 
 // Site PAGES for NAV
-$sitePages = [
+$sitePages = array(
 	'Home', 
 	'Projects', 
 	'Our Team', 
 	'Contact'
-];
+);
 
 // Site ADDRESS info
 $address = array();
