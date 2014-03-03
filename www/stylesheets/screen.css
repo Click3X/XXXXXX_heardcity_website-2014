@@ -2508,7 +2508,8 @@ body.home #new-menu-holder.sticky-top {
 }
 
 /* line 3, ../sass/pages/_home.scss */
-.home {
+html,
+body.home {
   overflow-x: hidden;
   width: 100%;
 }
