@@ -80,7 +80,7 @@ switch ($page) {
 }
 
 // If is page Single, incorporate js/single for require js
-if($single) {
+if(isset($single)) {
     $script = 'js/single';
 }
 
