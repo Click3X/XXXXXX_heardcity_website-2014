@@ -45,46 +45,6 @@ include('php/project-grid.php');
     </div>
 
 
-<!-- ((((((((((((((((((((((((((((((((   TEAM MEMBER CAROUSEL  ))))))))))))))))))))))))))))))))   -->
-	<div class="container clearfix team-member-module grey-theme">
-		<div class="noise"></div>
-		<div class="section-title">
-			<div>Meet Our Team</div>
-		</div>
-		<div> <!-- class="wrap" -->
-			<ul id="team-slider" class="team-members owl-carousel"> 
-
-				<?php foreach ($members as $key => $member) { ?>
-				<li id="<?php echo formatLink($member['name']); ?>">
-					<div class="team-member clearfix">
-						<div class="image">
-							<img src="<?php echo placeHolder($member['image']);?>" alt="<?php echo $member['name'];?>">
-						</div>
-						<ul class="member-text">
-							<li class="misc-text">This belongs to</li>
-							<li class="name"><?php echo $member['name']; ?></li>
-							<li class="bio"><?php echo firstBit($member['bio']); ?></li>
-							<li class="permalink"><a href="<?php echo $member['permalink']; ?>">View more of <?php echo $member['sex']; ?> stuff</a></li>
-						</ul>
-					</div>
-				</li>
-				<?php } ?>
-
-			</ul>
-		</div>
-    </div>
-<!-- ((((((((((((((((((((((((((((((((   END team member   ))))))))))))))))))))))))))))))))   -->
-
-
-    <!-- Image Spread Module-->    
-    <div class="container clearfix image-spread">
-    	<?php foreach ($image_spreads as $key => $image_spread) {
-    		if($image_spread["class"] == "full-image") {
-				echo '<div id="'.$image_spread['id'].'" class="image-spread '.$image_spread["class"].'"></div>'; //style="background-image:url('.$image_spread["image"].');"    			
-    		}
-    		
-    	} ?>
-    </div>
 
 
 <!-- ####################   Featured Work: CAROUSEL for FEATURED work    ############################# -->
@@ -138,6 +98,48 @@ include('php/project-grid.php');
     </div>
 <!-- ####################   END: CAROUSEL - FEATURED work    ############################# -->
 
+
+
+    <!-- Image Spread Module-->    
+    <div class="container clearfix image-spread">
+    	<?php foreach ($image_spreads as $key => $image_spread) {
+    		if($image_spread["class"] == "full-image") {
+				echo '<div id="'.$image_spread['id'].'" class="image-spread '.$image_spread["class"].'"></div>'; //style="background-image:url('.$image_spread["image"].');"    			
+    		}
+    		
+    	} ?>
+    </div>
+
+
+<!-- ((((((((((((((((((((((((((((((((   TEAM MEMBER CAROUSEL  ))))))))))))))))))))))))))))))))   -->
+	<div class="container clearfix team-member-module grey-theme">
+		<div class="noise"></div>
+		<div class="section-title">
+			<div>Meet Our Team</div>
+		</div>
+		<div> <!-- class="wrap" -->
+			<ul id="team-slider" class="team-members owl-carousel"> 
+
+				<?php foreach ($members as $key => $member) { ?>
+				<li id="<?php echo formatLink($member['name']); ?>">
+					<div class="team-member clearfix">
+						<div class="image">
+							<img src="<?php echo placeHolder($member['image']);?>" alt="<?php echo $member['name'];?>">
+						</div>
+						<ul class="member-text">
+							<li class="misc-text">This belongs to</li>
+							<li class="name"><?php echo $member['name']; ?></li>
+							<li class="bio"><?php echo firstBit($member['bio']); ?></li>
+							<li class="permalink"><a href="<?php echo $member['permalink']; ?>">View more of <?php echo $member['sex']; ?> stuff</a></li>
+						</ul>
+					</div>
+				</li>
+				<?php } ?>
+
+			</ul>
+		</div>
+    </div>
+<!-- ((((((((((((((((((((((((((((((((   END team member   ))))))))))))))))))))))))))))))))   -->
 
 
     <!-- Dog & Window deco pic -->
