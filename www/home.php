@@ -139,8 +139,10 @@ include('php/project-grid.php');
 
     <!-- Dog & Window deco pic -->
 	<div class="container clearfix">
-		<div class="img-holder">
-			<div id="dog-windows" class="dog-windows"></div>   <!-- style="background-image:url('img/build/home/dog-windows.jpg');" -->
+		<div class="img-holder dog-para-holder">
+			<div class="dog-para">
+				<div id="dog-windows" class="dog-windows"></div>   <!-- style="background-image:url('img/build/home/dog-windows.jpg');" -->
+			</div>
 		</div>
     </div>
 
@@ -170,9 +172,9 @@ include('php/project-grid.php');
 
    	
 	<!-- Image Spread II -->
-    <div class="container clearfix">
+    <div class="container clearfix image-spread-2">
     	<?php foreach ($image_spreads2 as $key => $image_spread2) { 
-    		echo '<div id="'.$image_spread2['id'].'" class="'.$image_spread2['class'].' half-pad"></div>';
+    		echo '<div class="para-holder"><div id="'.$image_spread2['id'].'" class="'.$image_spread2['class'].' half-pad"></div></div>';
     	} ?>
     </div>
 

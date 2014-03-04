@@ -2823,14 +2823,15 @@ body.home {
 /* line 261, ../sass/pages/_home.scss */
 .half-pad {
   background-repeat: no-repeat;
-  padding-bottom: 31.7%;
+  padding-bottom: 100%;
   background-position: 50%;
 }
 
 /* line 267, ../sass/pages/_home.scss */
 #girl-large {
+  width: 160%;
   background-size: 100%;
-  background-position: center center;
+  background-position: left center;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -o-transform: translateZ(0);
@@ -2838,10 +2839,12 @@ body.home {
   transform: translateZ(0);
 }
 
-/* line 273, ../sass/pages/_home.scss */
+/* line 274, ../sass/pages/_home.scss */
 #stairs {
-  background-size: 100%;
-  background-position: center center;
+  width: 100%;
+  padding-bottom: 125%;
+  background-size: 120%;
+  background-position: center bottom;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -o-transform: translateZ(0);
@@ -2849,35 +2852,43 @@ body.home {
   transform: translateZ(0);
 }
 
-/* line 281, ../sass/pages/_home.scss */
+/* line 283, ../sass/pages/_home.scss */
+.para-holder:first-of-type {
+  width: 50%;
+  float: left;
+  margin-top: -28%;
+  padding-bottom: 15.5%;
+}
+
+/* line 292, ../sass/pages/_home.scss */
 #image-spread-1 {
   overflow: hidden;
 }
-/* line 284, ../sass/pages/_home.scss */
+/* line 295, ../sass/pages/_home.scss */
 #image-spread-1 .image-holder:first-of-type {
   width: 50%;
   padding-bottom: 50%;
   margin-top: -12%;
 }
 @media (min-width: 1270px) {
-  /* line 284, ../sass/pages/_home.scss */
+  /* line 295, ../sass/pages/_home.scss */
   #image-spread-1 .image-holder:first-of-type {
     padding-bottom: 850px;
   }
 }
 
-/* line 297, ../sass/pages/_home.scss */
+/* line 308, ../sass/pages/_home.scss */
 .image-spread .image-holder {
   width: 50%;
   float: left;
   position: relative;
 }
-/* line 303, ../sass/pages/_home.scss */
+/* line 313, ../sass/pages/_home.scss */
 .image-spread .image-holder .half-image {
   width: 100%;
 }
 
-/* line 309, ../sass/pages/_home.scss */
+/* line 319, ../sass/pages/_home.scss */
 #guitar-nord {
   background-size: auto;
   background-position: center bottom;
@@ -2890,19 +2901,19 @@ body.home {
   transform: translateZ(0);
 }
 @media (min-width: 1270px) {
-  /* line 309, ../sass/pages/_home.scss */
+  /* line 319, ../sass/pages/_home.scss */
   #guitar-nord {
     padding-bottom: 1100px;
   }
 }
 @media (min-width: 1475px) {
-  /* line 309, ../sass/pages/_home.scss */
+  /* line 319, ../sass/pages/_home.scss */
   #guitar-nord {
     background-size: 100%;
   }
 }
 
-/* line 326, ../sass/pages/_home.scss */
+/* line 336, ../sass/pages/_home.scss */
 #jean-jacket {
   background-size: auto;
   width: 115%;
@@ -2914,15 +2925,15 @@ body.home {
   transform: translateZ(0);
 }
 @media (min-width: 1290px) {
-  /* line 326, ../sass/pages/_home.scss */
+  /* line 336, ../sass/pages/_home.scss */
   #jean-jacket {
     background-size: 100%;
   }
 }
 
-/* line 339, ../sass/pages/_home.scss */
+/* line 348, ../sass/pages/_home.scss */
 #dude-on-phone {
-  background-size: auto;
+  background-size: 100%;
   padding-bottom: 52%;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -2931,24 +2942,18 @@ body.home {
   transform: translateZ(0);
 }
 @media (min-width: 1290px) {
-  /* line 339, ../sass/pages/_home.scss */
+  /* line 348, ../sass/pages/_home.scss */
   #dude-on-phone {
     padding-bottom: 700px;
     background-position: center center;
   }
 }
-@media (min-width: 1475px) {
-  /* line 339, ../sass/pages/_home.scss */
-  #dude-on-phone {
-    background-size: 100%;
-  }
-}
 
-/* line 355, ../sass/pages/_home.scss */
+/* line 360, ../sass/pages/_home.scss */
 .dog-windows {
   background-size: auto;
-  background-position: 0% 50%;
-  padding-bottom: 43.666667%;
+  background-position: left bottom;
+  padding-bottom: 52%;
   background-repeat: no-repeat;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -2957,20 +2962,52 @@ body.home {
   transform: translateZ(0);
 }
 @media (min-width: 1260px) {
-  /* line 355, ../sass/pages/_home.scss */
+  /* line 360, ../sass/pages/_home.scss */
   .dog-windows {
     padding-bottom: 615px;
-    background-position: center bottom;
   }
 }
 
-/* line 371, ../sass/pages/_home.scss */
+/* line 374, ../sass/pages/_home.scss */
+.image-spread-2 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 380, ../sass/pages/_home.scss */
+.para-holder {
+  overflow: hidden;
+  width: 50%;
+  float: left;
+}
+
+/* line 386, ../sass/pages/_home.scss */
+.dog-para-holder {
+  width: 100%;
+  padding-bottom: 52%;
+  position: relative;
+}
+@media (min-width: 1260px) {
+  /* line 386, ../sass/pages/_home.scss */
+  .dog-para-holder {
+    padding-bottom: 615px;
+  }
+}
+/* line 396, ../sass/pages/_home.scss */
+.dog-para-holder .dog-para {
+  position: absolute;
+  width: 125%;
+  bottom: 0;
+}
+
+/* line 405, ../sass/pages/_home.scss */
 #black-text-slider .owl-carousel .owl-wrapper-outer {
   max-width: 1024px;
   margin: 0 auto;
 }
 
-/* line 377, ../sass/pages/_home.scss */
+/* line 411, ../sass/pages/_home.scss */
 #first-container {
   z-index: 1;
 }

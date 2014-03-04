@@ -260,22 +260,33 @@ body.home {
 
 .half-pad {
 	background-repeat:no-repeat; 
-	padding-bottom: 31.7%;
+	padding-bottom: 100%;
 	background-position: 50%;
 }
 
 #girl-large {
+	width: 160%;
 	background-size: 100%;
-	background-position: center center;
+	background-position: left center;
 
 	@include prefix(transform, translateZ(0));
 }
 #stairs {
-	background-size:100%;
-	background-position: center center;
+	width:100%;
+	padding-bottom:125%;
+	background-size:120%;
+	background-position: center bottom;
 
 	@include prefix(transform, translateZ(0));
 }
+
+.para-holder:first-of-type {
+	width: 50%;
+	float:left;
+	margin-top: -28%;
+	padding-bottom: 15.5%;
+}
+
 
 
 #image-spread-1 {
@@ -298,7 +309,6 @@ body.home {
 		width:50%; 
 		float:left; 
 		position: relative;
-		// overflow: visible;
 
 		.half-image {
 			width:100%;
@@ -325,7 +335,6 @@ body.home {
 
 #jean-jacket {
 	background-size: auto;
-	// width:117%;
 	width:115%;
 	background-position: center center;
 
@@ -337,7 +346,7 @@ body.home {
 }
 
 #dude-on-phone {
-	background-size: auto;
+	background-size:100%;
 	padding-bottom: 52%;
 
 	@include prefix(transform, translateZ(0));
@@ -346,23 +355,48 @@ body.home {
 		padding-bottom: 700px;
 		background-position: center center;
 	}
-
-	@media(min-width:1475px) {
-		background-size:100%;
-	}
 }
 
 .dog-windows {
 	background-size:auto;
-	background-position: 0% 50%;
-	padding-bottom: 43.666667%;
+	background-position: left bottom;
+	padding-bottom: 52%;
+
 	background-repeat: no-repeat;
 
 	@include prefix(transform, translateZ(0));
 
 	@media(min-width: 1260px) {
 		padding-bottom: 615px;
-		background-position: center bottom;
+	}
+}
+
+.image-spread-2 {
+	position: relative;
+	width:100%;
+	overflow: hidden;
+}
+
+.para-holder {
+	overflow: hidden;
+	width: 50%;
+	float:left;
+}
+
+.dog-para-holder {
+
+	width: 100%;
+	padding-bottom: 52%;
+	position: relative;
+
+	@media(min-width: 1260px) {
+		padding-bottom: 615px;
+	}
+
+	.dog-para {
+		position: absolute;
+		width:125%; 
+		bottom:0;
 	}
 }
 
