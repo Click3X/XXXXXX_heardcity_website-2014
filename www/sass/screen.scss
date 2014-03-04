@@ -15,10 +15,10 @@
   src: url('fonts/Track.otf') format("opentype");
 }
 
-@font-face {
-  font-family: 'TrackItalic';
-  src: url('fonts/TrackItalic.otf') format("opentype");
-}
+// @font-face {
+//   font-family: 'TrackItalic';
+//   src: url('fonts/TrackItalic.otf') format("opentype");
+// }
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
 
@@ -67,5 +67,5 @@
 
 @import "vendor/carousel/owl.theme.css";
 
-@import "vendor/carousel/owl.transitions.css";
+// @import "vendor/carousel/owl.transitions.css";
 

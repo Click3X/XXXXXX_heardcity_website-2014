@@ -8,7 +8,6 @@ body {
 
 // Disable FULL-SCREEN / enable MAX-WIDTH 1024px; MARGIN: 0 auto
 body.ourteam > .container,
-// body.projects > .container,
 body.home > div {
 	// max-width: 1024px;
 	margin:0 auto;
@@ -61,16 +60,12 @@ a {
 // border-holder 
 .section-title {
 	.grey {
-		// border-top:2px solid $white;
-		// border-bottom:2px solid $white;
 		border-top:1px solid $black;
 		border-bottom:1px solid $black;
 		color:$black;
 	}
 
 	.black {
-		// border-top:2px solid $white;
-		// border-bottom:2px solid $white;
 		border-top:2px solid $black;
 		border-bottom:2px solid $black;
 		color:#ffffff;
@@ -87,7 +82,6 @@ a {
 			font-size: .938em;
 
 			@media (min-width: 480px) { 
-				// font-size: 1.2em;
 				font-size: .9em;
 			}
 		}

@@ -22,7 +22,8 @@ define(["jquery", "util/helper", "util/nav", "util/carousel", "util/request-anim
         jeanJacket = $('#jean-jacket'),
         dudePhone = $('#dude-on-phone'),
         homePara,
-        halfPara;
+        halfPara,
+        gNordPara;
         
         function homeParallax(){
             var top = $(this).scrollTop();                
@@ -33,8 +34,12 @@ define(["jquery", "util/helper", "util/nav", "util/carousel", "util/request-anim
         function halfParallax(){
             var top = $(this).scrollTop(),
             ratio = top/-18;    
+            gRatio = top/12;    
             jeanJacket.css('transform', 'translate3d(' + ratio + 'px, 0, 0)'); 
+            guitarNord.css('transform', 'translate3d(0,' + gRatio + 'px, 0)'); 
         }
+
+
 
         // -------------------------------------- STICKY MENU FUNCTION -------------------------------------- //
         var menu = $('.home #new-menu-holder').eq(0),
@@ -63,6 +68,7 @@ define(["jquery", "util/helper", "util/nav", "util/carousel", "util/request-anim
             // HALF IMAGES PARALLAX
             if((offsetY > -1282) && (offsetY < 744) ) {
                 halfPara = requestAnimFrame(halfParallax);
+                // gNordPara = requestAnimFrame(gNordParallax);
             }
 
         });

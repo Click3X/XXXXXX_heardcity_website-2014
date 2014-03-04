@@ -46,7 +46,6 @@ body.home {
 .image-spread {
 	background-color: #fff;
 	.half-image {
-		// padding-bottom:75%;
 		padding-bottom:100%;
 
 		@media(min-width:1270px) {
@@ -275,28 +274,47 @@ body.home {
 }
 
 
+#image-spread-1 {
+	overflow: hidden;
+
+	.image-holder:first-of-type {
+		width:50%;
+		padding-bottom:50%;
+		margin-top: -12%;
+
+		@media(min-width:1270px) {
+			padding-bottom:950px;
+		}
+	}
+}
+
 
 .image-spread {
 	.image-holder {
 		width:50%; 
 		float:left; 
 		position: relative;
-		// overflow: hidden;
 		overflow: visible;
 
 		.half-image {
 			width:100%;
 		}
-
 	}
 }
 
 #guitar-nord {
 	background-size: cover;
 	background-position: center bottom;
+	padding-bottom:130%;
+	position: absolute;
+	// top:-25%;
+	// padding-top: 80px;
 	
-	@include prefix(transform, translateZ(0));
+	// @media(min-width:768px) {
+	// 	padding-top:150px;
+	// }
 
+	@include prefix(transform, translateZ(0));
 }
 
 
@@ -342,19 +360,7 @@ body.home {
 	}
 }
 
-// #home-slider-holder {
-// 	z-index:0;
-// }
-
 #first-container {
 	z-index: 1;
-	// @include prefix(transform, translateZ(0));
 }
 
-// .logo-bg {
-// 	z-index:-1;
-// }
-
-// #home-slider {
-// 	z-index:-2;
-// }
