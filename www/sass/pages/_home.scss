@@ -342,6 +342,19 @@ body.home {
 	}
 }
 
+// #home-slider-holder {
+// 	z-index:0;
+// }
+
 #first-container {
 	z-index: 1;
+	// @include prefix(transform, translateZ(0));
 }
+
+// .logo-bg {
+// 	z-index:-1;
+// }
+
+// #home-slider {
+// 	z-index:-2;
+// }

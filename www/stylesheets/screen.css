@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,500);
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
 @import url(vendor/carousel/owl.carousel.css);
 @import url(vendor/carousel/owl.theme.css);
 @import url(vendor/carousel/owl.transitions.css);
@@ -162,24 +162,34 @@ a {
 }
 
 /* line 28, ../sass/component/_base.scss */
+.logo-invisible {
+  opacity: 0;
+}
+
+/* line 29, ../sass/component/_base.scss */
+.hide {
+  visibility: hidden;
+}
+
+/* line 31, ../sass/component/_base.scss */
 .wrap {
   position: relative;
   max-width: 1024px;
   margin: 0 auto;
 }
 
-/* line 34, ../sass/component/_base.scss */
+/* line 37, ../sass/component/_base.scss */
 .bold {
   font-weight: 600;
 }
 
-/* line 37, ../sass/component/_base.scss */
+/* line 40, ../sass/component/_base.scss */
 .img-holder img {
   display: block;
   width: 100%;
 }
 
-/* line 43, ../sass/component/_base.scss */
+/* line 46, ../sass/component/_base.scss */
 .ab-center {
   position: absolute;
   top: 0;
@@ -189,7 +199,7 @@ a {
   margin: auto !important;
 }
 
-/* line 49, ../sass/component/_base.scss */
+/* line 52, ../sass/component/_base.scss */
 .noise {
   background-image: url("../img/build/sprites/noise.png");
   background-repeat: repeat;
@@ -201,24 +211,24 @@ a {
   left: 0;
 }
 
-/* line 60, ../sass/component/_base.scss */
+/* line 63, ../sass/component/_base.scss */
 .section-title .grey {
   border-top: 1px solid #1f1f1f;
   border-bottom: 1px solid #1f1f1f;
   color: #1f1f1f;
 }
-/* line 68, ../sass/component/_base.scss */
+/* line 71, ../sass/component/_base.scss */
 .section-title .black {
   border-top: 2px solid #1f1f1f;
   border-bottom: 2px solid #1f1f1f;
   color: #ffffff;
 }
-/* line 76, ../sass/component/_base.scss */
+/* line 79, ../sass/component/_base.scss */
 .section-title .border-holder {
   display: inline-block;
   margin: 1em auto 0;
 }
-/* line 80, ../sass/component/_base.scss */
+/* line 83, ../sass/component/_base.scss */
 .section-title .border-holder div {
   padding: .8em 1em .45em;
   line-height: 1.2em;
@@ -226,34 +236,34 @@ a {
   font-size: .938em;
 }
 @media (min-width: 480px) {
-  /* line 80, ../sass/component/_base.scss */
+  /* line 83, ../sass/component/_base.scss */
   .section-title .border-holder div {
     font-size: .9em;
   }
 }
 
-/* line 94, ../sass/component/_base.scss */
+/* line 97, ../sass/component/_base.scss */
 .desktop-hidden {
   visibility: visible;
 }
 
-/* line 95, ../sass/component/_base.scss */
+/* line 98, ../sass/component/_base.scss */
 .invisible {
   visibility: hidden;
 }
 
 @media (min-width: 480px) {
-  /* line 98, ../sass/component/_base.scss */
+  /* line 101, ../sass/component/_base.scss */
   .invisible {
     visibility: visible;
   }
 
-  /* line 99, ../sass/component/_base.scss */
+  /* line 102, ../sass/component/_base.scss */
   .desktop-hidden {
     visibility: hidden;
   }
 }
-/* line 103, ../sass/component/_base.scss */
+/* line 106, ../sass/component/_base.scss */
 .credits {
   display: inline-block;
   font-family: 'TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif';
@@ -263,7 +273,7 @@ a {
   margin-bottom: 2.25em;
 }
 
-/* line 113, ../sass/component/_base.scss */
+/* line 116, ../sass/component/_base.scss */
 .project-hidden {
   visibility: hidden;
   opacity: 0;
@@ -2919,7 +2929,7 @@ body.home {
   margin: 0 auto;
 }
 
-/* line 345, ../sass/pages/_home.scss */
+/* line 349, ../sass/pages/_home.scss */
 #first-container {
   z-index: 1;
 }

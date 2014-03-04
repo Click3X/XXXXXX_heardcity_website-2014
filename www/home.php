@@ -60,20 +60,15 @@ include('php/project-grid.php');
 			<?php
 				foreach ($projects as $key => $project) { 
 					if($project['type'] == 'feature') { 
-
-                        $thumbs = $project["thumb"];
-                        foreach ($thumbs as $thumb) {
-                            $last = substr($thumb, -7, 3);
-                            if($last != 'two') { 
-                                $thumbsrc = $thumb;
-                            }
-                        }
-
+						// echo '<pre>'.print_r($project).'</pre>';
+						$tablet = $project["images"]["tablet"];
+						$mobile = $project["images"]["mobile"];
+						if($tablet) { $thumbsrc = $tablet; } else { $thumbsrc = $mobile;}
 						?>
 
 					<li class="work-slide clearfix">
 						<div class="img-holder">
-							<img src="<?php echo $thumbsrc; ?>" alt="<?php echo $project['title']; ?>">
+							<img src="<?php echo $thumbsrc[0]; ?>" alt="<?php echo $project['title']; ?>">
 						</div>
 
 						<div class="grey-theme">

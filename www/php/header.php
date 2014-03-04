@@ -21,14 +21,8 @@ include('functions.php');
                 // Include Responsive BG script for smaller images
                 include('responsive-styles.php'); 
             }
-
-            // echo 'This is page: '.$page;
-
-
             // Decide what requireJs script to load based on current page
             include('header-script-loader.php'); 
-            
-            // echo 'This is script: '.$script;
             ?>
         
         <script data-main="<?php echo $script; ?>" src="js/lib/require.js"></script>
@@ -38,12 +32,10 @@ include('functions.php');
     <body class="<?php echo formatLink($page); ?>">
 
         <?php 
-        // echo 'This is page: '.$page;
         if($page == 'Home') { ?>
-            
             <!-- Home Page Slider -->
             <div id="home-slider-holder" class="container clearfix">
-                <div class="logo-bg"></div>
+                <div id="logo-bg" class="logo-bg logo-invisible"></div> <!-- logo-invisible -->
                 <ul id="home-slider" class="home-slider owl-carousel">
                     <?php 
                         foreach ($marquee as $marq_img) {

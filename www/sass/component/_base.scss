@@ -25,6 +25,9 @@ a {
 	box-sizing: border-box;
 }
 
+.logo-invisible { opacity:0; }
+.hide {visibility:hidden;}
+
 .wrap {
 	position: relative;
 	max-width:1024px;

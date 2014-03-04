@@ -14,8 +14,9 @@
 		$files = array();
 		$dir = $dir . '/';
 	 	$files = readDirectory($dir, $files);
-
-	 	$projects[$i]["thumb"] = array();
+	 	$projects[$i]["images"]["mobile"] = array();
+	 	$projects[$i]["images"]["tablet"] = array();
+	 	$projects[$i]["images"]["alt"] = array();
 
 	 	foreach ($files as $file) {
 	 		// get file path info for parsing
@@ -23,13 +24,10 @@
 
 	 		// Check for VIDEO thumbnail
 			if (($fileInfo["extension"] == "png") || ($fileInfo["extension"] == "jpg") || ($fileInfo["extension"] == "gif")) {
-				// append 'img/build/' to path to use losslessly compressed images
-				// $projects[$i]["thumb"] = $file;
-				array_push($projects[$i]["thumb"], $file);
-
-				// $filepath = substr($file, 12);
-				// $filepath = 'vids-thumbs/build/'.$filepath;
-				// $projects[$i]["thumb"] = $filepath;
+				$imgSize = substr( ($fileInfo["filename"]), -3, 3 );
+				if($imgSize==480) { array_push($projects[$i]["images"]["mobile"], $file); }
+				if($imgSize==840) { array_push($projects[$i]["images"]["tablet"], $file); }
+				if($imgSize=="two") { array_push($projects[$i]["images"]["alt"], $file); }
 			}
 
 			// Check for mp4 VIDEO file

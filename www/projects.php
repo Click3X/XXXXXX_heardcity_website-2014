@@ -32,13 +32,7 @@ include('php/header.php');
 
                         array_push($projectJSON, $value);
 
-                        $thumbs = $value["thumb"];
-                        foreach ($thumbs as $thumb) {
-                            $last = substr($thumb, -7, 3);
-                            if($last != 'two') { 
-                                $thumbsrc = $thumb;
-                            }
-                        }
+                        $thumbsrc = $value["images"]["mobile"][0];
 
                         ?>
 
