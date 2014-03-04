@@ -23,23 +23,34 @@ define(["jquery", "util/helper", "util/nav", "util/carousel", "util/request-anim
         dudePhone = $('#dude-on-phone'),
         homePara,
         halfPara,
-        gNordPara;
+        gNordPara,
+        dudePara;
         
-        function homeParallax(){
-            var top = $(this).scrollTop();                
-            homeLogo.css('transform', 'translateY(' + (top/-1.625) + 'px)'); 
-            slide.css('transform', 'translate3d(0,' + (-top/-6) + 'px, 0)');                 
+        function homeParallax() {
+            var top = $(this).scrollTop(),
+            ratio = top/-1.625,
+            sRatio = -top/-6;                
+            homeLogo.css('transform', 'translateY(' + ratio + 'px)'); 
+            slide.css('transform', 'translate3d(0,' + sRatio + 'px, 0)');                 
         }
 
-        function halfParallax(){
+        function halfParallax() {
             var top = $(this).scrollTop(),
-            ratio = top/-18;    
-            gRatio = top/12;    
+            ratio = top/-24;    
             jeanJacket.css('transform', 'translate3d(' + ratio + 'px, 0, 0)'); 
+        }
+
+        function gNordParallax() {
+            var top = $(this).scrollTop(),
+            gRatio = top/16; 
             guitarNord.css('transform', 'translate3d(0,' + gRatio + 'px, 0)'); 
         }
 
-
+        function dudeParallax() {
+            var top = $(this).scrollTop(),
+            gRatio = top/16; 
+            guitarNord.css('transform', 'translate3d(0,' + gRatio + 'px, 0)'); 
+        }
 
         // -------------------------------------- STICKY MENU FUNCTION -------------------------------------- //
         var menu = $('.home #new-menu-holder').eq(0),
@@ -50,6 +61,9 @@ define(["jquery", "util/helper", "util/nav", "util/carousel", "util/request-anim
 
             offset =  firstCon.offset();
             offsetY = offset.top-w.scrollTop();
+
+            // DEV -get scrollY
+            // console.log('This is offsetY: ' + offsetY);
 
             // STICKY NAV
             if(offsetY <= 49) {
@@ -68,11 +82,10 @@ define(["jquery", "util/helper", "util/nav", "util/carousel", "util/request-anim
             // HALF IMAGES PARALLAX
             if((offsetY > -1282) && (offsetY < 744) ) {
                 halfPara = requestAnimFrame(halfParallax);
-                // gNordPara = requestAnimFrame(gNordParallax);
+                gNordPara = requestAnimFrame(gNordParallax);
             }
 
         });
-        //  -------------------------------------- end STICKY MENU FUNCTION -------------------------------------- //
     });
     
     // Scroll Window to top on page refresh, remove hidden class on logo
