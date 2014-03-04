@@ -1,23 +1,29 @@
 define(["jquery", "util/helper", "util/nav", "util/carousel", "util/request-anim"], function($) {
     
     var homeLogo = $('#logo-bg'),
-    w = $(window);  
+    w = $(window);
+
+    // Scroll Window to top on page refresh, remove hidden class on logo
+    w.ready(function() {
+        w.scrollTop(0);
+        // Remove invisible class from main logo
+        homeLogo.removeClass('logo-invisible');
+    });
 
     $(function() {
         var docBody = $('body'),
         home = docBody.hasClass('home');
 
+        // Toggle Nav
     	docBody.toggleNav();
+        // Toggle helper * DELETE FOR PRODUCTION
         docBody.helper();
 
         // Open nav menu * Find a better solution for this
         $('.navLink').click();
 
-        ///////////////////////////////
-        // Home Slideshow Parallaxcomp
-        ///////////////////////////////
-
-        var slide = $('.home #home-slider .slide'),
+        // PARALLAX VARs
+        var slide = $('#home-slider .slide'),
         guitarNord = $('#guitar-nord'),
         jeanJacket = $('#jean-jacket'),
         dudePhone = $('#dude-on-phone'),
@@ -29,33 +35,38 @@ define(["jquery", "util/helper", "util/nav", "util/carousel", "util/request-anim
         function homeParallax() {
             var top = $(this).scrollTop(),
             ratio = top/-1.625,
-            sRatio = -top/-6;                
+            sRatio = -top/-6;
+
             homeLogo.css('transform', 'translateY(' + ratio + 'px)'); 
             slide.css('transform', 'translate3d(0,' + sRatio + 'px, 0)');                 
         }
 
         function halfParallax() {
             var top = $(this).scrollTop(),
-            ratio = top/-24;    
+            ratio = top/-24;
+
             jeanJacket.css('transform', 'translate3d(' + ratio + 'px, 0, 0)'); 
         }
 
         function gNordParallax() {
             var top = $(this).scrollTop(),
-            gRatio = top/16; 
+            gRatio = top/16;
+
             guitarNord.css('transform', 'translate3d(0,' + gRatio + 'px, 0)'); 
         }
 
         function dudeParallax() {
             var top = $(this).scrollTop(),
             gRatio = top/16; 
+
             guitarNord.css('transform', 'translate3d(0,' + gRatio + 'px, 0)'); 
         }
 
-        // -------------------------------------- STICKY MENU FUNCTION -------------------------------------- //
-        var menu = $('.home #new-menu-holder').eq(0),
-        firstCon = $('.home #first-container');
+       // STICKY MENU
+        var menu = $('#new-menu-holder').eq(0),
+        firstCon = $('#first-container');
 
+        // ON SCROLL
         w.scroll(function(){
             var offset, offsetY;
 
@@ -63,7 +74,7 @@ define(["jquery", "util/helper", "util/nav", "util/carousel", "util/request-anim
             offsetY = offset.top-w.scrollTop();
 
             // DEV -get scrollY
-            // console.log('This is offsetY: ' + offsetY);
+            console.log('This is offsetY: ' + offsetY);
 
             // STICKY NAV
             if(offsetY <= 49) {
@@ -86,12 +97,6 @@ define(["jquery", "util/helper", "util/nav", "util/carousel", "util/request-anim
             }
 
         });
-    });
-    
-    // Scroll Window to top on page refresh, remove hidden class on logo
-    w.ready(function() {
-        w.scrollTop(0);
-        homeLogo.removeClass('logo-invisible');
     });
 
 });
