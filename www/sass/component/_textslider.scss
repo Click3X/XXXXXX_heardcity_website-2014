@@ -42,25 +42,34 @@
 		color:$white;
 		
 		li {
-			padding:5em 0;
+			// padding:5em 0;
+			height:200px; width:100%;
+			display: table;
 
-			.slide-text {
-				position: relative;
-				display: inline-block;
-				&:before {
-					content: '';
-					display:block;
-					border-top: 1px solid rgb(64, 64, 64);
-					padding-top:1em;
-					width:110%; margin-left:-5%;
-				}
+			.inner-slide {
+				display: table-cell;
+				vertical-align: middle;	
 
-				&:after {
-					content: '';
-					display:block;
-					border-bottom: 1px solid rgb(64, 64, 64);
-					padding-bottom:.7em;
-					width:110%; margin-left:-5%;
+				.slide-text {
+					position: relative;
+					display: inline-block;				
+
+					&:before {
+						content: '';
+						display:block;
+						border-top: 1px solid rgb(64, 64, 64);
+						padding-top:1em;
+						// width:110%; 
+						// margin-left:-5%;
+					}
+
+					&:after {
+						content: '';
+						display:block;
+						border-bottom: 1px solid rgb(64, 64, 64);
+						padding-bottom:.7em;
+						// width:110%; margin-left:-5%;
+					}
 				}
 			}
 		}

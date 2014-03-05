@@ -173,7 +173,9 @@ body.home {
 	@include prefix(transform, translate3d(0,0,0));
 }
 
-.sticky-top + #first-container { padding-top:52px; }
+@media(min-width:480px) {
+	.sticky-top + #first-container { padding-top:52px; }
+}
 
 // Nav - current page schema
 .projects .main-menu-holder .main-menu .menu-projects a {color:$black;}

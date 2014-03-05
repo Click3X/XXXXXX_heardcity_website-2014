@@ -4,7 +4,7 @@ $('#home-slider').owlCarousel({
     singleItem:true,
     navigation:true,
     navigationText:false,
-    pagination:true
+    pagination:false
 });
 
 $('#team-slider, #black-text-slider, #featured-slider, #grey-text-slider').owlCarousel({

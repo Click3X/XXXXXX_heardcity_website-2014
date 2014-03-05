@@ -12,8 +12,9 @@ body.home {
 	width:30%; max-width:320px; height:0;
 	margin:auto; padding-bottom:29%;
 	z-index: 1;
-	position: fixed;
-	left:0;right:0; top:9%;
+	// position: fixed;
+	position: absolute;
+	left:0;right:0; top:0; bottom:0;
 
 	@media(min-width:768px) { 
 		top:13%; 
@@ -171,20 +172,20 @@ body.home {
 
 
 // ARROWS for OWL SLIDER 
-#home-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
-#home-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
-#grey-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
-#grey-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
-#black-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
-#black-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
-#team-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
-#team-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
-#featured-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
-#featured-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next {
+#home-slider div.owl-prev,
+#home-slider div.owl-next,
+#grey-text-slider div.owl-prev,
+#grey-text-slider div.owl-next,
+#black-text-slider div.owl-prev,
+#black-text-slider div.owl-next,
+#team-slider div.owl-prev,
+#team-slider div.owl-next,
+#featured-slider div.owl-prev,
+#featured-slider div.owl-next {
 	position: absolute;
-	top: 25%; margin-top:-15px;
-	margin: auto;
+	top: 25%;
 	display: inline-block;
+	margin: auto; margin-top:-15px;
 	height: 25px; width: 25px;
 	background-image: url('../img/build/sprites/arrow.png');
 	background-size:cover;
@@ -195,43 +196,61 @@ body.home {
 	}
 }
 
-#home-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
-#grey-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
-#team-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev {
+#home-slider div.owl-prev,
+#grey-text-slider div.owl-prev,
+#team-slider div.owl-prev {
 	background-image: url('../img/build/sprites/grey-left.png');
 	background-size:cover;
 	height: 25px; width: 25px;
-	left: 1.5em; top: 44%;
+	top: 44%;
+	left:.5em;
+
+	@media(min-width:768px) {
+		left: 1.5em; 
+	}
 }
 
-#home-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
-#grey-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
-#team-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next {
+#home-slider div.owl-next,
+#grey-text-slider div.owl-next,
+#team-slider div.owl-next {
 	background-image: url('../img/build/sprites/grey-right.png');
 	background-size:cover;
 	height: 25px; width: 25px;	
-	right: 1.5em; top: 44%;
+	top: 44%;
+	right:.5em;
+
+	@media(min-width:768px) {
+		right: 1.5em;
+	}
 }
 
-#black-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
-#featured-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev {
+#black-text-slider div.owl-prev,
+#featured-slider div.owl-prev {
 
 	@include prefix(transform, rotate(180deg));
 
-	left: 1.5em;
+	left:.5em;
+
+	@media(min-width:768px) {
+		left: 1.5em; 
+	}
 }
 
-#black-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
-#featured-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next {
-	right: 1.5em;
+#black-text-slider div.owl-next,
+#featured-slider div.owl-next {
+	right:.5em;
+
+	@media(min-width:768px) {
+		right: 1.5em;
+	}
 }
 
-#home-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
-#home-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
-#grey-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
-#grey-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next,
-#black-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev,
-#black-text-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-next {
+#home-slider div.owl-prev,
+#home-slider div.owl-next,
+#grey-text-slider div.owl-prev,
+#grey-text-slider div.owl-next,
+#black-text-slider div.owl-prev,
+#black-text-slider div.owl-next {
 	top:50%;
 }
 
