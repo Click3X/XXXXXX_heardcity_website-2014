@@ -2197,7 +2197,22 @@ body.home #new-menu-holder.sticky-top {
   max-width: none;
 }
 
-/* line 11, ../sass/component/_projects-video.scss */
+/* line 10, ../sass/component/_projects-video.scss */
+.text-link {
+  letter-spacing: .15em;
+  color: #000000;
+  line-height: 1.4em;
+  letter-spacing: .15em;
+  padding-top: .5em;
+  padding-bottom: .35em;
+  display: inline-block;
+  position: relative;
+  border-top: 1px solid #1f1f1f;
+  border-bottom: 1px solid #1f1f1f;
+  text-align: center;
+}
+
+/* line 24, ../sass/component/_projects-video.scss */
 .features-commercial {
   background-color: #ffffff;
   position: relative;
@@ -2205,19 +2220,19 @@ body.home #new-menu-holder.sticky-top {
   font-size: .75em;
 }
 @media (min-width: 480px) {
-  /* line 11, ../sass/component/_projects-video.scss */
+  /* line 24, ../sass/component/_projects-video.scss */
   .features-commercial {
     height: 51px;
     font-size: .938em;
   }
 }
-/* line 22, ../sass/component/_projects-video.scss */
+/* line 35, ../sass/component/_projects-video.scss */
 .features-commercial .button-holder {
   width: 50%;
   float: left;
   text-align: center;
 }
-/* line 26, ../sass/component/_projects-video.scss */
+/* line 39, ../sass/component/_projects-video.scss */
 .features-commercial .button-holder div {
   width: 99%;
   margin: 4px 0 3px;
@@ -2225,7 +2240,7 @@ body.home #new-menu-holder.sticky-top {
   border-bottom: 1px solid silver;
   border-right: 1px solid silver;
 }
-/* line 33, ../sass/component/_projects-video.scss */
+/* line 46, ../sass/component/_projects-video.scss */
 .features-commercial .button-holder div a {
   color: #9b9b9b;
   display: block;
@@ -2240,41 +2255,41 @@ body.home #new-menu-holder.sticky-top {
   transition: all 500ms;
 }
 @media (min-width: 480px) {
-  /* line 33, ../sass/component/_projects-video.scss */
+  /* line 46, ../sass/component/_projects-video.scss */
   .features-commercial .button-holder div a {
     padding: 15px 0 10px;
     font-size: .938em;
   }
 }
-/* line 48, ../sass/component/_projects-video.scss */
+/* line 61, ../sass/component/_projects-video.scss */
 .features-commercial .button-holder div a:hover {
   color: #1f1f1f;
 }
-/* line 49, ../sass/component/_projects-video.scss */
+/* line 62, ../sass/component/_projects-video.scss */
 .features-commercial .button-holder div a:active {
   color: #1f1f1f;
 }
 @media (min-width: 480px) {
-  /* line 26, ../sass/component/_projects-video.scss */
+  /* line 39, ../sass/component/_projects-video.scss */
   .features-commercial .button-holder div {
     margin: 5px 0 4px;
   }
 }
 @media (min-width: 768px) {
-  /* line 26, ../sass/component/_projects-video.scss */
+  /* line 39, ../sass/component/_projects-video.scss */
   .features-commercial .button-holder div {
     width: 99.5%;
   }
 }
-/* line 58, ../sass/component/_projects-video.scss */
+/* line 71, ../sass/component/_projects-video.scss */
 .features-commercial .button-holder:first-child > div {
   text-align: right;
 }
-/* line 61, ../sass/component/_projects-video.scss */
+/* line 74, ../sass/component/_projects-video.scss */
 .features-commercial .button-holder:first-child > div a {
   float: right;
 }
-/* line 64, ../sass/component/_projects-video.scss */
+/* line 77, ../sass/component/_projects-video.scss */
 .features-commercial .button-holder:nth-of-type(2) > div {
   display: block;
   float: right;
@@ -2282,7 +2297,7 @@ body.home #new-menu-holder.sticky-top {
   border-left: 1px solid silver;
 }
 
-/* line 73, ../sass/component/_projects-video.scss */
+/* line 86, ../sass/component/_projects-video.scss */
 .selected-button {
   background-color: #e0e0e2;
   color: #000;
@@ -2292,16 +2307,16 @@ body.home #new-menu-holder.sticky-top {
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 79, ../sass/component/_projects-video.scss */
+/* line 92, ../sass/component/_projects-video.scss */
 .selected-button div {
   border-color: #e0e0e2;
 }
-/* line 81, ../sass/component/_projects-video.scss */
+/* line 94, ../sass/component/_projects-video.scss */
 .selected-button div a {
   color: #000 !important;
 }
 
-/* line 86, ../sass/component/_projects-video.scss */
+/* line 99, ../sass/component/_projects-video.scss */
 #og-grid a.img-link {
   height: 0px;
   padding-bottom: 60%;
@@ -2313,7 +2328,7 @@ body.home #new-menu-holder.sticky-top {
   transition: all 500ms;
 }
 
-/* line 93, ../sass/component/_projects-video.scss */
+/* line 106, ../sass/component/_projects-video.scss */
 .vid-title-holder {
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
@@ -2322,7 +2337,7 @@ body.home #new-menu-holder.sticky-top {
   transition: all 500ms;
 }
 
-/* line 96, ../sass/component/_projects-video.scss */
+/* line 109, ../sass/component/_projects-video.scss */
 #og-grid .og-vid-holder:hover a.img-link {
   -webkit-transform: translate(0, -26.54088%);
   -moz-transform: translate(0, -26.54088%);
@@ -2335,29 +2350,29 @@ body.home #new-menu-holder.sticky-top {
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 101, ../sass/component/_projects-video.scss */
+/* line 114, ../sass/component/_projects-video.scss */
 #og-grid .og-vid-holder:hover .vid-title-holder {
-  -webkit-transform: translate(0, -115%);
-  -moz-transform: translate(0, -115%);
-  -o-transform: translate(0, -115%);
-  -ms-transform: translate(0, -115%);
-  transform: translate(0, -115%);
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -o-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  transform: translate(0, -100%);
 }
 
-/* line 107, ../sass/component/_projects-video.scss */
+/* line 120, ../sass/component/_projects-video.scss */
 .active-vid {
-  -webkit-transform: translate(0, -115%);
-  -moz-transform: translate(0, -115%);
-  -o-transform: translate(0, -115%);
-  -ms-transform: translate(0, -115%);
-  transform: translate(0, -115%);
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -o-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  transform: translate(0, -100%);
 }
 
-/* line 112, ../sass/component/_projects-video.scss */
+/* line 125, ../sass/component/_projects-video.scss */
 .og-grid {
   padding-top: .5em;
 }
-/* line 115, ../sass/component/_projects-video.scss */
+/* line 128, ../sass/component/_projects-video.scss */
 .og-grid .og-vid-holder {
   padding: 0 .25em 0 .25em;
   margin-bottom: .25em;
@@ -2367,29 +2382,29 @@ body.home #new-menu-holder.sticky-top {
   padding-bottom: 57%;
 }
 @media (min-width: 480px) {
-  /* line 115, ../sass/component/_projects-video.scss */
+  /* line 128, ../sass/component/_projects-video.scss */
   .og-grid .og-vid-holder {
     padding-bottom: 29%;
   }
 }
 @media (min-width: 960px) {
-  /* line 115, ../sass/component/_projects-video.scss */
+  /* line 128, ../sass/component/_projects-video.scss */
   .og-grid .og-vid-holder {
     padding-bottom: 19%;
   }
 }
 @media (min-width: 1480px) {
-  /* line 115, ../sass/component/_projects-video.scss */
+  /* line 128, ../sass/component/_projects-video.scss */
   .og-grid .og-vid-holder {
     padding-bottom: 14%;
   }
 }
-/* line 136, ../sass/component/_projects-video.scss */
+/* line 149, ../sass/component/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder {
   width: 100%;
   background-color: #ffffff;
 }
-/* line 140, ../sass/component/_projects-video.scss */
+/* line 153, ../sass/component/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder .title {
   max-width: 80%;
   display: table;
@@ -2398,17 +2413,17 @@ body.home #new-menu-holder.sticky-top {
   height: 90px;
 }
 @media (min-width: 480px) {
-  /* line 140, ../sass/component/_projects-video.scss */
+  /* line 153, ../sass/component/_projects-video.scss */
   .og-grid .og-vid-holder .vid-title-holder .title {
     height: 110px;
   }
 }
-/* line 152, ../sass/component/_projects-video.scss */
+/* line 165, ../sass/component/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder .title div {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 156, ../sass/component/_projects-video.scss */
+/* line 169, ../sass/component/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder .title div a {
   color: #000000;
   line-height: 1.4em;
@@ -2422,7 +2437,7 @@ body.home #new-menu-holder.sticky-top {
   text-align: center;
 }
 
-/* line 174, ../sass/component/_projects-video.scss */
+/* line 187, ../sass/component/_projects-video.scss */
 .og-grid li.og-expanded > a::after {
   top: auto;
   left: 50%;
@@ -2436,7 +2451,7 @@ body.home #new-menu-holder.sticky-top {
   margin: -20px 0 0 -15px;
 }
 
-/* line 184, ../sass/component/_projects-video.scss */
+/* line 197, ../sass/component/_projects-video.scss */
 .og-expander {
   position: absolute;
   top: auto;
@@ -2454,12 +2469,12 @@ body.home #new-menu-holder.sticky-top {
   transform: translateZ(0);
   margin-top: -8%;
 }
-/* line 197, ../sass/component/_projects-video.scss */
+/* line 210, ../sass/component/_projects-video.scss */
 .og-expander .section-title {
   background-color: #edeef1;
   position: relative;
 }
-/* line 201, ../sass/component/_projects-video.scss */
+/* line 214, ../sass/component/_projects-video.scss */
 .og-expander .section-title .credits {
   display: block;
   max-width: 30em;
@@ -2469,20 +2484,20 @@ body.home #new-menu-holder.sticky-top {
   padding-bottom: 37px;
 }
 
-/* line 213, ../sass/component/_projects-video.scss */
+/* line 226, ../sass/component/_projects-video.scss */
 .og-expander-inner {
   padding: 50px 0;
   text-align: center;
 }
 
-/* line 218, ../sass/component/_projects-video.scss */
+/* line 231, ../sass/component/_projects-video.scss */
 .og-fullimg video {
   margin-bottom: 1em;
-  width: 70%;
+  width: 90%;
   max-width: 940px;
 }
 
-/* line 224, ../sass/component/_projects-video.scss */
+/* line 238, ../sass/component/_projects-video.scss */
 .p-name {
   font-size: 1em;
   text-align: center;
@@ -2494,14 +2509,14 @@ body.home #new-menu-holder.sticky-top {
   max-width: 30em;
   margin: 0 auto .5em;
 }
-/* line 235, ../sass/component/_projects-video.scss */
+/* line 249, ../sass/component/_projects-video.scss */
 .p-name:before {
   content: '';
   display: block;
   border-top: 1px solid #404040;
   height: 14px;
 }
-/* line 242, ../sass/component/_projects-video.scss */
+/* line 256, ../sass/component/_projects-video.scss */
 .p-name:after {
   content: '';
   display: block;
@@ -2509,7 +2524,7 @@ body.home #new-menu-holder.sticky-top {
   height: 12px;
 }
 
-/* line 252, ../sass/component/_projects-video.scss */
+/* line 266, ../sass/component/_projects-video.scss */
 .og-close {
   position: absolute;
   width: 28px;
@@ -2521,7 +2536,7 @@ body.home #new-menu-holder.sticky-top {
   background-repeat: no-repeat;
 }
 
-/* line 263, ../sass/component/_projects-video.scss */
+/* line 277, ../sass/component/_projects-video.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -2536,79 +2551,79 @@ body.home #new-menu-holder.sticky-top {
 }
 
 @keyframes loader {
-  /* line 275, ../sass/component/_projects-video.scss */
+  /* line 289, ../sass/component/_projects-video.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 276, ../sass/component/_projects-video.scss */
+  /* line 290, ../sass/component/_projects-video.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 277, ../sass/component/_projects-video.scss */
+  /* line 291, ../sass/component/_projects-video.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
   }
 }
 
-/* line 281, ../sass/component/_projects-video.scss */
+/* line 295, ../sass/component/_projects-video.scss */
 #og-grid > li {
   width: 100%;
   float: left;
 }
 
-/* line 286, ../sass/component/_projects-video.scss */
+/* line 300, ../sass/component/_projects-video.scss */
 #og-grid > li img {
   width: 100%;
 }
 
 @media screen and (min-width: 480px) {
-  /* line 291, ../sass/component/_projects-video.scss */
+  /* line 305, ../sass/component/_projects-video.scss */
   #og-grid > li {
     width: 50%;
   }
 
-  /* line 295, ../sass/component/_projects-video.scss */
+  /* line 309, ../sass/component/_projects-video.scss */
   #og-grid > li:nth-of-type(2n+1) {
     clear: left;
   }
 }
 @media screen and (min-width: 960px) {
-  /* line 302, ../sass/component/_projects-video.scss */
+  /* line 316, ../sass/component/_projects-video.scss */
   #og-grid > li {
     width: 33%;
   }
 
-  /* line 306, ../sass/component/_projects-video.scss */
+  /* line 320, ../sass/component/_projects-video.scss */
   #og-grid > li:nth-of-type(2n+1) {
     clear: none;
   }
 
-  /* line 310, ../sass/component/_projects-video.scss */
+  /* line 324, ../sass/component/_projects-video.scss */
   #og-grid > li:nth-of-type(3n+1) {
     clear: left;
   }
 }
 @media (min-width: 1480px) {
-  /* line 316, ../sass/component/_projects-video.scss */
+  /* line 330, ../sass/component/_projects-video.scss */
   #og-grid > li {
     width: 25%;
   }
 
-  /* line 320, ../sass/component/_projects-video.scss */
+  /* line 334, ../sass/component/_projects-video.scss */
   #og-grid > li:nth-of-type(3n+1) {
     clear: none;
   }
 
-  /* line 324, ../sass/component/_projects-video.scss */
+  /* line 338, ../sass/component/_projects-video.scss */
   #og-grid > li:nth-of-type(4n+1) {
     clear: left;
   }
 }
-/* line 331, ../sass/component/_projects-video.scss */
+/* line 345, ../sass/component/_projects-video.scss */
 .sec-image {
   background-size: cover;
   background-position: 50%;

@@ -7,6 +7,19 @@
 	max-width:none;
 }
 
+.text-link {
+	letter-spacing: .15em;
+	color:#000000;
+	line-height: 1.4em;
+	letter-spacing: .15em;
+	padding-top:.5em; padding-bottom:.35em;
+	display: inline-block;
+	position: relative;
+	border-top: 1px solid $black;
+	border-bottom: 1px solid $black;
+	text-align: center;
+}
+
 // Top Button Holder
 .features-commercial {
 	background-color:#ffffff;
@@ -99,13 +112,13 @@
 	}
 
 	.vid-title-holder {
-		@include prefix(transform, translate(0, -115%)); 
+		@include prefix(transform, translate(0, -100%)); 
 		// @include prefix(transition, all 500ms);
 	}
 }
 
 .active-vid {
-	@include prefix(transform, translate(0, -115%)); 
+	@include prefix(transform, translate(0, -100%)); 
 }
 
 
@@ -217,7 +230,8 @@
 
 .og-fullimg video {
 	margin-bottom: 1em;
-	width: 70%;
+	// width: 70%;
+	width: 90%;
 	max-width: 940px;
 }
 

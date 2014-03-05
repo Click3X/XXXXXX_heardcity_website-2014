@@ -37,18 +37,28 @@ include('php/header.php');
                         ?>
 
                         <li class="og-vid-holder clearfix <?php echo formatLink($value["type"]);?>">
-                            <?php echo '<a href="'.$dir.'" data-title="'.$value["title"].'" data-director="'.$value["director"].'" data-mixer="'.$value["mixer"].'" data-mp4="'.$value["mp4"].'" class="vid-thumb-holder img-link clearfix">'; ?>
-                                <?php echo '<img src="'.$thumbsrc.'" alt="'.$value["title"].'">'; ?>
-                            </a>
-                            <div class="vid-title-holder clearfix">
-                                <div class="title">
-                                    <div>
-                                        <?php echo '<a href="'.$dir.'" data-title="'.$value["title"].'" data-director="'.$value["director"].'" data-mixer="'.$value["mixer"].'" data-mp4="'.$value["mp4"].'" class="vid-thumb-holder text-link clearfix">'; ?>
-                                            <?php echo $value["title"];?>
-                                        </a>
+                            <?php echo '<a href="'.$dir.'" data-title="'.$value["title"].'" data-director="'.$value["director"].'" data-mixer="'.$value["mixer"].'" data-mp4="'.$value["mp4"].'">'; ?>
+                                <?php 
+                                    echo '<div class="vid-thumb-holder img-link clearfix">';
+                                    echo '<img src="'.$thumbsrc.'" alt="'.$value["title"].'">';
+                                    echo '</div>';
+                                    // echo '</a>';
+                                ?>
+
+                                <div class="vid-title-holder clearfix">
+                                    <div class="title">
+                                        <div>
+                                            <?php 
+                                                // echo '<a href="'.$dir.'" data-title="'.$value["title"].'" data-director="'.$value["director"].'" data-mixer="'.$value["mixer"].'" data-mp4="'.$value["mp4"].'" class="vid-thumb-holder text-link clearfix">';
+                                                echo '<div class="vid-thumb-holder text-link clearfix">';
+                                                echo $value["title"];
+                                                // echo '</a>';
+                                                echo '</div>';
+                                                ?>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            <?php echo '</a>'; ?>
                         </li>
 
                 <?php   } ?>
