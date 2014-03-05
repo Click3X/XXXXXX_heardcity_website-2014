@@ -52,7 +52,10 @@
 
 				.slide-text {
 					position: relative;
-					display: inline-block;				
+					display: inline-block;
+					margin-top: -6px;
+					width:75%;
+					// margin:0 auto;	
 
 					&:before {
 						content: '';
