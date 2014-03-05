@@ -181,7 +181,7 @@ var Grid = (function() {
 		// extra amount of pixels to scroll the window
 		scrollExtra = 0,
 		// extra margin when expanded (between preview overlay and the next items)
-		marginExpanded = 10,
+		marginExpanded = 0,
 		$window = $( window ), winsize,
 		$body = $( 'html, body' ),
 		// transitionend events
@@ -247,6 +247,8 @@ var Grid = (function() {
 			$item.data( 'offsetTop', $item.offset().top );
 			if( saveheight ) {
 				$item.data( 'height', $item.height() );
+				console.log('This is the height: ' + $item.height() );
+				console.log('This is the offset top: ' + $item.offset().top );
 			}
 		} );
 	}
@@ -356,7 +358,7 @@ var Grid = (function() {
 			this.$mixer = $('<span class="p-mixer"></span>');
 			this.$mixerList = $('<li><span class="bold">Mixed by: </span><span class="p-mixer"></span></li>').append(this.$mixer);
 			this.$projectInfo = $('<ul class="credits"></ul>').append(this.$title, this.$directorList, this.$mixerList);
-			this.$sectionTitle = $('<div class="section-title"></div>').append(this.$projectInfo);
+			this.$sectionTitle = $('<div class="section-title grey-theme"><div class="noise"></div></div>').append(this.$projectInfo);
 
 			this.$details = $( '<div class="og-details"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$videoTag, this.$sectionTitle ); // , this.$credits 

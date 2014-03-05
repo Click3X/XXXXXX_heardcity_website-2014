@@ -77,7 +77,7 @@ include('php/project-grid.php');
 								<div><?php echo $project['title']; ?></div>
 							</div>
 							<ul class="credits">
-								<div class="noise"></div>
+								<!-- <div class="noise"></div> -->
 								<li><span class="bold">Directed by: </span><?php echo $project['director']; ?></li>
 								<li><span class="bold">Mixed by: </span><?php echo $project['mixer']; ?></li>
 							</ul>
@@ -138,7 +138,7 @@ include('php/project-grid.php');
 
 
     <!-- Dog & Window deco pic -->
-	<div class="container clearfix">
+	<div class="container clearfix hide-over">
 		<div class="img-holder dog-para-holder">
 			<div class="dog-para">
 				<div id="dog-windows" class="dog-windows"></div>   <!-- style="background-image:url('img/build/home/dog-windows.jpg');" -->
@@ -158,8 +158,10 @@ include('php/project-grid.php');
 	 			foreach ($text_carousel_grey as $headline => $text) { ?>
 
 	 			<li class="just-text">
-					<div><?php echo $headline; ?></div>
-					<p class="serif"><?php echo $text; ?></p>
+	 				<div class="just-text-child">
+						<div class="text-headline"><?php echo $headline; ?></div>
+						<p class="serif"><?php echo $text; ?></p>
+					</div>
     			</li>
 
     			<?php } ?>

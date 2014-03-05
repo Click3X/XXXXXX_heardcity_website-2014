@@ -11,7 +11,6 @@ define(["jquery", "modern", "util/helper", "util/nav", "util/grid", "util/feat-b
 
         // Temp script to disable text link from refreshing page
         // !!! COME BACK & properly attach to li element !!!
-        
         $('.text-link').click(function(event) {
         	event.preventDefault();
         	$(this).closest('.img-link').click();

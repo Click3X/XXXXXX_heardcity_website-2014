@@ -11,18 +11,9 @@ body.home {
 	background-size:contain;
 	width:30%; max-width:320px; height:0;
 	margin:auto; padding-bottom:29%;
-	z-index: 1;
-	// position: fixed;
 	position: absolute;
 	left:0;right:0; top:0; bottom:0;
-
-	// @media(min-width:768px) { 
-	// 	top:13%; 
-	// }
-	// @media(min-width:1024px) { 
-	// 	top: 209px;
-		
-	// }
+	z-index: 1;
 }
 
 
@@ -36,7 +27,6 @@ body.home {
 		background-repeat:no-repeat; 
 		background-position: 50% 50%;
 		background-size:auto; 
-		// background-position: contain;
 		z-index: -1;
 		padding-bottom: 66%;
 
@@ -86,9 +76,13 @@ body.home {
 
 // FEATURED WORK slider on HOME page
 .featured-work {
-	padding:2em 0 0;
+	padding:1.75em 0 0;
 	.section-title {
-		margin-bottom:1.75em;
+		font-size:.938em;
+
+		@media(min-width: 480px) {
+			font-size: 1.25em;
+		}
 	}
 }
 
@@ -97,7 +91,6 @@ body.home {
 	.feat-work-slider {
 
 		.work-slide {
-
 			.img-holder {
 
 				img {
@@ -107,6 +100,10 @@ body.home {
 			}
 		}
 	}
+}
+
+.work-slide .credits {
+	margin-top:0;
 }
 
 #image-spread-1 {
@@ -142,14 +139,15 @@ body.home {
 
 .work-slide {
 	height: 0;
-	padding-bottom:110%;
+	// padding-bottom:110%;
+	padding-bottom:360px;
 
 	@media(min-width: 480px) {
-		padding-bottom:95%;
+		padding-bottom:94%;
 	}
 
 	@media(min-width: 600px) {
-		padding-bottom:90%;
+		padding-bottom:85%;
 	}
 
 	@media(min-width: 768px) {
@@ -170,7 +168,6 @@ body.home {
 	bottom: 0; left: 0; right: 0;
 }
 
-
 // ARROWS for OWL SLIDER 
 #home-slider div.owl-prev,
 #home-slider div.owl-next,
@@ -183,16 +180,19 @@ body.home {
 #featured-slider div.owl-prev,
 #featured-slider div.owl-next {
 	position: absolute;
-	top: 25%;
+	// top: 25%;
+	top: 20%;
 	display: inline-block;
-	margin: auto; margin-top:-15px;
-	height: 25px; width: 25px;
+	margin: auto; margin-top:-10px;
+	height: 20px; width: 15px;
 	background-image: url('../img/build/sprites/arrow.png');
 	background-size:cover;
 	border-radius: 0;
 
 	@media(min-width:768px) {
 		top:31%;
+		margin-top:-15px;
+		height: 25px; width: 25px;
 	}
 }
 
@@ -201,12 +201,13 @@ body.home {
 #team-slider div.owl-prev {
 	background-image: url('../img/build/sprites/grey-left.png');
 	background-size:cover;
-	height: 25px; width: 25px;
+	height: 20px; width: 15px;
 	top: 44%;
 	left:.5em;
 
 	@media(min-width:768px) {
-		left: 1.5em; 
+		left: 1.5em;
+		height: 25px; width: 25px;
 	}
 }
 
@@ -215,12 +216,13 @@ body.home {
 #team-slider div.owl-next {
 	background-image: url('../img/build/sprites/grey-right.png');
 	background-size:cover;
-	height: 25px; width: 25px;	
+	height: 20px; width: 15px;
 	top: 44%;
 	right:.5em;
 
 	@media(min-width:768px) {
 		right: 1.5em;
+		height: 25px; width: 25px;
 	}
 }
 
@@ -257,67 +259,138 @@ body.home {
 // JUST TEXT - for text slider on home . php
 .just-text {
 	color: #222222;
-	max-width: 30em;
-	margin: 4em auto 6em;
-	padding: 1em 0;
-	border-top: 1px solid $menu-grey;
-	border-bottom: 1px solid $menu-grey;
+	height: 200px;
+	display: table;
+	width:100%;
+	// padding: 1em 0;
+	
+	.just-text-child {
+		max-width: 30em; width:75%;
+		display: table-cell;
+		vertical-align: middle;
 
-	div {
-		font-size: .938em;
-		margin: .35em 0;
-		letter-spacing: .15em;
-		@media(min-width: 480px) {
-			font-size:1.125rem;
+		&:before {
+			content: ''; display:block;
+			max-width: 30em; width:85%;
+			margin:0 auto;
+			border-top: 1px solid $black;
+			height:1em;
+		}
+
+		&:after {
+			content: ''; display:block;
+			max-width: 30em; width:85%;
+			margin:0 auto;
+			border-bottom: 1px solid $black;
+			height:.85em;
 		}
 	}
+	.text-headline {
+		letter-spacing: .15em;
+		line-height: 1.2rem;
+		margin-bottom: .5rem;
+	}
+	
+	p {
+		font-size: .8rem;
+		line-height: 1.3rem;
+		width: 75%;
+		margin: 0 auto;
+		max-width: 30em;
 
-	p {line-height: 1.8em;}
+		@media(min-width: 480px) {
+			font-size: .938rem;
+			line-height: 1.5rem;
+		}
+	}
 }
 
 // GREENSOCK styles for MOVING BG IMAGES
 
 .half-pad {
 	background-repeat:no-repeat; 
-	padding-bottom: 100%;
+	padding-bottom: 70%;
 	background-position: 50%;
+	@media(min-width: 480px) {
+		padding-bottom: 100%;
+	}
 }
 
 #girl-large {
-	width: 160%;
+	width: 120%;
 	background-size: 100%;
 	background-position: left center;
 
 	@include prefix(transform, translateZ(0));
+
+	@media(min-width: 480px) {
+		width: 160%;
+	}
 }
 #stairs {
 	width:100%;
-	padding-bottom:125%;
-	background-size:120%;
+	padding-bottom:70%;
+	background-size:100%;
 	background-position: center bottom;
 
 	@include prefix(transform, translateZ(0));
+
+	@media(min-width: 480px) {
+		padding-bottom:125%;
+		background-size:120%;
+	}
 }
 
 .para-holder:first-of-type {
-	width: 50%;
+	width: 100%;
 	float:left;
-	margin-top: -28%;
-	padding-bottom: 15.5%;
+	margin-top: -10%;
+
+	@media(min-width:480px) {
+		margin-top: -35%;
+		width: 50%;
+		padding-bottom: 25%;
+	}
 }
 
+.image-spread-2 {
+	@media(min-width:480px) {
+		padding-bottom: 50%;
+		height: 0;
+	}
+}
+
+.para-holder {
+	overflow: hidden;
+	width: 100%;
+	float:left;
+
+	@media(min-width:480px) {
+		width: 50%;
+	}
+}
 
 
 #image-spread-1 {
 	overflow: hidden;
 
 	.image-holder:first-of-type {
-		width:50%;
+		width:100%;
 		padding-bottom:50%;
 		margin-top: -12%;
 
+		@media(min-width:480px) {
+			width:50%;
+		}
+
 		@media(min-width:1270px) {
 			padding-bottom:850px;
+		}
+	}
+	.image-holder:nth-of-type(2) {
+		margin-left: 7%;
+		@media(min-width:480px) {
+			margin-left: auto;
 		}
 	}
 }
@@ -325,9 +398,13 @@ body.home {
 
 .image-spread {
 	.image-holder {
-		width:50%; 
+		width:100%; 
 		float:left; 
 		position: relative;
+
+		@media(min-width:480px) {
+			width:50%;
+		}
 
 		.half-image {
 			width:100%;
@@ -336,11 +413,16 @@ body.home {
 }
 
 #guitar-nord {
-	background-size: auto;
+	background-size: cover;
 	background-position: center bottom;
-	padding-bottom:124%;
+	padding-bottom:72%;
 	position: absolute;
 	@include prefix(transform, translateZ(0));
+
+	@media(min-width:480px) {
+		padding-bottom:124%;
+		background-size: auto;
+	}
 	
 	@media(min-width:1270px) {
 		padding-bottom:1100px;
@@ -353,9 +435,14 @@ body.home {
 
 
 #jean-jacket {
-	background-size: auto;
-	width:115%;
+	background-size: cover;
+	width:100%;
 	background-position: center center;
+
+	@media(min-width:480px) {
+		background-size: auto;
+		width:115%;
+	}
 
 	@media(min-width: 1290px) {
 		background-size:100%;
@@ -379,11 +466,14 @@ body.home {
 .dog-windows {
 	background-size:auto;
 	background-position: left bottom;
+	background-repeat: no-repeat;
 	padding-bottom: 52%;
 
-	background-repeat: no-repeat;
-
 	@include prefix(transform, translateZ(0));
+
+	@media(min-width: 480px) {
+		background-size:100%;
+	}
 
 	@media(min-width: 1260px) {
 		padding-bottom: 615px;
@@ -396,17 +486,19 @@ body.home {
 	overflow: hidden;
 }
 
-.para-holder {
-	overflow: hidden;
-	width: 50%;
-	float:left;
-}
-
 .dog-para-holder {
 
 	width: 100%;
-	padding-bottom: 52%;
+	padding-bottom: 55%;
 	position: relative;
+
+	@media(min-width: 380px) {
+		padding-bottom: 45%;
+	}
+
+	@media(min-width: 480px) {
+		padding-bottom: 40%;
+	}
 
 	@media(min-width: 1260px) {
 		padding-bottom: 615px;
@@ -430,4 +522,3 @@ body.home {
 #first-container {
 	z-index: 1;
 }
-

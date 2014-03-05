@@ -926,6 +926,7 @@
 
 
 /* Effect 21: borders slight translate */
+
 .cl-effect-21 a {
 	padding: 10px;
 	color: $grey-text;
@@ -935,9 +936,6 @@
 
 	@include prefix(transition, color 0.3s);
 
-	// -webkit-transition: color 0.3s;
-	// -moz-transition: color 0.3s;
-	// transition: color 0.3s;
 }
 
 .cl-effect-21 a::before,
@@ -956,26 +954,17 @@
 	transition: opacity 0.3s, transform 0.3s;
 	
 	@include prefix(transition, all 0.3s);
-	// -webkit-transform: translateY(-10px);
-	// -moz-transform: translateY(-10px);
-	// transform: translateY(-10px);
 	@include prefix(transform, translateY(-10px));
 }
 
 .cl-effect-21 a::before {
 	top: 0;
-	// -webkit-transform: translateY(-10px);
-	// -moz-transform: translateY(-10px);
-	// transform: translateY(-10px);
 
 	@include prefix(transform, translateY(-10px));
 }
 
 .cl-effect-21 a::after {
 	bottom: 0;
-	// -webkit-transform: translateY(10px);
-	// -moz-transform: translateY(10px);
-	// transform: translateY(10px);
 
 	@include prefix(transform, translateY(10px));
 }

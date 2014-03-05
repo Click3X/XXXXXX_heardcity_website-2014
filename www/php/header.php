@@ -35,7 +35,7 @@ include('functions.php');
         if($page == 'Home') { ?>
             <!-- Home Page Slider -->
             <div id="home-slider-holder" class="container clearfix">
-                <div id="logo-bg" class="logo-bg logo-invisible"></div> <!-- logo-invisible -->
+                <div id="logo-bg" class="logo-bg"></div> <!-- logo-invisible -->
                 <ul id="home-slider" class="home-slider owl-carousel">
                     <?php 
                         foreach ($marquee as $marq_img) {

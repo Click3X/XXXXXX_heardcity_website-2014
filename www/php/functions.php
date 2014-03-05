@@ -7,30 +7,6 @@ function formatLink($page) {
 	return $returnPage;
 }
 
-
-// Main Navigation for Site
-function printMenu($sitePages, $page) {
-
-	echo '<div id="main-menu-holder" class="main-menu-holder">';
-		echo '<div class="top desktop-hidden">
-	    		<a href="#" class="navLink">&#9776;</a>
-	    		<span id="nav-page-title" class="nav-page-title desktop-hidden">'.$page.'</span>
-	  		</div>';
-
-	  	echo '<div id="main-menu-collapse">';
-			echo '<ul id="main-menu" class="main-menu clearfix">';
-			foreach ($sitePages as $key => $sitePage) {
-				echo '<li class="menu-'.formatLink($sitePage).'">';
-					echo '<a href="'.formatLink($sitePage).'.php">'.$sitePage.'</a>';
-				echo '</li>';
-			}
-			echo '</ul>';
-		echo '</div>';
-	echo '</div>';
-
-}
-
-// NEW NAV
 // Main Navigation for Site
 function newMenu($sitePages, $page, $effect) {
 
@@ -43,7 +19,8 @@ function newMenu($sitePages, $page, $effect) {
 	  	echo '<div id="new-menu-collapse">';
 			echo '<ul id="new-menu" class="new-menu clearfix ">';
 			foreach ($sitePages as $key => $sitePage) {
-				echo '<li class="menu-'.formatLink($sitePage).' '.$effect.'">';
+				if($page == $sitePage) {$class = ' current-page';} else {$class='';}
+				echo '<li class="menu-'.formatLink($sitePage).' '.$effect.$class.'">';
 					echo '<a href="'.formatLink($sitePage).'.php" data-hover="'.$sitePage.'"><span>'.$sitePage.'</span></a>';
 				echo '</li>';
 			}

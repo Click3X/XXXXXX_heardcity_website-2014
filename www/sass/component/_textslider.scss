@@ -27,12 +27,14 @@
 			letter-spacing: .15em;
 
 			@media(min-width:480px) {
-				// font-size:1.250em;
 				font-size: 1.125rem;
 			}
 		}
 	}
 }
+
+
+.grey-theme > .noise {opacity: 1 !important;}
 
 .black-theme {
 
@@ -42,7 +44,6 @@
 		color:$white;
 		
 		li {
-			// padding:5em 0;
 			height:200px; width:100%;
 			display: table;
 
@@ -53,25 +54,19 @@
 				.slide-text {
 					position: relative;
 					display: inline-block;
-					margin-top: -6px;
-					width:75%;
-					// margin:0 auto;	
+					max-width:75%;
+					line-height: 1.2rem;
 
 					&:before {
-						content: '';
-						display:block;
-						border-top: 1px solid rgb(64, 64, 64);
-						padding-top:1em;
-						// width:110%; 
-						// margin-left:-5%;
+						content: ''; display:block;
+						border-top: 1px solid $grey-line;
+						height:1em;
 					}
 
 					&:after {
-						content: '';
-						display:block;
-						border-bottom: 1px solid rgb(64, 64, 64);
-						padding-bottom:.7em;
-						// width:110%; margin-left:-5%;
+						content: ''; display:block;
+						border-bottom: 1px solid $grey-line;
+						height:.85em;
 					}
 				}
 			}

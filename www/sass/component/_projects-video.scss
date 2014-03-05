@@ -135,19 +135,23 @@
 
 		.vid-title-holder {
 			width:100%;
-			padding-bottom: 10%;
-			padding-top: 10%;
 			background-color:#ffffff;
 
 			.title {
-				width: 100%;
+			
+				max-width: 80%;
 				display: table;
 				margin: auto;
+				vertical-align: middle;
+				height: 90px;
+
+				@media(min-width:480px) {
+					height: 110px;
+				}
 
 				div {
 					display: table-cell;
 					vertical-align: middle;
-					text-align: center;
 
 					a {
 						color:#000000;
@@ -156,8 +160,9 @@
 						padding-top:.5em; padding-bottom:.35em;
 						display: inline-block;
 						position: relative;
-						border-top: 2px solid $grey-theme;
-						border-bottom: 2px solid $grey-theme;
+						border-top: 1px solid $black;
+						border-bottom: 1px solid $black;
+						text-align: center;
 					}
 				}
 			}
@@ -186,14 +191,21 @@
     text-align: left;
     overflow: hidden;
 
-    margin-top: -7%;
+    @include prefix(transform, translateZ(0));
+    margin-top: -8%;
 
     .section-title {
     	background-color:$white;
+    	position: relative;
 
-    	.credits {
+    	.credits { 
+    		display: block;
+			max-width: 30em;
+			margin: auto;
     		text-align: center;
-    		margin-bottom: 4em;
+
+			padding-top:37px;
+			padding-bottom:37px;
     	}
     }
 }
@@ -210,28 +222,30 @@
 }
 
 .p-name {
-	font-size: 1.2em;
+	font-size: 1em;
 	text-align: center;
 	text-transform: uppercase;
-	font-family: Track, sans-serif;
-	line-height: 1em;
+	font-family: 'trackregular';
+	line-height: 1.2em;
 	letter-spacing: .15em;
-}
+	width:75%;
+	max-width: 30em;
+	margin:0 auto .5em;
 
-.p-name:before {
-	content: '';
-	display: block;
-	border-top: 2px solid $grey-text;
-	padding-bottom: .75em;
-	margin-top: 1em;
-}
+	&:before {
+		content: '';
+		display: block;
+		border-top: 1px solid $grey-line;
+		height: 14px;
+	}
 
-.p-name:after {
-	content: '';
-	display: block;
-	border-bottom: 2px solid $grey-text;
-	padding-bottom: .4em;
-	margin-bottom: 1em;
+	&:after {
+		content: '';
+		display: block;
+		border-bottom: 1px solid $grey-line;
+		height: 12px;
+	}
+
 }
 
 // the 'X' Close button

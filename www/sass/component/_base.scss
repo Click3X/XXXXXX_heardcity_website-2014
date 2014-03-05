@@ -1,10 +1,13 @@
 // BASE SCSS * Utility Layout Styles
 
 body {
-	font-size: 16px;
-	// font-family:'Track' sans-serif;
+	font-size: 14px;
 	font-family: 'trackregular';
 	background-color:$black;
+
+	@media(min-width:480px) {
+		font-size: 16px;
+	}
 }
 
 // Disable FULL-SCREEN / enable MAX-WIDTH 1024px; MARGIN: 0 auto
@@ -12,6 +15,11 @@ body.ourteam > .container,
 body.home > div {
 	// max-width: 1024px;
 	margin:0 auto;
+}
+
+// HIDE BROWSER SCROLL BARS
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 a {
@@ -89,6 +97,10 @@ a {
 	}
 }
 
+.hide-over {
+	overflow: hidden;
+}
+
 .desktop-hidden {visibility: visible;}
 .invisible {visibility: hidden;}
 
@@ -103,8 +115,14 @@ a {
 	font-family:$serif;
 	text-align: left;
 	line-height:1.5em;
-	font-size: 1rem;
-	margin-bottom:2.25em;
+	font-size: .938em;
+	margin-bottom:1.75em;
+	margin-top:1.75em;
+	text-align: center;
+
+	@media(min-width: 480px) {
+		font-size: 1rem;
+	}
 }
 
 // Hidden Class for Projects Page commercial/features tupe button

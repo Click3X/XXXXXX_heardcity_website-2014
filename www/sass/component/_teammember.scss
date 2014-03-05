@@ -22,26 +22,27 @@
 
 		div {
 			display: inline-block;
-			font-size: .938em;
+			font-size: .825rem;
 			position: relative;
+
+			@media(min-width:480px) {
+				font-size: .825rem;
+			}
 
 			&:before {
 				content: '';
 				display: block;
-				border-top: 1px solid $grey;
-				padding-top: .7em;
-				width:110%; margin-left:-5%;
+				border-top: 1px solid $black;
+				height:.85em;
 			}
 			&:after {
 				content: '';
 				display: block;
-				border-bottom: 1px solid $grey;
-				padding-bottom: .3em;
-				width:110%; margin-left:-5%;
+				border-bottom: 1px solid $black;
+				height:.6em !important;
 			}
 
 			@media(min-width: 480px) {
-				// font-size:1.2em;
 				font-size: 1.125rem;
 			}
 		}
@@ -64,16 +65,14 @@
 			&:before {
 				content: '';
 				display: block;
-				border-top: 1px solid $grey;
-				padding-top: .7em;
-				width:110%; margin-left:-5%;
+				border-top: 1px solid $grey-line;
+				height:.85em;
 			}
 			&:after {
 				content: '';
 				display: block;
-				border-bottom: 1px solid $grey;
-				padding-bottom: .3em;
-				width:110%; margin-left:-5%;
+				border-bottom: 1px solid $grey-line;
+				height:.75em;
 			}
 
 			@media(min-width: 480px) {
@@ -84,52 +83,87 @@
 }
 
 .team-member-module {
-	padding-top: 3em;
-	padding-bottom: 3em;
+	padding-top: 1.75em;
+	@media(min-width: 480px) {
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
 }
 
 .team-member {
 	max-width: 700px;
-	margin:0 auto;
 	padding:1em 0;
 	position: relative;
+	display: table;
+	margin-left:2.5%;
+
+	@media(min-width:700px) {
+		margin:0 auto; 
+	}
+
 	.image {
-		float:left;
-		width:30%;
-		max-width: 198px;
+		width:30%; max-width: 198px;
 		margin-left:8px;
+		display: table-cell;
+		vertical-align: middle;
+
 		img {
-			width: 100%;
-			max-width:100%;
+			width: 100%; max-width:100%;
 		}
 	}
 	.member-text {
 		text-transform: uppercase;
-		float:right;
-		width:63%;
+		float: left;
+		width: 91%;
+		margin-left: 6%;
 
-		li {margin-bottom:.938rem;}
+		@media(min-width:700px) {
+			float: right;
+		}
+		
+		li {
+			margin-bottom:.5rem;
+
+			@media(min-width:480px) {
+				margin-bottom:.938rem;
+			}
+		}
 
 		.misc-text { 
 			color:$grey-text;			
 			letter-spacing: .15em;
-			font-size: .8rem;
-			margin-bottom: .75rem;
+			margin-bottom: .5rem;
+			font-size: .6rem;
+
+			@media(min-width:480px) {
+				font-size: .8rem;
+				margin-bottom: .75rem;
+			}
 			
 		}
 		.name {
-			// font-size: .938em;
-			font-size: 1rem;
+			font-size: .8rem;
 			letter-spacing: .15em;
+			line-height: 1.2rem;
+
+			@media(min-width:480px) {
+				font-size: 1rem;
+			}
 		}
 		.bio {
 			text-transform: capitalize;
 			font-family:'Times New Roman', serif;
 			line-height: 1.6em;
 			max-width: 400px; 
+			font-size: .938em;
+			line-height: 1.5em;
 		}
 		.permalink {
-			margin-top:2rem;
+			margin-top:1rem;
+
+			@media(min-width:480px) {
+				margin-top:2rem;
+			}
 
 			a {
 				font-size: .750em;

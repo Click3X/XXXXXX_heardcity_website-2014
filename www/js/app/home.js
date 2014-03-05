@@ -3,13 +3,6 @@ define(["jquery", "util/helper", "util/nav", "util/carousel", "util/request-anim
     var homeLogo = $('#logo-bg'),
     w = $(window);
 
-    // Scroll Window to top on page refresh, remove hidden class on logo
-    w.ready(function() {
-        w.scrollTop(0);
-        // Remove invisible class from main logo
-        homeLogo.removeClass('logo-invisible');
-    });
-
     $(function() {
         var docBody = $('body'),
         home = docBody.hasClass('home');
@@ -39,7 +32,7 @@ define(["jquery", "util/helper", "util/nav", "util/carousel", "util/request-anim
         
         function homeParallax() {
             var top = $(this).scrollTop(),
-            ratio = top/-1.625,
+            ratio = top/2.825,
             sRatio = -top/-6;
 
             homeLogo.css('transform', 'translateY(' + ratio + 'px)'); 
