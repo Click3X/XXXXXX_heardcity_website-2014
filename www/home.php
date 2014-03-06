@@ -151,7 +151,7 @@ include('php/project-grid.php');
 <!-- //////////////////////   GREY TEXT carousel    ////////////////////// -->
 	 <div class="container clearfix grey-theme virtual-photo">
 	 	<div class="noise"></div>
-	 	<div class="wrap">
+	 	<div class=""><!--  wrap -->
 	 		<ul id="grey-text-slider" class="owl-carousel">
 	 		<?php
 	 			
