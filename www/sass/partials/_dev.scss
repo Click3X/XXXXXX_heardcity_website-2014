@@ -10,6 +10,10 @@
 
 }
 
+.team-member-items {
+	h1 {letter-spacing: .13em;}
+}
+
 // TYPE
 .item-hover {
 	width:100%; min-width:10em;
@@ -19,9 +23,13 @@
 	margin:auto; padding:.5rem 1rem;
 	display: table;
 
-	background-color: rgba(255, 255, 255, 0.75);
+	background-color: rgba(255, 255, 255, 0.95);
 	color:black;
 	opacity: 0;
+
+	border: 1px solid rgba(0, 0, 0, 0.15);
+
+	@include prefix(box-shadow, 2px 5px 8px rgba(0, 0, 0, 0.5) );
 
 	@include prefix(transition, all 500ms);
 
@@ -30,13 +38,16 @@
 		vertical-align: middle;
 		padding-top:.5em;
 		padding-bottom: 2em;
-	}
 
-	h2 {
-		font-size: 1.6em;
-		margin-bottom: .5em;
+		p {min-width: 12em;}
+
+		h2 {
+			font-size: 1.6em;
+			letter-spacing: .13em;
+			margin-bottom: .5em; margin-top:.5em;
+			text-align: center;
+		}
 	}
-	p {min-width: 12em;}
 }
 
 

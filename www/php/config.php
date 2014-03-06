@@ -309,7 +309,7 @@ $members = array(
 			array(
 				'name' => 'Lipsticks', 
 				'bio' => 'Stick it to me?! Stick it to your mother!',
-				'image' => 'items/Peony_Rene_ipad_lipsticks2.png'
+				'image' => 'items/Peony_Rene_ipad_lipsticks.png'
 			),
 
 			array(

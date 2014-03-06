@@ -1,11 +1,24 @@
 // SIDE BAR NAV
+var sideBar = $('#side-bar-nav'),
+clickClose = $('#click-close'),
+
+openShutDroor = function() {
+	var sideNav = $('body, #side-bar-nav'),
+	value = sideNav.css('right') === '250px' ? '60px' : '250px';
+	sideNav.animate({
+		right: value
+		}, 150);
+	sideBar.toggleClass('open-nav');
+	clickClose.toggleClass('hidden');
+}
+
 $('#push, #close').click(function () {
-	var $navigacia = $('body, #side-bar-nav'),
-	val = $navigacia.css('right') === '250px' ? '60px' : '250px';
-	$navigacia.animate({
-		right: val
-		}, 300);
-	$('#side-bar-nav').toggleClass('open-nav');
+	
+	openShutDroor();
+	clickClose.click(function() {
+		openShutDroor();
+		$(this).addClass('hidden');
+	})
 });
 
 // SIDE BAR hover

@@ -35,6 +35,8 @@ a {
 
 .logo-invisible { opacity:0; }
 .hide {visibility:hidden;}
+#click-close.hidden,
+.hidden {display: none;}
 
 .wrap {
 	position: relative;

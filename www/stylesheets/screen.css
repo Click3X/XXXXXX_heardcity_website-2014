@@ -184,6 +184,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 14, ../sass/partials/_dev.scss */
+.team-member-items h1 {
+  letter-spacing: .13em;
+}
+
+/* line 18, ../sass/partials/_dev.scss */
 .item-hover {
   width: 100%;
   min-width: 10em;
@@ -195,33 +200,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: auto;
   padding: .5rem 1rem;
   display: table;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.95);
   color: black;
   opacity: 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.5);
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   -o-transition: all 500ms;
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 28, ../sass/partials/_dev.scss */
+/* line 36, ../sass/partials/_dev.scss */
 .item-hover .item-hover-inner {
   display: table-cell;
   vertical-align: middle;
   padding-top: .5em;
   padding-bottom: 2em;
 }
-/* line 35, ../sass/partials/_dev.scss */
-.item-hover h2 {
-  font-size: 1.6em;
-  margin-bottom: .5em;
-}
-/* line 39, ../sass/partials/_dev.scss */
-.item-hover p {
+/* line 42, ../sass/partials/_dev.scss */
+.item-hover .item-hover-inner p {
   min-width: 12em;
 }
+/* line 44, ../sass/partials/_dev.scss */
+.item-hover .item-hover-inner h2 {
+  font-size: 1.6em;
+  letter-spacing: .13em;
+  margin-bottom: .5em;
+  margin-top: .5em;
+  text-align: center;
+}
 
-/* line 46, ../sass/partials/_dev.scss */
+/* line 57, ../sass/partials/_dev.scss */
 .item-holder:hover .item-hover {
   opacity: 1;
   z-index: 1;
@@ -277,24 +291,30 @@ a {
 }
 
 /* line 39, ../sass/component/_base.scss */
+#click-close.hidden,
+.hidden {
+  display: none;
+}
+
+/* line 41, ../sass/component/_base.scss */
 .wrap {
   position: relative;
   max-width: 1024px;
   margin: 0 auto;
 }
 
-/* line 45, ../sass/component/_base.scss */
+/* line 47, ../sass/component/_base.scss */
 .bold {
   font-weight: 600;
 }
 
-/* line 48, ../sass/component/_base.scss */
+/* line 50, ../sass/component/_base.scss */
 .img-holder img {
   display: block;
   width: 100%;
 }
 
-/* line 54, ../sass/component/_base.scss */
+/* line 56, ../sass/component/_base.scss */
 .ab-center {
   position: absolute;
   top: 0;
@@ -304,7 +324,7 @@ a {
   margin: auto !important;
 }
 
-/* line 60, ../sass/component/_base.scss */
+/* line 62, ../sass/component/_base.scss */
 .noise {
   background-image: url("../img/build/sprites/noise.png");
   background-repeat: repeat;
@@ -316,24 +336,24 @@ a {
   left: 0;
 }
 
-/* line 71, ../sass/component/_base.scss */
+/* line 73, ../sass/component/_base.scss */
 .section-title .grey {
   border-top: 1px solid #1f1f1f;
   border-bottom: 1px solid #1f1f1f;
   color: #1f1f1f;
 }
-/* line 77, ../sass/component/_base.scss */
+/* line 79, ../sass/component/_base.scss */
 .section-title .black {
   border-top: 2px solid #1f1f1f;
   border-bottom: 2px solid #1f1f1f;
   color: #ffffff;
 }
-/* line 83, ../sass/component/_base.scss */
+/* line 85, ../sass/component/_base.scss */
 .section-title .border-holder {
   display: inline-block;
   margin: 1em auto 0;
 }
-/* line 87, ../sass/component/_base.scss */
+/* line 89, ../sass/component/_base.scss */
 .section-title .border-holder div {
   padding: .8em 1em .45em;
   line-height: 1.2em;
@@ -341,45 +361,45 @@ a {
   font-size: .938em;
 }
 @media (min-width: 480px) {
-  /* line 87, ../sass/component/_base.scss */
+  /* line 89, ../sass/component/_base.scss */
   .section-title .border-holder div {
     font-size: .9em;
   }
 }
 
-/* line 100, ../sass/component/_base.scss */
+/* line 102, ../sass/component/_base.scss */
 .hide-over {
   overflow: hidden;
 }
 
-/* line 103, ../sass/component/_base.scss */
+/* line 105, ../sass/component/_base.scss */
 .top .navLink {
   z-index: 10;
   cursor: pointer;
 }
 
-/* line 108, ../sass/component/_base.scss */
+/* line 110, ../sass/component/_base.scss */
 .desktop-hidden {
   visibility: visible;
 }
 
-/* line 109, ../sass/component/_base.scss */
+/* line 111, ../sass/component/_base.scss */
 .invisible {
   visibility: hidden;
 }
 
 @media (min-width: 480px) {
-  /* line 112, ../sass/component/_base.scss */
+  /* line 114, ../sass/component/_base.scss */
   .invisible {
     visibility: visible;
   }
 
-  /* line 113, ../sass/component/_base.scss */
+  /* line 115, ../sass/component/_base.scss */
   .desktop-hidden {
     visibility: hidden;
   }
 }
-/* line 117, ../sass/component/_base.scss */
+/* line 119, ../sass/component/_base.scss */
 .credits {
   display: inline-block;
   font-family: 'TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif';
@@ -391,13 +411,13 @@ a {
   text-align: center;
 }
 @media (min-width: 480px) {
-  /* line 117, ../sass/component/_base.scss */
+  /* line 119, ../sass/component/_base.scss */
   .credits {
     font-size: 1rem;
   }
 }
 
-/* line 133, ../sass/component/_base.scss */
+/* line 135, ../sass/component/_base.scss */
 .project-hidden {
   visibility: hidden;
   opacity: 0;
@@ -414,12 +434,12 @@ a {
   transition: all 500ms;
 }
 
-/* line 147, ../sass/component/_base.scss */
+/* line 149, ../sass/component/_base.scss */
 .section-title {
   text-align: center;
 }
 
-/* line 152, ../sass/component/_base.scss */
+/* line 154, ../sass/component/_base.scss */
 .serif {
   font-family: 'Times New Roman' serif;
   line-height: 1.5em;
@@ -671,6 +691,150 @@ body.home .new-menu-holder {
 .ourteam .main-menu-holder .main-menu .menu-ourteam a,
 .single .main-menu-holder .main-menu .menu-ourteam a {
   color: #1f1f1f;
+}
+
+/* line 4, ../sass/component/_sidebar.scss */
+#slide-menu,
+#side-bar-nav {
+  margin-right: -250px;
+  right: 60px;
+  top: 0;
+  width: 250px;
+  background: #fff;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 5;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* line 17, ../sass/component/_sidebar.scss */
+#side-bar-nav.open-nav {
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* line 21, ../sass/component/_sidebar.scss */
+.side-bar-nav {
+  height: 100%;
+  padding-bottom: 100%;
+  border-left: 1px solid silver;
+  text-align: center;
+}
+/* line 27, ../sass/component/_sidebar.scss */
+.side-bar-nav .head-icon {
+  height: 51px;
+  width: 51px;
+  margin: 4em 0 1em .3333em;
+  background-image: url("../img/build/team-members/keith-silo-small.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -o-transition: all 400ms;
+  -ms-transition: all 400ms;
+  transition: all 400ms;
+}
+/* line 36, ../sass/component/_sidebar.scss */
+.side-bar-nav .arrow-toggle {
+  display: block;
+  background-image: url("../img/build/sprites/toggle-arrow.png");
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 29px;
+  margin: 0 auto;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -o-transition: all 400ms;
+  -ms-transition: all 400ms;
+  transition: all 400ms;
+}
+/* line 45, ../sass/component/_sidebar.scss */
+.side-bar-nav .members-list {
+  font-size: .75em;
+  color: #9b9b9b;
+  display: inline-block;
+  text-align: left;
+  letter-spacing: .05em;
+}
+/* line 52, ../sass/component/_sidebar.scss */
+.side-bar-nav .members-list li {
+  line-height: 2.2em;
+  position: relative;
+}
+/* line 56, ../sass/component/_sidebar.scss */
+.side-bar-nav .members-list li:hover {
+  color: black;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+  transition: all 500ms;
+}
+/* line 63, ../sass/component/_sidebar.scss */
+.side-bar-nav .members-list li:hover:before {
+  content: url("../img/build/sprites/toggle-arrow.png");
+  position: absolute;
+  top: -12px;
+  left: -49px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 75, ../sass/component/_sidebar.scss */
+.open-nav .head-icon {
+  margin-left: 60px;
+}
+/* line 78, ../sass/component/_sidebar.scss */
+.open-nav #push .arrow-toggle {
+  display: block;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: transform 500ms;
+  -moz-transition: transform 500ms;
+  -o-transition: transform 500ms;
+  -ms-transition: transform 500ms;
+  transition: transform 500ms;
+}
+
+/* line 87, ../sass/component/_sidebar.scss */
+.hide-push {
+  visibility: 0;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+/* line 93, ../sass/component/_sidebar.scss */
+#push .arrow-toggle {
+  float: left;
+  margin-left: 19px;
+  margin-top: -2px;
+}
+
+/* line 99, ../sass/component/_sidebar.scss */
+.click-close {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 0, 0, 0.1);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* line 2, ../sass/component/_footer.scss */
@@ -3666,129 +3830,4 @@ body.home {
 .pop-up .team-member .member-text .name {
   margin-bottom: .5rem;
   font-size: 1.3em;
-}
-
-/* line 36, ../sass/pages/_single-person.scss */
-#slide-menu,
-#side-bar-nav {
-  margin-right: -250px;
-  right: 60px;
-  top: 0;
-  width: 250px;
-  background: #fff;
-  position: fixed;
-  height: 100%;
-  overflow-y: auto;
-  z-index: 5;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-}
-
-/* line 49, ../sass/pages/_single-person.scss */
-.side-bar-nav {
-  height: 100%;
-  padding-bottom: 100%;
-  border-left: 1px solid silver;
-  text-align: center;
-}
-/* line 55, ../sass/pages/_single-person.scss */
-.side-bar-nav .head-icon {
-  height: 51px;
-  width: 51px;
-  margin: 4em 0 1em .3333em;
-  background-image: url("../img/build/team-members/keith-silo-small.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 400ms;
-  -moz-transition: all 400ms;
-  -o-transition: all 400ms;
-  -ms-transition: all 400ms;
-  transition: all 400ms;
-}
-/* line 64, ../sass/pages/_single-person.scss */
-.side-bar-nav .arrow-toggle {
-  display: block;
-  background-image: url("../img/build/sprites/toggle-arrow.png");
-  background-repeat: no-repeat;
-  width: 23px;
-  height: 29px;
-  margin: 0 auto;
-  -webkit-transition: all 400ms;
-  -moz-transition: all 400ms;
-  -o-transition: all 400ms;
-  -ms-transition: all 400ms;
-  transition: all 400ms;
-}
-/* line 73, ../sass/pages/_single-person.scss */
-.side-bar-nav .members-list {
-  font-size: .75em;
-  color: #9b9b9b;
-  display: inline-block;
-  text-align: left;
-}
-/* line 79, ../sass/pages/_single-person.scss */
-.side-bar-nav .members-list li {
-  line-height: 2.2em;
-  position: relative;
-}
-/* line 83, ../sass/pages/_single-person.scss */
-.side-bar-nav .members-list li:hover {
-  color: black;
-  -webkit-transition: all 500ms;
-  -moz-transition: all 500ms;
-  -o-transition: all 500ms;
-  -ms-transition: all 500ms;
-  transition: all 500ms;
-}
-/* line 90, ../sass/pages/_single-person.scss */
-.side-bar-nav .members-list li:hover:before {
-  content: url("../img/build/sprites/toggle-arrow.png");
-  position: absolute;
-  top: -12px;
-  left: -49px;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-/* line 102, ../sass/pages/_single-person.scss */
-.open-nav .head-icon {
-  margin-left: 60px;
-}
-/* line 105, ../sass/pages/_single-person.scss */
-.open-nav #push .arrow-toggle {
-  display: block;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-  -webkit-transition: all 500ms;
-  -moz-transition: all 500ms;
-  -o-transition: all 500ms;
-  -ms-transition: all 500ms;
-  transition: all 500ms;
-}
-
-/* line 115, ../sass/pages/_single-person.scss */
-.hide-push {
-  visibility: 0;
-  opacity: 0;
-  -webkit-transition: all 500ms;
-  -moz-transition: all 500ms;
-  -o-transition: all 500ms;
-  -ms-transition: all 500ms;
-  transition: all 500ms;
-}
-
-/* line 121, ../sass/pages/_single-person.scss */
-#push .arrow-toggle {
-  float: left;
-  margin-left: 19px;
-  margin-top: -2px;
 }

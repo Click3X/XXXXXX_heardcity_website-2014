@@ -1,0 +1,107 @@
+// Side Bar Nav
+
+#slide-menu,
+#side-bar-nav {
+    margin-right: -250px;
+    right: 60px; top:0;
+    width: 250px;
+    background: #fff;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 5;
+
+    @include prefix(transform, translateZ(0));
+}
+
+#side-bar-nav.open-nav {
+	box-shadow: -2px 0px 5px rgba(0,0,0,0.2);
+}
+
+.side-bar-nav {
+	height: 100%;
+	padding-bottom:100%;
+	border-left: 1px solid silver;
+	text-align: center;
+
+	.head-icon {
+		height:51px; width:51px;
+		margin: 4em 0 1em .3333em;
+		background-image: url('../img/build/team-members/keith-silo-small.png');
+		background-repeat:no-repeat;
+		background-size:contain;
+		@include prefix(transition, all 400ms);
+	}
+
+	.arrow-toggle {
+		display: block;
+		background-image: url('../img/build/sprites/toggle-arrow.png');
+		background-repeat:no-repeat;
+		width:23px; height:29px;
+		margin:0 auto;
+		@include prefix(transition, all 400ms);
+	}
+
+	.members-list {
+		font-size: .75em;
+		color:$menu-grey;
+		display: inline-block;
+		text-align: left;
+		letter-spacing: .05em;
+
+		li {
+			line-height: 2.2em;
+			position: relative;
+
+			&:hover {
+				color:black;
+
+				@include prefix(transition, all 500ms);
+
+			}
+
+			&:hover:before {
+				content: url('../img/build/sprites/toggle-arrow.png');
+				position: absolute;
+				top: -12px; left: -49px;
+
+			    @include prefix(transform, rotate(180deg));
+			}
+		}
+	}
+}
+
+.open-nav {	
+	.head-icon { margin-left: 60px; }
+
+	#push {
+		.arrow-toggle {
+			display: block;
+			
+			@include prefix(transform, rotate(180deg));
+		    @include prefix(transition, transform 500ms);
+		}
+	}
+}
+
+.hide-push {
+	visibility: 0; opacity: 0;
+	
+	@include prefix(transition, opacity 500ms);
+}
+
+#push .arrow-toggle {
+    float:left;
+    margin-left: 19px;
+    margin-top: -2px;
+}
+
+.click-close {
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(255, 0, 0, 0.1);
+	cursor: pointer;
+	text-decoration: none;
+}
