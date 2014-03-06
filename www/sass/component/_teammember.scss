@@ -33,13 +33,15 @@
 				content: '';
 				display: block;
 				border-top: 1px solid $black;
-				height:.85em;
+				// height:.85em;
+				height:14px;
 			}
 			&:after {
 				content: '';
 				display: block;
 				border-bottom: 1px solid $black;
-				height:.6em !important;
+				// height:.6em !important;
+				height:10px;
 			}
 
 			@media(min-width: 480px) {
@@ -66,13 +68,15 @@
 				content: '';
 				display: block;
 				border-top: 1px solid $grey-line;
-				height:.85em;
+				// height:.85em;
+				height:14px;
 			}
 			&:after {
 				content: '';
 				display: block;
 				border-bottom: 1px solid $grey-line;
-				height:.75em;
+				// height:.75em;
+				height:10px;
 			}
 
 			@media(min-width: 480px) {

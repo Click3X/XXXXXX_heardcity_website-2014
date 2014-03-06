@@ -14,14 +14,14 @@ include('php/project-grid.php');
 	<div id="first-container" class="container clearfix black-theme">
 		<div class="noise"></div>
 		<div> <!-- class="wrap" -->
-			<ul id="black-text-slider" class="text-slider owl-carousel">
+			<ul id="black-text-slider" class="text-slider owl-carousel black-grad">
 
 				<?php
 	 			foreach ($text_carousel_black as $headline) { ?>
-	 			<li>
+	 			<li class="">
 					<div class="inner-slide">
 						<div class="slide-text">
-							<?php echo $headline; ?>
+							<p><?php echo $headline; ?></p>
 						</div>
 					</div>
 				</li>

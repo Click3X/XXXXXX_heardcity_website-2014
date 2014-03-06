@@ -16,6 +16,12 @@ body.home {
 	z-index: 1;
 }
 
+.slide-text p {
+	max-width: 20em;
+	line-height: 1.4em;
+	font-size: .938em;
+}
+
 
 #home-slider > div.owl-controls.clickable > div.owl-buttons > div.owl-prev {
 	z-index:10;
@@ -262,7 +268,6 @@ body.home {
 	height: 200px;
 	display: table;
 	width:100%;
-	// padding: 1em 0;
 	
 	.just-text-child {
 		max-width: 30em; width:75%;
@@ -274,7 +279,7 @@ body.home {
 			max-width: 30em; width:85%;
 			margin:0 auto;
 			border-top: 1px solid $black;
-			height:1em;
+			height:14px;
 		}
 
 		&:after {
@@ -282,7 +287,7 @@ body.home {
 			max-width: 30em; width:85%;
 			margin:0 auto;
 			border-bottom: 1px solid $black;
-			height:.85em;
+			height:10px;
 		}
 	}
 	.text-headline {
@@ -521,4 +526,5 @@ body.home {
 
 #first-container {
 	z-index: 1;
+	overflow: hidden;
 }

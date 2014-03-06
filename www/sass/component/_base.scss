@@ -100,6 +100,10 @@ a {
 .hide-over {
 	overflow: hidden;
 }
+.top .navLink {
+	z-index: 10;
+	cursor: pointer;
+}
 
 .desktop-hidden {visibility: visible;}
 .invisible {visibility: hidden;}

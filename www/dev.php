@@ -1,16 +1,22 @@
 <?php // Contact
-$page='Our Team';
+$page='Home';
 include('php/header.php'); 
-
-$words = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus imperdiet est sed auctor. Nulla libero lorem, gravida at malesuada dolorum ensu quis, iaculis sed elit.';
-$testArray = split(' ', $words);
-
-
 ?>
-<div class="clearfix" style="background-color:grey; color:red;">
-<h1>Responsive Images Scripts</h1>
-<?php include('php/responsive-directory.php'); ?>
 
+<!-- Home Page Slider -->
+<div id="dev-slider-holder" class="container clearfix">
+    <div id="logo-bg" class="logo-bg"></div> <!-- logo-invisible -->
+    <ul id="dev-home-slider" class="dev-home-slider owl-carousel">
+        <?php 
+            foreach ($marquee as $marq_img) {
+                $id = formatId($marq_img);
+                echo '<li id="'.$id.'" class="slide"></li>';
+            }
+        ?>
+        
+    </ul>
 </div>
+
+        
 
 <?php include('php/footer.php'); ?>
