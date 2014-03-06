@@ -177,18 +177,54 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: -12% auto auto -10%;
 }
 
-/* line 6, ../sass/partials/_dev.scss */
+/* line 5, ../sass/partials/_dev.scss */
+#member-bio .team-member {
+  width: 100%;
+  max-width: 1024px;
+}
+/* line 10, ../sass/partials/_dev.scss */
+#member-bio .image {
+  width: 20%;
+}
+/* line 12, ../sass/partials/_dev.scss */
+#member-bio .member-text {
+  width: 74%;
+  margin-left: 2%;
+}
+@media (min-width: 480px) {
+  /* line 18, ../sass/partials/_dev.scss */
+  #member-bio .image {
+    width: 30%;
+  }
+  /* line 20, ../sass/partials/_dev.scss */
+  #member-bio .member-text {
+    float: left;
+    margin-left: 0;
+  }
+  /* line 25, ../sass/partials/_dev.scss */
+  #member-bio .bio {
+    max-width: none;
+    font-size: 1em;
+    line-height: 1.6em;
+  }
+  /* line 31, ../sass/partials/_dev.scss */
+  #member-bio .name {
+    font-size: 1.4rem;
+  }
+}
+
+/* line 38, ../sass/partials/_dev.scss */
 .item-list .item-holder {
   position: relative;
   display: inline-block;
 }
 
-/* line 14, ../sass/partials/_dev.scss */
+/* line 44, ../sass/partials/_dev.scss */
 .team-member-items h1 {
   letter-spacing: .13em;
 }
 
-/* line 18, ../sass/partials/_dev.scss */
+/* line 48, ../sass/partials/_dev.scss */
 .item-hover {
   width: 100%;
   min-width: 10em;
@@ -215,18 +251,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 36, ../sass/partials/_dev.scss */
+/* line 66, ../sass/partials/_dev.scss */
 .item-hover .item-hover-inner {
   display: table-cell;
   vertical-align: middle;
   padding-top: .5em;
   padding-bottom: 2em;
 }
-/* line 42, ../sass/partials/_dev.scss */
-.item-hover .item-hover-inner p {
-  min-width: 12em;
-}
-/* line 44, ../sass/partials/_dev.scss */
+/* line 72, ../sass/partials/_dev.scss */
 .item-hover .item-hover-inner h2 {
   font-size: 1.6em;
   letter-spacing: .13em;
@@ -234,8 +266,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-top: .5em;
   text-align: center;
 }
+/* line 79, ../sass/partials/_dev.scss */
+.item-hover .item-hover-inner p {
+  min-width: 12em;
+  margin-bottom: .25em;
+  line-height: 1.4em;
+}
+/* line 85, ../sass/partials/_dev.scss */
+.item-hover .item-hover-inner .view-profile {
+  display: inline-block;
+  font-size: .7em;
+  margin: .25em 0;
+  color: #989899;
+  letter-spacing: .1em;
+  line-height: 1.4em;
+}
+/* line 93, ../sass/partials/_dev.scss */
+.item-hover .item-hover-inner .view-profile:hover {
+  color: #c84938;
+}
 
-/* line 57, ../sass/partials/_dev.scss */
+/* line 104, ../sass/partials/_dev.scss */
 .item-holder:hover .item-hover {
   opacity: 1;
   z-index: 1;
@@ -827,7 +878,7 @@ body.home .new-menu-holder {
 /* line 99, ../sass/component/_sidebar.scss */
 .click-close {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -835,6 +886,12 @@ body.home .new-menu-holder {
   background: rgba(255, 0, 0, 0.1);
   cursor: pointer;
   text-decoration: none;
+}
+
+/* line 111, ../sass/component/_sidebar.scss */
+#members-list li:first-child {
+  font-size: 1.25em;
+  color: #000;
 }
 
 /* line 2, ../sass/component/_footer.scss */
@@ -2214,12 +2271,12 @@ body.home .new-menu-holder {
     height: 280px;
   }
 }
-/* line 4, ../sass/component/_teammember.scss */
+/* line 3, ../sass/component/_teammember.scss */
 .section-title div {
   line-height: 1.4em;
 }
 
-/* line 7, ../sass/component/_teammember.scss */
+/* line 5, ../sass/component/_teammember.scss */
 .grey-theme {
   background: #d2d2d2;
   /* Old browsers */
@@ -2240,31 +2297,31 @@ body.home .new-menu-holder {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d2d2d2', endColorstr='#d2d2d2',GradientType=0 );
   /* IE6-8 */
 }
-/* line 19, ../sass/component/_teammember.scss */
+/* line 17, ../sass/component/_teammember.scss */
 .grey-theme .section-title {
   margin-bottom: 1em;
   letter-spacing: .15em;
 }
-/* line 23, ../sass/component/_teammember.scss */
+/* line 21, ../sass/component/_teammember.scss */
 .grey-theme .section-title div {
   display: inline-block;
   font-size: .825rem;
   position: relative;
 }
 @media (min-width: 480px) {
-  /* line 23, ../sass/component/_teammember.scss */
+  /* line 21, ../sass/component/_teammember.scss */
   .grey-theme .section-title div {
     font-size: .825rem;
   }
 }
-/* line 32, ../sass/component/_teammember.scss */
+/* line 28, ../sass/component/_teammember.scss */
 .grey-theme .section-title div:before {
   content: '';
   display: block;
   border-top: 1px solid #1f1f1f;
   height: 14px;
 }
-/* line 39, ../sass/component/_teammember.scss */
+/* line 33, ../sass/component/_teammember.scss */
 .grey-theme .section-title div:after {
   content: '';
   display: block;
@@ -2272,36 +2329,36 @@ body.home .new-menu-holder {
   height: 10px;
 }
 @media (min-width: 480px) {
-  /* line 23, ../sass/component/_teammember.scss */
+  /* line 21, ../sass/component/_teammember.scss */
   .grey-theme .section-title div {
     font-size: 1.125rem;
   }
 }
 
-/* line 54, ../sass/component/_teammember.scss */
+/* line 44, ../sass/component/_teammember.scss */
 .black-theme {
   background-color: #1f1f1f;
   color: #edeef1;
 }
-/* line 58, ../sass/component/_teammember.scss */
+/* line 48, ../sass/component/_teammember.scss */
 .black-theme .section-title {
   margin-bottom: 1em;
   letter-spacing: .15em;
 }
-/* line 62, ../sass/component/_teammember.scss */
+/* line 52, ../sass/component/_teammember.scss */
 .black-theme .section-title div {
   display: inline-block;
   font-size: .938em;
   position: relative;
 }
-/* line 67, ../sass/component/_teammember.scss */
+/* line 57, ../sass/component/_teammember.scss */
 .black-theme .section-title div:before {
   content: '';
   display: block;
   border-top: 1px solid #404040;
   height: 14px;
 }
-/* line 74, ../sass/component/_teammember.scss */
+/* line 62, ../sass/component/_teammember.scss */
 .black-theme .section-title div:after {
   content: '';
   display: block;
@@ -2309,25 +2366,25 @@ body.home .new-menu-holder {
   height: 10px;
 }
 @media (min-width: 480px) {
-  /* line 62, ../sass/component/_teammember.scss */
+  /* line 52, ../sass/component/_teammember.scss */
   .black-theme .section-title div {
     font-size: 1.125rem;
   }
 }
 
-/* line 89, ../sass/component/_teammember.scss */
+/* line 73, ../sass/component/_teammember.scss */
 .team-member-module {
   padding-top: 1.75em;
 }
 @media (min-width: 480px) {
-  /* line 89, ../sass/component/_teammember.scss */
+  /* line 73, ../sass/component/_teammember.scss */
   .team-member-module {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
 
-/* line 97, ../sass/component/_teammember.scss */
+/* line 82, ../sass/component/_teammember.scss */
 .team-member {
   max-width: 700px;
   padding: 1em 0;
@@ -2336,25 +2393,32 @@ body.home .new-menu-holder {
   margin-left: 2.5%;
 }
 @media (min-width: 700px) {
-  /* line 97, ../sass/component/_teammember.scss */
+  /* line 82, ../sass/component/_teammember.scss */
   .team-member {
     margin: 0 auto;
   }
 }
-/* line 108, ../sass/component/_teammember.scss */
+/* line 91, ../sass/component/_teammember.scss */
 .team-member .image {
   width: 30%;
   max-width: 198px;
   margin-left: 8px;
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
 }
-/* line 114, ../sass/component/_teammember.scss */
+/* line 98, ../sass/component/_teammember.scss */
 .team-member .image img {
   width: 100%;
   max-width: 100%;
 }
-/* line 118, ../sass/component/_teammember.scss */
+@media (min-width: 480px) {
+  /* line 98, ../sass/component/_teammember.scss */
+  .team-member .image img {
+    width: auto;
+  }
+}
+/* line 105, ../sass/component/_teammember.scss */
 .team-member .member-text {
   text-transform: uppercase;
   float: left;
@@ -2362,22 +2426,22 @@ body.home .new-menu-holder {
   margin-left: 6%;
 }
 @media (min-width: 700px) {
-  /* line 118, ../sass/component/_teammember.scss */
+  /* line 105, ../sass/component/_teammember.scss */
   .team-member .member-text {
     float: right;
   }
 }
-/* line 128, ../sass/component/_teammember.scss */
+/* line 115, ../sass/component/_teammember.scss */
 .team-member .member-text li {
   margin-bottom: .5rem;
 }
 @media (min-width: 480px) {
-  /* line 128, ../sass/component/_teammember.scss */
+  /* line 115, ../sass/component/_teammember.scss */
   .team-member .member-text li {
     margin-bottom: .938rem;
   }
 }
-/* line 136, ../sass/component/_teammember.scss */
+/* line 121, ../sass/component/_teammember.scss */
 .team-member .member-text .misc-text {
   color: #989899;
   letter-spacing: .15em;
@@ -2385,25 +2449,25 @@ body.home .new-menu-holder {
   font-size: .6rem;
 }
 @media (min-width: 480px) {
-  /* line 136, ../sass/component/_teammember.scss */
+  /* line 121, ../sass/component/_teammember.scss */
   .team-member .member-text .misc-text {
     font-size: .8rem;
     margin-bottom: .75rem;
   }
 }
-/* line 148, ../sass/component/_teammember.scss */
+/* line 133, ../sass/component/_teammember.scss */
 .team-member .member-text .name {
   font-size: .8rem;
   letter-spacing: .15em;
   line-height: 1.2rem;
 }
 @media (min-width: 480px) {
-  /* line 148, ../sass/component/_teammember.scss */
+  /* line 133, ../sass/component/_teammember.scss */
   .team-member .member-text .name {
     font-size: 1rem;
   }
 }
-/* line 157, ../sass/component/_teammember.scss */
+/* line 141, ../sass/component/_teammember.scss */
 .team-member .member-text .bio {
   text-transform: capitalize;
   font-family: 'Times New Roman', serif;
@@ -2412,24 +2476,24 @@ body.home .new-menu-holder {
   font-size: .938em;
   line-height: 1.5em;
 }
-/* line 165, ../sass/component/_teammember.scss */
+/* line 149, ../sass/component/_teammember.scss */
 .team-member .member-text .permalink {
   margin-top: 1rem;
 }
 @media (min-width: 480px) {
-  /* line 165, ../sass/component/_teammember.scss */
+  /* line 149, ../sass/component/_teammember.scss */
   .team-member .member-text .permalink {
     margin-top: 2rem;
   }
 }
-/* line 172, ../sass/component/_teammember.scss */
+/* line 154, ../sass/component/_teammember.scss */
 .team-member .member-text .permalink a {
   font-size: .750em;
   color: #1f1f1f;
   position: relative;
   margin-left: 0.875rem;
 }
-/* line 178, ../sass/component/_teammember.scss */
+/* line 160, ../sass/component/_teammember.scss */
 .team-member .member-text .permalink a:before {
   content: '';
   display: block;
@@ -2443,7 +2507,7 @@ body.home .new-menu-holder {
   height: 13px;
 }
 
-/* line 196, ../sass/component/_teammember.scss */
+/* line 178, ../sass/component/_teammember.scss */
 .arrow {
   width: 30px;
   height: 30px;
@@ -2452,7 +2516,7 @@ body.home .new-menu-holder {
   top: 50%;
 }
 
-/* line 202, ../sass/component/_teammember.scss */
+/* line 184, ../sass/component/_teammember.scss */
 .grey-arrow-left {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -2464,7 +2528,7 @@ body.home .new-menu-holder {
   background-size: contain;
 }
 
-/* line 210, ../sass/component/_teammember.scss */
+/* line 192, ../sass/component/_teammember.scss */
 .grey-arrow-right {
   right: .5em;
   background-image: url(../img/build/sprites/grey-right.png);
@@ -2472,7 +2536,7 @@ body.home .new-menu-holder {
 }
 
 @media (min-width: 480px) {
-  /* line 218, ../sass/component/_teammember.scss */
+  /* line 200, ../sass/component/_teammember.scss */
   .member-text {
     margin-top: 2em;
   }
@@ -3659,7 +3723,13 @@ body.home {
   background: #ffffff;
 }
 
-/* line 6, ../sass/pages/_ourteam.scss */
+/* line 5, ../sass/pages/_ourteam.scss */
+.ourteam {
+  color: #000;
+  background-color: #fff;
+}
+
+/* line 11, ../sass/pages/_ourteam.scss */
 .items-holder .items {
   background-size: contain;
   background-repeat: no-repeat;
@@ -3668,12 +3738,12 @@ body.home {
   margin: 0 auto;
 }
 @media (min-width: 1024px) {
-  /* line 6, ../sass/pages/_ourteam.scss */
+  /* line 11, ../sass/pages/_ourteam.scss */
   .items-holder .items {
     padding-bottom: 927px;
   }
 }
-/* line 15, ../sass/pages/_ourteam.scss */
+/* line 20, ../sass/pages/_ourteam.scss */
 .items-holder .items .wallet {
   display: block;
   position: absolute;
@@ -3687,12 +3757,12 @@ body.home {
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 25, ../sass/pages/_ourteam.scss */
+/* line 30, ../sass/pages/_ourteam.scss */
 .items-holder .items .wallet:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* line 32, ../sass/pages/_ourteam.scss */
+/* line 37, ../sass/pages/_ourteam.scss */
 .show-hover {
   opacity: 1 !important;
   -webkit-transition: all 500ms;
@@ -3702,7 +3772,7 @@ body.home {
   transition: all 500ms;
 }
 
-/* line 37, ../sass/pages/_ourteam.scss */
+/* line 42, ../sass/pages/_ourteam.scss */
 .hover-bubble {
   width: 50%;
   min-width: 280px;
@@ -3719,14 +3789,14 @@ body.home {
   font-size: 75%;
 }
 @media (min-width: 768px) {
-  /* line 37, ../sass/pages/_ourteam.scss */
+  /* line 42, ../sass/pages/_ourteam.scss */
   .hover-bubble {
     font-size: 100%;
     top: 3.5%;
     left: 13%;
   }
 }
-/* line 53, ../sass/pages/_ourteam.scss */
+/* line 58, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up {
   border: 1px solid #989899;
   -webkit-box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.75);
@@ -3735,7 +3805,7 @@ body.home {
   -ms-box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.75);
 }
-/* line 58, ../sass/pages/_ourteam.scss */
+/* line 63, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up:after {
   content: '';
   display: block;
@@ -3760,37 +3830,37 @@ body.home {
   0pxbox-shadow: -8px 8px 12px 0px rgba(50, 50, 50, 0.75);
   rgba(50, 50, 50, 0.75)box-shadow: -8px 8px 12px 0px rgba(50, 50, 50, 0.75);
 }
-/* line 74, ../sass/pages/_ourteam.scss */
+/* line 79, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up .team-member {
   position: relative;
   z-index: 1;
 }
-/* line 78, ../sass/pages/_ourteam.scss */
+/* line 83, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up .team-member .image {
   width: 20%;
   max-width: 102px;
 }
-/* line 83, ../sass/pages/_ourteam.scss */
+/* line 88, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up .team-member .member-text {
   width: 75%;
 }
-/* line 86, ../sass/pages/_ourteam.scss */
+/* line 91, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up .team-member .member-text li {
   margin-bottom: .25em;
 }
-/* line 88, ../sass/pages/_ourteam.scss */
+/* line 93, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up .team-member .member-text .misc-text {
   color: #1f1f1f;
 }
-/* line 89, ../sass/pages/_ourteam.scss */
+/* line 94, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up .team-member .member-text .bio {
   letter-spacing: .05em;
 }
-/* line 90, ../sass/pages/_ourteam.scss */
+/* line 95, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up .team-member .member-text .permalink {
   margin-top: 1em;
 }
-/* line 92, ../sass/pages/_ourteam.scss */
+/* line 97, ../sass/pages/_ourteam.scss */
 .hover-bubble .pop-up .team-member .member-text .permalink a {
   font-weight: 100;
   letter-spacing: .05em;

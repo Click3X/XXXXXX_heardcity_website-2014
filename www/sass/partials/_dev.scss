@@ -1,14 +1,44 @@
 // DEV 
 
-// LAYOUT
-.item-list {
+// Silo and Member bio
+#member-bio {
+	.team-member {
+		width:100%;
+		max-width: 1024px;
+	}
 
-	.item-holder {
+	.image {width: 20%;}
+
+	.member-text {
+		width: 74%;
+		margin-left: 2%;
+	}
+
+	@media(min-width:480px) {
+		.image {width: 30%;}
+
+		.member-text {
+			float:left;
+			margin-left:0;
+		}
+
+		.bio {
+			max-width:none;
+			font-size: 1em;
+			line-height: 1.6em;
+		}
+
+		.name {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+// LAYOUT
+.item-list .item-holder {
 		position: relative;
 		display: inline-block;
 	}
-
-}
 
 .team-member-items {
 	h1 {letter-spacing: .13em;}
@@ -39,13 +69,30 @@
 		padding-top:.5em;
 		padding-bottom: 2em;
 
-		p {min-width: 12em;}
-
 		h2 {
 			font-size: 1.6em;
 			letter-spacing: .13em;
 			margin-bottom: .5em; margin-top:.5em;
 			text-align: center;
+		}
+
+		p {
+			min-width: 12em;
+			margin-bottom:.25em;
+			line-height: 1.4em;
+		}
+
+		.view-profile {
+			display: inline-block;
+			font-size: .7em;
+			margin:.25em 0;
+			color:$grey-text;
+			letter-spacing: .1em;
+			line-height: 1.4em;
+
+			&:hover {
+				color:$red;
+			}
 		}
 	}
 }

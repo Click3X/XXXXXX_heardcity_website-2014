@@ -12,6 +12,9 @@ include('php/header.php');
 			if( count($member['items']) > 1 ) {
 				$member_name = $member['name'];
 				$member_class = formatLink($member_name);
+				$sex = $member["sex"];
+				$possesive = explode(' ', $member_name);
+				$possesive = $possesive[0]."'s";
 
 				echo '<div class="team-member-items '.$member_class.'">';
 					echo '<h1 style="text-align:center; font-size:2.5em; padding:1em 0;">'.$member_name.'</h1>';
@@ -27,13 +30,20 @@ include('php/header.php');
 						if($item['bio']) {$bio = $item['bio'];}
 
 						echo '<li class="item-holder '.$item_class.'">';
-							echo '<img src="'.$image.'" alt="'.$name.'">';
+							
+							echo '<a href="#" data-person="'.$member_class.'" data-item="'.$item_class.'">';
+								echo '<img src="'.$image.'" alt="'.$name.'">';
+							echo '</a>';
+
+							// Item hover
 							echo '<div class="item-hover">';
 								echo '<div class="item-hover-inner">';
 									echo '<h2>'.$name.'</h2>';
 									echo '<p class="serif">'.$bio.'</p>';
+									echo '<a href="#" data-person="'.$member_class.'" data-item="'.$item_class.'" class="view-profile"> &gt; View more of '.$possesive.' items...</a>';
 								echo '</div>';
 							echo '</div>';
+
 						echo '</li>';
 					}
 					echo '</ul>';

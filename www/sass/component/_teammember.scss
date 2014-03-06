@@ -1,8 +1,6 @@
 // TEAM MEMBER MODULE
 
-.section-title {
-	div {line-height: 1.4em;}
-}
+.section-title div { line-height: 1.4em; }
 
 .grey-theme {
 	background: rgb(210,210,210); /* Old browsers */
@@ -25,28 +23,20 @@
 			font-size: .825rem;
 			position: relative;
 
-			@media(min-width:480px) {
-				font-size: .825rem;
-			}
+			@media(min-width:480px) { font-size: .825rem; }
 
 			&:before {
-				content: '';
-				display: block;
+				content: ''; display: block;
 				border-top: 1px solid $black;
-				// height:.85em;
 				height:14px;
 			}
 			&:after {
-				content: '';
-				display: block;
+				content: ''; display: block;
 				border-bottom: 1px solid $black;
-				// height:.6em !important;
 				height:10px;
 			}
 
-			@media(min-width: 480px) {
-				font-size: 1.125rem;
-			}
+			@media(min-width: 480px) { font-size: 1.125rem; }
 		}
 	}
 }
@@ -65,29 +55,24 @@
 			position: relative;
 
 			&:before {
-				content: '';
-				display: block;
+				content: ''; display: block;
 				border-top: 1px solid $grey-line;
-				// height:.85em;
 				height:14px;
 			}
 			&:after {
-				content: '';
-				display: block;
+				content: ''; display: block;
 				border-bottom: 1px solid $grey-line;
-				// height:.75em;
 				height:10px;
 			}
 
-			@media(min-width: 480px) {
-				font-size:1.125rem;
-			}
+			@media(min-width: 480px) { font-size:1.125rem; }
 		}
 	}
 }
 
 .team-member-module {
 	padding-top: 1.75em;
+
 	@media(min-width: 480px) {
 		padding-top: 3em;
 		padding-bottom: 3em;
@@ -101,18 +86,20 @@
 	display: table;
 	margin-left:2.5%;
 
-	@media(min-width:700px) {
-		margin:0 auto; 
-	}
+	@media(min-width:700px) { margin:0 auto; }
 
 	.image {
 		width:30%; max-width: 198px;
 		margin-left:8px;
 		display: table-cell;
 		vertical-align: middle;
+		text-align: center;
 
 		img {
-			width: 100%; max-width:100%;
+			width: 100%; 
+			max-width:100%;
+
+			@media(min-width: 480px) { width:auto; }
 		}
 	}
 	.member-text {
@@ -128,9 +115,7 @@
 		li {
 			margin-bottom:.5rem;
 
-			@media(min-width:480px) {
-				margin-bottom:.938rem;
-			}
+			@media(min-width:480px) { margin-bottom:.938rem; }
 		}
 
 		.misc-text { 
@@ -150,10 +135,9 @@
 			letter-spacing: .15em;
 			line-height: 1.2rem;
 
-			@media(min-width:480px) {
-				font-size: 1rem;
-			}
+			@media(min-width:480px) { font-size: 1rem; }
 		}
+
 		.bio {
 			text-transform: capitalize;
 			font-family:'Times New Roman', serif;
@@ -165,9 +149,7 @@
 		.permalink {
 			margin-top:1rem;
 
-			@media(min-width:480px) {
-				margin-top:2rem;
-			}
+			@media(min-width:480px) { margin-top:2rem; }
 
 			a {
 				font-size: .750em;
@@ -215,8 +197,5 @@
 
 
 @media(min-width:480px) {
-	.member-text {
-		// margin-top:2.25em;
-		margin-top: 2em;
-	}
+	.member-text { margin-top: 2em; }
 }

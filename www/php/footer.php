@@ -27,6 +27,12 @@
 			console.log("This is the projectJSON array: " + projectJSON);
 		</script>
 	-->
+	<?php if($page == 'Our Team') { ?>
+		<script type="text/javascript">
+			// JSON for OUR TEAM page
+			var jsonMembers = <?php echo json_encode($jsonMembers); ?>;
+		</script>
+	<?php } ?>
 
     </body>
 </html>

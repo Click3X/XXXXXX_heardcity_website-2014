@@ -5,10 +5,12 @@
 		<div id="push"><a href="#" class="arrow-toggle"></a></div>
 
 		<ul id="members-list" class="members-list">
-			<li>Our Team</li>
+			<li><a href="#" id="all-members" class="all-members">Our Team</a></li>
 			<?php 
 				foreach ($members as $key => $member) {
-					echo '<li><a href="#">'.$member['name'].'</a></li>';
+					$member_name = $member['name'];
+					$member_class = formatLink($member_name);
+					echo '<li><a href="#" data-person="'.$member_class.'" class="sidebar-link">'.$member_name .'</a></li>';
 				}
 			?>
 		</ul>
