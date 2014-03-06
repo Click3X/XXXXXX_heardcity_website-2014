@@ -1,0 +1,50 @@
+// DEV 
+
+// LAYOUT
+.item-list {
+
+	.item-holder {
+		position: relative;
+		display: inline-block;
+	}
+
+}
+
+// TYPE
+.item-hover {
+	width:100%; min-width:10em;
+
+	position: absolute;
+	top:0; left:0; right:0; bottom:0;
+	margin:auto; padding:.5rem 1rem;
+	display: table;
+
+	background-color: rgba(255, 255, 255, 0.75);
+	color:black;
+	opacity: 0;
+
+	@include prefix(transition, all 500ms);
+
+	.item-hover-inner {
+		display: table-cell;
+		vertical-align: middle;
+		padding-top:.5em;
+		padding-bottom: 2em;
+	}
+
+	h2 {
+		font-size: 1.6em;
+		margin-bottom: .5em;
+	}
+	p {min-width: 12em;}
+}
+
+
+// EFFECTS
+
+.item-holder:hover {
+	.item-hover {
+		opacity: 1;
+		z-index: 1;
+	}
+}

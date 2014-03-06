@@ -55,6 +55,10 @@ function readDirectory($vidDir, $videos) {
     }
 }
 
+// Helper with PRINT R
+function helper($array) {
+	echo '<pre>'.print_r($array).'</pre>';
+}
 
 // Only get the first 26 words of Bio for short form
 function firstBit($sentence) {

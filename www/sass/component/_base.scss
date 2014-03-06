@@ -142,3 +142,14 @@ a {
   	
 	@include prefix(transition, all 500ms);
 }
+
+// Typography
+.section-title {
+	// font-size: 1.250em;
+	text-align: center;
+}
+
+.serif {
+	font-family: 'Times New Roman' serif;
+	line-height: 1.5em;
+}

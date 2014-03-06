@@ -28,7 +28,10 @@
 
 @import "partials/layout";
 
-@import "partials/typography";
+@import "partials/gradients";
+
+// dev testing
+@import "partials/dev";
 
 
 // COMPONENT styles
@@ -45,8 +48,6 @@
 
 @import "component/teammember";
 
-@import "component/projects-video";
-
 
 // PAGE specific SASS FILES
 
@@ -54,7 +55,7 @@
 
 @import "pages/contact";
 
-// @import "pages/projects";
+@import "pages/projects-video";
 
 @import "pages/ourteam";
 
@@ -66,6 +67,3 @@
 @import "vendor/carousel/owl.carousel.css";
 
 @import "vendor/carousel/owl.theme.css";
-
-// @import "vendor/carousel/owl.transitions.css";
-
