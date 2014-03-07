@@ -1,4 +1,4 @@
-define(["jquery", "util/helper", "util/nav", "util/side-bar"], function($) {
+define(["jquery", "util/helper", "util/nav", "util/side-bar", "util/team-members-json"], function($) {
 
     // Add helper button
     $(function() {

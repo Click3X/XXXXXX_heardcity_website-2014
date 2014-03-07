@@ -71,13 +71,15 @@ include('php/header.php');
                         $item_class= formatLink($name);
                     }
 
-                include('php/item-holder.php');
+                // include('php/item-holder.php');
 
 			}
 		}
 		echo '</ul>';		
 	echo '</div>';
 	?>
+
+</div>
 
 	<?php include('php/sidebar.php'); ?>
 

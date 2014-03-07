@@ -9,7 +9,8 @@ requirejs.config({
    "shim": {
       "util/helper": ["jquery"],
       "util/nav": ["jquery"],
-      "util/side-bar": ["jquery"]
+      "util/side-bar": ["jquery"],
+      "util/team-members-json": ["jquery"]
     }
 });
 
