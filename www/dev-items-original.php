@@ -49,30 +49,40 @@ include('php/header.php');
 			$jsonMembers[$key]['member_class'] = $member_class;
 				
 			foreach ($items as $key => $item) {
-                    if($item['image']) {
-                        $image = $item['image'];
-                        $info = pathinfo($image);
-                        // helper($info);
-                        $usemap = $info['filename'];
-                    }
-                    if($item['bio']) {
-                        $bio = $item['bio'];
-                    }
-                    if(isset($item['map'])) {
-                        $map = $item['map'];
-                    }
-                    if(isset($item['coords'])) {
-                        $coords = $item['coords'];
-                    } else { 
-                        $coords = ''; 
-                    }
-                    if($item['name']) {
-                        $name = $item['name'];
-                        $item_class= formatLink($name);
-                    }
+				if($item['image']) {
+					$image = $item['image'];
+					$info = pathinfo($image);
+					// helper($info);
+					$usemap = $info['filename'];
+				}
+				if($item['name']) {
+					$name = $item['name'];
+					$item_class= formatLink($name);
+				}
+				if($item['bio']) {
+					$bio = $item['bio'];
+				}
+				if(isset($item['map'])) {
+					$map = $item['map'];
+				}
 
-                include('php/item-holder.php');
+				echo '<li class="item-holder '.$member_class.' '.$item_class.'">';
+					
+					// echo '<a href="#" data-person="'.$member_class.'" data-item="'.$item_class.'">';
+					echo '<img src="'.$image.'" alt="'.$name.'" usemap="'.$usemap.'">';
+					if(isset($map)) {echo $map;}
+					// echo '</a>';
 
+					// Item hover
+					echo '<div class="item-hover">';
+						echo '<div class="item-hover-inner">';
+							echo '<h2>'.$name.'</h2>';
+							echo '<p class="serif">'.$bio.'</p>';
+							echo '<a href="#" data-person="'.$member_class.'" data-item="'.$item_class.'" class="view-profile"> &gt; View more of '.$possesive.' items...</a>';
+						echo '</div>';
+					echo '</div>';
+
+				echo '</li>';
 			}
 		}
 		echo '</ul>';		

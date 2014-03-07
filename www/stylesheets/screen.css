@@ -286,10 +286,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #c84938;
 }
 
-/* line 104, ../sass/partials/_dev.scss */
-.item-holder:hover .item-hover {
+/* line 102, ../sass/partials/_dev.scss */
+.map-link {
+  display: block;
+  top: -33%;
+}
+
+/* line 108, ../sass/partials/_dev.scss */
+.neighbor {
+  opacity: 0;
+  display: inline-block;
+  position: absolute;
+  min-width: 12em;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid silver;
+  padding: .5em;
+  box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+  transition: all 500ms;
+}
+
+/* line 123, ../sass/partials/_dev.scss */
+.map-link.js-high-z:hover {
   opacity: 1;
-  z-index: 1;
+  z-index: 2;
+}
+
+/* line 128, ../sass/partials/_dev.scss */
+.js-high-z {
+  opacity: 1;
+  z-index: 2;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+  transition: all 500ms;
 }
 
 /* line 3, ../sass/component/_base.scss */
@@ -341,31 +376,36 @@ a {
   visibility: hidden;
 }
 
-/* line 39, ../sass/component/_base.scss */
+/* line 40, ../sass/component/_base.scss */
 #click-close.hidden,
 .hidden {
   display: none;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+  transition: all 500ms;
 }
 
-/* line 41, ../sass/component/_base.scss */
+/* line 46, ../sass/component/_base.scss */
 .wrap {
   position: relative;
   max-width: 1024px;
   margin: 0 auto;
 }
 
-/* line 47, ../sass/component/_base.scss */
+/* line 52, ../sass/component/_base.scss */
 .bold {
   font-weight: 600;
 }
 
-/* line 50, ../sass/component/_base.scss */
+/* line 55, ../sass/component/_base.scss */
 .img-holder img {
   display: block;
   width: 100%;
 }
 
-/* line 56, ../sass/component/_base.scss */
+/* line 61, ../sass/component/_base.scss */
 .ab-center {
   position: absolute;
   top: 0;
@@ -375,7 +415,7 @@ a {
   margin: auto !important;
 }
 
-/* line 62, ../sass/component/_base.scss */
+/* line 67, ../sass/component/_base.scss */
 .noise {
   background-image: url("../img/build/sprites/noise.png");
   background-repeat: repeat;
@@ -387,24 +427,24 @@ a {
   left: 0;
 }
 
-/* line 73, ../sass/component/_base.scss */
+/* line 78, ../sass/component/_base.scss */
 .section-title .grey {
   border-top: 1px solid #1f1f1f;
   border-bottom: 1px solid #1f1f1f;
   color: #1f1f1f;
 }
-/* line 79, ../sass/component/_base.scss */
+/* line 84, ../sass/component/_base.scss */
 .section-title .black {
   border-top: 2px solid #1f1f1f;
   border-bottom: 2px solid #1f1f1f;
   color: #ffffff;
 }
-/* line 85, ../sass/component/_base.scss */
+/* line 90, ../sass/component/_base.scss */
 .section-title .border-holder {
   display: inline-block;
   margin: 1em auto 0;
 }
-/* line 89, ../sass/component/_base.scss */
+/* line 94, ../sass/component/_base.scss */
 .section-title .border-holder div {
   padding: .8em 1em .45em;
   line-height: 1.2em;
@@ -412,45 +452,45 @@ a {
   font-size: .938em;
 }
 @media (min-width: 480px) {
-  /* line 89, ../sass/component/_base.scss */
+  /* line 94, ../sass/component/_base.scss */
   .section-title .border-holder div {
     font-size: .9em;
   }
 }
 
-/* line 102, ../sass/component/_base.scss */
+/* line 107, ../sass/component/_base.scss */
 .hide-over {
   overflow: hidden;
 }
 
-/* line 105, ../sass/component/_base.scss */
+/* line 110, ../sass/component/_base.scss */
 .top .navLink {
   z-index: 10;
   cursor: pointer;
 }
 
-/* line 110, ../sass/component/_base.scss */
+/* line 115, ../sass/component/_base.scss */
 .desktop-hidden {
   visibility: visible;
 }
 
-/* line 111, ../sass/component/_base.scss */
+/* line 116, ../sass/component/_base.scss */
 .invisible {
   visibility: hidden;
 }
 
 @media (min-width: 480px) {
-  /* line 114, ../sass/component/_base.scss */
+  /* line 119, ../sass/component/_base.scss */
   .invisible {
     visibility: visible;
   }
 
-  /* line 115, ../sass/component/_base.scss */
+  /* line 120, ../sass/component/_base.scss */
   .desktop-hidden {
     visibility: hidden;
   }
 }
-/* line 119, ../sass/component/_base.scss */
+/* line 124, ../sass/component/_base.scss */
 .credits {
   display: inline-block;
   font-family: 'TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif';
@@ -462,13 +502,13 @@ a {
   text-align: center;
 }
 @media (min-width: 480px) {
-  /* line 119, ../sass/component/_base.scss */
+  /* line 124, ../sass/component/_base.scss */
   .credits {
     font-size: 1rem;
   }
 }
 
-/* line 135, ../sass/component/_base.scss */
+/* line 140, ../sass/component/_base.scss */
 .project-hidden {
   visibility: hidden;
   opacity: 0;
@@ -485,12 +525,12 @@ a {
   transition: all 500ms;
 }
 
-/* line 149, ../sass/component/_base.scss */
+/* line 154, ../sass/component/_base.scss */
 .section-title {
   text-align: center;
 }
 
-/* line 154, ../sass/component/_base.scss */
+/* line 159, ../sass/component/_base.scss */
 .serif {
   font-family: 'Times New Roman' serif;
   line-height: 1.5em;
@@ -883,12 +923,17 @@ body.home .new-menu-holder {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   cursor: pointer;
   text-decoration: none;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+  transition: all 500ms;
 }
 
-/* line 111, ../sass/component/_sidebar.scss */
+/* line 113, ../sass/component/_sidebar.scss */
 #members-list li:first-child {
   font-size: 1.25em;
   color: #000;

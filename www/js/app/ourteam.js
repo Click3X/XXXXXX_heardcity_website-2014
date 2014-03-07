@@ -7,11 +7,19 @@ define(["jquery", "util/helper", "util/nav", "util/side-bar"], function($) {
         docBody.helper();
 	});
 
-    // Temp hover function for demo - DELETE for PRODUCTION
-	$('.wallet').hover(function() {
-		console.log('THis is the Wallet!');
-		$('.hover-bubble').toggleClass('show-hover');
-	});
+
+    // Hover Class for Our Team Page
+    var mapLinks = $('.map-link');
+    mapLinks.hover(
+        function() {
+            var neighbor = $(this).siblings('.neighbor');
+            neighbor.addClass('js-high-z');
+        }, 
+        function() {
+            var neighbor = $(this).siblings('.neighbor');
+            neighbor.removeClass('js-high-z');
+        }
+    );
 
 
 });

@@ -31,6 +31,7 @@
 		<script type="text/javascript">
 			// JSON for OUR TEAM page
 			var jsonMembers = <?php echo json_encode($jsonMembers); ?>;
+			console.table(jsonMembers);
 		</script>
 	<?php } ?>
 

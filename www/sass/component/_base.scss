@@ -35,8 +35,13 @@ a {
 
 .logo-invisible { opacity:0; }
 .hide {visibility:hidden;}
+
 #click-close.hidden,
-.hidden {display: none;}
+.hidden {
+	display: none;
+
+	@include prefix(transition, all 500ms);
+}
 
 .wrap {
 	position: relative;
