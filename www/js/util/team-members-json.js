@@ -1,4 +1,5 @@
 // TEAM MEMBER JSON	
+// jsonMembers array is from the site itself
 
 var jsMembers = [],
 teamMembers = [];
