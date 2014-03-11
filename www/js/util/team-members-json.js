@@ -20,7 +20,7 @@ function memberItems(members) {
 	// Each MEMBER
 	$.each(members, function(i, member) {
 		var items = members[i].items,
-		member_sex = members[i].member_sex,
+		member_sex = members[i].sex,
 		member_silo = members[i].silo,
 		member_class = members[i].member_class,
 		defaultSilo = 'img/build/team-members/keith-silo.png',
@@ -103,7 +103,7 @@ function memberItems(members) {
 			}),
 			liMiscText = $('<li/>', {
 				class:"misc-text"
-			}).text('This is ' + member_name + 's'),
+			}).text('This is ' + member_name + '\'s'),
 			liName = $('<li/>', {
 				class:"name"
 			}).text(item.name),
@@ -118,7 +118,7 @@ function memberItems(members) {
 				"data-person":member_class,
 				"data-item": itemName.toLowerCase(),
 				class:"view-profile"
-			}).text('View more of '+ member_sex +' items...');
+			}).text('View '+ member_sex +' stuff');
 
 			// STICH TO TOGETHER ELEMENTS starting with UL and LIs
 			liAlink.append(aLink);

@@ -158,16 +158,11 @@
 				margin-left:0.875rem;
 
 				&:before {
-					content: '';
+					content: '>\0000a0';
 					display: block;
-					background-image: url("../img/build/sprites/tiny-arrow.png");
-					background-size: contain;
-					background-repeat: no-repeat;
 					position: absolute;
-					left: -14px;
-					bottom: 0;
-					width: 9px;
-					height: 13px;
+					left: -14px; bottom: -1px;
+					font-size: 1.5em;
 				}
 			}
 		}
@@ -182,12 +177,11 @@
 }
 
 .grey-arrow-left { 
-
-	@include prefix(transform, rotate(-0deg));
-
 	left:.5em;
 	background-image:url(../img/build/sprites/grey-left.png);
 	background-size: contain;
+	
+	@include prefix(transform, rotate(-0deg));
 }
 .grey-arrow-right { 
 	right:.5em;

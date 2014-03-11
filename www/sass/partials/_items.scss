@@ -1,30 +1,15 @@
 // ITEMS for 'Our Team' Page layout
-
-// JS CLASS (possibly TEMPORARY) for moving all individual MEMBER items to viewable area in top of page.
-// #graph #item-list-holder .item-list .js-items-to-top,
-// .js-items-to-top {
-// 	position: static;
-// 	float:left;
-
-// 	@include prefix(transition, all 500ms);
-// }
-
-
  .ourteam { 
  	background-color:#fff; 
  	.serif {
 		text-transform: none;
 	}
-
  }
-
 
 // CLASS for SIDEBAR CHANGE
 .js-single-member {
 	// Member List no padding
-	#item-list-holder .item-list {
-		padding-bottom:0;
-	}
+	#item-list-holder .item-list { padding-bottom:0;}
 	// Change positioning on items to show at top of page
 	#graph #item-list-holder .item-list .item-holder {
 		display:block;
@@ -35,23 +20,20 @@
 		// @include prefix(transition, all 500ms);
 	}
 	// Lessen margin on footer to see all single-items in viewport
-	.ourteam .footer {
-		margin-top:40px;
-	}
+	.ourteam .footer { margin-top:40px;}
 }
 
 // .item-holder.lipstick.peonyrene,
 .item-holder.poster.gloriapitagorsky { z-index: 1; }
 
-#graph { margin-top:40px;}
+#graph { margin-top:40px; }
 
 // HOVER POP UP
 .neighbor {
     display: inline-block;
     position:absolute; 
     z-index: 0;
-    // width: 100%; min-width:280px; max-width: 512px;
-    width:512px;
+    width:462px;
     opacity: 0;
     
     .pop-up {
@@ -75,16 +57,35 @@
 			position: relative;
 			z-index: 1;
 
+			.image {
+				width: auto;
+				vertical-align: top;
+				
+				img {
+					max-width: 85px;
+					margin-left: .5em;
+				}
+			}
+
 			.member-text {
+				width:auto;
 				margin-top: .5em; margin-left: 0; margin-right:1em;
+				padding-left:.5em;
 
-				li {margin-bottom:.25em;}
+				li { margin-bottom:.25em; }
 
-				.misc-text { color:$black;}
-				.name {margin-top: .25em;}
-				.bio { letter-spacing:.05em; text-transform: none !important;}
+				.misc-text { color:$black; }
+				.name { margin-top: .25em; }
+				.bio { letter-spacing:.05em; text-transform: none !important;} 
+				.serif {
+					margin-top:.6em;
+					color:$popup-grey;
+					line-height: 1.4em;
+					letter-spacing: .02em;
+				}
 				.permalink {
 					margin-top:1em;
+
 					a {
 						font-weight: 100;
 						letter-spacing:.05em;
@@ -127,521 +128,421 @@
 
 #item-list-holder {
 
+	.item-holder { position: absolute; opacity: 1; }
+
 	li.item-holder.beardoll.philiploeb {
-		position: absolute; opacity: 1;
 		top:.57%; left:11.5%;
 	}
 
 	li.item-holder.baseball.garynoel {
-		position: absolute; opacity: 1;
 		top: 0.87%; left: 40%;
 	}
 
 	li.item-holder.skiboots.corymelious {
-		position: absolute; opacity: 1;
 		top: 2.1%; left: 26%;	
 	}
 
 	li.item-holder.poster.gloriapitagorsky {
-		position: absolute; opacity: 1;
 		top: 0.5%; left: 56%;
 	}
 
 	li.item-holder.lipstick.peonyrene {
-		position: absolute; opacity: 1;
 		top: 3%; left: 62.5%;
 	}
 
 	li.item-holder.fishinglure.keithreynaud {
-		position: absolute; opacity: 1;
 		top: 3.1%; left: 78%;
 	}
 
 	li.item-holder.hasselblad.garynoel {
-		position: absolute; opacity: 1;
 		top: 3.9%; left: 62%;
 	}
 
 	li.item-holder.taiwanbeer.jeremysiegal {
-		position: absolute; opacity: 1;
 		top: 0.45%; left: 79.1%;
 	}
 
 	li.item-holder.guitar.elizabethmcclanahan {
-		position: absolute; opacity: 1;
 		top: 5.3%; left: 7.5%;
 	}
 
 	li.item-holder.coral.garynoel {
-		position: absolute; opacity: 1;
 		top: 7.6%; left: 66%;
 	}
 
 	li.item-holder.readingglasses.elizabethmcclanahan {
-		position: absolute; opacity: 1;
 		top: 7.1%; left: 51%;
 	}
 
 	li.item-holder.book.jodilevine {
-		position: absolute; opacity: 1;
 		top: 8.4%; left: 13.5%;
 	}
 
 	li.item-holder.montaukmagnet.gloriapitagorsky {
-		position: absolute; opacity: 1;
 		top: 8.4%; left: 41.5%;
 	}
 
 	li.item-holder.zagat.gloriapitagorsky {
-		position: absolute; opacity: 1;
 		top: 9.8%; left: 35.5%;
 	}
 
 	li.item-holder.passport.sashaawn {
-		position: absolute; opacity: 1;
 		top: 9.65%; left: 76.5%;
 	}
 
 	li.item-holder.librarycard.elizabethmcclanahan {
-		position: absolute; opacity: 1;
 		top: 10.3%; left: 67%;
 	}
 
 	li.item-holder.recorder.corymelious {
-		position: absolute; opacity: 1;
 		top: 11.6%; left: 18.5%;
 	}
 
 	li.item-holder.rings.jodilevine {
-		position: absolute; opacity: 1;
 		top: 11.4%; left: 33%;
 	}
 
 	li.item-holder.bapexbyabathingape.jeremysiegal {
-		position: absolute; opacity: 1;
 		top: 11.8%; left: 57%;
 	}
 
 	li.item-holder.goldengirlstvguidecover.elizabethmcclanahan {
-		position: absolute; opacity: 1;
 		top: 14.4%; left: 19%;
 	}
 
 	li.item-holder.wacom.garynoel {
-		position: absolute; opacity: 1;
 		top: 14.48%; left: 41%;
 	}
 
 	li.item-holder.boo.ericwarzecha {
-		position: absolute; opacity: 1;
 		top: 14.1%; left: 48%;
 	}
 
 	li.item-holder.barn.keithreynaud {
-		position: absolute; opacity: 1;
 		top: 14.1%; left: 75%;
 	}
 
 	li.item-holder.fly.corymelious {
-		position: absolute; opacity: 1;
 		top: 15.65%; left: 77.2%;
 	}
 
 	li.item-holder.yogamat.elizabethmcclanahan {
-		position: absolute; opacity: 1;
 		top: 16.95%; left: 15%;
 	}
 
 	li.item-holder.watch.danflosdorf {
-		position: absolute; opacity: 1;
 		top: 16.9%; left: 78.9%;
 	}
 
 	li.item-holder.drumsticks.evanmangiamele {
-		position: absolute; opacity: 1;
 		top: 18.5%; left: 11.5%;
 	}
 
 	li.item-holder.castironpan.keithreynaud {
-		position: absolute; opacity: 1;
 		top: 19%; left: 10.7%;
 	}
 
 	li.item-holder.smashedpenny.philiploeb {
-		position: absolute; opacity: 1;
 		top: 19.175%; left: 53.5%;
 	}
 
 	li.item-holder.leela.evanmangiamele {
-		position: absolute; opacity: 1;
 		top: 20.1%; left: 47.5%
 	}
 
 	li.item-holder.campingstove.corymelious {
-		position: absolute; opacity: 1;
 		top: 18.65%; left: 66%;
 	}
 
 	li.item-holder.sabresjersey.ericwarzecha {
-		position: absolute; opacity: 1;
 		top: 22.1%; left: 15%;
 	}
 
 	li.item-holder.mouse.garynoel {
-		position: absolute; opacity: 1;
 		// top: 26.4%; 
 		top: 25.9%;
 		left: 19%;
 	}
 
 	li.item-holder.amctrailguide.garynoel {
-		position: absolute; opacity: 1;
 		// top: 27.4%; 
 		left: 78.5%;
 		top: 26.75%;
 	}
 
 	li.item-holder.homebrewbook.corymelious {
-		position: absolute; opacity: 1;
 		// top: 28.25%; 
 		top: 27.7%;
 		left: 25%;
 	}
 
 	li.item-holder.\31 991nikeairjordanvisportblue.jeremysiegal {
-		position: absolute; opacity: 1;
 		// top: 29.1%; left: 29.8%;
 		top: 27.7%; left: 29.8%;
 	}
 
 	li.item-holder.drumsticks.corymelious {
-		position: absolute; opacity: 1;
 		top: 28.6%; left: 20%;
 	}
 
 	li.item-holder.gameboy.evanmangiamele {
-		position: absolute; opacity: 1;
 		top: 29%; left: 75.6%;
 	}
 
 	li.item-holder.rug.jodilevine {
-		position: absolute; opacity: 1;
 		top: 31.4%; left: 43%;
 	}
 
 	li.item-holder.growler.evanmangiamele {
-		position: absolute; opacity: 1;
 		top: 31.8%; left: 14.9%;
 	}
 
 	li.item-holder.bracelet.gloriapitagorsky {
-		position: absolute; opacity: 1;
 		top: 34.8%; left: 40%;
 	}
 
 	li.item-holder.snowboard.danflosdorf {
-		position: absolute; opacity: 1;
 		top: 35%; left: 62.5%;
 	}
 
 	li.item-holder.firesticks.garynoel {
-		position: absolute; opacity: 1;
 		top: 36.2%; left: 13%;
 	}
 
 	li.item-holder.ambushpowchain.jeremysiegal {
-		position: absolute; opacity: 1;
 		top: 36.6%; left: 40.3%;
 	}
 
 	li.item-holder.controller.evanmangiamele {
-		position: absolute; opacity: 1;
 		// top: 43.85%; left: 35.7%;
 		top: 43.7%; left: 37%;
 	}
 
 	li.item-holder.soccerclete.katieflynn {
-		position: absolute; opacity: 1;
 		top: 43.4%; left: 15%;
 	}
 
 	li.item-holder.linushueycassette7case.philiploeb {
-		position: absolute; opacity: 1;
 		top: 47.1%; left: 70.2%;
 	}
 
 	li.item-holder.q102tshirt.philiploeb {
-		position: absolute; opacity: 1;
 		top: 47.1%; left: 19%;
 	}
 
 	li.item-holder.yuengling.danflosdorf {
-		position: absolute; opacity: 1;
 		top: 47.9%; left: 49.5%;
 	}
 
 	li.item-holder.cassette.philiploeb {
-		position: absolute; opacity: 1;
 		top: 48.7%; left: 67.2%;
 	}
 
 	li.item-holder.brunomars.peonyrene {
-		position: absolute; opacity: 1;
 		top: 50.7%; left: 27%;
 	}
 
 	li.item-holder.film.katieflynn {
-		position: absolute; opacity: 1;
 		top: 50%; left: 60%;
 	}
 
 	li.item-holder.floralpatterneddress.sashaawn {
-		position: absolute; opacity: 1;
 		top: 52.5%; left: 12%;
 	}
 
 	li.item-holder.scarf.gloriapitagorsky {
-		position: absolute; opacity: 1;
 		top: 52.25%; left: 52%;
 	}
 
 	li.item-holder.minorthreatourofstep.ericwarzecha {
-		position: absolute; opacity: 1;
 		top: 54.8%; left: 54%;
 	}
 
 	li.item-holder.pouch.jodilevine {
-		position: absolute; opacity: 1;
 		top: 57.3%; left: 59%;
 	}
 
 	li.item-holder.retinamacbookpro.jeremysiegal {
-		position: absolute; opacity: 1;
 		top: 59%; left: 9.5%;
 	}
 
 	li.item-holder.turkey.philiploeb {
-		position: absolute; opacity: 1;
 		top: 59%; left: 57%;
 	}
 
 	li.item-holder.pandorabracelet.peonyrene {
-		position: absolute; opacity: 1;
 		top: 61.3%; left: 51%;
 	}
 	
 	li.item-holder.beachbum.taliarodgers {
-		position: absolute; opacity: 1;
 		top: 61.2%; left: 65%;
 	}
 
 	li.item-holder.trapezegrips.sashaawn {
-		position: absolute; opacity: 1;
 		top: 62.25%; left: 55.5%;
 	}
 
 	li.item-holder.painting.jodilevine {
-		position: absolute; opacity: 1;
 		top: 63%; left: 11%;
 	}
 
 	li.item-holder.theremin.sashaawn {
-		position: absolute; opacity: 1;
 		top: 63.55%; left: 12.5%;
 	}
 
 	li.item-holder.bag.peonyrene {
-		position: absolute; opacity: 1;
 		top: 64.6%; left: 63%;
 	}
 
 	li.item-holder.carfridge.keithreynaud {
-		position: absolute; opacity: 1;
 		top: 66.3%; left: 42.5%;
 	}
 
 	li.item-holder.ipadipodiphone.peonyrene {
-		position: absolute; opacity: 1;
 		top: 66.2%; left: 16%;
 	}
 
 	li.item-holder.necklace.peonyrene {
-		position: absolute; opacity: 1;
 		top: 67.8%; left: 5%;
 	}
 
 	li.item-holder.rum.keithreynaud {
-		position: absolute; opacity: 1;
 		top: 70.9%; left: 15%;
 	}
 	
 	li.item-holder.jayson.gloriapitagorsky {
-		position: absolute; opacity: 1;
 		top: 70.6%; left: 55%;		
 	}
 
 	li.item-holder.guitar.ericwarzecha {
-		position: absolute; opacity: 1;
 		top: 71.9%; left: 14.5%;
 	}
 
 	li.item-holder.kanyewest.jeremysiegal {
-		position: absolute; opacity: 1;
 		top: 74%; left: 8.5%;
 	}
 
 	li.item-holder.hockeystick.danflosdorf {
-		position: absolute; opacity: 1;
 		top: 74.7%; left: 70%;
 	}
 
 	li.item-holder.tanktop.taliarodgers {
-		position: absolute; opacity: 1;
 		top: 76.7%; left: 41%;
 	}
 
 	li.item-holder.elephantfigure.gloriapitagorsky {
-		position: absolute; opacity: 1;
 		top: 76.5%; left: 15%;
 	}
 
 	li.item-holder.books.taliarodgers {
-		position: absolute; opacity: 1;
 		top: 78.15%; left: 16%;
 	}
 
 	li.item-holder.hammer.corymelious {
-		position: absolute; opacity: 1;
 		top: 80.45%; left: 13.5%;
 	}
 
 	li.item-holder.pizza.katieflynn {
-		position: absolute; opacity: 1;
 		top: 81.15%; left: 35%;
 	}
 
 	li.item-holder.necklace.katieflynn {
-		position: absolute; opacity: 1;
 		top: 83.7%; left: 18.25%;
 	}
 
 	li.item-holder.yogamat.jodilevine {
-		position: absolute; opacity: 1;
 		top: 84.5%; left: 40%;
 	}
 
 	li.item-holder.knittingneedle.jodilevine {
-		position: absolute; opacity: 1;
 		top: 86.6%; left: 19%;
 	}
 
 	li.item-holder.blade.keithreynaud {
-		position: absolute; opacity: 1;
 		top: 87.3%; left: 19%;
 	}
 
 	li.item-holder.minnieripperton.taliarodgers {
-		position: absolute; opacity: 1;
 		top: 86.5%; left: 55%;
 	}
 
 	li.item-holder.flowers.gloriapitagorsky {
-		position: absolute; opacity: 1;
 		top: 88.8%; left: 49.5%;
 	}
 
 	li.item-holder.ring.gloriapitagorsky {
-		position: absolute; opacity: 1;
 		top: 89.45%; left: 43.5%;
 	}
 
 	li.item-holder.boardbinder.gloriapitagorsky {
-		position: absolute; opacity: 1;
 		top: 90.4%; left: 18.5%;
 	}
 
 	li.item-holder.nikefreehyperfeels.taliarodgers {
-		position: absolute; opacity: 1;
 		top: 91%; left: 52.5%;
 	}
 
 	li.item-holder.chargersjersey.katieflynn {
-		position: absolute; opacity: 1;
 		top: 93.15%; left: 20%;
 	}
 
 	li.item-holder.comics.taliarodgers {
-		position: absolute; opacity: 1;
 		top: 93.6%; left: 60%;
 	}
 
 	li.item-holder.plasticbaby.keithreynaud {
-		position: absolute; opacity: 1;
 		top: 97%; left: 44.5%;
 	}
 
 	li.item-holder.bikepedal.sashaawn {
-		position: absolute; opacity: 1;
 		top: 96.65%; left: 57.5%;
 	}
 
 	li.item-holder.grillutensils.garynoel {
-		position: absolute; opacity: 1;
 		top: 97%; left: 23%;
 	}
 
 	li.item-holder.seeds.jodilevine {
-		position: absolute; opacity: 1;
 		top: 97.8%; left: 53%;
 	}
 
 	li.item-holder.carkeys.peonyrene {
-		position: absolute; opacity: 1;
 		top: 100.25%; left: 39.5%;
 	}
 
 	li.item-holder.nytimes.gloriapitagorsky {
-		position: absolute; opacity: 1;
 		top: 100.6%; left: 70.5%;
 	}
 
 	li.item-holder.necklace.gloriapitagorsky {
-		position: absolute; opacity: 1;
 		top: 102%; left: 44.5%;
 	}
 
 	li.item-holder.saintsjersey.elizabethmcclanahan {
-		position: absolute; opacity: 1;
 		top: 104.35%; left: 41.5%;
 	}
 
 	li.item-holder.skateboard.danflosdorf {
-		position: absolute; opacity: 1;
 		top: 102.35%; left: 72.5%;
 	}
 
 	li.item-holder.toy.taliarodgers {
-		position: absolute; opacity: 1;
 		top: 104.4%; left: 21.5%;
 	}
 
 	li.item-holder.sneakers.jodilevine {
-		position: absolute; opacity: 1;
 		top: 108.4%; left: 20%;
 	}
 
 	li.item-holder.drill.katieflynn {
-		position: absolute; opacity: 1;
 		top: 108.7%; left: 59%;
 	}
 
 	li.item-holder.whisk.katieflynn {
-		position: absolute; opacity: 1;
 		top: 109.6%; left: 58%;
 	}
 
 	li.item-holder.telluridepicture.ericwarzecha {
-		position: absolute; opacity: 1;
 		top: 112%; left: 18%;
 	}
 
