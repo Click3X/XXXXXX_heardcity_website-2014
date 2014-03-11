@@ -36,8 +36,7 @@
     width:462px;
     opacity: 0;
 
-    @include prefix(transition, z-index 400ms);
-    @include prefix(transition, opacity 400ms);
+    @include prefix(transition, all 500ms ease-in-out);
     
     .pop-up {
 		border:1px solid $grey-text;
@@ -107,17 +106,18 @@
 .js-high-z {
 	opacity: 1;
     z-index: 1;
+    @include prefix(transition, all 500ms ease-in);
 }
 
 // Layer classes
 .negZ {z-index: -1 !important; 
-	@include prefix(transition, opacity 500ms);
+	@include prefix(transition, z-index 500ms ease-in-out);
 }
 .zeroZ {z-index:0; 
-	@include prefix(transition, opacity 500ms);
+	@include prefix(transition, z-index 500ms ease-in-out);
 }
 .posZ {z-index:1; 
-	@include prefix(transition, opacity 500ms);
+	@include prefix(transition, z-index 500ms ease-in-out);
 }
 
 .item-list-holder {

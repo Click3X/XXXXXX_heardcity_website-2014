@@ -334,18 +334,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 0;
   width: 462px;
   opacity: 0;
-  -webkit-transition: z-index 400ms;
-  -moz-transition: z-index 400ms;
-  -o-transition: z-index 400ms;
-  -ms-transition: z-index 400ms;
-  transition: z-index 400ms;
-  -webkit-transition: opacity 400ms;
-  -moz-transition: opacity 400ms;
-  -o-transition: opacity 400ms;
-  -ms-transition: opacity 400ms;
-  transition: opacity 400ms;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
-/* line 42, ../sass/partials/_items.scss */
+/* line 41, ../sass/partials/_items.scss */
 .neighbor .pop-up {
   border: 1px solid #989899;
   -webkit-box-shadow: 0px 10px 10px rgba(50, 50, 50, 0.75);
@@ -354,7 +349,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -ms-box-shadow: 0px 10px 10px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 10px 10px rgba(50, 50, 50, 0.75);
 }
-/* line 46, ../sass/partials/_items.scss */
+/* line 45, ../sass/partials/_items.scss */
 .neighbor .pop-up:after {
   content: '';
   display: block;
@@ -379,22 +374,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -ms-box-shadow: -8px 8px 8px rgba(50, 50, 50, 0.75);
   box-shadow: -8px 8px 8px rgba(50, 50, 50, 0.75);
 }
-/* line 59, ../sass/partials/_items.scss */
+/* line 58, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member {
   position: relative;
   z-index: 1;
 }
-/* line 63, ../sass/partials/_items.scss */
+/* line 62, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .image {
   width: auto;
   vertical-align: top;
 }
-/* line 67, ../sass/partials/_items.scss */
+/* line 66, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .image img {
   max-width: 85px;
   margin-left: .5em;
 }
-/* line 73, ../sass/partials/_items.scss */
+/* line 72, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .member-text {
   width: auto;
   margin-top: .5em;
@@ -402,77 +397,82 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-right: 1em;
   padding-left: .5em;
 }
-/* line 78, ../sass/partials/_items.scss */
+/* line 77, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .member-text li {
   margin-bottom: .25em;
 }
-/* line 80, ../sass/partials/_items.scss */
+/* line 79, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .member-text .misc-text {
   color: #1f1f1f;
 }
-/* line 81, ../sass/partials/_items.scss */
+/* line 80, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .member-text .name {
   margin-top: .25em;
 }
-/* line 82, ../sass/partials/_items.scss */
+/* line 81, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .member-text .bio {
   letter-spacing: .05em;
   text-transform: none !important;
 }
-/* line 83, ../sass/partials/_items.scss */
+/* line 82, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .member-text .serif {
   margin-top: .6em;
   color: #646465;
   line-height: 1.4em;
   letter-spacing: .02em;
 }
-/* line 89, ../sass/partials/_items.scss */
+/* line 88, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .member-text .permalink {
   margin-top: 1em;
 }
-/* line 92, ../sass/partials/_items.scss */
+/* line 91, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .member-text .permalink a {
   font-weight: 100;
   letter-spacing: .05em;
 }
 
-/* line 107, ../sass/partials/_items.scss */
+/* line 106, ../sass/partials/_items.scss */
 .map-link:hover,
 .map-link:hover .js-high-z:hover,
 .map-link.js-high-z:hover,
 .js-high-z {
   opacity: 1;
   z-index: 1;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  -ms-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
 }
 
 /* line 113, ../sass/partials/_items.scss */
 .negZ {
   z-index: -1 !important;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  -ms-transition: opacity 500ms;
-  transition: opacity 500ms;
+  -webkit-transition: z-index 500ms ease-in-out;
+  -moz-transition: z-index 500ms ease-in-out;
+  -o-transition: z-index 500ms ease-in-out;
+  -ms-transition: z-index 500ms ease-in-out;
+  transition: z-index 500ms ease-in-out;
 }
 
 /* line 116, ../sass/partials/_items.scss */
 .zeroZ {
   z-index: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  -ms-transition: opacity 500ms;
-  transition: opacity 500ms;
+  -webkit-transition: z-index 500ms ease-in-out;
+  -moz-transition: z-index 500ms ease-in-out;
+  -o-transition: z-index 500ms ease-in-out;
+  -ms-transition: z-index 500ms ease-in-out;
+  transition: z-index 500ms ease-in-out;
 }
 
 /* line 119, ../sass/partials/_items.scss */
 .posZ {
   z-index: 1;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  -ms-transition: opacity 500ms;
-  transition: opacity 500ms;
+  -webkit-transition: z-index 500ms ease-in-out;
+  -moz-transition: z-index 500ms ease-in-out;
+  -o-transition: z-index 500ms ease-in-out;
+  -ms-transition: z-index 500ms ease-in-out;
+  transition: z-index 500ms ease-in-out;
 }
 
 /* line 123, ../sass/partials/_items.scss */

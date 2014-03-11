@@ -16,7 +16,7 @@ function buildMemberList(membersIn, membersOut ) {
 
 
 function memberItems(members) {
-	console.table(members);
+	// console.table(members);
 	// Each MEMBER
 	$.each(members, function(i, member) {
 		var items = members[i].items,
@@ -47,7 +47,7 @@ function memberItems(members) {
 				usemap:usemap
 			});
 
-			console.dir(item);
+			// console.dir(item);
 
 			// check for Coords, else link shape is regular
 			if(coords) {
@@ -82,7 +82,7 @@ function memberItems(members) {
 
 			// POP UP div for each item
 			divHover = $('<div/>', {
-				class:"neighbor" // hover-bubble
+				class:"neighbor"
 			}),
 			ulPopup = $('<ul/>', {
 				class:"pop-up"

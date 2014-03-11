@@ -57,9 +57,6 @@ showSoloMemberItems = function() {
 	target = '.item-holder.' + member,
 	siblings = $('.item-holder').not(target);
 
-	// console.log( 'This is member: ' + member );
-	// console.log( 'This is siblings: ' + siblings ); console.dir(siblings);
-
 	// SHOW individual ITEMS
 	$('.item-holder').show();
 	siblings.hide();	

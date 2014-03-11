@@ -31,12 +31,12 @@ define(["jquery", "util/helper", "util/nav", "util/side-bar", "util/team-members
             $(neighbor[0]).css({   
                 "top": "-"+(neighborHeight + 12)+"px",
                 "left":"-"+parOffset+"px",
-                "z-index":2,
+                // "z-index":2,
                 "opacity":1
             });
 
             // Z-index class for hover effect - THIS IS BUGGY - NEEDS TENDING T0
-            // neighbor.addClass('js-high-z');
+            neighbor.addClass('js-high-z');
             parentLi.addClass('posZ');
             $('.negZ').removeClass('negZ').addClass('zeroZ');
         }, 
@@ -47,13 +47,12 @@ define(["jquery", "util/helper", "util/nav", "util/side-bar", "util/team-members
             $(neighbor[0]).css({   
                 // "top":"auto",
                 // "left":"auto",
-                "z-index":0,
+                // "z-index":0,
                 "opacity":0
             });
 
-            // neighbor.removeClass('js-high-z');
-            // parentLi.switchClass('posZ', 'negZ', 'easeInOutQuad');
-            parentLi.remoceClass('posZ');
+            neighbor.removeClass('js-high-z');
+            parentLi.removeClass('posZ');
             $('.list-item').removeClass('negZ');
             parentLi.addClass('negZ');
 
