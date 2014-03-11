@@ -60,7 +60,6 @@ include('php/project-grid.php');
 			<?php
 				foreach ($projects as $key => $project) { 
 					if($project['type'] == 'feature') { 
-						// echo '<pre>'.print_r($project).'</pre>';
 						$tablet = $project["images"]["tablet"];
 						$mobile = $project["images"]["mobile"];
 						if($tablet) { $thumbsrc = $tablet; } else { $thumbsrc = $mobile;}
@@ -77,7 +76,6 @@ include('php/project-grid.php');
 								<div><?php echo $project['title']; ?></div>
 							</div>
 							<ul class="credits">
-								<!-- <div class="noise"></div> -->
 								<li><span class="bold">Directed by: </span><?php echo $project['director']; ?></li>
 								<li><span class="bold">Mixed by: </span><?php echo $project['mixer']; ?></li>
 							</ul>
@@ -115,11 +113,26 @@ include('php/project-grid.php');
 		<div> <!-- class="wrap" -->
 			<ul id="team-slider" class="team-members owl-carousel"> 
 
-				<?php foreach ($members as $key => $member) { ?>
+			<?php foreach ($members as $key => $member) { 
+				$member_items = $member['items'];
+				// helper($member_items);
+				$item_count = count($member_items);
+				$item_count = $item_count-1;
+
+				$random = rand(0, $item_count);
+				// helper($rand_item);
+				$rand_item = $member_items[$random];
+				$item_name = $rand_item['name'];
+				$item_image = $rand_item['image'];
+					?>
+
 				<li id="<?php echo formatLink($member['name']); ?>">
 					<div class="team-member clearfix">
 						<div class="image">
-							<img src="<?php echo placeHolder($member['image']);?>" alt="<?php echo $member['name'];?>">
+
+							<!-- <img src="<?php // echo placeHolder($member['image']);?>" alt="<?php // echo $member['name'];?>"> -->
+							<img src="<?php echo $item_image;?>" alt="<?php echo $member['name'];?>">
+
 						</div>
 						<ul class="member-text">
 							<li class="misc-text">This belongs to</li>
