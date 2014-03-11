@@ -1,6 +1,10 @@
 <?php // Our Team
 $page='Our Team';
-include('php/header.php'); 
+include('php/header.php');
+
+// if(isset($_POST['selectmember'])) { $selected_member = $_POST['selectmember']; }
+// echo 'This is the selected Member: '.$selected_member;
+// helper($_POST['member']);
 ?>
 
 

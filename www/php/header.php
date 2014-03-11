@@ -26,7 +26,7 @@ include('functions.php');
             ?>
         
         <script data-main="<?php echo $script; ?>" src="js/lib/require.js"></script>
-               
+
     </head>
     <?php if(isset($single)) {$page = 'single';} ?>
     <body class="<?php echo formatLink($page); ?>">

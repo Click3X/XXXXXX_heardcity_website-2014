@@ -97,7 +97,7 @@ include('php/project-grid.php');
     <div class="container clearfix image-spread">
     	<?php foreach ($image_spreads as $key => $image_spread) {
     		if($image_spread["class"] == "full-image") {
-				echo '<div id="'.$image_spread['id'].'" class="image-spread '.$image_spread["class"].'"></div>'; //style="background-image:url('.$image_spread["image"].');"    			
+				echo '<div id="'.$image_spread['id'].'" class="image-spread '.$image_spread["class"].'"></div>';
     		}
     		
     	} ?>
@@ -110,17 +110,19 @@ include('php/project-grid.php');
 		<div class="section-title">
 			<div>Meet Our Team</div>
 		</div>
-		<div> <!-- class="wrap" -->
+		<div> 
+		  <form action="ourteam.php" method="post" id="member-form" class="member-form">
 			<ul id="team-slider" class="team-members owl-carousel"> 
 
 			<?php foreach ($members as $key => $member) { 
 				$member_items = $member['items'];
-				// helper($member_items);
+				$member_class = formatLink($member['name']);
+				
 				$item_count = count($member_items);
 				$item_count = $item_count-1;
 
 				$random = rand(0, $item_count);
-				// helper($rand_item);
+
 				$rand_item = $member_items[$random];
 				$item_name = $rand_item['name'];
 				$item_image = $rand_item['image'];
@@ -130,7 +132,6 @@ include('php/project-grid.php');
 					<div class="team-member clearfix">
 						<div class="image">
 
-							<!-- <img src="<?php // echo placeHolder($member['image']);?>" alt="<?php // echo $member['name'];?>"> -->
 							<img src="<?php echo $item_image;?>" alt="<?php echo $member['name'];?>">
 
 						</div>
@@ -138,13 +139,14 @@ include('php/project-grid.php');
 							<li class="misc-text">This belongs to</li>
 							<li class="name"><?php echo $member['name']; ?></li>
 							<li class="bio"><?php echo firstBit($member['bio']); ?></li>
-							<li class="permalink"><a href="<?php echo $member['permalink']; ?>">View more of <?php echo $member['sex']; ?> stuff</a></li>
+							<li class="permalink"><a href="<?php echo $member['permalink']; ?>" class="member-permalink">View more of <?php echo $member['sex']; ?> stuff<input type="radio" class="team-member-input hidden" id="<?php echo $member_class; ?>" checked="" name="selectmember" value="<?php echo $member['name']; ?>"></a></li>
 						</ul>
 					</div>
 				</li>
 				<?php } ?>
 
 			</ul>
+		  </form>
 		</div>
     </div>
 <!-- ((((((((((((((((((((((((((((((((   END team member   ))))))))))))))))))))))))))))))))   -->
@@ -154,7 +156,7 @@ include('php/project-grid.php');
 	<div class="container clearfix hide-over">
 		<div class="img-holder dog-para-holder">
 			<div class="dog-para">
-				<div id="dog-windows" class="dog-windows"></div>   <!-- style="background-image:url('img/build/home/dog-windows.jpg');" -->
+				<div id="dog-windows" class="dog-windows"></div>
 			</div>
 		</div>
     </div>
