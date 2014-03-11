@@ -31,7 +31,7 @@ define(["jquery", "util/helper", "util/nav", "util/side-bar", "util/team-members
             $(neighbor[0]).css({   
                 "top": "-"+(neighborHeight + 12)+"px",
                 "left":"-"+parOffset+"px",
-                "z-index":1,
+                "z-index":2,
                 "opacity":1
             });
 
@@ -45,15 +45,16 @@ define(["jquery", "util/helper", "util/nav", "util/side-bar", "util/team-members
             parentLi = $(this).parent('li').eq(0);
 
             $(neighbor[0]).css({   
-                "top":"auto",
-                "left":"auto",
-                "z-index":-1,
+                // "top":"auto",
+                // "left":"auto",
+                "z-index":0,
                 "opacity":0
             });
 
             // neighbor.removeClass('js-high-z');
-            parentLi.removeClass('posZ');
-            $('.list-item').removeClass('negZ')
+            // parentLi.switchClass('posZ', 'negZ', 'easeInOutQuad');
+            parentLi.remoceClass('posZ');
+            $('.list-item').removeClass('negZ');
             parentLi.addClass('negZ');
 
             // After a short duration, remove negZ from original parentLi

@@ -334,8 +334,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 0;
   width: 462px;
   opacity: 0;
+  -webkit-transition: z-index 400ms;
+  -moz-transition: z-index 400ms;
+  -o-transition: z-index 400ms;
+  -ms-transition: z-index 400ms;
+  transition: z-index 400ms;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  -o-transition: opacity 400ms;
+  -ms-transition: opacity 400ms;
+  transition: opacity 400ms;
 }
-/* line 39, ../sass/partials/_items.scss */
+/* line 42, ../sass/partials/_items.scss */
 .neighbor .pop-up {
   border: 1px solid #989899;
   -webkit-box-shadow: 0px 10px 10px rgba(50, 50, 50, 0.75);
@@ -344,7 +354,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -ms-box-shadow: 0px 10px 10px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 10px 10px rgba(50, 50, 50, 0.75);
 }
-/* line 43, ../sass/partials/_items.scss */
+/* line 46, ../sass/partials/_items.scss */
 .neighbor .pop-up:after {
   content: '';
   display: block;
@@ -369,22 +379,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -ms-box-shadow: -8px 8px 8px rgba(50, 50, 50, 0.75);
   box-shadow: -8px 8px 8px rgba(50, 50, 50, 0.75);
 }
-/* line 56, ../sass/partials/_items.scss */
+/* line 59, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member {
   position: relative;
   z-index: 1;
 }
-/* line 60, ../sass/partials/_items.scss */
+/* line 63, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .image {
   width: auto;
   vertical-align: top;
 }
-/* line 64, ../sass/partials/_items.scss */
+/* line 67, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .image img {
   max-width: 85px;
   margin-left: .5em;
 }
-/* line 70, ../sass/partials/_items.scss */
+/* line 73, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .member-text {
   width: auto;
   margin-top: .5em;
@@ -392,41 +402,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-right: 1em;
   padding-left: .5em;
 }
-/* line 75, ../sass/partials/_items.scss */
+/* line 78, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .member-text li {
   margin-bottom: .25em;
 }
-/* line 77, ../sass/partials/_items.scss */
+/* line 80, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .member-text .misc-text {
   color: #1f1f1f;
 }
-/* line 78, ../sass/partials/_items.scss */
+/* line 81, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .member-text .name {
   margin-top: .25em;
 }
-/* line 79, ../sass/partials/_items.scss */
+/* line 82, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .member-text .bio {
   letter-spacing: .05em;
   text-transform: none !important;
 }
-/* line 80, ../sass/partials/_items.scss */
+/* line 83, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .member-text .serif {
   margin-top: .6em;
   color: #646465;
   line-height: 1.4em;
   letter-spacing: .02em;
 }
-/* line 86, ../sass/partials/_items.scss */
+/* line 89, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .member-text .permalink {
   margin-top: 1em;
 }
-/* line 89, ../sass/partials/_items.scss */
+/* line 92, ../sass/partials/_items.scss */
 .neighbor .pop-up .team-member .member-text .permalink a {
   font-weight: 100;
   letter-spacing: .05em;
 }
 
-/* line 104, ../sass/partials/_items.scss */
+/* line 107, ../sass/partials/_items.scss */
 .map-link:hover,
 .map-link:hover .js-high-z:hover,
 .map-link.js-high-z:hover,
@@ -435,22 +445,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 1;
 }
 
-/* line 110, ../sass/partials/_items.scss */
+/* line 113, ../sass/partials/_items.scss */
 .negZ {
   z-index: -1 !important;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
-/* line 111, ../sass/partials/_items.scss */
+/* line 116, ../sass/partials/_items.scss */
 .zeroZ {
   z-index: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
-/* line 112, ../sass/partials/_items.scss */
+/* line 119, ../sass/partials/_items.scss */
 .posZ {
   z-index: 1;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
-/* line 114, ../sass/partials/_items.scss */
+/* line 123, ../sass/partials/_items.scss */
 .item-list-holder {
   width: 100%;
   max-width: 1024px;
@@ -459,7 +484,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-bottom: 100%;
 }
 
-/* line 121, ../sass/partials/_items.scss */
+/* line 130, ../sass/partials/_items.scss */
 #item-list-holder .item-list {
   position: relative;
   width: 100%;
@@ -468,517 +493,517 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-bottom: 12000px;
 }
 
-/* line 131, ../sass/partials/_items.scss */
+/* line 140, ../sass/partials/_items.scss */
 #item-list-holder .item-holder {
   position: absolute;
   opacity: 1;
 }
-/* line 133, ../sass/partials/_items.scss */
+/* line 142, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.beardoll.philiploeb {
   top: .57%;
   left: 11.5%;
 }
-/* line 137, ../sass/partials/_items.scss */
+/* line 146, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.baseball.garynoel {
   top: 0.87%;
   left: 40%;
 }
-/* line 141, ../sass/partials/_items.scss */
+/* line 150, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.skiboots.corymelious {
   top: 2.1%;
   left: 26%;
 }
-/* line 145, ../sass/partials/_items.scss */
+/* line 154, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.poster.gloriapitagorsky {
   top: 0.5%;
   left: 56%;
 }
-/* line 149, ../sass/partials/_items.scss */
+/* line 158, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.lipstick.peonyrene {
   top: 3%;
   left: 62.5%;
 }
-/* line 153, ../sass/partials/_items.scss */
+/* line 162, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.fishinglure.keithreynaud {
   top: 3.1%;
   left: 78%;
 }
-/* line 157, ../sass/partials/_items.scss */
+/* line 166, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.hasselblad.garynoel {
   top: 3.9%;
   left: 62%;
 }
-/* line 161, ../sass/partials/_items.scss */
+/* line 170, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.taiwanbeer.jeremysiegal {
   top: 0.45%;
   left: 79.1%;
 }
-/* line 165, ../sass/partials/_items.scss */
+/* line 174, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.guitar.elizabethmcclanahan {
   top: 5.3%;
   left: 7.5%;
 }
-/* line 169, ../sass/partials/_items.scss */
+/* line 178, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.coral.garynoel {
   top: 7.6%;
   left: 66%;
 }
-/* line 173, ../sass/partials/_items.scss */
+/* line 182, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.readingglasses.elizabethmcclanahan {
   top: 7.1%;
   left: 51%;
 }
-/* line 177, ../sass/partials/_items.scss */
+/* line 186, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.book.jodilevine {
   top: 8.4%;
   left: 13.5%;
 }
-/* line 181, ../sass/partials/_items.scss */
+/* line 190, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.montaukmagnet.gloriapitagorsky {
   top: 8.4%;
   left: 41.5%;
 }
-/* line 185, ../sass/partials/_items.scss */
+/* line 194, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.zagat.gloriapitagorsky {
   top: 9.8%;
   left: 35.5%;
 }
-/* line 189, ../sass/partials/_items.scss */
+/* line 198, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.passport.sashaawn {
   top: 9.65%;
   left: 76.5%;
 }
-/* line 193, ../sass/partials/_items.scss */
+/* line 202, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.librarycard.elizabethmcclanahan {
   top: 10.3%;
   left: 67%;
 }
-/* line 197, ../sass/partials/_items.scss */
+/* line 206, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.recorder.corymelious {
   top: 11.6%;
   left: 18.5%;
 }
-/* line 201, ../sass/partials/_items.scss */
+/* line 210, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.rings.jodilevine {
   top: 11.4%;
   left: 33%;
 }
-/* line 205, ../sass/partials/_items.scss */
+/* line 214, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.bapexbyabathingape.jeremysiegal {
   top: 11.8%;
   left: 57%;
 }
-/* line 209, ../sass/partials/_items.scss */
+/* line 218, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.goldengirlstvguidecover.elizabethmcclanahan {
   top: 14.4%;
   left: 19%;
 }
-/* line 213, ../sass/partials/_items.scss */
+/* line 222, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.wacom.garynoel {
   top: 14.48%;
   left: 41%;
 }
-/* line 217, ../sass/partials/_items.scss */
+/* line 226, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.boo.ericwarzecha {
   top: 14.1%;
   left: 48%;
 }
-/* line 221, ../sass/partials/_items.scss */
+/* line 230, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.barn.keithreynaud {
   top: 14.1%;
   left: 75%;
 }
-/* line 225, ../sass/partials/_items.scss */
+/* line 234, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.fly.corymelious {
   top: 15.65%;
   left: 77.2%;
 }
-/* line 229, ../sass/partials/_items.scss */
+/* line 238, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.yogamat.elizabethmcclanahan {
   top: 16.95%;
   left: 15%;
 }
-/* line 233, ../sass/partials/_items.scss */
+/* line 242, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.watch.danflosdorf {
   top: 16.9%;
   left: 78.9%;
 }
-/* line 237, ../sass/partials/_items.scss */
+/* line 246, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.drumsticks.evanmangiamele {
   top: 18.5%;
   left: 11.5%;
 }
-/* line 241, ../sass/partials/_items.scss */
+/* line 250, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.castironpan.keithreynaud {
   top: 19%;
   left: 10.7%;
 }
-/* line 245, ../sass/partials/_items.scss */
+/* line 254, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.smashedpenny.philiploeb {
   top: 19.175%;
   left: 53.5%;
 }
-/* line 249, ../sass/partials/_items.scss */
+/* line 258, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.leela.evanmangiamele {
   top: 20.1%;
   left: 47.5%;
 }
-/* line 253, ../sass/partials/_items.scss */
+/* line 262, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.campingstove.corymelious {
   top: 18.65%;
   left: 66%;
 }
-/* line 257, ../sass/partials/_items.scss */
+/* line 266, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.sabresjersey.ericwarzecha {
   top: 22.1%;
   left: 15%;
 }
-/* line 261, ../sass/partials/_items.scss */
+/* line 270, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.mouse.garynoel {
   top: 25.9%;
   left: 19%;
 }
-/* line 267, ../sass/partials/_items.scss */
+/* line 276, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.amctrailguide.garynoel {
   left: 78.5%;
   top: 26.75%;
 }
-/* line 273, ../sass/partials/_items.scss */
+/* line 282, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.homebrewbook.corymelious {
   top: 27.7%;
   left: 25%;
 }
-/* line 279, ../sass/partials/_items.scss */
+/* line 288, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.\31 991nikeairjordanvisportblue.jeremysiegal {
   top: 27.7%;
   left: 29.8%;
 }
-/* line 284, ../sass/partials/_items.scss */
+/* line 293, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.drumsticks.corymelious {
   top: 28.6%;
   left: 20%;
 }
-/* line 288, ../sass/partials/_items.scss */
+/* line 297, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.gameboy.evanmangiamele {
   top: 29%;
   left: 75.6%;
 }
-/* line 292, ../sass/partials/_items.scss */
+/* line 301, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.rug.jodilevine {
   top: 31.4%;
   left: 43%;
 }
-/* line 296, ../sass/partials/_items.scss */
+/* line 305, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.growler.evanmangiamele {
   top: 31.8%;
   left: 14.9%;
 }
-/* line 300, ../sass/partials/_items.scss */
+/* line 309, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.bracelet.gloriapitagorsky {
   top: 34.8%;
   left: 40%;
 }
-/* line 304, ../sass/partials/_items.scss */
+/* line 313, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.snowboard.danflosdorf {
   top: 35%;
   left: 62.5%;
 }
-/* line 308, ../sass/partials/_items.scss */
+/* line 317, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.firesticks.garynoel {
   top: 36.2%;
   left: 13%;
 }
-/* line 312, ../sass/partials/_items.scss */
+/* line 321, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.ambushpowchain.jeremysiegal {
   top: 36.6%;
   left: 40.3%;
 }
-/* line 316, ../sass/partials/_items.scss */
+/* line 325, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.controller.evanmangiamele {
   top: 43.7%;
   left: 37%;
 }
-/* line 321, ../sass/partials/_items.scss */
+/* line 330, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.soccerclete.katieflynn {
   top: 43.4%;
   left: 15%;
 }
-/* line 325, ../sass/partials/_items.scss */
+/* line 334, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.linushueycassette7case.philiploeb {
   top: 47.1%;
   left: 70.2%;
 }
-/* line 329, ../sass/partials/_items.scss */
+/* line 338, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.q102tshirt.philiploeb {
   top: 47.1%;
   left: 19%;
 }
-/* line 333, ../sass/partials/_items.scss */
+/* line 342, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.yuengling.danflosdorf {
   top: 47.9%;
   left: 49.5%;
 }
-/* line 337, ../sass/partials/_items.scss */
+/* line 346, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.cassette.philiploeb {
   top: 48.7%;
   left: 67.2%;
 }
-/* line 341, ../sass/partials/_items.scss */
+/* line 350, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.brunomars.peonyrene {
   top: 50.7%;
   left: 27%;
 }
-/* line 345, ../sass/partials/_items.scss */
+/* line 354, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.film.katieflynn {
   top: 50%;
   left: 60%;
 }
-/* line 349, ../sass/partials/_items.scss */
+/* line 358, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.floralpatterneddress.sashaawn {
   top: 52.5%;
   left: 12%;
 }
-/* line 353, ../sass/partials/_items.scss */
+/* line 362, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.scarf.gloriapitagorsky {
   top: 52.25%;
   left: 52%;
 }
-/* line 357, ../sass/partials/_items.scss */
+/* line 366, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.minorthreatourofstep.ericwarzecha {
   top: 54.8%;
   left: 54%;
 }
-/* line 361, ../sass/partials/_items.scss */
+/* line 370, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.pouch.jodilevine {
   top: 57.3%;
   left: 59%;
 }
-/* line 365, ../sass/partials/_items.scss */
+/* line 374, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.retinamacbookpro.jeremysiegal {
   top: 59%;
   left: 9.5%;
 }
-/* line 369, ../sass/partials/_items.scss */
+/* line 378, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.turkey.philiploeb {
   top: 59%;
   left: 57%;
 }
-/* line 373, ../sass/partials/_items.scss */
+/* line 382, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.pandorabracelet.peonyrene {
   top: 61.3%;
   left: 51%;
 }
-/* line 377, ../sass/partials/_items.scss */
+/* line 386, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.beachbum.taliarodgers {
   top: 61.2%;
   left: 65%;
 }
-/* line 381, ../sass/partials/_items.scss */
+/* line 390, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.trapezegrips.sashaawn {
   top: 62.25%;
   left: 55.5%;
 }
-/* line 385, ../sass/partials/_items.scss */
+/* line 394, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.painting.jodilevine {
   top: 63%;
   left: 11%;
 }
-/* line 389, ../sass/partials/_items.scss */
+/* line 398, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.theremin.sashaawn {
   top: 63.55%;
   left: 12.5%;
 }
-/* line 393, ../sass/partials/_items.scss */
+/* line 402, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.bag.peonyrene {
   top: 64.6%;
   left: 63%;
 }
-/* line 397, ../sass/partials/_items.scss */
+/* line 406, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.carfridge.keithreynaud {
   top: 66.3%;
   left: 42.5%;
 }
-/* line 401, ../sass/partials/_items.scss */
+/* line 410, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.ipadipodiphone.peonyrene {
   top: 66.2%;
   left: 16%;
 }
-/* line 405, ../sass/partials/_items.scss */
+/* line 414, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.necklace.peonyrene {
   top: 67.8%;
   left: 5%;
 }
-/* line 409, ../sass/partials/_items.scss */
+/* line 418, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.rum.keithreynaud {
   top: 70.9%;
   left: 15%;
 }
-/* line 413, ../sass/partials/_items.scss */
+/* line 422, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.jayson.gloriapitagorsky {
   top: 70.6%;
   left: 55%;
 }
-/* line 417, ../sass/partials/_items.scss */
+/* line 426, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.guitar.ericwarzecha {
   top: 71.9%;
   left: 14.5%;
 }
-/* line 421, ../sass/partials/_items.scss */
+/* line 430, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.kanyewest.jeremysiegal {
   top: 74%;
   left: 8.5%;
 }
-/* line 425, ../sass/partials/_items.scss */
+/* line 434, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.hockeystick.danflosdorf {
   top: 74.7%;
   left: 70%;
 }
-/* line 429, ../sass/partials/_items.scss */
+/* line 438, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.tanktop.taliarodgers {
   top: 76.7%;
   left: 41%;
 }
-/* line 433, ../sass/partials/_items.scss */
+/* line 442, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.elephantfigure.gloriapitagorsky {
   top: 76.5%;
   left: 15%;
 }
-/* line 437, ../sass/partials/_items.scss */
+/* line 446, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.books.taliarodgers {
   top: 78.15%;
   left: 16%;
 }
-/* line 441, ../sass/partials/_items.scss */
+/* line 450, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.hammer.corymelious {
   top: 80.45%;
   left: 13.5%;
 }
-/* line 445, ../sass/partials/_items.scss */
+/* line 454, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.pizza.katieflynn {
   top: 81.15%;
   left: 35%;
 }
-/* line 449, ../sass/partials/_items.scss */
+/* line 458, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.necklace.katieflynn {
   top: 83.7%;
   left: 18.25%;
 }
-/* line 453, ../sass/partials/_items.scss */
+/* line 462, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.yogamat.jodilevine {
   top: 84.5%;
   left: 40%;
 }
-/* line 457, ../sass/partials/_items.scss */
+/* line 466, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.knittingneedle.jodilevine {
   top: 86.6%;
   left: 19%;
 }
-/* line 461, ../sass/partials/_items.scss */
+/* line 470, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.blade.keithreynaud {
   top: 87.3%;
   left: 19%;
 }
-/* line 465, ../sass/partials/_items.scss */
+/* line 474, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.minnieripperton.taliarodgers {
   top: 86.5%;
   left: 55%;
 }
-/* line 469, ../sass/partials/_items.scss */
+/* line 478, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.flowers.gloriapitagorsky {
   top: 88.8%;
   left: 49.5%;
 }
-/* line 473, ../sass/partials/_items.scss */
+/* line 482, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.ring.gloriapitagorsky {
   top: 89.45%;
   left: 43.5%;
 }
-/* line 477, ../sass/partials/_items.scss */
+/* line 486, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.boardbinder.gloriapitagorsky {
   top: 90.4%;
   left: 18.5%;
 }
-/* line 481, ../sass/partials/_items.scss */
+/* line 490, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.nikefreehyperfeels.taliarodgers {
   top: 91%;
   left: 52.5%;
 }
-/* line 485, ../sass/partials/_items.scss */
+/* line 494, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.chargersjersey.katieflynn {
   top: 93.15%;
   left: 20%;
 }
-/* line 489, ../sass/partials/_items.scss */
+/* line 498, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.comics.taliarodgers {
   top: 93.6%;
   left: 60%;
 }
-/* line 493, ../sass/partials/_items.scss */
+/* line 502, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.plasticbaby.keithreynaud {
   top: 97%;
   left: 44.5%;
 }
-/* line 497, ../sass/partials/_items.scss */
+/* line 506, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.bikepedal.sashaawn {
   top: 96.65%;
   left: 57.5%;
 }
-/* line 501, ../sass/partials/_items.scss */
+/* line 510, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.grillutensils.garynoel {
   top: 97%;
   left: 23%;
 }
-/* line 505, ../sass/partials/_items.scss */
+/* line 514, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.seeds.jodilevine {
   top: 97.8%;
   left: 53%;
 }
-/* line 509, ../sass/partials/_items.scss */
+/* line 518, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.carkeys.peonyrene {
   top: 100.25%;
   left: 39.5%;
 }
-/* line 513, ../sass/partials/_items.scss */
+/* line 522, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.nytimes.gloriapitagorsky {
   top: 100.6%;
   left: 70.5%;
 }
-/* line 517, ../sass/partials/_items.scss */
+/* line 526, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.necklace.gloriapitagorsky {
   top: 102%;
   left: 44.5%;
 }
-/* line 521, ../sass/partials/_items.scss */
+/* line 530, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.saintsjersey.elizabethmcclanahan {
   top: 104.35%;
   left: 41.5%;
 }
-/* line 525, ../sass/partials/_items.scss */
+/* line 534, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.skateboard.danflosdorf {
   top: 102.35%;
   left: 72.5%;
 }
-/* line 529, ../sass/partials/_items.scss */
+/* line 538, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.toy.taliarodgers {
   top: 104.4%;
   left: 21.5%;
 }
-/* line 533, ../sass/partials/_items.scss */
+/* line 542, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.sneakers.jodilevine {
   top: 108.4%;
   left: 20%;
 }
-/* line 537, ../sass/partials/_items.scss */
+/* line 546, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.drill.katieflynn {
   top: 108.7%;
   left: 59%;
 }
-/* line 541, ../sass/partials/_items.scss */
+/* line 550, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.whisk.katieflynn {
   top: 109.6%;
   left: 58%;
 }
-/* line 545, ../sass/partials/_items.scss */
+/* line 554, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.telluridepicture.ericwarzecha {
   top: 112%;
   left: 18%;

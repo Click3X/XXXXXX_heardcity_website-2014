@@ -35,6 +35,9 @@
     z-index: 0;
     width:462px;
     opacity: 0;
+
+    @include prefix(transition, z-index 400ms);
+    @include prefix(transition, opacity 400ms);
     
     .pop-up {
 		border:1px solid $grey-text;
@@ -60,7 +63,7 @@
 			.image {
 				width: auto;
 				vertical-align: top;
-				
+
 				img {
 					max-width: 85px;
 					margin-left: .5em;
@@ -107,9 +110,15 @@
 }
 
 // Layer classes
-.negZ {z-index: -1 !important;}
-.zeroZ {z-index:0;}
-.posZ {z-index:1;}
+.negZ {z-index: -1 !important; 
+	@include prefix(transition, opacity 500ms);
+}
+.zeroZ {z-index:0; 
+	@include prefix(transition, opacity 500ms);
+}
+.posZ {z-index:1; 
+	@include prefix(transition, opacity 500ms);
+}
 
 .item-list-holder {
 	width:100%; max-width:1024px;
