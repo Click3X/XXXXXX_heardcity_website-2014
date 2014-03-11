@@ -40,23 +40,12 @@
 	}
 }
 
+// .item-holder.lipstick.peonyrene,
+.item-holder.poster.gloriapitagorsky { z-index: 1; }
 
+#graph { margin-top:40px;}
 
-
-#graph {
-	margin-top:40px;
-}
-// EFFECTS pop-up
-//HOVER
-// .map-link:hover + .neighbor {
-// 	display:block;
-// 	// top: -75%; left: -20%;
-// 	// top: 100px; left: -20%;
-// 	top: -190px; left: -35%;
-// 	@include prefix(transition, all 200ms);
-// }
-
-// Items Hover Try
+// HOVER POP UP
 .neighbor {
     display: inline-block;
     position:absolute; 
@@ -113,7 +102,6 @@
 .map-link.js-high-z:hover,
 .js-high-z {
 	opacity: 1;
-    // z-index: 2;
     z-index: 1;
 }
 
