@@ -4,19 +4,11 @@
 
 .pop-up {
 	position: relative;
-	top:2em; left:0; right:0;
 	margin:auto;
-	z-index: 5;
 	background-color:#ffffff;
 
 	.team-member {
-		.image {
-			width:28%;
-			max-width: 170px;
-		}
 		.member-text {
-			margin-top:0;
-			width:69%;
 
 			.misc-text {
 				font-size: .8rem;

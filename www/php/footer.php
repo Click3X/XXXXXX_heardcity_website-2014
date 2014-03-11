@@ -27,13 +27,21 @@
 			console.log("This is the projectJSON array: " + projectJSON);
 		</script>
 	-->
-	<?php if($page == 'Our Team') { ?>
+
+	<?php 
+	
+	// helper($jsonMembers);
+	$jsonMembers = json_encode($jsonMembers);
+	
+	?>
+
+	
 		<script type="text/javascript">
 			// JSON for OUR TEAM page
-			var jsonMembers = <?php echo json_encode($jsonMembers); ?>;
+			var jsonMembers = <?php echo $jsonMembers; ?>;
 			// console.table(jsonMembers);
 		</script>
-	<?php } ?>
+	
 
     </body>
 </html>

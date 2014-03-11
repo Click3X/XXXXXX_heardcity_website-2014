@@ -2,7 +2,6 @@
 var sideBar = $('#side-bar-nav'),
 clickClose = $('#click-close'),
 allMembers = $('.all-members'),
-itemHolders = $('.item-holder'),
 memberBio = $('#member-bio'),
 sidebarLinks = $('.sidebar-link');
 
@@ -18,8 +17,8 @@ openShutDroor = function() {
 }
 
 
-// loop through JSON data
-loopMembers = function(member) {
+// loop through JSON data and CREATE ARRAY (controller?)
+showMemberBio = function(member) {
 	$(jsonMembers).each(function() {
 		var name = this.name,
 		member_class = this.member_class,
@@ -27,7 +26,6 @@ loopMembers = function(member) {
 		match;
 		
 		if(member == member_class) {
-			console.log('We Have a Match!');
 			match = member;
 
 			$('#member-bio .bio > p').html(bio);
@@ -37,7 +35,7 @@ loopMembers = function(member) {
 }
 
 
-// Closing the Sidebar
+// Closing the Sidebar (controller?)
 $('#push, #close').click(function () {
 	openShutDroor();
 	clickClose.click(function() {
@@ -46,29 +44,42 @@ $('#push, #close').click(function () {
 	})
 });
 
-// SIDE BAR hover
+
+// SIDE BAR hover (controller?)
 $('.members-list').hover(function() {
 	$('#push').toggleClass('hide-push')
 });
 
-// If name is clicked, only show their items
-showSoloItems = function() {
+
+// If name is clicked, only show their items (controller?)
+showSoloMemberItems = function() {
 	var member = $(this).data('person'),
 	target = '.item-holder.' + member,
-	$targetItems = $(target),
-	siblings = itemHolders.not($targetItems);
+	siblings = $('.item-holder').not(target);
 
-	itemHolders.show();
+	// console.log( 'This is member: ' + member );
+	// console.log( 'This is siblings: ' + siblings ); console.dir(siblings);
+
+	// SHOW individual ITEMS
+	$('.item-holder').show();
+	siblings.hide();	
+	$('body.ourteam').addClass('js-single-member');
+	$(target).show();
+
+	// SHOW member BIO
 	memberBio.show();
-	siblings.hide();
-	loopMembers(member);
+	showMemberBio(member);
+	
+	// OPEN / SHUT side bar NAV
 	openShutDroor();
 }
+// ITEM filter
+sidebarLinks.click(showSoloMemberItems);
 
-sidebarLinks.click(showSoloItems);
 
 // If Our Team is clicked, show all member items
 allMembers.click(function() {
-	itemHolders.show();
+	$('.item-holder').show();
 	memberBio.hide();
+	$('body.ourteam').removeClass('js-single-member');
 });

@@ -1,4 +1,8 @@
 // DEV 
+// SPACE FOR FOOTER
+.ourteam .footer {
+	margin-top:1600px;
+}
 
 // Silo and Member bio
 #member-bio {
@@ -98,36 +102,7 @@
 }
 
 
-// EFFECTS
-.map-link {
-	display:block;
-	top:-33%;
-}
 
-// Items Hover Try
-.neighbor {
-    opacity: 0;
-    display: inline-block;
-    position:absolute;
-    min-width: 12em;
-    background: rgba(255, 255, 255, 0.95);
-    border:1px solid silver;
-    padding:.5em;
-    box-shadow: 2px 5px 6px rgba(0,0,0,0.2);
-    z-index: 0;
 
-    @include prefix(transition, all 500ms);
-}
 
-// FOR JS
-.map-link.js-high-z:hover {
-	opacity: 1;
-    z-index: 2;
-}
 
-.js-high-z {
-	opacity: 1;
-    z-index: 2;
-
-    @include prefix(transition, all 500ms);
-}
