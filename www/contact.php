@@ -5,8 +5,6 @@ include('php/header.php');
 ?>
 <div class="container clearfix contact-container">
 
-	<!-- <div class="wrap map"></div> -->
-
 	<div id="map-canvas" class="map"></div>
 
 	<div class="contact-section-holder">

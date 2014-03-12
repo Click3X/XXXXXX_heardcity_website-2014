@@ -85,10 +85,6 @@ include('php/header.php');
 
 </div>
 
-	<?php include('php/sidebar.php'); ?>
-
-</div>
-
-        
+<?php include('php/sidebar.php'); ?>
 
 <?php include('php/footer.php'); ?>

@@ -114,7 +114,9 @@ include('php/project-grid.php');
 		  <form action="ourteam.php" method="post" id="member-form" class="member-form">
 			<ul id="team-slider" class="team-members owl-carousel"> 
 
-			<?php foreach ($members as $key => $member) { 
+			<?php 
+
+			foreach ($members as $key => $member) { 
 				$member_items = $member['items'];
 				$member_class = formatLink($member['name']);
 				
@@ -126,23 +128,24 @@ include('php/project-grid.php');
 				$rand_item = $member_items[$random];
 				$item_name = $rand_item['name'];
 				$item_image = $rand_item['image'];
-					?>
+			?>
 
 				<li id="<?php echo formatLink($member['name']); ?>">
 					<div class="team-member clearfix">
+						
 						<div class="image">
-
 							<img src="<?php echo $item_image;?>" alt="<?php echo $member['name'];?>">
-
 						</div>
+
 						<ul class="member-text">
 							<li class="misc-text">This belongs to</li>
 							<li class="name"><?php echo $member['name']; ?></li>
 							<li class="bio"><?php echo firstBit($member['bio']); ?></li>
-							<li class="permalink"><a href="<?php echo $member['permalink']; ?>" class="member-permalink">View more of <?php echo $member['sex']; ?> stuff<input type="radio" class="team-member-input hidden" id="<?php echo $member_class; ?>" checked="" name="selectmember" value="<?php echo $member['name']; ?>"></a></li>
+							<li class="permalink"><a href="<?php echo $member['permalink']; ?>" class="member-permalink">View more of <?php echo $member['sex']; ?> stuff</a><input type="radio" class="team-member-input hidden" id="<?php echo $member_class; ?>-input" checked="" name="selectmember" value="<?php echo $member['name']; ?>"></li>
 						</ul>
 					</div>
 				</li>
+
 				<?php } ?>
 
 			</ul>
