@@ -1,18 +1,31 @@
 <?php // Our Team
 $page='Our Team';
-include('php/header.php'); 
+include('php/header.php');
+
+// if no member selected, show the first Bio
+// NEED A BETTER ALTERNATIVE to this
+if(!isset($_POST['selected_member'])) { 
+	$de_silo = $members[0]['silo'];
+	$de_name = $members[0]['name'];
+	$de_bio = $members[0]['bio'];
+	$de_permalink = $members[0]['permalink'];
+} else {
+	// When we have new siohuettes, we will need to change this
+	$de_silo = $members[0]['silo'];
+	$de_name = ''; $de_bio = ''; $de_permalink = '#';
+}
 ?>
 
 <div id="member-bio" class="container clearfix">
 	<div class="team-member clearfix">
 		<div class="image">
-			<img src="<?php echo $members[0]['silo'];?>" alt="Silhouette">
+			<img src="<?php echo $de_silo; ?>" alt="Silhouette">
 		</div>
 		<ul class="member-text">
 			<li class="misc-text">This belongs to</li>
-			<li class="name"><?php echo $members[0]['name']; ?></li>
-			<li class="bio"><p><?php echo $members[0]['bio']; ?></p></li>
-			<li class="permalink"><a href="<?php echo $members[0]['permalink']; ?>" class="all-members">View everyones stuff</a></li>
+			<li class="name"><?php echo $de_name; ?></li>
+			<li class="bio"><p><?php echo $de_bio; ?></p></li>
+			<li class="permalink"><a href="<?php echo $de_permalink; ?>" class="all-members">View everyones stuff</a></li>
 		</ul>
 	</div>
 </div>

@@ -895,37 +895,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: 18%;
 }
 
-/* line 3, ../sass/component/_base.scss */
+/* line 2, ../sass/component/_base.scss */
 body {
   font-size: 14px;
   font-family: 'trackregular';
   background-color: #1f1f1f;
 }
 @media (min-width: 480px) {
-  /* line 3, ../sass/component/_base.scss */
+  /* line 2, ../sass/component/_base.scss */
   body {
     font-size: 16px;
   }
 }
 
-/* line 15, ../sass/component/_base.scss */
+/* line 14, ../sass/component/_base.scss */
 body.ourteam > .container,
 body.home > div {
   margin: 0 auto;
 }
 
-/* line 21, ../sass/component/_base.scss */
+/* line 20, ../sass/component/_base.scss */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 25, ../sass/component/_base.scss */
+/* line 22, ../sass/component/_base.scss */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 30, ../sass/component/_base.scss */
+/* line 27, ../sass/component/_base.scss */
 * {
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
@@ -934,17 +934,22 @@ a {
   box-sizing: border-box;
 }
 
-/* line 36, ../sass/component/_base.scss */
+/* line 33, ../sass/component/_base.scss */
 .logo-invisible {
   opacity: 0;
 }
 
-/* line 37, ../sass/component/_base.scss */
+/* line 34, ../sass/component/_base.scss */
 .hide {
   visibility: hidden;
 }
 
-/* line 40, ../sass/component/_base.scss */
+/* line 36, ../sass/component/_base.scss */
+#click-close {
+  z-index: 1;
+}
+
+/* line 38, ../sass/component/_base.scss */
 #click-close.hidden,
 .hidden {
   display: none;
@@ -955,25 +960,25 @@ a {
   transition: all 500ms;
 }
 
-/* line 46, ../sass/component/_base.scss */
+/* line 43, ../sass/component/_base.scss */
 .wrap {
   position: relative;
   max-width: 1024px;
   margin: 0 auto;
 }
 
-/* line 52, ../sass/component/_base.scss */
+/* line 49, ../sass/component/_base.scss */
 .bold {
   font-weight: 600;
 }
 
-/* line 55, ../sass/component/_base.scss */
+/* line 51, ../sass/component/_base.scss */
 .img-holder img {
   display: block;
   width: 100%;
 }
 
-/* line 61, ../sass/component/_base.scss */
+/* line 56, ../sass/component/_base.scss */
 .ab-center {
   position: absolute;
   top: 0;
@@ -983,7 +988,7 @@ a {
   margin: auto !important;
 }
 
-/* line 67, ../sass/component/_base.scss */
+/* line 62, ../sass/component/_base.scss */
 .noise {
   background-image: url("../img/build/sprites/noise.png");
   background-repeat: repeat;
@@ -995,24 +1000,24 @@ a {
   left: 0;
 }
 
-/* line 78, ../sass/component/_base.scss */
+/* line 73, ../sass/component/_base.scss */
 .section-title .grey {
   border-top: 1px solid #1f1f1f;
   border-bottom: 1px solid #1f1f1f;
   color: #1f1f1f;
 }
-/* line 84, ../sass/component/_base.scss */
+/* line 79, ../sass/component/_base.scss */
 .section-title .black {
   border-top: 2px solid #1f1f1f;
   border-bottom: 2px solid #1f1f1f;
   color: #ffffff;
 }
-/* line 90, ../sass/component/_base.scss */
+/* line 85, ../sass/component/_base.scss */
 .section-title .border-holder {
   display: inline-block;
   margin: 1em auto 0;
 }
-/* line 94, ../sass/component/_base.scss */
+/* line 89, ../sass/component/_base.scss */
 .section-title .border-holder div {
   padding: .8em 1em .45em;
   line-height: 1.2em;
@@ -1020,63 +1025,62 @@ a {
   font-size: .938em;
 }
 @media (min-width: 480px) {
-  /* line 94, ../sass/component/_base.scss */
+  /* line 89, ../sass/component/_base.scss */
   .section-title .border-holder div {
     font-size: .9em;
   }
 }
 
-/* line 107, ../sass/component/_base.scss */
+/* line 100, ../sass/component/_base.scss */
 .hide-over {
   overflow: hidden;
 }
 
-/* line 110, ../sass/component/_base.scss */
+/* line 101, ../sass/component/_base.scss */
 .top .navLink {
   z-index: 10;
   cursor: pointer;
 }
 
-/* line 115, ../sass/component/_base.scss */
+/* line 106, ../sass/component/_base.scss */
 .desktop-hidden {
   visibility: visible;
 }
 
-/* line 116, ../sass/component/_base.scss */
+/* line 107, ../sass/component/_base.scss */
 .invisible {
   visibility: hidden;
 }
 
 @media (min-width: 480px) {
-  /* line 119, ../sass/component/_base.scss */
+  /* line 110, ../sass/component/_base.scss */
   .invisible {
     visibility: visible;
   }
 
-  /* line 120, ../sass/component/_base.scss */
+  /* line 111, ../sass/component/_base.scss */
   .desktop-hidden {
     visibility: hidden;
   }
 }
-/* line 124, ../sass/component/_base.scss */
+/* line 115, ../sass/component/_base.scss */
 .credits {
   display: inline-block;
   font-family: 'TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif';
-  text-align: left;
-  line-height: 1.5em;
+  text-align: center;
   font-size: .938em;
+  line-height: 1.5em;
   margin-bottom: 1.75em;
   margin-top: 1.75em;
-  text-align: center;
 }
 @media (min-width: 480px) {
-  /* line 124, ../sass/component/_base.scss */
+  /* line 115, ../sass/component/_base.scss */
   .credits {
     font-size: 1rem;
   }
 }
 
-/* line 140, ../sass/component/_base.scss */
+/* line 125, ../sass/component/_base.scss */
 .project-hidden {
   visibility: hidden;
   opacity: 0;
@@ -1093,12 +1097,12 @@ a {
   transition: all 500ms;
 }
 
-/* line 154, ../sass/component/_base.scss */
+/* line 138, ../sass/component/_base.scss */
 .section-title {
   text-align: center;
 }
 
-/* line 159, ../sass/component/_base.scss */
+/* line 140, ../sass/component/_base.scss */
 .serif {
   font-family: 'Times New Roman' serif;
   line-height: 1.5em;

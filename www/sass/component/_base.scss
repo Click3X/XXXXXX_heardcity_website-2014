@@ -1,5 +1,4 @@
 // BASE SCSS * Utility Layout Styles
-
 body {
 	font-size: 14px;
 	font-family: 'trackregular';
@@ -18,9 +17,7 @@ body.home > div {
 }
 
 // HIDE BROWSER SCROLL BARS
-::-webkit-scrollbar { 
-    display: none; 
-}
+::-webkit-scrollbar { display: none; }
 
 a {
 	text-decoration: none;
@@ -36,10 +33,10 @@ a {
 .logo-invisible { opacity:0; }
 .hide {visibility:hidden;}
 
+#click-close {z-index: 1;}
 #click-close.hidden,
 .hidden {
 	display: none;
-
 	@include prefix(transition, all 500ms);
 }
 
@@ -51,12 +48,10 @@ a {
 
 .bold {font-weight: 600;}
 
-.img-holder {
-	img {
+.img-holder img {
 		display:block;
 		width:100%;
 	}
-}
 
 .ab-center {
 	position: absolute;
@@ -97,16 +92,12 @@ a {
 			letter-spacing: .15em;
 			font-size: .938em;
 
-			@media (min-width: 480px) { 
-				font-size: .9em;
-			}
+			@media (min-width: 480px) { font-size: .9em; }
 		}
 	}
 }
 
-.hide-over {
-	overflow: hidden;
-}
+.hide-over { overflow: hidden; }
 .top .navLink {
 	z-index: 10;
 	cursor: pointer;
@@ -123,23 +114,16 @@ a {
 // credits 
 .credits {
 	display: inline-block;
-	font-family:$serif;
-	text-align: left;
-	line-height:1.5em;
-	font-size: .938em;
-	margin-bottom:1.75em;
-	margin-top:1.75em;
-	text-align: center;
+	font-family:$serif; text-align: center;
+	font-size: .938em; line-height:1.5em;
+	margin-bottom:1.75em; margin-top:1.75em;
 
-	@media(min-width: 480px) {
-		font-size: 1rem;
-	}
+	@media(min-width: 480px) { font-size: 1rem; }
 }
 
 // Hidden Class for Projects Page commercial/features tupe button
 .project-hidden {
-	visibility: hidden;
-	opacity: 0;
+	visibility: hidden; opacity: 0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   	/* IE 5-7 */
   	filter: alpha(opacity=0);
@@ -151,10 +135,7 @@ a {
 }
 
 // Typography
-.section-title {
-	// font-size: 1.250em;
-	text-align: center;
-}
+.section-title { text-align: center; }
 
 .serif {
 	font-family: 'Times New Roman' serif;
