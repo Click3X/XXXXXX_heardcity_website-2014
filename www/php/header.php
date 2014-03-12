@@ -27,8 +27,7 @@ include('functions.php');
         
         <script data-main="<?php echo $script; ?>" src="js/lib/require.js"></script>
         
-        <?php 
-            // If the Team Member Form has been submitted, echo the variable between script tags for JS
+        <?php  // If the Team Member Form has been submitted, echo the variable between script tags for JS
             if(isset($_POST['selected_member']) && ($_POST['selected_member'] != '')) { 
                 $selected_member = $_POST['selected_member']; 
                 echo "<script>var selectedMember = '$selected_member';</script>";
@@ -38,9 +37,7 @@ include('functions.php');
         ?>
 
     </head>
-    <?php 
-        // if(isset($single)) {$page = 'single';} 
-    ?>
+
     <body class="<?php echo formatLink($page); ?>">
 
     <?php 
@@ -49,15 +46,12 @@ include('functions.php');
             <div id="home-slider-holder" class="container clearfix">
                 <div id="logo-bg" class="logo-bg"></div> <!-- logo-invisible -->
                 <ul id="home-slider" class="home-slider owl-carousel">
-                    <?php 
-                        foreach ($marquee as $marq_img) {
-                            $id = formatId($marq_img);
-                            echo '<li id="'.$id.'" class="slide"></li>';
-                        }
-                    ?>
+                <?php foreach ($marquee as $marq_img) {
+                        $id = formatId($marq_img);
+                        echo '<li id="'.$id.'" class="slide"></li>';
+                    } ?>
                 </ul>
             </div>
     <?php } 
-    
         newMenu($sitePages, $page, 'cl-effect-21');
     ?>
