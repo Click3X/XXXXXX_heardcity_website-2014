@@ -106,29 +106,29 @@ include('php/project-grid.php');
 
 <!-- ((((((((((((((((((((((((((((((((   TEAM MEMBER CAROUSEL  ))))))))))))))))))))))))))))))))   -->
 	<div class="container clearfix team-member-module grey-theme">
-
 		<div class="noise"></div>
 		<div class="section-title">
 			<div>Meet Our Team</div>
 		</div>
-		
 		<div> 
-		  <form id="myForm" action="ourteam.php"  method="post">
+		  <form action="ourteam.php" method="post" id="member-form" class="member-form">
 			<ul id="team-slider" class="team-members owl-carousel"> 
 
 			<?php 
-				foreach ($members as $key => $member) { 
-					$member_items = $member['items'];
-					$member_class = formatLink($member['name']);
-					
-					$item_count = count($member_items);
-					$item_count = $item_count-1;
 
-					$random = rand(0, $item_count);
+			foreach ($members as $key => $member) { 
+				$member_items = $member['items'];
+				$member_class = formatLink($member['name']);
+				
+				$item_count = count($member_items);
+				$item_count = $item_count-1;
 
-					$rand_item = $member_items[$random];
-					$item_name = $rand_item['name'];
-					$item_image = $rand_item['image']; ?>
+				$random = rand(0, $item_count);
+
+				$rand_item = $member_items[$random];
+				$item_name = $rand_item['name'];
+				$item_image = $rand_item['image'];
+			?>
 
 				<li id="<?php echo formatLink($member['name']); ?>">
 					<div class="team-member clearfix">
@@ -141,46 +141,18 @@ include('php/project-grid.php');
 							<li class="misc-text">This belongs to</li>
 							<li class="name"><?php echo $member['name']; ?></li>
 							<li class="bio"><?php echo firstBit($member['bio']); ?></li>
-							<li class="permalink">								
-								<a href="<?php echo $member['permalink']; ?>" class="member-permalink">View more of <?php echo $member['sex']; ?> stuff</a>
-								<input type="radio" name="selected_member" id="<?php echo $member_class; ?>-input" tabindex="2" value="<?php echo $member_class; ?>">
-							</li>
+							<li class="permalink"><a href="<?php echo $member['permalink']; ?>" class="member-permalink">View more of <?php echo $member['sex']; ?> stuff</a><input type="radio" class="team-member-input" id="<?php echo $member_class; ?>-input" checked="" name="selectmember" value="<?php echo $member['name']; ?>"></li>
 						</ul>
 					</div>
 				</li>
 
-			<?php } ?>
+				<?php } ?>
 
 			</ul>
-			<input type="submit" value="Submit">
-	  	  </form>
+			<input type="submit" id="member-form-submit">
+		  </form>
 		</div>
-
     </div>
-
-    
-<!-- <div class="container clearfix team-member-module grey-theme"> -->
-		
-	<!-- <form id="myForm" action="ourteam.php"  method="post"> -->
-		
-		<!-- <div> -->
-
-				<!-- <label for="radio-choice-1">Choice 1</label>
-				<input type="radio" name="selected_member" id="radio-choice-1" tabindex="2" value="choice-1"> -->
-
-				<!-- <label for="radio-choice-2">Choice 2</label>
-				<input type="radio" name="selected_member" id="radio-choice-2" tabindex="3" value="choice-2">
-			
-				<label for="radio-choice-3">Choice 3</label>
-				<input type="radio" name="selected_member" id="radio-choice-3" tabindex="4" value="choice-3"> -->
-
-<!-- 		</div> -->
-				<!-- <input type="submit" value="Submit" id="submit"> -->
-		
-		
-		<!-- </form> -->
-
-	<!-- </div> -->
 <!-- ((((((((((((((((((((((((((((((((   END team member   ))))))))))))))))))))))))))))))))   -->
 
 

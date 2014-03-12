@@ -1,4 +1,4 @@
-define(["jquery", "util/helper", "util/nav", "util/carousel", "util/request-anim", "util/parallax"], function($) {
+define(["jquery", "util/helper", "util/nav", "util/team-member-form", "util/carousel", "util/request-anim", "util/parallax"], function($) {
 
     $(function() {
         var docBody = $('body'),
@@ -12,19 +12,6 @@ define(["jquery", "util/helper", "util/nav", "util/carousel", "util/request-anim
         // Open nav menu * Find a better solution for this
         $('.navLink').click();
 
-        $('.member-permalink').click( function(e) { 
-            e.preventDefault(); 
-
-            var memPerma = $(this);
-            var memInput = memPerma[0].firstElementChild;
-
-            console.log('This is memInput'+ memInput ); console.dir(memInput);
-            console.log(memInput.value);
-
-            // $('#member-form').submit();
-         });
-
-        
     });
 
 });

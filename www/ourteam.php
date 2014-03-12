@@ -2,9 +2,9 @@
 $page='Our Team';
 include('php/header.php');
 
-// if(isset($_POST['selectmember'])) { $selected_member = $_POST['selectmember']; }
+// if(isset($_POST['mem'])) { $selected_member = $_POST['mem']; }
 // echo 'This is the selected Member: '.$selected_member;
-// helper($_POST['member']);
+helper($_POST);
 ?>
 
 

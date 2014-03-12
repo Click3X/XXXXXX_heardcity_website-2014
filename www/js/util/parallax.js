@@ -18,7 +18,7 @@ dudePara;
 function homeParallax() {
     var top = $(this).scrollTop(),
     ratio = top/2.825,
-    sRatio = -top/-6;
+    sRatio = -top/-1.85;
 
     homeLogo.css('transform', 'translateY(' + ratio + 'px)'); 
     slide.css('transform', 'translate3d(0,' + sRatio + 'px, 0)');                 

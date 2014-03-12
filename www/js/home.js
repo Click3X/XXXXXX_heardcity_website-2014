@@ -13,7 +13,8 @@ requirejs.config({
         "util/nav": ["jquery"],
         "owl-carousel": ["jquery"],
         "util/carousel":["owl-carousel"],
-        "util/parallax":["jquery"]
+        "util/parallax":["jquery"],
+        "util/team-member-form":["jquery"]
     }
 });
 
