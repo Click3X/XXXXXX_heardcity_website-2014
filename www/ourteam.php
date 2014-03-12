@@ -5,10 +5,11 @@ include('php/header.php');
 // if no member selected, show the first Bio
 // NEED A BETTER ALTERNATIVE to this
 if(!isset($_POST['selected_member'])) { 
+	// $de_silo = 'img/logos/contact-logo.png';
 	$de_silo = $members[0]['silo'];
-	$de_name = $members[0]['name'];
-	$de_bio = $members[0]['bio'];
-	$de_permalink = $members[0]['permalink'];
+	$de_name = 'HeardCity';
+	$de_bio = 'Heard City is a boutique audio post-production company located in New York\'s Flatiron district servicing the advertising, motion picture and television industries. Our staff, known for their individual unique aesthetics bring power and style to our brand. On display are a few of each of thier personal items reflecting a character trait or passion relevant to their talent. Learn more about us!';
+	$de_permalink = '#';
 } else {
 	// When we have new siohuettes, we will need to change this
 	$de_silo = $members[0]['silo'];

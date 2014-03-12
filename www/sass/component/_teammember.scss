@@ -72,11 +72,7 @@
 
 .team-member-module {
 	padding-top: 1.75em;
-
-	@media(min-width: 480px) {
-		padding-top: 3em;
-		padding-bottom: 3em;
-	}
+	@media(min-width: 480px) { padding-top: 3em; padding-bottom: 3em; }
 }
 
 .home .team-member .image img { max-height: 198px;}
@@ -94,12 +90,10 @@
 		width:30%; max-width: 198px;
 		margin-left:8px;
 		display: table-cell;
-		vertical-align: middle;
-		text-align: center;
+		vertical-align: middle; text-align: center;
 
 		img {
-			width: 100%; 
-			max-width:100%;
+			width: 100%; max-width:100%;
 
 			@media(min-width: 480px) { width:auto; }
 		}
@@ -110,13 +104,10 @@
 		width: 91%;
 		margin-left: 6%;
 
-		@media(min-width:700px) {
-			float: right;
-		}
+		@media(min-width:700px) { float: right; }
 		
 		li {
 			margin-bottom:.5rem;
-
 			@media(min-width:480px) { margin-bottom:.938rem; }
 		}
 
@@ -141,16 +132,13 @@
 		}
 
 		.bio {
-			text-transform: capitalize;
+			text-transform: none;
 			font-family:'Times New Roman', serif;
-			line-height: 1.6em;
 			max-width: 400px; 
-			font-size: .938em;
-			line-height: 1.5em;
+			font-size: .938em; line-height: 1.5em;
 		}
 		.permalink {
 			margin-top:1rem;
-
 			@media(min-width:480px) { margin-top:2rem; }
 
 			a {
@@ -191,7 +179,4 @@
 	background-size: contain;
 }
 
-
-@media(min-width:480px) {
-	.member-text { margin-top: 2em; }
-}
+@media(min-width:480px) { .member-text { margin-top: 2em; } }

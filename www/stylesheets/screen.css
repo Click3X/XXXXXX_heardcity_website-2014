@@ -3001,12 +3001,12 @@ body.home .new-menu-holder {
   }
 }
 
-/* line 82, ../sass/component/_teammember.scss */
+/* line 78, ../sass/component/_teammember.scss */
 .home .team-member .image img {
   max-height: 198px;
 }
 
-/* line 84, ../sass/component/_teammember.scss */
+/* line 80, ../sass/component/_teammember.scss */
 .team-member {
   max-width: 700px;
   padding: 1em 0;
@@ -3015,12 +3015,12 @@ body.home .new-menu-holder {
   margin-left: 2.5%;
 }
 @media (min-width: 700px) {
-  /* line 84, ../sass/component/_teammember.scss */
+  /* line 80, ../sass/component/_teammember.scss */
   .team-member {
     margin: 0 auto;
   }
 }
-/* line 93, ../sass/component/_teammember.scss */
+/* line 89, ../sass/component/_teammember.scss */
 .team-member .image {
   width: 30%;
   max-width: 198px;
@@ -3029,18 +3029,18 @@ body.home .new-menu-holder {
   vertical-align: middle;
   text-align: center;
 }
-/* line 100, ../sass/component/_teammember.scss */
+/* line 95, ../sass/component/_teammember.scss */
 .team-member .image img {
   width: 100%;
   max-width: 100%;
 }
 @media (min-width: 480px) {
-  /* line 100, ../sass/component/_teammember.scss */
+  /* line 95, ../sass/component/_teammember.scss */
   .team-member .image img {
     width: auto;
   }
 }
-/* line 107, ../sass/component/_teammember.scss */
+/* line 101, ../sass/component/_teammember.scss */
 .team-member .member-text {
   text-transform: uppercase;
   float: left;
@@ -3048,22 +3048,22 @@ body.home .new-menu-holder {
   margin-left: 6%;
 }
 @media (min-width: 700px) {
-  /* line 107, ../sass/component/_teammember.scss */
+  /* line 101, ../sass/component/_teammember.scss */
   .team-member .member-text {
     float: right;
   }
 }
-/* line 117, ../sass/component/_teammember.scss */
+/* line 109, ../sass/component/_teammember.scss */
 .team-member .member-text li {
   margin-bottom: .5rem;
 }
 @media (min-width: 480px) {
-  /* line 117, ../sass/component/_teammember.scss */
+  /* line 109, ../sass/component/_teammember.scss */
   .team-member .member-text li {
     margin-bottom: .938rem;
   }
 }
-/* line 123, ../sass/component/_teammember.scss */
+/* line 114, ../sass/component/_teammember.scss */
 .team-member .member-text .misc-text {
   color: #989899;
   letter-spacing: .15em;
@@ -3071,51 +3071,50 @@ body.home .new-menu-holder {
   font-size: .6rem;
 }
 @media (min-width: 480px) {
-  /* line 123, ../sass/component/_teammember.scss */
+  /* line 114, ../sass/component/_teammember.scss */
   .team-member .member-text .misc-text {
     font-size: .8rem;
     margin-bottom: .75rem;
   }
 }
-/* line 135, ../sass/component/_teammember.scss */
+/* line 126, ../sass/component/_teammember.scss */
 .team-member .member-text .name {
   font-size: .8rem;
   letter-spacing: .15em;
   line-height: 1.2rem;
 }
 @media (min-width: 480px) {
-  /* line 135, ../sass/component/_teammember.scss */
+  /* line 126, ../sass/component/_teammember.scss */
   .team-member .member-text .name {
     font-size: 1rem;
   }
 }
-/* line 143, ../sass/component/_teammember.scss */
+/* line 134, ../sass/component/_teammember.scss */
 .team-member .member-text .bio {
-  text-transform: capitalize;
+  text-transform: none;
   font-family: 'Times New Roman', serif;
-  line-height: 1.6em;
   max-width: 400px;
   font-size: .938em;
   line-height: 1.5em;
 }
-/* line 151, ../sass/component/_teammember.scss */
+/* line 140, ../sass/component/_teammember.scss */
 .team-member .member-text .permalink {
   margin-top: 1rem;
 }
 @media (min-width: 480px) {
-  /* line 151, ../sass/component/_teammember.scss */
+  /* line 140, ../sass/component/_teammember.scss */
   .team-member .member-text .permalink {
     margin-top: 2rem;
   }
 }
-/* line 156, ../sass/component/_teammember.scss */
+/* line 144, ../sass/component/_teammember.scss */
 .team-member .member-text .permalink a {
   font-size: .750em;
   color: #1f1f1f;
   position: relative;
   margin-left: 0.875rem;
 }
-/* line 162, ../sass/component/_teammember.scss */
+/* line 150, ../sass/component/_teammember.scss */
 .team-member .member-text .permalink a:before {
   content: '>\0000a0';
   display: block;
@@ -3125,7 +3124,7 @@ body.home .new-menu-holder {
   font-size: 1.5em;
 }
 
-/* line 175, ../sass/component/_teammember.scss */
+/* line 163, ../sass/component/_teammember.scss */
 .arrow {
   width: 30px;
   height: 30px;
@@ -3134,7 +3133,7 @@ body.home .new-menu-holder {
   top: 50%;
 }
 
-/* line 181, ../sass/component/_teammember.scss */
+/* line 169, ../sass/component/_teammember.scss */
 .grey-arrow-left {
   left: .5em;
   background-image: url(../img/build/sprites/grey-left.png);
@@ -3146,7 +3145,7 @@ body.home .new-menu-holder {
   transform: rotate(0deg);
 }
 
-/* line 188, ../sass/component/_teammember.scss */
+/* line 176, ../sass/component/_teammember.scss */
 .grey-arrow-right {
   right: .5em;
   background-image: url(../img/build/sprites/grey-right.png);
@@ -3154,7 +3153,7 @@ body.home .new-menu-holder {
 }
 
 @media (min-width: 480px) {
-  /* line 196, ../sass/component/_teammember.scss */
+  /* line 182, ../sass/component/_teammember.scss */
   .member-text {
     margin-top: 2em;
   }
