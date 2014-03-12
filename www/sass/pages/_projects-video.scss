@@ -94,12 +94,14 @@
 
 // SELECTED BUTTON Classes
 .selected-button {
-	background-color:$grey;
+	// background-color:$grey;
 	color:#000;
 
 	@include prefix(transition, all 500ms);	
 
-	div { border-color: #e0e0e2;
+	div { 
+		border-color: #e0e0e2;
+		background-color:$grey;
 
 		a { color:#000 !important;}
 	}
