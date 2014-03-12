@@ -1,9 +1,8 @@
-define(["jquery", "util/helper", "util/nav", "util/side-bar", "util/team-members-json", "util/map-links"], function($) {
+define(["jquery", "util/helper", "bootstrap.min", "util/side-bar", "util/team-members-json", "util/map-links"], function($) {
 
     // Add helper button
     $(function() {
     	var docBody = $('body');
-    	docBody.toggleNav();
         docBody.helper();
 	});
 

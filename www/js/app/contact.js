@@ -1,11 +1,9 @@
-define(["jquery", "util/helper", "util/nav", "util/google-map"], function($) {
+define(["jquery", "util/helper", "bootstrap.min", "util/google-map"], function($) {
 
     // Add helper button
     $(function() {
     	var docBody = $('body');
-    	docBody.toggleNav();
         docBody.helper();
-        $('.navLink').click();
 	});
 
 });

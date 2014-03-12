@@ -21,20 +21,14 @@
 	    	</div>
 	    </footer>
 
-		<!--
-		<script type="text/javascript">
-			var projectJSON = <?php // echo json_encode($projectJSON); ?>;
-			console.log("This is the projectJSON array: " + projectJSON);
-		</script>
-		-->
-
-		<?php $jsonMembers = json_encode($jsonMembers); ?>
-	
-		<script type="text/javascript">
-			// JSON for OUR TEAM page
-			var jsonMembers = <?php echo $jsonMembers; ?>;
-			// console.table(jsonMembers);
-		</script>
+		<?php 
+			if($page == 'Our Team') { 
+				// ECHO $MEMBER ARRAY DATA AS JSON
+				$jsonMembers = json_encode($jsonMembers); ?>
+				<script type="text/javascript">
+				var jsonMembers = <?php echo $jsonMembers; ?>;
+				</script>
+		<?php } ?>
 
     </body>
 </html>

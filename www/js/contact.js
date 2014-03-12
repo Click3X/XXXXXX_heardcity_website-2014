@@ -9,7 +9,8 @@ requirejs.config({
     },
    "shim": {
       "util/helper": ["jquery"],
-      "util/nav": ["jquery"],
+      "bootstrap.min": ["jquery"],
+      "lib/bootstrap.min": ["jquery"],
       "util/google-map": ["maps"]
     }
 });

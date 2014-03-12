@@ -247,8 +247,8 @@ var Grid = (function() {
 			$item.data( 'offsetTop', $item.offset().top );
 			if( saveheight ) {
 				$item.data( 'height', $item.height() );
-				console.log('This is the height: ' + $item.height() );
-				console.log('This is the offset top: ' + $item.offset().top );
+				// console.log('This is the height: ' + $item.height() );
+				// console.log('This is the offset top: ' + $item.offset().top );
 			}
 		} );
 	}

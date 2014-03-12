@@ -7,28 +7,26 @@ function formatLink($page) {
 	return $returnPage;
 }
 
-// Main Navigation for Site
-function newMenu($sitePages, $page, $effect) {
 
-	echo '<div id="new-menu-holder" class="new-menu-holder">';
-		echo '<div class="top desktop-hidden">
-	    		<a href="#" class="navLink">&#9776;</a>
-	    		<span id="nav-page-title" class="nav-page-title desktop-hidden">'.$page.'</span>
-	  		</div>';
-
-	  	echo '<div id="new-menu-collapse">';
-			echo '<ul id="new-menu" class="new-menu clearfix ">';
-			foreach ($sitePages as $key => $sitePage) {
-				if($page == $sitePage) {$class = ' current-page';} else {$class='';}
-				echo '<li class="menu-'.formatLink($sitePage).' '.$effect.$class.'">';
-					echo '<a href="'.formatLink($sitePage).'.php" data-hover="'.$sitePage.'"><span>'.$sitePage.'</span></a>';
-				echo '</li>';
-			}
-			echo '</ul>';
-		echo '</div>';
-	echo '</div>';
-
-}
+//////////////////////////////////// NEW BOOTSTRAP NAVIGATION /////////////////////////////////////
+function newBootMenu($sitePages, $page, $effect) {
+   echo '<div id="new-menu-holder" class="new-menu-holder">
+	      	<div class="top desktop-hidden">
+		    	<a href="#" class="navLink" data-toggle="collapse" data-target=".nav-collapse">&#9776;</a>
+	        	<span id="nav-page-title" class="nav-page-title desktop-hidden">'.$page.'</span>
+	        </div>
+	        <div id="new-menu-collapse" class="nav-collapse collapse">
+	        	<ul id="new-menu" class="new-menu clearfix nav">';
+			    foreach ($sitePages as $key => $sitePage) {
+						if($page == $sitePage) {$class = ' current-page';} else {$class='';}
+						echo '<li class="menu-'.formatLink($sitePage).' '.$effect.$class.'">';
+							echo '<a href="'.formatLink($sitePage).'.php" data-hover="'.$sitePage.'"><span>'.$sitePage.'</span></a>';
+						echo '</li>';
+					}
+		    echo '</ul>
+		    </div>
+		</div>';
+	}
 
 
 // Read DIRECTORY & RETURN contents as $videos array

@@ -10,6 +10,13 @@ include('php/header.php');
 			<a id="features-btn" href="#" title="Features">Features</a>
 		</div>
 	</div>
+
+<!--     <div class="button-holder middle-button-holder">
+        <div class="clearfix">
+            <a id="all-btn" href="#" title="All">+</a>
+        </div>
+    </div> -->
+
 	<div class="button-holder">
 		<div class="clearfix">
 			<a id="commercials-btn" href="#" title="Commercials">Commercials</a>

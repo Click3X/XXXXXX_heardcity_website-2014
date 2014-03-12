@@ -9,7 +9,8 @@ requirejs.config({
     },
    "shim": {
       "util/helper": ["jquery"],
-      "util/nav": ["jquery"],
+      "bootstrap.min": ["jquery"],
+      "lib/bootstrap.min": ["jquery"],
       "util/side-bar": ["jquery"],
       "util/team-members-json": ["jquery"],
       "util/map-links": ["jquery"]

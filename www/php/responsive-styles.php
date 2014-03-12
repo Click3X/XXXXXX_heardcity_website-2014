@@ -37,26 +37,26 @@
 		$jeanId = $image_spreads[1]['id'];
 		$jeanRealId = '#'.$jeanId;
 		$jeanName = getRawName($jeanImage);	
-		echo $jeanRealId.' { background-image:url("responsive-images/'.$jeanId.'/'.$jeanName.$sizes["mobile-half"].'.'.$ext.'");'."}\n";
+		echo $jeanRealId.' { background-image:url("responsive-images/'.$jeanId.'/'.$jeanName.$sizes["mobile"].'.'.$ext.'");'."}\n";
 
 		// NORD -home.php
 		$nordImage =$image_spreads[0]['image'];
 		$nordId = $image_spreads[0]['id'];
 		$nordRealId = '#'.$nordId;
 		$nordName = getRawName($nordImage);	
-		echo $nordRealId.' { background-image:url("responsive-images/'.$nordId.'/'.$nordName.$sizes["mobile-half"].'.'.$ext.'");'."}\n";
+		echo $nordRealId.' { background-image:url("responsive-images/'.$nordId.'/'.$nordName.$sizes["mobile"].'.'.$ext.'");'."}\n";
 
 		$stairsImage =$image_spreads2[0]['image'];
 		$stairsId = $image_spreads2[0]['id'];
 		$stairsRealId = '#'.$stairsId;
 		$stairsName = getRawName($stairsImage);	
-		echo $stairsRealId.' { background-image:url("responsive-images/'.$stairsId.'/'.$stairsName.$sizes["mobile-half"].'.'.$ext.'");'."}\n";
+		echo $stairsRealId.' { background-image:url("responsive-images/'.$stairsId.'/'.$stairsName.$sizes["mobile"].'.'.$ext.'");'."}\n";
 
 		$girlImage =$image_spreads2[1]['image'];
 		$girlId = $image_spreads2[1]['id'];
 		$girlRealId = '#'.$girlId;
 		$girlName = getRawName($girlImage);	
-		echo $girlRealId.' { background-image:url("responsive-images/'.$girlId.'/'.$girlName.$sizes["mobile-half"].'.'.$ext.'");'."}\n";
+		echo $girlRealId.' { background-image:url("responsive-images/'.$girlId.'/'.$girlName.$sizes["mobile"].'.'.$ext.'");'."}\n";
 
 
 

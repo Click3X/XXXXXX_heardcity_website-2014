@@ -10,7 +10,7 @@ requirejs.config({
     },
     "shim": {
         "util/helper": ["jquery"],
-        "util/nav": ["jquery"],
+        "bootstrap.min": ["jquery"],
         "owl-carousel": ["jquery"],
         "util/carousel":["owl-carousel"],
         "util/parallax":["jquery"],
