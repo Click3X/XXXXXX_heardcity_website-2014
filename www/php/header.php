@@ -23,15 +23,27 @@ include('functions.php');
             }
             // Decide what requireJs script to load based on current page
             include('header-script-loader.php'); 
-            ?>
+        ?>
         
         <script data-main="<?php echo $script; ?>" src="js/lib/require.js"></script>
+        
+        <?php 
+            // If the Team Member Form has been submitted, echo the variable between script tags for JS
+            if(isset($_POST['selected_member']) && ($_POST['selected_member'] != '')) { 
+                $selected_member = $_POST['selected_member']; 
+                echo "<script>var selectedMember = '$selected_member';</script>";
+            } else {
+                  echo "<script>var selectedMember = '';</script>";
+            } 
+        ?>
 
     </head>
-    <?php if(isset($single)) {$page = 'single';} ?>
+    <?php 
+        // if(isset($single)) {$page = 'single';} 
+    ?>
     <body class="<?php echo formatLink($page); ?>">
 
-        <?php 
+    <?php 
         if($page == 'Home') { ?>
             <!-- Home Page Slider -->
             <div id="home-slider-holder" class="container clearfix">
@@ -43,12 +55,9 @@ include('functions.php');
                             echo '<li id="'.$id.'" class="slide"></li>';
                         }
                     ?>
-                    
                 </ul>
             </div>
-
-        <?php } ?>
-        
-        <?php // printMenu($sitePages, $page); 
-            newMenu($sitePages, $page, 'cl-effect-21');
-        ?>
+    <?php } 
+    
+        newMenu($sitePages, $page, 'cl-effect-21');
+    ?>

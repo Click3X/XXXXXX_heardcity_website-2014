@@ -11,7 +11,8 @@ requirejs.config({
       "util/helper": ["jquery"],
       "util/nav": ["jquery"],
       "util/side-bar": ["jquery"],
-      "util/team-members-json": ["jquery"]
+      "util/team-members-json": ["jquery"],
+      "util/map-links": ["jquery"]
     }
 });
 

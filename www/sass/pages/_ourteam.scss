@@ -1,11 +1,11 @@
-// DEV 
+// OUR TEAM
 // SPACE FOR FOOTER
-.ourteam .footer {
-	margin-top:1600px;
-}
+.ourteam .footer { margin-top:1600px; }
 
 // Silo and Member bio
 #member-bio {
+	z-index: 1;
+	
 	.team-member {
 		width:100%;
 		max-width: 1024px;
@@ -32,9 +32,7 @@
 			line-height: 1.6em;
 		}
 
-		.name {
-			font-size: 1.4rem;
-		}
+		.name { font-size: 1.4rem; }
 	}
 }
 
@@ -44,9 +42,7 @@
 		display: inline-block;
 	}
 
-.team-member-items {
-	h1 {letter-spacing: .13em;}
-}
+.team-member-items h1 {letter-spacing: .13em;}
 
 // TYPE
 .item-hover {
@@ -64,7 +60,6 @@
 	border: 1px solid rgba(0, 0, 0, 0.15);
 
 	@include prefix(box-shadow, 2px 5px 8px rgba(0, 0, 0, 0.5) );
-
 	@include prefix(transition, all 500ms);
 
 	.item-hover-inner {
@@ -94,15 +89,33 @@
 			letter-spacing: .1em;
 			line-height: 1.4em;
 
-			&:hover {
-				color:$red;
-			}
+			&:hover { color:$red; }
 		}
 	}
 }
 
 
+// SINGLE PERSON
 
+// .single { background-color:#fff;}
 
+.pop-up {
+	position: relative;
+	margin:auto;
+	background-color:#ffffff;
 
+	.team-member {
+		.member-text {
 
+			.misc-text {
+				font-size: .8rem;
+				margin-bottom:.75em;
+			}
+
+			.name {
+				margin-bottom:.5rem;
+				font-size: 1.3em;
+			}
+		}
+	}
+}

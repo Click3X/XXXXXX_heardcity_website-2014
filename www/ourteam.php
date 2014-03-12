@@ -1,13 +1,7 @@
 <?php // Our Team
 $page='Our Team';
-include('php/header.php');
-
-// if(isset($_POST['mem'])) { $selected_member = $_POST['mem']; }
-// echo 'This is the selected Member: '.$selected_member;
-helper($_POST);
+include('php/header.php'); 
 ?>
-
-
 
 <div id="member-bio" class="container clearfix">
 	<div class="team-member clearfix">
@@ -23,10 +17,7 @@ helper($_POST);
 	</div>
 </div>
 
-
-
 <div id="graph" class="container clearfix">
-
 <?php 
 	// Array for JSON
 	$jsonMembers = array();
@@ -56,7 +47,6 @@ helper($_POST);
                     if($item['image']) {
                         $image = $item['image'];
                         $info = pathinfo($image);
-                        // helper($info);
                         $usemap = $info['filename'];
                     }
                     if($item['bio']) {
@@ -74,9 +64,7 @@ helper($_POST);
                         $name = $item['name'];
                         $item_class= formatLink($name);
                     }
-
                 // include('php/item-holder.php');
-
 			}
 		}
 		echo '</ul>';		
@@ -86,5 +74,4 @@ helper($_POST);
 </div>
 
 <?php include('php/sidebar.php'); ?>
-
 <?php include('php/footer.php'); ?>

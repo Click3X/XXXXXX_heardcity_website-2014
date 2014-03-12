@@ -17,7 +17,7 @@ openShutDroor = function() {
 }
 
 
-// loop through JSON data and CREATE ARRAY (controller?)
+// loop through JSON data and CREATE ARRAY
 showMemberBio = function(member) {
 	$(jsonMembers).each(function() {
 		var name = this.name,
@@ -35,7 +35,7 @@ showMemberBio = function(member) {
 }
 
 
-// Closing the Sidebar (controller?)
+// Closing the Sidebar
 $('#push, #close').click(function () {
 	openShutDroor();
 	clickClose.click(function() {
@@ -45,19 +45,20 @@ $('#push, #close').click(function () {
 });
 
 
-// SIDE BAR hover (controller?)
+// SIDE BAR hover
 $('.members-list').hover(function() {
 	$('#push').toggleClass('hide-push')
 });
 
 
-// If name is clicked, only show their items (controller?)
+// MEMBER ITEMS isolated on CLICK
 showSoloMemberItems = function() {
 	var member = $(this).data('person'),
 	target = '.item-holder.' + member,
 	siblings = $('.item-holder').not(target);
 
-	// SHOW individual ITEMS
+	console.log('This is var member: '+member);
+	// SHOW individual items
 	$('.item-holder').show();
 	siblings.hide();	
 	$('body.ourteam').addClass('js-single-member');
