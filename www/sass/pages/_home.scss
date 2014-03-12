@@ -53,6 +53,13 @@ body.home {
 	}
 }
 
+// FORM CONTROLS HIDE
+input[type="submit"],
+.permalink input { 
+	opacity: 0; 
+	position: absolute;
+}
+
 // VIRTUAL PHOTO
 .container.virtual-photo {
 	text-align: center;
