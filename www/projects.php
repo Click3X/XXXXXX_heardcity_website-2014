@@ -35,7 +35,7 @@ include('php/header.php');
                     echo '<a href="'.$dir.'" data-title="'.$value["title"].'" data-director="'.$value["director"].'" data-mixer="'.$value["mixer"].'" data-mp4="'.$value["mp4"].'">';
                         echo '<div class="vid-thumb-holder img-link clearfix">';
                             // Project Thumb as bg image on div
-                            echo '<div class="project-thumb-bg" style="background-image:url('.$thumbsrc.'); background-size:cover; background-repeat:no-repeat; padding-bottom: 58.5%;"></div>';
+                            echo '<div class="project-thumb-bg" style="background-image:url('.$thumbsrc.'); background-size:cover;"></div>';
                         echo '</div>'; ?>
 
                             <div class="vid-title-holder clearfix">
