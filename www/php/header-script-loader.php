@@ -17,7 +17,7 @@ switch ($page) {
 
     case 'Contact':
         $script = 'js/contact';
-        $maps = '<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>';
+        $maps = '<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>';
         $mapScript = '<script>
                         var clickLatLong = new google.maps.LatLng(40.741244, -73.991320),
                         map,
