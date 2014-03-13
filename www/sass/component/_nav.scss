@@ -7,6 +7,12 @@
 	@include prefix(transform, translateZ(0));
 }
 
+@media(max-width:768px) {
+	.ourteam #new-menu-holder {
+		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+	}
+}
+
 #new-menu .current-page {
 	display: none;
 
@@ -114,9 +120,9 @@ body.single {
 	}
 }
 
-body.home {
-	.new-menu-holder { border-bottom: 0px; }
-}
+body.home .new-menu-holder { border-bottom: 0px; }
+
+body.ourteam { padding-top:88px; }
 
 @media(min-width:768px) {
 	body.ourteam,

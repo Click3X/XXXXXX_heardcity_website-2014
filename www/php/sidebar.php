@@ -1,8 +1,12 @@
 <?php // Sidebar php ?>
 
 	<div id="side-bar-nav" class="side-bar-nav">
-		<div class="head-icon"></div>
-		<div id="push"><a href="#" class="arrow-toggle"></a></div>
+		<!-- <div class="head-icon"></div> -->
+		<div id="push">
+			<div class="head-icon"></div>
+			<a href="#" class="arrow-toggle"></a>
+			<div id="sidebar-name" class="sidebar-name"><?php echo $de_name; ?></div>
+		</div>
 
 		<ul id="members-list" class="members-list">
 			<li><a href="#" id="all-members" class="all-members">Our Team</a></li>

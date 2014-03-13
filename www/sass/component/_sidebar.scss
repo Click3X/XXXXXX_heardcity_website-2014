@@ -1,7 +1,40 @@
 // Side Bar Nav
+.sidebar-name {
+	font-size: .75em;
+	display: block;
+	letter-spacing: .15em;
 
-#slide-menu,
+	position: absolute; top:40%; left:0; bottom:0; right:0; margin:auto;
+
+	@media(min-width: 768px) {
+		display: none;
+	}
+}
+
 #side-bar-nav {
+	top: 0;
+	right:0;
+	width: 100%;
+	background: #fff;
+	position: fixed;
+	height: auto;
+	overflow-y: auto;
+	z-index: 5;
+	background: #fff;
+	border-bottom: 1px solid silver;
+
+	@media(min-width:768px) {
+		background: #fff;
+		border-bottom:none;
+		margin-right: -250px;
+	    right: 60px; top:0;
+	    width: 250px;
+	    height: 100%;
+	}
+}
+
+
+#slide-menu {
 	    margin-right: -250px;
 	    right: 60px; top:0;
 	    width: 250px;
@@ -17,17 +50,28 @@
 }
 
 .side-bar-nav {
-	padding-bottom:100%;
-	border-left: 1px solid silver;
 	text-align: center;
 
+	@media(min-width: 768px) {
+		padding-bottom:100%;
+		border-left: 1px solid silver;
+	}
+
 	.head-icon {
-		height:51px; width:51px;
-		margin: 4em 0 1em .3333em;
+		float: left;
+		margin-left: 43px;
+		width:35px; height:35px;
 		background-image: url('../img/build/team-members/keith-silo-small.png');
 		background-repeat:no-repeat;
 		background-size:contain;
 		@include prefix(transition, all 400ms);
+
+		@media(min-width: 768px) {
+			position: static; top:auto; left:auto; float:none;
+			height:51px; width:51px;
+			margin: 4em 0 1em .3333em;
+			
+		}
 	}
 
 	.arrow-toggle {
@@ -45,6 +89,11 @@
 		display: inline-block;
 		text-align: left;
 		letter-spacing: .05em;
+		text-align: center;
+
+		@media(min-width: 768px) {
+			text-align: left;
+		}
 
 		li {
 			line-height: 2.2em;
@@ -52,9 +101,7 @@
 
 			&:hover {
 				color:black;
-
 				@include prefix(transition, all 500ms);
-
 			}
 
 			&:hover:before {
@@ -68,10 +115,50 @@
 	}
 }
 
+
+#push { 
+	position: fixed; top:42px;
+	width:100%; padding:5px 0;
+	background:#ffffff;
+	border-bottom: 1px solid rgb(153, 153, 153);
+	@include prefix(box-shadow, 0px 1px 6px rgba(0, 0, 0, 0.3));
+	@include prefix(transition, border 500ms);
+	
+	.arrow-toggle { 
+		margin-left: 14px; margin-top: 3px;
+		@include prefix(transform, rotate(-90deg));
+	}
+
+	@media(min-width:768px) {
+		padding:0;
+		position: static;
+		top:auto; width:auto;
+		border-bottom:none;
+		@include prefix(box-shadow, 0px 0px 0px rgba(0, 0, 0, 0));
+
+		.arrow-toggle {
+		    float:left;
+		    margin-left: 19px;
+		    margin-top: -2px;
+
+		    @include prefix(transform, rotate(0deg));
+		}
+	}
+}
+
+
+
 .open-nav {	
-	.head-icon { margin-left: 60px; }
+	.head-icon { 
+		@media(min-width: 768px) {
+			margin-left: 60px; 
+		}
+	}
 
 	#push {
+		border-bottom:none;
+		@include prefix(box-shadow, 0px 0px 0px rgba(0, 0, 0, 0));
+
 		.arrow-toggle {
 			display: block;
 			
@@ -87,11 +174,6 @@
 	@include prefix(transition, opacity 500ms);
 }
 
-#push .arrow-toggle {
-    float:left;
-    margin-left: 19px;
-    margin-top: -2px;
-}
 
 .click-close {
 	display: block;
@@ -107,6 +189,7 @@
 }
 
 #members-list {
+	li {background: #fff;}
 	li:first-child {
 		font-size: 1.25em;
 		color:#000;

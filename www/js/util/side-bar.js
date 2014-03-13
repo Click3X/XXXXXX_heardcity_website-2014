@@ -5,18 +5,6 @@ allMembers = $('.all-members'),
 memberBio = $('#member-bio'),
 sidebarLinks = $('.sidebar-link');
 
-// open - shut side Nav
-openShutDroor = function() {
-	var sideNav = $('body, #side-bar-nav'),
-	value = sideNav.css('right') === '250px' ? '60px' : '250px';
-	sideNav.animate({
-		right: value
-		}, 150);
-	sideBar.toggleClass('open-nav');
-	clickClose.toggleClass('hidden');
-}
-
-
 // loop through JSON data and CREATE ARRAY
 showMemberBio = function(member) {
 	$(jsonMembers).each(function() {
@@ -30,12 +18,22 @@ showMemberBio = function(member) {
 
 			$('#member-bio .bio > p').html(bio);
 			$('#member-bio .name').html(name);
+			$('#sidebar-name').html(name);
 		}
 	});
 }
 
 
-// Closing the Sidebar
+// If Our Team is clicked, show all member items
+allMembers.click(function() {
+	$('.item-holder').show();
+	memberBio.hide();
+	$('body.ourteam').removeClass('js-single-member');
+});
+
+
+
+// Closing the Sidebar BY CLICKING ON OTHER AREA	
 $('#push, #close').click(function () {
 	openShutDroor();
 	clickClose.click(function() {
@@ -50,6 +48,45 @@ $('.members-list').hover(function() {
 	$('#push').toggleClass('hide-push')
 });
 
+
+
+/////////////////////////////////// NEW FUNCTION
+    // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        if (windowsize > 768) {
+        	var sideNav = $('body, #side-bar-nav');
+        	sideNav.css({"right":"60px", "top":0});
+        	// sideNav.css('right', '60px');
+            openShutDroor = function() {
+				// var sideNav = $('body, #side-bar-nav'),
+				var value = sideNav.css('right') === '250px' ? '60px' : '250px';
+				sideNav.animate({
+					right: value
+					}, 150);
+				sideBar.toggleClass('open-nav');
+				clickClose.toggleClass('hidden');
+			}
+        } else {
+        	var sideNav = $('body, #side-bar-nav');
+        	sideNav.css({"right":"0px", "top":"-350px"});
+        	openShutDroor = function() {
+				var value = sideNav.css('top') === '42px' ? '-350px' : '42px';
+				sideNav.animate({
+					top: value
+					}, 150);
+				sideBar.toggleClass('open-nav');
+				clickClose.toggleClass('hidden');
+			}	
+        }
+    }
+
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
 
 // MEMBER ITEMS isolated on CLICK
 showSoloMemberItems = function() {
@@ -73,11 +110,3 @@ showSoloMemberItems = function() {
 }
 // ITEM filter
 sidebarLinks.click(showSoloMemberItems);
-
-
-// If Our Team is clicked, show all member items
-allMembers.click(function() {
-	$('.item-holder').show();
-	memberBio.hide();
-	$('body.ourteam').removeClass('js-single-member');
-});
