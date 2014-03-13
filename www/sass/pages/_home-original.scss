@@ -96,7 +96,7 @@ input[type="submit"],
 
 .work-slide .credits { margin-top:0; }
 
-// #image-spread-1 .image-holder:first-of-type { z-index: 1; }
+#image-spread-1 .image-holder:first-of-type { z-index: 1; }
 
 
 .feat-work-slider { 
@@ -335,22 +335,22 @@ input[type="submit"],
 }
 
 
-// #image-spread-1 {
-// 	overflow: hidden;
+#image-spread-1 {
+	overflow: hidden;
 
-// 	.image-holder:first-of-type {
-// 		width:100%;
-// 		padding-bottom:50%;
-// 		margin-top: -12%;
+	.image-holder:first-of-type {
+		width:100%;
+		padding-bottom:50%;
+		margin-top: -12%;
 
-// 		@media(min-width:480px) { width:50%; }
-// 		@media(min-width:1270px) { padding-bottom:850px; }
-// 	}
-// 	.image-holder:nth-of-type(2) {
-// 		margin-left: 7%;
-// 		@media(min-width:480px) { margin-left: auto; }
-// 	}
-// }
+		@media(min-width:480px) { width:50%; }
+		@media(min-width:1270px) { padding-bottom:850px; }
+	}
+	.image-holder:nth-of-type(2) {
+		margin-left: 7%;
+		@media(min-width:480px) { margin-left: auto; }
+	}
+}
 
 
 .image-spread {
@@ -365,38 +365,38 @@ input[type="submit"],
 	}
 }
 
-// #guitar-nord {
-// 	background-size: cover;
-// 	background-position: center bottom;
-// 	padding-bottom:72%;
-// 	position: absolute;
-// 	@include prefix(transform, translateZ(0));
+#guitar-nord {
+	background-size: cover;
+	background-position: center bottom;
+	padding-bottom:72%;
+	position: absolute;
+	@include prefix(transform, translateZ(0));
 
-// 	@media(min-width:480px) {
-// 		padding-bottom:124%;
-// 		background-size: auto;
-// 	}
+	@media(min-width:480px) {
+		padding-bottom:124%;
+		background-size: auto;
+	}
 	
-// 	@media(min-width:1270px) { padding-bottom:1100px; }
+	@media(min-width:1270px) { padding-bottom:1100px; }
 
-// 	@media(min-width:1475px) { background-size:100%; }
-// }
+	@media(min-width:1475px) { background-size:100%; }
+}
 
 
-// #jean-jacket {
-// 	background-size: cover;
-// 	width:100%;
-// 	background-position: center center;
+#jean-jacket {
+	background-size: cover;
+	width:100%;
+	background-position: center center;
 
-// 	@media(min-width:480px) {
-// 		background-size: auto;
-// 		width:115%;
-// 	}
+	@media(min-width:480px) {
+		background-size: auto;
+		width:115%;
+	}
 
-// 	@media(min-width: 1290px) { background-size:100%; }
+	@media(min-width: 1290px) { background-size:100%; }
 
-// 	@include prefix(transform, translateZ(0));
-// }
+	@include prefix(transform, translateZ(0));
+}
 
 #dude-on-phone {
 	background-size:100%;

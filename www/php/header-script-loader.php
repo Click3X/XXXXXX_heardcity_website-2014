@@ -3,6 +3,10 @@
 $script = '';
 // Load different Javascript for each page
 switch ($page) {
+    case 'Dev':
+        $script = 'js/dev';
+        break;
+
     case 'Home':
         $script = 'js/home';
         break;

@@ -1,0 +1,100 @@
+// NEW DEV PARA TEST STYLES
+
+.vert-parallax { 
+	// padding-bottom:75%;
+	padding-bottom:100%;
+	width:100%;
+
+	@media(min-width:480px) {
+		width:50%;
+	}
+
+	@media(min-width: 768px) {
+		// padding-bottom:768px;
+		background-size: cover;
+	}
+
+	@media(min-width: 1440px) {
+		padding-bottom: 1440px;
+	}
+}
+
+
+
+.black-theme,
+#home-slider-holder {
+	z-index: 1;
+}
+
+#new-menu-holder {
+	position: relative;
+	z-index: 20;
+}
+
+.guitar-jacket {
+	max-height: 768px;
+	// overflow: hidden;
+
+	.parallax-holder {
+		margin-top: -50%;
+
+		@media(min-width:1240px) {
+			margin-top: -700px;			
+		}
+	}
+
+	#jean-jacket {
+		background-position: 0 35%;
+	}
+	#guitar-nord {
+		// background-position: 0 100%;
+	}
+
+	#dude-on-phone-new {
+		// background-position: center bottom;
+		background-size: auto;
+		padding-bottom:100%;
+	}
+}
+
+
+.dude-on-phone-new {
+	max-height: 768px;
+	// overflow: hidden;
+
+	// .parallax-holder {
+	// 	margin-top: -50%;
+
+	// 	@media(min-width:1440px) {
+	// 		margin-top: -700px;			
+	// 	}
+	// }
+
+	#dude-on-phone {
+		background-position: center top;
+		background-size: auto;
+	}
+
+}
+
+
+
+// FEATURED WORK
+.work-slide {
+	padding-bottom: 300px;
+	@media(min-width: 300px) {
+		padding-bottom: 92%;
+	}
+
+	@media(min-width: 480px) {
+		padding-bottom: 85%;
+	}
+
+	@media(min-width: 700px) {
+		padding-bottom: 74%;
+	}
+
+	@media(min-width: 980px) {
+		padding-bottom:700px;
+	}
+}

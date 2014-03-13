@@ -23,7 +23,7 @@ include('functions.php');
         <![endif]-->
 
         <?php 
-            if(isset($page) && ($page == 'Home')) { 
+            if(isset($page) && ($page == 'Home' || $page == 'Dev')) { 
                 // Include Responsive BG script for smaller images
                 include('responsive-styles.php'); 
             }
@@ -50,11 +50,29 @@ include('functions.php');
         if($page == 'Home') { ?>
             <!-- Home Page Slider -->
             <div id="home-slider-holder" class="container clearfix">
-                <div id="logo-bg" class="logo-bg"></div> <!-- logo-invisible -->
+                <div id="logo-bg" class="logo-bg"></div>
                 <ul id="home-slider" class="home-slider owl-carousel">
                 <?php foreach ($marquee as $marq_img) {
                         $id = formatId($marq_img);
                         echo '<li id="'.$id.'" class="slide"></li>';
+                    } ?>
+                </ul>
+            </div>
+    <?php } 
+
+    if($page == 'Dev') { ?>
+            <!-- Home Page Slider -->
+            <div id="home-slider-holder" class="container clearfix">
+                <div id="logo-bg" class="logo-bg"></div>
+                <ul id="new-home-slider" class="home-slider"> <!--  owl-carousel -->
+                <?php 
+                    $k = 0;
+                    foreach ($marquee as $marq_img) {
+                        if($k==0) {
+                            $id = formatId($marq_img);
+                            echo '<li id="'.$id.'" class="slide"></li>';
+                        }
+                        $k++;
                     } ?>
                 </ul>
             </div>

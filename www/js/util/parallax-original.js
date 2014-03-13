@@ -27,12 +27,12 @@ function homeParallax() {
 function halfParallax() {
     var top = $(this).scrollTop(),
     ratio = top/-24;
-    jeanJacket.css('transform', 'translate3d(' + ratio + 'px, ' + ratio + 'px, 0)'); 
+    jeanJacket.css('transform', 'translate3d(' + ratio + 'px, 0, 0)'); 
 }
 
 function gNordParallax() {
     var top = $(this).scrollTop(),
-    gRatio = top/-16;
+    gRatio = top/7.85;
     guitarNord.css('transform', 'translate3d(0,' + gRatio + 'px, 0)'); 
 }
 
