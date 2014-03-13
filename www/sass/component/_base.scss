@@ -106,7 +106,7 @@ a {
 .desktop-hidden {visibility: visible;}
 .invisible {visibility: hidden;}
 
-@media(min-width:480px) {
+@media(min-width:768px) {
 	.invisible {visibility: visible;}
 	.desktop-hidden {visibility: hidden;}
 }

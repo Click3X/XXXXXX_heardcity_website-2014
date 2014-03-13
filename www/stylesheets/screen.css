@@ -1058,7 +1058,7 @@ a {
   visibility: hidden;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   /* line 110, ../sass/component/_base.scss */
   .invisible {
     visibility: visible;
@@ -1129,7 +1129,7 @@ a {
 #new-menu .current-page {
   display: none;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   /* line 10, ../sass/component/_nav.scss */
   #new-menu .current-page {
     display: inline-block;
@@ -1150,24 +1150,24 @@ a {
   text-transform: uppercase;
   position: relative;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   /* line 21, ../sass/component/_nav.scss */
   .new-menu-holder .new-menu {
     padding: 4px 0;
   }
 }
-/* line 33, ../sass/component/_nav.scss */
+/* line 32, ../sass/component/_nav.scss */
 .new-menu-holder .new-menu li {
   width: 100%;
   display: block;
   padding: 4px 0;
 }
-/* line 39, ../sass/component/_nav.scss */
+/* line 37, ../sass/component/_nav.scss */
 .new-menu-holder .new-menu li:last-of-type {
   border-bottom: 0;
 }
-@media (min-width: 480px) {
-  /* line 33, ../sass/component/_nav.scss */
+@media (min-width: 768px) {
+  /* line 32, ../sass/component/_nav.scss */
   .new-menu-holder .new-menu li {
     padding: 0;
     width: 25%;
@@ -1175,12 +1175,12 @@ a {
     border-bottom: 0;
     text-align: center;
   }
-  /* line 43, ../sass/component/_nav.scss */
+  /* line 41, ../sass/component/_nav.scss */
   .new-menu-holder .new-menu li:first-of-type {
     border-top: 0;
   }
 }
-/* line 52, ../sass/component/_nav.scss */
+/* line 50, ../sass/component/_nav.scss */
 .new-menu-holder .new-menu li a, .new-menu-holder .new-menu li .current-page {
   display: block;
   font-size: .8em;
@@ -1194,30 +1194,30 @@ a {
   -ms-transition: color 250ms;
   transition: color 250ms;
 }
-/* line 66, ../sass/component/_nav.scss */
+/* line 63, ../sass/component/_nav.scss */
 .new-menu-holder .new-menu .current-page a {
   color: #1f1f1f;
 }
 
-@media (min-width: 480px) {
-  /* line 71, ../sass/component/_nav.scss */
+@media (min-width: 768px) {
+  /* line 68, ../sass/component/_nav.scss */
   #new-menu-collapse {
     border-top: 1px solid silver;
   }
 }
 
-/* line 77, ../sass/component/_nav.scss */
+/* line 74, ../sass/component/_nav.scss */
 #nav-page-title {
   letter-spacing: .15em;
 }
 
-/* line 79, ../sass/component/_nav.scss */
+/* line 76, ../sass/component/_nav.scss */
 .top {
   height: 42px;
   position: relative;
   text-align: center;
 }
-/* line 84, ../sass/component/_nav.scss */
+/* line 81, ../sass/component/_nav.scss */
 .top .navLink {
   display: block;
   width: 24px;
@@ -1227,20 +1227,20 @@ a {
   left: 14px;
 }
 
-/* line 92, ../sass/component/_nav.scss */
+/* line 89, ../sass/component/_nav.scss */
 .nav-page-title {
   font-size: .75em;
   display: inline-block;
   padding-top: 17px;
 }
 
-@media (min-width: 480px) {
-  /* line 99, ../sass/component/_nav.scss */
+@media (min-width: 768px) {
+  /* line 96, ../sass/component/_nav.scss */
   .desktop-hidden {
     display: none;
   }
 }
-/* line 106, ../sass/component/_nav.scss */
+/* line 105, ../sass/component/_nav.scss */
 body.home,
 body.ourteam,
 body.projects,
@@ -1248,27 +1248,7 @@ body.contact,
 body.single {
   padding-top: 42px;
 }
-/* line 109, ../sass/component/_nav.scss */
-body.home .main-menu-holder,
-body.ourteam .main-menu-holder,
-body.projects .main-menu-holder,
-body.contact .main-menu-holder,
-body.single .main-menu-holder {
-  width: 100%;
-  z-index: 10;
-  position: fixed;
-  top: 0;
-}
-
-/* line 123, ../sass/component/_nav.scss */
-body.home,
-body.ourteam,
-body.projects,
-body.contact,
-body.single {
-  padding-top: 42px;
-}
-/* line 126, ../sass/component/_nav.scss */
+/* line 108, ../sass/component/_nav.scss */
 body.home .new-menu-holder,
 body.ourteam .new-menu-holder,
 body.projects .new-menu-holder,
@@ -1281,20 +1261,20 @@ body.single .new-menu-holder {
   border-bottom: 1px solid silver;
 }
 
-/* line 136, ../sass/component/_nav.scss */
+/* line 118, ../sass/component/_nav.scss */
 body.home .new-menu-holder {
   border-bottom: 0px;
 }
 
-@media (min-width: 480px) {
-  /* line 150, ../sass/component/_nav.scss */
+@media (min-width: 768px) {
+  /* line 125, ../sass/component/_nav.scss */
   body.ourteam,
   body.projects,
   body.contact,
   body.single {
     padding-top: 49px;
   }
-  /* line 153, ../sass/component/_nav.scss */
+  /* line 128, ../sass/component/_nav.scss */
   body.ourteam .new-menu-holder,
   body.projects .new-menu-holder,
   body.contact .new-menu-holder,
@@ -1306,11 +1286,11 @@ body.home .new-menu-holder {
     height: 49px;
   }
 
-  /* line 162, ../sass/component/_nav.scss */
+  /* line 137, ../sass/component/_nav.scss */
   body.home {
     padding-top: 0;
   }
-  /* line 165, ../sass/component/_nav.scss */
+  /* line 140, ../sass/component/_nav.scss */
   body.home .new-menu-holder {
     position: relative;
     width: 100%;
@@ -1319,7 +1299,7 @@ body.home .new-menu-holder {
     height: 49px;
   }
 }
-/* line 178, ../sass/component/_nav.scss */
+/* line 153, ../sass/component/_nav.scss */
 .sticky-top {
   position: fixed !important;
   top: 0 !important;
@@ -1336,28 +1316,28 @@ body.home .new-menu-holder {
   transform: translate3d(0, 0, 0);
 }
 
-@media (min-width: 480px) {
-  /* line 192, ../sass/component/_nav.scss */
+@media (min-width: 768px) {
+  /* line 167, ../sass/component/_nav.scss */
   .sticky-top + #first-container {
     padding-top: 52px;
   }
 }
-/* line 196, ../sass/component/_nav.scss */
+/* line 171, ../sass/component/_nav.scss */
 .projects .main-menu-holder .main-menu .menu-projects a {
   color: #1f1f1f;
 }
 
-/* line 197, ../sass/component/_nav.scss */
+/* line 172, ../sass/component/_nav.scss */
 .contact .main-menu-holder .main-menu .menu-contact a {
   color: #1f1f1f;
 }
 
-/* line 198, ../sass/component/_nav.scss */
+/* line 173, ../sass/component/_nav.scss */
 .home .main-menu-holder .main-menu .menu-home a {
   color: #1f1f1f;
 }
 
-/* line 201, ../sass/component/_nav.scss */
+/* line 176, ../sass/component/_nav.scss */
 .ourteam .main-menu-holder .main-menu .menu-ourteam a,
 .single .main-menu-holder .main-menu .menu-ourteam a {
   color: #1f1f1f;
