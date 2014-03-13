@@ -131,7 +131,11 @@
 	position: relative;
 	width:100%; max-width: 1024px;
 	margin: 0 auto;
-	padding-bottom: 12000px;
+	padding-bottom: 1100%;
+
+	@media(min-width: 1044px) {
+		padding-bottom: 12000px;
+	}
 }
 
 

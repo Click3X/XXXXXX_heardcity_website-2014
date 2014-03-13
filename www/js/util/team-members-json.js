@@ -38,13 +38,14 @@ function memberItems(members) {
 			coords = item.coords,
 			map, area, a, h2, p, aLink,
 			neighbor, innerHover,
-			li = $('<li/>', {
-				class:itemClass
-			}),
 			img = $('<img/>', {
 				src:image,
 				alt:item.name,
 				usemap:usemap
+			}),
+			li = $('<li/>', {
+				class:itemClass,
+				style:"width:"+ ((img[0].width/1024) * 100) + "%;"
 			});
 
 			// console.dir(item);
