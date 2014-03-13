@@ -19,7 +19,9 @@ function memberItems(members) {
 	// console.table(members);
 	// Each MEMBER
 	$.each(members, function(i, member) {
-		var items = members[i].items,
+		var pic_real_width,
+		pic_real_height,
+		items = members[i].items,
 		member_sex = members[i].sex,
 		member_silo = members[i].silo,
 		member_class = members[i].member_class,
@@ -42,13 +44,16 @@ function memberItems(members) {
 				src:image,
 				alt:item.name,
 				usemap:usemap
+			}).load(function() {
+				pic_real_width = this.width;   // Note: $(this).width() will not
+        		// Set parent LI width once img has loaded and browser knows img width
+        		var parentWidth = (this.width/1024) * 100;
+        		$(this).offsetParent().width(parentWidth+'%');
 			}),
 			li = $('<li/>', {
-				class:itemClass,
-				style:"width:"+ ((img[0].width/1024) * 100) + "%;"
+				class:itemClass
 			});
 
-			// console.dir(item);
 
 			// check for Coords, else link shape is regular
 			if(coords) {

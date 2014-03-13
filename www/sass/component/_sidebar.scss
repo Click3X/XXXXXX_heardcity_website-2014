@@ -2,16 +2,14 @@
 
 #slide-menu,
 #side-bar-nav {
-    margin-right: -250px;
-    right: 60px; top:0;
-    width: 250px;
-    background: #fff;
-    position: fixed;
-    height: 100%;
-    overflow-y: auto;
-    z-index: 5;
-
-    @include prefix(transform, translateZ(0));
+	    margin-right: -250px;
+	    right: 60px; top:0;
+	    width: 250px;
+	    background: #fff;
+	    position: fixed;
+	    height: 100%;
+	    overflow-y: auto;
+	    z-index: 5;
 }
 
 #side-bar-nav.open-nav {
@@ -19,7 +17,6 @@
 }
 
 .side-bar-nav {
-	height: 100%;
 	padding-bottom:100%;
 	border-left: 1px solid silver;
 	text-align: center;

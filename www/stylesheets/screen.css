@@ -1375,26 +1375,20 @@ body.home .new-menu-holder {
   height: 100%;
   overflow-y: auto;
   z-index: 5;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
 }
 
-/* line 17, ../sass/component/_sidebar.scss */
+/* line 15, ../sass/component/_sidebar.scss */
 #side-bar-nav.open-nav {
   box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* line 21, ../sass/component/_sidebar.scss */
+/* line 19, ../sass/component/_sidebar.scss */
 .side-bar-nav {
-  height: 100%;
   padding-bottom: 100%;
   border-left: 1px solid silver;
   text-align: center;
 }
-/* line 27, ../sass/component/_sidebar.scss */
+/* line 24, ../sass/component/_sidebar.scss */
 .side-bar-nav .head-icon {
   height: 51px;
   width: 51px;
@@ -1408,7 +1402,7 @@ body.home .new-menu-holder {
   -ms-transition: all 400ms;
   transition: all 400ms;
 }
-/* line 36, ../sass/component/_sidebar.scss */
+/* line 33, ../sass/component/_sidebar.scss */
 .side-bar-nav .arrow-toggle {
   display: block;
   background-image: url("../img/build/sprites/toggle-arrow.png");
@@ -1422,7 +1416,7 @@ body.home .new-menu-holder {
   -ms-transition: all 400ms;
   transition: all 400ms;
 }
-/* line 45, ../sass/component/_sidebar.scss */
+/* line 42, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list {
   font-size: .75em;
   color: #9b9b9b;
@@ -1430,12 +1424,12 @@ body.home .new-menu-holder {
   text-align: left;
   letter-spacing: .05em;
 }
-/* line 52, ../sass/component/_sidebar.scss */
+/* line 49, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list li {
   line-height: 2.2em;
   position: relative;
 }
-/* line 56, ../sass/component/_sidebar.scss */
+/* line 53, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list li:hover {
   color: black;
   -webkit-transition: all 500ms;
@@ -1444,7 +1438,7 @@ body.home .new-menu-holder {
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 63, ../sass/component/_sidebar.scss */
+/* line 60, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list li:hover:before {
   content: url("../img/build/sprites/toggle-arrow.png");
   position: absolute;
@@ -1457,11 +1451,11 @@ body.home .new-menu-holder {
   transform: rotate(180deg);
 }
 
-/* line 75, ../sass/component/_sidebar.scss */
+/* line 72, ../sass/component/_sidebar.scss */
 .open-nav .head-icon {
   margin-left: 60px;
 }
-/* line 78, ../sass/component/_sidebar.scss */
+/* line 75, ../sass/component/_sidebar.scss */
 .open-nav #push .arrow-toggle {
   display: block;
   -webkit-transform: rotate(180deg);
@@ -1476,7 +1470,7 @@ body.home .new-menu-holder {
   transition: transform 500ms;
 }
 
-/* line 87, ../sass/component/_sidebar.scss */
+/* line 84, ../sass/component/_sidebar.scss */
 .hide-push {
   visibility: 0;
   opacity: 0;
@@ -1487,14 +1481,14 @@ body.home .new-menu-holder {
   transition: opacity 500ms;
 }
 
-/* line 93, ../sass/component/_sidebar.scss */
+/* line 90, ../sass/component/_sidebar.scss */
 #push .arrow-toggle {
   float: left;
   margin-left: 19px;
   margin-top: -2px;
 }
 
-/* line 99, ../sass/component/_sidebar.scss */
+/* line 96, ../sass/component/_sidebar.scss */
 .click-close {
   display: block;
   position: fixed;
@@ -1512,7 +1506,7 @@ body.home .new-menu-holder {
   transition: all 500ms;
 }
 
-/* line 113, ../sass/component/_sidebar.scss */
+/* line 110, ../sass/component/_sidebar.scss */
 #members-list li:first-child {
   font-size: 1.25em;
   color: #000;
