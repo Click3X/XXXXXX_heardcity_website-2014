@@ -3,32 +3,39 @@
 // in a few places when clicked
 
 var featuresBtn = $('#features-btn'),
-features = $('.feature');
-commercials = $('.commercial');
+features = $('.feature'),
+commercials = $('.commercial'),
+allBtn = $('#all-btn'),
+all = $('.feature, .commercial'),
 commercialsBtn = $('#commercials-btn');
 
 featuresBtn.click(function() {
-    console.log('Features button was clicked');
+
     features.show().removeClass('project-hidden');
     commercials.addClass('project-hidden').hide();
     $('.selected-button').removeClass('selected-button');
     
     var buttonHolder = $( this ).parent().parent();
     buttonHolder.addClass('selected-button');
-    console.log('This is the buttonHolder: ' + buttonHolder);
-    console.dir(buttonHolder);
 
 });
 
 commercialsBtn.click(function() {
-    console.log('Commercials button was clicked');
+
     commercials.show().removeClass('project-hidden');
     features.addClass('project-hidden').hide();
     $('.selected-button').removeClass('selected-button');
 
     var buttonHolder = $( this ).parent().parent();
     buttonHolder.addClass('selected-button');
-    console.log('This is the buttonHolder: ' + buttonHolder);
-    console.dir(buttonHolder);
+});
+
+allBtn.click(function() {
+
+    all.show().removeClass('project-hidden');
+    $('.selected-button').removeClass('selected-button');
+
+    var buttonHolder = $( this ).parent().parent();
+    buttonHolder.addClass('selected-button');
 
 });

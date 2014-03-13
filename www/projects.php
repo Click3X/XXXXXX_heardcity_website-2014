@@ -11,11 +11,11 @@ include('php/header.php');
 		</div>
 	</div>
 
-<!--     <div class="button-holder middle-button-holder">
+    <div class="button-holder middle-button-holder">
         <div class="clearfix">
             <a id="all-btn" href="#" title="All">+</a>
         </div>
-    </div> -->
+    </div>
 
 	<div class="button-holder">
 		<div class="clearfix">

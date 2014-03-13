@@ -1,6 +1,7 @@
 // Project Page Javasript
 
 requirejs.config({
+    "urlArgs": "bust=" + (new Date()).getTime(),
     "baseUrl": "js/lib",
     "paths": {
       "app": "../app",
