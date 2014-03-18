@@ -216,11 +216,11 @@ $members = array(
 				'coords' => '15,113,16,139,43,200,31,242,35,283,19,387,28,412,54,427,92,428,103,400,125,315,127,351,117,389,148,426,198,425,214,400,220,261,212,220,250,194,260,170,259,136,242,119,216,124,201,140,189,126,191,56,189,23,131,6,98,16,60,34,48,58,66,94,41,82,21,92'
 			),
 
-			// array(
-			// 	'name' => 'painting', 
-			// 	'bio' => 'A painting only increases in value if it is owned and on display by some one other than the original artist.',
-			// 	'image' => 'items/Phil_Loeb_painting.png'
-			// ),
+			array(
+				'name' => 'painting', 
+				'bio' => 'My best friend an I are the founding members of The Museum of bad Portraiture ™. This was one of the early pieces of our collection found at one of our favorite stores in Indy',
+				'image' => 'items/Phil_Loeb_painting.png'
+			),
 
 			array(
 				'name' => 'Smashed Penny', 
@@ -417,12 +417,12 @@ $members = array(
 				'name' => 'Seeds', 
 				'bio' => 'Gardening has become one of my favorite pastimes. These art packs are designed by Northeast artists for the Hudson Valley Seed and hotdog Library a local heirloom and open-pollinated seed company who recently got their organic certification',
 				'image' => 'items/Jodi_Levine_seeds.png'
-			),
-			array(
-				'name' => 'Painting',
-				'bio' => 'My best friend an I are the founding members of The Museum of bad Portraiture ™. This was one of the early pieces of our collection found at one of our favorite stores in Indy',
-				'image' => ''
 			)
+			// array(
+			// 	'name' => 'Painting',
+			// 	'bio' => 'My best friend an I are the founding members of The Museum of bad Portraiture ™. This was one of the early pieces of our collection found at one of our favorite stores in Indy',
+			// 	'image' => ''
+			// )
 		)
 	), 
 
@@ -475,6 +475,11 @@ $members = array(
 			array(
 				'name' => 'Home Brew Book', 
 				'bio' => 'Recently I\'ve enjoyed the process of brewing my own beer. It\'s opened my eyes to the world of craft brew and the infinite combinations of ingredients that can be used to brew some very interesting beers.',
+				'image' => 'items/Cory_Melious_book.png'
+			),
+			array(
+				'name' => 'Shaker', 
+				'bio' => 'Shake it up.',
 				'image' => 'items/Cory_Melious_Shaker.png',
 				'coords' => '22,64,50,58,102,62,162,74,170,52,170,18,160,4,61,11,17,6,18,26'
 			)
@@ -499,8 +504,8 @@ $members = array(
 			array(
 				'name' => 'Drum Sticks', 
 				'bio' => 'These are my drumsticks. Fried Chicken is one of mankind\'s greatest accomplishments, I\'ve never met a piece i didn\'t like.',
-				'image' => 'items/Evan_Mangiamele_chicken.png',
-				'coords' => '49,113,108,99,156,74,195,82,210,69,210,52,211,37,207,17,190,10,170,14,150,10,120,12,81,-2,31,0,9,14,-3,40,-6,82,10,97'
+				'image' => 'items/Evan_Mangiamele_chicken.png'
+				// 'coords' => '49,113,108,99,156,74,195,82,210,69,210,52,211,37,207,17,190,10,170,14,150,10,120,12,81,-2,31,0,9,14,-3,40,-6,82,10,97'
 			),
 			array(
 				'name' => 'Controller', 

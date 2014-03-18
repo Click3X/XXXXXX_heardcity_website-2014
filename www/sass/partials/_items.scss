@@ -13,10 +13,13 @@
 	// Change positioning on items to show at top of page
 	#graph #item-list-holder .item-list .item-holder {
 		display:block;
-		position: relative; 
-		top:auto !important; 
-		left:auto !important;
-		float:left;
+		// position: relative; 
+		// top:auto !important; 
+		// left:auto !important;
+		// float:left;
+
+
+
 		// @include prefix(transition, all 500ms);
 	}
 	// Lessen margin on footer to see all single-items in viewport
@@ -208,7 +211,8 @@
 	}
 
 	li.item-holder.recorder.corymelious {
-		top: 11.6%; left: 18.5%;
+		// top: 11.6%; left: 18.5%;
+		top: 11.2%; left: 14.5%;
 	}
 
 	li.item-holder.rings.jodilevine {
@@ -247,12 +251,17 @@
 		top: 16.9%; left: 78.9%;
 	}
 
+	// li.item-holder.drumsticks.evanmangiamele {
+	// 	top: 18.5%; left: 11.5%;
+	// }
+
 	li.item-holder.drumsticks.evanmangiamele {
-		top: 18.5%; left: 11.5%;
+		top: 18.2%; left: 10%;
 	}
 
 	li.item-holder.castironpan.keithreynaud {
-		top: 19%; left: 10.7%;
+		// top: 19%; 
+		top: 19.3%; left: 10.7%;
 	}
 
 	li.item-holder.smashedpenny.philiploeb {
@@ -395,8 +404,12 @@
 		top: 62.25%; left: 55.5%;
 	}
 
-	li.item-holder.painting.jodilevine {
-		top: 63%; left: 11%;
+	// li.item-holder.painting.jodilevine {
+	// 	top: 63%; left: 11%;
+	// }
+
+	li.item-holder.painting.philiploeb {
+		top: 62%; left: 11%;
 	}
 
 	li.item-holder.theremin.sashaawn {
@@ -563,44 +576,46 @@
 
 // LIST ITEM POSITIONS
 
-// #item-list-holder > .item-list {
-// 	border-left:1px solid green;
-// 	border-right:1px solid green;
-// }
+// LIST ITEM POSITIONS
 
-// #item-list-holder > .item-list:before {
-// 	content: '';
-// 	display: block;
-// 	width: 1px;
-// 	height: 100%;
-// 	background: green;
-// 	z-index: 2;
-// 	position: absolute;
-// 	top: 0;
-// 	left: 100px;
+#item-list-holder > .item-list {
+	border-left:1px solid green;
+	border-right:1px solid green;
+}
 
-// }
+#item-list-holder > .item-list:before {
+	content: '';
+	display: block;
+	width: 1px;
+	height: 100%;
+	background: green;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 100px;
 
-// #graph:after {
-// 	content: '';
-// 	display: block;
-// 	width: 1px;
-// 	height: 100%;
-// 	background: green;
-// 	z-index: 2;
-// 	position: absolute;
-// 	top: 0;
-// 	left: 50%;
-// }
+}
 
-// div#item-list-holder:after {
-// 	content: '';
-// 	width: 100%;
-// 	height: 1px;
-// 	background: green;
-// 	display: block;
-// 	position: absolute;
-// 	z-index: 2;
-// 	top: 40px;
-// }
+#graph:after {
+	content: '';
+	display: block;
+	width: 1px;
+	height: 100%;
+	background: green;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+
+div#item-list-holder:after {
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: green;
+	display: block;
+	position: absolute;
+	z-index: 2;
+	top: 40px;
+}
 

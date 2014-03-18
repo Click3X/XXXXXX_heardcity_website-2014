@@ -16,19 +16,26 @@
 		max-width: 1024px;
 	}
 
-	.image {width: 20%;}
-
-	.member-text {
-		width: 74%;
-		margin-left: 2%;
+	.image {
+		width: 20%;
+		display: none;
 	}
+
+	// .member-text {
+	// 	// width: 74%;
+	// 	// margin-left: 2%;
+	// 	// width: 96%;
+	// }
 
 	@media(min-width:768px) {
 		.image {width: 30%;}
 
 		.member-text {
-			float:left;
-			margin-left:0;
+			width: 74%;
+			// float:left;
+			float:none;
+			// margin-left:0;
+			margin-left: 13%;
 		}
 
 		.bio {

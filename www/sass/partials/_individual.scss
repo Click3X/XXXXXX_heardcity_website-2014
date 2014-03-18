@@ -1,0 +1,349 @@
+.js-single-member {
+
+	#item-list-holder {
+
+		.item-list { 
+			padding-bottom:100%;
+			@media(min-width: 1024px) {
+				padding-bottom:1000px;
+			}
+		}
+
+
+		// CORY MELIOUS
+		li.item-holder.skiboots.corymelious {
+			// top:20%; left:70%;	
+			top: 21.5%; left: 57%;
+		}
+
+		li.item-holder.recorder.corymelious {
+			// top: -2%; left: 12%;
+			top: -3%; left: 10%;
+		}
+
+		li.item-holder.drumsticks.corymelious {
+			// top: 23.6%; left: 13%;
+			top: 33.6%; left: 13%;
+		}
+
+		li.item-holder.homebrewbook.corymelious {
+			// top: 47%; left: 13%;
+			top: 67%; left:13%;
+		}
+
+		li.item-holder.campingstove.corymelious {
+			top: 22.65%; left: 26%;
+		}
+
+		li.item-holder.hammer.corymelious {
+			top: 2.3%; left: 50.5%;
+		}
+
+		li.item-holder.fly.corymelious {
+			top: 13.65%; left: 77.2%;
+		}
+
+		li.item-holder.shaker.corymelious {
+			top: 4%; left: 70%; 
+		}
+
+
+		// ELIZABETH MCCLANAHAN
+
+		li.item-holder.guitar.elizabethmcclanahan {
+			top:0; left: 7.5%;
+		}
+
+		li.item-holder.saintsjersey.elizabethmcclanahan {
+			top: 26%; // top: 16%; 
+			left: 69.5%;
+		}
+
+		li.item-holder.yogamat.elizabethmcclanahan {
+			top: 53%; // top: 33.95%; 
+			left: 9%;
+		}
+
+		li.item-holder.goldengirlstvguidecover.elizabethmcclanahan {
+			top: 27.4%; // top: 17.4%;  
+			left: 49%;
+		}
+
+		li.item-holder.readingglasses.elizabethmcclanahan {
+			top: 30.5%; // top: 20.5%; 
+			left: 27%;
+		}
+
+		li.item-holder.librarycard.elizabethmcclanahan {
+			top: 40%; left: 33.75%;
+		}
+
+
+		// ERIC WARZECHA
+
+		li.item-holder.boo.ericwarzecha {
+			top: 7%; left: 8%;
+		}
+
+		li.item-holder.sabresjersey.ericwarzecha {
+			top: 0; left: 31%;
+		}
+
+		li.item-holder.minorthreatourofstep.ericwarzecha {
+			top: 45%; //top: 29%; 
+			left: 9%;
+		}
+
+		li.item-holder.guitar.ericwarzecha {
+			// top: 44%; left: 22.5%;
+			top: 64%; left: 22.5%;
+		}
+
+		li.item-holder.telluridepicture.ericwarzecha {
+			// top: 59%; left: 11%;
+			top: 66%; left: 47%;
+		}
+
+
+		// EVAN MANGIAMELE
+
+		li.item-holder.leela.evanmangiamele {
+			top: 3%; left: 13.5%; 
+		}
+
+		li.item-holder.drumsticks.evanmangiamele {
+			top: 4%; left: 40%;
+		}
+
+		li.item-holder.gameboy.evanmangiamele {
+			top: 4%; left: 73%;
+		}
+
+		li.item-holder.controller.evanmangiamele {
+			top: 27%; left: 49.5%;
+		}
+
+		li.item-holder.growler.evanmangiamele {
+			top: 20.8%; left: 15%;
+		}
+
+
+		// GARY NOEL
+
+		li.item-holder.firesticks.garynoel {
+			top: -2%; left: 4%;
+		}
+
+		li.item-holder.coral.garynoel {
+			top: 5%; left: 33.5%;
+		}
+
+		li.item-holder.amctrailguide.garynoel {
+			top: 4.75%; left: 75.5%; 
+		}
+
+		li.item-holder.hasselblad.garynoel {
+			top: 42.9%; left: 62%;
+		}
+
+		li.item-holder.wacom.garynoel {
+			top: 4.48%; left: 66.5%;
+		}
+
+		li.item-holder.baseball.garynoel {
+			top: 28.5%; left: 77%;
+		}
+
+		li.item-holder.grillutensils.garynoel {
+			top: 30%; left: 43%;
+		}
+
+		li.item-holder.mouse.garynoel {
+			top: 27.9%; left: 65%;
+		}
+
+
+		//  JEREMY SIEGAL
+
+		li.item-holder.taiwanbeer.jeremysiegal {
+			top: 0; left: 35%;
+		}
+		
+		li.item-holder.\31 991nikeairjordanvisportblue.jeremysiegal {
+			top: 21.7%; left: 54%;
+		}
+
+		li.item-holder.bapexbyabathingape.jeremysiegal {
+			top: 4%; left: 78%;
+		}
+
+		li.item-holder.ambushpowchain.jeremysiegal {
+			top: 5%; left: 51.5%;
+		}
+
+		li.item-holder.retinamacbookpro.jeremysiegal {
+			top: 32%; left: 9.5%;
+		}
+
+		li.item-holder.kanyewest.jeremysiegal {
+			top: 63%; left: 58.5%;
+		}
+
+
+		// JODI LEVINE
+
+		li.item-holder.book.jodilevine {
+			top: 2%; left: 72.5%;
+		}
+
+		li.item-holder.rug.jodilevine {
+			top: 27.5%; left: 46%;
+		}
+
+		li.item-holder.rings.jodilevine {
+			top: 21%; left: 55%;
+		}
+
+		li.item-holder.pouch.jodilevine {
+			top: 2%; left: 46%;
+		}
+
+		li.item-holder.sneakers.jodilevine {
+			top: 0; left: 7%;
+		}
+
+		li.item-holder.seeds.jodilevine {
+			top: 39.8%; left: 13%;
+		}
+
+		li.item-holder.knittingneedle.jodilevine {
+			top: 66.6%; left: 11%;
+		}
+
+		li.item-holder.yogamat.jodilevine {
+			top: 65.5%; left: 40%;
+		}
+
+
+		// KATIE FLYNN
+
+		li.item-holder.necklace.katieflynn {
+			top: 0; left: 14%;
+		}
+
+		li.item-holder.whisk.katieflynn {
+			top: 1%; left: 39.5%;
+		}
+
+		li.item-holder.film.katieflynn {
+			top: 37%; left: 30.5%;
+		}
+
+		li.item-holder.soccerclete.katieflynn {
+			top: 25%; left: 10.5%;
+		}
+
+		li.item-holder.pizza.katieflynn {
+			top: 1%; left: 51%;
+		}
+
+		li.item-holder.drill.katieflynn {
+			top: 33%; left: 57%;
+			> img { @include prefix(transform, rotate(90deg)); }
+		}
+
+		li.item-holder.chargersjersey.katieflynn {
+			top: 62%; left: 12%;
+		}
+
+
+		// PHILIP LOEB
+
+		li.item-holder.q102tshirt.philiploeb {
+			top: 0; left: 66%;
+		}
+
+		li.item-holder.turkey.philiploeb {
+			top: 2%; left: 31.5%;
+		}
+
+		li.item-holder.smashedpenny.philiploeb {
+			top: 30%; left: 52.5%;
+		}
+
+		li.item-holder.linushueycassette7case.philiploeb {
+			top: 1.5%; left: 11.5%;
+		}
+
+		li.item-holder.cassette.philiploeb {
+			top: 19.5%; left: 11.4%;
+		}
+
+		li.item-holder.beardoll.philiploeb {
+			top: 29%; left: 55.8%;
+			@include prefix(transform, rotate(90deg));
+			> .neighbor { @include prefix(transform, rotate(-90deg)); }
+		}
+
+		li.item-holder.painting.philiploeb {
+			top: 32%; left: 7%;
+		}
+
+
+		// SASHA AWN
+
+		li.item-holder.floralpatterneddress.sashaawn {
+			top: 0; left: 5%;
+		}
+
+		li.item-holder.bikepedal.sashaawn {
+			top: 4%; left: 50.5%;
+		}
+
+		li.item-holder.passport.sashaawn {
+			top: 3.65%; left: 75.5%;
+		}
+
+		li.item-holder.trapezegrips.sashaawn {
+			top: 15.25%; left: 45.7%;
+		}
+
+		li.item-holder.theremin.sashaawn {
+			top: 28.55%; left: 46%;
+		}
+
+
+		// KEITH REYNAUD
+
+		li.item-holder.rum.keithreynaud {
+			top: 0%; left: 11%;
+		}
+
+		li.item-holder.barn.keithreynaud {
+			top: .5%; left: 50%;
+		}
+
+		li.item-holder.fishinglure.keithreynaud {
+			top: 21%; left: 60%;
+		}
+
+		li.item-holder.blade.keithreynaud {
+			top: 1%; left: 66%;
+		}
+
+		li.item-holder.plasticbaby.keithreynaud {
+			top: 27%; left: 68.5%;
+		}
+
+		li.item-holder.castironpan.keithreynaud {
+			top: 27.5%; left: 55.7%;
+		}
+
+		li.item-holder.carfridge.keithreynaud {
+			top: 16.3%; left: 9.5%;
+		}
+
+
+
+	}
+}
