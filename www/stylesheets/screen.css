@@ -4902,42 +4902,17 @@ input[type="submit"],
   #og-grid > li {
     width: 50%;
   }
-
-  /* line 339, ../sass/pages/_projects-video.scss */
-  #og-grid > li:nth-of-type(2n+1) {
-    clear: left;
-  }
 }
 @media screen and (min-width: 960px) {
   /* line 346, ../sass/pages/_projects-video.scss */
   #og-grid > li {
     width: 33%;
   }
-
-  /* line 350, ../sass/pages/_projects-video.scss */
-  #og-grid > li:nth-of-type(2n+1) {
-    clear: none;
-  }
-
-  /* line 354, ../sass/pages/_projects-video.scss */
-  #og-grid > li:nth-of-type(3n+1) {
-    clear: left;
-  }
 }
 @media (min-width: 1480px) {
   /* line 360, ../sass/pages/_projects-video.scss */
   #og-grid > li {
     width: 25%;
-  }
-
-  /* line 364, ../sass/pages/_projects-video.scss */
-  #og-grid > li:nth-of-type(3n+1) {
-    clear: none;
-  }
-
-  /* line 368, ../sass/pages/_projects-video.scss */
-  #og-grid > li:nth-of-type(4n+1) {
-    clear: left;
   }
 }
 /* line 375, ../sass/pages/_projects-video.scss */
