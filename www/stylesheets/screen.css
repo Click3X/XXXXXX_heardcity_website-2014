@@ -4256,15 +4256,9 @@ input[type="submit"],
 
 /* line 374, ../sass/pages/_home.scss */
 .image-spread .image-holder {
-  width: 100%;
   float: left;
   position: relative;
-}
-@media (min-width: 480px) {
-  /* line 374, ../sass/pages/_home.scss */
-  .image-spread .image-holder {
-    width: 50%;
-  }
+  width: 50%;
 }
 /* line 381, ../sass/pages/_home.scss */
 .image-spread .image-holder .half-image {
@@ -4274,6 +4268,7 @@ input[type="submit"],
 /* line 386, ../sass/pages/_home.scss */
 #dude-on-phone {
   padding-bottom: 52%;
+  background-size: cover;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -o-transform: translateZ(0);
@@ -4288,7 +4283,7 @@ input[type="submit"],
   }
 }
 
-/* line 400, ../sass/pages/_home.scss */
+/* line 401, ../sass/pages/_home.scss */
 .dog-windows {
   background-size: auto;
   background-position: left bottom;
@@ -4301,56 +4296,56 @@ input[type="submit"],
   transform: translateZ(0);
 }
 @media (min-width: 480px) {
-  /* line 400, ../sass/pages/_home.scss */
+  /* line 401, ../sass/pages/_home.scss */
   .dog-windows {
     background-size: 100%;
   }
 }
 @media (min-width: 1260px) {
-  /* line 400, ../sass/pages/_home.scss */
+  /* line 401, ../sass/pages/_home.scss */
   .dog-windows {
     padding-bottom: 615px;
   }
 }
 
-/* line 413, ../sass/pages/_home.scss */
+/* line 414, ../sass/pages/_home.scss */
 .dog-para-holder {
   width: 100%;
   padding-bottom: 55%;
   position: relative;
 }
 @media (min-width: 380px) {
-  /* line 413, ../sass/pages/_home.scss */
+  /* line 414, ../sass/pages/_home.scss */
   .dog-para-holder {
     padding-bottom: 45%;
   }
 }
 @media (min-width: 480px) {
-  /* line 413, ../sass/pages/_home.scss */
+  /* line 414, ../sass/pages/_home.scss */
   .dog-para-holder {
     padding-bottom: 40%;
   }
 }
 @media (min-width: 1260px) {
-  /* line 413, ../sass/pages/_home.scss */
+  /* line 414, ../sass/pages/_home.scss */
   .dog-para-holder {
     padding-bottom: 615px;
   }
 }
-/* line 423, ../sass/pages/_home.scss */
+/* line 424, ../sass/pages/_home.scss */
 .dog-para-holder .dog-para {
   position: absolute;
   width: 125%;
   bottom: 0;
 }
 
-/* line 432, ../sass/pages/_home.scss */
+/* line 433, ../sass/pages/_home.scss */
 #black-text-slider .owl-carousel .owl-wrapper-outer {
   max-width: 1024px;
   margin: 0 auto;
 }
 
-/* line 438, ../sass/pages/_home.scss */
+/* line 439, ../sass/pages/_home.scss */
 #first-container {
   z-index: 1;
   overflow: hidden;
