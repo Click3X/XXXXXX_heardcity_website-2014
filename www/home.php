@@ -223,7 +223,7 @@ include('php/project-grid.php');
 	<!-- Image Spread II -->
     <div class="container clearfix image-spread-2">
     	<?php foreach ($image_spreads2 as $key => $image_spread2) { 
-    		echo '<div class="para-holder"><div id="'.$image_spread2['id'].'" class="'.$image_spread2['class'].' half-pad"></div></div>';
+    		echo '<div class="para-holder"><div id="'.$image_spread2['id'].'" class="'.$image_spread2['class'].'"></div></div>';
     	} ?>
     </div>
 

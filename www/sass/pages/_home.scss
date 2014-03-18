@@ -5,6 +5,10 @@ body.home {
 	width: 100%;
 }
 
+// #image-spread-1 {
+// 	margin-top:-600px;
+// }
+
 .logo-bg {
 	background-image:url('../img/build/logos/logo-heard-marquee.png');
 	// background-image:url('../img/logos/heard_logo.svg');
@@ -45,7 +49,9 @@ body.home {
 .image-spread {
 	background-color: #fff;
 	.half-image {
-		padding-bottom:100%;
+		// padding-bottom:100%;
+		padding-bottom:125%;
+
 		@media(min-width:1270px) { padding-bottom:850px; }
 	}
 	.full-image {
@@ -280,78 +286,89 @@ input[type="submit"],
 	}
 }
 
-#girl-large {
-	width: 120%;
-	background-size: 100%;
-	background-position: left center;
+// #girl-large {
+// 	width: 120%;
+// 	background-size: 100%;
+// 	background-position: left center;
 
-	@include prefix(transform, translateZ(0));
+// 	@include prefix(transform, translateZ(0));
 
-	@media(min-width: 480px) {
-		width: 160%;
+// 	@media(min-width: 480px) {
+// 		width: 160%;
+// 	}
+// }
+
+
+// #stairs {
+// 	width:100%;
+// 	padding-bottom:70%;
+// 	background-size:100%;
+// 	background-position: center bottom;
+
+// 	@include prefix(transform, translateZ(0));
+
+// 	@media(min-width: 480px) {
+// 		padding-bottom:125%;
+// 		background-size:120%;
+// 	}
+// }
+
+// .para-holder:first-of-type {
+// 	width: 100%;
+// 	float:left;
+// 	margin-top: -10%;
+
+// 	@media(min-width:480px) {
+// 		margin-top: -35%;
+// 		width: 50%;
+// 		padding-bottom: 25%;
+// 	}
+// }
+
+#guitar-nord {
+		background-position: left bottom;
+		background-repeat: no-repeat;
 	}
+#jean-jacket {
+		background-position: left top;
+		background-repeat: no-repeat;
 }
-#stairs {
-	width:100%;
-	padding-bottom:70%;
-	background-size:100%;
-	background-position: center bottom;
 
-	@include prefix(transform, translateZ(0));
-
-	@media(min-width: 480px) {
-		padding-bottom:125%;
-		background-size:120%;
+@media(min-width: 1532px) {
+	#guitar-nord,
+	#jean-jacket {
+		background-size: cover;
 	}
-}
 
-.para-holder:first-of-type {
-	width: 100%;
-	float:left;
-	margin-top: -10%;
-
-	@media(min-width:480px) {
-		margin-top: -35%;
-		width: 50%;
-		padding-bottom: 25%;
-	}
 }
 
 .image-spread-2 {
+	position: relative;
+	width:100%;
+	overflow: hidden;
+
 	@media(min-width:480px) {
 		padding-bottom: 50%;
 		height: 0;
 	}
+	
 }
 
-.para-holder {
-	overflow: hidden;
-	width: 100%;
-	float:left;
-
-	@media(min-width:480px) {
-		width: 50%;
-	}
+#girl-large,
+#stairs {
+	padding-bottom: 50%;
+	background-size: cover;
 }
 
-
-// #image-spread-1 {
+// .para-holder {
 // 	overflow: hidden;
+// 	width: 100%;
+// 	float:left;
 
-// 	.image-holder:first-of-type {
-// 		width:100%;
-// 		padding-bottom:50%;
-// 		margin-top: -12%;
-
-// 		@media(min-width:480px) { width:50%; }
-// 		@media(min-width:1270px) { padding-bottom:850px; }
-// 	}
-// 	.image-holder:nth-of-type(2) {
-// 		margin-left: 7%;
-// 		@media(min-width:480px) { margin-left: auto; }
+// 	@media(min-width:480px) {
+// 		width: 50%;
 // 	}
 // }
-
 
 .image-spread {
 	.image-holder {
@@ -365,47 +382,17 @@ input[type="submit"],
 	}
 }
 
-// #guitar-nord {
-// 	background-size: cover;
-// 	background-position: center bottom;
-// 	padding-bottom:72%;
-// 	position: absolute;
-// 	@include prefix(transform, translateZ(0));
-
-// 	@media(min-width:480px) {
-// 		padding-bottom:124%;
-// 		background-size: auto;
-// 	}
-	
-// 	@media(min-width:1270px) { padding-bottom:1100px; }
-
-// 	@media(min-width:1475px) { background-size:100%; }
-// }
-
-
-// #jean-jacket {
-// 	background-size: cover;
-// 	width:100%;
-// 	background-position: center center;
-
-// 	@media(min-width:480px) {
-// 		background-size: auto;
-// 		width:115%;
-// 	}
-
-// 	@media(min-width: 1290px) { background-size:100%; }
-
-// 	@include prefix(transform, translateZ(0));
-// }
 
 #dude-on-phone {
-	background-size:100%;
+	// background-size:100%;
 	padding-bottom: 52%;
+	// background-position: 100% 0 ;
 
 	@include prefix(transform, translateZ(0));
 
 	@media(min-width: 1290px) {
-		padding-bottom: 700px;
+		// padding-bottom: 700px;
+		padding-bottom: 553px;
 		background-position: center center;
 	}
 }
@@ -422,11 +409,6 @@ input[type="submit"],
 	@media(min-width: 1260px) { padding-bottom: 615px; }
 }
 
-.image-spread-2 {
-	position: relative;
-	width:100%;
-	overflow: hidden;
-}
 
 .dog-para-holder {
 

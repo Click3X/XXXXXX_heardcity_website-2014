@@ -24,21 +24,21 @@ function homeParallax() {
     slide.css('transform', 'translate3d(0,' + sRatio + 'px, 0)');                 
 }
 
-function halfParallax() {
-    var top = $(this).scrollTop(),
-    ratio = top/-24;
-    jeanJacket.css('transform', 'translate3d(' + ratio + 'px, 0, 0)'); 
-}
+// function halfParallax() {
+//     var top = $(this).scrollTop(),
+//     ratio = top/-24;
+//     jeanJacket.css('transform', 'translate3d(' + ratio + 'px, 0, 0)'); 
+// }
 
 function gNordParallax() {
     var top = $(this).scrollTop(),
-    gRatio = top/7.85;
+    gRatio = top/5.85;
     guitarNord.css('transform', 'translate3d(0,' + gRatio + 'px, 0)'); 
 }
 
 function dudeParallax() {
     var top = $(this).scrollTop(),
-    ratio = top/16;
+    ratio = top/5.85;
     dudePhone.css('transform', 'translate3d(' + ratio + 'px, 0, 0)'); 
 }
 
@@ -90,24 +90,24 @@ w.scroll(function(){
 
     // NORD PARALLAX & JEAN JACKET PARALAXX
     if((offsetY > -1282) && (offsetY < 744) ) {
-        halfPara = requestAnimFrame(halfParallax);
-        gNordPara = requestAnimFrame(gNordParallax);
+   //     halfPara = requestAnimFrame(halfParallax);
+    //  gNordPara = requestAnimFrame(gNordParallax);
     }
 
-    // DUDE PARALLAX
+    // // DUDE PARALLAX
     if((offsetY > -2184) && (offsetY < -624) ) {
-        dudePara = dudeParallax();
+       // dudePara = dudeParallax();
     }
 
-    // DOG PARALLAX
-    if((offsetY > -2586) && (offsetY < -1244) ) {
-        dogPara = dogParallax();
-    }
+    // // DOG PARALLAX
+    // if((offsetY > -2586) && (offsetY < -1244) ) {
+    //     dogPara = dogParallax();
+    // }
 
-    // GIRL PARALLAX & STAIRS PARALLAX
-    if((offsetY > -3742) && (offsetY < -2730) ) {
-        girlPara = girlParallax();
-        stairsPara = stairsParallax();
-    }
+    // // GIRL PARALLAX & STAIRS PARALLAX
+    // if((offsetY > -3742) && (offsetY < -2730) ) {
+    //     girlPara = girlParallax();
+    //     stairsPara = stairsParallax();
+    // }
 
 });
