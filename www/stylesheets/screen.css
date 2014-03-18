@@ -4444,12 +4444,6 @@ input[type="submit"],
   z-index: 1;
 }
 
-/* line 29, ../sass/pages/_dev.scss */
-#new-menu-holder {
-  position: relative;
-  z-index: 20;
-}
-
 /* line 34, ../sass/pages/_dev.scss */
 .guitar-jacket {
   max-height: 768px;
