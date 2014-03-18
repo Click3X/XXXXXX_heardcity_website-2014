@@ -1,9 +1,8 @@
 <?php // Sidebar php ?>
 
 	<div id="side-bar-nav" class="side-bar-nav">
-		<!-- <div class="head-icon"></div> -->
 		<div id="push">
-			<div class="head-icon"></div>
+			<!-- <div class="head-icon"></div> TOOK OUT SILOHUETTE as requested-->
 			<a href="#" class="arrow-toggle"></a>
 			<div id="sidebar-name" class="sidebar-name"><?php echo $de_name; ?></div>
 		</div>

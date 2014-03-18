@@ -97,13 +97,13 @@ function memberItems(members) {
 			divTeamMember  = $('<div/>', {
 				class:"team-member clearfix"
 			}),
-			divImage = $('<div/>', {
-				class:"image"
-			}),
-			divImg = $('<img/>', {
-				src: member_silo,
-				alt:"silohuette"
-			}),
+			// divImage = $('<div/>', {
+			// 	class:"image"
+			// }),
+			// divImg = $('<img/>', {
+			// 	src: member_silo,
+			// 	alt:"silohuette"
+			// }),
 			ulMemberText = $('<ul/>', {
 				class:"member-text"
 			}),
@@ -131,10 +131,11 @@ function memberItems(members) {
 			ulMemberText.append(liMiscText, liName, liBio, liAlink);
 
 			// STICH TOGETHER IMAGE DIV
-			divImage.append(divImg);
+			// divImage.append(divImg);
 
 			// TEAM MEM
-			divTeamMember.append(divImage, ulMemberText);
+			// divTeamMember.append(divImage, ulMemberText);
+			divTeamMember.append(ulMemberText);
 
 			// POP UP ULs
 			liMain.append(divTeamMember);

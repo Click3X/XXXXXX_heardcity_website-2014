@@ -52,28 +52,29 @@
 
 .side-bar-nav {
 	text-align: center;
+	padding-top: 60px;
 
 	@media(min-width: 768px) {
 		padding-bottom:100%;
 		border-left: 1px solid silver;
 	}
 
-	.head-icon {
-		float: left;
-		margin-left: 43px;
-		width:35px; height:35px;
-		background-image: url('../img/build/team-members/keith-silo-small.png');
-		background-repeat:no-repeat;
-		background-size:contain;
-		@include prefix(transition, all 400ms);
+	// .head-icon {
+	// 	float: left;
+	// 	margin-left: 43px;
+	// 	width:35px; height:35px;
+	// 	background-image: url('../img/build/team-members/keith-silo-small.png');
+	// 	background-repeat:no-repeat;
+	// 	background-size:contain;
+	// 	@include prefix(transition, all 400ms);
 
-		@media(min-width: 768px) {
-			position: static; top:auto; left:auto; float:none;
-			height:51px; width:51px;
-			margin: 4em 0 1em .3333em;
+	// 	@media(min-width: 768px) {
+	// 		position: static; top:auto; left:auto; float:none;
+	// 		height:51px; width:51px;
+	// 		margin: 4em 0 1em .3333em;
 			
-		}
-	}
+	// 	}
+	// }
 
 	.arrow-toggle {
 		display: block;
@@ -150,11 +151,12 @@
 
 
 .open-nav {	
-	.head-icon { 
-		@media(min-width: 768px) {
-			margin-left: 60px; 
-		}
-	}
+	
+	// .head-icon { 
+	// 	@media(min-width: 768px) {
+	// 		margin-left: 60px; 
+	// 	}
+	// }
 
 	#push {
 		border-bottom:none;

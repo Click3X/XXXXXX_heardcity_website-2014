@@ -162,7 +162,7 @@ $members = array(
 			),
 
 			array(
-				'name' => 'ring', 
+				'name' => 'Ring', 
 				'bio' => '',
 				'image' => 'items/Gloria_Pitagorsky_ring.png'
 			),
@@ -182,7 +182,7 @@ $members = array(
 			array(
 				'name' => 'NY Times',
 				'bio' => 'NY Times – It’s my daily comprehensive news source. Sunday mornings are my favorite-reading the Sunday NY Times from cover to cover - A1 to the Vows sections.',
-				'image' => ''
+				'image' => 'items/Gloria_Pitagorsky_nytimes.png'
 			)
 		)
 	),
@@ -784,11 +784,11 @@ $members = array(
 				'image' => 'items/Jeremy_Siegal_LP.png'
 			),
 
-			// array(
-			// 	'name' => 'Sampler', 
-			// 	'bio' => 'How many times do I have to convince you that this is a real instrument that takes talent and technique to play!?!.',
-			// 	'image' => 'items/Jeremy_Siegal_sampler.png'
-			// ),
+			array(
+				'name' => 'Sampler', 
+				'bio' => 'How many times do I have to convince you that this is a real instrument that takes talent and technique to play!?!.',
+				'image' => 'items/Jeremy_Siegal_sampler.png'
+			),
 
 			array(
 				'name' => 'Bapex by A Bathing Ape', 

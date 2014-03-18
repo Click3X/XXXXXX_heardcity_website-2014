@@ -853,7 +853,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 541, ../sass/partials/_items.scss */
 #item-list-holder li.item-holder.nytimes.gloriapitagorsky {
-  top: 100.6%;
+  top: 100.1%;
   left: 70.5%;
 }
 /* line 545, ../sass/partials/_items.scss */
@@ -900,6 +900,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 #item-list-holder li.item-holder.shaker.corymelious {
   top: 12.5%;
   left: 35%;
+}
+/* line 581, ../sass/partials/_items.scss */
+#item-list-holder li.item-holder.sampler.jeremysiegal {
+  top: 101.85%;
+  left: 20%;
 }
 
 /* line 5, ../sass/partials/_individual.scss */
@@ -1102,77 +1107,82 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: 63%;
   left: 58.5%;
 }
-/* line 195, ../sass/partials/_individual.scss */
+/* line 192, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.sampler.jeremysiegal.zeroZ {
+  left: 13%;
+  top: 6%;
+}
+/* line 199, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.book.jodilevine {
   top: 2%;
   left: 72.5%;
 }
-/* line 199, ../sass/partials/_individual.scss */
+/* line 203, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.rug.jodilevine {
   top: 27.5%;
   left: 46%;
 }
-/* line 203, ../sass/partials/_individual.scss */
+/* line 207, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.rings.jodilevine {
   top: 21%;
   left: 55%;
 }
-/* line 207, ../sass/partials/_individual.scss */
+/* line 211, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.pouch.jodilevine {
   top: 2%;
   left: 46%;
 }
-/* line 211, ../sass/partials/_individual.scss */
+/* line 215, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.sneakers.jodilevine {
   top: 0;
   left: 7%;
 }
-/* line 215, ../sass/partials/_individual.scss */
+/* line 219, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.seeds.jodilevine {
   top: 39.8%;
   left: 13%;
 }
-/* line 219, ../sass/partials/_individual.scss */
+/* line 223, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.knittingneedle.jodilevine {
   top: 66.6%;
   left: 11%;
 }
-/* line 223, ../sass/partials/_individual.scss */
+/* line 227, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.yogamat.jodilevine {
   top: 65.5%;
   left: 40%;
 }
-/* line 230, ../sass/partials/_individual.scss */
+/* line 234, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.necklace.katieflynn {
   top: 0;
   left: 14%;
 }
-/* line 234, ../sass/partials/_individual.scss */
+/* line 238, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.whisk.katieflynn {
   top: 1%;
   left: 39.5%;
 }
-/* line 238, ../sass/partials/_individual.scss */
+/* line 242, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.film.katieflynn {
   top: 37%;
   left: 30.5%;
 }
-/* line 242, ../sass/partials/_individual.scss */
+/* line 246, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.soccerclete.katieflynn {
   top: 25%;
   left: 10.5%;
 }
-/* line 246, ../sass/partials/_individual.scss */
+/* line 250, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.pizza.katieflynn {
   top: 1%;
   left: 51%;
 }
-/* line 250, ../sass/partials/_individual.scss */
+/* line 254, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.drill.katieflynn {
   top: 33%;
   left: 57%;
 }
-/* line 252, ../sass/partials/_individual.scss */
+/* line 256, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.drill.katieflynn > img {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -1180,37 +1190,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-/* line 255, ../sass/partials/_individual.scss */
+/* line 259, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.chargersjersey.katieflynn {
   top: 62%;
   left: 12%;
 }
-/* line 262, ../sass/partials/_individual.scss */
+/* line 266, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.q102tshirt.philiploeb {
   top: 0;
   left: 66%;
 }
-/* line 266, ../sass/partials/_individual.scss */
+/* line 270, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.turkey.philiploeb {
   top: 2%;
   left: 31.5%;
 }
-/* line 270, ../sass/partials/_individual.scss */
+/* line 274, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.smashedpenny.philiploeb {
   top: 30%;
   left: 52.5%;
 }
-/* line 274, ../sass/partials/_individual.scss */
+/* line 278, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.linushueycassette7case.philiploeb {
   top: 1.5%;
   left: 11.5%;
 }
-/* line 278, ../sass/partials/_individual.scss */
+/* line 282, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.cassette.philiploeb {
   top: 19.5%;
   left: 11.4%;
 }
-/* line 282, ../sass/partials/_individual.scss */
+/* line 286, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.beardoll.philiploeb {
   top: 29%;
   left: 55.8%;
@@ -1220,7 +1230,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-/* line 285, ../sass/partials/_individual.scss */
+/* line 289, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.beardoll.philiploeb > .neighbor {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -1228,70 +1238,225 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 288, ../sass/partials/_individual.scss */
+/* line 292, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.painting.philiploeb {
   top: 32%;
   left: 7%;
 }
-/* line 295, ../sass/partials/_individual.scss */
+/* line 299, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.floralpatterneddress.sashaawn {
   top: 0;
   left: 5%;
 }
-/* line 299, ../sass/partials/_individual.scss */
+/* line 303, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.bikepedal.sashaawn {
   top: 4%;
   left: 50.5%;
 }
-/* line 303, ../sass/partials/_individual.scss */
+/* line 307, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.passport.sashaawn {
   top: 3.65%;
   left: 75.5%;
 }
-/* line 307, ../sass/partials/_individual.scss */
+/* line 311, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.trapezegrips.sashaawn {
   top: 15.25%;
   left: 45.7%;
 }
-/* line 311, ../sass/partials/_individual.scss */
+/* line 315, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.theremin.sashaawn {
   top: 28.55%;
   left: 46%;
 }
-/* line 318, ../sass/partials/_individual.scss */
+/* line 322, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.rum.keithreynaud {
   top: 0%;
   left: 11%;
 }
-/* line 322, ../sass/partials/_individual.scss */
+/* line 326, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.barn.keithreynaud {
   top: .5%;
   left: 50%;
 }
-/* line 326, ../sass/partials/_individual.scss */
+/* line 330, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.fishinglure.keithreynaud {
   top: 21%;
   left: 60%;
 }
-/* line 330, ../sass/partials/_individual.scss */
+/* line 334, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.blade.keithreynaud {
   top: 1%;
   left: 66%;
 }
-/* line 334, ../sass/partials/_individual.scss */
+/* line 338, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.plasticbaby.keithreynaud {
   top: 27%;
   left: 68.5%;
 }
-/* line 338, ../sass/partials/_individual.scss */
+/* line 342, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.castironpan.keithreynaud {
   top: 27.5%;
   left: 55.7%;
 }
-/* line 342, ../sass/partials/_individual.scss */
+/* line 346, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.carfridge.keithreynaud {
   top: 16.3%;
   left: 9.5%;
+}
+/* line 353, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.snowboard.danflosdorf {
+  top: 0;
+  left: 13%;
+}
+/* line 357, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.yuengling.danflosdorf {
+  top: 19.9%;
+  left: 39.5%;
+}
+/* line 361, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.watch.danflosdorf {
+  top: 51.9%;
+  left: 39.5%;
+}
+/* line 365, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.skateboard.danflosdorf {
+  top: 10.75%;
+  left: 53.5%;
+}
+/* line 369, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.hockeystick.danflosdorf {
+  top: 1.7%;
+  left: 69%;
+}
+/* line 376, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.jayson.gloriapitagorsky {
+  top: 3%;
+  left: 11%;
+}
+/* line 380, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.bracelet.gloriapitagorsky {
+  top: 2%;
+  left: 34%;
+}
+/* line 384, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.scarf.gloriapitagorsky {
+  top: 0;
+  left: 47.5%;
+}
+/* line 388, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.montaukmagnet.gloriapitagorsky {
+  top: 23.4%;
+  left: 69.5%;
+}
+/* line 392, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.zagat.gloriapitagorsky {
+  top: 39.8%;
+  left: 60.5%;
+}
+/* line 396, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.poster.gloriapitagorsky {
+  top: 55%;
+  left: 63.5%;
+}
+/* line 400, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.flowers.gloriapitagorsky {
+  top: 17.25%;
+  left: 32.5%;
+}
+/* line 404, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.necklace.gloriapitagorsky {
+  top: 37%;
+  left: 40.5%;
+}
+/* line 408, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.ring.gloriapitagorsky {
+  top: 42.45%;
+  left: 34.5%;
+}
+/* line 412, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.elephantfigure.gloriapitagorsky {
+  top: 62%;
+  left: 37%;
+}
+/* line 416, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.nytimes.gloriapitagorsky {
+  top: 23.6%;
+  left: 8.5%;
+}
+/* line 420, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.boardbinder.gloriapitagorsky {
+  top: 50.4%;
+  left: 8.5%;
+}
+/* line 427, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.ipadipodiphone.peonyrene {
+  top: 3%;
+  left: 13%;
+}
+/* line 431, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.lipstick.peonyrene {
+  top: 3%;
+  left: 38.5%;
+}
+/* line 435, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.necklace.peonyrene {
+  top: 9%;
+  left: 19%;
+}
+/* line 439, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.bag.peonyrene {
+  top: 4.6%;
+  left: 61%;
+}
+/* line 443, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.pandorabracelet.peonyrene {
+  top: 35.3%;
+  left: 18.75%;
+}
+/* line 447, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.carkeys.peonyrene {
+  top: 34.25%;
+  left: 41.5%;
+}
+/* line 451, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.brunomars.peonyrene {
+  top: 30.7%;
+  left: 65%;
+}
+/* line 458, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.minnieripperton.taliarodgers {
+  top: 3%;
+  left: 9.5%;
+}
+/* line 462, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.beachbum.taliarodgers {
+  top: 1%;
+  left: 45%;
+}
+/* line 466, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.toy.taliarodgers {
+  top: 1%;
+  left: 69%;
+}
+/* line 470, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.tanktop.taliarodgers {
+  top: 23.7%;
+  left: 38%;
+}
+/* line 474, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.books.taliarodgers {
+  top: 31.15%;
+  left: 12%;
+}
+/* line 478, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.nikefreehyperfeels.taliarodgers {
+  top: 54.5%;
+  left: 6.5%;
+}
+/* line 482, ../sass/partials/_individual.scss */
+.js-single-member #item-list-holder li.item-holder.comics.taliarodgers {
+  top: 38.6%;
+  left: 70%;
 }
 
 /* line 2, ../sass/component/_base.scss */
@@ -1813,6 +1978,7 @@ body.ourteam {
 /* line 53, ../sass/component/_sidebar.scss */
 .side-bar-nav {
   text-align: center;
+  padding-top: 60px;
 }
 @media (min-width: 768px) {
   /* line 53, ../sass/component/_sidebar.scss */
@@ -1821,34 +1987,7 @@ body.ourteam {
     border-left: 1px solid silver;
   }
 }
-/* line 61, ../sass/component/_sidebar.scss */
-.side-bar-nav .head-icon {
-  float: left;
-  margin-left: 43px;
-  width: 35px;
-  height: 35px;
-  background-image: url("../img/build/team-members/keith-silo-small.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: all 400ms;
-  -moz-transition: all 400ms;
-  -o-transition: all 400ms;
-  -ms-transition: all 400ms;
-  transition: all 400ms;
-}
-@media (min-width: 768px) {
-  /* line 61, ../sass/component/_sidebar.scss */
-  .side-bar-nav .head-icon {
-    position: static;
-    top: auto;
-    left: auto;
-    float: none;
-    height: 51px;
-    width: 51px;
-    margin: 4em 0 1em .3333em;
-  }
-}
-/* line 78, ../sass/component/_sidebar.scss */
+/* line 79, ../sass/component/_sidebar.scss */
 .side-bar-nav .arrow-toggle {
   display: block;
   background-image: url("../img/build/sprites/toggle-arrow.png");
@@ -1862,7 +2001,7 @@ body.ourteam {
   -ms-transition: all 400ms;
   transition: all 400ms;
 }
-/* line 87, ../sass/component/_sidebar.scss */
+/* line 88, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list {
   font-size: .75em;
   color: #9b9b9b;
@@ -1872,17 +2011,17 @@ body.ourteam {
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 87, ../sass/component/_sidebar.scss */
+  /* line 88, ../sass/component/_sidebar.scss */
   .side-bar-nav .members-list {
     text-align: left;
   }
 }
-/* line 99, ../sass/component/_sidebar.scss */
+/* line 100, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list li {
   line-height: 2.2em;
   position: relative;
 }
-/* line 103, ../sass/component/_sidebar.scss */
+/* line 104, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list li:hover {
   color: black;
   -webkit-transition: all 500ms;
@@ -1891,7 +2030,7 @@ body.ourteam {
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 108, ../sass/component/_sidebar.scss */
+/* line 109, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list li:hover:before {
   content: url("../img/build/sprites/toggle-arrow.png");
   position: absolute;
@@ -1904,7 +2043,7 @@ body.ourteam {
   transform: rotate(180deg);
 }
 
-/* line 120, ../sass/component/_sidebar.scss */
+/* line 121, ../sass/component/_sidebar.scss */
 #push {
   position: fixed;
   top: 42px;
@@ -1923,7 +2062,7 @@ body.ourteam {
   -ms-transition: border 500ms;
   transition: border 500ms;
 }
-/* line 128, ../sass/component/_sidebar.scss */
+/* line 129, ../sass/component/_sidebar.scss */
 #push .arrow-toggle {
   margin-left: 14px;
   margin-top: 3px;
@@ -1934,7 +2073,7 @@ body.ourteam {
   transform: rotate(-90deg);
 }
 @media (min-width: 768px) {
-  /* line 120, ../sass/component/_sidebar.scss */
+  /* line 121, ../sass/component/_sidebar.scss */
   #push {
     padding: 0;
     position: static;
@@ -1947,7 +2086,7 @@ body.ourteam {
     -ms-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   }
-  /* line 140, ../sass/component/_sidebar.scss */
+  /* line 141, ../sass/component/_sidebar.scss */
   #push .arrow-toggle {
     float: left;
     margin-left: 19px;
@@ -1960,13 +2099,7 @@ body.ourteam {
   }
 }
 
-@media (min-width: 768px) {
-  /* line 153, ../sass/component/_sidebar.scss */
-  .open-nav .head-icon {
-    margin-left: 60px;
-  }
-}
-/* line 159, ../sass/component/_sidebar.scss */
+/* line 161, ../sass/component/_sidebar.scss */
 .open-nav #push {
   border-bottom: none;
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
@@ -1975,7 +2108,7 @@ body.ourteam {
   -ms-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
-/* line 163, ../sass/component/_sidebar.scss */
+/* line 165, ../sass/component/_sidebar.scss */
 .open-nav #push .arrow-toggle {
   display: block;
   -webkit-transform: rotate(180deg);
@@ -1990,7 +2123,7 @@ body.ourteam {
   transition: transform 500ms;
 }
 
-/* line 172, ../sass/component/_sidebar.scss */
+/* line 174, ../sass/component/_sidebar.scss */
 .hide-push {
   visibility: 0;
   opacity: 0;
@@ -2001,7 +2134,7 @@ body.ourteam {
   transition: opacity 500ms;
 }
 
-/* line 179, ../sass/component/_sidebar.scss */
+/* line 181, ../sass/component/_sidebar.scss */
 .click-close {
   display: block;
   position: fixed;
@@ -2019,11 +2152,11 @@ body.ourteam {
   transition: all 500ms;
 }
 
-/* line 193, ../sass/component/_sidebar.scss */
+/* line 195, ../sass/component/_sidebar.scss */
 #members-list li {
   background: #fff;
 }
-/* line 194, ../sass/component/_sidebar.scss */
+/* line 196, ../sass/component/_sidebar.scss */
 #members-list li:first-child {
   font-size: 1.25em;
   color: #000;
