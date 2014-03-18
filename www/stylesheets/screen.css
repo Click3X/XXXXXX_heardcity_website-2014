@@ -897,50 +897,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: 18%;
 }
 
-/* line 581, ../sass/partials/_items.scss */
-#item-list-holder > .item-list {
-  border-left: 1px solid green;
-  border-right: 1px solid green;
-}
-
-/* line 586, ../sass/partials/_items.scss */
-#item-list-holder > .item-list:before {
-  content: '';
-  display: block;
-  width: 1px;
-  height: 100%;
-  background: green;
-  z-index: 2;
-  position: absolute;
-  top: 0;
-  left: 100px;
-}
-
-/* line 599, ../sass/partials/_items.scss */
-#graph:after {
-  content: '';
-  display: block;
-  width: 1px;
-  height: 100%;
-  background: green;
-  z-index: 2;
-  position: absolute;
-  top: 0;
-  left: 50%;
-}
-
-/* line 611, ../sass/partials/_items.scss */
-div#item-list-holder:after {
-  content: '';
-  width: 100%;
-  height: 1px;
-  background: green;
-  display: block;
-  position: absolute;
-  z-index: 2;
-  top: 40px;
-}
-
 /* line 5, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder .item-list {
   padding-bottom: 100%;

@@ -578,44 +578,44 @@
 
 // LIST ITEM POSITIONS
 
-#item-list-holder > .item-list {
-	border-left:1px solid green;
-	border-right:1px solid green;
-}
+// #item-list-holder > .item-list {
+// 	border-left:1px solid green;
+// 	border-right:1px solid green;
+// }
 
-#item-list-holder > .item-list:before {
-	content: '';
-	display: block;
-	width: 1px;
-	height: 100%;
-	background: green;
-	z-index: 2;
-	position: absolute;
-	top: 0;
-	left: 100px;
+// #item-list-holder > .item-list:before {
+// 	content: '';
+// 	display: block;
+// 	width: 1px;
+// 	height: 100%;
+// 	background: green;
+// 	z-index: 2;
+// 	position: absolute;
+// 	top: 0;
+// 	left: 100px;
 
-}
+// }
 
-#graph:after {
-	content: '';
-	display: block;
-	width: 1px;
-	height: 100%;
-	background: green;
-	z-index: 2;
-	position: absolute;
-	top: 0;
-	left: 50%;
-}
+// #graph:after {
+// 	content: '';
+// 	display: block;
+// 	width: 1px;
+// 	height: 100%;
+// 	background: green;
+// 	z-index: 2;
+// 	position: absolute;
+// 	top: 0;
+// 	left: 50%;
+// }
 
-div#item-list-holder:after {
-	content: '';
-	width: 100%;
-	height: 1px;
-	background: green;
-	display: block;
-	position: absolute;
-	z-index: 2;
-	top: 40px;
-}
+// div#item-list-holder:after {
+// 	content: '';
+// 	width: 100%;
+// 	height: 1px;
+// 	background: green;
+// 	display: block;
+// 	position: absolute;
+// 	z-index: 2;
+// 	top: 40px;
+// }
 
