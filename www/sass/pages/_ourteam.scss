@@ -1,5 +1,13 @@
 // OUR TEAM
 // SPACE FOR FOOTER
+html {
+	width:100% !important;
+}
+
+.ourteam {
+	overflow-x:hidden;
+}
+
 .ourteam .footer { 
 	margin-top: 160%; 
 	@media(min-width: 1044px) {
@@ -16,19 +24,13 @@
 		max-width: 1024px;
 	}
 
-	.image {
-		width: 20%;
-		display: none;
-	}
-
-	// .member-text {
-	// 	// width: 74%;
-	// 	// margin-left: 2%;
-	// 	// width: 96%;
+	// .image {
+	// 	width: 20%;
+	// 	display: none;
 	// }
 
 	@media(min-width:768px) {
-		.image {width: 30%;}
+		// .image {width: 30%;}
 
 		.member-text {
 			width: 74%;

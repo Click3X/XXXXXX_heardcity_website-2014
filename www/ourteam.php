@@ -19,9 +19,9 @@ if(!isset($_POST['selected_member'])) {
 
 <div id="member-bio" class="container clearfix">
 	<div class="team-member clearfix">
-		<div class="image">
-			<img src="<?php echo $de_silo; ?>" alt="Silhouette">
-		</div>
+<!-- 		<div class="image">
+			<img src="<?php // echo $de_silo; ?>" alt="Silhouette">
+		</div> -->
 		<ul class="member-text">
 			<li class="misc-text">This belongs to</li>
 			<li class="name"><?php echo $de_name; ?></li>
