@@ -36,6 +36,8 @@ allBtn.click(function() {
     $('.selected-button').removeClass('selected-button');
 
     var buttonHolder = $( this ).parent().parent();
+    var buttonHolder = $( this ).parent().parent();
     buttonHolder.addClass('selected-button');
+    $('.features-commercial .button-holder').addClass('selected-button');
 
 });
