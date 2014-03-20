@@ -1918,7 +1918,7 @@ body.ourteam {
   color: #1f1f1f;
 }
 
-/* line 2, ../sass/component/_sidebar.scss */
+/* line 3, ../sass/component/_sidebar.scss */
 .sidebar-name {
   font-size: .75em;
   display: block;
@@ -1931,13 +1931,13 @@ body.ourteam {
   margin: auto;
 }
 @media (min-width: 768px) {
-  /* line 2, ../sass/component/_sidebar.scss */
+  /* line 3, ../sass/component/_sidebar.scss */
   .sidebar-name {
     display: none;
   }
 }
 
-/* line 14, ../sass/component/_sidebar.scss */
+/* line 15, ../sass/component/_sidebar.scss */
 #side-bar-nav {
   top: 0;
   right: 0;
@@ -1951,7 +1951,7 @@ body.ourteam {
   border-bottom: 1px solid silver;
 }
 @media (min-width: 768px) {
-  /* line 14, ../sass/component/_sidebar.scss */
+  /* line 15, ../sass/component/_sidebar.scss */
   #side-bar-nav {
     background: #fff;
     border-bottom: none;
@@ -1963,7 +1963,7 @@ body.ourteam {
   }
 }
 
-/* line 38, ../sass/component/_sidebar.scss */
+/* line 39, ../sass/component/_sidebar.scss */
 #slide-menu {
   margin-right: -250px;
   right: 60px;
@@ -1976,24 +1976,24 @@ body.ourteam {
   z-index: 5;
 }
 
-/* line 49, ../sass/component/_sidebar.scss */
+/* line 50, ../sass/component/_sidebar.scss */
 #side-bar-nav.open-nav {
   box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* line 53, ../sass/component/_sidebar.scss */
+/* line 54, ../sass/component/_sidebar.scss */
 .side-bar-nav {
   text-align: center;
   padding-top: 60px;
 }
 @media (min-width: 768px) {
-  /* line 53, ../sass/component/_sidebar.scss */
+  /* line 54, ../sass/component/_sidebar.scss */
   .side-bar-nav {
     padding-bottom: 100%;
     border-left: 1px solid silver;
   }
 }
-/* line 79, ../sass/component/_sidebar.scss */
+/* line 80, ../sass/component/_sidebar.scss */
 .side-bar-nav .arrow-toggle {
   display: block;
   background-image: url("../img/build/sprites/toggle-arrow.png");
@@ -2007,7 +2007,7 @@ body.ourteam {
   -ms-transition: all 400ms;
   transition: all 400ms;
 }
-/* line 88, ../sass/component/_sidebar.scss */
+/* line 89, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list {
   font-size: .75em;
   color: #9b9b9b;
@@ -2017,17 +2017,17 @@ body.ourteam {
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 88, ../sass/component/_sidebar.scss */
+  /* line 89, ../sass/component/_sidebar.scss */
   .side-bar-nav .members-list {
     text-align: left;
   }
 }
-/* line 100, ../sass/component/_sidebar.scss */
+/* line 101, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list li {
   line-height: 2.2em;
   position: relative;
 }
-/* line 104, ../sass/component/_sidebar.scss */
+/* line 105, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list li:hover {
   color: black;
   -webkit-transition: all 500ms;
@@ -2036,7 +2036,7 @@ body.ourteam {
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 109, ../sass/component/_sidebar.scss */
+/* line 110, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list li:hover:before {
   content: url("../img/build/sprites/toggle-arrow.png");
   position: absolute;
@@ -2049,7 +2049,7 @@ body.ourteam {
   transform: rotate(180deg);
 }
 
-/* line 121, ../sass/component/_sidebar.scss */
+/* line 122, ../sass/component/_sidebar.scss */
 #push {
   position: fixed;
   top: 42px;
@@ -2068,7 +2068,7 @@ body.ourteam {
   -ms-transition: border 500ms;
   transition: border 500ms;
 }
-/* line 129, ../sass/component/_sidebar.scss */
+/* line 130, ../sass/component/_sidebar.scss */
 #push .arrow-toggle {
   margin-left: 14px;
   margin-top: 3px;
@@ -2079,7 +2079,7 @@ body.ourteam {
   transform: rotate(-90deg);
 }
 @media (min-width: 768px) {
-  /* line 121, ../sass/component/_sidebar.scss */
+  /* line 122, ../sass/component/_sidebar.scss */
   #push {
     padding: 0;
     position: static;
@@ -2092,7 +2092,7 @@ body.ourteam {
     -ms-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   }
-  /* line 141, ../sass/component/_sidebar.scss */
+  /* line 142, ../sass/component/_sidebar.scss */
   #push .arrow-toggle {
     float: left;
     margin-left: 19px;
@@ -2105,7 +2105,7 @@ body.ourteam {
   }
 }
 
-/* line 161, ../sass/component/_sidebar.scss */
+/* line 162, ../sass/component/_sidebar.scss */
 .open-nav #push {
   border-bottom: none;
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
@@ -2114,7 +2114,7 @@ body.ourteam {
   -ms-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
-/* line 165, ../sass/component/_sidebar.scss */
+/* line 166, ../sass/component/_sidebar.scss */
 .open-nav #push .arrow-toggle {
   display: block;
   -webkit-transform: rotate(180deg);
@@ -2129,7 +2129,7 @@ body.ourteam {
   transition: transform 500ms;
 }
 
-/* line 174, ../sass/component/_sidebar.scss */
+/* line 175, ../sass/component/_sidebar.scss */
 .hide-push {
   visibility: 0;
   opacity: 0;
@@ -2140,7 +2140,7 @@ body.ourteam {
   transition: opacity 500ms;
 }
 
-/* line 181, ../sass/component/_sidebar.scss */
+/* line 182, ../sass/component/_sidebar.scss */
 .click-close {
   display: block;
   position: fixed;
@@ -2158,11 +2158,11 @@ body.ourteam {
   transition: all 500ms;
 }
 
-/* line 195, ../sass/component/_sidebar.scss */
+/* line 196, ../sass/component/_sidebar.scss */
 #members-list li {
   background: #fff;
 }
-/* line 196, ../sass/component/_sidebar.scss */
+/* line 197, ../sass/component/_sidebar.scss */
 #members-list li:first-child {
   font-size: 1.25em;
   color: #000;
