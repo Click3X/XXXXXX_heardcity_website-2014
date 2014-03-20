@@ -2235,51 +2235,75 @@ body.ourteam {
 
 /* line 66, ../sass/component/_footer.scss */
 .sprite {
-  background-image: url(../img/social/spritesheet.png);
+  background-image: url(../img/social/social_svg.svg);
   background-repeat: no-repeat;
   display: block;
 }
 
-/* line 72, ../sass/component/_footer.scss */
+/* line 73, ../sass/component/_footer.scss */
 .sprite-email {
   width: 90px;
   height: 90px;
-  background-position: 0 0;
+  background-position: -33px -35px;
+}
+/* line 77, ../sass/component/_footer.scss */
+.sprite-email:hover {
+  background-position: -33px -146px;
 }
 
-/* line 78, ../sass/component/_footer.scss */
+/* line 82, ../sass/component/_footer.scss */
 .sprite-facebook {
   width: 90px;
   height: 90px;
-  background-position: -90px 0;
+  background-position: -316px -35px;
+}
+/* line 87, ../sass/component/_footer.scss */
+.sprite-facebook:hover {
+  background-position: -316px -146px;
 }
 
-/* line 84, ../sass/component/_footer.scss */
+/* line 92, ../sass/component/_footer.scss */
 .sprite-instagram {
   width: 90px;
   height: 90px;
-  background-position: 0 -90px;
+  background-position: -222px -35px;
+}
+/* line 95, ../sass/component/_footer.scss */
+.sprite-instagram:hover {
+  background-position: -222px -146px;
 }
 
-/* line 90, ../sass/component/_footer.scss */
+/* line 101, ../sass/component/_footer.scss */
 .sprite-map {
   width: 90px;
   height: 90px;
-  background-position: -90px -90px;
+  background-position: -128px -35px;
+}
+/* line 105, ../sass/component/_footer.scss */
+.sprite-map:hover {
+  background-position: -128px -146px;
 }
 
-/* line 96, ../sass/component/_footer.scss */
+/* line 110, ../sass/component/_footer.scss */
 .sprite-twitter {
   width: 90px;
   height: 90px;
-  background-position: -180px 0;
+  background-position: -410px -35px;
+}
+/* line 115, ../sass/component/_footer.scss */
+.sprite-twitter:hover {
+  background-position: -410px -146px;
 }
 
-/* line 102, ../sass/component/_footer.scss */
+/* line 120, ../sass/component/_footer.scss */
 .sprite-you-tube {
   width: 90px;
   height: 90px;
-  background-position: -180px -90px;
+  background-position: -504px -35px;
+}
+/* line 125, ../sass/component/_footer.scss */
+.sprite-you-tube:hover {
+  background-position: -504px -146px;
 }
 
 /* Effect 1: Brackets */
