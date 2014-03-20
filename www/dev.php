@@ -1,90 +1,68 @@
-<?php // Our Team
-$page='Our Team';
-include('php/header.php'); 
+<?php
+// PARALLAX PHP ----------------------- TESTING ENVIRONMENT
+error_reporting(E_ALL);
+// HOME
+$page='Dev';
+
+include('php/header.php');
+
+// Include Projects Data
+include('php/project-grid.php');
+
 ?>
 
-
-
-<div id="member-bio" class="container clearfix">
-	<div class="team-member clearfix">
-		<div class="image">
-			<img src="<?php echo $members[0]['silo'];?>" alt="Silhouette">
-		</div>
-		<ul class="member-text">
-			<li class="misc-text">This belongs to</li>
-			<li class="name"><?php echo $members[0]['name']; ?></li>
-			<li class="bio"><p><?php echo $members[0]['bio']; ?></p></li>
-			<li class="permalink"><a href="<?php echo $members[0]['permalink']; ?>" class="all-members">View everyones stuff</a></li>
-		</ul>
-	</div>
+<div id="men">
+  <!-- <ul><li>Home</li><li>Away</li><li>Here</li><li>There</li></ul> -->
+  <?php newBootMenu($sitePages, $page, 'cl-effect-21'); ?>
 </div>
 
 
 
-<div class="container clearfix">
+<div id="par">
 
-<?php 
-	// Array for JSON
-	$jsonMembers = array();
+  <div class="par-container marq">
+    <div class="lax1 sun-light"></div>
+    <div class="bg-logo"></div>
+  </div>
 
-	echo '<div class="team-member-items">';
-		echo '<ul class="item-list">';
 
-		foreach ($members as $key => $member) {
-			$member_name = $member['name'];
-			$member_bio = $member['bio'];
-			$member_silo = $member['silo'];
-			$member_class = formatLink($member_name);
-			$sex = $member["sex"];
-			$possesive = explode(' ', $member_name);
-			$possesive = $possesive[0]."'s";
-			$items = $member['items'];
+      <?php include('php/home/black-text.php'); ?>
 
-			// Array for JSON
-			$jsonMembers[$key]['name'] = $member_name;
-			$jsonMembers[$key]['bio'] = $member_bio;
-			$jsonMembers[$key]['sex'] = $sex;
-			$jsonMembers[$key]['items'] = $items;
-			$jsonMembers[$key]['silo'] = $member_silo;
-			$jsonMembers[$key]['member_class'] = $member_class;
-				
-			foreach ($items as $key => $item) {
-                    if($item['image']) {
-                        $image = $item['image'];
-                        $info = pathinfo($image);
-                        // helper($info);
-                        $usemap = $info['filename'];
-                    }
-                    if($item['bio']) {
-                        $bio = $item['bio'];
-                    }
-                    if(isset($item['map'])) {
-                        $map = $item['map'];
-                    }
-                    if(isset($item['coords'])) {
-                        $coords = $item['coords'];
-                    } else { 
-                        $coords = ''; 
-                    }
-                    if($item['name']) {
-                        $name = $item['name'];
-                        $item_class= formatLink($name);
-                    }
 
-                // include('php/item-holder.php');
+  <div class="par-container nord-jacket">
+    <div class="lax1 g-nord"></div>
+    <div class="lax1 j-jacket"></div>
+  </div>
 
-			}
-		}
-		echo '</ul>';		
-	echo '</div>';
-	?>
+
+      <?php include('php/home/feat-work.php'); ?>
+
+
+  <div class="par-container">
+    <div class="lax1 man-phone"></div>
+  </div>
+
+
+      <?php include('php/home/meet-team.php'); ?>
+
+
+  <div class="par-container">
+    <div class="lax1 dog"></div>
+  </div>
+
+
+      <?php include('php/home/grey-text.php'); ?>
+
+
+  <div class="par-container">
+    <div class="lax1 stairs"></div>
+    <div class="lax1 girl"></div>
+  </div>
+
 
 </div>
 
-	<?php include('php/sidebar.php'); ?>
 
-</div>
 
-        
 
 <?php include('php/footer.php'); ?>

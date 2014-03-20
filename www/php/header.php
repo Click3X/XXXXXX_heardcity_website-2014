@@ -23,12 +23,20 @@ include('functions.php');
         <![endif]-->
 
         <?php 
+            if($page == 'Dev') {
+                include('php/parallax-styles.php');
+            }
+
+
             if(isset($page) && ($page == 'Home' || $page == 'Dev')) { 
                 // Include Responsive BG script for smaller images
                 include('responsive-styles.php'); 
             }
             // Decide what requireJs script to load based on current page
             include('header-script-loader.php'); 
+
+
+            
         ?>
         
         <script data-main="<?php echo $script; ?>" src="js/lib/require.js"></script>
@@ -60,25 +68,10 @@ include('functions.php');
             </div>
     <?php } 
 
-    if($page == 'Dev') { ?>
-            <!-- Home Page Slider -->
-            <div id="home-slider-holder" class="container clearfix">
-                <div id="logo-bg" class="logo-bg"></div>
-                <ul id="new-home-slider" class="home-slider"> <!--  owl-carousel -->
-                <?php 
-                    $k = 0;
-                    foreach ($marquee as $marq_img) {
-                        if($k==0) {
-                            $id = formatId($marq_img);
-                            echo '<li id="'.$id.'" class="slide"></li>';
-                        }
-                        $k++;
-                    } ?>
-                </ul>
-            </div>
-    <?php } 
+    if($page != 'Dev') { 
     
-    newBootMenu($sitePages, $page, 'cl-effect-21');
+        newBootMenu($sitePages, $page, 'cl-effect-21');
+    }
     
     ?>
 
