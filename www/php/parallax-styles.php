@@ -203,7 +203,8 @@ h2 {
 .g-nord {
   left: -10% !important;
   width: 50%;
-  padding-bottom: 69%;
+  // padding-bottom: 69%;
+  padding-bottom: 56%;
   background-image: url("./responsive-images/guitar-nord/guitar-nord-240.jpg");
   background-repeat: no-repeat;
   background-position: 0 100%;
@@ -249,7 +250,8 @@ h2 {
 .j-jacket {
   left: 60% !important;
   width: 50%;
-  padding-bottom: 69%;
+  // padding-bottom: 69%;
+  padding-bottom: 56%;
   background-image: url("./responsive-images/jean-jacket/jean-jacket-240.jpg");
   background-repeat: no-repeat;
   background-position: center center;
