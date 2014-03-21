@@ -141,7 +141,7 @@ h2 {
 
 /* line 192, ../scss/style.scss */
 .bg-logo {
-  background-image: url("../responsive-images/logo-heard-marquee.png");
+  background-image: url("./../responsive-images/logo-heard-marquee.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -154,26 +154,26 @@ h2 {
 .sun-light {
   padding-bottom: 69%;
   width: 100%;
-  background-image: url("../responsive-images/marquee/sun-light/sun-light-480.jpg");
+  background-image: url("./../responsive-images/marquee/sun-light/sun-light-480.jpg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 @media (min-width: 480px) {
   /* line 203, ../scss/style.scss */
   .sun-light {
-    background-image: url("../responsive-images/marquee/sun-light/sun-light-960.jpg");
+    background-image: url("./../responsive-images/marquee/sun-light/sun-light-960.jpg");
   }
 }
 @media (min-width: 960px) {
   /* line 203, ../scss/style.scss */
   .sun-light {
-    background-image: url("../responsive-images/marquee/sun-light/sun-light-1440.jpg");
+    background-image: url("./../responsive-images/marquee/sun-light/sun-light-1440.jpg");
   }
 }
 @media (min-width: 1440px) {
   /* line 203, ../scss/style.scss */
   .sun-light {
-    background-image: url("../responsive-images/marquee/sun-light/sun-light-1920.jpg");
+    background-image: url("./../responsive-images/marquee/sun-light/sun-light-1920.jpg");
   }
 }
 
@@ -204,20 +204,20 @@ h2 {
   left: -10% !important;
   width: 50%;
   padding-bottom: 69%;
-  background-image: url("../responsive-images/guitar-nord/guitar-nord-240.jpg");
+  background-image: url("./../responsive-images/guitar-nord/guitar-nord-240.jpg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 @media (min-width: 480px) {
   /* line 240, ../scss/style.scss */
   .g-nord {
-    background-image: url("../responsive-images/guitar-nord/guitar-nord-480.jpg");
+    background-image: url("./../responsive-images/guitar-nord/guitar-nord-480.jpg");
   }
 }
 @media (min-width: 960px) {
   /* line 240, ../scss/style.scss */
   .g-nord {
-    background-image: url("../responsive-images/guitar-nord/guitar-nord-768.jpg");
+    background-image: url("./../responsive-images/guitar-nord/guitar-nord-768.jpg");
   }
 }
 
@@ -226,20 +226,20 @@ h2 {
   left: -10% !important;
   width: 50%;
   padding-bottom: 68.5%;
-  background-image: url("../responsive-images/stairs/stairs-260.jpg");
+  background-image: url("./../responsive-images/stairs/stairs-260.jpg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 @media (min-width: 480px) {
   /* line 257, ../scss/style.scss */
   .stairs {
-    background-image: url("../responsive-images/stairs/stairs-480.jpg");
+    background-image: url("./../responsive-images/stairs/stairs-480.jpg");
   }
 }
 @media (min-width: 960px) {
   /* line 257, ../scss/style.scss */
   .stairs {
-    background-image: url("../responsive-images/stairs/stairs-960.jpg");
+    background-image: url("./../responsive-images/stairs/stairs-960.jpg");
   }
 }
 
@@ -248,20 +248,20 @@ h2 {
   left: 60% !important;
   width: 50%;
   padding-bottom: 69%;
-  background-image: url("../responsive-images/jean-jacket/jean-jacket-240.jpg");
+  background-image: url("./../responsive-images/jean-jacket/jean-jacket-240.jpg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 @media (min-width: 480px) {
   /* line 276, ../scss/style.scss */
   .j-jacket {
-    background-image: url("../responsive-images/jean-jacket/jean-jacket-480.jpg");
+    background-image: url("./../responsive-images/jean-jacket/jean-jacket-480.jpg");
   }
 }
 @media (min-width: 960px) {
   /* line 276, ../scss/style.scss */
   .j-jacket {
-    background-image: url("../responsive-images/jean-jacket/jean-jacket-768.jpg");
+    background-image: url("./../responsive-images/jean-jacket/jean-jacket-768.jpg");
   }
 }
 
@@ -270,20 +270,20 @@ h2 {
   left: 60% !important;
   width: 50%;
   padding-bottom: 56%;
-  background-image: url("../responsive-images/girl-large/girl-large-240.jpg");
+  background-image: url("./../responsive-images/girl-large/girl-large-240.jpg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 @media (min-width: 480px) {
   /* line 292, ../scss/style.scss */
   .girl {
-    background-image: url("../responsive-images/girl-large/girl-large-480.jpg");
+    background-image: url("./../responsive-images/girl-large/girl-large-480.jpg");
   }
 }
 @media (min-width: 960px) {
   /* line 292, ../scss/style.scss */
   .girl {
-    background-image: url("../responsive-images/girl-large/girl-large-960.jpg");
+    background-image: url("./../responsive-images/girl-large/girl-large-960.jpg");
   }
 }
 
@@ -291,26 +291,26 @@ h2 {
 .man-phone {
   padding-bottom: 69%;
   width: 100%;
-  background-image: url("../responsive-images/man-phone/man-phone-480.jpg");
+  background-image: url("./../responsive-images/man-phone/man-phone-480.jpg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 @media (min-width: 480px) {
   /* line 310, ../scss/style.scss */
   .man-phone {
-    background-image: url("../responsive-images/man-phone/man-phone-960.jpg");
+    background-image: url("./../responsive-images/man-phone/man-phone-960.jpg");
   }
 }
 @media (min-width: 960px) {
   /* line 310, ../scss/style.scss */
   .man-phone {
-    background-image: url("../responsive-images/man-phone/man-phone-1440.jpg");
+    background-image: url("./../responsive-images/man-phone/man-phone-1440.jpg");
   }
 }
 @media (min-width: 1440px) {
   /* line 310, ../scss/style.scss */
   .man-phone {
-    background-image: url("../responsive-images/man-phone/man-phone-1920.jpg");
+    background-image: url("./../responsive-images/man-phone/man-phone-1920.jpg");
   }
 }
 
@@ -318,26 +318,26 @@ h2 {
 .dog {
   padding-bottom: 69%;
   width: 100%;
-  background-image: url("../responsive-images/dog/dog-480.jpg");
+  background-image: url("./../responsive-images/dog/dog-480.jpg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 @media (min-width: 480px) {
   /* line 328, ../scss/style.scss */
   .dog {
-    background-image: url("../responsive-images/dog/dog-960.jpg");
+    background-image: url("./../responsive-images/dog/dog-960.jpg");
   }
 }
 @media (min-width: 960px) {
   /* line 328, ../scss/style.scss */
   .dog {
-    background-image: url("../responsive-images/dog/dog-1440.jpg");
+    background-image: url("./../responsive-images/dog/dog-1440.jpg");
   }
 }
 @media (min-width: 1440px) {
   /* line 328, ../scss/style.scss */
   .dog {
-    background-image: url("../responsive-images/dog/dog-1920.jpg");
+    background-image: url("./../responsive-images/dog/dog-1920.jpg");
   }
 }
 
