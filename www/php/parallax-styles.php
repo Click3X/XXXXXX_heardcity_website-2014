@@ -98,6 +98,17 @@ body {
   transform: translateZ(-0.4px) scale(1.4);
   z-index: -400;
 }
+
+/* line 109, ../scss/style.scss */
+.par-container .lax2 {
+  -webkit-transform: translateZ(-0.2px) scale(1.2);
+  -moz-transform: translateZ(-0.2px) scale(1.2);
+  -ms-transform: translateZ(-0.2px) scale(1.2);
+  -o-transform: translateZ(-0.2px) scale(1.2);
+  transform: translateZ(-0.2px) scale(1.2);
+  z-index: -200;
+}
+
 /* line 162, ../scss/style.scss */
 .par-container > * {
   position: absolute;
@@ -214,7 +225,8 @@ h2 {
   /* line 240, ../scss/style.scss */
   .g-nord {
     padding-bottom: 66%;
-    margin-top:-20%;
+    // margin-top:-20%;
+    margin-top: -7%;
     background-image: url("./responsive-images/guitar-nord/guitar-nord-480.jpg");
   }
 }
