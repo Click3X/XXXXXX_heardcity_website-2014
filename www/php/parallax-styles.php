@@ -242,7 +242,7 @@ h2 {
   background-image: url("./responsive-images/stairs/stairs-260.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  // background-size: cover;
 }
 @media (min-width: 480px) {
   /* line 257, ../scss/style.scss */
