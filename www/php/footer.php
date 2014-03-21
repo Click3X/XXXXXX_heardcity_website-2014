@@ -13,10 +13,10 @@
 	    		<div class="social-icons clearfix">
 	    			<div class="icon-holder"><a href="<?php echo $social['map'] ?>" class="sprite sprite-map"></a></div>
 	    			<div class="icon-holder"><a href="<?php echo $social['email'] ?>" class="sprite sprite-email"></a></div>
-	    			<div class="icon-holder"><a href="<?php echo $social['instagram'] ?>" class="sprite sprite-instagram"></a></div>
+	    			<!-- <div class="icon-holder"><a href="<?php echo $social['instagram'] ?>" class="sprite sprite-instagram"></a></div> -->
 	    			<div class="icon-holder"><a href="<?php echo $social['facebook'] ?>" class="sprite sprite-facebook"></a></div>
 	    			<div class="icon-holder"><a href="<?php echo $social['twitter'] ?>" class="sprite sprite-twitter"></a></div>
-	    			<div class="icon-holder"><a href="<?php echo $social['youtube'] ?>" class="sprite sprite-you-tube"></a></div>
+	    			<!-- <div class="icon-holder"><a href="<?php echo $social['youtube'] ?>" class="sprite sprite-you-tube"></a></div> -->
 	    		</div>
 	    	</div>
 	    </footer>

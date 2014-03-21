@@ -4,7 +4,9 @@ $('#home-slider').owlCarousel({
     singleItem:true,
     navigation:true,
     navigationText:false,
-    pagination:false
+    pagination:false,
+    rewindNav:true,
+    rewindSpeed:0
 });
 
 $('#team-slider, #black-text-slider, #featured-slider, #grey-text-slider').owlCarousel({
@@ -12,5 +14,7 @@ $('#team-slider, #black-text-slider, #featured-slider, #grey-text-slider').owlCa
     singleItem:true,
     navigation:true,
     navigationText:false,
-    pagination:false
+    pagination:false,
+    rewindNav:true,
+    rewindSpeed:0
 });

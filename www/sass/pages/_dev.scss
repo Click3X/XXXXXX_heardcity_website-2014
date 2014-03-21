@@ -51,7 +51,6 @@
 	}
 
 	#dude-on-phone-new {
-		// background-position: center bottom;
 		background-size: auto;
 		padding-bottom:100%;
 	}
@@ -60,15 +59,6 @@
 
 .dude-on-phone-new {
 	max-height: 768px;
-	// overflow: hidden;
-
-	// .parallax-holder {
-	// 	margin-top: -50%;
-
-	// 	@media(min-width:1440px) {
-	// 		margin-top: -700px;			
-	// 	}
-	// }
 
 	#dude-on-phone {
 		background-position: center top;
@@ -95,6 +85,7 @@
 	}
 
 	@media(min-width: 980px) {
-		padding-bottom:700px;
+		// padding-bottom:700px;
+		padding-bottom:800px;		
 	}
 }

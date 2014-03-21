@@ -23,13 +23,16 @@
 
 					<div class="grey-theme">
 						<div class="noise"></div>
-						<div class="section-title">
-							<div><?php echo $project['title']; ?></div>
+
+						<div class="sec-wrap">
+							<div class="section-title">
+								<div><?php echo $project['title']; ?></div>
+							</div>
+							<ul class="credits">
+								<li><span class="bold">Directed by: </span><?php echo $project['director']; ?></li>
+								<li><span class="bold">Mixed by: </span><?php echo $project['mixer']; ?></li>
+							</ul>
 						</div>
-						<ul class="credits">
-							<li><span class="bold">Directed by: </span><?php echo $project['director']; ?></li>
-							<li><span class="bold">Mixed by: </span><?php echo $project['mixer']; ?></li>
-						</ul>
 					</div>
 				</li>
 		<?php   

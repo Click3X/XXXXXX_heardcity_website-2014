@@ -86,10 +86,20 @@
 	.black-theme .text-slider li {
 			height:240px;
 	}
+
+	.grey-theme .text-slider li {
+			height:240px;
+	}
+
+
 }
 
 @media(min-width:1024px) {
 	.black-theme .text-slider li {
+		height:280px;
+	}
+
+	.grey-theme .text-slider li {
 		height:280px;
 	}
 }

@@ -23,26 +23,50 @@
 
 		.social-icons {
 			float:right;
-			margin-top:.5em;
-			margin-right:2em;
+			margin-top: 2.5em;
+			text-align: justify;
+			width: 100%;
+			margin-right:0; margin-left:0;
+
+			
+			@media(min-width:682px) {
+				margin-top:.5em;
+				margin-right:2em;
+				width: 360px;
+			}
 
 			.icon-holder {
 				position: relative;
-				float:left;
-				display:block; float:left;
+				width: 49%;
+				text-align: center;
+				display: inline-block;
+				float:none;
+				padding: 8% 0;
+
+				@media(min-width:360px) {
+					width: 24%;
+					padding:0;
+				}
+
+				@media(min-width: 682px) {
+					display:block; float:left;
+					width:auto;
+				}
+				
 				
 				a {
 					display: block;
 					width:90px; height:90px;
 					background-repeat:no-repeat;
+					margin:0 auto;
 				}
 			}
 
-			@media(min-width:768px) {
-				.icon-holder:nth-child(2) {
-					margin-right:4em;
-				}
-			}
+			// @media(min-width:768px) {
+			// 	.icon-holder:nth-child(2) {
+			// 		margin-right:4em;
+			// 	}
+			// }
 		}
 	}
 }

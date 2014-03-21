@@ -31,7 +31,7 @@ include('php/project-grid.php');
 
   <div class="par-container nord-jacket">
     <div class="lax1 g-nord"></div>
-    <div class="lax1 j-jacket"></div>
+    <div class="lax2 j-jacket"></div>
   </div>
 
 
