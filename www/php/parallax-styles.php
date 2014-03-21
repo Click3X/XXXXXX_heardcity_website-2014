@@ -322,11 +322,13 @@ h2 {
 
 /* line 328, ../scss/style.scss */
 .dog {
-  padding-bottom: 69%;
+  // padding-bottom: 69%;
+  padding-bottom:80%;
   width: 100%;
   background-image: url("./responsive-images/dog/dog-480.jpg");
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  // background-position: 100% 0;
+  background-position: 100% -30%;
 }
 @media (min-width: 480px) {
   /* line 328, ../scss/style.scss */
