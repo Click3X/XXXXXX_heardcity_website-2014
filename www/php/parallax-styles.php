@@ -276,6 +276,7 @@ h2 {
     margin-top:-10%;
     background-image: url("./responsive-images/jean-jacket/jean-jacket-768.jpg");
   }
+}
 
 @media(min-width:1240px) {
   .j-jacket {
