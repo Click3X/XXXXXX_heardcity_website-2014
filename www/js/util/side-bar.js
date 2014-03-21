@@ -5,6 +5,7 @@ allMembers = $('.all-members'),
 memberBio = $('#member-bio'),
 sidebarLinks = $('.sidebar-link');
 
+
 // loop through JSON data and CREATE ARRAY
 showMemberBio = function(member) {
 	$(jsonMembers).each(function() {
@@ -28,14 +29,10 @@ showMemberBio = function(member) {
 allMembers.click(function() {
 	$('.item-holder').show();
 	// memberBio.hide();
+	$('#member-bio .permalink > a').hide();
 	$('body.ourteam').removeClass('js-single-member');
 	var defaultName = jsonDefaults.name;
 	var defaultBio = jsonDefaults.bio;
-
-	// Heard City name
-	//jsonDefaults.name
-	// Heard City bio
-	//jsonDefaults.bio
 
 	$('#member-bio .bio > p').html(defaultBio);
 	$('#member-bio .name').html(defaultName);
@@ -114,7 +111,8 @@ showSoloMemberItems = function() {
 	$(target).show();
 
 	// SHOW member BIO
-	memberBio.show();
+	// memberBio.show();
+	$('#member-bio .permalink > a').show();
 	showMemberBio(member);
 	
 	// OPEN / SHUT side bar NAV

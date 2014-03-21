@@ -159,6 +159,16 @@
 	}
 }
 
+.all-heard {
+	.team-member {
+		.member-text {
+			.permalink {
+				display: none;
+			}
+		}
+	}
+}
+
 //arrows 
 .arrow {
 	width:30px; height:30px;

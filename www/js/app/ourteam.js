@@ -17,6 +17,7 @@ define(["jquery", "util/helper", "bootstrap.min", "util/side-bar", "util/team-me
             siblings.hide();    
             $('body.ourteam').addClass('js-single-member');
             $(target).show();
+            $('#member-bio .permalink > a').show();
 
             // Show member Bio
             showMemberBio(selectedMember);

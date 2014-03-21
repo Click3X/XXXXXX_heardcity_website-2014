@@ -19,7 +19,7 @@ if(!isset($_POST['selected_member'])) {
 			<li class="misc-text">This belongs to</li>
 			<li class="name"><?php echo $de_name; ?></li>
 			<li class="bio"><p><?php echo $de_bio; ?></p></li>
-			<li class="permalink"><a href="<?php echo $de_permalink; ?>" class="all-members">View everyones stuff</a></li>
+			<li class="permalink"><a href="<?php echo $de_permalink; ?>" class="all-members" style="display: none;">View everyones stuff</a></li>
 		</ul>
 	</div>
 </div>

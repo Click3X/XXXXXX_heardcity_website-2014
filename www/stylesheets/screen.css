@@ -3839,7 +3839,12 @@ body.ourteam {
   font-size: 1.5em;
 }
 
-/* line 163, ../sass/component/_teammember.scss */
+/* line 165, ../sass/component/_teammember.scss */
+.all-heard .team-member .member-text .permalink {
+  display: none;
+}
+
+/* line 173, ../sass/component/_teammember.scss */
 .arrow {
   width: 30px;
   height: 30px;
@@ -3848,7 +3853,7 @@ body.ourteam {
   top: 50%;
 }
 
-/* line 169, ../sass/component/_teammember.scss */
+/* line 179, ../sass/component/_teammember.scss */
 .grey-arrow-left {
   left: .5em;
   background-image: url(../img/build/sprites/grey-left.png);
@@ -3860,7 +3865,7 @@ body.ourteam {
   transform: rotate(0deg);
 }
 
-/* line 176, ../sass/component/_teammember.scss */
+/* line 186, ../sass/component/_teammember.scss */
 .grey-arrow-right {
   right: .5em;
   background-image: url(../img/build/sprites/grey-right.png);
@@ -3868,7 +3873,7 @@ body.ourteam {
 }
 
 @media (min-width: 480px) {
-  /* line 182, ../sass/component/_teammember.scss */
+  /* line 192, ../sass/component/_teammember.scss */
   .member-text {
     margin-top: 2em;
   }
