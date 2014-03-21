@@ -23,11 +23,18 @@
 
 		<?php 
 			if($page == 'Our Team') { 
+				
+				// ECHO $DEFAULT ARRAY DATA AS JSON
+				$jsonDefaults = json_encode($defaults);
+
 				// ECHO $MEMBER ARRAY DATA AS JSON
 				$jsonMembers = json_encode($jsonMembers); ?>
+				
 				<script type="text/javascript">
-				var jsonMembers = <?php echo $jsonMembers; ?>;
+					var jsonMembers = <?php echo $jsonMembers; ?>;
+					var jsonDefaults = <?php echo $jsonDefaults; ?>;
 				</script>
+
 		<?php } ?>
 
     </body>

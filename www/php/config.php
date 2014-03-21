@@ -1,7 +1,13 @@
 <?php  // CONFIG
 
+// Defaults
+$defaults = array(
+	'name'=>'Heard City',
+	'bio'=>'Heard City is a boutique audio post-production company located in New York\'s Flatiron district servicing the advertising, motion picture and television industries. Our staff, known for their individual unique aesthetics bring power and style to our brand. On display are a few of each of thier personal items reflecting a character trait or passion relevant to their talent. Learn more about us!'
+);
+
 // Site NAME
-$siteName = "Heardcity";
+$siteName = "Heard City";
 
 // Site PAGES for NAV
 $sitePages = array(
@@ -245,7 +251,7 @@ $members = array(
 	// Talia Rodgers
 	array(
 		'name' => 'Talia Rodgers',
-		'sex' => 'hers',
+		'sex' => 'her',
 		'permalink' => '#',
 		'image' => '',
 		'silo' => '',
