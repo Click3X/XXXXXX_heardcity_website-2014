@@ -206,7 +206,7 @@ h2 {
   padding-bottom: 69%;
   background-image: url("./responsive-images/guitar-nord/guitar-nord-240.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 0 100%;
 }
 @media (min-width: 480px) {
   /* line 240, ../scss/style.scss */
@@ -229,6 +229,7 @@ h2 {
   background-image: url("./responsive-images/stairs/stairs-260.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
 }
 @media (min-width: 480px) {
   /* line 257, ../scss/style.scss */
@@ -273,6 +274,7 @@ h2 {
   background-image: url("./responsive-images/girl-large/girl-large-240.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
 }
 @media (min-width: 480px) {
   /* line 292, ../scss/style.scss */
@@ -293,7 +295,7 @@ h2 {
   width: 100%;
   background-image: url("./responsive-images/man-phone/man-phone-480.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 50% 0;
 }
 @media (min-width: 480px) {
   /* line 310, ../scss/style.scss */
@@ -320,7 +322,7 @@ h2 {
   width: 100%;
   background-image: url("./responsive-images/dog/dog-480.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 100% 0;
 }
 @media (min-width: 480px) {
   /* line 328, ../scss/style.scss */
