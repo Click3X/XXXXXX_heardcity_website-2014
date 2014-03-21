@@ -5085,19 +5085,13 @@ input[type="submit"],
 @media (min-width: 300px) {
   /* line 73, ../sass/pages/_dev.scss */
   .work-slide {
-    padding-bottom: 92%;
+    padding-bottom: 100%;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 650px) {
   /* line 73, ../sass/pages/_dev.scss */
   .work-slide {
-    padding-bottom: 85%;
-  }
-}
-@media (min-width: 700px) {
-  /* line 73, ../sass/pages/_dev.scss */
-  .work-slide {
-    padding-bottom: 74%;
+    padding-bottom: 88%;
   }
 }
 @media (min-width: 980px) {
