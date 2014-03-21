@@ -50,9 +50,24 @@
 		
 		.city-li, .email {margin-bottom:1em;}
 
+		.phone {color:$red;}
+
 		.g-map-link {
 			text-decoration: none;
 			color:inherit;
+
+			@include prefix(transition, all 500ms);
+
+			&:hover {
+				color:$red;
+				text-decoration: underline;
+			}
+		}
+		.addy {
+			color:$red;
+			text-decoration: underline;
 		}
 	}
 }
+
+

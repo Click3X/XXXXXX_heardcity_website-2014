@@ -4531,9 +4531,28 @@ input[type="submit"],
   margin-bottom: 1em;
 }
 /* line 53, ../sass/pages/_contact.scss */
+.contact-container .address .phone {
+  color: #c84938;
+}
+/* line 55, ../sass/pages/_contact.scss */
 .contact-container .address .g-map-link {
   text-decoration: none;
   color: inherit;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+  transition: all 500ms;
+}
+/* line 61, ../sass/pages/_contact.scss */
+.contact-container .address .g-map-link:hover {
+  color: #c84938;
+  text-decoration: underline;
+}
+/* line 66, ../sass/pages/_contact.scss */
+.contact-container .address .addy {
+  color: #c84938;
+  text-decoration: underline;
 }
 
 /* line 5, ../sass/pages/_projects-video.scss */

@@ -26,7 +26,7 @@ include('php/header.php');
 
 		<div class="address">
 			<ul>
-				<li class="phone"><a href="tel:5551234567" class="g-map-link"><?php echo $address['phone']; ?></a></li>
+				<li class="phone"><a href="tel:5551234567" class=""><?php echo $address['phone']; ?></a></li>
 				<li class="street"><a href="https://www.google.com/maps/place/16+W+22nd+St/@40.7412435,-73.9913197,17z/data=!4m2!3m1!1s0x89c259a386c20bd5:0x6da26b75635d4e84" target="_blank" class="g-map-link"><?php echo $address['street']; ?></a></li>
 				<li class="floor"><a href="https://www.google.com/maps/place/16+W+22nd+St/@40.7412435,-73.9913197,17z/data=!4m2!3m1!1s0x89c259a386c20bd5:0x6da26b75635d4e84" target="_blank" class="g-map-link"><?php echo $address['floor']; ?></a></li>
 				<li class="city-li"><a href="https://www.google.com/maps/place/16+W+22nd+St/@40.7412435,-73.9913197,17z/data=!4m2!3m1!1s0x89c259a386c20bd5:0x6da26b75635d4e84" target="_blank" class="g-map-link"><?php echo $address['city']; ?></a></li>
