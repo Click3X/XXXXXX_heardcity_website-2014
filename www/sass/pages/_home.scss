@@ -5,6 +5,15 @@ body.home {
 	width: 100%;
 }
 
+
+#par { 
+	.owl-controls {
+		width: 100%;
+		position: absolute;
+		top: 50%;
+	}
+}
+
 // #image-spread-1 {
 // 	margin-top:-600px;
 // }
