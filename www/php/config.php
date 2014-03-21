@@ -19,7 +19,7 @@ $sitePages = array(
 
 // Site ADDRESS info
 $address = array();
-$address['phone'] = 'P.212.255.6737';
+$address['phone'] = '212.255.6737';
 $address['street'] = '16 West 22nd St.';
 $address['floor'] = '5th Floor';
 $address['city'] = 'New York, NY 10010';

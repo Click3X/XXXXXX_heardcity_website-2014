@@ -4530,6 +4530,11 @@ input[type="submit"],
 .contact-container .address .city-li, .contact-container .address .email {
   margin-bottom: 1em;
 }
+/* line 53, ../sass/pages/_contact.scss */
+.contact-container .address .g-map-link {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* line 5, ../sass/pages/_projects-video.scss */
 #vid-test,
