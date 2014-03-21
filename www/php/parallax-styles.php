@@ -225,7 +225,8 @@ h2 {
 .stairs {
   left: -10% !important;
   width: 50%;
-  padding-bottom: 68.5%;
+  // padding-bottom: 68.5%;
+  padding-bottom: 56%;
   background-image: url("./responsive-images/stairs/stairs-260.jpg");
   background-repeat: no-repeat;
   background-position: center center;
