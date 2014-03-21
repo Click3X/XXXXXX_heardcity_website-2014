@@ -212,6 +212,7 @@ h2 {
 @media (min-width: 480px) {
   /* line 240, ../scss/style.scss */
   .g-nord {
+    padding-bottom: 66%;
     background-image: url("./responsive-images/guitar-nord/guitar-nord-480.jpg");
   }
 }
@@ -222,6 +223,7 @@ h2 {
   }
 
 @media(min-width:1240px) {
+  .g-nord {
     padding-bottom: 56%;
   }
 }
@@ -273,6 +275,7 @@ h2 {
   }
 
 @media(min-width:1240px) {
+  .j-jacket {
     padding-bottom: 56%;
   }
 }
