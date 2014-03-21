@@ -361,6 +361,7 @@ h2 {
 @media (min-width: 960px) {
   /* line 328, ../scss/style.scss */
   .dog {
+    padding-bottom: 76%;
     background-image: url("./responsive-images/dog/dog-1440.jpg");
   }
 }
