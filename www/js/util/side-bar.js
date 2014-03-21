@@ -27,8 +27,20 @@ showMemberBio = function(member) {
 // If Our Team is clicked, show all member items
 allMembers.click(function() {
 	$('.item-holder').show();
-	memberBio.hide();
+	// memberBio.hide();
 	$('body.ourteam').removeClass('js-single-member');
+	var defaultName = jsonDefaults.name;
+	var defaultBio = jsonDefaults.bio;
+
+	// Heard City name
+	//jsonDefaults.name
+	// Heard City bio
+	//jsonDefaults.bio
+
+	$('#member-bio .bio > p').html(defaultBio);
+	$('#member-bio .name').html(defaultName);
+	$('#sidebar-name').html(defaultName);
+	console.log('this is default name: ' + defaultName + 'this is default bio: ' + defaultBio);
 });
 
 
