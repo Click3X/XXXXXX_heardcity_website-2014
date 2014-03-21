@@ -219,11 +219,13 @@ h2 {
 @media (min-width: 960px) {
   /* line 240, ../scss/style.scss */
   .g-nord {
+    margin-top:-10%;
     background-image: url("./responsive-images/guitar-nord/guitar-nord-768.jpg");
   }
 
 @media(min-width:1240px) {
   .g-nord {
+    margin-top:0;
     padding-bottom: 56%;
   }
 }
@@ -271,11 +273,13 @@ h2 {
 @media (min-width: 960px) {
   /* line 276, ../scss/style.scss */
   .j-jacket {
+    margin-top:-10%;
     background-image: url("./responsive-images/jean-jacket/jean-jacket-768.jpg");
   }
 
 @media(min-width:1240px) {
   .j-jacket {
+    margin-top:0;
     padding-bottom: 56%;
   }
 }
