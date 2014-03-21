@@ -214,7 +214,8 @@ h2 {
   /* line 240, ../scss/style.scss */
   .g-nord {
     padding-bottom: 66%;
-    margin-top:-20%;
+    // margin-top:-20%;
+    margin-top: -7%;
     background-image: url("./responsive-images/guitar-nord/guitar-nord-480.jpg");
   }
 }
