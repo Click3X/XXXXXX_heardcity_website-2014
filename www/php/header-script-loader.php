@@ -32,7 +32,12 @@ switch ($page) {
 
                             mapOptions = {
                                 zoom: 17,
+                                zoomControl: true,
+                                scaleControl: false,
+                                scrollwheel: false,
+                                disableDoubleClickZoom: true,
                                 center: clickLatLong,
+                                disableDefaultUI: true,
                                 styles: [
                                     {"stylers":[
                                         {"hue":"#ff1a00"},

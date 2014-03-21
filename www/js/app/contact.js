@@ -1,4 +1,4 @@
-define(["jquery", "util/helper", "bootstrap.min", "util/google-map"], function($) {
+define(["jquery", "util/helper", "bootstrap.min"], function($) {
 
     // Add helper button
     $(function() {
