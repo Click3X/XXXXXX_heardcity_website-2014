@@ -3870,12 +3870,6 @@ body.home {
   overflow: hidden;
   position: relative;
 }
-@media (min-width: 1440px) {
-  /* line 43, ../sass/pages/_home.scss */
-  #par .stairs-girl {
-    margin-top: 9%;
-  }
-}
 
 /* line 59, ../sass/pages/_home.scss */
 .logo-bg {
