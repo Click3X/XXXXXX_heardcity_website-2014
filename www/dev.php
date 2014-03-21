@@ -21,7 +21,7 @@ include('php/project-grid.php');
 <div id="par">
 
   <div class="par-container marq">
-    <div class="lax1 sun-light"></div>
+    <div class="lax2 sun-light"></div>
     <div class="lax2 bg-logo"></div>
   </div>
 

@@ -101,12 +101,12 @@ body {
 
 /* line 109, ../scss/style.scss */
 .par-container .lax2 {
-  -webkit-transform: translateZ(-0.2px) scale(1.2);
-  -moz-transform: translateZ(-0.2px) scale(1.2);
-  -ms-transform: translateZ(-0.2px) scale(1.2);
-  -o-transform: translateZ(-0.2px) scale(1.2);
-  transform: translateZ(-0.2px) scale(1.2);
-  z-index: -200;
+  -webkit-transform: translateZ(-0.7px) scale(1.7);
+  -moz-transform: translateZ(-0.7px) scale(1.7);
+  -ms-transform: translateZ(-0.7px) scale(1.7);
+  -o-transform: translateZ(-0.7px) scale(1.7);
+  transform: translateZ(-0.7px) scale(1.7);
+  z-index: -700;
 }
 
 /* line 162, ../scss/style.scss */
