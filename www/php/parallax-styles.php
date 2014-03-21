@@ -294,7 +294,8 @@ h2 {
 
 /* line 310, ../scss/style.scss */
 .man-phone {
-  padding-bottom: 69%;
+  // padding-bottom: 69%;
+  padding-bottom: 81%;
   width: 100%;
   background-image: url("./responsive-images/man-phone/man-phone-480.jpg");
   background-repeat: no-repeat;
