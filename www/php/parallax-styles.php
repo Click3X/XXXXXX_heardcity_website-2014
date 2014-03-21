@@ -221,7 +221,7 @@ h2 {
 @media (min-width: 960px) {
   /* line 240, ../scss/style.scss */
   .g-nord {
-    margin-top:-10%;
+    margin-top:-7%;
     background-image: url("./responsive-images/guitar-nord/guitar-nord-768.jpg");
   }
 }
@@ -279,7 +279,7 @@ h2 {
 @media (min-width: 960px) {
   /* line 276, ../scss/style.scss */
   .j-jacket {
-    margin-top:-10%;
+    margin-top:-7%;
     background-image: url("./responsive-images/jean-jacket/jean-jacket-768.jpg");
   }
 }
