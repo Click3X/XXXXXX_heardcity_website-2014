@@ -205,6 +205,7 @@ h2 {
   width: 50%;
   // padding-bottom: 69%;
   padding-bottom: 66%;
+  margin-top:-10%;
   background-image: url("./responsive-images/guitar-nord/guitar-nord-240.jpg");
   background-repeat: no-repeat;
   background-position: 0 100%;
@@ -213,6 +214,7 @@ h2 {
   /* line 240, ../scss/style.scss */
   .g-nord {
     padding-bottom: 66%;
+    margin-top:-20%;
     background-image: url("./responsive-images/guitar-nord/guitar-nord-480.jpg");
   }
 }
@@ -261,6 +263,7 @@ h2 {
   width: 50%;
   // padding-bottom: 69%;
   padding-bottom: 66%;
+  margin-top:-10%;
   background-image: url("./responsive-images/jean-jacket/jean-jacket-240.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -269,6 +272,7 @@ h2 {
 @media (min-width: 480px) {
   /* line 276, ../scss/style.scss */
   .j-jacket {
+    margin-top:-20%;
     background-image: url("./responsive-images/jean-jacket/jean-jacket-480.jpg");
   }
 }
