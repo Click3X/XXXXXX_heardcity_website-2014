@@ -38,7 +38,7 @@ include('php/project-grid.php');
       <?php include('php/home/feat-work.php'); ?>
 
 
-  <div class="par-container">
+  <div class="par-container man-holder">
     <div class="lax1 man-phone"></div>
   </div>
 
@@ -46,7 +46,7 @@ include('php/project-grid.php');
       <?php include('php/home/meet-team.php'); ?>
 
 
-  <div class="par-container">
+  <div class="par-container dog-holder">
     <div class="lax1 dog"></div>
   </div>
 
@@ -54,7 +54,7 @@ include('php/project-grid.php');
       <?php include('php/home/grey-text.php'); ?>
 
 
-  <div class="par-container">
+  <div class="par-container stairs-girl">
     <div class="lax1 stairs"></div>
     <div class="lax1 girl"></div>
   </div>
