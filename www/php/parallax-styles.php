@@ -98,8 +98,6 @@ body {
   transform: translateZ(-0.4px) scale(1.4);
   z-index: -400;
 }
-
-
 /* line 162, ../scss/style.scss */
 .par-container > * {
   position: absolute;
@@ -216,8 +214,7 @@ h2 {
   /* line 240, ../scss/style.scss */
   .g-nord {
     padding-bottom: 66%;
-    // margin-top:-20%;
-    margin-top: -7%;
+    margin-top:-20%;
     background-image: url("./responsive-images/guitar-nord/guitar-nord-480.jpg");
   }
 }
