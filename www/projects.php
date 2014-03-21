@@ -34,12 +34,18 @@ include('php/header.php');
 
                 foreach ($projects as $key => $value) { 
                     array_push($projectJSON, $value);
-                    $thumbsrc = $value["images"]["mobile"][0]; ?>
+                    $thumbsrc = $value["images"]["mobile"][0];
+                    $cleanTitle = $value["title"];
+                    $cleanTitle = preg_replace('/\s+/', '', $cleanTitle); 
+                    $cleanTitle = str_replace("'", "", $cleanTitle);
+                    $cleanTitle = strtolower( $cleanTitle );
+
+                    ?>
 
                     <li class="og-vid-holder clearfix <?php echo formatLink($value["type"]);?>">
                     
                     <?php 
-                    echo '<a href="'.$dir.'" data-title="'.$value["title"].'" data-director="'.$value["director"].'" data-mixer="'.$value["mixer"].'" data-mp4="'.$value["mp4"].'">';
+                    echo '<a id="'.$cleanTitle.'" href="'.$dir.'" data-title="'.$value["title"].'" data-director="'.$value["director"].'" data-mixer="'.$value["mixer"].'" data-mp4="'.$value["mp4"].'">';
                         echo '<div class="vid-thumb-holder img-link clearfix">';
                             // Project Thumb as bg image on div
                             echo '<div class="project-thumb-bg" style="background-image:url('.$thumbsrc.'); background-size:cover;"></div>';

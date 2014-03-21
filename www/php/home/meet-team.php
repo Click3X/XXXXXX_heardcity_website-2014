@@ -7,7 +7,7 @@
 	</div>
 	
 	<div> 
-	  <form id="myForm" action="ourteam.php"  method="post">
+	  <form id="myForm" action="ourteam.php"  method="POST">
 		<ul id="team-slider" class="team-members owl-carousel"> 
 
 		<?php 

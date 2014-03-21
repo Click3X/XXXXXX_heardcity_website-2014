@@ -926,7 +926,7 @@ $text_carousel_grey = array(
 
 $text_carousel_black = array(
 		'WELCOME TO HEARD CITY.',
-		'NYC\'S PREMEIRE AUDIO POST PRODUCTION HOUSE', 
+		'NYC\'S PREMIERE AUDIO POST PRODUCTION HOUSE', 
 		'RIGHT HEAR IN NYC'
 	);
 
