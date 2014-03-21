@@ -2235,7 +2235,7 @@ body.ourteam {
 
 /* line 66, ../sass/component/_footer.scss */
 .sprite {
-  background-image: url(../img/social/social_svg.svg);
+  background-image: url(./../img/social/social_svg.svg);
   background-repeat: no-repeat;
   display: block;
 }
