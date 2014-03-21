@@ -222,6 +222,7 @@ h2 {
     margin-top:-10%;
     background-image: url("./responsive-images/guitar-nord/guitar-nord-768.jpg");
   }
+}
 
 @media(min-width:1240px) {
   .g-nord {
@@ -264,6 +265,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 @media (min-width: 480px) {
   /* line 276, ../scss/style.scss */
   .j-jacket {
