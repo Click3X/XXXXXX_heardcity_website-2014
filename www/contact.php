@@ -14,7 +14,7 @@ include('php/header.php');
 
 		<div class="section-title">
 			<div class="border-holder grey">
-				<div>Get in touch or swing by.</div>
+				<div>Get in touch or swing by</div>
 			</div>
 		</div>
 
