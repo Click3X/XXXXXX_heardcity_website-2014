@@ -7,12 +7,26 @@ body.home {
 
 
 #par { 
+
+	
 	.owl-controls {
 		width: 100%;
 		position: absolute;
 		top: 50%;
 	}
+
+
+
+	#team-slider {
+		img {
+			max-height: 285px;
+		}
+	}
+
+
 }
+
+
 
 // #image-spread-1 {
 // 	margin-top:-600px;
