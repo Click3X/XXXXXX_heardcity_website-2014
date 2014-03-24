@@ -37,7 +37,7 @@ allMembers.click(function() {
 	$('#member-bio .bio > p').html(defaultBio);
 	$('#member-bio .name').html(defaultName);
 	$('#sidebar-name').html(defaultName);
-	console.log('this is default name: ' + defaultName + 'this is default bio: ' + defaultBio);
+	// console.log('this is default name: ' + defaultName + 'this is default bio: ' + defaultBio);
 });
 
 
@@ -103,7 +103,7 @@ showSoloMemberItems = function() {
 	target = '.item-holder.' + member,
 	siblings = $('.item-holder').not(target);
 
-	console.log('This is var member: '+member);
+	// console.log('This is var member: '+member);
 	// SHOW individual items
 	$('.item-holder').show();
 	siblings.hide();	

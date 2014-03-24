@@ -772,7 +772,7 @@ $members = array(
 			),
 
 			array(
-				'name' => '1991 Nike Air Jordan VI Sport Blue', 
+				'name' => 's1991 Nike Air Jordan VI Sport Blue', 
 				'bio' => 'MJ is my hero & I\'ve been a sneaker collector for 10 years. These are an original pair from 1991 that I had soleswapped after the midsoles crumbled so that I could wear them.',
 				'image' => 'items/Jeremy_Siegal_Jordans.png',
 				'coords' => '6,314,34,360,102,392,188,394,300,372,360,326,364,206,364,34,230,-8,160,96,24,154,12,198,88,226,24,260'

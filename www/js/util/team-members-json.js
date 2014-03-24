@@ -2,6 +2,7 @@
 // jsonMembers array is from the site itself
 
 var jsMembers = [],
+// styleSheet = '<style>'+'\n',
 teamMembers = [];
 itemList = $('.item-list');
 
@@ -14,6 +15,13 @@ function buildMemberList(membersIn, membersOut ) {
 	return membersOut;
 }
 
+function nameShoes(itemName) {
+	if(itemName == 's1991 Nike Air Jordan VI Sport Blue') {
+		itemName = itemName.substring(1);
+	}
+	return itemName;
+}
+
 
 function memberItems(members) {
 	// console.table(members);
@@ -23,13 +31,13 @@ function memberItems(members) {
 		pic_real_height,
 		items = members[i].items,
 		member_sex = members[i].sex,
-		member_silo = members[i].silo,
+		// member_silo = members[i].silo,
 		member_class = members[i].member_class,
-		defaultSilo = 'img/build/team-members/keith-silo.png',
+		// defaultSilo = 'img/build/team-members/keith-silo.png',
 		member_name = members[i].name;
 
 		// TEMP * if no silo, use Keiths as default
-		if(member_silo == '') {member_silo = defaultSilo;}
+		// if(member_silo == '') {member_silo = defaultSilo;}
 
 		// Each ITEM
 		$.each(items, function(j, item) {
@@ -44,15 +52,23 @@ function memberItems(members) {
 				src:image,
 				alt:item.name,
 				usemap:usemap
-			}).load(function() {
-				pic_real_width = this.width;   // Note: $(this).width() will not
-        		// Set parent LI width once img has loaded and browser knows img width
-        		var parentWidth = (this.width/1024) * 100;
-        		$(this).offsetParent().width(parentWidth+'%');
 			}),
+
+			// .load(function() {
+			// 	pic_real_width = this.width;   // Note: $(this).width() will not
+   //      		// Set parent LI width once img has loaded and browser knows img width
+   //      		var parentWidth = (this.width/1024) * 100;
+   //      		// $(this).offsetParent().width(parentWidth+'%');
+
+   //      		// styleSheet += '.'+ itemName.toLowerCase() + '.' + member_class + '{ width:'+parentWidth +'%;}'+'\n';
+   //      		// console.log(styleSheet);
+			// }),
 			li = $('<li/>', {
 				class:itemClass
 			});
+
+
+			var cleanItemName = nameShoes(item.name);
 
 
 			// check for Coords, else link shape is regular
@@ -112,7 +128,7 @@ function memberItems(members) {
 			}).text('This is ' + member_name + '\'s'),
 			liName = $('<li/>', {
 				class:"name"
-			}).text(item.name),
+			}).text(cleanItemName),
 			liBio = $('<li/>', {
 				class:"serif"
 			}).text(item.bio),
@@ -152,7 +168,9 @@ function memberItems(members) {
 
 }
 
-
+// styleSheet += '\n'+'</style>';
+// console.log('This is styleSheet: ' + styleSheet);
+// console.dir(styleSheet);
 // USE FUNCTIONS
 jsMembers = buildMemberList(jsonMembers, jsMembers);
 memberItems(jsMembers);
