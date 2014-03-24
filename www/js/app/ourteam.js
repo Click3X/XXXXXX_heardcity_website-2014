@@ -23,6 +23,13 @@ define(["jquery", "util/helper", "bootstrap.min", "util/side-bar", "util/team-me
             showMemberBio(selectedMember);
         }
     });
+
+
+
+    // TRY NEW MAP HIGHT
+    // $(function() {
+    //     $( document ).tooltip();
+    //   });
     
 
 });

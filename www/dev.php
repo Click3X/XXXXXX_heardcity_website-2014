@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 // HOME
 $page='Dev';
 
-include('php/header.php');
+include('php/header-new.php');
 
 // Include Projects Data
 include('php/project-grid.php');

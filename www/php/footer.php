@@ -20,6 +20,7 @@
 	    		</div>
 	    	</div>
 	    </footer>
+	    
 
 		<?php 
 			if($page == 'Our Team') { 

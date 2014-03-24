@@ -1,19 +1,19 @@
 // Visit http://creative-punch.net for more demos, articles and tutorials
 
-var countImages = $('#gallery img').size();
+var countImages = $('#par img').size();
 
 // Select Images from Gallery div
-$('#gallery').imagesLoaded()
+$('#par').imagesLoaded()
 .always( function( instance ) {
   $('#progress-bar').fadeOut(function() {
-    $('#gallery').fadeIn();
+    $('#par').fadeIn();
   });
 })
 .progress( function( instance, image ) {
   if(image.isLoaded) {
     $(image.img).addClass('loaded');
     
-    var countLoadedImages = $('#gallery img.loaded').size();
+    var countLoadedImages = $('#par img.loaded').size();
     
     var width = new Number(100 * (countLoadedImages / countImages));
     width = width.toFixed(2) + '%';

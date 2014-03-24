@@ -92,6 +92,12 @@ include('functions.php');
     </head>
 
     <body class="<?php echo formatLink($page); ?>">
+      <div id="progress-bar">
+        <div id="progress"></div>
+        <p>
+          <span id="percentage">0%</span>
+        </p>
+      </div>
 
     <?php 
         if($page == 'Home') { 

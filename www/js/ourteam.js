@@ -6,14 +6,18 @@ requirejs.config({
     "paths": {
       "app": "../app",
       "util": "../util"
+      // "hilight": "../lib/jquery.maphilight.min",
+      // "qtip": "../lib/qtip/jquery.qtip.min",
     },
    "shim": {
       "util/helper": ["jquery"],
       "bootstrap.min": ["jquery"],
       "lib/bootstrap.min": ["jquery"],
+      // "hilight": ["jquery"],
+      // "qtip": ["jquery"],
       "util/side-bar": ["jquery"],
       "util/team-members-json": ["jquery"],
-      "util/map-links": ["jquery"]
+      "util/map-links": ["jquery", "util/team-members-json"]
     }
 });
 

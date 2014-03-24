@@ -6,7 +6,8 @@ requirejs.config({
     "paths": {
       "app": "../app",
       "util": "../util",
-      "owl-carousel": "../lib/owl.carousel.min"
+      "owl-carousel": "../lib/owl.carousel.min",
+       "load-images": "../lib/loaded"
       // "gasp":"http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min",
       // "scroll-magic":"../../scrollmagic/js/jquery.scrollmagic.min",
       // "debug":"../../scrollmagic/js/jquery.scrollmagic.debug"
@@ -18,6 +19,7 @@ requirejs.config({
         "util/carousel":["owl-carousel"],
         "util/team-member-form":["jquery"],
         "util/sticky-nav":["jquery"],
+        "util/loader":["load-images"],
         // "scroll-magic":["jquery", "gasp"],
         // "debug":["jquery", "gasp"],
         "util/new-parallax":["jquery"]
