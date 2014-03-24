@@ -30,7 +30,7 @@ include('functions.php');
 
 
         <!-- LOAD QTIP STYLES -->
-        <link rel="stylesheet" href="qtip/jquery.qtip.min.css">
+        <!-- <link rel="stylesheet" href="qtip/jquery.qtip.min.css"> -->
 
         <!--[if IE]>
             <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
