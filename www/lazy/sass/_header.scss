@@ -1,0 +1,88 @@
+
+
+/* header 
+------------------------------------*/
+
+
+header[role="banner"] {
+	position: relative;
+	@include rhythm;
+	
+}
+
+
+/* This is the logic for the fluid / responsive lazy loaded header
+------------------------------------*/
+
+// panorama
+
+.panorama {
+    position: relative;
+    padding-bottom: 30%; /* our ratio */
+    padding-top: 30px; 
+    height: 0;
+    overflow: hidden;
+
+    img {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;    	
+    }
+
+}
+
+// prelude 
+
+.prelude {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0,0,0,.5);
+	color: $brandLighterGrey;
+
+	h1 {
+		font-size: 2.4em;
+		font-weight: 700;
+		letter-spacing: -1px;
+		padding: .3em 0;
+
+		@include push(3,12);
+		@include span-columns(6,12);
+
+
+		@include at-breakpoint($tablet) {
+			//font-size: 2.2em;
+			@include push(0);
+
+			@include span-columns(6,8);
+
+
+		}					
+
+		@include at-breakpoint($phone) {
+			@include push(0);
+
+			font-size: 1.25em;
+			padding-left: .4em;
+
+			float: left;
+			width: 66%;
+			display: block;	
+		    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		    box-sizing: border-box;         /* Opera/IE 8+ */						
+		}					
+
+	}
+
+}
+
+
+
+
+
+
+

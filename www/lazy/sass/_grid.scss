@@ -1,0 +1,124 @@
+/* layout & grid
+------------------------------------*/
+
+$total-columns: 12;             // a 12-column grid
+$column-width: 5em;            // each column is 4em wide
+$gutter-width: 1.8em;            // 1em gutters between columns
+$grid-padding: $gutter-width;  // grid-padding equal to gutters
+
+
+//alternative layout sizes
+
+$phone: 0em 4 25em;
+$tablet: 8 55em;
+$desktop: 55em 12;
+
+.wrap {
+     padding: 0 2em;
+     position: relative;
+     max-width: 1000px !important;
+}
+
+
+@include at-breakpoint($desktop) {
+
+     .wrap {
+          @include container;
+         // @include susy-grid-background;
+     }
+
+}
+
+@include at-breakpoint($tablet) {
+
+     .wrap {
+        // @include susy-grid-background;
+     }
+
+}
+
+@include at-breakpoint($phone) {
+
+     .wrap {
+         // @include susy-grid-background;
+          padding: 0 .4em;
+
+     }
+
+}
+
+
+// vertical rhythm
+
+@mixin rhythm {
+     margin-bottom: 1.6em;
+
+     @include at-breakpoint($tablet) {
+          margin-bottom: 1.8em;
+     }
+
+     @include at-breakpoint($phone) {
+          margin-bottom: 1em;
+     }
+
+}
+
+@mixin rhythm-padding {
+     padding-bottom: 1.6em;
+
+     @include at-breakpoint($tablet) {
+          padding-bottom: 1.8em;
+     }
+
+     @include at-breakpoint($phone) {
+          padding-bottom: 1em;
+     }
+
+}
+
+div.section,
+section {
+     @include rhythm;
+}
+
+
+// page layout
+
+#main {
+     @include span-columns(9,12);
+     @include omega;
+
+     @include at-breakpoint($tablet) {
+          @include span-columns(8,8);
+     }          
+}
+
+.mod-centre {
+     @include span-columns(6,9);
+
+     @include at-breakpoint($tablet) {
+          @include span-columns(5,8);
+     }     
+
+     @include at-breakpoint($phone) {
+          @include span-columns(4,4);
+     }    
+}
+
+.mod-right {
+     @include span-columns(3,9);
+     @include omega;
+
+     @include at-breakpoint($tablet) {
+          @include span-columns(3,8);
+          @include omega;
+     }  
+
+     @include at-breakpoint($phone) {
+          @include span-columns(4,4);
+     }                
+}
+
+
+
+

@@ -50,6 +50,6 @@ mapLinks.hover(
         // After a short duration, remove negZ from original parentLi
         setTimeout(function() {
             parentLi.removeClass('negZ');    
-        }, 750);
+        }, 250);
     }
 );

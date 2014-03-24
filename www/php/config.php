@@ -565,12 +565,12 @@ $members = array(
 				'name' => 'Minor Threat/Our of Step', 
 				'bio' => 'It is the reason...',
 				'image' => 'items/Eric_Warzecha_LP.png'
-			),
-			array(
-				'name' => 'Telluride Picture',
-				'bio' => 'Telluride, where we spend time every year and Kate and I got engaged',
-				'image' => ''
 			)
+			// array(
+			// 	'name' => 'Telluride Picture',
+			// 	'bio' => 'Telluride, where we spend time every year and Kate and I got engaged',
+			// 	'image' => ''
+			// )
 		)
 	),
 
