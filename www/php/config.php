@@ -3,7 +3,8 @@
 // Defaults
 $defaults = array(
 	'name'=>'Heard City',
-	'bio'=>'Heard City is a boutique audio post-production company located in New York\'s Flatiron district servicing the advertising, motion picture and television industries. Our staff, known for their individual unique aesthetics bring power and style to our brand. On display are a few of each of thier personal items reflecting a character trait or passion relevant to their talent. Learn more about us!'
+	// 'bio'=>'Heard City is a boutique audio post-production company located in New York\'s Flatiron district servicing the advertising, motion picture and television industries. Our staff, known for their individual unique aesthetics bring power and style to our brand. On display are a few of each of thier personal items reflecting a character trait or passion relevant to their talent. Learn more about us!'
+	'bio'=>'Many people collect things and those things say a lot about a person. Our stuff can be something that remind us of a moment in our past or just something we enjoy having. They remind us a bit of who we are. Which can includes almost everything you can imagine – from photos, souvenirs, tools, things that reminding us of a person or place we care about. Our team at Heard City is made up of some pretty incredible people. Get to know us by checking out our stuff. You\'ll see what kinds of things we do in our free time? What our hobbies are, what kinds of music/movies/books we like. It\'s an honest way to see what we as a collective enjoy in life.'
 );
 
 // Site NAME

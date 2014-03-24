@@ -16,31 +16,34 @@ html {
 }
 
 // Silo and Member bio
-#member-bio {
-	z-index: 1;
-	
-	.team-member {
-		width:100%;
-		max-width: 1024px;
-	}
+.ourteam {
 
-	@media(min-width:768px) {
-
-		.member-text {
-			width: 74%;
-			// float:left;
-			float:none;
-			// margin-left:0;
-			margin-left: 13%;
+	#member-bio {
+		z-index: 1;
+		
+		.team-member {
+			width:100%;
+			max-width: 1024px;
 		}
 
-		.bio {
-			max-width:none;
-			font-size: 1em;
-			line-height: 1.6em;
-		}
+		.member-text { margin-left:3%;}
 
-		.name { font-size: 1.4rem; }
+		@media(min-width:768px) {
+
+			.member-text {
+				width: 74%;
+				float:none;
+				margin-left: 13%;
+			}
+
+			.bio {
+				max-width:none;
+				font-size: 1em;
+				line-height: 1.6em;
+			}
+
+			.name { font-size: 1.4rem; }
+		}
 	}
 }
 
