@@ -31,9 +31,7 @@ include('functions.php');
 
         <!-- STYLE FOR PERCENT.PHP TEST -->
           <style>
-              body {
-                  background: #30303A;
-                }
+
                 .preload,
                 #gallery {
                   display: none;
