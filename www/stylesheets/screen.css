@@ -4117,50 +4117,33 @@ body.ourteam {
 
 /* line 5, ../sass/component/_teammember.scss */
 .grey-theme {
-  background: #d2d2d2;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2QyZDJkMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM2JSIgc3RvcC1jb2xvcj0iI2Y0ZjRmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjY2JSIgc3RvcC1jb2xvcj0iI2Y0ZjRmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkMmQyZDIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #d2d2d2 0%, #f4f4f4 36%, #f4f4f4 66%, #d2d2d2 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d2d2d2), color-stop(36%, #f4f4f4), color-stop(66%, #f4f4f4), color-stop(100%, #d2d2d2));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #d2d2d2 0%, #f4f4f4 36%, #f4f4f4 66%, #d2d2d2 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #d2d2d2 0%, #f4f4f4 36%, #f4f4f4 66%, #d2d2d2 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #d2d2d2 0%, #f4f4f4 36%, #f4f4f4 66%, #d2d2d2 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #d2d2d2 0%, #f4f4f4 36%, #f4f4f4 66%, #d2d2d2 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d2d2d2', endColorstr='#d2d2d2',GradientType=0 );
-  /* IE6-8 */
+  background: #ffffff;
 }
-/* line 17, ../sass/component/_teammember.scss */
+/* line 18, ../sass/component/_teammember.scss */
 .grey-theme .section-title {
   margin-bottom: 1em;
   letter-spacing: .15em;
 }
-/* line 21, ../sass/component/_teammember.scss */
+/* line 22, ../sass/component/_teammember.scss */
 .grey-theme .section-title div {
   display: inline-block;
   font-size: .825rem;
   position: relative;
 }
 @media (min-width: 480px) {
-  /* line 21, ../sass/component/_teammember.scss */
+  /* line 22, ../sass/component/_teammember.scss */
   .grey-theme .section-title div {
     font-size: .825rem;
   }
 }
-/* line 28, ../sass/component/_teammember.scss */
+/* line 29, ../sass/component/_teammember.scss */
 .grey-theme .section-title div:before {
   content: '';
   display: block;
   border-top: 1px solid #1f1f1f;
   height: 14px;
 }
-/* line 33, ../sass/component/_teammember.scss */
+/* line 34, ../sass/component/_teammember.scss */
 .grey-theme .section-title div:after {
   content: '';
   display: block;
@@ -4168,36 +4151,36 @@ body.ourteam {
   height: 10px;
 }
 @media (min-width: 480px) {
-  /* line 21, ../sass/component/_teammember.scss */
+  /* line 22, ../sass/component/_teammember.scss */
   .grey-theme .section-title div {
     font-size: 1.125rem;
   }
 }
 
-/* line 44, ../sass/component/_teammember.scss */
+/* line 45, ../sass/component/_teammember.scss */
 .black-theme {
   background-color: #1f1f1f;
   color: #edeef1;
 }
-/* line 48, ../sass/component/_teammember.scss */
+/* line 49, ../sass/component/_teammember.scss */
 .black-theme .section-title {
   margin-bottom: 1em;
   letter-spacing: .15em;
 }
-/* line 52, ../sass/component/_teammember.scss */
+/* line 53, ../sass/component/_teammember.scss */
 .black-theme .section-title div {
   display: inline-block;
   font-size: .938em;
   position: relative;
 }
-/* line 57, ../sass/component/_teammember.scss */
+/* line 58, ../sass/component/_teammember.scss */
 .black-theme .section-title div:before {
   content: '';
   display: block;
   border-top: 1px solid #404040;
   height: 14px;
 }
-/* line 62, ../sass/component/_teammember.scss */
+/* line 63, ../sass/component/_teammember.scss */
 .black-theme .section-title div:after {
   content: '';
   display: block;
@@ -4205,30 +4188,30 @@ body.ourteam {
   height: 10px;
 }
 @media (min-width: 480px) {
-  /* line 52, ../sass/component/_teammember.scss */
+  /* line 53, ../sass/component/_teammember.scss */
   .black-theme .section-title div {
     font-size: 1.125rem;
   }
 }
 
-/* line 73, ../sass/component/_teammember.scss */
+/* line 74, ../sass/component/_teammember.scss */
 .team-member-module {
   padding-top: 1.75em;
 }
 @media (min-width: 480px) {
-  /* line 73, ../sass/component/_teammember.scss */
+  /* line 74, ../sass/component/_teammember.scss */
   .team-member-module {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
 
-/* line 78, ../sass/component/_teammember.scss */
+/* line 79, ../sass/component/_teammember.scss */
 .home .team-member .image img {
   max-height: 198px;
 }
 
-/* line 80, ../sass/component/_teammember.scss */
+/* line 81, ../sass/component/_teammember.scss */
 .team-member {
   max-width: 700px;
   padding: 1em 0;
@@ -4237,12 +4220,12 @@ body.ourteam {
   margin-left: 2.5%;
 }
 @media (min-width: 700px) {
-  /* line 80, ../sass/component/_teammember.scss */
+  /* line 81, ../sass/component/_teammember.scss */
   .team-member {
     margin: 0 auto;
   }
 }
-/* line 89, ../sass/component/_teammember.scss */
+/* line 90, ../sass/component/_teammember.scss */
 .team-member .image {
   width: 30%;
   max-width: 198px;
@@ -4251,18 +4234,18 @@ body.ourteam {
   vertical-align: middle;
   text-align: center;
 }
-/* line 95, ../sass/component/_teammember.scss */
+/* line 96, ../sass/component/_teammember.scss */
 .team-member .image img {
   width: 100%;
   max-width: 100%;
 }
 @media (min-width: 480px) {
-  /* line 95, ../sass/component/_teammember.scss */
+  /* line 96, ../sass/component/_teammember.scss */
   .team-member .image img {
     width: auto;
   }
 }
-/* line 101, ../sass/component/_teammember.scss */
+/* line 102, ../sass/component/_teammember.scss */
 .team-member .member-text {
   text-transform: uppercase;
   float: left;
@@ -4270,22 +4253,22 @@ body.ourteam {
   margin-left: 6%;
 }
 @media (min-width: 700px) {
-  /* line 101, ../sass/component/_teammember.scss */
+  /* line 102, ../sass/component/_teammember.scss */
   .team-member .member-text {
     float: right;
   }
 }
-/* line 109, ../sass/component/_teammember.scss */
+/* line 110, ../sass/component/_teammember.scss */
 .team-member .member-text li {
   margin-bottom: .5rem;
 }
 @media (min-width: 480px) {
-  /* line 109, ../sass/component/_teammember.scss */
+  /* line 110, ../sass/component/_teammember.scss */
   .team-member .member-text li {
     margin-bottom: .938rem;
   }
 }
-/* line 114, ../sass/component/_teammember.scss */
+/* line 115, ../sass/component/_teammember.scss */
 .team-member .member-text .misc-text {
   color: #989899;
   letter-spacing: .15em;
@@ -4293,25 +4276,25 @@ body.ourteam {
   font-size: .6rem;
 }
 @media (min-width: 480px) {
-  /* line 114, ../sass/component/_teammember.scss */
+  /* line 115, ../sass/component/_teammember.scss */
   .team-member .member-text .misc-text {
     font-size: .8rem;
     margin-bottom: .75rem;
   }
 }
-/* line 126, ../sass/component/_teammember.scss */
+/* line 127, ../sass/component/_teammember.scss */
 .team-member .member-text .name {
   font-size: .8rem;
   letter-spacing: .15em;
   line-height: 1.2rem;
 }
 @media (min-width: 480px) {
-  /* line 126, ../sass/component/_teammember.scss */
+  /* line 127, ../sass/component/_teammember.scss */
   .team-member .member-text .name {
     font-size: 1rem;
   }
 }
-/* line 134, ../sass/component/_teammember.scss */
+/* line 135, ../sass/component/_teammember.scss */
 .team-member .member-text .bio {
   text-transform: none;
   font-family: 'Times New Roman', serif;
@@ -4319,24 +4302,24 @@ body.ourteam {
   font-size: .938em;
   line-height: 1.5em;
 }
-/* line 140, ../sass/component/_teammember.scss */
+/* line 141, ../sass/component/_teammember.scss */
 .team-member .member-text .permalink {
   margin-top: 1rem;
 }
 @media (min-width: 480px) {
-  /* line 140, ../sass/component/_teammember.scss */
+  /* line 141, ../sass/component/_teammember.scss */
   .team-member .member-text .permalink {
     margin-top: 2rem;
   }
 }
-/* line 144, ../sass/component/_teammember.scss */
+/* line 145, ../sass/component/_teammember.scss */
 .team-member .member-text .permalink a {
   font-size: .750em;
   color: #1f1f1f;
   position: relative;
   margin-left: 0.875rem;
 }
-/* line 150, ../sass/component/_teammember.scss */
+/* line 151, ../sass/component/_teammember.scss */
 .team-member .member-text .permalink a:before {
   content: '>\0000a0';
   display: block;
@@ -4346,12 +4329,12 @@ body.ourteam {
   font-size: 1.5em;
 }
 
-/* line 165, ../sass/component/_teammember.scss */
+/* line 166, ../sass/component/_teammember.scss */
 .all-heard .team-member .member-text .permalink {
   display: none;
 }
 
-/* line 173, ../sass/component/_teammember.scss */
+/* line 174, ../sass/component/_teammember.scss */
 .arrow {
   width: 30px;
   height: 30px;
@@ -4360,7 +4343,7 @@ body.ourteam {
   top: 50%;
 }
 
-/* line 179, ../sass/component/_teammember.scss */
+/* line 180, ../sass/component/_teammember.scss */
 .grey-arrow-left {
   left: .5em;
   background-image: url(../img/build/sprites/grey-left.png);
@@ -4372,7 +4355,7 @@ body.ourteam {
   transform: rotate(0deg);
 }
 
-/* line 186, ../sass/component/_teammember.scss */
+/* line 187, ../sass/component/_teammember.scss */
 .grey-arrow-right {
   right: .5em;
   background-image: url(../img/build/sprites/grey-right.png);
@@ -4380,7 +4363,7 @@ body.ourteam {
 }
 
 @media (min-width: 480px) {
-  /* line 192, ../sass/component/_teammember.scss */
+  /* line 193, ../sass/component/_teammember.scss */
   .member-text {
     margin-top: 2em;
   }
