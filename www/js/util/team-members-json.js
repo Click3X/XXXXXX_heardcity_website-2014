@@ -2,9 +2,13 @@
 // jsonMembers array is from the site itself
 
 var jsMembers = [],
-// styleSheet = '<style>'+'\n',
-teamMembers = [];
-itemList = $('.item-list');
+teamMembers = [],
+liArray = [],
+// itemList = $('.item-list'),
+itemListHolder = $('#item-list-holder'),
+itemList = $('<ul/>', {
+				class:"item-list"
+			});
 
 // Build the Members list
 function buildMemberList(membersIn, membersOut ) {
@@ -24,20 +28,14 @@ function nameShoes(itemName) {
 
 
 function memberItems(members) {
-	// console.table(members);
 	// Each MEMBER
 	$.each(members, function(i, member) {
 		var pic_real_width,
 		pic_real_height,
 		items = members[i].items,
 		member_sex = members[i].sex,
-		// member_silo = members[i].silo,
 		member_class = members[i].member_class,
-		// defaultSilo = 'img/build/team-members/keith-silo.png',
 		member_name = members[i].name;
-
-		// TEMP * if no silo, use Keiths as default
-		// if(member_silo == '') {member_silo = defaultSilo;}
 
 		// Each ITEM
 		$.each(items, function(j, item) {
@@ -69,7 +67,6 @@ function memberItems(members) {
 
 
 			var cleanItemName = nameShoes(item.name);
-
 
 			// check for Coords, else link shape is regular
 			if(coords) {
@@ -113,13 +110,6 @@ function memberItems(members) {
 			divTeamMember  = $('<div/>', {
 				class:"team-member clearfix"
 			}),
-			// divImage = $('<div/>', {
-			// 	class:"image"
-			// }),
-			// divImg = $('<img/>', {
-			// 	src: member_silo,
-			// 	alt:"silohuette"
-			// }),
 			ulMemberText = $('<ul/>', {
 				class:"member-text"
 			}),
@@ -146,11 +136,7 @@ function memberItems(members) {
 			liAlink.append(aLink);
 			ulMemberText.append(liMiscText, liName, liBio, liAlink);
 
-			// STICH TOGETHER IMAGE DIV
-			// divImage.append(divImg);
-
 			// TEAM MEM
-			// divTeamMember.append(divImage, ulMemberText);
 			divTeamMember.append(ulMemberText);
 
 			// POP UP ULs
@@ -160,17 +146,32 @@ function memberItems(members) {
 
 			// APPEND TO DOM
 			li.append(divHover);
-			itemList.append(li);
+			
+			// itemList.append(li);
 
+			liArray.push(li);
 		});
-
 	});
-
 }
 
-// styleSheet += '\n'+'</style>';
-// console.log('This is styleSheet: ' + styleSheet);
-// console.dir(styleSheet);
+
 // USE FUNCTIONS
 jsMembers = buildMemberList(jsonMembers, jsMembers);
 memberItems(jsMembers);
+
+
+// APPEND TO DOM AFTER ALL DOWNLOADS AND JS FUNCTIONS
+$(window).ready(function() {
+	// console.log('The window is ready!');
+	// console.log('This is liArray' + liArray); console.dir(liArray);
+	itemListHolder.append(itemList);
+
+	for(var i=0; i < liArray.length; i++) {
+	
+			itemList.append(liArray[i]);
+			
+	}
+
+});
+
+

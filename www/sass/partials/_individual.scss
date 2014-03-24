@@ -1,4 +1,7 @@
-.js-single-member.ourteam .footer {margin-top:0;}
+.js-single-member.ourteam .footer {
+	// margin-top:0;
+	margin-top: 100px;
+}
 
 .js-single-member {
 
@@ -254,8 +257,10 @@
 		}
 
 		li.item-holder.drill.katieflynn {
-			top: 33%; left: 57%;
-			> img { @include prefix(transform, rotate(90deg)); }
+			// top: 33%;
+			top: 40%;
+			left: 57%;
+			// > img { @include prefix(transform, rotate(90deg)); }
 		}
 
 		li.item-holder.chargersjersey.katieflynn {

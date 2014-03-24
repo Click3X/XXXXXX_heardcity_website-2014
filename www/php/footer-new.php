@@ -1,0 +1,49 @@
+<?php // FOOTER ?>
+		<footer class="footer">
+    		<div class="footer-inner clearfix wrap">
+	    		<div class="footer-logo"></div>
+	    		<div class="address">
+	    			<ul>
+	    				<li><?php echo $address['phone']; ?></li>
+	    				<li><?php echo $address['street']; ?></li>
+	    				<li><?php echo $address['floor']; ?></li>
+	    				<li><?php echo $address['city']; ?></li>
+	    			</ul>
+	    		</div>
+	    		<div class="social-icons clearfix">
+	    			<div class="icon-holder"><a href="<?php echo $social['map'] ?>" class="sprite sprite-map"></a></div>
+	    			<div class="icon-holder"><a href="<?php echo $social['email'] ?>" class="sprite sprite-email"></a></div>
+	    			<div class="icon-holder"><a href="<?php echo $social['facebook'] ?>" class="sprite sprite-facebook"></a></div>
+	    			<div class="icon-holder"><a href="<?php echo $social['twitter'] ?>" class="sprite sprite-twitter"></a></div>
+	    		</div>
+	    	</div>
+	    </footer>
+	</div>
+
+		<?php 
+			if($page == 'Home') { 
+				$jsonMarquee = json_encode($marquee);
+			} ?>
+
+			<script type="text/javascript">
+				var jsonMarquee = <?php echo $jsonMarquee; ?>;
+			</script>
+
+
+		<?php if($page == 'Our Team') { 
+				
+				// ECHO $DEFAULT ARRAY DATA AS JSON
+				$jsonDefaults = json_encode($defaults);
+
+				// ECHO $MEMBER ARRAY DATA AS JSON
+				$jsonMembers = json_encode($jsonMembers); ?>
+				
+				<script type="text/javascript">
+					var jsonMembers = <?php echo $jsonMembers; ?>;
+					var jsonDefaults = <?php echo $jsonDefaults; ?>;
+				</script>
+
+		<?php } ?>
+
+    </body>
+</html>

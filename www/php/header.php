@@ -10,10 +10,17 @@ include('functions.php');
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=0"/>
 
+        <!-- NORMALIZE -->
+        <link rel="stylesheet" href="stylesheets/normalize.css">
+
         <!-- LOAD BOOTSTRAP STYLES -->
         <link href="stylesheets/vendor/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="stylesheets/vendor/bootstrap/bootstrap-responsive.css" rel="stylesheet">
 
+        <!-- LOAD ROYALSLIDER STYLES -->
+<!--         <link href="stylesheets/vendor/royal/royalslider.css" rel="stylesheet">
+        <link href="stylesheets/vendor/royal/rs-default.css" rel="stylesheet">
+ -->
         <!-- SASS STYLES - after Bootstrap! -->
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -55,24 +62,15 @@ include('functions.php');
     <body class="<?php echo formatLink($page); ?>">
 
     <?php 
-        if($page == 'Home') { ?>
-            <!-- Home Page Slider -->
-            <div id="home-slider-holder" class="container clearfix">
-                <div id="logo-bg" class="logo-bg"></div>
-                <ul id="home-slider" class="home-slider owl-carousel">
-                <?php foreach ($marquee as $marq_img) {
-                        $id = formatId($marq_img);
-                        echo '<li id="'.$id.'" class="slide"></li>';
-                    } ?>
-                </ul>
-            </div>
-    <?php } 
+        if($page == 'Home') { 
+           include('php/home/home-slider.php');
+        } 
 
-    if($page != 'Dev') { 
-    
-        newBootMenu($sitePages, $page, 'cl-effect-21');
-    }
-    
+        if($page != 'Dev') { 
+        
+            newBootMenu($sitePages, $page, 'cl-effect-21');
+        }
+        
     ?>
 
     

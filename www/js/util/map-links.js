@@ -10,7 +10,7 @@ mapLinks.hover(
         neighborWidth = neighbor[0].clientWidth,
         neighborHeight = neighbor[0].clientHeight,
         parOffset;
-        console.log('Iam hovered over: '+neighborWidth);
+
         // Get offset for POPUP depending on Parent/Neighbor Ratio
         if(neighborWidth >= parentWidth) {
             parOffset = (neighborWidth/2)-(parentWidth/2);
@@ -22,7 +22,7 @@ mapLinks.hover(
         $(neighbor[0]).css({   
             "top": "-"+(neighborHeight + 12)+"px",
             "left":"-"+parOffset+"px",
-            "z-index":2,
+            // "z-index":2,
             "opacity":1
         });
 
@@ -46,8 +46,6 @@ mapLinks.hover(
         parentLi.removeClass('posZ');
         $('.list-item').removeClass('negZ');
         parentLi.addClass('negZ');
-
-        console.log('Iam hovered over: '+neighbor);
 
         // After a short duration, remove negZ from original parentLi
         setTimeout(function() {
