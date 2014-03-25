@@ -5,7 +5,8 @@ requirejs.config({
     "baseUrl": "js/lib",
     "paths": {
       "app": "../app",
-      "util": "../util"
+      "util": "../util",
+      "in-view": "../lib/in-view"
       // "hilight": "../lib/jquery.maphilight.min",
       // "qtip": "../lib/qtip/jquery.qtip.min",
     },
@@ -13,6 +14,7 @@ requirejs.config({
       "util/helper": ["jquery"],
       "bootstrap.min": ["jquery"],
       "lib/bootstrap.min": ["jquery"],
+      "in-view": ["jquery"],
       // "hilight": ["jquery"],
       // "qtip": ["jquery"],
       "util/side-bar": ["jquery"],

@@ -41,7 +41,7 @@ function memberItems(members) {
 		$.each(items, function(j, item) {
 			var itemName = item.name.replace(/[^\w\s]|_/g, "").replace(/\s+/g, ""),
 			image = item.image,
-			itemClass = 'item-holder ' + itemName.toLowerCase() + ' ' + member_class,
+			itemClass = 'item-hidden item-holder ' + itemName.toLowerCase() + ' ' + member_class,
 			usemap = (image.split('.')[0]).split('/')[1],
 			coords = item.coords,
 			map, area, a, h2, p, aLink,
@@ -51,7 +51,6 @@ function memberItems(members) {
 				alt:item.name,
 				usemap:usemap
 			}),
-
 			// .load(function() {
 			// 	pic_real_width = this.width;   // Note: $(this).width() will not
    //      		// Set parent LI width once img has loaded and browser knows img width
@@ -64,7 +63,6 @@ function memberItems(members) {
 			li = $('<li/>', {
 				class:itemClass
 			});
-
 
 			var cleanItemName = nameShoes(item.name);
 
@@ -162,16 +160,24 @@ memberItems(jsMembers);
 
 // APPEND TO DOM AFTER ALL DOWNLOADS AND JS FUNCTIONS
 $(window).ready(function() {
-	// console.log('The window is ready!');
-	// console.log('This is liArray' + liArray); console.dir(liArray);
+	// Add ul to dom to individually attach li's to
 	itemListHolder.append(itemList);
 
-	for(var i=0; i < liArray.length; i++) {
+	var current = 0
+
+    function draw() {
+        var next = current + 1
+        for(var i = current; i < next; i++) {
+            // $('#collection').append('<li>Line Item</li>');
+            var cItem = liArray[i],
+			$cItem = $(cItem);
+			itemList.append(cItem);
+			$cItem.animate().removeClass('item-hidden').addClass('item-show', 1000);
+        }
+        current = next
+        setTimeout(draw, 3);
+    }
 	
-			itemList.append(liArray[i]);
-			
-	}
-
+	draw();
+	
 });
-
-

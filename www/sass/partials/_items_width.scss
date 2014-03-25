@@ -1,4 +1,20 @@
 // ITEMS WIDTH
+.item-hidden {
+	opacity: 0;
+	@include prefix(transition, all 0.5s ease);
+}
+
+.item-show {
+	opacity: 1;
+	@include prefix(transition, all 0.5s ease);
+}
+
+.selected {
+	opacity: 1;
+	// background: rgba(255, 0, 0, 0.2);
+	@include prefix(transition, all 0.5s ease);
+}
+
 .blade.keithreynaud{ width:25%;}
 .carfridge.keithreynaud{ width:47.55859375%;}
 .plasticbaby.keithreynaud{ width:10.05859375%;}
@@ -62,7 +78,10 @@
 .growler.evanmangiamele{ width:19.7265625%;}
 .boo.ericwarzecha{ width:20.60546875%;}
 .guitar.ericwarzecha{ width:78.3203125%;}
-.sabresjersey.ericwarzecha{ width:74.51171875%;}
+.sabresjersey.ericwarzecha{ 
+	// width:74.51171875%;
+	width: 70.511719%;
+}
 .minorthreatourofstep.ericwarzecha{ width:33.69140625%;}
 .floralpatterneddress.sashaawn{ width:40.625%;}
 .trapezegrips.sashaawn{ width:32.6171875%;}

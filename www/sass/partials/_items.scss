@@ -137,8 +137,30 @@
 
 
 #item-list-holder {
+	// .item-trans {
+	// 	opacity: 0;
+	// 	@include prefix(transform, preserve-3d);
+	// 	@include prefix(transition, all 500ms);
+	// }
 
-	.item-holder { position: absolute; opacity: 1; }
+	.animate {
+	    transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+	    animation: fallPerspective .8s ease-in-out forwards;
+	}
+	 
+	@keyframes fallPerspective {
+	    100% { transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; }
+	}
+
+	// .item-opaq {
+	// 	opacity: 1;
+	// 	@include prefix(transition, all 500ms);
+	// }	
+
+	.item-holder { 
+		position: absolute; 
+		// opacity: 1; 
+	}
 
 	li.item-holder.beardoll.philiploeb {
 		// top:.57%; left:11.5%; - switched position with GROWLER
