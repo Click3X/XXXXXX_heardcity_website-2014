@@ -29,8 +29,6 @@ body.home {
 	}
 
 	.dog-holder {
-		// height:54%;
-		// height: 69%;
 		height: 59%;
 
 	}
@@ -120,8 +118,15 @@ input[type="submit"],
 	}
 }
 
+
+.pad-bot {
+	padding-bottom: 66%;
+}
+
+
 @media(min-width:1040px) {
 	.logo-bg {padding-bottom:305px;}
+	.pad-bot,
 	.home-slider .slide { padding-bottom: 695px; }
 }
 

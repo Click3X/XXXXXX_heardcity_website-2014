@@ -17,11 +17,8 @@ include('functions.php');
         <link href="stylesheets/vendor/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="stylesheets/vendor/bootstrap/bootstrap-responsive.css" rel="stylesheet">
 
-
-        
-
         <!-- LOAD ROYALSLIDER STYLES -->
-<!--         <link href="stylesheets/vendor/royal/royalslider.css" rel="stylesheet">
+<!--    <link href="stylesheets/vendor/royal/royalslider.css" rel="stylesheet">
         <link href="stylesheets/vendor/royal/rs-default.css" rel="stylesheet">
  -->
         <!-- SASS STYLES - after Bootstrap! -->
@@ -41,16 +38,12 @@ include('functions.php');
                 include('php/parallax-styles.php');
             }
 
-
             if(isset($page) && ($page == 'Home' || $page == 'Dev')) { 
                 // Include Responsive BG script for smaller images
                 include('responsive-styles.php'); 
             }
             // Decide what requireJs script to load based on current page
             include('header-script-loader.php'); 
-
-
-            
         ?>
         
         <script data-main="<?php echo $script; ?>" src="js/lib/require.js"></script>
@@ -69,15 +62,6 @@ include('functions.php');
     <body class="<?php echo formatLink($page); ?>">
 
     <?php 
-        if($page == 'Home') { 
-           include('php/home/home-slider.php');
-        } 
-
-        if($page != 'Dev') { 
-        
-            newBootMenu($sitePages, $page, 'cl-effect-21');
-        }
-        
-    ?>
-
-    
+        if($page == 'Home') { include('php/home/home-slider.php'); } 
+        if($page != 'Dev') { newBootMenu($sitePages, $page, 'cl-effect-21'); }
+    ?>    

@@ -81,8 +81,10 @@
 	}
 }
 
+#first-container { height:160px; }
 
 @media(min-width:480px) {
+	#first-container,
 	.black-theme .text-slider li {
 			height:240px;
 	}
@@ -95,6 +97,7 @@
 }
 
 @media(min-width:1024px) {
+	#first-container,
 	.black-theme .text-slider li {
 		height:280px;
 	}
