@@ -21,6 +21,11 @@ include('functions.php');
 <!--    <link href="stylesheets/vendor/royal/royalslider.css" rel="stylesheet">
         <link href="stylesheets/vendor/royal/rs-default.css" rel="stylesheet">
  -->
+ 
+        <!-- LOAD CLUE TIP STYLES -->
+        <link href="stylesheets/vendor/cluetip/jquery.cluetip.css" rel="stylesheet" />
+
+
         <!-- SASS STYLES - after Bootstrap! -->
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -28,6 +33,7 @@ include('functions.php');
 
         <!-- LOAD QTIP STYLES -->
         <!-- <link rel="stylesheet" href="qtip/jquery.qtip.min.css"> -->
+
 
         <!--[if IE]>
             <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />

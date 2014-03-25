@@ -1,5 +1,13 @@
 // Side Bar Nav
 
+.mobile-hide-till-load {
+	display: none;
+	@include prefix(transition, all 0.5s ease); 
+	@media(min-width: 768px) {
+		display: block;
+	}
+}
+
 .sidebar-name {
 	font-size: .75em;
 	display: block;
@@ -53,11 +61,13 @@
 
 .side-bar-nav {
 	text-align: center;
-	padding-top: 60px;
+	// padding-top: 60px;
+	padding-top: 42px;
 
 	@media(min-width: 768px) {
 		padding-bottom:100%;
 		border-left: 1px solid silver;
+		padding-top: 60px;
 	}
 
 	.arrow-toggle {
@@ -118,8 +128,9 @@
 	width:100%; padding:5px 0;
 	background:#ffffff;
 	border-bottom: 1px solid rgb(153, 153, 153);
+	z-index: 10;
 	@include prefix(box-shadow, 0px 1px 6px rgba(0, 0, 0, 0.3));
-	@include prefix(transition, border 500ms);
+	// @include prefix(transition, border 500ms);
 	
 	.arrow-toggle { 
 		margin-left: 14px; margin-top: 3px;
@@ -144,14 +155,7 @@
 }
 
 
-
 .open-nav {	
-	
-	// .head-icon { 
-	// 	@media(min-width: 768px) {
-	// 		margin-left: 60px; 
-	// 	}
-	// }
 
 	#push {
 		border-bottom:none;
@@ -171,7 +175,6 @@
 	
 	@include prefix(transition, opacity 500ms);
 }
-
 
 .click-close {
 	display: block;

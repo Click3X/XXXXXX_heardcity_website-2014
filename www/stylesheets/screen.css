@@ -943,16 +943,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transition: all 0.5s ease;
 }
 
-/* line 12, ../sass/partials/_items_width.scss */
-.selected {
-  opacity: 1;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
 /* line 18, ../sass/partials/_items_width.scss */
 .blade.keithreynaud {
   width: 25%;
@@ -1897,137 +1887,185 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 381, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.hockeystick.danflosdorf {
   top: 1.7%;
-  left: 69%;
+  left: 72%;
 }
-/* line 388, ../sass/partials/_individual.scss */
+/* line 390, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.jayson.gloriapitagorsky {
   top: 3%;
   left: 11%;
 }
-/* line 392, ../sass/partials/_individual.scss */
+/* line 394, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.bracelet.gloriapitagorsky {
   top: 2%;
   left: 34%;
 }
-/* line 396, ../sass/partials/_individual.scss */
+/* line 398, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.scarf.gloriapitagorsky {
   top: 0;
   left: 47.5%;
 }
-/* line 400, ../sass/partials/_individual.scss */
+/* line 402, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.montaukmagnet.gloriapitagorsky {
   top: 23.4%;
   left: 69.5%;
 }
-/* line 404, ../sass/partials/_individual.scss */
+/* line 406, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.zagat.gloriapitagorsky {
   top: 39.8%;
   left: 60.5%;
 }
-/* line 408, ../sass/partials/_individual.scss */
+/* line 410, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.poster.gloriapitagorsky {
   top: 55%;
   left: 63.5%;
 }
-/* line 412, ../sass/partials/_individual.scss */
+/* line 414, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.flowers.gloriapitagorsky {
   top: 17.25%;
   left: 32.5%;
 }
-/* line 416, ../sass/partials/_individual.scss */
+/* line 418, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.necklace.gloriapitagorsky {
   top: 37%;
   left: 40.5%;
 }
-/* line 420, ../sass/partials/_individual.scss */
+/* line 422, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.ring.gloriapitagorsky {
   top: 42.45%;
   left: 34.5%;
 }
-/* line 424, ../sass/partials/_individual.scss */
+/* line 426, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.elephantfigure.gloriapitagorsky {
   top: 62%;
   left: 37%;
 }
-/* line 428, ../sass/partials/_individual.scss */
+/* line 430, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.nytimes.gloriapitagorsky {
   top: 23.6%;
   left: 8.5%;
 }
-/* line 432, ../sass/partials/_individual.scss */
+/* line 434, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.boardbinder.gloriapitagorsky {
   top: 50.4%;
   left: 8.5%;
 }
-/* line 439, ../sass/partials/_individual.scss */
+/* line 441, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.ipadipodiphone.peonyrene {
   top: 3%;
   left: 13%;
 }
-/* line 443, ../sass/partials/_individual.scss */
+/* line 445, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.lipstick.peonyrene {
   top: 3%;
   left: 38.5%;
 }
-/* line 447, ../sass/partials/_individual.scss */
+/* line 449, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.necklace.peonyrene {
   top: 9%;
   left: 19%;
 }
-/* line 451, ../sass/partials/_individual.scss */
+/* line 453, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.bag.peonyrene {
   top: 4.6%;
   left: 61%;
 }
-/* line 455, ../sass/partials/_individual.scss */
+/* line 457, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.pandorabracelet.peonyrene {
   top: 35.3%;
   left: 18.75%;
 }
-/* line 459, ../sass/partials/_individual.scss */
+/* line 461, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.carkeys.peonyrene {
   top: 34.25%;
   left: 41.5%;
 }
-/* line 463, ../sass/partials/_individual.scss */
+/* line 465, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.brunomars.peonyrene {
   top: 30.7%;
   left: 65%;
 }
-/* line 470, ../sass/partials/_individual.scss */
+/* line 472, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.minnieripperton.taliarodgers {
   top: 3%;
   left: 9.5%;
 }
-/* line 474, ../sass/partials/_individual.scss */
+/* line 476, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.beachbum.taliarodgers {
   top: 1%;
   left: 45%;
 }
-/* line 478, ../sass/partials/_individual.scss */
+/* line 480, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.toy.taliarodgers {
   top: 1%;
   left: 69%;
 }
-/* line 482, ../sass/partials/_individual.scss */
+/* line 484, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.tanktop.taliarodgers {
   top: 23.7%;
   left: 38%;
 }
-/* line 486, ../sass/partials/_individual.scss */
+/* line 488, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.books.taliarodgers {
   top: 31.15%;
   left: 12%;
 }
-/* line 490, ../sass/partials/_individual.scss */
+/* line 492, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.nikefreehyperfeels.taliarodgers {
   top: 54.5%;
   left: 6.5%;
 }
-/* line 494, ../sass/partials/_individual.scss */
+/* line 496, ../sass/partials/_individual.scss */
 .js-single-member #item-list-holder li.item-holder.comics.taliarodgers {
   top: 38.6%;
   left: 70%;
+}
+
+/* line 4, ../sass/partials/_clue-tip.scss */
+.ourteam .cluetip-close {
+  display: block;
+  float: right;
+}
+/* line 8, ../sass/partials/_clue-tip.scss */
+.ourteam .cluetip-default {
+  border: 1px solid silver;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+/* line 12, ../sass/partials/_clue-tip.scss */
+.ourteam .cluetip-outer {
+  background-color: transparent;
+}
+/* line 13, ../sass/partials/_clue-tip.scss */
+.ourteam .cluetip-default .ui-cluetip-header {
+  background-color: transparent;
+}
+/* line 18, ../sass/partials/_clue-tip.scss */
+.ourteam .split-body:nth-of-type(2) {
+  font-size: .8em;
+  margin-bottom: .25em;
+  letter-spacing: .15em;
+}
+/* line 24, ../sass/partials/_clue-tip.scss */
+.ourteam .split-body:nth-of-type(3) {
+  font-size: 1.3em;
+  margin-bottom: .25em;
+  letter-spacing: .15em;
+}
+/* line 30, ../sass/partials/_clue-tip.scss */
+.ourteam .split-body:nth-of-type(4) {
+  margin-top: .6em;
+  margin-bottom: 1em;
+  color: #646465;
+  line-height: 1.4em;
+  letter-spacing: .02em;
+  font-family: 'Times New Roman' serif;
+  text-transform: none;
+}
+/* line 41, ../sass/partials/_clue-tip.scss */
+.ourteam .split-body:nth-of-type(5) {
+  font-size: .750em;
+  color: #1f1f1f;
+  position: relative;
+  letter-spacing: .15em;
 }
 
 /* line 2, ../sass/component/_base.scss */
@@ -2484,6 +2522,22 @@ body.ourteam {
 }
 
 /* line 3, ../sass/component/_sidebar.scss */
+.mobile-hide-till-load {
+  display: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@media (min-width: 768px) {
+  /* line 3, ../sass/component/_sidebar.scss */
+  .mobile-hide-till-load {
+    display: block;
+  }
+}
+
+/* line 11, ../sass/component/_sidebar.scss */
 .sidebar-name {
   font-size: .75em;
   display: block;
@@ -2496,13 +2550,13 @@ body.ourteam {
   margin: auto;
 }
 @media (min-width: 768px) {
-  /* line 3, ../sass/component/_sidebar.scss */
+  /* line 11, ../sass/component/_sidebar.scss */
   .sidebar-name {
     display: none;
   }
 }
 
-/* line 15, ../sass/component/_sidebar.scss */
+/* line 23, ../sass/component/_sidebar.scss */
 #side-bar-nav {
   top: 0;
   right: 0;
@@ -2516,7 +2570,7 @@ body.ourteam {
   border-bottom: 1px solid silver;
 }
 @media (min-width: 768px) {
-  /* line 15, ../sass/component/_sidebar.scss */
+  /* line 23, ../sass/component/_sidebar.scss */
   #side-bar-nav {
     background: #fff;
     border-bottom: none;
@@ -2528,7 +2582,7 @@ body.ourteam {
   }
 }
 
-/* line 39, ../sass/component/_sidebar.scss */
+/* line 47, ../sass/component/_sidebar.scss */
 #slide-menu {
   margin-right: -250px;
   right: 60px;
@@ -2541,24 +2595,25 @@ body.ourteam {
   z-index: 5;
 }
 
-/* line 50, ../sass/component/_sidebar.scss */
+/* line 58, ../sass/component/_sidebar.scss */
 #side-bar-nav.open-nav {
   box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* line 54, ../sass/component/_sidebar.scss */
+/* line 62, ../sass/component/_sidebar.scss */
 .side-bar-nav {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 42px;
 }
 @media (min-width: 768px) {
-  /* line 54, ../sass/component/_sidebar.scss */
+  /* line 62, ../sass/component/_sidebar.scss */
   .side-bar-nav {
     padding-bottom: 100%;
     border-left: 1px solid silver;
+    padding-top: 60px;
   }
 }
-/* line 63, ../sass/component/_sidebar.scss */
+/* line 73, ../sass/component/_sidebar.scss */
 .side-bar-nav .arrow-toggle {
   display: block;
   background-image: url("../img/build/sprites/toggle-arrow.png");
@@ -2572,7 +2627,7 @@ body.ourteam {
   -ms-transition: all 400ms;
   transition: all 400ms;
 }
-/* line 72, ../sass/component/_sidebar.scss */
+/* line 82, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list {
   font-size: .75em;
   color: #9b9b9b;
@@ -2584,19 +2639,19 @@ body.ourteam {
   margin-top: -48px;
 }
 @media (min-width: 768px) {
-  /* line 72, ../sass/component/_sidebar.scss */
+  /* line 82, ../sass/component/_sidebar.scss */
   .side-bar-nav .members-list {
     text-align: left;
     padding-bottom: 0;
     margin-top: 0;
   }
 }
-/* line 88, ../sass/component/_sidebar.scss */
+/* line 98, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list li {
   line-height: 2.2em;
   position: relative;
 }
-/* line 92, ../sass/component/_sidebar.scss */
+/* line 102, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list li:hover {
   color: black;
   -webkit-transition: all 500ms;
@@ -2605,7 +2660,7 @@ body.ourteam {
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 97, ../sass/component/_sidebar.scss */
+/* line 107, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list li:hover:before {
   content: url("../img/build/sprites/toggle-arrow.png");
   position: absolute;
@@ -2618,13 +2673,13 @@ body.ourteam {
   transform: rotate(180deg);
 }
 
-/* line 110, ../sass/component/_sidebar.scss */
+/* line 120, ../sass/component/_sidebar.scss */
 .side-bar-nav.open-nav .members-list {
   padding-bottom: 10px;
   margin-top: 0;
 }
 
-/* line 116, ../sass/component/_sidebar.scss */
+/* line 126, ../sass/component/_sidebar.scss */
 #push {
   position: fixed;
   top: 42px;
@@ -2632,18 +2687,14 @@ body.ourteam {
   padding: 5px 0;
   background: #ffffff;
   border-bottom: 1px solid #999999;
+  z-index: 10;
   -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
   -o-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
   -ms-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
-  -webkit-transition: border 500ms;
-  -moz-transition: border 500ms;
-  -o-transition: border 500ms;
-  -ms-transition: border 500ms;
-  transition: border 500ms;
 }
-/* line 124, ../sass/component/_sidebar.scss */
+/* line 135, ../sass/component/_sidebar.scss */
 #push .arrow-toggle {
   margin-left: 14px;
   margin-top: 3px;
@@ -2654,7 +2705,7 @@ body.ourteam {
   transform: rotate(-90deg);
 }
 @media (min-width: 768px) {
-  /* line 116, ../sass/component/_sidebar.scss */
+  /* line 126, ../sass/component/_sidebar.scss */
   #push {
     padding: 0;
     position: static;
@@ -2667,7 +2718,7 @@ body.ourteam {
     -ms-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   }
-  /* line 136, ../sass/component/_sidebar.scss */
+  /* line 147, ../sass/component/_sidebar.scss */
   #push .arrow-toggle {
     float: left;
     margin-left: 19px;
@@ -2680,7 +2731,7 @@ body.ourteam {
   }
 }
 
-/* line 156, ../sass/component/_sidebar.scss */
+/* line 160, ../sass/component/_sidebar.scss */
 .open-nav #push {
   border-bottom: none;
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
@@ -2689,7 +2740,7 @@ body.ourteam {
   -ms-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
-/* line 160, ../sass/component/_sidebar.scss */
+/* line 164, ../sass/component/_sidebar.scss */
 .open-nav #push .arrow-toggle {
   display: block;
   -webkit-transform: rotate(180deg);
@@ -2704,7 +2755,7 @@ body.ourteam {
   transition: transform 500ms;
 }
 
-/* line 169, ../sass/component/_sidebar.scss */
+/* line 173, ../sass/component/_sidebar.scss */
 .hide-push {
   visibility: 0;
   opacity: 0;
@@ -2715,7 +2766,7 @@ body.ourteam {
   transition: opacity 500ms;
 }
 
-/* line 176, ../sass/component/_sidebar.scss */
+/* line 179, ../sass/component/_sidebar.scss */
 .click-close {
   display: block;
   position: fixed;
@@ -2733,11 +2784,11 @@ body.ourteam {
   transition: all 500ms;
 }
 
-/* line 190, ../sass/component/_sidebar.scss */
+/* line 193, ../sass/component/_sidebar.scss */
 #members-list li {
   background: #fff;
 }
-/* line 191, ../sass/component/_sidebar.scss */
+/* line 194, ../sass/component/_sidebar.scss */
 #members-list li:first-child {
   font-size: 1.25em;
   color: #000;

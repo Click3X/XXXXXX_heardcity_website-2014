@@ -4,7 +4,10 @@ define(["jquery",
         "util/side-bar", 
         "util/team-members-json",
         "in-view",
-        "util/map-links"
+        // "util/map-links",
+        "clue-tip",
+        "util/clue-hover",
+        "hover"
         ], function($) {
 
             // Add helper button
@@ -34,12 +37,20 @@ define(["jquery",
                 }
             });
 
-
-
-            // TRY NEW MAP HIGHT
-            // $(function() {
-            //     $( document ).tooltip();
-            //   });
     
+
+            // $('#houdini').cluetip({
+            //     splitTitle: '|', // use the invoking element's title attribute to populate the clueTip...
+            //                      // ...and split the contents into separate divs where there is a "|"
+            //     showTitle: false, // hide the clueTip's heading
+            //     sticky: true,
+            //     dropShadow: true,
+            //     arrows: true,
+            //     dropShadowSteps:12,
+            //     fx: {
+            //           open: 'fadeIn', // can be 'show' or 'slideDown' or 'fadeIn'
+            //           openSpeed: 200
+            //         }
+            //   });
 
 });

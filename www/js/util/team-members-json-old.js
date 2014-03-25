@@ -4,6 +4,7 @@
 var jsMembers = [],
 teamMembers = [],
 liArray = [],
+// itemList = $('.item-list'),
 itemListHolder = $('#item-list-holder'),
 itemList = $('<ul/>', {
 				class:"item-list"
@@ -43,12 +44,22 @@ function memberItems(members) {
 			itemClass = 'item-hidden item-holder ' + itemName.toLowerCase() + ' ' + member_class,
 			usemap = (image.split('.')[0]).split('/')[1],
 			coords = item.coords,
-			map, area, a,
+			map, area, a, h2, p, aLink,
+			neighbor, innerHover,
 			img = $('<img/>', {
 				src:image,
 				alt:item.name,
 				usemap:usemap
 			}),
+			// .load(function() {
+			// 	pic_real_width = this.width;   // Note: $(this).width() will not
+   //      		// Set parent LI width once img has loaded and browser knows img width
+   //      		var parentWidth = (this.width/1024) * 100;
+   //      		// $(this).offsetParent().width(parentWidth+'%');
+
+   //      		// styleSheet += '.'+ itemName.toLowerCase() + '.' + member_class + '{ width:'+parentWidth +'%;}'+'\n';
+   //      		// console.log(styleSheet);
+			// }),
 			li = $('<li/>', {
 				class:itemClass
 			});
@@ -68,7 +79,7 @@ function memberItems(members) {
 					coords:coords,
 					"data-person":member_class,
 					"data-item": itemName.toLowerCase(),
-					"title": "|" + "|" + "This is " + member_name + "\'s" + "|" + cleanItemName + "|" + item.bio + "|" + "> View " + member_sex + " stuff",
+					"title": "|" + "|" + "This is " + member_name + "\'s" + "|" + cleanItemName + "|" + item.bio + "|" + "View " + member_sex + " stuff",
 					class:"cluetip-div"
 				});
 
@@ -81,13 +92,64 @@ function memberItems(members) {
 					href:"#",
 					"data-person":member_class,
 					"data-item": itemName.toLowerCase(),
-					"title": "|" + "|" + "This is " + member_name + "\'s" + "|" + cleanItemName + "|" + item.bio + "|" + "> View " + member_sex + " stuff",
+					"title": "|" + "|" + "This is " + member_name + "\'s" + "|" + cleanItemName + "|" + item.bio + "|" + "View " + member_sex + " stuff",
 					class:"cluetip-div"
 				});
 
 				a.append(img);
 				li.append(a);
 			}
+
+			// POP UP div for each item
+			// divHover = $('<div/>', {
+			// 	class:"neighbor"
+			// }),
+			// ulPopup = $('<ul/>', {
+			// 	class:"pop-up"
+			// }),
+			// liMain = $('<li/>'),
+			// divTeamMember  = $('<div/>', {
+			// 	class:"team-member clearfix"
+			// }),
+			// ulMemberText = $('<ul/>', {
+			// 	class:"member-text"
+			// }),
+			// liMiscText = $('<li/>', {
+			// 	class:"misc-text"
+			// }).text('This is ' + member_name + '\'s'),
+			// liName = $('<li/>', {
+			// 	class:"name"
+			// }).text(cleanItemName),
+			// liBio = $('<li/>', {
+			// 	class:"serif"
+			// }).text(item.bio),
+			// liAlink = $('<li/>', {
+			// 	class:"permalink"
+			// }),
+			// aLink = $('<a/>', {
+			// 	href:"#",
+			// 	"data-person":member_class,
+			// 	"data-item": itemName.toLowerCase(),
+			// 	// "title": "|This is " + member_name + "\'s" + "|" + cleanItemName + "|" + item.bio + "|" + "> View " + member_sex + " stuff",
+			// 	class:"view-profile"
+			// }).text('View '+ member_sex +' stuff');
+
+			// STICH TO TOGETHER ELEMENTS starting with UL and LIs
+			// liAlink.append(aLink);
+			// ulMemberText.append(liMiscText, liName, liBio, liAlink);
+
+			// TEAM MEM
+			// divTeamMember.append(ulMemberText);
+
+			// POP UP ULs
+			// liMain.append(divTeamMember);
+			// ulPopup.append(liMain);
+			// divHover.append(ulPopup);
+
+			// APPEND TO DOM
+			// li.append(divHover);
+			
+			// itemList.append(li);
 
 			liArray.push(li);
 		});

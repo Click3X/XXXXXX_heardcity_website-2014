@@ -29,9 +29,7 @@ include('php/build-members-array.php');
 
 <div id="graph" class="container clearfix">
 	<div id="item-list-holder" class="team-member-items">
-<!-- 		<ul class="item-list">
-
-		</ul> -->
+		<!-- CONTENT TO BE APPENDED HERE -->
 	</div>
 </div>
 

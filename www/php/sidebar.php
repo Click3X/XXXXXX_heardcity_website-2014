@@ -1,6 +1,6 @@
 <?php // Sidebar php ?>
 
-	<div id="side-bar-nav" class="side-bar-nav">
+	<div id="side-bar-nav" class="side-bar-nav mobile-hide-till-load">
 		<div id="push">
 			<!-- <div class="head-icon"></div> TOOK OUT SILOHUETTE as requested-->
 			<a href="#" class="arrow-toggle"></a>

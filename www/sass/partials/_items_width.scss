@@ -9,11 +9,11 @@
 	@include prefix(transition, all 0.5s ease);
 }
 
-.selected {
-	opacity: 1;
-	// background: rgba(255, 0, 0, 0.2);
-	@include prefix(transition, all 0.5s ease);
-}
+// .selected {
+// 	opacity: 1;
+// 	// background: rgba(255, 0, 0, 0.2);
+// 	@include prefix(transition, all 0.5s ease);
+// }
 
 .blade.keithreynaud{ width:25%;}
 .carfridge.keithreynaud{ width:47.55859375%;}

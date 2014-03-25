@@ -1,0 +1,49 @@
+// CLUE TIP
+.ourteam {
+	
+	.cluetip-close {
+		display: block;
+		float: right;
+	}	
+	.cluetip-default {
+		border: 1px solid rgb(192, 192, 192);
+	  background-color: rgba(255, 255, 255, 0.95);
+	}
+	.cluetip-outer { background-color: transparent;}
+	.cluetip-default .ui-cluetip-header {
+	  background-color: transparent;
+	}
+
+
+	.split-body:nth-of-type(2) {
+		font-size:.8em;
+		margin-bottom:.25em;
+		letter-spacing: .15em;
+	}
+
+	.split-body:nth-of-type(3) {
+		font-size: 1.3em;
+		margin-bottom:.25em;
+		letter-spacing: .15em;
+	}
+
+	.split-body:nth-of-type(4) {
+		margin-top: .6em; 
+		margin-bottom: 1em;
+		color: #646465;
+		line-height: 1.4em;
+		letter-spacing: .02em;
+		font-family: 'Times New Roman' serif;
+		text-transform: none;
+		// letter-spacing: .15em;
+	}
+
+	.split-body:nth-of-type(5) {
+		font-size: .750em;
+		color: #1f1f1f;
+		position: relative;
+		// margin-left: 0.875rem;
+		letter-spacing: .15em;
+	}
+
+}
