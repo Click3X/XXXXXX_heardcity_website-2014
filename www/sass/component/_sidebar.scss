@@ -60,23 +60,6 @@
 		border-left: 1px solid silver;
 	}
 
-	// .head-icon {
-	// 	float: left;
-	// 	margin-left: 43px;
-	// 	width:35px; height:35px;
-	// 	background-image: url('../img/build/team-members/keith-silo-small.png');
-	// 	background-repeat:no-repeat;
-	// 	background-size:contain;
-	// 	@include prefix(transition, all 400ms);
-
-	// 	@media(min-width: 768px) {
-	// 		position: static; top:auto; left:auto; float:none;
-	// 		height:51px; width:51px;
-	// 		margin: 4em 0 1em .3333em;
-			
-	// 	}
-	// }
-
 	.arrow-toggle {
 		display: block;
 		background-image: url('../img/build/sprites/toggle-arrow.png');
@@ -93,9 +76,13 @@
 		text-align: left;
 		letter-spacing: .05em;
 		text-align: center;
+		padding-bottom: 50px;
+		margin-top: -48px;
 
 		@media(min-width: 768px) {
 			text-align: left;
+			padding-bottom: 0;
+			margin-top: 0;
 		}
 
 		li {
@@ -118,6 +105,13 @@
 	}
 }
 
+
+.side-bar-nav.open-nav {
+	.members-list {
+		padding-bottom: 10px;
+		margin-top: 0;
+	}
+}
 
 #push { 
 	position: fixed; top:42px;

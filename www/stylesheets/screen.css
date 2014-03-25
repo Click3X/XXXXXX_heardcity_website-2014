@@ -2558,7 +2558,7 @@ body.ourteam {
     border-left: 1px solid silver;
   }
 }
-/* line 80, ../sass/component/_sidebar.scss */
+/* line 63, ../sass/component/_sidebar.scss */
 .side-bar-nav .arrow-toggle {
   display: block;
   background-image: url("../img/build/sprites/toggle-arrow.png");
@@ -2572,7 +2572,7 @@ body.ourteam {
   -ms-transition: all 400ms;
   transition: all 400ms;
 }
-/* line 89, ../sass/component/_sidebar.scss */
+/* line 72, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list {
   font-size: .75em;
   color: #9b9b9b;
@@ -2580,19 +2580,23 @@ body.ourteam {
   text-align: left;
   letter-spacing: .05em;
   text-align: center;
+  padding-bottom: 50px;
+  margin-top: -48px;
 }
 @media (min-width: 768px) {
-  /* line 89, ../sass/component/_sidebar.scss */
+  /* line 72, ../sass/component/_sidebar.scss */
   .side-bar-nav .members-list {
     text-align: left;
+    padding-bottom: 0;
+    margin-top: 0;
   }
 }
-/* line 101, ../sass/component/_sidebar.scss */
+/* line 88, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list li {
   line-height: 2.2em;
   position: relative;
 }
-/* line 105, ../sass/component/_sidebar.scss */
+/* line 92, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list li:hover {
   color: black;
   -webkit-transition: all 500ms;
@@ -2601,7 +2605,7 @@ body.ourteam {
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 110, ../sass/component/_sidebar.scss */
+/* line 97, ../sass/component/_sidebar.scss */
 .side-bar-nav .members-list li:hover:before {
   content: url("../img/build/sprites/toggle-arrow.png");
   position: absolute;
@@ -2614,7 +2618,13 @@ body.ourteam {
   transform: rotate(180deg);
 }
 
-/* line 122, ../sass/component/_sidebar.scss */
+/* line 110, ../sass/component/_sidebar.scss */
+.side-bar-nav.open-nav .members-list {
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+/* line 116, ../sass/component/_sidebar.scss */
 #push {
   position: fixed;
   top: 42px;
@@ -2633,7 +2643,7 @@ body.ourteam {
   -ms-transition: border 500ms;
   transition: border 500ms;
 }
-/* line 130, ../sass/component/_sidebar.scss */
+/* line 124, ../sass/component/_sidebar.scss */
 #push .arrow-toggle {
   margin-left: 14px;
   margin-top: 3px;
@@ -2644,7 +2654,7 @@ body.ourteam {
   transform: rotate(-90deg);
 }
 @media (min-width: 768px) {
-  /* line 122, ../sass/component/_sidebar.scss */
+  /* line 116, ../sass/component/_sidebar.scss */
   #push {
     padding: 0;
     position: static;
@@ -2657,7 +2667,7 @@ body.ourteam {
     -ms-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   }
-  /* line 142, ../sass/component/_sidebar.scss */
+  /* line 136, ../sass/component/_sidebar.scss */
   #push .arrow-toggle {
     float: left;
     margin-left: 19px;
@@ -2670,7 +2680,7 @@ body.ourteam {
   }
 }
 
-/* line 162, ../sass/component/_sidebar.scss */
+/* line 156, ../sass/component/_sidebar.scss */
 .open-nav #push {
   border-bottom: none;
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
@@ -2679,7 +2689,7 @@ body.ourteam {
   -ms-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
-/* line 166, ../sass/component/_sidebar.scss */
+/* line 160, ../sass/component/_sidebar.scss */
 .open-nav #push .arrow-toggle {
   display: block;
   -webkit-transform: rotate(180deg);
@@ -2694,7 +2704,7 @@ body.ourteam {
   transition: transform 500ms;
 }
 
-/* line 175, ../sass/component/_sidebar.scss */
+/* line 169, ../sass/component/_sidebar.scss */
 .hide-push {
   visibility: 0;
   opacity: 0;
@@ -2705,7 +2715,7 @@ body.ourteam {
   transition: opacity 500ms;
 }
 
-/* line 182, ../sass/component/_sidebar.scss */
+/* line 176, ../sass/component/_sidebar.scss */
 .click-close {
   display: block;
   position: fixed;
@@ -2723,11 +2733,11 @@ body.ourteam {
   transition: all 500ms;
 }
 
-/* line 196, ../sass/component/_sidebar.scss */
+/* line 190, ../sass/component/_sidebar.scss */
 #members-list li {
   background: #fff;
 }
-/* line 197, ../sass/component/_sidebar.scss */
+/* line 191, ../sass/component/_sidebar.scss */
 #members-list li:first-child {
   font-size: 1.25em;
   color: #000;

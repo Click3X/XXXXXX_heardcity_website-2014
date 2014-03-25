@@ -37,7 +37,6 @@ allMembers.click(function() {
 	$('#member-bio .bio > p').html(defaultBio);
 	$('#member-bio .name').html(defaultName);
 	$('#sidebar-name').html(defaultName);
-	// console.log('this is default name: ' + defaultName + 'this is default bio: ' + defaultBio);
 });
 
 
@@ -53,9 +52,9 @@ $('#push, #close').click(function () {
 
 
 // SIDE BAR hover
-$('.members-list').hover(function() {
-	$('#push').toggleClass('hide-push')
-});
+// $('.members-list').hover(function() {
+// 	$('#push').toggleClass('hide-push')
+// });
 
 
 
