@@ -5,6 +5,20 @@ body.home {
 	width: 100%;
 }
 
+.home {
+/* Background */
+	.rsDefault,
+	.rsDefault .rsOverflow,
+	.rsDefault .rsSlide,
+	.rsDefault .rsVideoFrameHolder,
+	.rsDefault .rsThumbs {
+		background:inherit;
+		color:inherit;
+	}
+}
+
+
+// FEATURED VIDEO
 .home-video-open {
 	display: block; visibility: visible;
 }
@@ -15,7 +29,7 @@ body.home {
 	width:77%;
 }
 
-
+// PARALLAX STYLES FOR DEV
 #par { 
 
 

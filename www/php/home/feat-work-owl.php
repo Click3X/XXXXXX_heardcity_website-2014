@@ -6,7 +6,7 @@
 	</div>
 
 	<div class="">  <!-- wrap -->
-		<ul id="featured-slider" class="feat-work-slider royalSlider contentSlider rsDefault">
+		<ul id="featured-slider" class="feat-work-slider owl-carousel">
 		
 		<?php
 			foreach ($projects as $key => $project) { 
@@ -22,7 +22,7 @@
 				<li class="work-slide clearfix">
 					<div class="img-holder">
 						<a href="#" class="open-vid">
-							<img src="<?php echo $thumbsrc[0]; ?>" alt="<?php echo $project['title']; ?>" class="rsImg">
+							<img src="<?php echo $thumbsrc[0]; ?>" alt="<?php echo $project['title']; ?>">
 						</a>
 						<div class="og-fullimg hidden home-video">
 							<video controls="" src="<?php echo $vidmp4;?>"><source src="" type="video/mp4"></video>

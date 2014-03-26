@@ -2,7 +2,7 @@
 <div id="first-container" class="container clearfix black-theme">
 	<div class="noise"></div>
 	<div> <!-- class="wrap" -->
-		<ul id="black-text-slider" class="text-slider black-grad royalSlider contentSlider rsDefault">
+		<ul id="black-text-slider" class="text-slider owl-carousel black-grad">
 
 			<?php
  			foreach ($text_carousel_black as $headline) { ?>

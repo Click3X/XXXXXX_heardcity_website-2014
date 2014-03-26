@@ -1,4 +1,12 @@
-define(["jquery", "util/helper", "bootstrap.min", "util/team-member-form", "util/carousel", "util/request-anim", "util/parallax", "util/sticky-nav"], function($) {
+define(["jquery",
+        "util/helper",
+        "bootstrap.min",
+        "util/team-member-form",
+        "util/carousel",
+        "royalslider",
+        "util/request-anim", 
+        "util/parallax", 
+        "util/sticky-nav"], function($) {
 
 
     $(function() {

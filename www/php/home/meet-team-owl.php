@@ -8,7 +8,7 @@
 	
 	<div> 
 	  <form id="myForm" action="ourteam.php"  method="POST">
-		<ul id="team-slider" class="team-members royalSlider contentSlider rsDefault"> 
+		<ul id="team-slider" class="team-members owl-carousel"> 
 
 		<?php 
 			foreach ($members as $key => $member) { 
@@ -28,7 +28,7 @@
 				<div class="team-member clearfix">
 					
 					<div class="image">
-						<img src="<?php echo $item_image;?>" alt="<?php echo $member['name'];?>" class="rsImg">
+						<img src="<?php echo $item_image;?>" alt="<?php echo $member['name'];?>">
 					</div>
 
 					<ul class="member-text">

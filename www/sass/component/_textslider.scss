@@ -33,7 +33,6 @@
 	}
 }
 
-
 .grey-theme > .noise {opacity: 1 !important;}
 
 .black-theme {
@@ -65,14 +64,12 @@
 					&:before {
 						content: ''; display:block;
 						border-top: 1px solid $grey-line;
-						// height:1em;
 						height:14px;
 					}
 
 					&:after {
 						content: ''; display:block;
 						border-bottom: 1px solid $grey-line;
-						// height:.85em;
 						height:12px;
 					}
 				}
@@ -81,7 +78,7 @@
 	}
 }
 
-#first-container { height:160px; }
+#first-container { height:200px; }
 
 @media(min-width:480px) {
 	#first-container,
