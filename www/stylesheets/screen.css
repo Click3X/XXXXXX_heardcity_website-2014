@@ -5785,56 +5785,66 @@ html {
   background-image: url(vendor/cluetip/images/darrowright.png);
   opacity: 0.95;
 }
+/* line 40, ../sass/pages/_ourteam.scss */
+.ourteam div.clue-bottom-default .cluetip-arrows {
+  background-image: url(vendor/cluetip/images/darrowup.png);
+  opacity: 0.95;
+}
+/* line 45, ../sass/pages/_ourteam.scss */
+.ourteam div.clue-top-default .cluetip-arrows {
+  background-image: url(vendor/cluetip/images/darrowdown.png);
+  opacity: 0.95;
+}
 
-/* line 47, ../sass/pages/_ourteam.scss */
+/* line 55, ../sass/pages/_ourteam.scss */
 .ourteam input[type="radio"] {
   position: absolute;
   opacity: 0;
 }
-/* line 53, ../sass/pages/_ourteam.scss */
+/* line 61, ../sass/pages/_ourteam.scss */
 .ourteam #member-bio {
   z-index: 1;
 }
-/* line 56, ../sass/pages/_ourteam.scss */
+/* line 64, ../sass/pages/_ourteam.scss */
 .ourteam #member-bio .team-member {
   width: 100%;
   max-width: 1024px;
 }
-/* line 61, ../sass/pages/_ourteam.scss */
+/* line 69, ../sass/pages/_ourteam.scss */
 .ourteam #member-bio .member-text {
   margin-left: 3%;
 }
 @media (min-width: 768px) {
-  /* line 65, ../sass/pages/_ourteam.scss */
+  /* line 73, ../sass/pages/_ourteam.scss */
   .ourteam #member-bio .member-text {
     width: 74%;
     float: none;
     margin-left: 13%;
   }
-  /* line 71, ../sass/pages/_ourteam.scss */
+  /* line 79, ../sass/pages/_ourteam.scss */
   .ourteam #member-bio .bio {
     max-width: none;
     font-size: 1em;
     line-height: 1.6em;
   }
-  /* line 77, ../sass/pages/_ourteam.scss */
+  /* line 85, ../sass/pages/_ourteam.scss */
   .ourteam #member-bio .name {
     font-size: 1.4rem;
   }
 }
 
-/* line 83, ../sass/pages/_ourteam.scss */
+/* line 91, ../sass/pages/_ourteam.scss */
 .item-list .item-holder {
   position: relative;
   display: inline-block;
 }
 
-/* line 88, ../sass/pages/_ourteam.scss */
+/* line 96, ../sass/pages/_ourteam.scss */
 .team-member-items h1 {
   letter-spacing: .13em;
 }
 
-/* line 91, ../sass/pages/_ourteam.scss */
+/* line 99, ../sass/pages/_ourteam.scss */
 .item-hover {
   width: 100%;
   min-width: 10em;
@@ -5861,14 +5871,14 @@ html {
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 108, ../sass/pages/_ourteam.scss */
+/* line 116, ../sass/pages/_ourteam.scss */
 .item-hover .item-hover-inner {
   display: table-cell;
   vertical-align: middle;
   padding-top: .5em;
   padding-bottom: 2em;
 }
-/* line 114, ../sass/pages/_ourteam.scss */
+/* line 122, ../sass/pages/_ourteam.scss */
 .item-hover .item-hover-inner h2 {
   font-size: 1.6em;
   letter-spacing: .13em;
@@ -5876,13 +5886,13 @@ html {
   margin-top: .5em;
   text-align: center;
 }
-/* line 121, ../sass/pages/_ourteam.scss */
+/* line 129, ../sass/pages/_ourteam.scss */
 .item-hover .item-hover-inner p {
   min-width: 12em;
   margin-bottom: .25em;
   line-height: 1.4em;
 }
-/* line 127, ../sass/pages/_ourteam.scss */
+/* line 135, ../sass/pages/_ourteam.scss */
 .item-hover .item-hover-inner .view-profile {
   display: inline-block;
   font-size: .7em;
@@ -5891,24 +5901,24 @@ html {
   letter-spacing: .1em;
   line-height: 1.4em;
 }
-/* line 135, ../sass/pages/_ourteam.scss */
+/* line 143, ../sass/pages/_ourteam.scss */
 .item-hover .item-hover-inner .view-profile:hover {
   color: #c84938;
 }
 
-/* line 141, ../sass/pages/_ourteam.scss */
+/* line 149, ../sass/pages/_ourteam.scss */
 .pop-up {
   position: relative;
   margin: auto;
   background-color: #ffffff;
   background-color: rgba(255, 255, 255, 0.925);
 }
-/* line 150, ../sass/pages/_ourteam.scss */
+/* line 158, ../sass/pages/_ourteam.scss */
 .pop-up .team-member .member-text .misc-text {
   font-size: .8rem;
   margin-bottom: .75em;
 }
-/* line 155, ../sass/pages/_ourteam.scss */
+/* line 163, ../sass/pages/_ourteam.scss */
 .pop-up .team-member .member-text .name {
   margin-bottom: .5rem;
   font-size: 1.3em;

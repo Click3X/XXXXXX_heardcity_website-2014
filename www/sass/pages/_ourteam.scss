@@ -37,7 +37,15 @@ html {
 		opacity: 0.95;
 	}
 
+	div.clue-bottom-default .cluetip-arrows {
+		background-image: url(vendor/cluetip/images/darrowup.png);
+		opacity: 0.95;
+	}
 
+	div.clue-top-default .cluetip-arrows {
+		background-image: url(vendor/cluetip/images/darrowdown.png);
+		opacity: 0.95;
+	}
 
 }
 

@@ -44,7 +44,7 @@ $(window).ready(function() {
 	    arrows: true,
 	    dropShadowSteps:16,
 	    width:400,
-	    positionBy: 'mouse',
+	    positionBy: 'bottomTop',
 	    closeText:'x',
 	    fx: {
 	          open: 'fadeIn', // can be 'show' or 'slideDown' or 'fadeIn'
