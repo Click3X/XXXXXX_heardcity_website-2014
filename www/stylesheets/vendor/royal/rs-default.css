@@ -479,3 +479,10 @@
 	font-size: 12px;
 	border-radius: 2px;
 }
+
+
+/******************* CHARLES STYLES */
+.rsDefault .rsArrowIcn { display: none;}
+@media(min-width: 768px) {
+	.rsDefault .rsArrowIcn { display: block;}	
+}

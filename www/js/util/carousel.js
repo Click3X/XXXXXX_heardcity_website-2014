@@ -1,9 +1,11 @@
 // $('#home-slider-holder').removeClass('pad-bot');
-
+// Please note that autoHeight option has some conflicts with options like imageScaleMode, imageAlignCenter and autoScaleSlider
+// it's recommended to disable them when using autoHeight module
 // ROYAL SLIDER CODES
 $('#home-slider').royalSlider({
     autoHeight: true,
     arrowsNav: true,
+    arrowsNavAutoHide:false,
     fadeinLoadedSlide: false,
     controlNavigationSpacing: 0,
     controlNavigation: 'none',
@@ -18,11 +20,11 @@ $('#home-slider').royalSlider({
 });
 
 
-// Please note that autoHeight option has some conflicts with options like imageScaleMode, imageAlignCenter and autoScaleSlider
-// it's recommended to disable them when using autoHeight module
 $('#black-text-slider, #grey-text-slider').royalSlider({
+    arrowsNavAutoHide:false,
     autoHeight: true,
     arrowsNav: true,
+    arrowsNavAutoHide:false,
     fadeinLoadedSlide: false,
     controlNavigationSpacing: 0,
     slidesSpacing:0,
@@ -40,6 +42,7 @@ $('#black-text-slider, #grey-text-slider').royalSlider({
 $('#featured-slider').royalSlider({
     autoHeight: true,
     arrowsNav: true,
+    arrowsNavAutoHide:false,
     fadeinLoadedSlide: false,
     controlNavigationSpacing: 0,
     controlNavigation: 'none',
@@ -57,6 +60,7 @@ $('#featured-slider').royalSlider({
 $('#team-slider').royalSlider({
     autoHeight: true,
     arrowsNav: true,
+    arrowsNavAutoHide:false,
     fadeinLoadedSlide: false,
     controlNavigationSpacing: 0,
     controlNavigation: 'none',
