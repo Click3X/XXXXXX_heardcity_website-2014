@@ -18,6 +18,12 @@ html {
 // Silo and Member bio
 .ourteam {
 
+	input[type="radio"] {
+		position: absolute;
+		// opacity: 0.25;
+		opacity: 0;
+	}
+
 	#member-bio {
 		z-index: 1;
 		

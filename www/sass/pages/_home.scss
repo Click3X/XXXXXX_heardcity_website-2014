@@ -104,6 +104,9 @@ body.home {
 }
 
 // FORM CONTROLS HIDE
+// input[type="submit"] {
+// 	z-index: 1000; position: absolute;
+// }
 input[type="submit"],
 .permalink input { 
 	opacity: 0; 

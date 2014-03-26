@@ -36,7 +36,8 @@
 						<li class="name"><?php echo $member['name']; ?></li>
 						<li class="bio"><?php echo firstBit($member['bio']); ?></li>
 						<li class="permalink">								
-							<a href="<?php echo $member['permalink']; ?>" class="member-permalink">View more of <?php echo $member['sex']; ?> stuff</a>
+							<!-- <a href="<?php echo $member['permalink']; ?>" class="member-permalink">View more of <?php echo $member['sex']; ?> stuff</a> -->
+							<label for="<?php echo $member_class; ?>-input" class="member-permalink">View more of <?php echo $member['sex']; ?> stuff</label>
 							<input type="radio" name="selected_member" id="<?php echo $member_class; ?>-input" tabindex="2" value="<?php echo $member_class; ?>">
 						</li>
 					</ul>

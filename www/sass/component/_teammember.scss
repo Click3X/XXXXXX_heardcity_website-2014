@@ -142,7 +142,8 @@
 			margin-top:1rem;
 			@media(min-width:480px) { margin-top:2rem; }
 
-			a {
+			a,
+			label {
 				font-size: .750em;
 				color:$black;
 				position: relative;

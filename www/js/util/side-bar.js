@@ -7,41 +7,6 @@ sidebarLinks = $('.sidebar-link');
 
 $('#side-bar-nav').removeClass('mobile-hide-till-load');
 
-// loop through JSON data and CREATE ARRAY
-showMemberBio = function(member) {
-	$(jsonMembers).each(function() {
-		var name = this.name,
-		member_class = this.member_class,
-		bio = this.bio,
-		match;
-		
-		if(member == member_class) {
-			match = member;
-
-			$('#member-bio .bio > p').html(bio);
-			$('#member-bio .name').html(name);
-			$('#sidebar-name').html(name);
-		}
-	});
-}
-
-
-// If Our Team is clicked, show all member items
-allMembers.click(function() {
-	$('.item-holder').show();
-	// memberBio.hide();
-	$('#member-bio .permalink > a').hide();
-	$('body.ourteam').removeClass('js-single-member');
-	var defaultName = jsonDefaults.name;
-	var defaultBio = jsonDefaults.bio;
-
-	$('#member-bio .bio > p').html(defaultBio);
-	$('#member-bio .name').html(defaultName);
-	$('#sidebar-name').html(defaultName);
-});
-
-
-
 // Closing the Sidebar BY CLICKING ON OTHER AREA	
 $('#push, #close').click(function () {
 	openShutDroor();
@@ -89,13 +54,53 @@ checkWidth();
 $(window).resize(checkWidth);
 
 
-// var current = 0
-// function draw() {
-//     var next = current + 1
-//     for(var i = current; i < next; i++) {}
-//     current = next
-//     setTimeout(draw, 1000);
-// }
+
+
+
+
+// OUR TEAM - SHOW ALL MEMBERS
+allMembers.click(function() {
+	// HIDE CLUETIP AFTER LINK CLICK
+	$(document).trigger('hideCluetip');
+	
+	$('.item-holder').show();
+	// memberBio.hide();
+	$('#member-bio .permalink > a').hide();
+	$('body.ourteam').removeClass('js-single-member');
+	var defaultName = jsonDefaults.name;
+	var defaultBio = jsonDefaults.bio;
+
+	$('#member-bio .bio > p').html(defaultBio);
+	$('#member-bio .name').html(defaultName);
+	$('#sidebar-name').html(defaultName);
+});
+
+
+
+
+// LOOK FOR MEMBER MATCH - FILTER FOR CORRECT SELECTION
+showMemberBio = function(member) {
+	$(jsonMembers).each(function() {
+		var name = this.name,
+		member_class = this.member_class,
+		bio = this.bio,
+		match;
+		
+		if(member == member_class) {
+			match = member;
+
+			$('#member-bio .bio > p').html(bio);
+			$('#member-bio .name').html(name);
+			$('#sidebar-name').html(name);
+		}
+	});
+}
+
+
+
+
+
+
 // MEMBER ITEMS isolated on CLICK
 showSoloMemberItems = function() {
 	$('body.ourteam').removeClass('js-single-member', 1000);
@@ -105,6 +110,7 @@ showSoloMemberItems = function() {
 	target = '.item-holder.' + member,
 	siblings = $('.item-holder').not(target);
 
+	console.log('This is member' + member); console.dir(member);
 
 	// console.log('This is var member: '+member);
 	$('.item-holder').fadeIn( "slow", function() {});
@@ -117,8 +123,6 @@ showSoloMemberItems = function() {
 	$(target).show();
 
 	// Attempt at slowing things down
-	// current = 0;
-	// draw();
 	$('body.ourteam').addClass('js-single-member', 1000);
 
 
@@ -126,9 +130,21 @@ showSoloMemberItems = function() {
 	$('#member-bio .permalink > a').show();
 	showMemberBio(member);
 	
+	// HIDE CLUETIP AFTER LINK CLICK
+	$(document).trigger('hideCluetip');
+
 	// OPEN / SHUT side bar NAV
 	openShutDroor();
 }
 // ITEM filter
 sidebarLinks.click(showSoloMemberItems);
+
+
+
+
+
+
+
+
+
 

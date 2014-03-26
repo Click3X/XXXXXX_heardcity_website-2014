@@ -54,6 +54,9 @@ function memberItems(members) {
 			});
 
 			var cleanItemName = nameShoes(item.name);
+			var reallyCleanItemName = cleanItemName.replace(/[^a-z0-9\s]/gi, '');
+			reallyCleanItemName = reallyCleanItemName.toLowerCase();
+			reallyCleanItemName = reallyCleanItemName.replace(/[_\s]/g, '-');
 
 			// check for Coords, else link shape is regular
 			if(coords) {
@@ -68,7 +71,7 @@ function memberItems(members) {
 					coords:coords,
 					"data-person":member_class,
 					"data-item": itemName.toLowerCase(),
-					"title": "|" + "|" + "This is " + member_name + "\'s" + "|" + cleanItemName + "|" + item.bio + "|" + "> View " + member_sex + " stuff",
+					"title": "|" + "|" + "This is " + member_name + "\'s" + "|" + cleanItemName + "|" + item.bio + "|" + "<label for='"+member_class+"-"+reallyCleanItemName+"' class='permalink'>> View " + member_sex + " stuff</label><input type='radio' name='"+member_class+"' id='"+member_class+"-"+reallyCleanItemName+"' value='"+member_class+"'>",
 					class:"cluetip-div"
 				});
 
@@ -81,7 +84,7 @@ function memberItems(members) {
 					href:"#",
 					"data-person":member_class,
 					"data-item": itemName.toLowerCase(),
-					"title": "|" + "|" + "This is " + member_name + "\'s" + "|" + cleanItemName + "|" + item.bio + "|" + "> View " + member_sex + " stuff",
+					"title": "|" + "|" + "This is " + member_name + "\'s" + "|" + cleanItemName + "|" + item.bio + "|" + "<label for='"+member_class+"-"+reallyCleanItemName+"' class='permalink'>> View " + member_sex + " stuff</label><input type='radio' name='"+member_class+"' id='"+member_class+"-"+reallyCleanItemName+"' value='"+member_class+"'>",
 					class:"cluetip-div"
 				});
 
