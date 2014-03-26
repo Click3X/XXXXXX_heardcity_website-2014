@@ -309,7 +309,7 @@
 		// SASHA AWN
 
 		li.item-holder.floralpatterneddress.sashaawn {
-			top: 0; left: 5%;
+			top: 0; left: 4.5%;
 		}
 
 		li.item-holder.bikepedal.sashaawn {
@@ -317,11 +317,14 @@
 		}
 
 		li.item-holder.passport.sashaawn {
-			top: 3.65%; left: 75.5%;
+			top: 3.65%;
+			// left: 75.5%;
+			left: 78.7%;
 		}
 
 		li.item-holder.trapezegrips.sashaawn {
 			top: 15.25%; left: 45.7%;
+			z-index: 1;
 		}
 
 		li.item-holder.theremin.sashaawn {
