@@ -2038,28 +2038,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: transparent;
 }
 /* line 18, ../sass/partials/_clue-tip.scss */
+.ourteam .ui-cluetip-header, .ourteam .ui-cluetip-content {
+  padding: 21px;
+}
+/* line 23, ../sass/partials/_clue-tip.scss */
 .ourteam .split-body:nth-of-type(2) {
   font-size: .8em;
-  margin-bottom: .25em;
+  margin-bottom: 12px;
   letter-spacing: .15em;
+  color: #989899;
 }
-/* line 24, ../sass/partials/_clue-tip.scss */
+/* line 31, ../sass/partials/_clue-tip.scss */
 .ourteam .split-body:nth-of-type(3) {
   font-size: 1.3em;
-  margin-bottom: .25em;
+  margin-bottom: 12px;
   letter-spacing: .15em;
 }
-/* line 30, ../sass/partials/_clue-tip.scss */
+/* line 39, ../sass/partials/_clue-tip.scss */
 .ourteam .split-body:nth-of-type(4) {
-  margin-top: .6em;
-  margin-bottom: 1em;
+  margin-top: 0;
+  margin-bottom: 12px;
   color: #646465;
   line-height: 1.4em;
   letter-spacing: .02em;
   font-family: 'Times New Roman' serif;
   text-transform: none;
 }
-/* line 41, ../sass/partials/_clue-tip.scss */
+/* line 52, ../sass/partials/_clue-tip.scss */
 .ourteam .split-body:nth-of-type(5) {
   font-size: .750em;
   color: #1f1f1f;

@@ -14,22 +14,33 @@
 	  background-color: transparent;
 	}
 
+	// MAKE PADDING EM HEIGHT
+	.ui-cluetip-header, .ui-cluetip-content {
+		padding: 21px;
+	}
+
 
 	.split-body:nth-of-type(2) {
 		font-size:.8em;
-		margin-bottom:.25em;
+		// margin-bottom:.25em;
+		margin-bottom: 12px;
 		letter-spacing: .15em;
+		color: #989899;
 	}
 
 	.split-body:nth-of-type(3) {
 		font-size: 1.3em;
-		margin-bottom:.25em;
+		// margin-bottom:.25em;
+		// margin-bottom: 15px;
+		margin-bottom: 12px;
 		letter-spacing: .15em;
 	}
 
 	.split-body:nth-of-type(4) {
-		margin-top: .6em; 
-		margin-bottom: 1em;
+		// margin-top: .6em; 
+		// margin-bottom: 1em;
+		margin-top: 0; 
+		margin-bottom: 12px;
 		color: #646465;
 		line-height: 1.4em;
 		letter-spacing: .02em;
