@@ -47,8 +47,8 @@ $(window).ready(function() {
 	    positionBy: 'bottomTop',
 	    closeText:'x',
 	    fx: {
-	          open: 'fadeIn', // can be 'show' or 'slideDown' or 'fadeIn'
-	          openSpeed: 200
+	          open: 'fadeIn' // can be 'show' or 'slideDown' or 'fadeIn'
+	          // openSpeed: 200
 	        },
 	    hoverIntent: {
       		sensitivity:  5,

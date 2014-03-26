@@ -54,11 +54,6 @@ function memberItems(members) {
 			usemap = validateString(usemap),
 			coords = item.coords,
 			map, area, a,
-			// img = $('<img/>', {
-			// 	src:image,
-			// 	alt:item.name,
-			// 	usemap:'#'+usemap
-			// }),
 			li = $('<li/>', {
 				class:itemClass
 			});
@@ -110,6 +105,38 @@ function memberItems(members) {
 				a.append(img);
 				li.append(a);
 			}
+
+
+			// BUILD HOVER MOBILE DIV - (hidden on screens > 768)
+			var hoverMobile = $('<ul/>', {
+				class:"hover-mobile"
+			}), 
+			li1 = $('<li/>', {
+				class:"hover-name"
+			}).text(member_name),
+			li2 = $('<li/>', {
+				class:"hover-item-name"				
+			}).text(cleanItemName),
+			li3 = $('<li/>', {
+				class:"hover-item-bio"
+			}).text(item.bio),
+			li4 = $('<li/>', {
+				class:"hover-permalink"
+			}),
+			hoverLabel = $('<label/>', {
+				class:'permalink',
+				"for":member_class+"-"+reallyCleanItemName
+			}).text("> View " + member_sex + " stuff"),
+			hoverInput = $('<input/>', {
+				"type": "radio",
+				"name": member_class,
+				"id": member_class+"-"+reallyCleanItemName,
+				"value": member_class
+			});
+
+			li4.append(hoverLabel, hoverInput);
+			hoverMobile.append(li1, li2, li3, li4);
+			li.append(hoverMobile);
 
 			liArray.push(li);
 		});

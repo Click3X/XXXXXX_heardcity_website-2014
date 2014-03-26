@@ -103,6 +103,7 @@ showMemberBio = function(member) {
 
 // MEMBER ITEMS isolated on CLICK
 showSoloMemberItems = function() {
+	
 	$('body.ourteam').removeClass('js-single-member', 1000);
 	$('.item-holder').addClass('item-hidden', 1000);
 
@@ -110,7 +111,7 @@ showSoloMemberItems = function() {
 	target = '.item-holder.' + member,
 	siblings = $('.item-holder').not(target);
 
-	console.log('This is member' + member); console.dir(member);
+	// console.log('This is member' + member); console.dir(member);
 
 	// console.log('This is var member: '+member);
 	$('.item-holder').fadeIn( "slow", function() {});
