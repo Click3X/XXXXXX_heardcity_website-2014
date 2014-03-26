@@ -9,6 +9,15 @@ itemList = $('<ul/>', {
 				class:"item-list"
 			});
 
+// Validate String for HTML
+function validateString(string) {
+	string = string.replace(/[^a-z0-9\s]/gi, '');
+	string = string.toLowerCase();
+	string = string.replace(/[_\s]/g, '-');
+	return string;
+}
+
+
 // Build the Members list
 function buildMemberList(membersIn, membersOut ) {
 	$.each(membersIn, function(i, member) {
@@ -42,24 +51,28 @@ function memberItems(members) {
 			image = item.image,
 			itemClass = 'item-hidden item-holder ' + itemName.toLowerCase() + ' ' + member_class,
 			usemap = (image.split('.')[0]).split('/')[1],
+			usemap = validateString(usemap),
 			coords = item.coords,
 			map, area, a,
-			img = $('<img/>', {
-				src:image,
-				alt:item.name,
-				usemap:usemap
-			}),
+			// img = $('<img/>', {
+			// 	src:image,
+			// 	alt:item.name,
+			// 	usemap:'#'+usemap
+			// }),
 			li = $('<li/>', {
 				class:itemClass
 			});
 
 			var cleanItemName = nameShoes(item.name);
-			var reallyCleanItemName = cleanItemName.replace(/[^a-z0-9\s]/gi, '');
-			reallyCleanItemName = reallyCleanItemName.toLowerCase();
-			reallyCleanItemName = reallyCleanItemName.replace(/[_\s]/g, '-');
+			var reallyCleanItemName = validateString(cleanItemName);
 
 			// check for Coords, else link shape is regular
 			if(coords) {
+				img = $('<img/>', {
+					src:image,
+					alt:item.name,
+					usemap:'#'+usemap
+				}),
 				map = $('<map/>', {
 					id:usemap,
 					name:usemap,
@@ -69,6 +82,7 @@ function memberItems(members) {
 					href:"#",
 					shape:"poly",
 					coords:coords,
+					alt: itemName.toLowerCase(),
 					"data-person":member_class,
 					"data-item": itemName.toLowerCase(),
 					"title": "|" + "|" + "This is " + member_name + "\'s" + "|" + cleanItemName + "|" + item.bio + "|" + "<label for='"+member_class+"-"+reallyCleanItemName+"' class='permalink'>> View " + member_sex + " stuff</label><input type='radio' name='"+member_class+"' id='"+member_class+"-"+reallyCleanItemName+"' value='"+member_class+"'>",
@@ -80,6 +94,11 @@ function memberItems(members) {
 				li.append(map);
 
 			} else {
+				img = $('<img/>', {
+					src:image,
+					alt:item.name
+					// usemap:'#'+usemap
+				}),
 				a = $('<a/>', {
 					href:"#",
 					"data-person":member_class,
