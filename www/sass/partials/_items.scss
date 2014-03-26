@@ -150,12 +150,7 @@
 	 
 	@keyframes fallPerspective {
 	    100% { transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; }
-	}
-
-	// .item-opaq {
-	// 	opacity: 1;
-	// 	@include prefix(transition, all 500ms);
-	// }	
+	}	
 
 	.item-holder { 
 		position: absolute; 
@@ -185,7 +180,7 @@
 	}
 
 	li.item-holder.fishinglure.keithreynaud {
-		top: 3.1%; left: 78%;
+		top: 3.2%; left: 78%;
 	}
 
 	li.item-holder.hasselblad.garynoel {

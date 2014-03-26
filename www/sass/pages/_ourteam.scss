@@ -15,6 +15,32 @@ html {
 	}
 }
 
+// CLUE TIP ARROW POSITIONS 
+.ourteam {
+	.clue-left-default,
+	.clue-right-default {
+		.cluetip-arrows.ui-state-default {
+			z-index: 98;
+			display: block;
+			top: 50% !important;
+			margin-top: -12px;
+		}
+	}
+	// vendor/cluetip/images/darrowdown.png
+	div.clue-right-default .cluetip-arrows {
+		background-image: url(vendor/cluetip/images/darrowleft.png);
+		opacity: 0.95;
+	}
+
+	div.clue-left-default .cluetip-arrows {
+		background-image: url(vendor/cluetip/images/darrowright.png);
+		opacity: 0.95;
+	}
+
+
+
+}
+
 // Silo and Member bio
 .ourteam {
 
