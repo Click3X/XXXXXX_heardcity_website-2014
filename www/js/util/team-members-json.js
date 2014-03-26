@@ -122,28 +122,36 @@ jsMembers = buildMemberList(jsonMembers, jsMembers);
 memberItems(jsMembers);
 
 
+
+
 // APPEND TO DOM AFTER ALL DOWNLOADS AND JS FUNCTIONS
-$(window).ready(function() {
-	// Add ul to dom to individually attach li's to
+$(document).ready(function() {
+	// ADD UL TO DOM
 	itemListHolder.append(itemList);
+	// LENGTH OF ITEM ARRAY
+	var length = liArray.length;
+	// APPEND LI TO DOM ( ** THEY ARE HIDDEN !!  **)
+	for(var i = 0; i < length; i++) {
+		itemList.append(liArray[i]);
+	}
 
-	var current = 0,
-	length = liArray.length;
-	// console.log('THis is the length: ' + length);
+	// ITERATOR
+	var k =0;
 
-    function draw() {
-        // var next = current + 1
-        for(var i = current; i < length; i++) {
-            var cItem = liArray[i],
-			$cItem = $(cItem);
-			itemList.append(cItem);
-			$cItem.animate().removeClass('item-hidden').addClass('item-show', 1000);
-			// console.log('This is i :' + i);
-        }
-        // current = next
-        // setTimeout(draw, 5000);
-    }
-	
-	draw();
+	function reveal(li) {
+		$(li).removeClass('item-hidden').addClass('item-show', 1000);
+	}
+
+	function showLi(li, k) {
+		setTimeout(function() {
+			reveal(li);
+			console.log('this is li' + li + ' this is k ' + k );
+		}, 6 * ( k + 1 ));
+	}
+
+	itemList.find('li').each(function(k,v) {
+		var li = this;
+		showLi(li, k);
+	});
 	
 });
