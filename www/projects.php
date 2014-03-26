@@ -13,7 +13,7 @@ include('php/header.php');
 
     <div class="button-holder middle-button-holder">
         <div class="clearfix">
-            <a id="all-btn" href="#" title="All">+</a>
+            <a id="all-btn" href="#" title="All">&plus;</a>
         </div>
     </div>
 

@@ -7,3 +7,19 @@ $.fn.helper = function() {
 	    $('*').toggleClass('outline');
 	});
 }
+
+
+
+
+var k =0;
+// REVEAL FUNCTION
+function reveal(li) {
+	$(li).removeClass('item-hidden').addClass('item-show', 1000);
+}
+// SHOW AFTER TIMEOUT
+function showLi(li, k) {
+	setTimeout(function() {
+		reveal(li);
+		console.log('this is li' + li + ' this is k ' + k );
+	}, 6 * ( k + 1 ));
+}

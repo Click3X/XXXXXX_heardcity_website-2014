@@ -110,6 +110,17 @@
 	}
 }
 
+#all-btn {
+	line-height: 31px;
+	font-size: 1.5em;
+	padding-bottom:0; padding-right:0;
+	padding-top:2px; margin-bottom:-2px;
+	padding-left: 3px;
+	@media(min-width: 768px) {
+		line-height: 39px;
+	}
+}
+
 // SELECTED BUTTON Classes
 .selected-button {
 	// background-color:$grey;

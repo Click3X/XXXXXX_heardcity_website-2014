@@ -5329,7 +5329,24 @@ input[type="submit"],
   border-left: 1px solid silver;
 }
 
-/* line 114, ../sass/pages/_projects-video.scss */
+/* line 113, ../sass/pages/_projects-video.scss */
+#all-btn {
+  line-height: 31px;
+  font-size: 1.5em;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-top: 2px;
+  margin-bottom: -2px;
+  padding-left: 3px;
+}
+@media (min-width: 768px) {
+  /* line 113, ../sass/pages/_projects-video.scss */
+  #all-btn {
+    line-height: 39px;
+  }
+}
+
+/* line 125, ../sass/pages/_projects-video.scss */
 .selected-button {
   color: #000;
   -webkit-transition: all 500ms;
@@ -5338,17 +5355,17 @@ input[type="submit"],
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 120, ../sass/pages/_projects-video.scss */
+/* line 131, ../sass/pages/_projects-video.scss */
 .selected-button div {
   border-color: #e0e0e2;
   background-color: #e0e0e2;
 }
-/* line 124, ../sass/pages/_projects-video.scss */
+/* line 135, ../sass/pages/_projects-video.scss */
 .selected-button div a {
   color: #000 !important;
 }
 
-/* line 129, ../sass/pages/_projects-video.scss */
+/* line 140, ../sass/pages/_projects-video.scss */
 #og-grid a.img-link {
   height: 0px;
   padding-bottom: 60%;
@@ -5360,7 +5377,7 @@ input[type="submit"],
   transition: all 500ms;
 }
 
-/* line 136, ../sass/pages/_projects-video.scss */
+/* line 147, ../sass/pages/_projects-video.scss */
 .vid-title-holder {
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
@@ -5369,7 +5386,7 @@ input[type="submit"],
   transition: all 500ms;
 }
 
-/* line 139, ../sass/pages/_projects-video.scss */
+/* line 150, ../sass/pages/_projects-video.scss */
 #og-grid .og-vid-holder:hover a.img-link {
   -webkit-transform: translate(0, -26.54088%);
   -moz-transform: translate(0, -26.54088%);
@@ -5382,7 +5399,7 @@ input[type="submit"],
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 144, ../sass/pages/_projects-video.scss */
+/* line 155, ../sass/pages/_projects-video.scss */
 #og-grid .og-vid-holder:hover .vid-title-holder {
   -webkit-transform: translate(0, -100%);
   -moz-transform: translate(0, -100%);
@@ -5391,7 +5408,7 @@ input[type="submit"],
   transform: translate(0, -100%);
 }
 
-/* line 150, ../sass/pages/_projects-video.scss */
+/* line 161, ../sass/pages/_projects-video.scss */
 .active-vid {
   -webkit-transform: translate(0, -100%);
   -moz-transform: translate(0, -100%);
@@ -5400,11 +5417,11 @@ input[type="submit"],
   transform: translate(0, -100%);
 }
 
-/* line 155, ../sass/pages/_projects-video.scss */
+/* line 166, ../sass/pages/_projects-video.scss */
 .og-grid {
   padding-top: .5em;
 }
-/* line 158, ../sass/pages/_projects-video.scss */
+/* line 169, ../sass/pages/_projects-video.scss */
 .og-grid .og-vid-holder {
   padding: 0 .25em 0 .25em;
   margin-bottom: .25em;
@@ -5414,29 +5431,29 @@ input[type="submit"],
   padding-bottom: 57%;
 }
 @media (min-width: 480px) {
-  /* line 158, ../sass/pages/_projects-video.scss */
+  /* line 169, ../sass/pages/_projects-video.scss */
   .og-grid .og-vid-holder {
     padding-bottom: 29%;
   }
 }
 @media (min-width: 960px) {
-  /* line 158, ../sass/pages/_projects-video.scss */
+  /* line 169, ../sass/pages/_projects-video.scss */
   .og-grid .og-vid-holder {
     padding-bottom: 19%;
   }
 }
 @media (min-width: 1480px) {
-  /* line 158, ../sass/pages/_projects-video.scss */
+  /* line 169, ../sass/pages/_projects-video.scss */
   .og-grid .og-vid-holder {
     padding-bottom: 14%;
   }
 }
-/* line 179, ../sass/pages/_projects-video.scss */
+/* line 190, ../sass/pages/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder {
   width: 100%;
   background-color: #ffffff;
 }
-/* line 183, ../sass/pages/_projects-video.scss */
+/* line 194, ../sass/pages/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder .title {
   max-width: 80%;
   display: table;
@@ -5445,17 +5462,17 @@ input[type="submit"],
   height: 90px;
 }
 @media (min-width: 480px) {
-  /* line 183, ../sass/pages/_projects-video.scss */
+  /* line 194, ../sass/pages/_projects-video.scss */
   .og-grid .og-vid-holder .vid-title-holder .title {
     height: 110px;
   }
 }
-/* line 195, ../sass/pages/_projects-video.scss */
+/* line 206, ../sass/pages/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder .title div {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 199, ../sass/pages/_projects-video.scss */
+/* line 210, ../sass/pages/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder .title div a {
   color: #000000;
   line-height: 1.4em;
@@ -5469,7 +5486,7 @@ input[type="submit"],
   text-align: center;
 }
 
-/* line 217, ../sass/pages/_projects-video.scss */
+/* line 228, ../sass/pages/_projects-video.scss */
 .og-grid li.og-expanded > a::after {
   top: auto;
   left: 50%;
@@ -5483,7 +5500,7 @@ input[type="submit"],
   margin: -20px 0 0 -15px;
 }
 
-/* line 227, ../sass/pages/_projects-video.scss */
+/* line 238, ../sass/pages/_projects-video.scss */
 .og-expander {
   position: absolute;
   top: auto;
@@ -5501,12 +5518,12 @@ input[type="submit"],
   transform: translateZ(0);
   margin-top: -8%;
 }
-/* line 240, ../sass/pages/_projects-video.scss */
+/* line 251, ../sass/pages/_projects-video.scss */
 .og-expander .section-title {
   background-color: #edeef1;
   position: relative;
 }
-/* line 244, ../sass/pages/_projects-video.scss */
+/* line 255, ../sass/pages/_projects-video.scss */
 .og-expander .section-title .credits {
   display: block;
   max-width: 30em;
@@ -5516,20 +5533,20 @@ input[type="submit"],
   padding-bottom: 37px;
 }
 
-/* line 256, ../sass/pages/_projects-video.scss */
+/* line 267, ../sass/pages/_projects-video.scss */
 .og-expander-inner {
   padding: 50px 0;
   text-align: center;
 }
 
-/* line 261, ../sass/pages/_projects-video.scss */
+/* line 272, ../sass/pages/_projects-video.scss */
 .og-fullimg video {
   margin-bottom: 1em;
   width: 90%;
   max-width: 940px;
 }
 
-/* line 268, ../sass/pages/_projects-video.scss */
+/* line 279, ../sass/pages/_projects-video.scss */
 .p-name {
   font-size: 1em;
   text-align: center;
@@ -5541,14 +5558,14 @@ input[type="submit"],
   max-width: 30em;
   margin: 0 auto .5em;
 }
-/* line 279, ../sass/pages/_projects-video.scss */
+/* line 290, ../sass/pages/_projects-video.scss */
 .p-name:before {
   content: '';
   display: block;
   border-top: 1px solid #404040;
   height: 14px;
 }
-/* line 286, ../sass/pages/_projects-video.scss */
+/* line 297, ../sass/pages/_projects-video.scss */
 .p-name:after {
   content: '';
   display: block;
@@ -5556,7 +5573,7 @@ input[type="submit"],
   height: 12px;
 }
 
-/* line 296, ../sass/pages/_projects-video.scss */
+/* line 307, ../sass/pages/_projects-video.scss */
 .og-close {
   position: absolute;
   width: 28px;
@@ -5568,7 +5585,7 @@ input[type="submit"],
   background-repeat: no-repeat;
 }
 
-/* line 307, ../sass/pages/_projects-video.scss */
+/* line 318, ../sass/pages/_projects-video.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -5583,54 +5600,54 @@ input[type="submit"],
 }
 
 @keyframes loader {
-  /* line 319, ../sass/pages/_projects-video.scss */
+  /* line 330, ../sass/pages/_projects-video.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 320, ../sass/pages/_projects-video.scss */
+  /* line 331, ../sass/pages/_projects-video.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 321, ../sass/pages/_projects-video.scss */
+  /* line 332, ../sass/pages/_projects-video.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
   }
 }
 
-/* line 325, ../sass/pages/_projects-video.scss */
+/* line 336, ../sass/pages/_projects-video.scss */
 #og-grid > li {
   width: 100%;
   float: left;
 }
 
-/* line 330, ../sass/pages/_projects-video.scss */
+/* line 341, ../sass/pages/_projects-video.scss */
 #og-grid > li img {
   width: 100%;
 }
 
 @media screen and (min-width: 480px) {
-  /* line 335, ../sass/pages/_projects-video.scss */
+  /* line 346, ../sass/pages/_projects-video.scss */
   #og-grid > li {
     width: 50%;
   }
 }
 @media screen and (min-width: 960px) {
-  /* line 346, ../sass/pages/_projects-video.scss */
+  /* line 357, ../sass/pages/_projects-video.scss */
   #og-grid > li {
     width: 33%;
   }
 }
 @media (min-width: 1480px) {
-  /* line 360, ../sass/pages/_projects-video.scss */
+  /* line 371, ../sass/pages/_projects-video.scss */
   #og-grid > li {
     width: 25%;
   }
 }
-/* line 375, ../sass/pages/_projects-video.scss */
+/* line 386, ../sass/pages/_projects-video.scss */
 .sec-image {
   background-size: cover;
   background-position: 50%;
