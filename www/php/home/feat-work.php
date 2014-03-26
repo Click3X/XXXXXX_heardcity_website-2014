@@ -13,12 +13,20 @@
 				if($project['type'] == 'feature') { 
 					$tablet = $project["images"]["tablet"];
 					$mobile = $project["images"]["mobile"];
+					$vidsrc = $project["vidsrc"];
+					$vidmp4 = $project["mp4"];
+
 					if($tablet) { $thumbsrc = $tablet; } else { $thumbsrc = $mobile;}
 					?>
 
 				<li class="work-slide clearfix">
 					<div class="img-holder">
-						<img src="<?php echo $thumbsrc[0]; ?>" alt="<?php echo $project['title']; ?>">
+						<a href="#" class="open-vid">
+							<img src="<?php echo $thumbsrc[0]; ?>" alt="<?php echo $project['title']; ?>">
+						</a>
+						<div class="og-fullimg hidden home-video">
+							<video controls="" src="<?php echo $vidmp4;?>"><source src="" type="video/mp4"></video>
+						</div>
 					</div>
 
 					<div class="grey-theme">
