@@ -9,7 +9,7 @@ requirejs.config({
       // "owl-carousel": "../lib/owl.carousel.min",
       "load-images": "../lib/loaded",
       "rs-easing": "../lib/jquery.easing-1.3",
-      "royalslider": "../lib/jquery.royalslider.min",
+      "royalslider": "../lib/jquery.royalslider.min"
     },
     "shim": {
         "util/helper": ["jquery"],

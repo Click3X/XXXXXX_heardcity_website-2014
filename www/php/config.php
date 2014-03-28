@@ -3,7 +3,6 @@
 // Defaults
 $defaults = array(
 	'name'=>'Heard City',
-	// 'bio'=>'Heard City is a boutique audio post-production company located in New York\'s Flatiron district servicing the advertising, motion picture and television industries. Our staff, known for their individual unique aesthetics bring power and style to our brand. On display are a few of each of thier personal items reflecting a character trait or passion relevant to their talent. Learn more about us!'
 	'bio'=>'Many people collect things and those things say a lot about a person. Our stuff can be something that remind us of a moment in our past or just something we enjoy having. They remind us a bit of who we are. Which can includes almost everything you can imagine – from photos, souvenirs, tools, things that reminding us of a person or place we care about. Our team at Heard City is made up of some pretty incredible people. Get to know us by checking out our stuff. You\'ll see what kinds of things we do in our free time? What our hobbies are, what kinds of music/movies/books we like. It\'s an honest way to see what we as a collective enjoy in life.'
 );
 
@@ -920,15 +919,16 @@ $list_items = array(
 
 // T E X T   C A R O U S E L S
 $text_carousel_grey = array(
-		'Walls but no Boundaries' => 'We work as a team, not as individuals, sharing spaces and equipment in an inspired flow supporting the highest production capabilities.',
-		'Brains and Brawn' => 'Think it, Eat it, Do it, Dream it, Love it.',
-		'Babes vs. Chicks' => 'An aire of mystery separates the line between the two.'
+		'Walls but no boundaries.' => 'We work as a team, not as individuals, sharing spaces and equipment in an inspired flow supporting the highest production capabilities.',
+		'Simplicity. Efficiency.' => 'Big words for a basic principle. We believe in airy spaces and ways of acting that enhance an environmentally conscious lifestyle.',
+		'Walls but no boundaries.' => 'We work as a team, not as individuals, sharing spaces and equipment in an inspired flow supporting the highest production capabilities.',
+		'Simplicity. Efficiency.' => 'Big words for a basic principle. We believe in airy spaces and ways of acting that enhance an environmentally conscious lifestyle.'
 	);
 
 $text_carousel_black = array(
-		'WELCOME TO HEARD CITY.',
-		'NYC\'S PREMIERE AUDIO POST PRODUCTION HOUSE', 
-		'RIGHT HEAR IN NYC'
+		'Heard City.',
+		'The premier audio post-production company servicing', 
+		'the advertising, motion picture and television industries.'
 	);
 
 

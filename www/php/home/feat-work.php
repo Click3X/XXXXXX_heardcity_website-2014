@@ -24,9 +24,9 @@
 						<a href="#" class="open-vid">
 							<img src="<?php echo $thumbsrc[0]; ?>" alt="<?php echo $project['title']; ?>" class="rsImg">
 						</a>
-						<div class="og-fullimg hidden home-video">
-							<video controls="" src="<?php echo $vidmp4;?>"><source src="" type="video/mp4"></video>
-						</div>
+					<!-- 	<div class="og-fullimg hidden home-video">
+							<video controls="" src="<?php // echo $vidmp4;?>"><source src="" type="video/mp4"></video>
+						</div> -->
 					</div>
 
 					<div class="grey-theme">

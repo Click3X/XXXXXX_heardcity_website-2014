@@ -1,9 +1,7 @@
 // ITEMS for 'Our Team' Page layout
  .ourteam { 
  	background-color:#fff; 
- 	.serif {
-		text-transform: none;
-	}
+ 	.serif { text-transform: none; }
  }
 
 // CLASS for SIDEBAR CHANGE
@@ -13,31 +11,10 @@
 	// Change positioning on items to show at top of page
 	#graph #item-list-holder .item-list .item-holder {
 		display:block;
-		// @include prefix(transition, all 500ms);
 	}
 	// Lessen margin on footer to see all single-items in viewport
 	.ourteam .footer { margin-top:40px;}
 }
-
-// .item-holder {
-// 	width: auto;
-	
-// 	height: 0;
-// 	padding-bottom: 50%;
-// 	@media(min-width: 768px) {
-// 		height: auto;
-// 		padding-bottom: 0;
-// 	}
-
-// 	img {
-// 		max-height: 60%;
-
-// 		@media(min-width: 768px) {
-// 			max-height: none;
-// 		}
-// 	}
-// }
-// .item-holder.lipstick.peonyrene,
 .item-holder.poster.gloriapitagorsky { z-index: 1; }
 
 
@@ -113,26 +90,6 @@
   
 }
 
-// FOR JS
-.map-link:hover,
-.map-link:hover .js-high-z:hover,
-.map-link.js-high-z:hover,
-.js-high-z {
-	opacity: 1;
-    z-index: 1;
-    @include prefix(transition, all 500ms ease-in);
-}
-
-// Layer classes
-.negZ {z-index: -1 !important; 
-	@include prefix(transition, z-index 500ms ease-in-out);
-}
-.zeroZ {z-index:0; 
-	@include prefix(transition, z-index 500ms ease-in-out);
-}
-.posZ {z-index:1; 
-	@include prefix(transition, z-index 500ms ease-in-out);
-}
 
 .item-list-holder {
 	width:100%; max-width:1024px;
@@ -601,51 +558,4 @@
 			top: 101.85%; left: 20%;
 		}
 	}
-
 }
-
-
-// LIST ITEM POSITIONS
-
-// #item-list-holder > .item-list {
-// 	border-left:1px solid green;
-// 	border-right:1px solid green;
-// }
-
-// #item-list-holder > .item-list:before {
-// 	content: '';
-// 	display: block;
-// 	width: 1px;
-// 	height: 100%;
-// 	background: green;
-// 	z-index: 2;
-// 	position: absolute;
-// 	top: 0;
-// 	left: 100px;
-
-// }
-
-// #graph:after {
-// 	content: '';
-// 	display: block;
-// 	width: 1px;
-// 	height: 100%;
-// 	background: green;
-// 	z-index: 2;
-// 	position: absolute;
-// 	top: 0;
-// 	left: 50%;
-// }
-
-// div#item-list-holder:after {
-// 	content: '';
-// 	width: 100%;
-// 	height: 1px;
-// 	background: green;
-// 	display: block;
-// 	position: absolute;
-// 	z-index: 2;
-// 	top: 40px;
-// }
-
-
