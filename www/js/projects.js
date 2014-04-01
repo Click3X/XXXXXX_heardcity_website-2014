@@ -7,13 +7,11 @@ requirejs.config({
     "baseUrl": "js/lib",
     "paths": {
       "app": "../app",
-      "domReady": "domReady",
       "modern":"../lib/modernizr",
       "flexnav":"jquery.flexnav.min"
     },
     "shim": {
       "flexnav":["jquery"],
-        "util/jquery.menu": ["jquery", "flexnav", "util/config"],
         "util/config": ["jquery"],
         "util/grid": ["jquery", "modern"],
         "util/feat-button": ["jquery"]

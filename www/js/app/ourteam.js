@@ -1,5 +1,4 @@
 // OUR TEAM
-
 define(["jquery", 
 		"util/config", 
         "flexnav",
@@ -9,7 +8,6 @@ define(["jquery",
         "util/clue-hover",
         "hover"], function($, config, flexnav, teamMemberFactory, subMenu, clueTip, clueHover, hover) {
     $(function() {
-        // HELPER
         $('#page-ourteam').addClass('current');
         // $('#out').click(function() { $('*').toggleClass('outline'); });
 
@@ -18,55 +16,53 @@ define(["jquery",
             $subNav = $("#member-fixed"),
             $clickClose = $('#click-close');
 
+         // INITIALIZE MENU
+        $mainMenu.flexNav({
+            'hoverIntent': false,
+            'hover':false,
+            'buttonSelector': '#page-button'
+        });
+
+        // SUB MENU
+        $subNav.flexNav({
+            'hoverIntent': false,
+            'hover':false,
+            'buttonSelector': '#member-button'
+        });
+        
+
+        var jsonMembers = $body.configData().jsonMembers;
+        // SIDE BAR CLICK EVENT
+        var showMemberBio = function(member) {
+            $(jsonMembers).each(function() {
+                var name = this.name,
+                member_class = this.member_class,
+                bio = this.bio,
+                memMatch;
+                
+                if(member == member_class) {
+                    memMatch = member;
+
+                    $('#member-bio .bio > p').html(bio);
+                    $('#member-bio .name').html(name);
+                    $('#sidebar-name').html(name);
+                }
+            });
+        }
+
         
         window.onload = (function(){
-            // INITIALIZE MENU
-            $mainMenu.flexNav({
-                'hoverIntent': false,
-                'hover':false,
-                'buttonSelector': '#page-button'
-            });
-
-            // SUB MENU
-            $subNav.flexNav({
-                'hoverIntent': false,
-                'hover':false,
-                'buttonSelector': '#member-button'
-            });
-            
-
-            var jsonMembers = $body.configData().jsonMembers;
-            // SIDE BAR CLICK EVENT
-            var showMemberBio = function(member) {
-                $(jsonMembers).each(function() {
-                    var name = this.name,
-                    member_class = this.member_class,
-                    bio = this.bio,
-                    memMatch;
-                    
-                    if(member == member_class) {
-                        memMatch = member;
-
-                        $('#member-bio .bio > p').html(bio);
-                        $('#member-bio .name').html(name);
-                        $('#sidebar-name').html(name);
-                    }
-                });
-            }
-
 
             // CHECK TO SEE IF SELECTED MEMBER HAS BEEN SENT FROM HOME.PHP
             if(selectedMember) {
                 var target = '.item-holder.' + selectedMember,
                 siblings = $('.item-holder').not(target);
-
-                // SHOW individual items
+                // Show individual items
                 $('.item-holder').show();
                 siblings.hide();    
                 $('body.ourteam').addClass('js-single-member');
                 $(target).show();
                 $('#member-bio .permalink > a').show();
-
                 // Show member Bio
                 showMemberBio(selectedMember);
             }
@@ -104,12 +100,9 @@ define(["jquery",
             }
 
             
-
-
             // $('.item-holder a').click( function(event) {
             //     event.preventDefault();
             // });
-
 
 
 
@@ -147,6 +140,7 @@ define(["jquery",
             // TEAM MEMBER CLICK
             $('#member-header a').click( function(event) {
                 event.preventDefault();
+
                 $(document).trigger('hideCluetip');
 
                 var hreftarget = $(this).attr('href'),
@@ -162,7 +156,6 @@ define(["jquery",
 
                 // Show Target
                 $(target).removeClass('item-hidden').show();
-                // $(target).show();
 
                 $body.addClass('js-single-member');
                 // SHOW member BIO
@@ -171,8 +164,6 @@ define(["jquery",
                 
                 // OPEN / SHUT side bar NAV
                  $('#member-header').addClass('side-bar-closed');
-                 // $clickClose.addClass('hidden');
-                 // $('#member-button').click(); 
                 
             });
 

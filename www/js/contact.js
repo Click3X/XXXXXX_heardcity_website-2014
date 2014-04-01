@@ -6,7 +6,6 @@ requirejs.config({
     "baseUrl": "js/lib",
     "paths": {
       "app": "../app",
-      // "domReady": "domReady",
       "flexnav":"jquery.flexnav.min"
     },
     "shim": {

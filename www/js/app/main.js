@@ -1,10 +1,8 @@
 define(["jquery", 
         "util/config", 
-        "util/jquery.slider", 
         "flexnav",
-        "controller/parallax",
-        // "controller/request-anim",
-        "royalslider"], function($, config, slider, flexnav, parallax, royalslider) {
+        "controller/request-anim",
+        "royalslider"], function($, config, flexnav, anim, royalslider) {
     
     $(function() {
         var $body = $('body'),
@@ -13,10 +11,18 @@ define(["jquery",
         $blackTextSlider = $('#black-text-slider'),
         $featuredSlider = $('#featured-slider'),
         $greyTextSlider = $('#grey-text-slider'),
-        device,
-        $teamSlider = $('#team-slider');
+        device, homePara,
+        $teamSlider = $('#team-slider'),
+        $w = $(window),
+        $blackLogo = $('#black-logo'),
+        $slide = $('#marquee-slider .marquee-slide:first-of-type'),
+        $firstCon = $('#first-container'),
+        $siteHeader = $('#site-header');
 
 
+        $siteHeader.hide();
+
+        // TEST FOR MOBILE DEVICE / TABLET
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             device = 'mobile';
             console.log('this is device' + device);
@@ -24,52 +30,59 @@ define(["jquery",
             device = 'desk';
             console.log('this is device' + device);
         }
-                
+
+        // PAGE TITLE
+        $('#page-title').text('Home');
+        $('#page-home').addClass('current');
+
+        // OPEN VIDEO FUNCTION - FEATURED WORK
+        $('.open-vid').click(function(e) {
+            e.preventDefault();
+            var src= $(this).data('vid'),
+            parent = $(this).parent(),
+            img = $(this).children('img'); 
+
+            var vidDiv = $('<div/>', {class:'og-fullimg home-video', style:'opacity:0' }),
+            vid = $('<video/>', {"src":src,"controls":"", "type":"video/mp4"});
+
+            vidDiv.append(vid);
+            var delImg = img[0];
+            $(delImg).fadeOut(50);
+            vidDiv.appendTo(parent[0]).animate({
+                    opacity: 1
+                }, 500, function() {
+                // Animation complete.
+            });
+        });
+
+
+        // IF VIDEO TITLE IS CLICKED, SUBMIT FORM
+        $('.project-video-link').click(function() {
+            var selectedProjectLink = $(this),
+            selectedInput = $(selectedProjectLink).siblings('input'),
+            selectedInput = selectedInput[0];
+            // Check the input associated with Project
+            $(selectedInput).prop('checked', true);
+            $('#projectForm').submit();
+        });
+
+
+        // IF MEMBER IS CLICKED, SUBMIT FORM   
+        $('.member-permalink').click(function() { 
+            var selectedMemberLink = $(this),
+            selectedInput = $(selectedMemberLink).siblings('input'),
+            selectedInput = selectedInput[0];
+            // Check the input associated with team member
+            $(selectedInput).prop('checked', true);
+            $('#myForm').submit();
+        });
+
+
+
+         
+           
+        // WINDOW ON LOAD        
         window.onload = (function(){
-
-            $('.open-vid').click(function(e) {
-                e.preventDefault();
-                var src= $(this).data('vid'),
-                parent = $(this).parent(),
-                img = $(this).children('img'); 
-
-                var vidDiv = $('<div/>', {class:'og-fullimg home-video', style:'opacity:0' }),
-                vid = $('<video/>', {"src":src,"controls":"", "type":"video/mp4"});
-
-                vidDiv.append(vid);
-                var delImg = img[0];
-                $(delImg).fadeOut(50);
-                vidDiv.appendTo(parent[0]).animate({
-                        opacity: 1
-                    }, 500, function() {
-                    // Animation complete.
-                });
-            });
-
-
-            // IF VIDEO TITLE IS CLICKED, SUBMIT FORM
-            $('.project-video-link').click(function() {
-                var selectedProjectLink = $(this),
-                selectedInput = $(selectedProjectLink).siblings('input'),
-                selectedInput = selectedInput[0];
-                // Check the input associated with Project
-                $(selectedInput).prop('checked', true);
-                $('#projectForm').submit();
-            });
-
-
-
-            // IF MEMBER IS CLICKED, SUBMIT FORM   
-            $('.member-permalink').click(function() { 
-
-                var selectedMemberLink = $(this),
-                selectedInput = $(selectedMemberLink).siblings('input'),
-                selectedInput = selectedInput[0];
-                // Check the input associated with team member
-                $(selectedInput).prop('checked', true);
-                $('#myForm').submit();
-            });
-
 
             // INITIALIZE MENU
             $mainMenu.flexNav({
@@ -77,6 +90,7 @@ define(["jquery",
                 'hover':false,
                 'buttonSelector': '#page-button'
             });
+            $siteHeader.show();
 
             // INITIALIZE SLIDERS
             $marqueeSlider.royalSlider({
@@ -165,57 +179,43 @@ define(["jquery",
             });
 
 
-            // PARALLAX SCROLL FUNCTION
+            // STICKY NAV
+            $w.scroll(function(){
+                var offset, offsetY;
+                offset =  $firstCon.offset();
+                offsetY = offset.top-$w.scrollTop();
+                // STICKY NAV
+                if(offsetY <= 49) {
+                    $siteHeader.addClass("sticky-top");
+                } else if(offsetY > 49) {
+                    $siteHeader.removeClass("sticky-top");
+                }
+            });
+
+
+            // PARALLAX SCROLL
             if(device == 'desk') {
-                // ON SCROLL
-                w.scroll(function(){
+                function homeParallax() {
+                    var top = $(this).scrollTop(),
+                    ratio = top/2.825,
+                    sRatio = top/1.85;
+
+                    $blackLogo.css('transform', 'translateY(' + ratio + 'px)'); 
+                    $slide.css('transform', 'translate3d(0,' + sRatio + 'px, 0)');                 
+                }
+                $w.scroll(function(){
                     var offset, offsetY;
 
-                    offset =  firstCon.offset();
-                    offsetY = offset.top-w.scrollTop();
-
-                    // HOME SLIDE LOGO PARALLAX
+                    offset =  $firstCon.offset();
+                    offsetY = offset.top-$w.scrollTop();
                     if(offsetY >= -52) {
-                        homePara = requestAnimFrame(homeParallax);
-                    }
+                            homePara = requestAnimFrame(homeParallax);
+                        }
                 });
             }
 
         })();
 
 
-
-        // STICKY NAV 
-        var $w = $(window),
-        $firstCon = $('#first-container'),
-        $siteHeader = $('#site-header');
-
-        $w.scroll(function(){
-            var offset, offsetY;
-            offset =  $firstCon.offset();
-            offsetY = offset.top-$w.scrollTop();
-            // STICKY NAV
-            if(offsetY <= 49) {
-                $siteHeader.addClass("sticky-top");
-            } else if(offsetY > 49) {
-                $siteHeader.removeClass("sticky-top");
-            }
-        });
-
-
-        // PAGE TITLE
-        $('#page-title').text('Home');
-        $('#page-home').addClass('current');
-
-
-
     });
-
-
-            
-
-
-
-
 });
-

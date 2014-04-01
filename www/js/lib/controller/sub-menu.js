@@ -3,10 +3,10 @@ define(["jquery",
         "util/config",
         "controller/team-member-factory"], function($, config, teamMemberFactory) {
        
-        // console.log('This is teamMemberFactory' + teamMemberFactory);
         var length = teamMemberFactory.length;
        	// ATTACH SIDEBAR TO DOM
-	    window.onload = (function(){ 
+	    // window.onload = (function(){ 
+	    $(function(){ 
 	        var ul = $('<ul/>', {
 	            class:'item-list'
 	        }),
@@ -45,6 +45,6 @@ define(["jquery",
 	            showLi(li, k);
 	        }
 
-	    })();
+	    });
 
 });

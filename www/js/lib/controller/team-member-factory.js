@@ -93,7 +93,6 @@ define(["jquery",
                     img = $('<img/>', {
                         src:image,
                         alt:item.name
-                        // usemap:'#'+usemap
                     }),
                     a = $('<a/>', {
                         href:"#",
