@@ -13,8 +13,18 @@ define(["jquery",
         $blackTextSlider = $('#black-text-slider'),
         $featuredSlider = $('#featured-slider'),
         $greyTextSlider = $('#grey-text-slider'),
+        device,
         $teamSlider = $('#team-slider');
-        
+
+
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            device = 'mobile';
+            console.log('this is device' + device);
+        } else {
+            device = 'desk';
+            console.log('this is device' + device);
+        }
+                
         window.onload = (function(){
 
             $('.open-vid').click(function(e) {
@@ -142,11 +152,6 @@ define(["jquery",
                 navigateByClick: false
             });
 
-            // var featuredSlider = $featuredSlider.data('royalSlider');
-            // featuredSlider.ev.on('rsAfterSlideChange', function(event) {
-            //     console.log('I have slid.');                
-            // });
-
             $teamSlider.royalSlider({
                 imageScaleMode:'none', 
                 imageAlignCenter:false,
@@ -164,6 +169,33 @@ define(["jquery",
                 usePreloader: false,
                 navigateByClick: false
             });
+
+
+            if(device == 'desk') {
+                // ON SCROLL
+                w.scroll(function(){
+                    var offset, offsetY;
+
+                    offset =  firstCon.offset();
+                    offsetY = offset.top-w.scrollTop();
+
+                    // HOME SLIDE LOGO PARALLAX
+                    if(offsetY >= -52) {
+                        homePara = requestAnimFrame(homeParallax);
+                    }
+
+                    // NORD PARALLAX & JEAN JACKET PARALAXX
+                    if((offsetY > -1282) && (offsetY < 744) ) {
+                   //     halfPara = requestAnimFrame(halfParallax);
+                    //  gNordPara = requestAnimFrame(gNordParallax);
+                    }
+
+                    // // DUDE PARALLAX
+                    if((offsetY > -2184) && (offsetY < -624) ) {
+                       // dudePara = dudeParallax();
+                    }
+                });
+            }
 
         })();
 
@@ -190,26 +222,6 @@ define(["jquery",
         // PAGE TITLE
         $('#page-title').text('Home');
         $('#page-home').addClass('current');
-
-
-        // $(document).ready(function() {
-        //     // VIDEO CLICK
-        //     $('.open-vid').click(function(e) {
-        //         e.preventDefault(); 
-        //         var src= $(this).data('vid'),
-        //         parent = $(this).parent; 
-        //         console.log('Tis is my src:' +  src);
-        //         console.log('Tis is my parent:' +  parent);
-
-        //         var vidDiv = $('<div/>', {class:'og-fullimg home-video', }),
-        //         vid = $('<video/>', {"src":src,"controls":"", "type":"video/mp4"});
-
-        //         vid.appendTo.vidDiv;
-
-        //     });
-        // });
-
-
 
 
 

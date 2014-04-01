@@ -64,41 +64,26 @@ function stairsParallax() {
 var menu = $('#new-menu-holder').eq(0),
 firstCon = $('#first-container');
 
-// ON SCROLL
-w.scroll(function(){
-    var offset, offsetY;
+// // ON SCROLL
+// w.scroll(function(){
+//     var offset, offsetY;
 
-    offset =  firstCon.offset();
-    offsetY = offset.top-w.scrollTop();
+//     offset =  firstCon.offset();
+//     offsetY = offset.top-w.scrollTop();
 
-    // DEV -get scrollY
-    // console.log('This is offsetY: ' + offsetY + '\n');
+//     // HOME SLIDE LOGO PARALLAX
+//     if(offsetY >= -52) {
+//         homePara = requestAnimFrame(homeParallax);
+//     }
 
-    // HOME SLIDE LOGO PARALLAX
-    if(offsetY >= -52) {
-        homePara = requestAnimFrame(homeParallax);
-    }
+//     // NORD PARALLAX & JEAN JACKET PARALAXX
+//     if((offsetY > -1282) && (offsetY < 744) ) {
+//    //     halfPara = requestAnimFrame(halfParallax);
+//     //  gNordPara = requestAnimFrame(gNordParallax);
+//     }
 
-    // NORD PARALLAX & JEAN JACKET PARALAXX
-    if((offsetY > -1282) && (offsetY < 744) ) {
-   //     halfPara = requestAnimFrame(halfParallax);
-    //  gNordPara = requestAnimFrame(gNordParallax);
-    }
-
-    // // DUDE PARALLAX
-    if((offsetY > -2184) && (offsetY < -624) ) {
-       // dudePara = dudeParallax();
-    }
-
-    // // DOG PARALLAX
-    // if((offsetY > -2586) && (offsetY < -1244) ) {
-    //     dogPara = dogParallax();
-    // }
-
-    // // GIRL PARALLAX & STAIRS PARALLAX
-    // if((offsetY > -3742) && (offsetY < -2730) ) {
-    //     girlPara = girlParallax();
-    //     stairsPara = stairsParallax();
-    // }
-
-});
+//     // // DUDE PARALLAX
+//     if((offsetY > -2184) && (offsetY < -624) ) {
+//        // dudePara = dudeParallax();
+//     }
+// });
