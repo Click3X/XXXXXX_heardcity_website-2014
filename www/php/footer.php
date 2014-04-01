@@ -35,7 +35,7 @@
 					var jsonMembers = <?php echo $jsonMembers; ?>;
 					var jsonDefaults = <?php echo $jsonDefaults; ?>;
 
-					console.dir(jsonMembers);
+					// console.dir(jsonMembers);
 				</script>
 
 		<?php } ?>

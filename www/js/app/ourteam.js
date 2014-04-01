@@ -19,11 +19,11 @@ define(["jquery",
             // See if SELECTED MEMBER HAS BEEN SET on OUR PAGE document.ready
             $(function() {
                 if(selectedMember) {
-                    console.log('This is the selectedMember: ' + selectedMember); console.dir(selectedMember);
+                    // console.log('This is the selectedMember: ' + selectedMember); console.dir(selectedMember);
                     var target = '.item-holder.' + selectedMember,
                     siblings = $('.item-holder').not(target);
 
-                    console.log('These are the siblings: ' + siblings); console.dir(siblings);
+                    // console.log('These are the siblings: ' + siblings); console.dir(siblings);
 
                     // SHOW individual items
                     $('.item-holder').show();

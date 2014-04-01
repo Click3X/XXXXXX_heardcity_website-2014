@@ -60,5 +60,12 @@ $(window).ready(function() {
 
     	}	
 	});
+
+	$('.cluetip-close a').click( function() { 
+		console.log('I am clicked'); 
+		$(document).trigger('hideCluetip');
+		return false;
+	});
+
 });
 

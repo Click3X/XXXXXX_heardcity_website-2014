@@ -251,6 +251,19 @@ input[type="submit"],
 	bottom: 0; left: 0; right: 0;
 }
 
+
+#team-slider {
+	height: 400px;
+	@media(min-width: 768px) { 
+		height: 270px;
+
+		div.rsArrow.rsArrowRight,
+		div.rsArrow.rsArrowLeft {
+			height:270px;
+		}
+	}
+}
+
 // ARROWS for OWL SLIDER 
 #home-slider div.owl-prev,
 #home-slider div.owl-next,

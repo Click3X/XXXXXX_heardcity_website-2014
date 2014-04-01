@@ -17,10 +17,10 @@ define(["jquery",
     });
 
     $('.open-vid').click(function(event) {
-    	console.log('I am open vid and I have been clicked!');
+    	// console.log('I am open vid and I have been clicked!');
     	event.preventDefault();
     	var vidSib = $(this).siblings();
-    	console.dir(vidSib);
+    	// console.dir(vidSib);
     	vidSib.removeClass('hidden');
     });
 

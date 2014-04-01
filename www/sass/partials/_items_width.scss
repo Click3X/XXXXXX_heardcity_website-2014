@@ -15,9 +15,9 @@
 
 // HOVER CLUE TIP (hidden on small screens)
 .ourteam #cluetip {
-	display: none !important;
+	display: none;
 	@media(min-width: 768px) {
-		display: block !important;
+		display: block;
 	}
 }
 
