@@ -2071,12 +2071,6 @@ html, body {
   position: relative;
 }
 
-/* line 13, ../sass/ourteam/_ourteam-base.scss */
-.ourteam .footer {
-  position: absolute;
-  bottom: 0;
-}
-
 /* line 15, ../sass/ourteam/_ourteam-base.scss */
 .sidebar-link {
   cursor: pointer;
