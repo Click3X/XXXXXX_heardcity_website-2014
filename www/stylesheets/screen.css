@@ -445,6 +445,11 @@ a {
   }
 }
 
+/* line 38, ../sass/base/_flex-nav-c.scss */
+.home {
+  padding-top: 45px;
+}
+
 /* line 43, ../sass/base/_flex-nav-c.scss */
 .ourteam,
 .contact,
