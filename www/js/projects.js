@@ -1,19 +1,22 @@
-// Project Page Javasript
-
+// Place third party dependencies in the lib folder
+//
+// Configure loading modules from the lib directory,
+// except 'app' ones, 
 requirejs.config({
     "urlArgs": "bust=" + (new Date()).getTime(),
     "baseUrl": "js/lib",
     "paths": {
       "app": "../app",
-      "util": "../util",
-      "modern":"../lib/modernizr"
+      "domReady": "domReady",
+      "modern":"../lib/modernizr",
+      "flexnav":"jquery.flexnav.min"
     },
-   "shim": {
-      "util/helper": ["jquery"],
-      "bootstrap.min": ["jquery"],
-      "lib/bootstrap.min": ["jquery"],
-      "util/grid": ["jquery"],
-      "util/feat-button": ["jquery"]
+    "shim": {
+      "flexnav":["jquery"],
+        "util/jquery.menu": ["jquery", "flexnav", "util/config"],
+        "util/config": ["jquery"],
+        "util/grid": ["jquery", "modern"],
+        "util/feat-button": ["jquery"]
     }
 });
 

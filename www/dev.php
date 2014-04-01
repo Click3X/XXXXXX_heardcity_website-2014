@@ -1,19 +1,30 @@
-<?php
-// PARALLAX PHP ----------------------- TESTING ENVIRONMENT
-error_reporting(E_ALL);
-// HOME
-$page='Dev';
-
-include('php/header-new.php');
-
-// Include Projects Data
-include('php/project-grid.php');
-
+<?php 
+include('php/config.php'); 
+include('php/functions.php'); 
+include('php/project-grid.php'); 
 ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <title>Heard City | Home</title>
+
+        <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+
+          <!--[if IE]>
+              <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+          <![endif]-->
+
+        <script data-main="js/app" src="js/lib/require.js"></script>
+    
+    </head>
+
+    <body class="home white-bg">
 <div id="men">
-  <!-- <ul><li>Home</li><li>Away</li><li>Here</li><li>There</li></ul> -->
-  <?php newBootMenu($sitePages, $page, 'cl-effect-21'); ?>
+
 </div>
 
 
@@ -21,8 +32,8 @@ include('php/project-grid.php');
 <div id="par">
 
   <div class="par-container marq">
-    <div class="lax2 sun-light"></div>
-    <div class="lax2 bg-logo"></div>
+    <div id="sun-light" class="lax2 sun-light"></div>
+    <div id="black-logo" class="lax2 bg-logo"></div>
   </div>
 
 
@@ -30,8 +41,8 @@ include('php/project-grid.php');
 
 
   <div class="par-container nord-jacket">
-    <div class="lax1 g-nord"></div>
-    <div class="lax2 j-jacket"></div>
+    <div id="guitar-nord" class="lax1 g-nord"></div>
+    <div id="jean-jacket"  class="lax2 j-jacket"></div>
   </div>
 
 
@@ -39,7 +50,7 @@ include('php/project-grid.php');
 
 
   <div class="par-container man-holder">
-    <div class="lax1 man-phone"></div>
+    <div id="dude-on-phone" class="lax1 man-phone"></div>
   </div>
 
 
@@ -66,3 +77,6 @@ include('php/project-grid.php');
 
 
 <?php include('php/footer.php'); ?>
+        
+    </body>
+</html>

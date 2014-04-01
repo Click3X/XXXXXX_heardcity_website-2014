@@ -1,0 +1,97 @@
+// CONTACT .SCSS
+
+.contact-container {
+	color:$black;
+	text-align: center;
+
+	.contact-section-holder {
+		background-color:#fff;
+		.border-holder {
+			border-top: 1px solid gray;
+			border-bottom: 1px solid gray;
+			letter-spacing: .15em;
+			padding-top:12px;
+			padding-bottom:8px;
+			display: inline-block;
+			margin:1em auto;
+		}
+	}
+
+	.contact-logo {
+		width:137px;
+		// height: 177px; 
+		height: auto;
+		margin:0 auto;
+		padding-top:2em;
+	}
+
+
+
+	.map, .city {
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:50%;
+	}
+
+	.map {
+		// background-image:url('../img/build/contact/google-map.png');
+		background-color:black;
+		padding-bottom: 63.1%;
+		min-height: 300px;
+		@media(min-width: 1024px) {
+			padding-bottom:641.516px;
+		}
+	}
+	.city {
+		background-image:url('../images/contact/city.jpg');
+		padding-bottom: 75.5%;
+
+		@media(min-width: 980px) {
+			padding-bottom: 670px;
+		}
+	}
+
+	.address {
+		font-size: .938em;
+		display: inline-block;
+		margin:1em auto 2.5em;
+		border-bottom:2px solid $white;
+		padding:0 1.5em;
+		font-size: 500;
+
+		a {
+			color:$red;
+			text-decoration: none;
+		}
+		
+		li {font-weight: 500;}
+		
+		.city-li, .email {margin-bottom:1em;}
+
+		.email,
+		.phone {
+			color:$red;
+			a {
+				text-decoration: none;
+			}
+		}
+
+		.g-map-link {
+			text-decoration: none;
+			color:inherit;
+
+			@include prefix(transition, all 500ms);
+
+			&:hover {
+				color:$red;
+				text-decoration: none;
+			}
+		}
+		.addy {
+			color:$red;
+			text-decoration: none;
+		}
+	}
+}
+
+

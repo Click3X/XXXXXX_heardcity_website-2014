@@ -1,18 +1,18 @@
-// Contact Page Javascript
-
+// Place third party dependencies in the lib folder
+//
+// Configure loading modules from the lib directory,
+// except 'app' ones, 
 requirejs.config({
-    "urlArgs": "bust=" + (new Date()).getTime(),
     "baseUrl": "js/lib",
     "paths": {
       "app": "../app",
-      "util": "../util",
-      "maps": "//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"
+      "domReady": "domReady",
+      "flexnav":"jquery.flexnav.min"
     },
-   "shim": {
-      "util/helper": ["jquery"],
-      "bootstrap.min": ["jquery"],
-      "lib/bootstrap.min": ["jquery"],
-      "util/google-map": ["maps"]
+    "shim": {
+    	"flexnav":["jquery"],
+        "util/jquery.menu": ["jquery", "flexnav", "util/config"],
+		    "util/config": ["jquery"]
     }
 });
 

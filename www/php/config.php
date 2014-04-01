@@ -204,7 +204,7 @@ $members = array(
 		'title' => 'President &sol; Partner',
 		'items' => array(
 			array(
-				'name' => 'Linus Huey Cassette 7 case', 
+				'name' => 'Linus Huey Cassette', 
 				'bio' => 'This guy is the best. His music makes me move.',
 				'image' => 'items/Phil_Loeb_cassette1.png'
 			),
@@ -255,7 +255,7 @@ $members = array(
 		'permalink' => '#',
 		'image' => '',
 		'silo' => '',
-		'bio' => 'Talia was the name of a girl I worked with in Real Estate.',
+		'bio' => 'Talia Rodgers, one of our great employees here at Heard City.',
 		'title' => 'A new addition to the team since the old website',
 		'items' => array(
 			array(
@@ -561,7 +561,7 @@ $members = array(
 				'coords' =>'163,585,340,612,459,611,612,606,616,557,600,472,594,400,668,481,754,448,737,355,738,234,706,154,542,10,503,-2,423,0,369,12,317,0,246,16,186,44,116,77,87,100,86,131,62,168,1,309,24,360,40,379,56,417,171,412,152,570'
 			),
 			array(
-				'name' => 'Minor Threat/Our of Step', 
+				'name' => 'Minor Threat', 
 				'bio' => 'It is the reason...',
 				'image' => 'items/Eric_Warzecha_LP.png'
 			)
@@ -584,7 +584,7 @@ $members = array(
 		'title' => '',
 		'items' => array(
 			array(
-				'name' => 'Floral patterned dress', 
+				'name' => 'Floral dress', 
 				'bio' => 'There are few things in life I love more than a pretty flowery dress. I wear some version of this almost every day.',
 				'image' => 'items/Sasha_Awn_dress.png',
 				'coords' => '7,489,14,532,2,626,3,659,76,672,144,700,248,704,304,705,321,696,350,690,390,698,405,684,410,678,397,615,330,312,322,286,350,134,351,51,308,45,266,1,160,2,112,31,52,56,49,99,79,169,108,209,72,312'
@@ -772,7 +772,7 @@ $members = array(
 			),
 
 			array(
-				'name' => 's1991 Nike Air Jordan VI Sport Blue', 
+				'name' => 's1991 Nike Air Jordan VI', 
 				'bio' => 'MJ is my hero & I\'ve been a sneaker collector for 10 years. These are an original pair from 1991 that I had soleswapped after the midsoles crumbled so that I could wear them.',
 				'image' => 'items/Jeremy_Siegal_Jordans.png',
 				'coords' => '6,314,34,360,102,392,188,394,300,372,360,326,364,206,364,34,230,-8,160,96,24,154,12,198,88,226,24,260'
@@ -843,7 +843,7 @@ $members = array(
 				'image' => 'items/Elizabeth_McClanahan_mat.png'
 			),
 			array(
-				'name' => 'Golden Girls TV Guide Cover', 
+				'name' => 'TV Guide', 
 				'bio' => 'I’m a big Golden Girls fan.',
 				'image' => 'items/Elizabeth_McClanahan_tv_guide.png'
 			)
@@ -919,16 +919,16 @@ $list_items = array(
 
 // T E X T   C A R O U S E L S
 $text_carousel_grey = array(
-		'Walls but no boundaries.' => 'We work as a team, not as individuals, sharing spaces and equipment in an inspired flow supporting the highest production capabilities.',
-		'Simplicity. Efficiency.' => 'Big words for a basic principle. We believe in airy spaces and ways of acting that enhance an environmentally conscious lifestyle.',
-		'Walls but no boundaries.' => 'We work as a team, not as individuals, sharing spaces and equipment in an inspired flow supporting the highest production capabilities.',
-		'Simplicity. Efficiency.' => 'Big words for a basic principle. We believe in airy spaces and ways of acting that enhance an environmentally conscious lifestyle.'
+		'Heard City' => 'The premier audio post-production company servicing<br>the advertising, motion picture and television industries.',
+		'Walls but no boundaries.' => 'We work as a team, not as individuals, sharing spaces and equipment<br>in an inspired flow supporting the highest production capabilities.',
+		'Simplicity. Efficiency' => 'Big words for a basic principle. We believe in<br>airy spaces and ways of acting that enhance an<br>environmentally conscious lifestyle.'
 	);
 
 $text_carousel_black = array(
-		'Heard City.',
-		'The premier audio post-production company servicing', 
-		'the advertising, motion picture and television industries.'
+		'Welcome to Heard City',
+		'Heard City is a<br>boutique post-production<br>audio company',
+		'A sanctuary from distraction<br>in the heart of the city',
+		'Nothing more than what’s needed,<br>nothing less than what’s essential'
 	);
 
 

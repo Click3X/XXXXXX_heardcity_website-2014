@@ -1,28 +1,27 @@
-// Home Page Javascript
-
+// Place third party dependencies in the lib folder
+//
+// Configure loading modules from the lib directory,
+// except 'app' ones, 
 requirejs.config({
     "urlArgs": "bust=" + (new Date()).getTime(),
     "baseUrl": "js/lib",
     "paths": {
       "app": "../app",
-      "util": "../util",
-      "owl-carousel": "../lib/owl.carousel.min",
-       "load-images": "../lib/loaded"
-      // "gasp":"http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min",
-      // "scroll-magic":"../../scrollmagic/js/jquery.scrollmagic.min",
-      // "debug":"../../scrollmagic/js/jquery.scrollmagic.debug"
+      "domReady": "domReady",
+      "royalslider": "jquery.royalslider.min",
+      "flexnav":"jquery.flexnav.min"
     },
     "shim": {
-        "util/helper": ["jquery"],
-        "bootstrap.min": ["jquery"],
-        "owl-carousel": ["jquery"],
-        "util/carousel":["owl-carousel"],
-        "util/team-member-form":["jquery"],
-        "util/sticky-nav":["jquery"],
-        "util/loader":["load-images"],
-        // "scroll-magic":["jquery", "gasp"],
-        // "debug":["jquery", "gasp"],
-        "util/new-parallax":["jquery"]
+    	"flexnav":["jquery"],
+    	"royalslider": ["jquery", "jquery.easing-1.3"],
+        "util/jquery.slider": ["jquery", "royalslider"],
+        "util/jquery.menu": ["jquery", "flexnav", "util/config"],
+        "util/jquery.sub-menu": ["jquery", "flexnav", "util/config"],
+        // "util/preloader": ["jquery", "util/config"],
+        "controller/team-member-factory":["jquery", "util/config"],
+        "controller/side-bar":["jquery", "util/config", "controller/team-member-factory"],
+        "controller/sub-menu":["jquery", "util/config", "controller/team-member-factory"],
+		    "util/config": ["jquery"]
     }
 });
 

@@ -1,0 +1,316 @@
+.click-close {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	z-index: 1;
+	text-decoration: none;
+	-webkit-transition: all 500ms;
+	-moz-transition: all 500ms;
+	-o-transition: all 500ms;
+	-ms-transition: all 500ms;
+	transition: all 500ms;
+}
+
+#click-close.hidden, .hidden {
+display: none;
+-webkit-transition: all 500ms;
+-moz-transition: all 500ms;
+-o-transition: all 500ms;
+-ms-transition: all 500ms;
+transition: all 500ms;
+}
+
+
+
+
+// CHARLES FLEX NAV STYLES
+
+.home {
+	#site-header {
+		position: relative;
+	}
+}
+
+.ourteam,
+.contact,
+.projects {
+	padding-top: 45px;
+
+	@media(min-width:800px) {
+		padding-top: 48px;
+	}
+}
+
+
+.sticky-top {
+	position: fixed !important;
+	top: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	width: 100% !important;
+	max-width: none !important;
+	z-index: 1000;
+
+	// @include prefix(transform, translateZ(1000));
+
+	border-bottom: 1px solid silver;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+@media(min-width: 480px) {
+	.sticky-top + #first-container {
+		// padding-top: 48px;
+		margin-top: 48px;
+	}
+}
+
+#site-header .flexnav .mobile-map-link {
+	@media(min-width:800px) {
+		display: none;
+	}
+}
+
+#site-header .flexnav .mobile-map-link {
+	.icon-holder { width: 50%;}
+	.icon-holder:first-of-type {
+		float: left;
+		padding-left:2px;
+	}
+
+	.icon-holder:nth-of-type(2) {
+		float: right;
+		padding-right:2px;
+	}
+}
+
+#site-header .flexnav li a.sprite-map {
+	background-image: url(../images/social-icons/social_svg.svg);
+	background-repeat: no-repeat;
+	background-position: -128px -35px;
+	display: block;
+	float: right;
+	@include prefix(transition, all 0);
+}
+#site-header .flexnav li a.sprite-map:hover { background-position: -128px -146px; }
+
+@media(min-width:800px) {
+	#member-header {
+		@include prefix(transform, translateX(0px));
+		@include prefix(transition, all 500ms);
+	}
+
+	#member-header.side-bar-closed {
+		@include prefix(transform, translateX(200px));
+	}
+}
+
+// ARROW TOGGLE
+#member-button {
+	@media(min-width:800px) {
+		display: block;
+		position: absolute;
+		left: 18px;
+
+		> div {
+			color: transparent;
+		}
+	}
+}
+#member-button > div:after {
+	content: '';
+	display: block;
+	background-image: url("../images/sprites/toggle-arrow.png");
+	background-repeat: no-repeat;
+	width: 23px;
+	height: 29px;
+	position: absolute;
+	left: 7px;
+	top: 7px;
+	z-index: 70;
+
+	@include prefix(transform, rotate(-90deg));
+
+	@include prefix(transition, all 400ms);
+
+
+	@media(min-width: 800px) {
+		@include prefix(transform, rotate(-180deg));
+		top: -41px;
+		left: 0;
+	}
+}
+
+#member-header {
+	background-color: #ffffff;
+	width:100%;
+	border-bottom:1px solid rgb(153, 153, 153);
+	z-index: 100;
+	position: fixed;
+	top: 47px; left: 0;
+	z-index: 98;
+
+	
+	@include prefix(box-shadow, 0px 1px 6px rgba(0, 0, 0, 0.3));
+
+	@media(min-width: 800px) {
+		@include prefix(box-shadow, -2px 0px 6px rgba(0, 0, 0, 0));
+		width: 260px; height: 100%;
+		right: 0; left: auto;
+		border-bottom: 0;
+		border-left: 1px solid rgb(192, 192, 192);
+		padding-top: 50px;
+
+		.page-title {
+			display: block;
+			width:190px;
+			right:5px; left:auto;
+			text-align: left;
+		}
+	}
+
+
+	.menu-button {
+		background: #ffffff;
+		border: none;
+		font-size: .8em;
+		letter-spacing: .15em;
+		color:$black;
+		// left:5px;
+
+		> span.touch-button {
+			display: none;
+		}
+	}
+
+
+	.flexnav {
+
+		@media(min-width: 800px) {
+				width:250px;
+				text-align: left;
+				padding-bottom: 0;
+				margin-top: 0;
+			}
+
+		li {
+
+			a {
+				background-color: #ffffff; border: none;
+				text-align: center; text-decoration: none;
+				padding: 3px 0 3px;
+				font-size: 12px; letter-spacing: .1em;
+				color:$text-grey;
+
+				@include prefix(transition, all 500ms);
+
+				&:hover { color:$black; }
+				
+				@media (min-width: 800px) {
+					padding: 2px 0;
+					text-align: left;
+				}
+			}
+
+			@media (min-width: 800px) {
+				// width:250px;
+				float:right; clear:right;
+				width: 190px;
+			}
+		}
+	}
+
+	.flexnav li:last-of-type {
+		margin-bottom:10px;
+	}
+
+}
+
+
+#site-header {
+	background-color: $grey;
+	width:100%;
+	border-top:1px solid rgb(153, 153, 153);
+	border-bottom:1px solid rgb(153, 153, 153);
+	
+	z-index: 100;
+	position: fixed;
+	top: 0; left: 0;
+
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
+
+	@media(min-width: 800px) {
+		height: 50px;
+	}
+	
+	.menu-button {
+		background: $grey;
+		border: none;
+		font-size: .8em;
+		letter-spacing: .15em;
+		color:$black;
+
+		> span.touch-button {
+			display: none;
+		}
+	}
+
+	.flexnav li {
+
+		a {
+			border: none;
+			text-align: center;
+			text-decoration: none;
+			padding:15px 0 11px;
+			background-color: $grey;
+			font-size: .8em;
+			letter-spacing: .15em;
+			color:$text-grey;
+
+			@include prefix(transition, all 500ms);
+
+			&:hover {
+				color:$black;
+			}
+		}
+
+		.current-page {
+			color:$black;
+		}
+
+		@media(min-width: 800px) {
+			width: 25%
+		}
+	}
+	
+	nav {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+}
+
+.page-title {
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 10em;
+		text-align: center;
+		margin-top: -2.7em;
+		font-size: .8em;
+		letter-spacing: .15em;
+		color:$black;
+
+		@media(min-width: 800px) {
+			display: none;
+		}
+	}

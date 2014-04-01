@@ -24,9 +24,12 @@
 .rsDefault .rsSlide,
 .rsDefault .rsVideoFrameHolder,
 .rsDefault .rsThumbs {
-	background: #151515;
+	/*background: #151515;*/
+	background: transparent;
 	color: #FFF;
 }
+
+
 
 
 /***************
@@ -72,6 +75,9 @@
 	
 	border-radius: 2px;
 }
+
+
+
 .rsDefault .rsArrowIcn:hover {
 	background-color: rgba(0,0,0,0.9);
 }
@@ -486,3 +492,24 @@
 @media(min-width: 768px) {
 	.rsDefault .rsArrowIcn { display: block;}	
 }
+
+
+#featured-slider.rsDefault .rsArrowIcn { top: 25%; }
+
+@media(min-width:980px) {
+	#featured-slider.rsDefault .rsArrowIcn {top: 220px; }
+}
+
+
+#marquee-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
+#marquee-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div {
+	background-color: rgba(0,0,0,0.35);
+	border-radius:0;
+}
+
+#grey-text-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
+#grey-text-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div,
+#team-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
+#team-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div {
+	background-color: rgb(192, 192, 192);
+	border-radius:0;

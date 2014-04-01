@@ -1,0 +1,43 @@
+// LOADER
+.loading{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:30px;
+	height:30px;
+	// margin:-20px 0 0 -20px;
+	margin:-90px 0 0 -20px;
+	border-width: 5px;
+	border-style:solid;
+	border-color:#fff #fff rgba(255,255,255,.5) rgba(255,255,255,.5);
+	opacity:.9;
+	border-radius:20px;
+	-webkit-animation:rotate 1s linear infinite;
+	-ms-animation:rotate 1s linear infinite;
+}
+@-webkit-keyframes rotate{
+	0%{-webkit-transform:rotate(0deg)}
+	100%{-webkit-transform:rotate(360deg)}
+}
+@-ms-keyframes rotate{
+	0%{-ms-transform:rotate(0deg)}
+	100%{-ms-transform:rotate(360deg)}
+}
+
+#loader,
+#site-header {
+	 -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+.logo {
+	// background-image: url("../images/logo/logo-heard-marquee.png");
+	background-image: url("../images/logo/logo-black.svg");
+	background-position: 50% 50%; background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+}

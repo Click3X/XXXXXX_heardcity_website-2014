@@ -1,16 +1,28 @@
-define(["jquery", "util/helper", "bootstrap.min"], function($) {
-
-    // Add helper button
+define(["jquery", 
+		"util/config", 
+		"../util/jquery.menu"], function($, config, menu ) {
+    
     $(function() {
-    	var docBody = $('body');
-        docBody.helper();
-	});
+        var $body = $('body'),
+            $mainMenu = $("#page-fixed"),
+            $blackLogo = $('#black-logo');
+            $loader = $('#loader');
 
-	// When address is hovered, add hover class to all li address elements
-	$('.g-map-link').hover(function() {
-			$('.g-map-link').addClass('addy'); }, 
-		function() { 
-			$('.g-map-link').removeClass('addy'); 
-		});
+        window.onload = (function(){
+            // REMOVE BG-WHITE on Page load
+            $body.removeClass('white-bg');
+            $loader.hide();
+            $blackLogo.hide();
 
+            $mainMenu.flexNav({
+                'hoverIntent': false,
+                'hover':false,
+                'buttonSelector': '#page-button'
+            });
+        })();
+
+
+        $('#page-contact').addClass('current');
+        $('#page-title').text('Contact');
+    });
 });

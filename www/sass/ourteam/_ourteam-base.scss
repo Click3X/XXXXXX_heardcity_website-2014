@@ -1,0 +1,138 @@
+// OUR TEAM BASE SCSS
+.ourteam.white-bg {
+	background: #000;
+}
+
+#member-bio .ourteam {
+	.all-members {
+		text-decoration: none;
+		letter-spacing: .07em;
+	}
+}
+
+.ourteam-norm {
+	background: #ffffff;
+	color:$black;
+
+	@include prefix(transition, all 750ms);
+}
+
+// .click-close {
+// 	display: block;
+// 	// position: absolute;
+// 	position: fixed;
+// 	top: 0; left: 0;
+// 	width: 100%; height: 100%;
+// 	background: rgba(0, 0, 0, 0.1);
+// 	cursor: pointer;
+// 	text-decoration: none;
+	
+
+// 	@include prefix(transition, all 500ms);
+// }
+
+// OUR TEAM
+// SPACE FOR FOOTER
+// html {
+// 	width:100% !important;
+// }
+
+.name,
+.bio > p {
+	@include prefix(transition, all 400ms);
+}
+
+.ourteam {
+	padding-top: 93px;
+	overflow-x:hidden;
+	@media(min-width:800px) {
+		padding-top:48px;
+	}
+}
+
+.ourteam .footer { 
+	margin-top: 160%; 
+	@media(min-width: 1044px) {
+		margin-top:1600px;
+	}
+}
+
+@media(min-width: 768px) {
+	.ourteam #member-bio .member-text {
+	    width: 74%;
+	    float: none;
+	    margin-left: 13%;
+	  }
+}
+
+// CLUE TIP ARROW POSITIONS 
+.ourteam {
+	.clue-left-default,
+	.clue-right-default {
+		.cluetip-arrows.ui-state-default {
+			z-index: 98;
+			display: block;
+			top: 50% !important;
+			margin-top: -12px;
+		}
+	}
+	// vendor/cluetip/images/darrowdown.png
+	div.clue-right-default .cluetip-arrows {
+		background-image: url(vendor/cluetip/images/darrowleft.png);
+		opacity: 0.95;
+	}
+
+	div.clue-left-default .cluetip-arrows {
+		background-image: url(vendor/cluetip/images/darrowright.png);
+		opacity: 0.95;
+	}
+
+	div.clue-bottom-default .cluetip-arrows {
+		background-image: url(vendor/cluetip/images/darrowup.png);
+		opacity: 0.95;
+	}
+
+	div.clue-top-default .cluetip-arrows {
+		background-image: url(vendor/cluetip/images/darrowdown.png);
+		opacity: 0.95;
+	}
+
+}
+
+// Silo and Member bio
+.ourteam {
+
+	input[type="radio"] {
+		position: absolute;
+		// opacity: 0.25;
+		opacity: 0;
+	}
+
+	#member-bio {
+		z-index: 1;
+		
+		.team-member {
+			width:100%;
+			max-width: 1024px;
+		}
+
+		.member-text { margin-left:3%;}
+
+		@media(min-width:768px) {
+
+			.member-text {
+				width: 74%;
+				float:none;
+				margin-left: 13%;
+			}
+
+			.bio {
+				max-width:none;
+				font-size: 1em;
+				line-height: 1.6em;
+			}
+
+			.name { font-size: 1.4rem; }
+		}
+	}
+}

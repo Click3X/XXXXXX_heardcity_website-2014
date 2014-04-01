@@ -1,30 +1,29 @@
-// Our Team Page Javasript
-
 requirejs.config({
     "urlArgs": "bust=" + (new Date()).getTime(),
     "baseUrl": "js/lib",
     "paths": {
       "app": "../app",
-      "util": "../util",
-      "in-view": "../lib/in-view",
-      "clue-tip": "../lib/jquery.cluetip",
-      "hover": "../lib/jquery.hoverIntent"
-      // "hilight": "../lib/jquery.maphilight.min",
-      // "qtip": "../lib/qtip/jquery.qtip.min",
+      "domReady": "domReady",
+      "flexnav":"jquery.flexnav.min",
+      // "imgpre":"jquery.preloader",
+      // "_":"underscore-min",
+      "clue-tip":"jquery.cluetip",
+      "hover":"jquery.hoverIntent"
     },
-   "shim": {
-      "util/helper": ["jquery"],
-      "bootstrap.min": ["jquery"],
-      "lib/bootstrap.min": ["jquery"],
-      "in-view": ["jquery"],
-      "clue-tip": ["jquery", "util/team-members-json"],
-      "hover": ["jquery", "clue-tip"],
-      // "hilight": ["jquery"],
-      // "qtip": ["jquery"],
-      "util/side-bar": ["jquery"],
-      "util/team-members-json": ["jquery"],
-      "util/map-links": ["jquery", "util/team-members-json"],
-      "util/clue-hover": ["jquery", "util/team-members-json", "clue-tip", "hover"]
+    "shim": {
+      // "_":["jquery"],
+    	"flexnav":["jquery"],
+      // "imgpre":['jquery'],
+      "util/jquery.menu": ["jquery", "flexnav", "util/config"],
+      "util/jquery.sub-menu": ["jquery", "flexnav", "util/config"],
+      // "util/preloader": ["jquery", "util/config", "util/dom-variables", "imgpre"],
+	    "util/config": ["jquery"],
+      "util/team-member-json":["jquery", "util/config"],
+      // "controller/screen-debounce": ["jquery"],
+      "util/side-bar": ["jquery", "util/config", "controller/team-member-factory"],
+      "hover":["jquery"],
+      "clue-tip": ["jquery", "controller/team-member-factory"],
+      "util/clue-hover": ["jquery", "controller/team-member-factory", "clue-tip", "hover"]
     }
 });
 

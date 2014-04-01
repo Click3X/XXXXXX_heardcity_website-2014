@@ -1,0 +1,77 @@
+// IMAGE SPREAD
+
+
+.bg-img {
+	background-repeat: no-repeat;
+}
+
+.half {
+	width:50%;
+	float:left;
+}
+
+.half2 {
+	width:50%;
+	float:left;
+}
+
+.image-spread {
+	background-color: #fff;
+	.half-image {
+		// padding-bottom:125%;
+		padding-bottom:125%;
+
+		@media(min-width:1270px) { padding-bottom:850px; }
+	}
+}
+
+#dog-windows,
+#dude-on-phone {
+	background-position: 50% 100%;
+	padding-bottom: 184px;
+	@media(min-width:480px) { 
+		padding-bottom: 362px;
+	}
+
+	@media(min-width:960px) { 
+		padding-bottom: 550px;
+	}
+	@media(min-width:1440px) { 
+		padding-bottom: 710px;
+	}
+}
+
+
+
+#guitar-nord {
+	background-position: 0 100%;
+	background-size: 150%;
+	@media(min-width:768px) {
+		background-size: auto;
+	}
+
+	@media(min-width:1240px) {
+		background-size: cover;
+	}
+}
+
+
+#jean-jacket {
+	background-position: 0 50%;
+	background-size: 150%;
+	@media(min-width:768px) {
+		background-size: auto;
+	}
+	@media(min-width:1240px) {
+		background-position: 0 35%;
+		background-size: cover;
+	}
+}
+
+#girl-large,
+#stairs {
+	background-position: 50% 50%;
+	padding-bottom: 100%;
+	width: 100%;
+	background-size:cover;
+}
