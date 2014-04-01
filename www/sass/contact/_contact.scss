@@ -1,4 +1,18 @@
 // CONTACT .SCSS
+.contact-info,
+.address-info {
+
+	cursor: pointer;
+	
+	@include prefix(transition, color 50ms);
+
+		&:hover {
+			color:$red;
+			text-decoration: none;
+		}
+
+}
+
 
 .contact-container {
 	color:$black;
@@ -19,13 +33,10 @@
 
 	.contact-logo {
 		width:137px;
-		// height: 177px; 
 		height: auto;
 		margin:0 auto;
 		padding-top:2em;
 	}
-
-
 
 	.map, .city {
 		background-repeat:no-repeat;
@@ -44,21 +55,14 @@
 			padding-bottom:377px;
 		}
 
-		@media(min-width: 980px) and (min-height: 800px) {
-			padding-bottom:641.516px;
-		}
+		@media(min-width: 980px) and (min-height: 800px) { padding-bottom:641.516px; }
 		
-		// @media(min-width: 1024px) {
-		// 	padding-bottom:641.516px;
-		// }
 	}
 	.city {
 		background-image:url('../images/contact/city.jpg');
 		padding-bottom: 75.5%;
 
-		@media(min-width: 980px) {
-			padding-bottom: 670px;
-		}
+		@media(min-width: 980px) { padding-bottom: 670px; }
 	}
 
 	.address {
@@ -81,21 +85,13 @@
 		.email,
 		.phone {
 			color:$red;
-			a {
-				text-decoration: none;
-			}
+			a { text-decoration: none; }
 		}
 
 		.g-map-link {
 			text-decoration: none;
 			color:inherit;
 
-			@include prefix(transition, all 500ms);
-
-			&:hover {
-				color:$red;
-				text-decoration: none;
-			}
 		}
 		.addy {
 			color:$red;

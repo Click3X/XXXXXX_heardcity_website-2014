@@ -4676,15 +4676,32 @@ textarea:focus, input:focus {
 }
 
 /* line 3, ../sass/contact/_contact.scss */
+.contact-info,
+.address-info {
+  cursor: pointer;
+  -webkit-transition: color 50ms;
+  -moz-transition: color 50ms;
+  -o-transition: color 50ms;
+  -ms-transition: color 50ms;
+  transition: color 50ms;
+}
+/* line 9, ../sass/contact/_contact.scss */
+.contact-info:hover,
+.address-info:hover {
+  color: #c84938;
+  text-decoration: none;
+}
+
+/* line 17, ../sass/contact/_contact.scss */
 .contact-container {
   color: #333333;
   text-align: center;
 }
-/* line 7, ../sass/contact/_contact.scss */
+/* line 21, ../sass/contact/_contact.scss */
 .contact-container .contact-section-holder {
   background-color: #fff;
 }
-/* line 9, ../sass/contact/_contact.scss */
+/* line 23, ../sass/contact/_contact.scss */
 .contact-container .contact-section-holder .border-holder {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
@@ -4694,49 +4711,49 @@ textarea:focus, input:focus {
   display: inline-block;
   margin: 1em auto;
 }
-/* line 20, ../sass/contact/_contact.scss */
+/* line 34, ../sass/contact/_contact.scss */
 .contact-container .contact-logo {
   width: 137px;
   height: auto;
   margin: 0 auto;
   padding-top: 2em;
 }
-/* line 30, ../sass/contact/_contact.scss */
+/* line 41, ../sass/contact/_contact.scss */
 .contact-container .map, .contact-container .city {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
 }
-/* line 36, ../sass/contact/_contact.scss */
+/* line 47, ../sass/contact/_contact.scss */
 .contact-container .map {
   background-color: black;
   padding-bottom: 63.1%;
   min-height: 300px;
 }
 @media (min-width: 600px) {
-  /* line 36, ../sass/contact/_contact.scss */
+  /* line 47, ../sass/contact/_contact.scss */
   .contact-container .map {
     padding-bottom: 377px;
   }
 }
 @media (min-width: 980px) and (min-height: 800px) {
-  /* line 36, ../sass/contact/_contact.scss */
+  /* line 47, ../sass/contact/_contact.scss */
   .contact-container .map {
     padding-bottom: 641.516px;
   }
 }
-/* line 55, ../sass/contact/_contact.scss */
+/* line 61, ../sass/contact/_contact.scss */
 .contact-container .city {
   background-image: url("../images/contact/city.jpg");
   padding-bottom: 75.5%;
 }
 @media (min-width: 980px) {
-  /* line 55, ../sass/contact/_contact.scss */
+  /* line 61, ../sass/contact/_contact.scss */
   .contact-container .city {
     padding-bottom: 670px;
   }
 }
-/* line 64, ../sass/contact/_contact.scss */
+/* line 68, ../sass/contact/_contact.scss */
 .contact-container .address {
   font-size: .938em;
   display: inline-block;
@@ -4745,45 +4762,35 @@ textarea:focus, input:focus {
   padding: 0 1.5em;
   font-size: 500;
 }
-/* line 72, ../sass/contact/_contact.scss */
+/* line 76, ../sass/contact/_contact.scss */
 .contact-container .address a {
   color: #c84938;
   text-decoration: none;
 }
-/* line 77, ../sass/contact/_contact.scss */
+/* line 81, ../sass/contact/_contact.scss */
 .contact-container .address li {
   font-weight: 500;
 }
-/* line 79, ../sass/contact/_contact.scss */
+/* line 83, ../sass/contact/_contact.scss */
 .contact-container .address .city-li, .contact-container .address .email {
   margin-bottom: 1em;
 }
-/* line 82, ../sass/contact/_contact.scss */
+/* line 86, ../sass/contact/_contact.scss */
 .contact-container .address .email,
 .contact-container .address .phone {
   color: #c84938;
 }
-/* line 84, ../sass/contact/_contact.scss */
+/* line 88, ../sass/contact/_contact.scss */
 .contact-container .address .email a,
 .contact-container .address .phone a {
   text-decoration: none;
 }
-/* line 89, ../sass/contact/_contact.scss */
+/* line 91, ../sass/contact/_contact.scss */
 .contact-container .address .g-map-link {
   text-decoration: none;
   color: inherit;
-  -webkit-transition: all 500ms;
-  -moz-transition: all 500ms;
-  -o-transition: all 500ms;
-  -ms-transition: all 500ms;
-  transition: all 500ms;
 }
-/* line 95, ../sass/contact/_contact.scss */
-.contact-container .address .g-map-link:hover {
-  color: #c84938;
-  text-decoration: none;
-}
-/* line 100, ../sass/contact/_contact.scss */
+/* line 96, ../sass/contact/_contact.scss */
 .contact-container .address .addy {
   color: #c84938;
   text-decoration: none;
