@@ -81,6 +81,28 @@ define(["jquery",
                 });
             });
 
+
+            function showSolo(elem) {
+                event.preventDefault();
+                $(document).trigger('hideCluetip');
+                var hreftarget = $(this).data('person'),
+                target = '.item-holder.' + hreftarget,
+                siblings = $('.item-holder').not(target);
+
+                // $("html, body").animate({ scrollTop: 0 });
+                $body.removeClass('js-single-member'); 
+                siblings.hide();
+
+                // SHOW member BIO
+                $('#member-bio .permalink > a').show();
+                showMemberBio(hreftarget);
+                $("html, body").scrollTop(0);
+                $(target).removeClass('item-hidden');
+                $body.addClass('js-single-member');
+                // OPEN / SHUT side bar NAV
+                 $('#member-header').addClass('side-bar-closed');
+            }
+
             
 
 
@@ -156,49 +178,16 @@ define(["jquery",
 
             // ON MAP LINK CLICK - SHOW MEMBER SOLO
             $('.map-link').click(function(event) {
-                // console.log('Map Link clicked!');
                 event.preventDefault();
-                $(document).trigger('hideCluetip');
-
-                var hreftarget = $(this).data('person'),
-                target = '.item-holder.' + hreftarget,
-                siblings = $('.item-holder').not(target);
-
-                $body.removeClass('js-single-member'); 
-                siblings.hide();
-                $('#member-bio .permalink > a').show();
-                showMemberBio(hreftarget);
-
-                $("html, body").scrollTop(0);
-                $(target).removeClass('item-hidden');
-                $body.addClass('js-single-member');
-                
-                // OPEN / SHUT side bar NAV
-                 $('#member-header').addClass('side-bar-closed');
-                 // $clickClose.addClass('hidden');
-
+                var elem = $(this);
+                showSolo(elem);
             });
 
             // ON CLUE TIP LINK CLICK - SHOW MEMBER SOLO
             $('.cluetip-div').click(function(event) {
                 event.preventDefault();
-                $(document).trigger('hideCluetip');
-                var hreftarget = $(this).data('person'),
-                target = '.item-holder.' + hreftarget,
-                siblings = $('.item-holder').not(target);
-
-                // $("html, body").animate({ scrollTop: 0 });
-                $body.removeClass('js-single-member'); 
-                siblings.hide();
-
-                // SHOW member BIO
-                $('#member-bio .permalink > a').show();
-                showMemberBio(hreftarget);
-                $("html, body").scrollTop(0);
-                $(target).removeClass('item-hidden');
-                $body.addClass('js-single-member');
-                // OPEN / SHUT side bar NAV
-                 $('#member-header').addClass('side-bar-closed');
+                var elem = $(this);
+                showSolo(elem);
             });
 
 
