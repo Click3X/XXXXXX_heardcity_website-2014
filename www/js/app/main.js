@@ -1,8 +1,9 @@
 define(["jquery", 
-        "util/config", 
+        "util/config",
+        "unveil",
         "flexnav",
         "controller/request-anim",
-        "royalslider"], function($, config, flexnav, anim, royalslider) {
+        "royalslider"], function($, config, unveil, flexnav, anim, royalslider) {
     
     $(function() {
         var $body = $('body'),
@@ -13,13 +14,14 @@ define(["jquery",
         $greyTextSlider = $('#grey-text-slider'),
         device, homePara,
         $teamSlider = $('#team-slider'),
+        $img = $("img"),
         $w = $(window),
         $blackLogo = $('#black-logo'),
         $slide = $('#marquee-slider .marquee-slide:first-of-type'),
         $firstCon = $('#first-container'),
         $siteHeader = $('#site-header');
 
-
+        // HIDE MAN NAV to prevent flickr?
         $siteHeader.hide();
 
         // TEST FOR MOBILE DEVICE / TABLET
@@ -83,6 +85,9 @@ define(["jquery",
            
         // WINDOW ON LOAD        
         window.onload = (function(){
+
+            // SWITCH IMG SRC FOR LAZY LOADING
+            $img.unveil();
 
             // INITIALIZE MENU
             $mainMenu.flexNav({

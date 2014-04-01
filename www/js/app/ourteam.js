@@ -9,12 +9,15 @@ define(["jquery",
         "util/clue-hover",
         "hover"], function($, config, flexnav, teamMemberFactory, subMenu, unveil, clueTip, clueHover, hover) {
     $(function() {
+        // CURRENT PAGE
+        $('#page-title').text('Our Team');
         $('#page-ourteam').addClass('current');
-        // $('#out').click(function() { $('*').toggleClass('outline'); });
 
+        // VARS
         var $body = $("body"),
             $mainMenu = $("#page-fixed"),
             $subNav = $("#member-fixed"),
+            $img = $("img"),
             $clickClose = $('#click-close');
 
          // INITIALIZE MENU
@@ -31,9 +34,9 @@ define(["jquery",
             'buttonSelector': '#member-button'
         });
         
-
+        // JSON DATA
         var jsonMembers = $body.configData().jsonMembers;
-        // SIDE BAR CLICK EVENT
+        // SIDE BAR CLICK EVENT- get bios
         var showMemberBio = function(member) {
             $(jsonMembers).each(function() {
                 var name = this.name,
@@ -53,10 +56,9 @@ define(["jquery",
 
         
         window.onload = (function(){
-           // SWITCH IMG SRC FOR LAZY LOADING
-            $(function(){
-                $("img").unveil();
-            });
+            // SWITCH IMG SRC FOR LAZY LOADING            
+            $img.unveil();
+            
 
             // CHECK TO SEE IF SELECTED MEMBER HAS BEEN SENT FROM HOME.PHP
             if(selectedMember) {
@@ -101,26 +103,10 @@ define(["jquery",
                 $(target).removeClass('item-hidden');
                 $body.addClass('js-single-member');
                 // OPEN / SHUT side bar NAV
-                 $('#member-header').addClass('side-bar-closed');
+                $('#member-header').addClass('side-bar-closed');
             }
 
-            
-            // $('.item-holder a').click( function(event) {
-            //     event.preventDefault();
-            // });
 
-
-
-            // // Closing the Sidebar BY CLICKING ON OTHER AREA    
-            // $('#push, #close').click(function () {
-            //     $('#member-header').toggleClass('side-bar-closed');
-            //     $clickClose.click(function() {
-            //         $('#member-header').toggleClass('side-bar-closed');
-            //     })
-            // });
-
-            // CLICKING OFF SIDEBAR, CLOSE IT
-            // $clickClose.click(function() {$(this).addClass('hidden');});
 
 
             // SHOW MEMBER BIO, NAME, LINK

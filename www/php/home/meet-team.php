@@ -28,13 +28,14 @@
 				<div class="team-member clearfix">
 					
 					<div class="image">
-						<img src="<?php echo $item_image;?>" alt="<?php echo $member['name'];?>" class="rsImg">
+						<!-- <img src="<?php // echo $item_image;?>" alt="<?php// echo $member['name'];?>" class="rsImg"> -->
+						<img src="images/sprites/blank.gif" alt="<?php echo $member['name']; ?>" class="rsImg" data-src="<?php echo $item_image; ?>" >
 					</div>
 
 					<ul class="member-text">
 						<li class="misc-text">This belongs to</li>
 						<li class="name"><?php echo $member['name']; ?></li>
-						<li class="bio"><?php echo firstBit($member['bio']); ?></li>
+						<!-- <li class="bio"><?php // echo firstBit($member['bio']); ?></li> -->
 						<li class="permalink">								
 							<!-- <a href="<?php echo $member['permalink']; ?>" class="member-permalink">View more of <?php echo $member['sex']; ?> stuff</a> -->
 							<label for="<?php echo $member_class; ?>-input" class="member-permalink">View more of <?php echo $member['sex']; ?> stuff</label>

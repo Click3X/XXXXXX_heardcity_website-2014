@@ -7,6 +7,9 @@ define(["jquery",
             $mainMenu = $("#page-fixed"),
             $blackLogo = $('#black-logo');
             $loader = $('#loader');
+        
+        $('#page-contact').addClass('current');
+        $('#page-title').text('Contact');
 
         window.onload = (function(){
             // MAIN MENU
@@ -17,8 +20,5 @@ define(["jquery",
             });
         })();
 
-
-        $('#page-contact').addClass('current');
-        $('#page-title').text('Contact');
     });
 });
