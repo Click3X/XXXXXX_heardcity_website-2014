@@ -43,10 +43,11 @@ if(!isset($_POST['selected_member'])) {
     
     </head>
 
-    <body class="ourteam bg-black">
+    <body class="ourteam one-page">
+
         <?php include('php/main-nav.php'); ?>
     	 
-<!--     	<div id="black-logo" class="logo"></div>	 -->
+<!--     <div id="black-logo" class="logo"></div>	 -->
     	<div id="loader">
             <div id="spinner" class="loading"></div>
         </div>
@@ -67,7 +68,7 @@ if(!isset($_POST['selected_member'])) {
             <div id="item-list-holder" class="team-member-items"></div>
         </div>
 
-        <a id="click-close" class="click-close hidden"></a>    
+        <?php include('php/sub-nav.php'); ?>
         <!-- <input id="out" type="button" value="Outline" style="position:fixed; right:5px; width:80px; bottom:100px; z-index:1000"/> -->
 
         <!-- FOOTER -->

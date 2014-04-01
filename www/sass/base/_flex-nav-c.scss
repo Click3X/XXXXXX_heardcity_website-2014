@@ -17,35 +17,41 @@
 }
 
 #click-close.hidden, .hidden {
-display: none;
--webkit-transition: all 500ms;
--moz-transition: all 500ms;
--o-transition: all 500ms;
--ms-transition: all 500ms;
-transition: all 500ms;
+	display: none;
+	-webkit-transition: all 500ms;
+	-moz-transition: all 500ms;
+	-o-transition: all 500ms;
+	-ms-transition: all 500ms;
+	transition: all 500ms;
 }
 
 
+#member-title { 
+	margin-top: -2em; 
+	@media(min-width: 600px) {
+		display: none;
+	}
+}
 
 
 // CHARLES FLEX NAV STYLES
 
-.home {
-	#site-header {
-		position: relative;
-	}
-}
+
 
 .ourteam,
 .contact,
 .projects {
 	padding-top: 45px;
 
-	@media(min-width:800px) {
+	@media(min-width:600px) {
 		padding-top: 48px;
 	}
 }
 
+@media(min-width:600px) { 
+	.home #site-header { position: relative; } 
+	.home {padding-top: 48px;}
+}
 
 .sticky-top {
 	position: fixed !important;
@@ -74,7 +80,7 @@ transition: all 500ms;
 }
 
 #site-header .flexnav .mobile-map-link {
-	@media(min-width:800px) {
+	@media(min-width:600px) {
 		display: none;
 	}
 }
@@ -102,7 +108,7 @@ transition: all 500ms;
 }
 #site-header .flexnav li a.sprite-map:hover { background-position: -128px -146px; }
 
-@media(min-width:800px) {
+@media(min-width:600px) {
 	#member-header {
 		@include prefix(transform, translateX(0px));
 		@include prefix(transition, all 500ms);
@@ -115,7 +121,7 @@ transition: all 500ms;
 
 // ARROW TOGGLE
 #member-button {
-	@media(min-width:800px) {
+	@media(min-width:600px) {
 		display: block;
 		position: absolute;
 		left: 18px;
@@ -142,7 +148,7 @@ transition: all 500ms;
 	@include prefix(transition, all 400ms);
 
 
-	@media(min-width: 800px) {
+	@media(min-width: 600px) {
 		@include prefix(transform, rotate(-180deg));
 		top: -41px;
 		left: 0;
@@ -161,7 +167,7 @@ transition: all 500ms;
 	
 	@include prefix(box-shadow, 0px 1px 6px rgba(0, 0, 0, 0.3));
 
-	@media(min-width: 800px) {
+	@media(min-width: 600px) {
 		@include prefix(box-shadow, -2px 0px 6px rgba(0, 0, 0, 0));
 		width: 260px; height: 100%;
 		right: 0; left: auto;
@@ -170,7 +176,8 @@ transition: all 500ms;
 		padding-top: 50px;
 
 		.page-title {
-			display: block;
+			display: none;
+			position: relative;
 			width:190px;
 			right:5px; left:auto;
 			text-align: left;
@@ -194,7 +201,7 @@ transition: all 500ms;
 
 	.flexnav {
 
-		@media(min-width: 800px) {
+		@media(min-width: 600px) {
 				width:250px;
 				text-align: left;
 				padding-bottom: 0;
@@ -207,20 +214,26 @@ transition: all 500ms;
 				background-color: #ffffff; border: none;
 				text-align: center; text-decoration: none;
 				padding: 3px 0 3px;
-				font-size: 12px; letter-spacing: .1em;
+				letter-spacing: .1em;
 				color:$text-grey;
+
+				font-size: 10px;
+				line-height: 20px;
 
 				@include prefix(transition, all 500ms);
 
 				&:hover { color:$black; }
 				
-				@media (min-width: 800px) {
+				@media (min-width: 600px) {
 					padding: 2px 0;
 					text-align: left;
+
+					font-size: 12px; 
+					line-height: auto;
 				}
 			}
 
-			@media (min-width: 800px) {
+			@media (min-width: 600px) {
 				// width:250px;
 				float:right; clear:right;
 				width: 190px;
@@ -247,7 +260,7 @@ transition: all 500ms;
 
 	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
 
-	@media(min-width: 800px) {
+	@media(min-width: 600px) {
 		height: 50px;
 	}
 	
@@ -286,7 +299,7 @@ transition: all 500ms;
 			color:$black;
 		}
 
-		@media(min-width: 800px) {
+		@media(min-width: 600px) {
 			width: 25%
 		}
 	}
@@ -305,12 +318,12 @@ transition: all 500ms;
 		margin: auto;
 		width: 10em;
 		text-align: center;
-		margin-top: -2.7em;
+		// margin-top: -2.7em;
 		font-size: .8em;
 		letter-spacing: .15em;
 		color:$black;
 
-		@media(min-width: 800px) {
+		@media(min-width: 600px) {
 			display: none;
 		}
 	}

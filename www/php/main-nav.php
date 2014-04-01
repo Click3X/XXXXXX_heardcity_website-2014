@@ -2,11 +2,11 @@
 <header id="site-header" class="site-header clearfix">
     <div id="page-button" class="menu-button active">
         <span>☰</span>
-        <span class="touch-button"><i class="navicon">▼</i></span>
-    </div>
-    <span id="page-title" class="page-title">Home</span>
+       <!--  <span class="touch-button"><i class="navicon">▼</i></span> -->
+        <span id="page-title" class="page-title">Home</span>
+     </div>
     <nav>
-        <ul data-breakpoint="800" class="flexnav with-js opacity flexnav-hide lg-screen" id="page-fixed">
+        <ul data-breakpoint="600" class="flexnav with-js opacity flexnav-hide lg-screen" id="page-fixed">
             <li id="page-home" class="menu-home cl-effect-21">
                 <a href="home.php" data-hover="Home">Home</a>
             </li>

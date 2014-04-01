@@ -105,7 +105,7 @@ a { color:inherit; }
 }
 
 
-.cl-effect-21 a {
+.cl-effect-21:not(#phone-map) a {
 	// padding: 10px;
 	padding: 10px;
 	color: $grey-text;
@@ -117,8 +117,8 @@ a { color:inherit; }
 
 .current a::before, 
 .current a::after, 
-.cl-effect-21 a::before,
-.cl-effect-21 a::after {
+.cl-effect-21:not(#phone-map) a::before,
+.cl-effect-21:not(#phone-map) a::after {
 	content: '';
 	position: absolute;
 	left: 0; right: 0;
@@ -132,30 +132,31 @@ a { color:inherit; }
 }
 
 .current a:before,
-.cl-effect-21 a::before {
+.cl-effect-21:not(#phone-map) a::before {
 	top: 6px;
 
 	@include prefix(transform, translateY(-6px));
 }
 
 .current a:after,
-.cl-effect-21 a::after {
+.cl-effect-21:not(#phone-map) a::after {
 	bottom: 6px;
 
 	@include prefix(transform, translateY(6px));
 }
 
-.cl-effect-21 a:hover,
-.cl-effect-21 a:focus {
+.cl-effect-21:not(#phone-map) a:hover,
+.cl-effect-21:not(#phone-map) a:focus {
 	color: #000;
 }
 
+
 .current a:before,
 .current a:after,
-.cl-effect-21 a:hover::before,
-.cl-effect-21 a:focus::before,
-.cl-effect-21 a:hover::after,
-.cl-effect-21 a:focus::after {
+.cl-effect-21:not(#phone-map) a:hover::before,
+.cl-effect-21:not(#phone-map) a:focus::before,
+.cl-effect-21:not(#phone-map) a:hover::after,
+.cl-effect-21:not(#phone-map) a:focus::after {
 	opacity: 1;
 
 	@include prefix(transition, all 0.2s);

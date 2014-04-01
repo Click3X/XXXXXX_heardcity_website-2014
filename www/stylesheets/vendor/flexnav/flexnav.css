@@ -18,11 +18,11 @@
     -moz-transition: all .5s ease-in-out;
     -ms-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out; }
-  .flexnav.one-page {
+/*  .flexnav.one-page {
     position: fixed;
     top: 50px;
     right: 5%;
-    max-width: 200px; }
+    max-width: 200px; }*/
   .flexnav li {
     font-size: 100%;
     position: relative;
@@ -78,11 +78,11 @@
   color: #222222;
   cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-  .menu-button.one-page {
+/*  .menu-button.one-page {
     position: fixed;
     top: 0;
     right: 5%;
-    padding-right: 45px; }
+    padding-right: 45px; }*/
   .menu-button .touch-button {
     background: transparent;
     position: absolute;
@@ -99,18 +99,18 @@
       top: 1em;
       color: #666; }
 
-@media all and (min-width: 800px) {
-  body.one-page {
-    padding-top: 70px; }
+@media all and (min-width: 600px) {
+/*  body.one-page {
+    padding-top: 70px; }*/
 
   .flexnav {
     overflow: visible; }
     .flexnav.opacity {
       opacity: 1; }
-    .flexnav.one-page {
+/*    .flexnav.one-page {
       top: 0;
       right: auto;
-      max-width: 1080px; }
+      max-width: 1080px; }*/
     .flexnav li {
       position: relative;
       list-style: none;
@@ -147,14 +147,14 @@
 
   .menu-button {
     display: none; } }
-.oldie body.one-page {
-  padding-top: 70px; }
+/*.oldie body.one-page {
+  padding-top: 70px; }*/
 .oldie .flexnav {
   overflow: visible; }
-  .oldie .flexnav.one-page {
+/*  .oldie .flexnav.one-page {
     top: 0;
     right: auto;
-    max-width: 1080px; }
+    max-width: 1080px; }*/
   .oldie .flexnav li {
     position: relative;
     list-style: none;

@@ -3,6 +3,19 @@
 	background: #000;
 }
 
+html, body {
+	height: 100%;
+}
+.ourteam {
+	position: relative;
+}
+
+.ourteam .footer {position: absolute; bottom:0;}
+
+.sidebar-link {
+	cursor: pointer;
+}
+
 #member-bio .ourteam {
 	.all-members {
 		text-decoration: none;

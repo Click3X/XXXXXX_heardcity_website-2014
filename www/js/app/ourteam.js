@@ -3,12 +3,10 @@
 define(["jquery", 
 		"util/config", 
 		"util/jquery.menu",
-        "controller/sub-menu",
-        "controller/side-bar",
         "controller/team-member-factory",
         "clue-tip",
         "util/clue-hover",
-        "hover"], function($, config, menu, subMenu, sideBar, teamMemberFactory, clueTip, clueHover, hover) {
+        "hover"], function($, config, menu, teamMemberFactory, clueTip, clueHover, hover) {
     $(function() {
         // HELPER
         $('#page-ourteam').addClass('current');
@@ -16,10 +14,8 @@ define(["jquery",
 
         var $body = $("body"),
             $mainMenu = $("#page-fixed"),
-            $blackLogo = $("#black-logo"),
-            $loader = $("#loader"),
-            $clickClose = $('#click-close'),
-            memberNames = [];
+            $subNav = $("#member-fixed"),
+            $clickClose = $('#click-close');
 
         
         window.onload = (function(){
@@ -29,21 +25,14 @@ define(["jquery",
                 'hover':false,
                 'buttonSelector': '#page-button'
             });
-            
+
             // SUB MENU
-            var members = $body.configData().jsonMembers;
-            $(members).each(function() {
-                memberNames.push(this.name);
-            });   
-            $body.buildSubNav(memberNames, 'Heard City');
-
-
-            $blackLogo.fadeOut(250);
-            $loader.hide();
-            $body.removeClass('white-bg');
-
-
-
+            $subNav.flexNav({
+                'hoverIntent': false,
+                'hover':false,
+                'buttonSelector': '#member-button'
+            });
+            
 
             var jsonMembers = $body.configData().jsonMembers;
             // SIDE BAR CLICK EVENT
@@ -82,7 +71,7 @@ define(["jquery",
             }
 
 
-            // CLICK EVENTS
+            // CLICK EVENTS - if MIN WIDTH - look to FLEX NAV FOR another option
             $('#member-button').click( function() { 
                 $('#member-header').toggleClass('side-bar-closed');
                 $clickClose.toggleClass('hidden');
@@ -94,23 +83,23 @@ define(["jquery",
             
 
 
-            $('.item-holder a').click( function(event) {
-                event.preventDefault();
-            });
+            // $('.item-holder a').click( function(event) {
+            //     event.preventDefault();
+            // });
 
 
 
 
-            // Closing the Sidebar BY CLICKING ON OTHER AREA    
-            $('#push, #close').click(function () {
-                $('#member-header').toggleClass('side-bar-closed');
-                $clickClose.click(function() {
-                    $('#member-header').toggleClass('side-bar-closed');
-                })
-            });
+            // // Closing the Sidebar BY CLICKING ON OTHER AREA    
+            // $('#push, #close').click(function () {
+            //     $('#member-header').toggleClass('side-bar-closed');
+            //     $clickClose.click(function() {
+            //         $('#member-header').toggleClass('side-bar-closed');
+            //     })
+            // });
 
             // CLICKING OFF SIDEBAR, CLOSE IT
-            $clickClose.click(function() {$(this).addClass('hidden');});
+            // $clickClose.click(function() {$(this).addClass('hidden');});
 
 
             // SHOW MEMBER BIO, NAME, LINK
@@ -159,7 +148,7 @@ define(["jquery",
                 
                 // OPEN / SHUT side bar NAV
                  $('#member-header').addClass('side-bar-closed');
-                 $clickClose.addClass('hidden');
+                 // $clickClose.addClass('hidden');
                  // $('#member-button').click(); 
                 
             });
@@ -185,7 +174,7 @@ define(["jquery",
                 
                 // OPEN / SHUT side bar NAV
                  $('#member-header').addClass('side-bar-closed');
-                 $clickClose.addClass('hidden');
+                 // $clickClose.addClass('hidden');
 
             });
 
@@ -213,7 +202,7 @@ define(["jquery",
                 
                 // OPEN / SHUT side bar NAV
                  $('#member-header').addClass('side-bar-closed');
-                 $clickClose.addClass('hidden');
+                 // $clickClose.addClass('hidden');
             });
 
 
