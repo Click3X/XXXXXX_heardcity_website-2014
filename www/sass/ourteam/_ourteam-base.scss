@@ -10,6 +10,22 @@ html, body {
 	position: relative;
 }
 
+#graph {
+	position: relative;
+	@media(min-width: 600px) {
+		padding-right: 70px;
+	}
+	@media(min-width: 768px) {
+		padding-right: 0;
+	}
+}
+
+@media(min-width: 600px) {
+	.js-single-member #graph {
+		padding-right: 70px; 
+	}
+}
+
 // .ourteam .footer {position: absolute; bottom:0;}
 
 .sidebar-link {

@@ -1880,7 +1880,6 @@ input[type="submit"],
 /* line 91, ../sass/home/_teammember.scss */
 .team-member-module {
   padding-top: 1.75em;
-  padding-bottom: 1.25em;
 }
 @media (min-width: 480px) {
   /* line 91, ../sass/home/_teammember.scss */
@@ -1890,26 +1889,42 @@ input[type="submit"],
   }
 }
 
-/* line 97, ../sass/home/_teammember.scss */
+/* line 96, ../sass/home/_teammember.scss */
 .home .team-member .image img {
   max-height: 198px;
 }
 
-/* line 99, ../sass/home/_teammember.scss */
-.team-member {
+/* line 100, ../sass/home/_teammember.scss */
+.home .team-member-module {
+  padding-top: 1.75em;
+  padding-bottom: 1.25em;
+}
+@media (min-width: 480px) {
+  /* line 100, ../sass/home/_teammember.scss */
+  .home .team-member-module {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+/* line 106, ../sass/home/_teammember.scss */
+.home .home .team-member .image img {
+  max-height: 198px;
+}
+/* line 108, ../sass/home/_teammember.scss */
+.home .team-member {
   max-width: 700px;
   position: relative;
   display: table;
   margin: 0 auto;
 }
 @media (min-width: 700px) {
-  /* line 99, ../sass/home/_teammember.scss */
-  .team-member {
+  /* line 108, ../sass/home/_teammember.scss */
+  .home .team-member {
     margin: 0 auto;
   }
 }
-/* line 108, ../sass/home/_teammember.scss */
-.team-member .image {
+/* line 117, ../sass/home/_teammember.scss */
+.home .team-member .image {
   margin: 0 auto 10px;
   width: auto;
   height: 198px;
@@ -1917,8 +1932,8 @@ input[type="submit"],
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 108, ../sass/home/_teammember.scss */
-  .team-member .image {
+  /* line 117, ../sass/home/_teammember.scss */
+  .home .team-member .image {
     margin: auto;
     padding-right: 1em;
     float: none;
@@ -1926,8 +1941,8 @@ input[type="submit"],
     vertical-align: middle;
   }
 }
-/* line 125, ../sass/home/_teammember.scss */
-.team-member .image img {
+/* line 134, ../sass/home/_teammember.scss */
+.home .team-member .image img {
   max-width: 100%;
   position: absolute;
   top: 0;
@@ -1937,92 +1952,92 @@ input[type="submit"],
   margin: auto;
 }
 @media (min-width: 480px) {
-  /* line 125, ../sass/home/_teammember.scss */
-  .team-member .image img {
+  /* line 134, ../sass/home/_teammember.scss */
+  .home .team-member .image img {
     width: auto;
   }
 }
 @media (min-width: 768px) {
-  /* line 125, ../sass/home/_teammember.scss */
-  .team-member .image img {
+  /* line 134, ../sass/home/_teammember.scss */
+  .home .team-member .image img {
     padding-right: 1em;
   }
 }
-/* line 140, ../sass/home/_teammember.scss */
-.team-member .member-text {
+/* line 149, ../sass/home/_teammember.scss */
+.home .team-member .member-text {
   text-transform: uppercase;
   float: left;
   padding-left: 1em;
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 140, ../sass/home/_teammember.scss */
-  .team-member .member-text {
+  /* line 149, ../sass/home/_teammember.scss */
+  .home .team-member .member-text {
     width: auto;
     float: none;
     vertical-align: middle;
     display: table-cell;
   }
 }
-/* line 155, ../sass/home/_teammember.scss */
-.team-member .member-text li {
+/* line 164, ../sass/home/_teammember.scss */
+.home .team-member .member-text li {
   margin-bottom: .5rem;
 }
 @media (min-width: 480px) {
-  /* line 155, ../sass/home/_teammember.scss */
-  .team-member .member-text li {
+  /* line 164, ../sass/home/_teammember.scss */
+  .home .team-member .member-text li {
     margin-bottom: .938rem;
   }
 }
-/* line 160, ../sass/home/_teammember.scss */
-.team-member .member-text .misc-text {
+/* line 169, ../sass/home/_teammember.scss */
+.home .team-member .member-text .misc-text {
   color: #989899;
   letter-spacing: .15em;
   margin-bottom: .5rem;
   font-size: .6rem;
 }
 @media (min-width: 480px) {
-  /* line 160, ../sass/home/_teammember.scss */
-  .team-member .member-text .misc-text {
+  /* line 169, ../sass/home/_teammember.scss */
+  .home .team-member .member-text .misc-text {
     font-size: .8rem;
     margin-bottom: .75rem;
   }
 }
-/* line 172, ../sass/home/_teammember.scss */
-.team-member .member-text .name {
+/* line 181, ../sass/home/_teammember.scss */
+.home .team-member .member-text .name {
   font-size: .8rem;
   letter-spacing: .15em;
   line-height: 1.2rem;
 }
 @media (min-width: 480px) {
-  /* line 172, ../sass/home/_teammember.scss */
-  .team-member .member-text .name {
+  /* line 181, ../sass/home/_teammember.scss */
+  .home .team-member .member-text .name {
     font-size: 1rem;
   }
 }
-/* line 180, ../sass/home/_teammember.scss */
-.team-member .member-text .bio {
+/* line 189, ../sass/home/_teammember.scss */
+.home .team-member .member-text .bio {
   text-transform: none;
   font-family: 'Times New Roman', serif;
   max-width: 400px;
   font-size: .938em;
   line-height: 1.5em;
 }
-/* line 186, ../sass/home/_teammember.scss */
-.team-member .member-text .permalink {
+/* line 195, ../sass/home/_teammember.scss */
+.home .team-member .member-text .permalink {
   margin-top: 1rem;
 }
-/* line 191, ../sass/home/_teammember.scss */
-.team-member .member-text .permalink a,
-.team-member .member-text .permalink label {
+/* line 200, ../sass/home/_teammember.scss */
+.home .team-member .member-text .permalink a,
+.home .team-member .member-text .permalink label {
   font-size: .750em;
   color: #333333;
   position: relative;
   margin-left: 0.875rem;
 }
-/* line 197, ../sass/home/_teammember.scss */
-.team-member .member-text .permalink a:before,
-.team-member .member-text .permalink label:before {
+/* line 206, ../sass/home/_teammember.scss */
+.home .team-member .member-text .permalink a:before,
+.home .team-member .member-text .permalink label:before {
   content: '>\0000a0';
   display: block;
   position: absolute;
@@ -2031,12 +2046,138 @@ input[type="submit"],
   font-size: 1.5em;
 }
 
-/* line 212, ../sass/home/_teammember.scss */
+/* line 221, ../sass/home/_teammember.scss */
+.ourteam .team-member {
+  max-width: 700px;
+  padding: 1em;
+  position: relative;
+  display: table;
+  margin: 0 auto;
+}
+@media (min-width: 700px) {
+  /* line 221, ../sass/home/_teammember.scss */
+  .ourteam .team-member {
+    margin: 0 auto;
+  }
+}
+/* line 233, ../sass/home/_teammember.scss */
+.ourteam .team-member .image {
+  margin: 0 auto 10px;
+  width: 30%;
+  max-width: 198px;
+  vertical-align: middle;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  /* line 233, ../sass/home/_teammember.scss */
+  .ourteam .team-member .image {
+    margin: auto;
+    display: table-cell;
+  }
+}
+/* line 245, ../sass/home/_teammember.scss */
+.ourteam .team-member .image img {
+  max-width: 100%;
+}
+@media (min-width: 480px) {
+  /* line 245, ../sass/home/_teammember.scss */
+  .ourteam .team-member .image img {
+    width: auto;
+  }
+}
+/* line 252, ../sass/home/_teammember.scss */
+.ourteam .team-member .member-text {
+  text-transform: uppercase;
+  float: left;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  /* line 252, ../sass/home/_teammember.scss */
+  .ourteam .team-member .member-text {
+    float: right;
+    width: auto;
+    margin-left: 6%;
+  }
+}
+/* line 266, ../sass/home/_teammember.scss */
+.ourteam .team-member .member-text li {
+  margin-bottom: .5rem;
+}
+@media (min-width: 480px) {
+  /* line 266, ../sass/home/_teammember.scss */
+  .ourteam .team-member .member-text li {
+    margin-bottom: .938rem;
+  }
+}
+/* line 271, ../sass/home/_teammember.scss */
+.ourteam .team-member .member-text .misc-text {
+  color: #989899;
+  letter-spacing: .15em;
+  margin-bottom: .5rem;
+  font-size: .6rem;
+}
+@media (min-width: 480px) {
+  /* line 271, ../sass/home/_teammember.scss */
+  .ourteam .team-member .member-text .misc-text {
+    font-size: .8rem;
+    margin-bottom: .75rem;
+  }
+}
+/* line 283, ../sass/home/_teammember.scss */
+.ourteam .team-member .member-text .name {
+  font-size: .8rem;
+  letter-spacing: .15em;
+  line-height: 1.2rem;
+}
+@media (min-width: 480px) {
+  /* line 283, ../sass/home/_teammember.scss */
+  .ourteam .team-member .member-text .name {
+    font-size: 1rem;
+  }
+}
+/* line 291, ../sass/home/_teammember.scss */
+.ourteam .team-member .member-text .bio {
+  text-transform: none;
+  font-family: 'Times New Roman', serif;
+  max-width: 400px;
+  font-size: .938em;
+  line-height: 1.5em;
+}
+/* line 297, ../sass/home/_teammember.scss */
+.ourteam .team-member .member-text .permalink {
+  margin-top: 1rem;
+}
+@media (min-width: 480px) {
+  /* line 297, ../sass/home/_teammember.scss */
+  .ourteam .team-member .member-text .permalink {
+    margin-top: 2rem;
+  }
+}
+/* line 302, ../sass/home/_teammember.scss */
+.ourteam .team-member .member-text .permalink a,
+.ourteam .team-member .member-text .permalink label {
+  font-size: .750em;
+  color: #333333;
+  position: relative;
+  margin-left: 0.875rem;
+}
+/* line 308, ../sass/home/_teammember.scss */
+.ourteam .team-member .member-text .permalink a:before,
+.ourteam .team-member .member-text .permalink label:before {
+  content: '>\0000a0';
+  display: block;
+  position: absolute;
+  left: -14px;
+  bottom: -1px;
+  font-size: 1.5em;
+}
+
+/* line 324, ../sass/home/_teammember.scss */
 .all-heard .team-member .member-text .permalink {
   display: none;
 }
 
-/* line 220, ../sass/home/_teammember.scss */
+/* line 332, ../sass/home/_teammember.scss */
 .arrow {
   width: 30px;
   height: 30px;
@@ -2045,7 +2186,7 @@ input[type="submit"],
   top: 50%;
 }
 
-/* line 226, ../sass/home/_teammember.scss */
+/* line 338, ../sass/home/_teammember.scss */
 .grey-arrow-left {
   left: .5em;
   background-image: url(../img/build/sprites/grey-left.png);
@@ -2057,7 +2198,7 @@ input[type="submit"],
   transform: rotate(0deg);
 }
 
-/* line 233, ../sass/home/_teammember.scss */
+/* line 345, ../sass/home/_teammember.scss */
 .grey-arrow-right {
   right: .5em;
   background-image: url(../img/build/sprites/grey-right.png);
@@ -2065,9 +2206,9 @@ input[type="submit"],
 }
 
 @media (min-width: 480px) {
-  /* line 239, ../sass/home/_teammember.scss */
+  /* line 351, ../sass/home/_teammember.scss */
   .member-text {
-    margin-top: 1em;
+    margin-top: 2em;
   }
 }
 /* Background */
@@ -2230,18 +2371,41 @@ html, body {
   position: relative;
 }
 
-/* line 15, ../sass/ourteam/_ourteam-base.scss */
+/* line 13, ../sass/ourteam/_ourteam-base.scss */
+#graph {
+  position: relative;
+}
+@media (min-width: 600px) {
+  /* line 13, ../sass/ourteam/_ourteam-base.scss */
+  #graph {
+    padding-right: 70px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 13, ../sass/ourteam/_ourteam-base.scss */
+  #graph {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  /* line 24, ../sass/ourteam/_ourteam-base.scss */
+  .js-single-member #graph {
+    padding-right: 70px;
+  }
+}
+/* line 31, ../sass/ourteam/_ourteam-base.scss */
 .sidebar-link {
   cursor: pointer;
 }
 
-/* line 20, ../sass/ourteam/_ourteam-base.scss */
+/* line 36, ../sass/ourteam/_ourteam-base.scss */
 #member-bio .ourteam .all-members {
   text-decoration: none;
   letter-spacing: .07em;
 }
 
-/* line 26, ../sass/ourteam/_ourteam-base.scss */
+/* line 42, ../sass/ourteam/_ourteam-base.scss */
 .ourteam-norm {
   background: #ffffff;
   color: #333333;
@@ -2252,7 +2416,7 @@ html, body {
   transition: all 750ms;
 }
 
-/* line 54, ../sass/ourteam/_ourteam-base.scss */
+/* line 70, ../sass/ourteam/_ourteam-base.scss */
 .name,
 .bio > p {
   -webkit-transition: all 400ms;
@@ -2262,38 +2426,38 @@ html, body {
   transition: all 400ms;
 }
 
-/* line 58, ../sass/ourteam/_ourteam-base.scss */
+/* line 74, ../sass/ourteam/_ourteam-base.scss */
 .ourteam {
   padding-top: 93px;
   overflow-x: hidden;
 }
 @media (min-width: 800px) {
-  /* line 58, ../sass/ourteam/_ourteam-base.scss */
+  /* line 74, ../sass/ourteam/_ourteam-base.scss */
   .ourteam {
     padding-top: 48px;
   }
 }
 
-/* line 66, ../sass/ourteam/_ourteam-base.scss */
+/* line 82, ../sass/ourteam/_ourteam-base.scss */
 .ourteam .footer {
   margin-top: 160%;
 }
 @media (min-width: 1044px) {
-  /* line 66, ../sass/ourteam/_ourteam-base.scss */
+  /* line 82, ../sass/ourteam/_ourteam-base.scss */
   .ourteam .footer {
     margin-top: 1600px;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 74, ../sass/ourteam/_ourteam-base.scss */
+  /* line 90, ../sass/ourteam/_ourteam-base.scss */
   .ourteam #member-bio .member-text {
     width: 74%;
     float: none;
     margin-left: 13%;
   }
 }
-/* line 85, ../sass/ourteam/_ourteam-base.scss */
+/* line 101, ../sass/ourteam/_ourteam-base.scss */
 .ourteam .clue-left-default .cluetip-arrows.ui-state-default,
 .ourteam .clue-right-default .cluetip-arrows.ui-state-default {
   z-index: 98;
@@ -2301,59 +2465,59 @@ html, body {
   top: 50% !important;
   margin-top: -12px;
 }
-/* line 93, ../sass/ourteam/_ourteam-base.scss */
+/* line 109, ../sass/ourteam/_ourteam-base.scss */
 .ourteam div.clue-right-default .cluetip-arrows {
   background-image: url(vendor/cluetip/images/darrowleft.png);
   opacity: 0.95;
 }
-/* line 98, ../sass/ourteam/_ourteam-base.scss */
+/* line 114, ../sass/ourteam/_ourteam-base.scss */
 .ourteam div.clue-left-default .cluetip-arrows {
   background-image: url(vendor/cluetip/images/darrowright.png);
   opacity: 0.95;
 }
-/* line 103, ../sass/ourteam/_ourteam-base.scss */
+/* line 119, ../sass/ourteam/_ourteam-base.scss */
 .ourteam div.clue-bottom-default .cluetip-arrows {
   background-image: url(vendor/cluetip/images/darrowup.png);
   opacity: 0.95;
 }
-/* line 108, ../sass/ourteam/_ourteam-base.scss */
+/* line 124, ../sass/ourteam/_ourteam-base.scss */
 .ourteam div.clue-top-default .cluetip-arrows {
   background-image: url(vendor/cluetip/images/darrowdown.png);
   opacity: 0.95;
 }
 
-/* line 118, ../sass/ourteam/_ourteam-base.scss */
+/* line 134, ../sass/ourteam/_ourteam-base.scss */
 .ourteam input[type="radio"] {
   position: absolute;
   opacity: 0;
 }
-/* line 124, ../sass/ourteam/_ourteam-base.scss */
+/* line 140, ../sass/ourteam/_ourteam-base.scss */
 .ourteam #member-bio {
   z-index: 1;
 }
-/* line 127, ../sass/ourteam/_ourteam-base.scss */
+/* line 143, ../sass/ourteam/_ourteam-base.scss */
 .ourteam #member-bio .team-member {
   width: 100%;
   max-width: 1024px;
 }
-/* line 132, ../sass/ourteam/_ourteam-base.scss */
+/* line 148, ../sass/ourteam/_ourteam-base.scss */
 .ourteam #member-bio .member-text {
   margin-left: 3%;
 }
 @media (min-width: 768px) {
-  /* line 136, ../sass/ourteam/_ourteam-base.scss */
+  /* line 152, ../sass/ourteam/_ourteam-base.scss */
   .ourteam #member-bio .member-text {
     width: 74%;
     float: none;
     margin-left: 13%;
   }
-  /* line 142, ../sass/ourteam/_ourteam-base.scss */
+  /* line 158, ../sass/ourteam/_ourteam-base.scss */
   .ourteam #member-bio .bio {
     max-width: none;
     font-size: 1em;
     line-height: 1.6em;
   }
-  /* line 148, ../sass/ourteam/_ourteam-base.scss */
+  /* line 164, ../sass/ourteam/_ourteam-base.scss */
   .ourteam #member-bio .name {
     font-size: 1.4rem;
   }

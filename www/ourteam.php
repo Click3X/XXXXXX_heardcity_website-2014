@@ -60,7 +60,7 @@ if(!isset($_POST['selected_member'])) {
         </div>
         
 
-        <div id="graph">
+        <div id="graph" class="clearfix">
             <div id="item-list-holder" class="team-member-items"></div>
         </div>
 
