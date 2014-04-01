@@ -8,13 +8,15 @@ requirejs.config({
     "paths": {
       "app": "../app",
       "modern":"../lib/modernizr",
-      "flexnav":"jquery.flexnav.min"
+      "flexnav":"jquery.flexnav.min",
+      "unveil":"jquery.unveil.min"
     },
     "shim": {
       "flexnav":["jquery"],
         "util/config": ["jquery"],
         "util/grid": ["jquery", "modern"],
-        "util/feat-button": ["jquery"]
+        "util/feat-button": ["jquery"],
+        "unveil":["jquery"]
     }
 });
 

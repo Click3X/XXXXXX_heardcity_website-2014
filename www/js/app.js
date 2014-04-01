@@ -8,13 +8,15 @@ requirejs.config({
     "paths": {
       "app": "../app",
       "royalslider": "jquery.royalslider.min",
-      "flexnav":"jquery.flexnav.min"
+      "flexnav":"jquery.flexnav.min",
+      "unveil":"jquery.unveil.min"
     },
     "shim": {
+      "util/config": ["jquery"],
+      "unveil":['jquery'],
     	"flexnav":["jquery"],
       "jquery.easing-1.3":["jquery"],
-    	"royalslider": ["jquery", "jquery.easing-1.3"],
-		  "util/config": ["jquery"]
+    	"royalslider": ["jquery", "jquery.easing-1.3"]
     }
 });
 

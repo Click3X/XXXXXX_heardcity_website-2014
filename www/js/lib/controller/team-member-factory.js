@@ -57,15 +57,17 @@ define(["jquery",
                 });
 
                 // ON THE FLY DEBUGGING
-                var cleanItemName = nameShoes(item.name);
-                var reallyCleanItemName = validateString(cleanItemName);
+                var cleanItemName = nameShoes(item.name),
+                reallyCleanItemName = validateString(cleanItemName),
+                blankGif = 'images/sprites/blank.gif';
 
                 // check for Coords, else link shape is regular
                 if(coords) {
                     img = $('<img/>', {
-                        src:image,
+                        src:blankGif,
                         alt:item.name,
-                        usemap:'#'+usemap
+                        usemap:'#'+usemap,
+                        "data-src":image
                     }),
                     map = $('<map/>', {
                         id:usemap,
@@ -91,8 +93,9 @@ define(["jquery",
 
                 } else {
                     img = $('<img/>', {
-                        src:image,
-                        alt:item.name
+                        src:blankGif,
+                        alt:item.name,
+                        "data-src":image
                     }),
                     a = $('<a/>', {
                         href:"#",

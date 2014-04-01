@@ -4,9 +4,10 @@ define(["jquery",
         "flexnav",
         "controller/team-member-factory",
         "controller/sub-menu",
+        "unveil",
         "clue-tip",
         "util/clue-hover",
-        "hover"], function($, config, flexnav, teamMemberFactory, subMenu, clueTip, clueHover, hover) {
+        "hover"], function($, config, flexnav, teamMemberFactory, subMenu, unveil, clueTip, clueHover, hover) {
     $(function() {
         $('#page-ourteam').addClass('current');
         // $('#out').click(function() { $('*').toggleClass('outline'); });
@@ -52,6 +53,10 @@ define(["jquery",
 
         
         window.onload = (function(){
+           // SWITCH IMG SRC FOR LAZY LOADING
+            $(function(){
+                $("img").unveil();
+            });
 
             // CHECK TO SEE IF SELECTED MEMBER HAS BEEN SENT FROM HOME.PHP
             if(selectedMember) {
@@ -164,6 +169,7 @@ define(["jquery",
                 
                 // OPEN / SHUT side bar NAV
                  $('#member-header').addClass('side-bar-closed');
+                 $clickClose.addClass('hidden');
                 
             });
 
