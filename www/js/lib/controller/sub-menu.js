@@ -1,4 +1,4 @@
-// SIDE BAR CONTROLLER
+// SUB MENU
 define(["jquery", 
         "util/config",
         "controller/team-member-factory"], function($, config, teamMemberFactory) {

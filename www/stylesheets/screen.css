@@ -178,10 +178,15 @@ body {
 
 /* line 51, ../sass/base/_base.scss */
 a {
+  text-decoration: none !important;
+}
+
+/* line 52, ../sass/base/_base.scss */
+a {
   color: inherit;
 }
 
-/* line 54, ../sass/base/_base.scss */
+/* line 55, ../sass/base/_base.scss */
 .hidden {
   display: none;
   -webkit-transition: all 1000ms;
@@ -191,7 +196,7 @@ a {
   transition: all 1000ms;
 }
 
-/* line 60, ../sass/base/_base.scss */
+/* line 61, ../sass/base/_base.scss */
 .ab-hidden {
   visibility: hidden;
   -webkit-transition: all 1000ms;
@@ -201,7 +206,7 @@ a {
   transition: all 1000ms;
 }
 
-/* line 66, ../sass/base/_base.scss */
+/* line 67, ../sass/base/_base.scss */
 .noise {
   background-image: url("../images/sprites/noise.png");
   background-repeat: repeat;
@@ -213,24 +218,24 @@ a {
   left: 0;
 }
 
-/* line 78, ../sass/base/_base.scss */
+/* line 79, ../sass/base/_base.scss */
 .clearfix:before, .container:after {
   content: "";
   display: table;
 }
 
-/* line 79, ../sass/base/_base.scss */
+/* line 80, ../sass/base/_base.scss */
 .clearfix:after {
   clear: both;
 }
 
 /* IE 6/7 */
-/* line 81, ../sass/base/_base.scss */
+/* line 82, ../sass/base/_base.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 85, ../sass/base/_base.scss */
+/* line 86, ../sass/base/_base.scss */
 .transparent {
   filter: alpha(opacity=50);
   /* internet explorer */
@@ -242,7 +247,7 @@ a {
   /* fx, safari, opera */
 }
 
-/* line 96, ../sass/base/_base.scss */
+/* line 97, ../sass/base/_base.scss */
 .ourteam #site-header,
 .contact #site-header,
 .projects #site-header {
@@ -251,12 +256,12 @@ a {
   left: 0;
 }
 
-/* line 103, ../sass/base/_base.scss */
+/* line 104, ../sass/base/_base.scss */
 #site-header .flexnav .current a {
   color: #333333;
 }
 
-/* line 108, ../sass/base/_base.scss */
+/* line 109, ../sass/base/_base.scss */
 .cl-effect-21:not(#phone-map) a {
   padding: 10px;
   color: #989899;
@@ -268,7 +273,7 @@ a {
   transition: color 0.3s;
 }
 
-/* line 121, ../sass/base/_base.scss */
+/* line 122, ../sass/base/_base.scss */
 .current a::before,
 .current a::after,
 .cl-effect-21:not(#phone-map) a::before,
@@ -294,7 +299,7 @@ a {
   transform: translateY(-6px);
 }
 
-/* line 135, ../sass/base/_base.scss */
+/* line 136, ../sass/base/_base.scss */
 .current a:before,
 .cl-effect-21:not(#phone-map) a::before {
   top: 6px;
@@ -305,7 +310,7 @@ a {
   transform: translateY(-6px);
 }
 
-/* line 142, ../sass/base/_base.scss */
+/* line 143, ../sass/base/_base.scss */
 .current a:after,
 .cl-effect-21:not(#phone-map) a::after {
   bottom: 6px;
@@ -316,13 +321,13 @@ a {
   transform: translateY(6px);
 }
 
-/* line 149, ../sass/base/_base.scss */
+/* line 150, ../sass/base/_base.scss */
 .cl-effect-21:not(#phone-map) a:hover,
 .cl-effect-21:not(#phone-map) a:focus {
   color: #000;
 }
 
-/* line 159, ../sass/base/_base.scss */
+/* line 160, ../sass/base/_base.scss */
 .current a:before,
 .current a:after,
 .cl-effect-21:not(#phone-map) a:hover::before,
@@ -1091,130 +1096,130 @@ a {
   background-image: url("../images/girl-large/girl-large-480.jpg");
 }
 
-@media (min-width: 480px) {
-  /* line 51, ../sass/home/_marquee.scss */
+@media (min-width: 600px) {
+  /* line 52, ../sass/home/_marquee.scss */
   #sun-light {
     background-image: url("../images/marquee/sun-light/sun-light-960.jpg");
   }
 
-  /* line 52, ../sass/home/_marquee.scss */
+  /* line 53, ../sass/home/_marquee.scss */
   #sun-rays {
     background-image: url("../images/marquee/sun-rays/sun-rays-960.jpg");
   }
 
-  /* line 53, ../sass/home/_marquee.scss */
+  /* line 54, ../sass/home/_marquee.scss */
   #sun-chairs {
     background-image: url("../images/marquee/sun-chairs/sun-chairs-960.jpg");
   }
 
-  /* line 54, ../sass/home/_marquee.scss */
+  /* line 55, ../sass/home/_marquee.scss */
   #dog-windows {
     background-image: url("../images/dog/dog-960.jpg");
   }
 
-  /* line 55, ../sass/home/_marquee.scss */
+  /* line 56, ../sass/home/_marquee.scss */
   #dude-on-phone {
     background-image: url("../images/man-phone/man-phone-960.jpg");
   }
 
-  /* line 56, ../sass/home/_marquee.scss */
+  /* line 57, ../sass/home/_marquee.scss */
   #jean-jacket {
     background-image: url("../images/jean-jacket/jean-jacket-480.jpg");
   }
 
-  /* line 57, ../sass/home/_marquee.scss */
+  /* line 58, ../sass/home/_marquee.scss */
   #guitar-nord {
     background-image: url("../images/guitar-nord/guitar-nord-480.jpg");
   }
 
-  /* line 58, ../sass/home/_marquee.scss */
+  /* line 59, ../sass/home/_marquee.scss */
   #stairs {
     background-image: url("../images/stairs/stairs-480.jpg");
   }
 
-  /* line 59, ../sass/home/_marquee.scss */
+  /* line 60, ../sass/home/_marquee.scss */
   #girl-large {
     background-image: url("../images/girl-large/girl-large-480.jpg");
   }
 }
-@media (min-width: 960px) {
-  /* line 63, ../sass/home/_marquee.scss */
+@media (min-width: 1040px) {
+  /* line 65, ../sass/home/_marquee.scss */
   #sun-light {
     background-image: url("../images/marquee/sun-light/sun-light-1440.jpg");
   }
 
-  /* line 64, ../sass/home/_marquee.scss */
+  /* line 66, ../sass/home/_marquee.scss */
   #sun-rays {
     background-image: url("../images/marquee/sun-rays/sun-rays-1440.jpg");
   }
 
-  /* line 65, ../sass/home/_marquee.scss */
+  /* line 67, ../sass/home/_marquee.scss */
   #sun-chairs {
     background-image: url("../images/marquee/sun-chairs/sun-chairs-1440.jpg");
   }
 
-  /* line 66, ../sass/home/_marquee.scss */
+  /* line 68, ../sass/home/_marquee.scss */
   #dog-windows {
     background-image: url("../images/dog/dog-1440.jpg");
   }
 
-  /* line 67, ../sass/home/_marquee.scss */
+  /* line 69, ../sass/home/_marquee.scss */
   #dude-on-phone {
     background-image: url("../images/man-phone/man-phone-1440.jpg");
   }
 
-  /* line 68, ../sass/home/_marquee.scss */
+  /* line 70, ../sass/home/_marquee.scss */
   #jean-jacket {
     background-image: url("../images/jean-jacket/jean-jacket-768.jpg");
   }
 
-  /* line 69, ../sass/home/_marquee.scss */
+  /* line 71, ../sass/home/_marquee.scss */
   #guitar-nord {
     background-image: url("../images/guitar-nord/guitar-nord-768.jpg");
   }
 
-  /* line 70, ../sass/home/_marquee.scss */
+  /* line 72, ../sass/home/_marquee.scss */
   #stairs {
     background-image: url("../images/stairs/stairs-960.jpg");
   }
 
-  /* line 71, ../sass/home/_marquee.scss */
+  /* line 73, ../sass/home/_marquee.scss */
   #girl-large {
     background-image: url("../images/girl-large/girl-large-960.jpg");
   }
 }
 @media (min-width: 1440px) {
-  /* line 74, ../sass/home/_marquee.scss */
+  /* line 77, ../sass/home/_marquee.scss */
   #sun-light {
     background-image: url("../images/marquee/sun-light/sun-light-1920.jpg");
   }
 
-  /* line 75, ../sass/home/_marquee.scss */
+  /* line 78, ../sass/home/_marquee.scss */
   #sun-rays {
     background-image: url("../images/marquee/sun-rays/sun-rays-1920.jpg");
   }
 
-  /* line 76, ../sass/home/_marquee.scss */
+  /* line 79, ../sass/home/_marquee.scss */
   #sun-chairs {
     background-image: url("../images/marquee/sun-chairs/sun-chairs-1920.jpg");
   }
 
-  /* line 77, ../sass/home/_marquee.scss */
+  /* line 80, ../sass/home/_marquee.scss */
   #dog-windows {
     background-image: url("../images/dog/dog-1920.jpg");
   }
 
-  /* line 78, ../sass/home/_marquee.scss */
+  /* line 81, ../sass/home/_marquee.scss */
   #dude-on-phone {
     background-image: url("../images/man-phone/man-phone-1920.jpg");
   }
 
-  /* line 79, ../sass/home/_marquee.scss */
+  /* line 82, ../sass/home/_marquee.scss */
   #stairs {
     background-image: url("../images/stairs/stairs-1440.jpg");
   }
 
-  /* line 80, ../sass/home/_marquee.scss */
+  /* line 83, ../sass/home/_marquee.scss */
   #girl-large {
     background-image: url("../images/girl-large/girl-large-1440.jpg");
   }

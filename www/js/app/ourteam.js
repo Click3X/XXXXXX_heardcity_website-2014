@@ -4,9 +4,10 @@ define(["jquery",
 		"util/config", 
         "flexnav",
         "controller/team-member-factory",
+        "controller/sub-menu",
         "clue-tip",
         "util/clue-hover",
-        "hover"], function($, config, flexnav, teamMemberFactory, clueTip, clueHover, hover) {
+        "hover"], function($, config, flexnav, teamMemberFactory, subMenu, clueTip, clueHover, hover) {
     $(function() {
         // HELPER
         $('#page-ourteam').addClass('current');
@@ -180,10 +181,8 @@ define(["jquery",
 
             // ON CLUE TIP LINK CLICK - SHOW MEMBER SOLO
             $('.cluetip-div').click(function(event) {
-                // console.log('Clue Tip clicked!');
                 event.preventDefault();
                 $(document).trigger('hideCluetip');
-
                 var hreftarget = $(this).data('person'),
                 target = '.item-holder.' + hreftarget,
                 siblings = $('.item-holder').not(target);
@@ -195,14 +194,11 @@ define(["jquery",
                 // SHOW member BIO
                 $('#member-bio .permalink > a').show();
                 showMemberBio(hreftarget);
-
                 $("html, body").scrollTop(0);
                 $(target).removeClass('item-hidden');
                 $body.addClass('js-single-member');
-                
                 // OPEN / SHUT side bar NAV
                  $('#member-header').addClass('side-bar-closed');
-                 // $clickClose.addClass('hidden');
             });
 
 

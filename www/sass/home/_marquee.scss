@@ -47,7 +47,8 @@
 #stairs { background-image:url("../images/stairs/stairs-480.jpg");}
 #girl-large { background-image:url("../images/girl-large/girl-large-480.jpg");}
 
-@media(min-width:480px) { 
+// @media(min-width:480px) { 
+@media(min-width:600px) { 
 	#sun-light { background-image:url("../images/marquee/sun-light/sun-light-960.jpg");}
 	#sun-rays { background-image:url("../images/marquee/sun-rays/sun-rays-960.jpg");}
 	#sun-chairs { background-image:url("../images/marquee/sun-chairs/sun-chairs-960.jpg");}
@@ -59,7 +60,8 @@
 	#girl-large { background-image:url("../images/girl-large/girl-large-480.jpg");}
 }
 
-@media(min-width:960px) { 
+// @media(min-width:960px) { 
+@media(min-width:1040px) { 
 	#sun-light { background-image:url("../images/marquee/sun-light/sun-light-1440.jpg");}
 	#sun-rays { background-image:url("../images/marquee/sun-rays/sun-rays-1440.jpg");}
 	#sun-chairs { background-image:url("../images/marquee/sun-chairs/sun-chairs-1440.jpg");}
@@ -70,6 +72,7 @@
 	#stairs { background-image:url("../images/stairs/stairs-960.jpg");}
 	#girl-large { background-image:url("../images/girl-large/girl-large-960.jpg");}
 }
+
 @media(min-width:1440px) { 
 	#sun-light { background-image:url("../images/marquee/sun-light/sun-light-1920.jpg");}
 	#sun-rays { background-image:url("../images/marquee/sun-rays/sun-rays-1920.jpg");}
