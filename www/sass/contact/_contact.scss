@@ -38,9 +38,19 @@
 		background-color:black;
 		padding-bottom: 63.1%;
 		min-height: 300px;
-		@media(min-width: 1024px) {
+
+		@media(min-width: 600px) {
+			// padding-bottom:320px;
+			padding-bottom:377px;
+		}
+
+		@media(min-width: 980px) and (min-height: 800px) {
 			padding-bottom:641.516px;
 		}
+		
+		// @media(min-width: 1024px) {
+		// 	padding-bottom:641.516px;
+		// }
 	}
 	.city {
 		background-image:url('../images/contact/city.jpg');

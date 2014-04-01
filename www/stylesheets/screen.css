@@ -4713,24 +4713,30 @@ textarea:focus, input:focus {
   padding-bottom: 63.1%;
   min-height: 300px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 600px) {
+  /* line 36, ../sass/contact/_contact.scss */
+  .contact-container .map {
+    padding-bottom: 377px;
+  }
+}
+@media (min-width: 980px) and (min-height: 800px) {
   /* line 36, ../sass/contact/_contact.scss */
   .contact-container .map {
     padding-bottom: 641.516px;
   }
 }
-/* line 45, ../sass/contact/_contact.scss */
+/* line 55, ../sass/contact/_contact.scss */
 .contact-container .city {
   background-image: url("../images/contact/city.jpg");
   padding-bottom: 75.5%;
 }
 @media (min-width: 980px) {
-  /* line 45, ../sass/contact/_contact.scss */
+  /* line 55, ../sass/contact/_contact.scss */
   .contact-container .city {
     padding-bottom: 670px;
   }
 }
-/* line 54, ../sass/contact/_contact.scss */
+/* line 64, ../sass/contact/_contact.scss */
 .contact-container .address {
   font-size: .938em;
   display: inline-block;
@@ -4739,30 +4745,30 @@ textarea:focus, input:focus {
   padding: 0 1.5em;
   font-size: 500;
 }
-/* line 62, ../sass/contact/_contact.scss */
+/* line 72, ../sass/contact/_contact.scss */
 .contact-container .address a {
   color: #c84938;
   text-decoration: none;
 }
-/* line 67, ../sass/contact/_contact.scss */
+/* line 77, ../sass/contact/_contact.scss */
 .contact-container .address li {
   font-weight: 500;
 }
-/* line 69, ../sass/contact/_contact.scss */
+/* line 79, ../sass/contact/_contact.scss */
 .contact-container .address .city-li, .contact-container .address .email {
   margin-bottom: 1em;
 }
-/* line 72, ../sass/contact/_contact.scss */
+/* line 82, ../sass/contact/_contact.scss */
 .contact-container .address .email,
 .contact-container .address .phone {
   color: #c84938;
 }
-/* line 74, ../sass/contact/_contact.scss */
+/* line 84, ../sass/contact/_contact.scss */
 .contact-container .address .email a,
 .contact-container .address .phone a {
   text-decoration: none;
 }
-/* line 79, ../sass/contact/_contact.scss */
+/* line 89, ../sass/contact/_contact.scss */
 .contact-container .address .g-map-link {
   text-decoration: none;
   color: inherit;
@@ -4772,12 +4778,12 @@ textarea:focus, input:focus {
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 85, ../sass/contact/_contact.scss */
+/* line 95, ../sass/contact/_contact.scss */
 .contact-container .address .g-map-link:hover {
   color: #c84938;
   text-decoration: none;
 }
-/* line 90, ../sass/contact/_contact.scss */
+/* line 100, ../sass/contact/_contact.scss */
 .contact-container .address .addy {
   color: #c84938;
   text-decoration: none;
