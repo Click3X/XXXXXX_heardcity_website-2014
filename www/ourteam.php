@@ -27,17 +27,13 @@ if(!isset($_POST['selected_member'])) {
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->  
 
-          <?php  // If the Team Member Form has been submitted, echo the variable between script tags for JS
+            <?php  // If the Team Member Form has been submitted, echo the variable between script tags for JS
+           
             if(isset($_POST['selected_member']) && ($_POST['selected_member'] != '')) { 
-                $selected_member = $_POST['selected_member']; 
-                echo "<script>var selectedMember = '$selected_member';</script>";
-            } else {
-                  echo "<script>var selectedMember = '';</script>";
-            } 
-        ?>
-
-
-        <style type="text/css"> .outline { outline: 1px solid rgba(255, 0, 0, 0.2);} </style>
+                    $selected_member = $_POST['selected_member']; 
+                    echo "<script>var selectedMember = '$selected_member';</script>"; } 
+                else { echo "<script>var selectedMember = '';</script>"; } 
+            ?>
 
         <script data-main="js/ourteam" src="js/lib/require.js"></script>
     
@@ -47,10 +43,10 @@ if(!isset($_POST['selected_member'])) {
 
         <?php include('php/main-nav.php'); ?>
     	 
-<!--     <div id="black-logo" class="logo"></div>	 -->
-    	<div id="loader">
+<!--    <div id="black-logo" class="logo"></div>	 -->
+<!--     	<div id="loader">
             <div id="spinner" class="loading"></div>
-        </div>
+        </div> -->
 
         <div id="member-bio" class="container clearfix">
             <div class="team-member clearfix">

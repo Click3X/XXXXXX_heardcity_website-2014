@@ -7,7 +7,7 @@ requirejs.config({
     "baseUrl": "js/lib",
     "paths": {
       "app": "../app",
-      "domReady": "domReady",
+      // "domReady": "domReady",
       "royalslider": "jquery.royalslider.min",
       "flexnav":"jquery.flexnav.min"
     },
@@ -16,11 +16,7 @@ requirejs.config({
       "jquery.easing-1.3":["jquery"],
     	"royalslider": ["jquery", "jquery.easing-1.3"],
         "util/jquery.slider": ["jquery", "royalslider"],
-        "util/jquery.menu": ["jquery", "flexnav", "util/config"],
-        // "util/preloader": ["jquery", "util/config", "util/dom-variables"],
-		    // "util/functions": ["jquery"],
 		    "util/config": ["jquery"],
-        "util/dom-variables": ["jquery"],
         "controller/parallax": ["jquery", "controller/request-anim"]
     }
 });

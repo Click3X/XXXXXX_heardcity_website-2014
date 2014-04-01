@@ -10,9 +10,9 @@ define(["jquery",
 
         window.onload = (function(){
             // REMOVE BG-WHITE on Page load
-            $body.removeClass('white-bg');
-            $loader.hide();
-            $blackLogo.hide();
+            // $body.removeClass('white-bg');
+            // $loader.hide();
+            // $blackLogo.hide();
 
             $mainMenu.flexNav({
                 'hoverIntent': false,

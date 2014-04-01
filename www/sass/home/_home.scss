@@ -1,0 +1,107 @@
+/* Background */
+.rsDefault,
+.rsDefault .rsOverflow,
+.rsDefault .rsSlide,
+.rsDefault .rsVideoFrameHolder,
+.rsDefault .rsThumbs {
+	/*background: #151515;*/
+	background: transparent;
+	color: #FFF;
+}
+
+
+/***************
+*
+*  1. Arrows
+*
+****************/
+
+.rsDefault .rsArrow {
+	height: 100%;
+	width: 44px;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 21;
+}
+.rsDefault.rsVer .rsArrow {
+	width: 100%;
+	height: 44px;
+	
+}
+.rsDefault.rsVer .rsArrowLeft { top: 0; left: 0; }
+.rsDefault.rsVer .rsArrowRight { bottom: 0;  left: 0; }
+
+.rsDefault.rsHor .rsArrowLeft { left: 0; top: 0; }
+.rsDefault.rsHor .rsArrowRight { right: 0; top:0; }
+
+.rsDefault .rsArrowIcn {		
+	width: 32px;
+	height: 32px;
+	top: 50%;
+	left: 50%;
+	margin-top:-16px;	
+	margin-left: -16px;
+
+	position: absolute;	
+	cursor: pointer;	
+	background: url('vendor/royal/rs-default.png');
+
+	background-color: #000;
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #000;
+	
+	border-radius: 2px;
+}
+
+
+
+.rsDefault .rsArrowIcn:hover {
+	background-color: rgba(0,0,0,0.9);
+}
+
+.rsDefault.rsHor .rsArrowLeft .rsArrowIcn { background-position: -64px -32px; }
+.rsDefault.rsHor .rsArrowRight .rsArrowIcn { background-position: -64px -64px; }
+
+.rsDefault.rsVer .rsArrowLeft .rsArrowIcn { background-position: -96px -32px; }
+.rsDefault.rsVer .rsArrowRight .rsArrowIcn { background-position: -96px -64px; }
+
+.rsDefault .rsArrowDisabled .rsArrowIcn { opacity: .2; filter: alpha(opacity=20);  *display: none; }
+
+
+/******************* CHARLES STYLES */
+.rsDefault .rsArrowIcn { display: none;}
+@media(min-width: 768px) {
+	.rsDefault .rsArrowIcn { display: block;}	
+}
+
+
+#featured-slider.rsDefault .rsArrowIcn { top: 25%; }
+
+@media(min-width:980px) {
+	#featured-slider.rsDefault .rsArrowIcn {top: 220px; }
+}
+
+
+#marquee-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
+#marquee-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div {
+	background-color: rgba(0,0,0,0.35);
+	border-radius:0;
+}
+
+#grey-text-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
+#grey-text-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div,
+#team-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
+#team-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div {
+	background-color: rgb(192, 192, 192);
+	border-radius:0;
+}
+
+
+
+
+
+
+
+
+

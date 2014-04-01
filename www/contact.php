@@ -83,14 +83,14 @@ include('php/project-grid.php');
         </script>
     </head>
 
-    <body class="white-bg">
+    <body class="contact">
         <?php include('php/main-nav.php'); ?>
     	
-    	<div id="black-logo" class="logo"></div>	
+<!--    <div id="black-logo" class="logo"></div>	
     	
     	<div id="loader">
             <div id="spinner" class="loading"></div>
-        </div>
+        </div> -->
 
         <div class="container clearfix contact-container">
 

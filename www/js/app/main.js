@@ -54,7 +54,6 @@ define(["jquery",
                 selectedInput = selectedInput[0];
                 // Check the input associated with Project
                 $(selectedInput).prop('checked', true);
-                // Submit to our team
                 $('#projectForm').submit();
             });
 
@@ -68,14 +67,9 @@ define(["jquery",
                 selectedInput = selectedInput[0];
                 // Check the input associated with team member
                 $(selectedInput).prop('checked', true);
-                // Submit to our team
                 $('#myForm').submit();
             });
 
-
-
-            // REMOVE BG-WHITE on Page load
-            $body.removeClass('white-bg');
 
             // INITIALIZE MENU
             $mainMenu.flexNav({
@@ -171,6 +165,7 @@ define(["jquery",
             });
 
 
+            // PARALLAX SCROLL FUNCTION
             if(device == 'desk') {
                 // ON SCROLL
                 w.scroll(function(){
@@ -182,17 +177,6 @@ define(["jquery",
                     // HOME SLIDE LOGO PARALLAX
                     if(offsetY >= -52) {
                         homePara = requestAnimFrame(homeParallax);
-                    }
-
-                    // NORD PARALLAX & JEAN JACKET PARALAXX
-                    if((offsetY > -1282) && (offsetY < 744) ) {
-                   //     halfPara = requestAnimFrame(halfParallax);
-                    //  gNordPara = requestAnimFrame(gNordParallax);
-                    }
-
-                    // // DUDE PARALLAX
-                    if((offsetY > -2184) && (offsetY < -624) ) {
-                       // dudePara = dudeParallax();
                     }
                 });
             }

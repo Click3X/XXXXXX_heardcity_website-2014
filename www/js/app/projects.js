@@ -6,15 +6,15 @@ define(["jquery",
     
     $(function() {
         var $body = $('body'),
-            $mainMenu = $("#page-fixed"),
-            $blackLogo = $('#black-logo');
-            $loader = $('#loader');
+            $mainMenu = $("#page-fixed");
+            // $blackLogo = $('#black-logo');
+            // $loader = $('#loader');
 
         window.onload = (function(){
             // REMOVE BG-WHITE on Page load
-            $body.removeClass('white-bg');
-            $loader.hide();
-            $blackLogo.hide();
+            // $body.removeClass('white-bg');
+            // $loader.hide();
+            // $blackLogo.hide();
             // console.log('Window is loaded Bitch!');
 
             // INITIALIZE MENU

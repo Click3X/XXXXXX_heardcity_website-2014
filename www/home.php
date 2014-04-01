@@ -11,6 +11,9 @@ include('php/project-grid.php');
 
         <title>Heard City | Home</title>
 
+        <link href="stylesheets/vendor/royal/royalslider.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <!--     <link href="stylesheets/vendor/royal/rs-default.css" media="screen, projection" rel="stylesheet" type="text/css"> -->
+        
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
@@ -26,11 +29,11 @@ include('php/project-grid.php');
         <div class="body-inner clearfix">
              <!-- PRELOADER -->
         	
-                <div id="black-logo" class="logo"></div>	
+            <div id="black-logo" class="logo"></div>	
         	
-            <div id="loader">
+   <!--          <div id="loader">
                 <div id="spinner" class="loading"></div>
-            </div>
+            </div> -->
 
             <!-- MARQUEE -->
             <div id="home-slider-holder" class="container clearfix">
