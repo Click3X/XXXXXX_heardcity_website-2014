@@ -1,10 +1,10 @@
 define(["jquery", 
         "util/config", 
         "util/jquery.slider", 
-        "util/jquery.menu",
+        "flexnav",
         "controller/parallax",
-        "controller/request-anim",
-        "royalslider"], function($, config, slider, menu, parallax, requestAnim, royalslider) {
+        // "controller/request-anim",
+        "royalslider"], function($, config, slider, flexnav, parallax, royalslider) {
     
     $(function() {
         var $body = $('body'),

@@ -1,8 +1,8 @@
 define(["jquery", 
         "util/config", 
-        "util/jquery.menu",
+        "flexnav",
         "util/grid",
-        "util/feat-button"], function($, config, menu, grid ,featButton) {
+        "util/feat-button"], function($, config, flexnav, grid ,featButton) {
     
     $(function() {
         var $body = $('body'),

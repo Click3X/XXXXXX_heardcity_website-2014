@@ -284,9 +284,17 @@
 			text-decoration: none;
 			padding:15px 0 11px;
 			background-color: $grey;
-			font-size: .8em;
+			// font-size: .8em;
+			font-size: 10px;
+			// line-height: 20px;
 			letter-spacing: .15em;
 			color:$text-grey;
+
+
+			@media(min-width: 600px) {
+				font-size: .8em;
+				line-height: auto;
+			}
 
 			@include prefix(transition, all 500ms);
 

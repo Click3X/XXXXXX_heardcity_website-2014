@@ -2,11 +2,11 @@
 
 define(["jquery", 
 		"util/config", 
-		"util/jquery.menu",
+        "flexnav",
         "controller/team-member-factory",
         "clue-tip",
         "util/clue-hover",
-        "hover"], function($, config, menu, teamMemberFactory, clueTip, clueHover, hover) {
+        "hover"], function($, config, flexnav, teamMemberFactory, clueTip, clueHover, hover) {
     $(function() {
         // HELPER
         $('#page-ourteam').addClass('current');

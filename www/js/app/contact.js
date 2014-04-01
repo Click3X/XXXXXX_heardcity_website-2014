@@ -1,6 +1,6 @@
 define(["jquery", 
 		"util/config", 
-		"../util/jquery.menu"], function($, config, menu ) {
+		"flexnav"], function($, config, flexnav ) {
     
     $(function() {
         var $body = $('body'),

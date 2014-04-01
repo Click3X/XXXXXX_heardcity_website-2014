@@ -315,7 +315,7 @@ $members = array(
 		'permalink' => '#',
 		'image' => '',
 		'silo' => '',
-		'bio' => 'Phil is a good mixer.',
+		'bio' => 'We are still in need of Peony\'s bio.',
 		'title' => 'President &sol; Partner',
 		'items' => array(
 			array(
