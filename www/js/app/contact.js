@@ -12,6 +12,9 @@ define(["jquery",
         $('#page-title').text('Contact');
 
         window.onload = (function(){
+            // HIDE SPINNER
+            $('#ajax-loader').fadeOut(500);
+            
             // MAIN MENU
             $mainMenu.flexNav({
                 'hoverIntent': false,

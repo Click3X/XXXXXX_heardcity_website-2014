@@ -9,7 +9,9 @@ requirejs.config({
       "app": "../app",
       "royalslider": "jquery.royalslider.min",
       "flexnav":"jquery.flexnav.min",
-      "unveil":"jquery.unveil.min"
+      "unveil":"jquery.unveil.min",
+      // "preloader":"queryLoader"
+      // "spin":"spin"
     },
     "shim": {
       "util/config": ["jquery"],
@@ -17,6 +19,7 @@ requirejs.config({
     	"flexnav":["jquery"],
       "jquery.easing-1.3":["jquery"],
     	"royalslider": ["jquery", "jquery.easing-1.3"]
+      // "preloader":["jquery"]
     }
 });
 

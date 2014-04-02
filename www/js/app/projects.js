@@ -12,6 +12,8 @@ define(["jquery",
         $('#page-projects').addClass('current');
 
         window.onload = (function(){
+            // HIDE SPINNER
+            $('#ajax-loader').fadeOut(500);
 
             // INITIALIZE MENU
             $mainMenu.flexNav({

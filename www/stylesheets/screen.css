@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
 @import url(vendor/flexnav/flexnav.css);
+@import url(vendor/preload/queryLoader.css);
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -2211,8 +2212,40 @@ input[type="submit"],
     margin-top: 2em;
   }
 }
+/* line 2, ../sass/home/_home.scss */
+#ajax-loader {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  background: #000;
+}
+/* line 12, ../sass/home/_home.scss */
+#ajax-loader .ajax-spinner {
+  max-width: 150px;
+  max-height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+/* line 18, ../sass/home/_home.scss */
+#ajax-loader .ajax-spinner img {
+  width: 100%;
+}
+/* line 19, ../sass/home/_home.scss */
+#ajax-loader .ajax-spinner #spin-wheel {
+  max-width: 50px;
+}
+
 /* Background */
-/* line 6, ../sass/home/_home.scss */
+/* line 28, ../sass/home/_home.scss */
 .rsDefault,
 .rsDefault .rsOverflow,
 .rsDefault .rsSlide,
@@ -2228,7 +2261,7 @@ input[type="submit"],
 *  1. Arrows
 *
 ****************/
-/* line 19, ../sass/home/_home.scss */
+/* line 41, ../sass/home/_home.scss */
 .rsDefault .rsArrow {
   height: 100%;
   width: 44px;
@@ -2238,37 +2271,37 @@ input[type="submit"],
   z-index: 21;
 }
 
-/* line 27, ../sass/home/_home.scss */
+/* line 49, ../sass/home/_home.scss */
 .rsDefault.rsVer .rsArrow {
   width: 100%;
   height: 44px;
 }
 
-/* line 32, ../sass/home/_home.scss */
+/* line 54, ../sass/home/_home.scss */
 .rsDefault.rsVer .rsArrowLeft {
   top: 0;
   left: 0;
 }
 
-/* line 33, ../sass/home/_home.scss */
+/* line 55, ../sass/home/_home.scss */
 .rsDefault.rsVer .rsArrowRight {
   bottom: 0;
   left: 0;
 }
 
-/* line 35, ../sass/home/_home.scss */
+/* line 57, ../sass/home/_home.scss */
 .rsDefault.rsHor .rsArrowLeft {
   left: 0;
   top: 0;
 }
 
-/* line 36, ../sass/home/_home.scss */
+/* line 58, ../sass/home/_home.scss */
 .rsDefault.rsHor .rsArrowRight {
   right: 0;
   top: 0;
 }
 
-/* line 38, ../sass/home/_home.scss */
+/* line 60, ../sass/home/_home.scss */
 .rsDefault .rsArrowIcn {
   width: 32px;
   height: 32px;
@@ -2284,68 +2317,68 @@ input[type="submit"],
   border-radius: 2px;
 }
 
-/* line 59, ../sass/home/_home.scss */
+/* line 81, ../sass/home/_home.scss */
 .rsDefault .rsArrowIcn:hover {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* line 63, ../sass/home/_home.scss */
+/* line 85, ../sass/home/_home.scss */
 .rsDefault.rsHor .rsArrowLeft .rsArrowIcn {
   background-position: -64px -32px;
 }
 
-/* line 64, ../sass/home/_home.scss */
+/* line 86, ../sass/home/_home.scss */
 .rsDefault.rsHor .rsArrowRight .rsArrowIcn {
   background-position: -64px -64px;
 }
 
-/* line 66, ../sass/home/_home.scss */
+/* line 88, ../sass/home/_home.scss */
 .rsDefault.rsVer .rsArrowLeft .rsArrowIcn {
   background-position: -96px -32px;
 }
 
-/* line 67, ../sass/home/_home.scss */
+/* line 89, ../sass/home/_home.scss */
 .rsDefault.rsVer .rsArrowRight .rsArrowIcn {
   background-position: -96px -64px;
 }
 
-/* line 69, ../sass/home/_home.scss */
+/* line 91, ../sass/home/_home.scss */
 .rsDefault .rsArrowDisabled .rsArrowIcn {
   opacity: .2;
   filter: alpha(opacity=20);
 }
 
 /******************* CHARLES STYLES */
-/* line 76, ../sass/home/_home.scss */
+/* line 98, ../sass/home/_home.scss */
 .rsDefault .rsArrowIcn {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 78, ../sass/home/_home.scss */
+  /* line 100, ../sass/home/_home.scss */
   .rsDefault .rsArrowIcn {
     display: block;
   }
 }
-/* line 82, ../sass/home/_home.scss */
+/* line 104, ../sass/home/_home.scss */
 #featured-slider.rsDefault .rsArrowIcn {
   top: 25%;
 }
 
 @media (min-width: 980px) {
-  /* line 85, ../sass/home/_home.scss */
+  /* line 107, ../sass/home/_home.scss */
   #featured-slider.rsDefault .rsArrowIcn {
     top: 220px;
   }
 }
-/* line 90, ../sass/home/_home.scss */
+/* line 112, ../sass/home/_home.scss */
 #marquee-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
 #marquee-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div {
   background-color: rgba(0, 0, 0, 0.35);
   border-radius: 0;
 }
 
-/* line 98, ../sass/home/_home.scss */
+/* line 120, ../sass/home/_home.scss */
 #grey-text-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
 #grey-text-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div,
 #team-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,

@@ -32,13 +32,13 @@ include('php/project-grid.php');
     </head>
 
     <body class="projects">
-
-    <!--   
-        <div id="black-logo" class="logo"></div>	
-    	<div id="loader">
-            <div id="spinner" class="loading"></div>
-        </div> 
-    -->
+<!-- PRELOADER -->
+         <div id="ajax-loader">
+            <div class="ajax-spinner">
+                <img src="images/logo/logo-white.svg">
+                <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
+            </div>
+        </div>
 
         <?php include('php/main-nav.php');?>
 

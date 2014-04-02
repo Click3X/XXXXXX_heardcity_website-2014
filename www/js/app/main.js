@@ -4,8 +4,10 @@ define(["jquery",
         "flexnav",
         "controller/request-anim",
         "royalslider"], function($, config, unveil, flexnav, anim, royalslider) {
+
     
     $(function() {
+        
         var $body = $('body'),
         $mainMenu = $("#page-fixed"),
         $marqueeSlider = $('#marquee-slider'),
@@ -85,6 +87,8 @@ define(["jquery",
            
         // WINDOW ON LOAD        
         window.onload = (function(){
+            // HIDE SPINNER
+            $('#ajax-loader').fadeOut(500);
 
             // SWITCH IMG SRC FOR LAZY LOADING
             $img.unveil(600);
@@ -112,7 +116,13 @@ define(["jquery",
                 loopRewind:false,
                 numImagesToPreload: 6,
                 keyboardNavEnabled: true,
-                usePreloader: false
+                usePreloader: true,
+                autoPlay: {
+                    // autoplay options go gere
+                    enabled: true,
+                    pauseOnHover: true,
+                    delay:10000
+                }
             });
 
             $blackTextSlider.royalSlider({
@@ -128,7 +138,12 @@ define(["jquery",
                 loop: true,
                 loopRewind:false,
                 keyboardNavEnabled: true,
-                usePreloader: false
+                usePreloader:false,
+                autoPlay: {
+                    // autoplay options go gere
+                    enabled: true,
+                    pauseOnHover: true
+                }
             });
 
             $greyTextSlider.royalSlider({
@@ -144,7 +159,12 @@ define(["jquery",
                 loop: true,
                 loopRewind:false,
                 keyboardNavEnabled: true,
-                usePreloader: false
+                usePreloader:false
+                // autoPlay: {
+                //     // autoplay options go gere
+                //     enabled: true,
+                //     pauseOnHover: true
+                // }
             });
 
             $featuredSlider.royalSlider({
@@ -161,8 +181,14 @@ define(["jquery",
                 loopRewind:false,
                 numImagesToPreload: 6,
                 keyboardNavEnabled: true,
-                usePreloader: false,
-                navigateByClick: false
+                usePreloader: true,
+                navigateByClick: false,
+                autoPlay: {
+                    // autoplay options go gere
+                    enabled: true,
+                    pauseOnHover: true,
+                    delay:6000
+                }
             });
 
             $teamSlider.royalSlider({
@@ -179,8 +205,13 @@ define(["jquery",
                 loopRewind:false,
                 numImagesToPreload: 6,
                 keyboardNavEnabled: true,
-                usePreloader: false,
-                navigateByClick: false
+                usePreloader:false,
+                navigateByClick: false,
+                autoPlay: {
+                    // autoplay options go gere
+                    enabled: true,
+                    pauseOnHover: true
+                }
             });
 
 

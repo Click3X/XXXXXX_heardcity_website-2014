@@ -40,6 +40,13 @@ if(!isset($_POST['selected_member'])) {
     </head>
 
     <body class="ourteam one-page">
+        <!-- PRELOADER -->
+         <div id="ajax-loader">
+            <div class="ajax-spinner">
+                <img src="images/logo/logo-white.svg">
+                <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
+            </div>
+        </div>
 
         <?php include('php/main-nav.php'); ?>
     	 
