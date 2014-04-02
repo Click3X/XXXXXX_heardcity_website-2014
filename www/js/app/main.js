@@ -104,6 +104,7 @@ define(["jquery",
             // INITIALIZE SLIDERS
             $marqueeSlider.royalSlider({
                 autoHeight: true,
+                transitionSpeed:1200,
                 arrowsNav: true,
                 arrowsNavAutoHide:false,
                 fadeinLoadedSlide: false,
@@ -121,12 +122,13 @@ define(["jquery",
                     // autoplay options go gere
                     enabled: true,
                     pauseOnHover: true,
-                    delay:10000
+                    delay:6000
                 }
             });
 
             $blackTextSlider.royalSlider({
                 autoHeight: true,
+                transitionSpeed:1200,
                 arrowsNav: true,
                 arrowsNavAutoHide:false,
                 fadeinLoadedSlide: false,
@@ -148,6 +150,7 @@ define(["jquery",
 
             $greyTextSlider.royalSlider({
                 autoHeight: true,
+                transitionSpeed:1200,
                 arrowsNav: true,
                 arrowsNavAutoHide:false,
                 fadeinLoadedSlide: false,
@@ -169,6 +172,7 @@ define(["jquery",
 
             $featuredSlider.royalSlider({
                 autoHeight: true,
+                transitionSpeed:1200,
                 arrowsNav: true,
                 arrowsNavAutoHide:false,
                 fadeinLoadedSlide: false,
@@ -195,6 +199,7 @@ define(["jquery",
                 imageScaleMode:'none', 
                 imageAlignCenter:false,
                 autoHeight: true,
+                transitionSpeed:1200,
                 arrowsNav: true,
                 arrowsNavAutoHide:false,
                 fadeinLoadedSlide: false,
