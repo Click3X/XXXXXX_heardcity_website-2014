@@ -3,7 +3,7 @@
     <div id="page-button" class="menu-button active">
         <span>☰</span>
        <!--  <span class="touch-button"><i class="navicon">▼</i></span> -->
-        <span id="page-title" class="page-title">Home</span>
+        <span id="page-title" class="page-title"><a href="home.php" class="page-title-link" id="page-title-link">Home</a></span>
      </div>
     <nav>
         <ul data-breakpoint="600" class="flexnav with-js opacity flexnav-hide lg-screen" id="page-fixed">
