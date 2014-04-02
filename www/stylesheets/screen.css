@@ -78,35 +78,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 1, ../sass/base/_base.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 8, ../sass/base/_base.scss */
 .container {
   position: relative;
 }
 
-/* line 3, ../sass/base/_base.scss */
+/* line 9, ../sass/base/_base.scss */
 svg {
   max-height: 100%;
 }
 
-/* line 5, ../sass/base/_base.scss */
+/* line 11, ../sass/base/_base.scss */
 .body-inner {
   width: 100%;
   position: relative;
   overflow-x: hidden;
 }
 
-/* line 11, ../sass/base/_base.scss */
+/* line 17, ../sass/base/_base.scss */
 .section-title {
   text-align: center;
 }
 
 /* line 140, ../sass/component/_base.scss */
-/* line 16, ../sass/base/_base.scss */
+/* line 22, ../sass/base/_base.scss */
 .serif {
   font-family: 'Times New Roman' serif;
   line-height: 1.5em;
 }
 
-/* line 22, ../sass/base/_base.scss */
+/* line 28, ../sass/base/_base.scss */
 body {
   font-size: .938em;
   line-height: 1.4em;
@@ -115,13 +122,13 @@ body {
   background-color: #333333;
 }
 @media (min-width: 768px) {
-  /* line 22, ../sass/base/_base.scss */
+  /* line 28, ../sass/base/_base.scss */
   body {
     font-size: 1em;
   }
 }
 
-/* line 34, ../sass/base/_base.scss */
+/* line 40, ../sass/base/_base.scss */
 .white-bg {
   -webkit-transition: all 1000ms;
   -moz-transition: all 1000ms;
@@ -129,7 +136,7 @@ body {
   -ms-transition: all 1000ms;
   transition: all 1000ms;
 }
-/* line 38, ../sass/base/_base.scss */
+/* line 44, ../sass/base/_base.scss */
 .white-bg:after {
   content: '';
   background: rgba(0, 0, 0, 0.9);
@@ -146,17 +153,17 @@ body {
   transition: all 1000ms;
 }
 
-/* line 51, ../sass/base/_base.scss */
+/* line 57, ../sass/base/_base.scss */
 a {
   text-decoration: none !important;
 }
 
-/* line 52, ../sass/base/_base.scss */
+/* line 58, ../sass/base/_base.scss */
 a {
   color: inherit;
 }
 
-/* line 55, ../sass/base/_base.scss */
+/* line 61, ../sass/base/_base.scss */
 .hidden {
   display: none;
   -webkit-transition: all 1000ms;
@@ -166,7 +173,7 @@ a {
   transition: all 1000ms;
 }
 
-/* line 61, ../sass/base/_base.scss */
+/* line 67, ../sass/base/_base.scss */
 .ab-hidden {
   visibility: hidden;
   -webkit-transition: all 1000ms;
@@ -176,7 +183,7 @@ a {
   transition: all 1000ms;
 }
 
-/* line 67, ../sass/base/_base.scss */
+/* line 73, ../sass/base/_base.scss */
 .noise {
   background-image: url("../images/sprites/noise.png");
   background-repeat: repeat;
@@ -188,24 +195,24 @@ a {
   left: 0;
 }
 
-/* line 77, ../sass/base/_base.scss */
+/* line 83, ../sass/base/_base.scss */
 .clearfix:before, .container:after {
   content: "";
   display: table;
 }
 
-/* line 78, ../sass/base/_base.scss */
+/* line 84, ../sass/base/_base.scss */
 .clearfix:after {
   clear: both;
 }
 
 /* IE 6/7 */
-/* line 80, ../sass/base/_base.scss */
+/* line 86, ../sass/base/_base.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 84, ../sass/base/_base.scss */
+/* line 90, ../sass/base/_base.scss */
 .transparent {
   filter: alpha(opacity=50);
   /* internet explorer */
@@ -217,7 +224,7 @@ a {
   /* fx, safari, opera */
 }
 
-/* line 93, ../sass/base/_base.scss */
+/* line 99, ../sass/base/_base.scss */
 .cl-effect-21:not(#phone-map) a {
   padding: 10px;
   color: #989899;
@@ -229,7 +236,7 @@ a {
   transition: color 0.3s;
 }
 
-/* line 106, ../sass/base/_base.scss */
+/* line 112, ../sass/base/_base.scss */
 .current a::before,
 .current a::after,
 .cl-effect-21:not(#phone-map) a::before,
@@ -255,7 +262,7 @@ a {
   transform: translateY(-6px);
 }
 
-/* line 120, ../sass/base/_base.scss */
+/* line 126, ../sass/base/_base.scss */
 .current a:before,
 .cl-effect-21:not(#phone-map) a::before {
   top: 6px;
@@ -266,7 +273,7 @@ a {
   transform: translateY(-6px);
 }
 
-/* line 127, ../sass/base/_base.scss */
+/* line 133, ../sass/base/_base.scss */
 .current a:after,
 .cl-effect-21:not(#phone-map) a::after {
   bottom: 6px;
@@ -277,13 +284,13 @@ a {
   transform: translateY(6px);
 }
 
-/* line 134, ../sass/base/_base.scss */
+/* line 140, ../sass/base/_base.scss */
 .cl-effect-21:not(#phone-map) a:hover,
 .cl-effect-21:not(#phone-map) a:focus {
   color: #000;
 }
 
-/* line 144, ../sass/base/_base.scss */
+/* line 150, ../sass/base/_base.scss */
 .current a:before,
 .current a:after,
 .cl-effect-21:not(#phone-map) a:hover::before,
