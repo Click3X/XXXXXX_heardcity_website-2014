@@ -1,8 +1,0 @@
-.dev.bg-black {
-	background: #000000;
-	@include prefix(transition, all 2500ms);
-}
-.dev {
-	background: #ffffff;
-	@include prefix(transition, all 2500ms);
-}

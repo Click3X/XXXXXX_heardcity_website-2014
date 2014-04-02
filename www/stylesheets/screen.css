@@ -4272,6 +4272,11 @@ textarea:focus, input:focus {
   cursor: pointer;
 }
 
+/* line 80, ../sass/base/_clue-tip.scss */
+.ourteam .split-body:nth-child(4) {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
 /* line 2, ../sass/projects/_projects-video.scss */
 * {
   box-sizing: border-box;
@@ -4896,24 +4901,4 @@ textarea:focus, input:focus {
 .contact-container .address .addy {
   color: #c84938;
   text-decoration: none;
-}
-
-/* line 1, ../sass/dev/_dev.scss */
-.dev.bg-black {
-  background: #000000;
-  -webkit-transition: all 2500ms;
-  -moz-transition: all 2500ms;
-  -o-transition: all 2500ms;
-  -ms-transition: all 2500ms;
-  transition: all 2500ms;
-}
-
-/* line 5, ../sass/dev/_dev.scss */
-.dev {
-  background: #ffffff;
-  -webkit-transition: all 2500ms;
-  -moz-transition: all 2500ms;
-  -o-transition: all 2500ms;
-  -ms-transition: all 2500ms;
-  transition: all 2500ms;
 }
