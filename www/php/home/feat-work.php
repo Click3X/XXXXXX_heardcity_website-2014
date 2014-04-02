@@ -45,7 +45,7 @@
 					</div>
 
 					<div class="grey-theme" class="rsABlock" data-delay="400" data-easing="easeOutSine">
-						<div class="noise"></div>
+						<!-- <div class="noise"></div> -->
 
 						<div class="sec-wrap">
 							<div class="section-title">

@@ -52,7 +52,8 @@ include('php/project-grid.php');
 
             <div class="button-holder middle-button-holder">
                 <div class="clearfix">
-                    <a id="all-btn" href="#" title="All">&plus;</a>
+                    <!-- <a id="all-btn" href="#" title="All">&plus;</a> -->
+                    <a id="all-btn" href="#" title="All">All</a>
                 </div>
             </div>
 

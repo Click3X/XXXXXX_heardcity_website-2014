@@ -53,7 +53,9 @@ define(["jquery",
                 coords = item.coords,
                 map, area, a, img,
                 li = $('<li/>', {
-                    class:itemClass
+                    class:itemClass,
+                    "data-pos-all":"",
+                    "data-pos-solo":""
                 });
 
                 // ON THE FLY DEBUGGING

@@ -6,7 +6,7 @@ $.fn.configData = function() {
 
 	var marqueeSlides = ["..\/images\/marquee\/sun-light-1920.jpg","..\/images\/marquee\/sun-rays-1920.jpg","..\/images\/marquee\/sun-chairs-1920.jpg"];
 
-	var blackTexts = ['Welcome to Heard City','Heard City is a<br>boutique post-production<br>audio company','A sanctuary from distraction<br>in the heart of the city','Nothing more than what’s needed,<br>nothing less than what’s essential'];
+	var blackTexts = ['Welcome to Heard City','Heard City is a boutique post-production audio company','A sanctuary from distraction in the heart of the city','Nothing more than what’s needed, nothing less than what’s essential'];
 
 	var jsonDefaults = [{"name":"Heard City", "bio":"Many people collect things and those things say a lot about a person. Our stuff can be something that remind us of a moment in our past or just something we enjoy having. They remind us a bit of who we are. Which can includes almost everything you can imagine – from photos, souvenirs, tools, things that reminding us of a person or place we care about. Our team at Heard City is made up of some pretty incredible people. Get to know us by checking out our stuff. You\'ll see what kinds of things we do in our free time? What our hobbies are, what kinds of music/movies/books we like. It\'s an honest way to see what we as a collective enjoy in life."}];
 

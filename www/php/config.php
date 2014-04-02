@@ -919,16 +919,16 @@ $list_items = array(
 
 // T E X T   C A R O U S E L S
 $text_carousel_grey = array(
-		'Heard City' => 'The premier audio post-production company servicing<br>the advertising, motion picture and television industries.',
-		'Walls but no boundaries.' => 'We work as a team, not as individuals, sharing spaces and equipment<br>in an inspired flow supporting the highest production capabilities.',
-		'Simplicity. Efficiency' => 'Big words for a basic principle. We believe in<br>airy spaces and ways of acting that enhance an<br>environmentally conscious lifestyle.'
+		'Heard City' => 'The premier audio post-production company servicing the advertising, motion picture and television industries.',
+		'Walls but no boundaries.' => 'We work as a team, not as individuals, sharing spaces and equipment in an inspired flow supporting the highest production capabilities.',
+		'Simplicity. Efficiency' => 'Big words for a basic principle. We believe in airy spaces and ways of acting that enhance an environmentally conscious lifestyle.'
 	);
 
 $text_carousel_black = array(
 		'Welcome to Heard City',
-		'Heard City is a<br>boutique post-production<br>audio company',
-		'A sanctuary from distraction<br>in the heart of the city',
-		'Nothing more than what’s needed,<br>nothing less than what’s essential'
+		'Heard City is a boutique post-production audio company',
+		'A sanctuary from distraction in the heart of the city',
+		'Nothing more than what’s needed, nothing less than what’s essential'
 	);
 
 

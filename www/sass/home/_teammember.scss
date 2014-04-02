@@ -17,7 +17,7 @@ input[type="submit"],
 .section-title div { line-height: 1.4em; }
 
 .grey-theme {
-	background: #ffffff;
+	// background: #ffffff;
 	color:$black;
 	.section-title {
 		margin-bottom:1em;
@@ -87,8 +87,8 @@ input[type="submit"],
 
 .home {
 	.team-member-module {
-		padding-top: 1.75em;
-		padding-bottom: 1.25em;
+		padding-top: 1.75em; padding-bottom: 1.25em;
+		background: #fff;
 		@media(min-width: 480px) { padding-top: 3em; padding-bottom: 3em; }
 	}
 
