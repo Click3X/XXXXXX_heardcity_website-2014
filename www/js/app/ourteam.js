@@ -57,7 +57,7 @@ define(["jquery",
         
         window.onload = (function(){
             // SWITCH IMG SRC FOR LAZY LOADING            
-            $img.unveil();
+            $img.unveil(600);
             
 
             // CHECK TO SEE IF SELECTED MEMBER HAS BEEN SENT FROM HOME.PHP

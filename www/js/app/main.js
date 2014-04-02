@@ -87,7 +87,7 @@ define(["jquery",
         window.onload = (function(){
 
             // SWITCH IMG SRC FOR LAZY LOADING
-            $img.unveil();
+            $img.unveil(600);
 
             // INITIALIZE MENU
             $mainMenu.flexNav({

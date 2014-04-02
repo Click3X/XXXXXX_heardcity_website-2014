@@ -4242,14 +4242,14 @@ textarea:focus, input:focus {
   letter-spacing: .15em;
   color: #989899;
 }
-/* line 44, ../sass/base/_clue-tip.scss */
+/* line 43, ../sass/base/_clue-tip.scss */
 .ourteam .split-body:nth-of-type(3) {
   font-size: 1.3em;
   color: #333333;
   margin-bottom: 12px;
   letter-spacing: .15em;
 }
-/* line 53, ../sass/base/_clue-tip.scss */
+/* line 49, ../sass/base/_clue-tip.scss */
 .ourteam .split-body:nth-of-type(4) {
   margin-top: 0;
   margin-bottom: 12px;
@@ -4259,7 +4259,7 @@ textarea:focus, input:focus {
   font-family: 'Times New Roman' serif;
   text-transform: none;
 }
-/* line 66, ../sass/base/_clue-tip.scss */
+/* line 58, ../sass/base/_clue-tip.scss */
 .ourteam .split-body:nth-of-type(5) {
   font-size: .750em;
   color: #1f1f1f;
@@ -4267,12 +4267,12 @@ textarea:focus, input:focus {
   letter-spacing: .15em;
   cursor: pointer;
 }
-/* line 74, ../sass/base/_clue-tip.scss */
+/* line 66, ../sass/base/_clue-tip.scss */
 .ourteam .split-body:nth-of-type(5) a {
   cursor: pointer;
 }
 
-/* line 80, ../sass/base/_clue-tip.scss */
+/* line 72, ../sass/base/_clue-tip.scss */
 .ourteam .split-body:nth-child(4) {
   font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 }
