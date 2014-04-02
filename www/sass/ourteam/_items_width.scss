@@ -10,44 +10,6 @@
 }
 
 
-
-///////////////// BEGIN MOBILE HOVER CLUE TIP STYLES ///////////////////////
-
-// HOVER CLUE TIP (hidden on small screens)
-// .ourteam #cluetip {
-// 	display: none !important;
-// 	@media(min-width: 768px) {
-// 		display: block !important;
-// 	}
-// }
-
-.hover-mobile {
-	display: block;
-	padding: 1em;
-
-	@media(min-width: 768px) {
-		display: none;
-		height: 0; width:0;
-	}
-}
-
-.hover-name {
-	color: #989899; font-size: .8em; letter-spacing: .15em;
-	margin-bottom: 12px;
-}
-.hover-item-name {
-	font-size: 1.3em; letter-spacing: .15em;
-	margin-bottom: 12px; 
-}
-
-.hover-item-bio {
-	margin-top: 0; margin-bottom: 12px;
-	color: #646465;
-	line-height: 1.4em; letter-spacing: .02em;
-	font-family: 'Times New Roman' serif; text-transform: none;
-}
-
-
 .js-single-member .item-holder,
 .item-holder { 
 	position: relative;
@@ -58,7 +20,6 @@
 	@media(min-width:480px) {
 		width: 50%;
 		display: inline-block;
-		// position: absolute;
 		padding: 0;
 	}
 	@media(min-width:768px) {
@@ -68,7 +29,6 @@
 	}
 
 	img {
-		// padding:1em;
 		max-width: 100%;
 		height: auto;
 		@media(min-width:768px) {
@@ -78,7 +38,6 @@
 	}
 }
 
-///////////////// END MOBILE HOVER CLUE TIP STYLES ///////////////////////
 
 
 @media(min-width:768px) {
@@ -146,10 +105,7 @@
 	.growler.evanmangiamele{ width:19.7265625%;}
 	.boo.ericwarzecha{ width:20.60546875%;}
 	.guitar.ericwarzecha{ width:78.3203125%;}
-	.sabresjersey.ericwarzecha{ 
-		// width:74.51171875%;
-		width: 70.511719%;
-	}
+	.sabresjersey.ericwarzecha{ width: 70.511719%;}
 	.minorthreatourofstep.ericwarzecha{ width:33.69140625%;}
 	.floralpatterneddress.sashaawn{ width:40.625%;}
 	.trapezegrips.sashaawn{ width:32.6171875%;}

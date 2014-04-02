@@ -15,88 +15,11 @@ textarea:focus, input:focus{
 
 // CLASS for SIDEBAR CHANGE
 .js-single-member {
-	// Member List no padding
-	// #item-list-holder .item-list { padding-bottom:0;}
-	// Change positioning on items to show at top of page
 	#graph #item-list-holder .item-list .item-holder { display:block; }
-	// Lessen margin on footer to see all single-items in viewport
 	.ourteam .footer { margin-top:40px;}
 }
 
 .item-holder.poster.gloriapitagorsky { z-index: 1; }
-
-
-// HOVER POP UP
-.neighbor {
-    display: inline-block;
-    position:absolute; 
-    z-index: 0;
-    width:462px;
-    opacity: 0;
-
-    @include prefix(transition, all 500ms ease-in-out);
-    
-    .pop-up {
-		border:1px solid $grey-text;
-		@include prefix(box-shadow, 0px 8px 8px rgba(50, 50, 50, 0.25));
-
-		&:after {
-			content:'';
-			display: block; margin:auto;
-			width:40px; height:40px;
-			position: absolute; 
-			bottom:-20px; left:0; right:0;
-			background-color:#ffffff;
-			background-color:rgba(255, 255, 255, 0.925);
-			border-bottom:1px solid $grey-text;
-			border-left:1px solid $grey-text;
-			@include prefix(transform, rotate(-45deg));
-			@include prefix(box-shadow, -8px 8px 8px rgba(50, 50, 50, 0.25));
-		}
-
-		.team-member {
-			position: relative;
-			z-index: 1;
-
-			.image {
-				width: auto;
-				vertical-align: top;
-
-				img {
-					max-width: 85px;
-					margin-left: .5em;
-				}
-			}
-
-			.member-text {
-				width:auto;
-				margin-top: .5em; margin-left: 0; margin-right:1em;
-				padding-left:.5em;
-
-				li { margin-bottom:.25em; }
-
-				.misc-text { color:$black; }
-				.name { margin-top: .25em; }
-				.bio { letter-spacing:.05em; text-transform: none !important;} 
-				.serif {
-					margin-top:.6em;
-					color:$popup-grey;
-					line-height: 1.4em;
-					letter-spacing: .02em;
-				}
-				.permalink {
-					margin-top:1em;
-
-					a {
-						font-weight: 100;
-						letter-spacing:.05em;
-					}
-				}
-			}
-		}
-	}
-  
-}
 
 
 
@@ -124,14 +47,14 @@ textarea:focus, input:focus{
 
 #item-list-holder {
 
-	.animate {
-	    transform: translateZ(400px) translateY(300px) rotateX(-90deg);
-	    animation: fallPerspective .8s ease-in-out forwards;
-	}
+	// .animate {
+	//     transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+	//     animation: fallPerspective .8s ease-in-out forwards;
+	// }
 	 
-	@keyframes fallPerspective {
-	    100% { transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; }
-	}
+	// @keyframes fallPerspective {
+	//     100% { transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; }
+	// }
 
 
 	@media(min-width:768px) {

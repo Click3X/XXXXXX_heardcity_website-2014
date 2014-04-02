@@ -1,17 +1,10 @@
 // MARQUEE SLIDES
 .contentSlider { width:100%; }
 
-// #marquee-slider,
-// #marquee-slider li {
-// 	@include prefix(transition, all 500ms);
-// }
 
 .js-show {
-	li:not(:first-child) {
-	  position: absolute; visibility: 0;
-	}
+	li:not(:first-child) { position: absolute; visibility: 0; }
 }
-
 
 
 .marquee-slide {
@@ -21,9 +14,7 @@
 	padding-bottom: 66%;
 	width:100%;
 
-	@media (min-width: 1040px) {
-		padding-bottom: 695px;	
-	}
+	@media (min-width: 1040px) { padding-bottom: 695px;}
 }
 
 #black-logo {
@@ -31,10 +22,9 @@
 	width: 45%; height: 0;
 	padding-bottom: 66%; margin: 0 auto;
 	z-index: 1;
-	@media (min-width: 1040px) {
-		padding-bottom: 695px;	
-		// padding-bottom: 465px;
-	}
+
+	@include prefix(transform, translateZ(1));
+	@media (min-width: 1040px) { padding-bottom: 695px; }
 }
 
 #sun-light { background-image:url("../images/marquee/sun-light/sun-light-480.jpg");}

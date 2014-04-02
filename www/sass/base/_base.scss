@@ -69,10 +69,8 @@ a { color:inherit; }
 	background-repeat: repeat;
 	display: block;
 	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
+	width: 100%; height: 100%;
+	top: 0; left: 0;
 }
 
 // CLEAR FIX
@@ -90,20 +88,6 @@ a { color:inherit; }
     opacity: 0.5;           /* fx, safari, opera */  
 }  
 
-// HEADER FIXED ON ALL PAGES sans HOME
-.ourteam,
-.contact,
-.projects {
-	#site-header {
-		position: fixed;
-		top: 0;
-		left: 0;
-	}
-}
-
-#site-header .flexnav .current a {
-	color:$black;
-}
 
 
 .cl-effect-21:not(#phone-map) a {

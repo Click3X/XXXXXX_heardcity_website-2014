@@ -81,50 +81,49 @@ html, body {
 }
 
 // CLUE TIP ARROW POSITIONS 
-.ourteam {
-	.clue-left-default,
-	.clue-right-default {
-		.cluetip-arrows.ui-state-default {
-			z-index: 98;
-			display: block;
-			top: 50% !important;
-			margin-top: -12px;
-		}
-	}
+// .ourteam {
+// 	.clue-left-default,
+// 	.clue-right-default {
+// 		.cluetip-arrows.ui-state-default {
+// 			z-index: 98;
+// 			display: block;
+// 			top: 50% !important;
+// 			margin-top: -12px;
+// 		}
+// 	}
 
-	div.clue-right-default .cluetip-arrows {
-		background-image: url(vendor/cluetip/images/darrowleft.png);
-		opacity: 0.95;
-	}
+// 	div.clue-right-default .cluetip-arrows {
+// 		background-image: url(vendor/cluetip/images/darrowleft.png);
+// 		opacity: 0.95;
+// 	}
 
-	div.clue-left-default .cluetip-arrows {
-		background-image: url(vendor/cluetip/images/darrowright.png);
-		opacity: 0.95;
-	}
+// 	div.clue-left-default .cluetip-arrows {
+// 		background-image: url(vendor/cluetip/images/darrowright.png);
+// 		opacity: 0.95;
+// 	}
 
-	div.clue-bottom-default .cluetip-arrows {
-		background-image: url(vendor/cluetip/images/darrowup.png);
-		opacity: 0.95;
-	}
+// 	div.clue-bottom-default .cluetip-arrows {
+// 		background-image: url(vendor/cluetip/images/darrowup.png);
+// 		opacity: 0.95;
+// 	}
 
-	div.clue-top-default .cluetip-arrows {
-		background-image: url(vendor/cluetip/images/darrowdown.png);
-		opacity: 0.95;
-	}
+// 	div.clue-top-default .cluetip-arrows {
+// 		background-image: url(vendor/cluetip/images/darrowdown.png);
+// 		opacity: 0.95;
+// 	}
 
-}
+// }
 
 // Silo and Member bio
 .ourteam {
 
 	input[type="radio"] {
 		position: absolute;
-		// opacity: 0.25;
 		opacity: 0;
 	}
 
 	#member-bio {
-		z-index: 1;
+		// z-index: 1;
 		
 		.team-member {
 			width:100%;
