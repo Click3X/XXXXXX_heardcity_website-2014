@@ -20,7 +20,8 @@ if(!isset($_POST['selected_member'])) {
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
         <title>Heard City | Our Team</title>
-
+        <link rel="icon" href="data:;base64,=">
+        
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
