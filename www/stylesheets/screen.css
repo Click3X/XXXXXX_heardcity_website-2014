@@ -2249,12 +2249,7 @@ input[type="submit"],
     display: block;
   }
 }
-/* line 16, ../sass/home/_home.scss */
-#ajax-loader .logo-spin {
-  width: 150px;
-  height: 194px;
-}
-/* line 21, ../sass/home/_home.scss */
+/* line 17, ../sass/home/_home.scss */
 #ajax-loader .ajax-spinner {
   width: 150px;
   height: 150px;
@@ -2266,13 +2261,15 @@ input[type="submit"],
   margin: auto;
   text-align: center;
 }
-/* line 28, ../sass/home/_home.scss */
-#ajax-loader .ajax-spinner img {
-  width: 100%;
-}
-/* line 29, ../sass/home/_home.scss */
+/* line 24, ../sass/home/_home.scss */
 #ajax-loader .ajax-spinner #spin-wheel {
-  max-width: 50px;
+  width: 50px;
+  height: 50px;
+}
+/* line 26, ../sass/home/_home.scss */
+#ajax-loader .ajax-spinner .logo-spin {
+  width: 150px;
+  height: 194px;
 }
 
 /* Background */
