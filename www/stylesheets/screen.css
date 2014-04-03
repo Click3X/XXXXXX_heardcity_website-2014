@@ -84,13 +84,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
 }
 
-/* line 7, ../sass/base/_base.scss */
+/* line 5, ../sass/base/_base.scss */
+body {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* line 11, ../sass/base/_base.scss */
 video {
   width: 100%    !important;
   height: auto   !important;
 }
 
-/* line 12, ../sass/base/_base.scss */
+/* line 16, ../sass/base/_base.scss */
 .item-holder {
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
@@ -99,7 +106,7 @@ video {
   transition: all 500ms;
 }
 
-/* line 18, ../sass/base/_base.scss */
+/* line 22, ../sass/base/_base.scss */
 #item-list-holder .item-list .item-holder.hide-mem-items {
   opacity: 0;
   display: none;
@@ -110,36 +117,36 @@ video {
   transition: all 500ms;
 }
 
-/* line 26, ../sass/base/_base.scss */
+/* line 30, ../sass/base/_base.scss */
 .container {
   position: relative;
 }
 
-/* line 27, ../sass/base/_base.scss */
+/* line 31, ../sass/base/_base.scss */
 svg {
   max-height: 100%;
 }
 
-/* line 29, ../sass/base/_base.scss */
+/* line 33, ../sass/base/_base.scss */
 .body-inner {
   width: 100%;
   position: relative;
   overflow-x: hidden;
 }
 
-/* line 35, ../sass/base/_base.scss */
+/* line 39, ../sass/base/_base.scss */
 .section-title {
   text-align: center;
 }
 
 /* line 140, ../sass/component/_base.scss */
-/* line 40, ../sass/base/_base.scss */
+/* line 44, ../sass/base/_base.scss */
 .serif {
   font-family: 'Times New Roman' serif;
   line-height: 1.5em;
 }
 
-/* line 46, ../sass/base/_base.scss */
+/* line 50, ../sass/base/_base.scss */
 body {
   font-size: .938em;
   line-height: 1.4em;
@@ -148,13 +155,13 @@ body {
   background-color: #333333;
 }
 @media (min-width: 768px) {
-  /* line 46, ../sass/base/_base.scss */
+  /* line 50, ../sass/base/_base.scss */
   body {
     font-size: 1em;
   }
 }
 
-/* line 58, ../sass/base/_base.scss */
+/* line 62, ../sass/base/_base.scss */
 .white-bg {
   -webkit-transition: all 1000ms;
   -moz-transition: all 1000ms;
@@ -162,7 +169,7 @@ body {
   -ms-transition: all 1000ms;
   transition: all 1000ms;
 }
-/* line 62, ../sass/base/_base.scss */
+/* line 66, ../sass/base/_base.scss */
 .white-bg:after {
   content: '';
   background: rgba(0, 0, 0, 0.9);
@@ -179,17 +186,17 @@ body {
   transition: all 1000ms;
 }
 
-/* line 75, ../sass/base/_base.scss */
+/* line 79, ../sass/base/_base.scss */
 a {
   text-decoration: none !important;
 }
 
-/* line 76, ../sass/base/_base.scss */
+/* line 80, ../sass/base/_base.scss */
 a {
   color: inherit;
 }
 
-/* line 79, ../sass/base/_base.scss */
+/* line 83, ../sass/base/_base.scss */
 .hidden {
   display: none;
   -webkit-transition: all 1000ms;
@@ -199,7 +206,7 @@ a {
   transition: all 1000ms;
 }
 
-/* line 85, ../sass/base/_base.scss */
+/* line 89, ../sass/base/_base.scss */
 .ab-hidden {
   visibility: hidden;
   -webkit-transition: all 1000ms;
@@ -209,7 +216,7 @@ a {
   transition: all 1000ms;
 }
 
-/* line 91, ../sass/base/_base.scss */
+/* line 95, ../sass/base/_base.scss */
 .noise {
   background-image: url("../images/sprites/noise.png");
   background-repeat: repeat;
@@ -221,24 +228,24 @@ a {
   left: 0;
 }
 
-/* line 101, ../sass/base/_base.scss */
+/* line 105, ../sass/base/_base.scss */
 .clearfix:before, .container:after {
   content: "";
   display: table;
 }
 
-/* line 102, ../sass/base/_base.scss */
+/* line 106, ../sass/base/_base.scss */
 .clearfix:after {
   clear: both;
 }
 
 /* IE 6/7 */
-/* line 104, ../sass/base/_base.scss */
+/* line 108, ../sass/base/_base.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 108, ../sass/base/_base.scss */
+/* line 112, ../sass/base/_base.scss */
 .transparent {
   filter: alpha(opacity=50);
   /* internet explorer */
@@ -250,7 +257,7 @@ a {
   /* fx, safari, opera */
 }
 
-/* line 117, ../sass/base/_base.scss */
+/* line 121, ../sass/base/_base.scss */
 .cl-effect-21:not(#phone-map) a {
   padding: 10px;
   color: #989899;
@@ -262,7 +269,7 @@ a {
   transition: color 0.3s;
 }
 
-/* line 130, ../sass/base/_base.scss */
+/* line 134, ../sass/base/_base.scss */
 .current a::before,
 .current a::after,
 .cl-effect-21:not(#phone-map) a::before,
@@ -288,7 +295,7 @@ a {
   transform: translateY(-6px);
 }
 
-/* line 144, ../sass/base/_base.scss */
+/* line 148, ../sass/base/_base.scss */
 .current a:before,
 .cl-effect-21:not(#phone-map) a::before {
   top: 6px;
@@ -299,7 +306,7 @@ a {
   transform: translateY(-6px);
 }
 
-/* line 151, ../sass/base/_base.scss */
+/* line 155, ../sass/base/_base.scss */
 .current a:after,
 .cl-effect-21:not(#phone-map) a::after {
   bottom: 6px;
@@ -310,13 +317,13 @@ a {
   transform: translateY(6px);
 }
 
-/* line 158, ../sass/base/_base.scss */
+/* line 162, ../sass/base/_base.scss */
 .cl-effect-21:not(#phone-map) a:hover,
 .cl-effect-21:not(#phone-map) a:focus {
   color: #000;
 }
 
-/* line 168, ../sass/base/_base.scss */
+/* line 172, ../sass/base/_base.scss */
 .current a:before,
 .current a:after,
 .cl-effect-21:not(#phone-map) a:hover::before,
@@ -984,24 +991,25 @@ a {
     width: 360px;
   }
 }
-/* line 57, ../sass/base/_footer.scss */
+/* line 56, ../sass/base/_footer.scss */
 .footer .footer-inner .social-icons .icon-holder {
   position: relative;
   text-align: center;
   display: inline-block;
   float: none;
   width: 24%;
+  min-width: 90px;
   padding: 0;
 }
 @media (min-width: 682px) {
-  /* line 57, ../sass/base/_footer.scss */
+  /* line 56, ../sass/base/_footer.scss */
   .footer .footer-inner .social-icons .icon-holder {
     display: block;
     float: left;
     width: auto;
   }
 }
-/* line 76, ../sass/base/_footer.scss */
+/* line 69, ../sass/base/_footer.scss */
 .footer .footer-inner .social-icons .icon-holder a {
   display: block;
   width: 90px;
@@ -1010,70 +1018,70 @@ a {
   margin: 0 auto;
 }
 
-/* line 88, ../sass/base/_footer.scss */
+/* line 81, ../sass/base/_footer.scss */
 .address {
   font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-weight: 300;
   margin: .5em 1em;
   font-size: .938em;
 }
-/* line 95, ../sass/base/_footer.scss */
+/* line 88, ../sass/base/_footer.scss */
 .address ul li {
   line-height: 1.6em;
 }
 
-/* line 100, ../sass/base/_footer.scss */
+/* line 93, ../sass/base/_footer.scss */
 .sprite {
   background-image: url(../images/social-icons/social_svg.svg);
   background-repeat: no-repeat;
   display: block;
 }
 
-/* line 107, ../sass/base/_footer.scss */
+/* line 100, ../sass/base/_footer.scss */
 .sprite-email {
   width: 90px;
   height: 90px;
   background-position: -33px -35px;
 }
-/* line 111, ../sass/base/_footer.scss */
+/* line 104, ../sass/base/_footer.scss */
 .sprite-email:hover {
   background-position: -33px -146px;
 }
 
-/* line 116, ../sass/base/_footer.scss */
+/* line 109, ../sass/base/_footer.scss */
 .sprite-facebook {
   width: 90px;
   height: 90px;
   background-position: -316px -35px;
 }
-/* line 121, ../sass/base/_footer.scss */
+/* line 114, ../sass/base/_footer.scss */
 .sprite-facebook:hover {
   background-position: -316px -146px;
 }
 
-/* line 126, ../sass/base/_footer.scss */
+/* line 119, ../sass/base/_footer.scss */
 .sprite-instagram {
   width: 90px;
   height: 90px;
   background-position: -222px -35px;
 }
-/* line 129, ../sass/base/_footer.scss */
+/* line 122, ../sass/base/_footer.scss */
 .sprite-instagram:hover {
   background-position: -222px -146px;
 }
 
-/* line 135, ../sass/base/_footer.scss */
+/* line 128, ../sass/base/_footer.scss */
 .sprite-map {
   width: 90px;
   height: 90px;
   background-position: -128px -35px;
 }
-/* line 139, ../sass/base/_footer.scss */
+/* line 132, ../sass/base/_footer.scss */
 .sprite-map:hover {
   background-position: -128px -146px;
 }
 
-/* line 144, ../sass/base/_footer.scss */
+/* line 137, ../sass/base/_footer.scss */
 #site-header .flexnav li a.sprite-phone {
   background-image: url(../images/social-icons/phone.svg);
   background-repeat: no-repeat;
@@ -1087,29 +1095,29 @@ a {
   -ms-transition: all 0;
   transition: all 0;
 }
-/* line 153, ../sass/base/_footer.scss */
+/* line 146, ../sass/base/_footer.scss */
 #site-header .flexnav li a.sprite-phone:hover {
   background-position: -15px -122px;
 }
 
-/* line 158, ../sass/base/_footer.scss */
+/* line 151, ../sass/base/_footer.scss */
 .sprite-twitter {
   width: 90px;
   height: 90px;
   background-position: -410px -35px;
 }
-/* line 163, ../sass/base/_footer.scss */
+/* line 156, ../sass/base/_footer.scss */
 .sprite-twitter:hover {
   background-position: -410px -146px;
 }
 
-/* line 168, ../sass/base/_footer.scss */
+/* line 161, ../sass/base/_footer.scss */
 .sprite-you-tube {
   width: 90px;
   height: 90px;
   background-position: -504px -35px;
 }
-/* line 173, ../sass/base/_footer.scss */
+/* line 166, ../sass/base/_footer.scss */
 .sprite-you-tube:hover {
   background-position: -504px -146px;
 }

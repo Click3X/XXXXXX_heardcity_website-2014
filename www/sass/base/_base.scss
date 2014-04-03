@@ -2,7 +2,11 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
-
+body {
+	position: relative;
+	width: 100%;
+	overflow-x: hidden;
+}
 
  video {
       width: 100%    !important;
