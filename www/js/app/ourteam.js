@@ -39,7 +39,6 @@ define(["jquery",
         var toPngs = $('.item-holder img');
         var noJpg = Array('items/Peony_Rene_necklace.png', 'items/Eric_Warzecha_jersey.png', 'items/Elizabeth_McClanahan_guitar.png', 'items/Keith_Reynaud_Pot.png', 'items/Jeremy_Siegal_Jordans.png', 'items/Jeremy_Siegal_chain.png', 'items/Gary_Noel_plant.png', 'items/Sasha_Awn_dress.png', 'items/Sasha_Awn_moog.png', 'items/Sasha_Awn_gloves.png', 'items/Eric_Warzecha_guitar.png', 'items/Talia_Rodgers_tank_top.png');
         var i = 0;
-        var $pImgs = $("img");
          // JSON DATA
         var jsonMembers = $body.configData().jsonMembers;
 
@@ -53,21 +52,21 @@ define(["jquery",
             }
         }
 
-    function switchSrc(obj) {
-        var src = $(this).data('src'),
-        png = /png$/;
+        function switchSrc(obj) {
+            var src = $(this).data('src'),
+            png = /png$/;
 
-        if (noJpg.contains(src)) {
-            // console.log('Not this one');
+            if (noJpg.contains(src)) {
+                // console.log('Not this one');
+            }
+            else {
+                src = src.replace(png, "jpg");
+                src = src.replace("items", "items/jpg");
+                $(this).attr('data-src', src);
+            }
         }
-        else {
-            src = src.replace(png, "jpg");
-            src = src.replace("items", "items/jpg");
-            $(this).attr('data-src', src);
-        }
-    }
-    // SWITCH SRC
-    $.each(toPngs, switchSrc);
+        // SWITCH SRC
+        $.each(toPngs, switchSrc);
 
 
      // INITIALIZE MENU
@@ -106,7 +105,7 @@ define(["jquery",
     
     // UNVEIL FIRST 24 IMAGES
     for (var i=0;i < 24; i++) { 
-        var thisImg = $pImgs[i];
+        var thisImg = pImgs[i];
         console.log('This is thisImg: ' + thisImg);
         $("img").trigger("unveil");
         // document.write(cars[i] + "<br>");
@@ -120,8 +119,8 @@ define(["jquery",
 
 
         // // SHOW IMAGES ON SCROLL
-        // var $pImgs = $("img"); 
-        // console.log('These are $pImgs: ' + $pImgs); console.dir($pImgs);
+        // var pImgs = $("img"); 
+        // console.log('These are pImgs: ' + pImgs); console.dir(pImgs);
 
         $("img").unveil(600, function() {
             $(this).load(function() {
