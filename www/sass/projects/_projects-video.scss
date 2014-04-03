@@ -1,7 +1,12 @@
 //------------------------------- VIDEO TESTING STYLES ------------------------------------//
 * {box-sizing: border-box;}
 
-.no-click {
+.no-delay {
+	display: block;
+	cursor: pointer;
+}
+
+.no-delay {
     -ms-touch-action: manipulation; /* IE10  */
     touch-action: manipulation;     /* IE11+ */
 }
