@@ -24,20 +24,6 @@ define(["jquery",
         }
 
 
-        // SHOW IMAGES ON SCROLL
-            var $pImgs = $("img"); 
-            console.log('These are $pImgs: ' + $pImgs); console.dir($pImgs);
-
-            for (var i=0;i < 24; i++) { 
-                var thisImg = $pImgs[i];
-                console.log('This is thisImg: ' + thisImg);
-                $("img").trigger("unveil");
-                // document.write(cars[i] + "<br>");
-            }
-
-
-            
-
         // CURRENT PAGE
         $('#page-title').text('Our Team');
         // $('#page-ourteam').addClass('current');
@@ -132,23 +118,25 @@ define(["jquery",
             });
         }
 
+
+        // UNVEIL FIRST 24 IMAGES
+        for (var i=0;i < 24; i++) { 
+                var thisImg = $pImgs[i];
+                console.log('This is thisImg: ' + thisImg);
+                $("img").trigger("unveil");
+                // document.write(cars[i] + "<br>");
+            }
+
         
         window.onload = (function(){
 
             // HIDE SPINNER
-            // $('#ajax-loader').fadeOut(500);
+            $('#ajax-loader').fadeOut(500);
      
 
             // // SHOW IMAGES ON SCROLL
             // var $pImgs = $("img"); 
             // console.log('These are $pImgs: ' + $pImgs); console.dir($pImgs);
-
-            // for (var i=0;i < 24; i++) { 
-            //     var thisImg = $pImgs[i];
-            //     console.log('This is thisImg: ' + thisImg);
-            //     $("img").trigger("unveil");
-            //     // document.write(cars[i] + "<br>");
-            // }
             
             $("img").unveil(600, function() {
               $(this).load(function() {
