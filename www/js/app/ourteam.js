@@ -100,6 +100,8 @@ define(["jquery",
         // JSON DATA
         var jsonMembers = $body.configData().jsonMembers;
 
+        console.log(jsonMembers);
+
         // SIDE BAR CLICK EVENT- get bios
         showMemberBio = function(member) {
             $(jsonMembers).each(function() {
