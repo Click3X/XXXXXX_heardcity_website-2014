@@ -67,7 +67,43 @@ if(!isset($_POST['selected_member'])) {
         
 
         <div id="graph" class="clearfix">
-            <div id="item-list-holder" class="team-member-items"></div>
+            <div id="item-list-holder" class="team-member-items">
+                <ul class="item-list">
+
+                    <?php 
+                        $blankGif = 'images/sprites/blank.gif';
+
+                        foreach ($members as $key => $member) { 
+                            $name = $member['name'];
+                            $bio = $member['bio'];
+                            $sex = $member['sex'];
+                            $items = $member['items'];
+                            $member_class = formatLink($member['name']);
+
+                            foreach ($items as $key => $item) {
+                                $iName = $item['name'];
+                                $itemName = formatLink($iName);
+                                $image = $item['image'];
+                                $itemClass = 'item-holder '.$itemName .' ' .$member_class;
+                                // $itemClass = 'item-hidden item-holder '.$itemName .' ' .$member_class;
+
+                                $usemap = explode('.', $image);
+                                $usemap = explode( '/', $usemap[0]);
+                                $usemap = $usemap[1];
+                                $usemap = formatLink($usemap);
+                                if(isset($item['coords'])) {
+                                    $coords = $item['coords'];
+                                }
+
+                                echo '<li class="'.$itemClass.'"><img src="'.$image.'"></li>';
+                                # code...
+                            }
+
+                        } ?>
+
+
+                </ul>
+            </div>
         </div>
 
         <!-- SUB NAV -->

@@ -17,7 +17,6 @@
 		position: fixed;
 		top: 0; left: 0;
 		width: 100%; height: 100%;
-		// background: rgba(0, 0, 0, 0.1);
 		cursor: pointer;
 		z-index: 1;
 		text-decoration: none;
@@ -31,13 +30,14 @@
 	}
 }
 
-#member-title { 
-	margin-top: -2em; 
-	@media(min-width: 600px) { display: none; }
-}
+// #member-title { 
+// 	// margin-top: -2em; 
+// 	display: table;
+// 	top:0; bottom:0;
 
-// CHARLES FLEX NAV STYLES
-// .home { padding-top: 45px; }
+// 	// @media(min-width: 600px) { display: none; }
+// }
+
 
 // HEADER FIXED ON ALL PAGES sans HOME
 .ourteam,
@@ -75,9 +75,6 @@
 	.home {padding-top: 0;}
 }
 
-#site-header .flexnav .current a {
-	color:$black;
-}
 
 .ourteam,
 .contact {
@@ -106,10 +103,7 @@
 }
 
 @media(min-width: 480px) {
-	.sticky-top + #first-container {
-		// padding-top: 48px;
-		margin-top: 48px;
-	}
+	.sticky-top + #first-container { margin-top: 48px; }
 }
 
 #site-header .flexnav .mobile-map-link {
@@ -119,17 +113,6 @@
 }
 
 #site-header .flexnav .mobile-map-link {
-	// .icon-holder { width: 50%;}
-	// .icon-holder:first-of-type {
-	// 	float: left;
-	// 	padding-left:2px;
-	// }
-
-	// .icon-holder:nth-of-type(2) {
-	// 	float: right;
-	// 	padding-right:2px;
-	// }
-
 	text-align: center;
 
 	.mobile-icon-holder {
@@ -159,13 +142,8 @@
 			background-repeat: no-repeat;
 			background-position: -208px -28px;
 		}
-
-
-
 	}
 }
-
-
 
 
 #site-header .flexnav li a.sprite-map {
@@ -180,8 +158,6 @@
 }
 
 
-// #site-header .flexnav li a.sprite-map:hover { background-position: -128px -146px; }
-
 @media(min-width:600px) {
 	#member-header {
 		@include prefix(transform, translateX(0px));
@@ -193,36 +169,36 @@
 	}
 }
 
-// ARROW TOGGLE
-#member-button {
-	@media(min-width:600px) {
-		display: block;
-		position: absolute;
-		left: 18px;
 
-		> div { color: transparent; }
-	}
-}
-#member-button > div:after {
-	content: '';
-	display: block;
+#member-header #member-button > div {
+	display: inline-block;
 	background-image: url("../images/sprites/toggle-arrow.png");
 	background-repeat: no-repeat;
-	width: 23px;
-	height: 29px;
+	width: 21px; height: 21px;
+	background-position: 50% 50%;
 	position: absolute;
-	left: 7px;
-	top: 7px;
-	z-index: 70;
+	left: 8px;
 
 	@include prefix(transform, rotate(-90deg));
 	@include prefix(transition, all 400ms);
 
 	@media(min-width: 600px) {
+		display: block; position: static; left: auto;
 		@include prefix(transform, rotate(-180deg));
-		top: -41px;
-		left: 0;
 	}
+}
+
+@media(min-width: 600px) {
+		#member-header #member-button { 
+			display: block; 
+			float:left;
+			padding-left: 18px;
+		}
+	}
+
+#page-button > div {
+	position: absolute;
+	left: 12px;
 }
 
 #member-header {
@@ -230,18 +206,18 @@
 	width:100%;
 	border-bottom:1px solid rgb(153, 153, 153);
 	position: fixed;
-	top: 47px; left: 0;
+	top: 50px; left: 0;
 	z-index: 98;
 
 	@include prefix(transform, translateX(0));
-	@include prefix(transform, translateY(47));
+	@include prefix(transform, translateY(50));
 	@include prefix(transform, translateZ(98));
 	
 
 	@media(min-width: 600px) {
 		width: 260px; height: 100%;
 		border-bottom: 0; border-left: 1px solid rgb(192, 192, 192);
-		padding-top: 50px;
+		// padding-top: 50px;
 
 		right: 0; left: auto;
 
@@ -258,7 +234,7 @@
 	.menu-button {
 		background: #ffffff; border: none;
 		font-size: .8em; letter-spacing: .15em;
-		color:$black;
+		color:$black; text-align: center;
 
 		> span.touch-button { display: none; }
 	}
@@ -267,6 +243,7 @@
 		@media(min-width: 600px) {
 				width:250px;
 				text-align: left;
+				padding-top: 12px;
 				padding-bottom: 0; margin-top: 0;
 			}
 
@@ -290,7 +267,6 @@
 			}
 
 			@media (min-width: 600px) {
-				// width:250px;
 				float:right; clear:right;
 				width: 190px;
 			}
@@ -317,7 +293,7 @@
 	
 	.menu-button {
 		background: $grey;
-		border: none;
+		border: none; text-align: center;
 		font-size: .8em; letter-spacing: .15em; color:$black;
 
 		> span.touch-button { display: none; }
@@ -329,7 +305,6 @@
 			border: none; text-align: center; text-decoration: none;
 			padding:15px 0 11px;
 			background-color: $grey;
-			// font-size: .8em; line-height: 20px;
 			font-size: 10px; letter-spacing: .15em; color:$text-grey;
 
 			&:hover { color:$black;}
@@ -337,7 +312,7 @@
 			@media(min-width: 600px) { font-size: .8em; line-height: auto; }
 		}
 
-		.current-page { color:$black; }
+		.current { color:$black; }
 
 		@media(min-width: 600px) { width: 25% }
 	}
@@ -350,11 +325,74 @@
 
 .page-title {
 		display: inline-block;
-		position: absolute;
-		left: 0; right: 0;
-		margin: auto; width: 10em; text-align: center;
-		// margin-top: -2.7em;
+		// position: absolute;
+		// left: 0; right: 0;
+		// margin: auto; width: 10em; 
+		text-align: center;
 		font-size: .8em; letter-spacing: .15em; color:$black;
 
 		@media(min-width: 600px) { display: none; }
 	}
+
+// NAV STYLES
+// CURRENT PAGE STYLES
+#site-header .flexnav .current a { color:$black; }
+
+
+.cl-effect-21:not(#phone-map) a {
+	// padding: 10px;
+	padding: 10px;
+	color: $grey-text;
+	position: relative;
+
+	@include prefix(transition, color 0.3s);
+
+}
+
+#site-header .flexnav .current a:before, 
+#site-header .flexnav .current a:after, 
+.cl-effect-21:not(#phone-map) a::before,
+.cl-effect-21:not(#phone-map) a::after {
+	content: '';
+	position: absolute;
+	left: 0; right: 0;
+	width: 9em;	height: 1px;
+	background: #000;
+	opacity: 0;
+	margin: auto;
+	
+	@include prefix(transition, all 0.3s);
+	@include prefix(transform, translateY(-6px));
+}
+
+#site-header .flexnav .current a:before,
+.cl-effect-21:not(#phone-map) a::before {
+	top: 6px;
+
+	@include prefix(transform, translateY(-6px));
+}
+
+#site-header .flexnav .current a:after,
+.cl-effect-21:not(#phone-map) a::after {
+	bottom: 6px;
+
+	@include prefix(transform, translateY(6px));
+}
+
+.cl-effect-21:not(#phone-map) a:hover,
+.cl-effect-21:not(#phone-map) a:focus {
+	color: #000;
+}
+
+
+#site-header .flexnav .current a:before,
+#site-header .flexnav .current a:after,
+.cl-effect-21:not(#phone-map) a:hover::before,
+.cl-effect-21:not(#phone-map) a:focus::before,
+.cl-effect-21:not(#phone-map) a:hover::after,
+.cl-effect-21:not(#phone-map) a:focus::after {
+	opacity: 1;
+
+	@include prefix(transition, all 0.2s);
+	@include prefix(transform, translateY(0px));
+}

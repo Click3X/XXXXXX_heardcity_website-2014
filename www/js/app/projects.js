@@ -25,7 +25,7 @@ define(["jquery",
             $mainMenu = $("#page-fixed");
 
         $('#page-title').text('Projects');
-        $('#page-projects').addClass('mobile-hidden');
+        $('#page-projects').addClass('mobile-hidden current');
 
         window.onload = (function(){
             // HIDE SPINNER

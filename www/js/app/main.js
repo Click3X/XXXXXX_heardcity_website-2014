@@ -38,7 +38,7 @@ define(["jquery",
 
         // PAGE TITLE
         $('#page-title').text('Home');
-        $('#page-home').addClass('mobile-hidden');
+        $('#page-home').addClass('mobile-hidden current');
         
 
         // OPEN VIDEO FUNCTION - FEATURED WORK
