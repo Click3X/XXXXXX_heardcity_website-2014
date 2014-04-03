@@ -351,7 +351,7 @@ var Grid = (function() {
 		create : function() {
 			// create Preview structure:
 			this.$title = $( '<li class="p-name"></li>' );
-			this.$videoTag = $('<video controls><source src="" type="video/mp4" /></video>');
+			this.$videoTag = $('<video controls height="480" width="640"><source src="" type="video/mp4" /></video>');
 
 			this.$director = $('<span class="p-director"></span>');
 			this.$directorList = $('<li><span class="bold">Directed by: </span></li>').append(this.$director);
