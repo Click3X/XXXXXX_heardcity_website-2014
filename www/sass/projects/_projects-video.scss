@@ -1,6 +1,11 @@
 //------------------------------- VIDEO TESTING STYLES ------------------------------------//
 * {box-sizing: border-box;}
 
+.no-click {
+    -ms-touch-action: manipulation; /* IE10  */
+    touch-action: manipulation;     /* IE11+ */
+}
+
 // Video container width span length of screen
 #vid-test, 
 #vid-test-2 {
