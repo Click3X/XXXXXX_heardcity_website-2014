@@ -9,6 +9,9 @@ define(["jquery",
         "util/clue-hover",
         "hover"], function($, config, flexnav, teamMemberFactory, subMenu, unveil, clueTip, clueHover, hover) {
     $(function() {
+        // SPINNER IS NOT WORKING RIGHT - DISABLE TEMPORARILY
+        // $('#ajax-loader').fadeOut(500);
+        $('#ajax-loader').hide();
 
         // TEST FOR MOBILE DEVICE / TABLET
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
@@ -118,7 +121,7 @@ define(["jquery",
         window.onload = (function(){
 
             // HIDE SPINNER
-            $('#ajax-loader').fadeOut(500);
+            // $('#ajax-loader').fadeOut(500);
      
 
             // SHOW IMAGES ON SCROLL
