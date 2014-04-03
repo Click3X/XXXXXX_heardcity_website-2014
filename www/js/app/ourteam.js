@@ -119,6 +119,7 @@ define(["jquery",
         }
 
 
+        var $pImgs = $("img");
         // UNVEIL FIRST 24 IMAGES
         for (var i=0;i < 24; i++) { 
                 var thisImg = $pImgs[i];
