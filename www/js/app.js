@@ -3,7 +3,7 @@
 // Configure loading modules from the lib directory,
 // except 'app' ones, 
 requirejs.config({
-    // "urlArgs": "bust=" + (new Date()).getTime(),
+    "urlArgs": "bust=" + (new Date()).getTime(),
     "baseUrl": "js/lib",
     "paths": {
       "app": "../app",
