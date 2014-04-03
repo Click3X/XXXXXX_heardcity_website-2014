@@ -4911,8 +4911,7 @@ textarea:focus, input:focus {
 /* line 47, ../sass/contact/_contact.scss */
 .contact-container .map {
   background-color: black;
-  padding-bottom: 63.1%;
-  min-height: 300px;
+  padding-bottom: 60%;
 }
 @media (min-width: 600px) {
   /* line 47, ../sass/contact/_contact.scss */
@@ -4926,18 +4925,18 @@ textarea:focus, input:focus {
     padding-bottom: 641.516px;
   }
 }
-/* line 61, ../sass/contact/_contact.scss */
+/* line 62, ../sass/contact/_contact.scss */
 .contact-container .city {
   background-image: url("../images/contact/city.jpg");
   padding-bottom: 75.5%;
 }
 @media (min-width: 980px) {
-  /* line 61, ../sass/contact/_contact.scss */
+  /* line 62, ../sass/contact/_contact.scss */
   .contact-container .city {
     padding-bottom: 670px;
   }
 }
-/* line 68, ../sass/contact/_contact.scss */
+/* line 69, ../sass/contact/_contact.scss */
 .contact-container .address {
   font-size: .938em;
   display: inline-block;
@@ -4946,35 +4945,35 @@ textarea:focus, input:focus {
   padding: 0 1.5em;
   font-size: 500;
 }
-/* line 76, ../sass/contact/_contact.scss */
+/* line 77, ../sass/contact/_contact.scss */
 .contact-container .address a {
   color: #c84938;
   text-decoration: none;
 }
-/* line 81, ../sass/contact/_contact.scss */
+/* line 82, ../sass/contact/_contact.scss */
 .contact-container .address li {
   font-weight: 500;
 }
-/* line 83, ../sass/contact/_contact.scss */
+/* line 84, ../sass/contact/_contact.scss */
 .contact-container .address .city-li, .contact-container .address .email {
   margin-bottom: 1em;
 }
-/* line 86, ../sass/contact/_contact.scss */
+/* line 87, ../sass/contact/_contact.scss */
 .contact-container .address .email,
 .contact-container .address .phone {
   color: #c84938;
 }
-/* line 88, ../sass/contact/_contact.scss */
+/* line 89, ../sass/contact/_contact.scss */
 .contact-container .address .email a,
 .contact-container .address .phone a {
   text-decoration: none;
 }
-/* line 91, ../sass/contact/_contact.scss */
+/* line 92, ../sass/contact/_contact.scss */
 .contact-container .address .g-map-link {
   text-decoration: none;
   color: inherit;
 }
-/* line 96, ../sass/contact/_contact.scss */
+/* line 97, ../sass/contact/_contact.scss */
 .contact-container .address .addy {
   color: #c84938;
   text-decoration: none;
