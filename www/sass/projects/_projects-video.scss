@@ -1,15 +1,15 @@
 //------------------------------- VIDEO TESTING STYLES ------------------------------------//
 * {box-sizing: border-box;}
 
-.no-delay {
-	display: block;
-	cursor: pointer;
-}
+// .no-delay {
+// 	display: block;
+// 	cursor: pointer;
+// }
 
-.no-delay {
-    -ms-touch-action: manipulation; /* IE10  */
-    touch-action: manipulation;     /* IE11+ */
-}
+// .no-delay {
+//     -ms-touch-action: manipulation; /* IE10  */
+//     touch-action: manipulation;     /* IE11+ */
+// }
 
 .og-vid-holder .og-expander-inner:after {
 	content: '';
@@ -186,7 +186,7 @@
 
 	.vid-title-holder {
 		@include prefix(transform, translate(0, -100%)); 
-		// @include prefix(transition, all 500ms);
+		@include prefix(transition, all 500ms);
 	}
 }
 
@@ -281,7 +281,8 @@
     margin-top: -8%;
 
     .section-title {
-    	background-color:$white;
+    	// background-color:$white;
+    	color:#ffffff;
     	position: relative;
 
     	.credits { 

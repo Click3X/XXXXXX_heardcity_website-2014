@@ -311,48 +311,48 @@ define(["jquery",
 
 
             // TEAM MEMBER CLICK
-            // $('#member-header a').click( function(event) {
-            //     event.preventDefault();
+            $('#member-header a').click( function(event) {
+                event.preventDefault();
 
-            //      // HIDE CLUE TIP HOVER
-            //     $(document).trigger('hideCluetip');
+                 // HIDE CLUE TIP HOVER
+                $(document).trigger('hideCluetip');
 
-            //     // SCROLL WINDOW TO TOP
-            //     $('html, body').animate({scrollTop : 0},800);
+                // SCROLL WINDOW TO TOP
+                $('html, body').animate({scrollTop : 0},800);
 
-            //     // GET HREF VALUES
-            //     var hreftarget = $(this).attr('href'),
-            //     target = '.item-holder.' + hreftarget,
-            //     siblings = $('.item-holder').not(target);
-
-                
-            //     // HIDE SIBLINGS
-            //     siblings.hide();
-
-            //     // RESET BODY CONTAINER CLASS
-            //     $body.removeClass('js-single-member');
-            //     $('.item-holder').fadeIn( "slow");
-
-            //     // Tighten up footer with less elements on screen
-            //     siblings.hide();
-
-            //     // Show Target
-            //     $(target).removeClass('item-hidden').show();
-
-            //     var $imgs = $(target).find("img"); console.log('This is $imgs: ' + $imgs); console.dir($imgs);
-            //     $imgs.trigger("unveil");
-
-            //     $body.addClass('js-single-member');
-            //     // SHOW member BIO
-            //     $memberBioPermalink.show("slow");
-            //     showMemberBio(hreftarget);
+                // GET HREF VALUES
+                var hreftarget = $(this).attr('href'),
+                target = '.item-holder.' + hreftarget,
+                siblings = $('.item-holder').not(target);
 
                 
-            //     // OPEN / SHUT side bar NAV
-            //      $('#member-header').addClass('side-bar-closed');
-            //      $clickClose.addClass('hidden');
+                // HIDE SIBLINGS
+                siblings.hide();
+
+                // RESET BODY CONTAINER CLASS
+                $body.removeClass('js-single-member');
+                $('.item-holder').fadeIn( "slow");
+
+                // Tighten up footer with less elements on screen
+                siblings.hide();
+
+                // Show Target
+                $(target).removeClass('item-hidden').show();
+
+                var $imgs = $(target).find("img"); console.log('This is $imgs: ' + $imgs); console.dir($imgs);
+                $imgs.trigger("unveil");
+
+                $body.addClass('js-single-member');
+                // SHOW member BIO
+                $memberBioPermalink.show("slow");
+                showMemberBio(hreftarget);
+
                 
-            // });
+                // OPEN / SHUT side bar NAV
+                 $('#member-header').addClass('side-bar-closed');
+                 $clickClose.addClass('hidden');
+                
+            });
 
             // // ON MAP LINK CLICK - SHOW MEMBER SOLO
             // $('.map-link').click(function(event) {

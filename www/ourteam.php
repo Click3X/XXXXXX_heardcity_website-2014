@@ -84,8 +84,9 @@ if(!isset($_POST['selected_member'])) {
                                 $iName = $item['name'];
                                 $itemName = formatLink($iName);
                                 $image = $item['image'];
+                                $itemBio = $item['bio'];
                                 $itemClass = 'item-holder '.$itemName .' ' .$member_class;
-                                // $itemClass = 'item-hidden item-holder '.$itemName .' ' .$member_class;
+                                $title =  "|" . "|" . $name . "'s" . "|" . $iName . "|" . $itemBio . "|" . "<label for='".$member_class."-".$itemName."' class='permalink'>> View " . $sex . " stuff</label><input type='radio' name='".$member_class."' id='".$member_class."-".$itemName."' value='".$member_class."'>";
 
                                 $usemap = explode('.', $image);
                                 $usemap = explode( '/', $usemap[0]);
@@ -93,10 +94,21 @@ if(!isset($_POST['selected_member'])) {
                                 $usemap = formatLink($usemap);
                                 if(isset($item['coords'])) {
                                     $coords = $item['coords'];
-                                }
+                                    echo '<li class="'.$itemClass.'">
+                                            <img src="'.$image.'" alt="'.$iName.'">
+                                            <map id="'.$member_class.'" name="'.$member_class.'" class="map-link" data-person="'.$member_class.'">
+                                                <area href="#" shape="poly" coords="'.$coords.'" alt="'.$itemName.'" data-person="'.$member_class.'" data-item="'.$itemName.'" title="'.$title.'" class="cluetip-div">
+                                            </map>
+                                        </li>';
+                                } else {
 
-                                echo '<li class="'.$itemClass.'"><img src="'.$image.'"></li>';
-                                # code...
+                                   echo '<li class="'.$itemClass.'">
+                                            <a href="#" data-person="'.$member_class.'" data-item="'.$itemName.'" title="'.$title.'" class="cluetip-div">
+                                                <img src="'.$image.'" alt="'.$iName.'">
+                                            </a>
+                                        </li>';
+                                }
+                                
                             }
 
                         } ?>
