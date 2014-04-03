@@ -29,15 +29,17 @@ define(["jquery",
         // TEST FOR MOBILE DEVICE / TABLET
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             device = 'mobile';
-            console.log('this is device' + device);
+            // console.log('this is device' + device);
+            $body.addClass('mobile');
         } else {
             device = 'desk';
-            console.log('this is device' + device);
+            // console.log('this is device' + device);
         }
 
         // PAGE TITLE
         $('#page-title').text('Home');
-        $('#page-home').addClass('current');
+        $('#page-home').addClass('mobile-hidden');
+        
 
         // OPEN VIDEO FUNCTION - FEATURED WORK
         $('.open-vid').click(function(e) {

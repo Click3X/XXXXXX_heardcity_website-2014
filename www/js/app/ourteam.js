@@ -10,9 +10,21 @@ define(["jquery",
         "hover"], function($, config, flexnav, teamMemberFactory, subMenu, unveil, clueTip, clueHover, hover) {
     $(function() {
 
+        // TEST FOR MOBILE DEVICE / TABLET
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            device = 'mobile';
+            // console.log('this is device' + device);
+            $body.addClass('mobile');
+        } else {
+            device = 'desk';
+            // console.log('this is device' + device);
+        }
+
         // CURRENT PAGE
         $('#page-title').text('Our Team');
-        $('#page-ourteam').addClass('current');
+        // $('#page-ourteam').addClass('current');
+        // $('.menu-ourteam > a').hide();
+        $('#page-ourteam').addClass('mobile-hidden');
 
         // VARS
         var $body = $("body"),
