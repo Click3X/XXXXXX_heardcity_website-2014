@@ -122,6 +122,16 @@ define(["jquery",
      
 
             // SHOW IMAGES ON SCROLL
+            var $pImgs = $("img"); 
+            console.log('These are $pImgs: ' + $pImgs); console.dir($pImgs);
+
+            for (var i=0;i < 24; i++) { 
+                var thisImg = $pImgs[i];
+                console.log('This is thisImg: ' + thisImg);
+                $("img").trigger("unveil");
+                // document.write(cars[i] + "<br>");
+            }
+            
             $("img").unveil(600, function() {
               $(this).load(function() {
                 this.style.opacity = 1;
