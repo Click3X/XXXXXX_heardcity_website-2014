@@ -40,20 +40,17 @@ if(!isset($_POST['selected_member'])) {
     </head>
 
     <body class="ourteam one-page">
+        
         <!-- PRELOADER -->
          <div id="ajax-loader">
             <div class="ajax-spinner">
-                <img src="images/logo/logo-white.svg">
+                <img src="images/logo/logo-white.png" width="150px" height="194px">
                 <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
             </div>
         </div>
 
         <?php include('php/main-nav.php'); ?>
     	 
-<!--    <div id="black-logo" class="logo"></div>	 -->
-<!--     	<div id="loader">
-            <div id="spinner" class="loading"></div>
-        </div> -->
 
         <div id="member-bio" class="container clearfix">
             <div class="team-member clearfix">
@@ -71,8 +68,8 @@ if(!isset($_POST['selected_member'])) {
             <div id="item-list-holder" class="team-member-items"></div>
         </div>
 
+        <!-- SUB NAV -->
         <?php include('php/sub-nav.php'); ?>
-        <!-- <input id="out" type="button" value="Outline" style="position:fixed; right:5px; width:80px; bottom:100px; z-index:1000"/> -->
 
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>

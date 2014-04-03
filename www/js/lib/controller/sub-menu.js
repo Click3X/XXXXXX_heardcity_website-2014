@@ -58,6 +58,15 @@ define(["jquery",
 	        // if(winWidth < 600) { length = 36; } 
 	        // else { length = teamMemberFactory.length; }
 
+		     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+	            device = 'mobile';
+	            length = 40;
+	            // console.log('this is device' + device);
+	        } else {
+	            device = 'desk';
+	            // console.log('this is device' + device);
+	        }
+
 	        while(i < length) {
 	            var li = teamMemberFactory[i];
 	            li.appendTo(ul);

@@ -35,7 +35,7 @@ include('php/project-grid.php');
 <!-- PRELOADER -->
          <div id="ajax-loader">
             <div class="ajax-spinner">
-                <img src="images/logo/logo-white.svg">
+                <img src="images/logo/logo-white.png" width="150px" height="194px">
                 <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
             </div>
         </div>

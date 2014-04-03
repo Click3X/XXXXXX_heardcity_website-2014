@@ -1,14 +1,13 @@
 // OUR TEAM BASE SCSS
-.ourteam.white-bg {
-	background: #000;
+.ourteam.white-bg {background: #000;}
+
+#cluetip > div.cluetip-outer > div > div:nth-child(5) > label {
+	cursor: pointer;
 }
 
-html, body {
-	height: 100%;
-}
-.ourteam {
-	position: relative;
-}
+html, body { height: 100%; }
+
+.ourteam { position: relative; }
 
 #graph {
 	position: relative;
@@ -26,7 +25,6 @@ html, body {
 	}
 }
 
-// .ourteam .footer {position: absolute; bottom:0;}
 
 .sidebar-link {
 	cursor: pointer;
@@ -79,40 +77,6 @@ html, body {
 	    margin-left: 13%;
 	  }
 }
-
-// CLUE TIP ARROW POSITIONS 
-// .ourteam {
-// 	.clue-left-default,
-// 	.clue-right-default {
-// 		.cluetip-arrows.ui-state-default {
-// 			z-index: 98;
-// 			display: block;
-// 			top: 50% !important;
-// 			margin-top: -12px;
-// 		}
-// 	}
-
-// 	div.clue-right-default .cluetip-arrows {
-// 		background-image: url(vendor/cluetip/images/darrowleft.png);
-// 		opacity: 0.95;
-// 	}
-
-// 	div.clue-left-default .cluetip-arrows {
-// 		background-image: url(vendor/cluetip/images/darrowright.png);
-// 		opacity: 0.95;
-// 	}
-
-// 	div.clue-bottom-default .cluetip-arrows {
-// 		background-image: url(vendor/cluetip/images/darrowup.png);
-// 		opacity: 0.95;
-// 	}
-
-// 	div.clue-top-default .cluetip-arrows {
-// 		background-image: url(vendor/cluetip/images/darrowdown.png);
-// 		opacity: 0.95;
-// 	}
-
-// }
 
 // Silo and Member bio
 .ourteam {

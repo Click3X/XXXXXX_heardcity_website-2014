@@ -1,6 +1,3 @@
 AddType image/svg+xml svg
 AddType image/svg+xml svgz
 
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.html?$ / [NC,R,L]
