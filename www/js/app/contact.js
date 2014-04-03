@@ -14,11 +14,11 @@ define(["jquery",
             // console.log('this is device' + device);
         }
 
-        
+
         var $body = $('body'),
             $mainMenu = $("#page-fixed"),
             $blackLogo = $('#black-logo');
-            $loader = $('#loader');
+            // $loader = $('#loader');
         
         // $('#page-contact').addClass('current');
         $('#page-title').text('Contact');

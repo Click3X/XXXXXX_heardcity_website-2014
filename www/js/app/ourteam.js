@@ -11,7 +11,7 @@ define(["jquery",
     $(function() {
         // SPINNER IS NOT WORKING RIGHT - DISABLE TEMPORARILY
         // $('#ajax-loader').fadeOut(500);
-        $('#ajax-loader').hide();
+        // $('#ajax-loader').hide();
 
         // TEST FOR MOBILE DEVICE / TABLET
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {

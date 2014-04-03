@@ -18,7 +18,7 @@ define(["jquery",
 
         // SPINNER IS NOT WORKING RIGHT - DISABLE TEMPORARILY
         // $('#ajax-loader').fadeOut(500);
-        $('#ajax-loader').hide();
+        // $('#ajax-loader').hide();
 
 
         var $body = $('body'),

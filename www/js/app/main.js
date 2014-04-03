@@ -90,7 +90,7 @@ define(["jquery",
         // WINDOW ON LOAD        
         window.onload = (function(){
             // HIDE SPINNER
-            $('#ajax-loader').fadeOut(500);
+            // $('#ajax-loader').fadeOut(500);
 
             // SWITCH IMG SRC FOR LAZY LOADING
             $img.unveil(600);
