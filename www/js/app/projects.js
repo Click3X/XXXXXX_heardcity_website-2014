@@ -16,7 +16,11 @@ define(["jquery",
             // console.log('this is device' + device);
         }
 
-        
+        // SPINNER IS NOT WORKING RIGHT - DISABLE TEMPORARILY
+        // $('#ajax-loader').fadeOut(500);
+        $('#ajax-loader').hide();
+
+
         var $body = $('body'),
             $mainMenu = $("#page-fixed");
 
@@ -25,7 +29,7 @@ define(["jquery",
 
         window.onload = (function(){
             // HIDE SPINNER
-            $('#ajax-loader').fadeOut(500);
+            // $('#ajax-loader').fadeOut(500);
 
             // INITIALIZE MENU
             $mainMenu.flexNav({
