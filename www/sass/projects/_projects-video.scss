@@ -153,7 +153,8 @@
 
 .vid-title-holder {	@include prefix(transition, all 500ms); }
 
-#og-grid .og-vid-holder:hover {
+
+#og-grid .og-vid-holder.desk:hover {
 	a.img-link {
 		@include prefix(transform, translate(0, -26.54088%));
 		@include prefix(transition, all 500ms);

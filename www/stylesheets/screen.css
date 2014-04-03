@@ -4581,8 +4581,8 @@ textarea:focus, input:focus {
   transition: all 500ms;
 }
 
-/* line 157, ../sass/projects/_projects-video.scss */
-#og-grid .og-vid-holder:hover a.img-link {
+/* line 158, ../sass/projects/_projects-video.scss */
+#og-grid .og-vid-holder.desk:hover a.img-link {
   -webkit-transform: translate(0, -26.54088%);
   -moz-transform: translate(0, -26.54088%);
   -o-transform: translate(0, -26.54088%);
@@ -4594,8 +4594,8 @@ textarea:focus, input:focus {
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 162, ../sass/projects/_projects-video.scss */
-#og-grid .og-vid-holder:hover .vid-title-holder {
+/* line 163, ../sass/projects/_projects-video.scss */
+#og-grid .og-vid-holder.desk:hover .vid-title-holder {
   -webkit-transform: translate(0, -100%);
   -moz-transform: translate(0, -100%);
   -o-transform: translate(0, -100%);
@@ -4603,7 +4603,7 @@ textarea:focus, input:focus {
   transform: translate(0, -100%);
 }
 
-/* line 168, ../sass/projects/_projects-video.scss */
+/* line 169, ../sass/projects/_projects-video.scss */
 .active-vid {
   -webkit-transform: translate(0, -100%);
   -moz-transform: translate(0, -100%);
@@ -4612,7 +4612,7 @@ textarea:focus, input:focus {
   transform: translate(0, -100%);
 }
 
-/* line 176, ../sass/projects/_projects-video.scss */
+/* line 177, ../sass/projects/_projects-video.scss */
 .og-grid .og-vid-holder {
   padding: 0 .25em 0 .25em;
   margin-bottom: .25em;
@@ -4622,29 +4622,29 @@ textarea:focus, input:focus {
   padding-bottom: 57%;
 }
 @media (min-width: 480px) {
-  /* line 176, ../sass/projects/_projects-video.scss */
+  /* line 177, ../sass/projects/_projects-video.scss */
   .og-grid .og-vid-holder {
     padding-bottom: 29%;
   }
 }
 @media (min-width: 960px) {
-  /* line 176, ../sass/projects/_projects-video.scss */
+  /* line 177, ../sass/projects/_projects-video.scss */
   .og-grid .og-vid-holder {
     padding-bottom: 19%;
   }
 }
 @media (min-width: 1480px) {
-  /* line 176, ../sass/projects/_projects-video.scss */
+  /* line 177, ../sass/projects/_projects-video.scss */
   .og-grid .og-vid-holder {
     padding-bottom: 14%;
   }
 }
-/* line 197, ../sass/projects/_projects-video.scss */
+/* line 198, ../sass/projects/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder {
   width: 100%;
   background-color: #ffffff;
 }
-/* line 201, ../sass/projects/_projects-video.scss */
+/* line 202, ../sass/projects/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder .title {
   max-width: 80%;
   display: table;
@@ -4653,17 +4653,17 @@ textarea:focus, input:focus {
   height: 90px;
 }
 @media (min-width: 480px) {
-  /* line 201, ../sass/projects/_projects-video.scss */
+  /* line 202, ../sass/projects/_projects-video.scss */
   .og-grid .og-vid-holder .vid-title-holder .title {
     height: 110px;
   }
 }
-/* line 213, ../sass/projects/_projects-video.scss */
+/* line 214, ../sass/projects/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder .title div {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 217, ../sass/projects/_projects-video.scss */
+/* line 218, ../sass/projects/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder .title div a {
   color: #000000;
   line-height: 1.4em;
@@ -4677,7 +4677,7 @@ textarea:focus, input:focus {
   text-align: center;
 }
 
-/* line 235, ../sass/projects/_projects-video.scss */
+/* line 236, ../sass/projects/_projects-video.scss */
 .og-grid li.og-expanded > a::after {
   top: auto;
   left: 50%;
@@ -4691,7 +4691,7 @@ textarea:focus, input:focus {
   margin: -20px 0 0 -15px;
 }
 
-/* line 245, ../sass/projects/_projects-video.scss */
+/* line 246, ../sass/projects/_projects-video.scss */
 .og-expander {
   position: absolute;
   top: auto;
@@ -4709,12 +4709,12 @@ textarea:focus, input:focus {
   transform: translateZ(0);
   margin-top: -8%;
 }
-/* line 258, ../sass/projects/_projects-video.scss */
+/* line 259, ../sass/projects/_projects-video.scss */
 .og-expander .section-title {
   background-color: white;
   position: relative;
 }
-/* line 262, ../sass/projects/_projects-video.scss */
+/* line 263, ../sass/projects/_projects-video.scss */
 .og-expander .section-title .credits {
   display: block;
   max-width: 30em;
@@ -4724,20 +4724,20 @@ textarea:focus, input:focus {
   padding-bottom: 37px;
 }
 
-/* line 274, ../sass/projects/_projects-video.scss */
+/* line 275, ../sass/projects/_projects-video.scss */
 .og-expander-inner {
   padding: 50px 0;
   text-align: center;
 }
 
-/* line 279, ../sass/projects/_projects-video.scss */
+/* line 280, ../sass/projects/_projects-video.scss */
 .og-fullimg video {
   margin-bottom: 1em;
   width: 100%;
   max-width: 940px;
 }
 
-/* line 287, ../sass/projects/_projects-video.scss */
+/* line 288, ../sass/projects/_projects-video.scss */
 .p-name {
   font-size: 1em;
   text-align: center;
@@ -4749,14 +4749,14 @@ textarea:focus, input:focus {
   max-width: 30em;
   margin: 0 auto .5em;
 }
-/* line 298, ../sass/projects/_projects-video.scss */
+/* line 299, ../sass/projects/_projects-video.scss */
 .p-name:before {
   content: '';
   display: block;
   border-top: 1px solid #404040;
   height: 14px;
 }
-/* line 305, ../sass/projects/_projects-video.scss */
+/* line 306, ../sass/projects/_projects-video.scss */
 .p-name:after {
   content: '';
   display: block;
@@ -4764,7 +4764,7 @@ textarea:focus, input:focus {
   height: 12px;
 }
 
-/* line 315, ../sass/projects/_projects-video.scss */
+/* line 316, ../sass/projects/_projects-video.scss */
 .og-close {
   position: absolute;
   width: 28px;
@@ -4776,7 +4776,7 @@ textarea:focus, input:focus {
   background-repeat: no-repeat;
 }
 
-/* line 326, ../sass/projects/_projects-video.scss */
+/* line 327, ../sass/projects/_projects-video.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -4791,54 +4791,54 @@ textarea:focus, input:focus {
 }
 
 @keyframes loader {
-  /* line 338, ../sass/projects/_projects-video.scss */
+  /* line 339, ../sass/projects/_projects-video.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 339, ../sass/projects/_projects-video.scss */
+  /* line 340, ../sass/projects/_projects-video.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 340, ../sass/projects/_projects-video.scss */
+  /* line 341, ../sass/projects/_projects-video.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
   }
 }
 
-/* line 344, ../sass/projects/_projects-video.scss */
+/* line 345, ../sass/projects/_projects-video.scss */
 #og-grid > li {
   width: 100%;
   float: left;
 }
 
-/* line 349, ../sass/projects/_projects-video.scss */
+/* line 350, ../sass/projects/_projects-video.scss */
 #og-grid > li img {
   width: 100%;
 }
 
 @media screen and (min-width: 480px) {
-  /* line 354, ../sass/projects/_projects-video.scss */
+  /* line 355, ../sass/projects/_projects-video.scss */
   #og-grid > li {
     width: 50%;
   }
 }
 @media screen and (min-width: 960px) {
-  /* line 360, ../sass/projects/_projects-video.scss */
+  /* line 361, ../sass/projects/_projects-video.scss */
   #og-grid > li {
     width: 33%;
   }
 }
 @media (min-width: 1480px) {
-  /* line 366, ../sass/projects/_projects-video.scss */
+  /* line 367, ../sass/projects/_projects-video.scss */
   #og-grid > li {
     width: 25%;
   }
 }
-/* line 373, ../sass/projects/_projects-video.scss */
+/* line 374, ../sass/projects/_projects-video.scss */
 .sec-image {
   background-size: cover;
   background-position: 50%;
