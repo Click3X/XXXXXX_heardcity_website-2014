@@ -11,6 +11,20 @@
     touch-action: manipulation;     /* IE11+ */
 }
 
+.og-vid-holder .og-expander-inner:after {
+	content: '';
+	display: block;
+	background: transparent;
+	width: 100%;
+	padding-bottom: 100%;
+	position: relative;
+	z-index: -10;
+
+	@include prefix(transform, translateZ(-10));
+}
+
+
+
 // Video container width span length of screen
 #vid-test, 
 #vid-test-2 {
