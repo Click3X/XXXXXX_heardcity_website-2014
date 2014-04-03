@@ -66,17 +66,17 @@ foreach ($members as $key => $member) {
     
     </head>
 
-    <body class="home white-bg">
+    <body class="">
 
 
       <?php $jsonMembers = json_encode($jsonMembers);
 
           echo '<pre>'.$jsonMembers.'</pre>';
 
-          echo '<script>var newJsonMembers = '.$jsonMembers.'; console.table(newJsonMembers); </script>';
+          echo '<script>var newJsonMembers = JSON.stringify('.$jsonMembers.'); console.dir(newJsonMembers); </script>';
 ?>
 
-
+          <script> console.log(newJsonMembers);</script>
 
   <?php include('php/footer.php'); ?>
         

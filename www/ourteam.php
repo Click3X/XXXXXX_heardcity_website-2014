@@ -23,6 +23,13 @@ if(!isset($_POST['selected_member'])) {
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
+        <style>
+                .item-list img {
+                      opacity: 0;
+                      transition: opacity .3s ease-in;
+                    } 
+        </style>
+
           <!--[if IE]>
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->  
@@ -43,7 +50,7 @@ if(!isset($_POST['selected_member'])) {
         <!-- PRELOADER -->
          <div id="ajax-loader">
             <div class="ajax-spinner">
-                <img src="images/logo/logo-white.svg">
+                <img src="images/logo/logo-white.svg" class="logo-spin">
                 <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
             </div>
         </div>
