@@ -105,7 +105,7 @@ define(["jquery",
     
     // UNVEIL FIRST 24 IMAGES
     for (var i=0;i < 24; i++) { 
-        var thisImg = pImgs[i];
+        var thisImg = toPngs[i];
         console.log('This is thisImg: ' + thisImg);
         $("img").trigger("unveil");
         // document.write(cars[i] + "<br>");
@@ -116,11 +116,6 @@ define(["jquery",
 
         // HIDE SPINNER
         $('#ajax-loader').fadeOut(500);
-
-
-        // // SHOW IMAGES ON SCROLL
-        // var pImgs = $("img"); 
-        // console.log('These are pImgs: ' + pImgs); console.dir(pImgs);
 
         $("img").unveil(600, function() {
             $(this).load(function() {
