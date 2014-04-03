@@ -23,14 +23,6 @@ if(!isset($_POST['selected_member'])) {
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
-        <style>
-                .item-list img {
-                      opacity: 0;
-                      transition: opacity 1s ease-in;
-                    } 
-                /*#click-close { z-index: -1 !important;}*/
-        </style>
-
           <!--[if IE]>
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->  
