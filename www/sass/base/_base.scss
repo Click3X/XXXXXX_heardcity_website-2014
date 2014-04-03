@@ -2,8 +2,10 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
-
-
+ video {
+      width: 100%    !important;
+      height: auto   !important;
+    }
 
 .container { position: relative; }
 svg { max-height: 100%; }
