@@ -9,51 +9,49 @@ define(["jquery",
     "util/clue-hover",
     "hover"], function($, config, flexnav, teamMemberFactory, subMenu, unveil, clueTip, clueHover, hover) {
     $(function() {
-    // SPINNER IS NOT WORKING RIGHT - DISABLE TEMPORARILY
-    // $('#ajax-loader').fadeOut(500);
-    // $('#ajax-loader').hide();
-    var device = '';
-    // TEST FOR MOBILE DEVICE / TABLET
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-        device = 'mobile';
-        $body.addClass('mobile');            
-    } else {
-        device = 'desk';
-        // console.log('this is device' + device);
-    }
+        // SPINNER IS NOT WORKING RIGHT - DISABLE TEMPORARILY
+        // $('#ajax-loader').fadeOut(500);
+        // $('#ajax-loader').hide();
+        var device = '';
+        // TEST FOR MOBILE DEVICE / TABLET
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            device = 'mobile';
+            $body.addClass('mobile');            
+        } else {
+            device = 'desk';
+            // console.log('this is device' + device);
+        }
 
+        // CURRENT PAGE
+        $('#page-title').text('Our Team');
+        $('#page-ourteam').addClass('mobile-hidden');
 
-    // CURRENT PAGE
-    $('#page-title').text('Our Team');
-    // $('#page-ourteam').addClass('current');
-    // $('.menu-ourteam > a').hide();
-    $('#page-ourteam').addClass('mobile-hidden');
+        // VARS
+        var $body = $("body"),
+            $mainMenu = $("#page-fixed"),
+            $subNav = $("#member-fixed"),
+            $img = $("img"),
+            $clickClose = $('#click-close'),
+            $sidebarLinks = $('#member-fixed .sidebar-link'),
+            $clueTipPermalink = $('.item-list .permalink'),
+            $memberBioPermalink = $('#member-bio .permalink > a');
 
-    // VARS
-    var $body = $("body"),
-        $mainMenu = $("#page-fixed"),
-        $subNav = $("#member-fixed"),
-        $img = $("img"),
-        $clickClose = $('#click-close'),
-        $sidebarLinks = $('#member-fixed .sidebar-link'),
-        $clueTipPermalink = $('.item-list .permalink'),
-        $memberBioPermalink = $('#member-bio .permalink > a');
+        var toPngs = $('.item-holder img');
+        var noJpg = Array('items/Peony_Rene_necklace.png', 'items/Eric_Warzecha_jersey.png', 'items/Elizabeth_McClanahan_guitar.png', 'items/Keith_Reynaud_Pot.png', 'items/Jeremy_Siegal_Jordans.png', 'items/Jeremy_Siegal_chain.png', 'items/Gary_Noel_plant.png', 'items/Sasha_Awn_dress.png', 'items/Sasha_Awn_moog.png', 'items/Sasha_Awn_gloves.png', 'items/Eric_Warzecha_guitar.png', 'items/Talia_Rodgers_tank_top.png');
+        var i = 0;
+        var $pImgs = $("img");
+         // JSON DATA
+        var jsonMembers = $body.configData().jsonMembers;
 
-    var toPngs = $('.item-holder img');
-    var noJpg = Array('items/Peony_Rene_necklace.png', 'items/Eric_Warzecha_jersey.png', 'items/Elizabeth_McClanahan_guitar.png', 'items/Keith_Reynaud_Pot.png', 'items/Jeremy_Siegal_Jordans.png', 'items/Jeremy_Siegal_chain.png', 'items/Gary_Noel_plant.png', 'items/Sasha_Awn_dress.png', 'items/Sasha_Awn_moog.png', 'items/Sasha_Awn_gloves.png', 'items/Eric_Warzecha_guitar.png', 'items/Talia_Rodgers_tank_top.png');
-    var i = 0;
-    var $pImgs = $("img");
-     // JSON DATA
-    var jsonMembers = $body.configData().jsonMembers;
-
-    // CHANGE SRC ON IMAGES
-    Array.prototype.contains = function ( needle ) {
-       for (var i in this) {
-           if (this[i] == needle) {
-                return true;
-       }
-       // return false;
-    }
+        // CHANGE SRC ON IMAGES
+        Array.prototype.contains = function ( needle ) {
+           for (var i in this) {
+               if (this[i] == needle) {
+                    return true;
+                }
+           // return false;
+            }
+        }
 
     function switchSrc(obj) {
         var src = $(this).data('src'),
@@ -132,19 +130,19 @@ define(["jquery",
         });
 
  
-        // TOGGLE SIDE BAR
+    // TOGGLE SIDE BAR
         $('#member-button').click( function() { 
+        $('#member-header').toggleClass('side-bar-closed');
+        $clickClose.toggleClass('hidden');
+        $clickClose.click(function() {
             $('#member-header').toggleClass('side-bar-closed');
-            $clickClose.toggleClass('hidden');
-            $clickClose.click(function() {
-                $('#member-header').toggleClass('side-bar-closed');
             });
-        });
+    });
 
-        $("a[href='#top']").click(function() {
-              $("html, body").animate({ scrollTop: 0 }, "slow");
-              return false;
-            });
+    $("a[href='#top']").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
 
 
         // SIDEBAR LINKS
@@ -207,24 +205,6 @@ define(["jquery",
            init();
         }
 
-
-
-
-
-        // toggleMemberItems(member);
-        // $clueTipPermalink.click(function(event) {
-        //     event.preventDefault();
-
-        //     $('html, body').animate({scrollTop : 0},800);
-
-        //     console.log('this is member button');
-        //     // HIDE CLUE TIP
-        //     $(document).trigger('hideCluetip');
-            
-        //     var member = $(this);
-        //     toggleMemberItems(member);
-
-        // });
 
         // FIRE FUNCTION OFF ON CLICK
         $sidebarLinks.click(function(event) {
@@ -310,51 +290,6 @@ define(["jquery",
             $('#member-bio .name').html(defaultName);
             $('#sidebar-name').html(defaultName);
         });
-
-
-        // TEAM MEMBER CLICK
-        // $('#member-header a').click( function(event) {
-        //     event.preventDefault();
-
-        //      // HIDE CLUE TIP HOVER
-        //     $(document).trigger('hideCluetip');
-
-        //     // SCROLL WINDOW TO TOP
-        //     $('html, body').animate({scrollTop : 0},800);
-
-        //     // GET HREF VALUES
-        //     var hreftarget = $(this).attr('href'),
-        //     target = '.item-holder.' + hreftarget,
-        //     siblings = $('.item-holder').not(target);
-
-            
-        //     // HIDE SIBLINGS
-        //     siblings.hide();
-
-        //     // RESET BODY CONTAINER CLASS
-        //     $body.removeClass('js-single-member');
-        //     $('.item-holder').fadeIn( "slow");
-
-        //     // Tighten up footer with less elements on screen
-        //     siblings.hide();
-
-        //     // Show Target
-        //     $(target).removeClass('item-hidden').show();
-
-        //     var $imgs = $(target).find("img"); console.log('This is $imgs: ' + $imgs); console.dir($imgs);
-        //     $imgs.trigger("unveil");
-
-        //     $body.addClass('js-single-member');
-        //     // SHOW member BIO
-        //     $memberBioPermalink.show("slow");
-        //     showMemberBio(hreftarget);
-
-            
-        //     // OPEN / SHUT side bar NAV
-        //      $('#member-header').addClass('side-bar-closed');
-        //      $clickClose.addClass('hidden');
-            
-        // });
 
         // // ON MAP LINK CLICK - SHOW MEMBER SOLO
         $('.map-link').click(function(event) {
