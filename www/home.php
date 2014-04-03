@@ -10,7 +10,7 @@ include('php/project-grid.php');
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Heard City | Home</title>
-        <link rel="icon" href="data:;base64,=">
+        <link rel="icon" href="favicon.ico">
 
         <link href="stylesheets/vendor/royal/royalslider.css" media="screen, projection" rel="stylesheet" type="text/css">
     <!--     <link href="stylesheets/vendor/royal/rs-default.css" media="screen, projection" rel="stylesheet" type="text/css"> -->
