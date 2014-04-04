@@ -1,11 +1,11 @@
-define(["jquery", 
-        "util/config", 
+define(["jquery",
+        "util/config",
         "flexnav",
         "util/grid",
         "util/feat-button"], function($, config, flexnav, grid ,featButton) {
     
     $(function() {
-
+        var device;
         // TEST FOR MOBILE DEVICE / TABLET
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             device = 'mobile';
@@ -29,7 +29,7 @@ define(["jquery",
 
         window.onload = (function(){
             // HIDE SPINNER
-            $('#ajax-loader').fadeOut(500);
+            // $('#ajax-loader').fadeOut(500);
 
             // INITIALIZE MENU
             $mainMenu.flexNav({
