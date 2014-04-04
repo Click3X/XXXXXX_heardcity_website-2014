@@ -25,16 +25,14 @@ if(!isset($_POST['selected_member'])) {
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
-<<<<<<< HEAD
-=======
         <style>
-                .item-list img {
+    /*            .item-list img {
                       opacity: 0;
                       transition: opacity .3s ease-in;
-                    } 
+                    } */
         </style>
 
->>>>>>> parent of 8aac456... Our team page working much smoother
+
           <!--[if IE]>
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->  

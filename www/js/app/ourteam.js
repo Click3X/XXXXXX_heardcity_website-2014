@@ -36,8 +36,7 @@ define(["jquery",
             $clickClose = $('#click-close'),
             $memberBioPermalink = $('#member-bio .permalink > a');
 
-<<<<<<< HEAD
-=======
+
         // CHANGE SRC ON IMAGES
         var toPngs = $('.item-holder img'); console.dir(toPngs);
 
@@ -79,7 +78,7 @@ define(["jquery",
         $.each(toPngs, switchSrc);
 
 
->>>>>>> parent of 8aac456... Our team page working much smoother
+
          // INITIALIZE MENU
         $mainMenu.flexNav({
             'hoverIntent': false,
