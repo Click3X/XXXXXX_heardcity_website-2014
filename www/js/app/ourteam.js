@@ -114,14 +114,7 @@ define(["jquery",
             });
         }
 
-        
-        window.onload = (function(){
-
-            // HIDE SPINNER
-            // $('#ajax-loader').fadeOut(500);
-     
-
-            // SHOW IMAGES ON SCROLL
+         // SHOW IMAGES ON SCROLL
             $("img").unveil(600, function() {
               $(this).load(function() {
                 this.style.opacity = 1;
@@ -372,7 +365,13 @@ define(["jquery",
             });
 
 
-        });
+
+        
+        // window.onload = (function(){
+        //     // HIDE SPINNER
+        //     // $('#ajax-loader').fadeOut(500);
+
+        // })();
 
 
 
