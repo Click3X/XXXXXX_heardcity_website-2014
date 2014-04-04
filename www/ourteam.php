@@ -123,6 +123,22 @@ if(!isset($_POST['selected_member'])) {
             </div>
         </div> -->
 
+        
+
+
+        
+        <div id="content" class="snap-content">
+            <div id="toolbar">
+                <a href="#" id="open-left"></a>
+                <h1>Toggles</h1>
+            </div>
+            <div class="toggler" id="ol">Open Left</div>
+            <div class="toggler" id="or">Open Right</div>
+        </div>
+
+
+
+
         <div class="snap-drawers">
             <div class="snap-drawer snap-drawer-left">
                 <div>
@@ -136,15 +152,8 @@ if(!isset($_POST['selected_member'])) {
                     <ul>
                         <li><a href="default.html">Default</a></li>
                         <li><a href="noDrag.html">No Drag</a></li>
-                        <li><a href="dragElement.html">Drag Element</a></li>
-                        <li><a href="rightDisabled.html">Right Disabled</a></li>
-                        <li><a href="hyperextend.html">Hyperextension Disabled</a></li>
                         <li><a href="skinnyThreshold.html">Skinny Threshold</a></li>
                         <li><a href="toggles.html">Toggles</a></li>
-                        <li><a href="classNames.html">Class Names</a></li>
-                        <li><a href="expand.html">Expanding</a></li>
-                        <li><a href="settings.html">Settings</a></li>
-                        <li><a href="ratchet/template.html">Ratchet</a></li>
                     </ul>
                     <div>
                         <p>Toggles are easy to create. Snap.js gives you the state of the pane and allows you to make decisions simply.</p>
@@ -154,15 +163,8 @@ if(!isset($_POST['selected_member'])) {
             </div>
             <div class="snap-drawer snap-drawer-right"></div>
         </div>
-        
-        <div id="content" class="snap-content">
-            <div id="toolbar">
-                <a href="#" id="open-left"></a>
-                <h1>Toggles</h1>
-            </div>
-            <div class="toggler" id="ol">Open Left</div>
-            <div class="toggler" id="or">Open Right</div>
-        </div>
+
+
 
         <!-- SUB NAV -->
         <?php // include('php/sub-nav.php'); ?>
