@@ -18,7 +18,7 @@ define(["jquery",
         var $body = $('body'),
             $mainMenu = $("#page-fixed"),
             $blackLogo = $('#black-logo');
-            $loader = $('#loader');
+            // $loader = $('#loader');
         
         // $('#page-contact').addClass('current');
         $('#page-title').text('Contact');
@@ -27,7 +27,7 @@ define(["jquery",
         window.onload = (function(){
 
             // HIDE SPINNER
-            $('#ajax-loader').fadeOut(500);
+            // $('#ajax-loader').fadeOut(500);
             
             // MAIN MENU
             $mainMenu.flexNav({

@@ -118,7 +118,7 @@ define(["jquery",
         window.onload = (function(){
 
             // HIDE SPINNER
-            $('#ajax-loader').fadeOut(500);
+            // $('#ajax-loader').fadeOut(500);
      
 
             // SHOW IMAGES ON SCROLL

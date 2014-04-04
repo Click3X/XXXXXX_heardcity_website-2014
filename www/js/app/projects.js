@@ -25,7 +25,7 @@ define(["jquery",
 
         window.onload = (function(){
             // HIDE SPINNER
-            $('#ajax-loader').fadeOut(500);
+            // $('#ajax-loader').fadeOut(500);
 
             // INITIALIZE MENU
             $mainMenu.flexNav({
