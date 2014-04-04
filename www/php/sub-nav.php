@@ -19,4 +19,4 @@
         </ul>
     </nav>
 </div>
-<a id="click-close" class="click-close hidden"></a>
+<!-- <a id="click-close" class="click-close hidden"></a> -->

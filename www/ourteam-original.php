@@ -16,14 +16,11 @@ if(!isset($_POST['selected_member'])) {
 <html>
     <head>
     	<meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
         <title>Heard City | Our Team</title>
         <link rel="icon" href="favicon.ico">
-
-        <link href="stylesheets/vendor/snap/snap.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <link href="stylesheets/vendor/snap/assets/demo.css" media="screen, projection" rel="stylesheet" type="text/css" />
         
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -40,9 +37,7 @@ if(!isset($_POST['selected_member'])) {
                 else { echo "<script>var selectedMember = '';</script>"; } 
             ?>
 
-       <!-- <script data-main="js/ourteam" src="js/lib/require.js"></script> -->
-       <script src="js-new/lib/modernizr.js"></script>
-       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script data-main="js/ourteam" src="js/lib/require.js"></script>
     
     </head>
 
@@ -59,7 +54,7 @@ if(!isset($_POST['selected_member'])) {
         <?php include('php/main-nav.php'); ?>
     	 
 
-        <!-- <div id="member-bio" class="container clearfix">
+        <div id="member-bio" class="container clearfix">
             <div class="team-member clearfix">
                 <ul class="member-text">
                     <li class="misc-text">This belongs to</li>
@@ -121,61 +116,13 @@ if(!isset($_POST['selected_member'])) {
 
                 </ul>
             </div>
-        </div> -->
-
-        <div class="snap-drawers">
-            <div class="snap-drawer snap-drawer-left">
-                <div>
-                    <h3>Snap.js</h3>
-                    <div class="demo-social">
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Snap.js - A Library for creating beautiful mobile shelfs in Javascript" data-url="http://jakiestfu.github.com/Snap.js/" data-count="none" data-via="jakiestfu">Tweet</a>
-                        <a href="https://twitter.com/jakiestfu" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @jakiestfu</a>
-                        <iframe src="http://ghbtns.com/github-btn.html?user=jakiestfu&amp;repo=Snap.js&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="120" height="20"></iframe>
-                    </div>
-                    <h4>Demos</h4>
-                    <ul>
-                        <li><a href="default.html">Default</a></li>
-                        <li><a href="noDrag.html">No Drag</a></li>
-                        <li><a href="dragElement.html">Drag Element</a></li>
-                        <li><a href="rightDisabled.html">Right Disabled</a></li>
-                        <li><a href="hyperextend.html">Hyperextension Disabled</a></li>
-                        <li><a href="skinnyThreshold.html">Skinny Threshold</a></li>
-                        <li><a href="toggles.html">Toggles</a></li>
-                        <li><a href="classNames.html">Class Names</a></li>
-                        <li><a href="expand.html">Expanding</a></li>
-                        <li><a href="settings.html">Settings</a></li>
-                        <li><a href="ratchet/template.html">Ratchet</a></li>
-                    </ul>
-                    <div>
-                        <p>Toggles are easy to create. Snap.js gives you the state of the pane and allows you to make decisions simply.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non erat ac leo ultrices blandit sed vel risus. Pellentesque facilisis blandit auctor. Maecenas vestibulum vulputate tincidunt. Mauris nec quam libero. Fusce eget ligula non leo varius condimentum quis ac elit. Donec id urna ut neque semper ultrices. Proin ut suscipit felis. Nullam neque felis, ullamcorper scelerisque volutpat vel, vehicula vehicula neque. Aenean scelerisque elit ac erat sagittis ullamcorper.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="snap-drawer snap-drawer-right"></div>
-        </div>
-        
-        <div id="content" class="snap-content">
-            <div id="toolbar">
-                <a href="#" id="open-left"></a>
-                <h1>Toggles</h1>
-            </div>
-            <div class="toggler" id="ol">Open Left</div>
-            <div class="toggler" id="or">Open Right</div>
         </div>
 
         <!-- SUB NAV -->
-        <?php // include('php/sub-nav.php'); ?>
+        <?php include('php/sub-nav.php'); ?>
 
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>
-
-        <!-- SCRIPTS -->
-         <script src="js-new/lib/jquery.flexnav.min.js"></script>
-         <script src="js-new/lib/jquery.unveil.min.js"></script>
-         <script src="js-new/lib/snap/snap.min.js"></script>
-         <script src="js-new/lib/snap/demo.js"></script>
-         <script src="js-new/ourteam/index.js"></script>
         
     </body>
 
