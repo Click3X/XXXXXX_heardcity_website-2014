@@ -27,7 +27,9 @@ define(["jquery",
 				timeout:      0
 		},
 		onShow: function(ct, ci){
-			$('label').click(clueTipSoloMemberItems);
+			$('label').click(function() {
+				console.log('Ihave been clicked!');
+			});
 				$('.cluetip-close').click(function() {
 					$(document).trigger('hideCluetip');
 			});
