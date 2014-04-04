@@ -1,9 +1,9 @@
-define(["jquery", 
-		"util/config", 
+define(["jquery",
+		"util/config",
 		"flexnav"], function($, config, flexnav ) {
     
     $(function() {
-
+        var device;
         // TEST FOR MOBILE DEVICE / TABLET
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             device = 'mobile';
