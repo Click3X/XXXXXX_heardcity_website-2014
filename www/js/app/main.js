@@ -7,12 +7,19 @@ define(["jquery",
 
     
     $(function() {
-        var $preloadAnim = $("#preload-anim"),
-        $animHolder = $('#anim-holder');
+        // var $preloadAnim = $("#preload-anim"),
+        // $animHolder = $('#anim-holder');
 
-        var myAnim = setInterval(function(){
-            $preloadAnim.attr('src', nextImage);
-        }, 42);
+        // var p=1;
+
+        // while(p < 133) {
+        //     var myAnim = setInterval(function(){
+        //         var nextImage = 'pre_loader' + (20000 + p) + '.png';
+        //         console.log('This is nextImage: ' + nextImage);
+        //         $preloadAnim.attr('src', nextImage);
+        //         p++;
+        //     }, 42);
+        // }
         
         var $body = $('body'),
         $mainMenu = $("#page-fixed"),

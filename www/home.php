@@ -26,9 +26,10 @@ include('php/project-grid.php');
     </head>
 
     <body class="home">
-        <div id="anim-holder" class="anim-holder">
-            <div id="preload-anim" class="preload-anim"></div>
-        </div>
+        <!-- ANIMATED PRE LOADER -->
+        <!-- <div id="anim-holder" class="anim-holder">
+            <img id="preload-anim" class="preload-anim" src="preloader/pre_loader20011.png">
+        </div> -->
         <!-- PRELOADER -->
 <!--          <div id="ajax-loader">
             <div class="ajax-spinner">
