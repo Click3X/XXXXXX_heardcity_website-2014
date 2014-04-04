@@ -75,7 +75,13 @@
 	}
 }
 
-#first-container { height:200px; }
+#first-container,
+.black-theme .text-slider li { 
+	height:180px;
+	@media(min-width:400px) {
+		height:200px;
+	}
+}
 
 @media(min-width:480px) {
 	#first-container,

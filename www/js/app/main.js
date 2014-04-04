@@ -7,6 +7,12 @@ define(["jquery",
 
     
     $(function() {
+        var $preloadAnim = $("#preload-anim"),
+        $animHolder = $('#anim-holder');
+
+        var myAnim = setInterval(function(){
+            $preloadAnim.attr('src', nextImage);
+        }, 42);
         
         var $body = $('body'),
         $mainMenu = $("#page-fixed"),
@@ -260,6 +266,8 @@ define(["jquery",
         // HIDE SPINNER
         // $('.preload-wrap').removeClass('preload-wrap');
         // $('#ajax-loader').fadeOut(500);
+
+
 
 
     });
