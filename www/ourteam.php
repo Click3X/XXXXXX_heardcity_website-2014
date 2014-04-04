@@ -28,6 +28,19 @@ if(!isset($_POST['selected_member'])) {
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->  
 
+        <script>
+              // TEST FOR MOBILE DEVICE / TABLET
+            var device;
+            if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+                device = 'mobile';
+                // console.log('this is device' + device);
+                // $body.addClass('mobile');
+            } else {
+                device = 'desk';
+                // console.log('this is device' + device);
+            }
+        </script>
+
             <?php  // If the Team Member Form has been submitted, echo the variable between script tags for JS
            
             if(isset($_POST['selected_member']) && ($_POST['selected_member'] != '')) { 
