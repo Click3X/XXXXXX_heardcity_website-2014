@@ -2406,87 +2406,79 @@ body.home {
 
 /* line 99, ../sass/home/_home.scss */
 .rsDefault .rsArrowIcn {
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
   top: 50%;
   left: 50%;
   margin-top: -16px;
-  margin-left: -16px;
+  margin-left: -32px;
   position: absolute;
   cursor: pointer;
   background: url("vendor/royal/rs-default.png");
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0.75);
-  border-radius: 2px;
-}
-
-/* line 120, ../sass/home/_home.scss */
-.rsDefault .rsArrowIcn:hover {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-/* line 124, ../sass/home/_home.scss */
-.rsDefault.rsHor .rsArrowLeft .rsArrowIcn {
-  background-position: -64px -32px;
-}
-
-/* line 125, ../sass/home/_home.scss */
-.rsDefault.rsHor .rsArrowRight .rsArrowIcn {
-  background-position: -64px -64px;
 }
 
 /* line 127, ../sass/home/_home.scss */
+.rsDefault.rsHor .rsArrowLeft .rsArrowIcn {
+  background-position: -109px -52px;
+  background-size: 540%;
+}
+
+/* line 133, ../sass/home/_home.scss */
+.rsDefault.rsHor .rsArrowRight .rsArrowIcn {
+  background-position: -109px -108px;
+  background-size: 540%;
+}
+
+/* line 140, ../sass/home/_home.scss */
 .rsDefault.rsVer .rsArrowLeft .rsArrowIcn {
   background-position: -96px -32px;
 }
 
-/* line 128, ../sass/home/_home.scss */
+/* line 141, ../sass/home/_home.scss */
 .rsDefault.rsVer .rsArrowRight .rsArrowIcn {
   background-position: -96px -64px;
 }
 
-/* line 130, ../sass/home/_home.scss */
+/* line 143, ../sass/home/_home.scss */
 .rsDefault .rsArrowDisabled .rsArrowIcn {
   opacity: .2;
   filter: alpha(opacity=20);
 }
 
 /******************* CHARLES STYLES */
-/* line 137, ../sass/home/_home.scss */
+/* line 150, ../sass/home/_home.scss */
 .rsDefault .rsArrowIcn {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 139, ../sass/home/_home.scss */
+  /* line 152, ../sass/home/_home.scss */
   .rsDefault .rsArrowIcn {
     display: block;
   }
 }
-/* line 143, ../sass/home/_home.scss */
+/* line 156, ../sass/home/_home.scss */
 #featured-slider.rsDefault .rsArrowIcn {
   top: 25%;
 }
 
 @media (min-width: 980px) {
-  /* line 146, ../sass/home/_home.scss */
+  /* line 159, ../sass/home/_home.scss */
   #featured-slider.rsDefault .rsArrowIcn {
     top: 220px;
   }
 }
-/* line 151, ../sass/home/_home.scss */
+/* line 164, ../sass/home/_home.scss */
 #marquee-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
 #marquee-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div {
-  background-color: rgba(0, 0, 0, 0.35);
   border-radius: 0;
 }
 
-/* line 159, ../sass/home/_home.scss */
+/* line 172, ../sass/home/_home.scss */
 #grey-text-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
 #grey-text-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div,
 #team-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
 #team-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div {
-  background-color: silver;
   border-radius: 0;
 }
 

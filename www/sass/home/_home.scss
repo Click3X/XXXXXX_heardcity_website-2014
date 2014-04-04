@@ -97,32 +97,45 @@ body.home {
 .rsDefault.rsHor .rsArrowRight { right: 0; top:0; }
 
 .rsDefault .rsArrowIcn {		
-	width: 32px;
-	height: 32px;
+	// width: 32px;
+	// height: 32px;
+	width: 64px;
+	height: 64px;
 	top: 50%;
 	left: 50%;
 	margin-top:-16px;	
-	margin-left: -16px;
+	// margin-left: -16px; 
+	margin-left: -32px;
 
 	position: absolute;	
 	cursor: pointer;	
 	background: url('vendor/royal/rs-default.png');
 
-	background-color: #000;
-	background-color: rgba(0,0,0,0.75);
+	// background-color: #000;
+	// background-color: rgba(0,0,0,0.75);
 	// *background-color: #000;
 	
-	border-radius: 2px;
+	// border-radius: 2px;
 }
 
 
 
 .rsDefault .rsArrowIcn:hover {
-	background-color: rgba(0,0,0,0.9);
+	// background-color: rgba(0,0,0,0.9);
 }
 
-.rsDefault.rsHor .rsArrowLeft .rsArrowIcn { background-position: -64px -32px; }
-.rsDefault.rsHor .rsArrowRight .rsArrowIcn { background-position: -64px -64px; }
+.rsDefault.rsHor .rsArrowLeft .rsArrowIcn { 
+	// background-position: -64px -32px; 
+	background-position: -109px -52px;
+	background-size: 540%;
+}
+
+.rsDefault.rsHor .rsArrowRight .rsArrowIcn { 
+	// background-position: -64px -64px; 
+	background-position: -109px -108px;
+	background-size: 540%;
+
+}
 
 .rsDefault.rsVer .rsArrowLeft .rsArrowIcn { background-position: -96px -32px; }
 .rsDefault.rsVer .rsArrowRight .rsArrowIcn { background-position: -96px -64px; }
@@ -149,7 +162,7 @@ body.home {
 
 #marquee-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
 #marquee-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div {
-	background-color: rgba(0,0,0,0.35);
+	// background-color: rgba(0,0,0,0.35);
 	border-radius:0;
 }
 
@@ -157,7 +170,7 @@ body.home {
 #grey-text-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div,
 #team-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
 #team-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div {
-	background-color: rgb(192, 192, 192);
+	// background-color: rgb(192, 192, 192);
 	border-radius:0;
 }
 
