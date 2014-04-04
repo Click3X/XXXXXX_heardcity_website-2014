@@ -24,10 +24,10 @@ define(["jquery",
         $('#page-title').text('Contact');
         $('#page-contact').addClass('mobile-hidden');
 
-        window.onload = (function(){
+        // window.onload = (function(){
 
             // HIDE SPINNER
-            // $('#ajax-loader').fadeOut(500);
+            $('#ajax-loader').fadeOut(500);
             
             // MAIN MENU
             $mainMenu.flexNav({
@@ -35,7 +35,7 @@ define(["jquery",
                 'hover':false,
                 'buttonSelector': '#page-button'
             });
-        })();
+        // })();
 
     });
 });
