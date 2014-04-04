@@ -66,11 +66,12 @@ define(["jquery",
                 // check for Coords, else link shape is regular
                 if(coords) {
                     img = $('<img/>', {
-                        // src:blankGif,
-                        src:image,
+                        src:blankGif,
+                        // src:image,
                         alt:item.name,
                         usemap:'#'+usemap,
-                        "data-src":blankGif
+                        // "data-src":blankGif
+                        "data-src":image
                     }),
                     map = $('<map/>', {
                         id:usemap,
@@ -96,9 +97,11 @@ define(["jquery",
 
                 } else {
                     img = $('<img/>', {
-                        src:image,
+                        // src:image,
+                        rc:blankGif,
                         alt:item.name,
-                        "data-src":blankGif
+                        // "data-src":blankGif
+                        "data-src":image
                     }),
                     a = $('<a/>', {
                         href:"#",

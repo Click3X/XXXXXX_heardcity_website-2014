@@ -9,29 +9,30 @@ define(["jquery",
 
 			$(window).ready(function() {
 
-				var showMemberBioAgain = function(member) {
-			                $(members).each(function() {
-			                    var name = this.name,
-			                    member_class = this.member_class,
-			                    bio = this.bio,
-			                    memMatch;
-			                    
-			                    if(member == member_class) {
-			                        memMatch = member;
+			showMemberBioAgain = function(member) {
+                $(members).each(function() {
+                    var name = this.name,
+                    member_class = this.member_class,
+                    bio = this.bio,
+                    memMatch;
+                    
+                    if(member == member_class) {
+                        memMatch = member;
 
-			                        $('#member-bio .bio > p').html(bio);
-			                        $('#member-bio .name').html(name);
-			                        $('#sidebar-name').html(name);
-			                    }
-			                });
-			            }
+                        $('#member-bio .bio > p').html(bio);
+                        $('#member-bio .name').html(name);
+                        $('#sidebar-name').html(name);
+                        $('#member-bio .permalink .all-members').show();
+                    }
+                });
+            }
 
 			clueTipSoloMemberItems = function() {
 				$(document).trigger('hideCluetip');
 				$('html, body').animate({scrollTop : 0},800);
 				
 				var member = $("#" + $(this).attr('for')).val();
-                console.log('THis is member: ' + member);
+                // console.log('THis is member: ' + member);
                 var memberItems = '.item-holder'+'.'+member;
                 var $allOtherMembers = $('.item-holder').not(memberItems);
                 var $memberItems = $(memberItems);
@@ -64,6 +65,8 @@ define(["jquery",
                 var $imgs = $memberItems.find('img');
                 $imgs.trigger("unveil");
 
+                // SHOW MEMBER BIO
+                showMemberBioAgain(member);
                 // if click = CLOSE
                 // $clickClose.addClass('hidden');
                 // CLOSE SIDEBAR
