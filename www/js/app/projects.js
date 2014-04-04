@@ -5,12 +5,13 @@ define(["jquery",
         "util/feat-button"], function($, config, flexnav, grid ,featButton) {
     
     $(function() {
+        // $body = $('body');
 
         // TEST FOR MOBILE DEVICE / TABLET
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             device = 'mobile';
             // console.log('this is device' + device);
-            $body.addClass('mobile');
+            // $body.addClass('mobile');
         } else {
             device = 'desk';
             // console.log('this is device' + device);
@@ -23,7 +24,7 @@ define(["jquery",
         $('#page-title').text('Projects');
         $('#page-projects').addClass('mobile-hidden');
 
-        window.onload = (function(){
+        // window.onload = (function(){
             // HIDE SPINNER
             // $('#ajax-loader').fadeOut(500);
 
@@ -42,7 +43,7 @@ define(["jquery",
             }
 
 
-        })();
+        // })();
 
     });
 });

@@ -60,7 +60,8 @@ define(["jquery",
 
 		     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 	            device = 'mobile';
-	            length = 40;
+	            // length = 40;
+	            length = teamMemberFactory.length;
 	            // console.log('this is device' + device);
 	        } else {
 	            device = 'desk';

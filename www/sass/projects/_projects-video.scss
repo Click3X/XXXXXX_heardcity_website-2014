@@ -1,6 +1,17 @@
 //------------------------------- VIDEO TESTING STYLES ------------------------------------//
 * {box-sizing: border-box;}
 
+
+.feat-video {
+	height:240px; 
+	width:320px;
+	@media(min-width: 768px) {
+		height:480px; 
+		width:640px;
+	}
+}
+
+
 .no-delay {
 	display: block;
 	cursor: pointer;

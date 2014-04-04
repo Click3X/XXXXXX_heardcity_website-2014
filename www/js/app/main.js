@@ -49,7 +49,7 @@ define(["jquery",
             img = $(this).children('img'); 
 
             var vidDiv = $('<div/>', {class:'og-fullimg home-video', style:'opacity:0' }),
-            vid = $('<video/>', {"src":src,"controls":"", "type":"video/mp4"});
+            vid = $('<video/>', {"src":src,"controls":"", "class":"feat-video", "type":"video/mp4"});
 
             vidDiv.append(vid);
             var delImg = img[0];
@@ -88,7 +88,7 @@ define(["jquery",
          
            
         // WINDOW ON LOAD        
-        window.onload = (function(){
+        // window.onload = (function(){
             // HIDE SPINNER
             $('#ajax-loader').fadeOut(500);
 
@@ -257,7 +257,7 @@ define(["jquery",
                 });
             }
 
-        })();
+        // })();
 
 
     });

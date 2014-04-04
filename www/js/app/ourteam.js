@@ -10,11 +10,12 @@ define(["jquery",
         "hover"], function($, config, flexnav, teamMemberFactory, subMenu, unveil, clueTip, clueHover, hover) {
     $(function() {
 
+        // `
         // TEST FOR MOBILE DEVICE / TABLET
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             device = 'mobile';
             // console.log('this is device' + device);
-            $body.addClass('mobile');
+            // $body.addClass('mobile');
         } else {
             device = 'desk';
             // console.log('this is device' + device);
@@ -62,21 +63,21 @@ define(["jquery",
            return false;
         }
 
-        function switchSrc(obj) {
-            var src = $(this).data('src'),
-            png = /png$/;
+        // function switchSrc(obj) {
+        //     var src = $(this).data('src'),
+        //     png = /png$/;
 
-            if (noJpg.contains(src)) {
-                // console.log('Not this one');
-            }
-            else {
-                src = src.replace(png, "jpg");
-                src = src.replace("items", "items/jpg");
-                $(this).attr('data-src', src);
-            }
-        }
-        // SWITCH SRC
-        $.each(toPngs, switchSrc);
+        //     if (noJpg.contains(src)) {
+        //         // console.log('Not this one');
+        //     }
+        //     else {
+        //         src = src.replace(png, "jpg");
+        //         src = src.replace("items", "items/jpg");
+        //         $(this).attr('data-src', src);
+        //     }
+        // }
+        // // SWITCH SRC
+        // $.each(toPngs, switchSrc);
 
 
          // INITIALIZE MENU
@@ -114,12 +115,16 @@ define(["jquery",
             });
         }
 
+
+            
          // SHOW IMAGES ON SCROLL
-            $("img").unveil(600, function() {
-              $(this).load(function() {
-                this.style.opacity = 1;
-              });
-            });
+            // $("img").unveil(600, function() {
+            //   $(this).load(function() {
+            //     this.style.opacity = 1;
+            //   });
+            // });
+
+            $("img").trigger("unveil");
 
      
             // TOGGLE SIDE BAR

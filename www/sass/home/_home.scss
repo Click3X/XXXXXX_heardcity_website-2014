@@ -6,9 +6,10 @@ body.home {
 }
 
 //SPINNER
-.mobile #ajax-loader {
+.preload-wrap {
 	display: none;
 }
+
 
 #ajax-loader {
 	width: 100%;
@@ -19,11 +20,8 @@ body.home {
 	top: 0;
 	left: 0;
 	background: #000;
-	// display: none;
 
-	// @media(min-width: 768px) {
-	// 	display: block;
-	// }
+	@include prefix(transition, all 750ms);
 
 	.ajax-spinner {
 		// max-width: 150px; max-height: 150px;

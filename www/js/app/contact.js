@@ -3,7 +3,7 @@ define(["jquery",
 		"flexnav"], function($, config, flexnav ) {
     
     $(function() {
-
+        var $body = $('body');
         // TEST FOR MOBILE DEVICE / TABLET
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             device = 'mobile';
@@ -24,18 +24,18 @@ define(["jquery",
         $('#page-title').text('Contact');
         $('#page-contact').addClass('mobile-hidden');
 
-        // window.onload = (function(){
+        // MAIN MENU
+        $mainMenu.flexNav({
+            'hoverIntent': false,
+            'hover':false,
+            'buttonSelector': '#page-button'
+        });
 
-            // HIDE SPINNER
-            $('#ajax-loader').fadeOut(500);
-            
-            // MAIN MENU
-            $mainMenu.flexNav({
-                'hoverIntent': false,
-                'hover':false,
-                'buttonSelector': '#page-button'
-            });
-        // })();
+
+        // HIDE SPINNER
+        $('.preload-wrap').removeClass('preload-wrap');
+        $('#ajax-loader').fadeOut(500);
+        
 
     });
 });
