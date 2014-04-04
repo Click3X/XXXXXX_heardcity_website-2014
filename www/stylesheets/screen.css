@@ -584,8 +584,6 @@ a {
 /* line 135, ../sass/base/_flex-nav-c.scss */
 #site-header .flexnav .mobile-map-link .mobile-icon-holder {
   display: inline-block;
-  width: 90px;
-  height: 90px;
 }
 /* line 139, ../sass/base/_flex-nav-c.scss */
 #site-header .flexnav .mobile-map-link .mobile-icon-holder .sprite-map {
