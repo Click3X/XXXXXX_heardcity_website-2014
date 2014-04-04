@@ -1803,7 +1803,7 @@ a {
 
 /* line 115, ../sass/home/_feat-work.scss */
 .work-slide {
-  padding-bottom: 100%;
+  padding-bottom: 300px;
 }
 @media (min-width: 300px) {
   /* line 115, ../sass/home/_feat-work.scss */
