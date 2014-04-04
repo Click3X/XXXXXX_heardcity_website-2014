@@ -42,6 +42,7 @@
 
 		.social-icons {
 			float:right;
+			// margin-top: 2.5em;
 			text-align: justify;
 			width: 100%;
 			margin-right:0; margin-left:0;
@@ -55,16 +56,22 @@
 
 			.icon-holder {
 				position: relative;
+				// width: 49%;
 				text-align: center;
 				display: inline-block;
 				float:none;
-				width: 24%; min-width: 90px;
-				padding:0;
+				// padding: 8% 0;
+
+				// @media(min-width:360px) {
+					width: 24%;
+					padding:0;
+				// }
 
 				@media(min-width: 682px) {
 					display:block; float:left;
 					width:auto;
 				}
+				
 				
 				a {
 					display: block;

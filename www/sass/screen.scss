@@ -48,14 +48,10 @@
 
 // OURTEAM 
 @import "ourteam/ourteam-base";
-
 @import "ourteam/items_width";
 @import "ourteam/individual";
 @import "ourteam/items";
 @import "base/clue-tip";
-
-@import "ourteam/ourteam-new";
-@import "ourteam/new-menu";
 
 // PROJECTS
 @import "projects/projects-video";
@@ -74,3 +70,7 @@
 @import "vendor/flexnav/flexnav.css";
 // PRELOADER
 @import "vendor/preload/queryLoader.css"
+
+
+
+// @import "base/parallax";

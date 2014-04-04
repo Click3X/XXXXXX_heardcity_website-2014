@@ -1,7 +1,7 @@
 <!-- MAIN NAV -->
 <header id="site-header" class="site-header clearfix">
     <div id="page-button" class="menu-button active">
-        <div><span>☰</span></div>
+        <span>☰</span>
        <!--  <span class="touch-button"><i class="navicon">▼</i></span> -->
         <span id="page-title" class="page-title"><a href="home.php" class="page-title-link menu-button" id="page-title-link">Home</a></span>
      </div>

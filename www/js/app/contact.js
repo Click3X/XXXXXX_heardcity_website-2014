@@ -1,9 +1,9 @@
-define(["jquery",
-		"util/config",
+define(["jquery", 
+		"util/config", 
 		"flexnav"], function($, config, flexnav ) {
     
     $(function() {
-        var device;
+
         // TEST FOR MOBILE DEVICE / TABLET
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             device = 'mobile';
@@ -14,15 +14,15 @@ define(["jquery",
             // console.log('this is device' + device);
         }
 
-
+        
         var $body = $('body'),
             $mainMenu = $("#page-fixed"),
             $blackLogo = $('#black-logo');
-            // $loader = $('#loader');
+            $loader = $('#loader');
         
         // $('#page-contact').addClass('current');
         $('#page-title').text('Contact');
-        $('#page-contact').addClass('mobile-hidden current');
+        $('#page-contact').addClass('mobile-hidden');
 
         window.onload = (function(){
 

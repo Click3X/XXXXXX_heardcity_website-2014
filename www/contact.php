@@ -11,8 +11,6 @@ include('php/project-grid.php');
 
         <title>Heard City | Contact</title>
 
-        <link rel="icon" href="favicon.ico">
-
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
@@ -87,6 +85,12 @@ include('php/project-grid.php');
 
     <body class="contact">
         <!-- PRELOADER -->
+         <div id="ajax-loader">
+            <div class="ajax-spinner">
+                <img src="images/logo/logo-white.png" width="150px" height="194px">
+                <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
+            </div>
+        </div>
         <?php include('php/main-nav.php'); ?>
 
 

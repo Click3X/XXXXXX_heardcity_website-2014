@@ -4,36 +4,6 @@ define(["jquery",
         "util/config",
         "controller/team-member-factory"], function($, config, teamMemberFactory) {
 
-<<<<<<< HEAD
-	var $body = $('body');
-
-	// ON CLUE TIP HOVER
-	$('.cluetip-div').cluetip({
-		splitTitle: '|',
-		showTitle: false,
-		sticky: true,
-		dropShadow: true,
-		arrows: true,
-		dropShadowSteps:16,
-		width:400,
-		positionBy: 'bottomTop',
-		closeText:'x',
-		fx: {
-			open: 'fadeIn',
-			openSpeed: 250
-		},
-		hoverIntent: {
-				sensitivity:  5,
-				interval:     30,
-				timeout:      0
-		},
-		onShow: function(ct, ci){
-			$('label').click(function() {
-				console.log('Ihave been clicked!');
-			});
-				$('.cluetip-close').click(function() {
-					$(document).trigger('hideCluetip');
-=======
         	var $body = $('body');
         	var members = $body.configData().jsonMembers;
 
@@ -56,36 +26,78 @@ define(["jquery",
 			                });
 			            }
 
-				clueTipSoloMemberItems = function() {
-					$('body.ourteam').removeClass('js-single-member', 1000);
-					$('.item-holder').addClass('item-hidden', 1000);
+			clueTipSoloMemberItems = function() {
+				$(document).trigger('hideCluetip');
+				$('html, body').animate({scrollTop : 0},800);
+				
+				var member = $("#" + $(this).attr('for')).val();
+                console.log('THis is member: ' + member);
+                var memberItems = '.item-holder'+'.'+member;
+                var $allOtherMembers = $('.item-holder').not(memberItems);
+                var $memberItems = $(memberItems);
+                var k = 0; var l=0;
+                var length = $allOtherMembers.length;
+                var mlength = $memberItems.length;
 
-					var member = $("#" + $(this).attr('for')).val(),
-					target = '.item-holder.' + member,
-					siblings = $('.item-holder').not(target);
+                $('html, body').animate({scrollTop : 0},800);
 
-			//		console.log('This is member' + member); console.dir(member);
+                // HIDE OTHERS
+                function hideMember(obj) {
+                    var showed = []; var i= 0; 
+                    setTimeout(function() {
+                        $(obj).removeClass('item-show').hide().addClass('hide-mem-items', 250);
+                    }, 80 * ( l + 1 ));
 
-					// HIDE CLUETIP AFTER LINK CLICK
-					$(document).trigger('hideCluetip');
+                    setTimeout(function() {
+                        $body.addClass('js-single-member'); 
+                    }, 280);
+                }
 
-					// console.log('This is var member: '+member);
-					$('.item-holder').fadeIn( "slow", function() {});
+                // SHOW MEMBER
+                function showMember(obj, l) {
+                    setTimeout(function() {
+                        $(obj).removeClass('hide-mem-items').show().addClass('item-show', 500);
+                    }, 120 * ( l + 1 ));
+                }           
 
-					// Tighten up footer with less elements on screen
-					siblings.hide();
+                // UNVIEL ALL IMAGES 
+                var $imgs = $memberItems.find('img');
+                $imgs.trigger("unveil");
 
-					// Show Target
-					$(target).removeClass('item-hidden', 1000);
-					$(target).show();
+                // if click = CLOSE
+                // $clickClose.addClass('hidden');
+                // CLOSE SIDEBAR
+                // $('#member-header').addClass('side-bar-closed');
+                
+                // TOGGLE HIDE - SHOW CLASS ON EACH MEMBER LI
+                function init() {
+                     for( k=0; k < length; k++) {
+                        var obj = $allOtherMembers[k];
+                        hideMember(obj, k);
+                    }
 
-					// Attempt at slowing things down
-					$('body.ourteam').addClass('js-single-member', 1000);
+                    for(l=0; l < mlength; l++) {
+                        var obj = $memberItems[l];
+                        showMember(obj, l); 
+                    }
+                }
 
-					// SHOW member BIO
-					$('#member-bio .permalink > a').show();
-					showMemberBioAgain(member);
-				}
+               init();
+            }
+
+
+				// clueTipSoloMemberItems = function() {
+				// 	$(document).trigger('hideCluetip');
+				// 	 $('html, body').animate({scrollTop : 0},800);
+
+					//  // var member = $("#" + $(this).attr('for')).val();
+					//  var member = $(this);
+					//  toggleMemberItems(member);
+
+					// // SHOW member BIO
+					// $('#member-bio .permalink > a').show();
+					// showMemberBioAgain(member);
+				// }
 
 
 				// ON CLUE TIP HOVER
@@ -118,8 +130,5 @@ define(["jquery",
 				});
 
 
->>>>>>> parent of 8aac456... Our team page working much smoother
 			});
-		}
-	});
 });

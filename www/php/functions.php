@@ -4,8 +4,6 @@
 function formatLink($page) {
 	$returnPage =  str_replace(' ', '', $page);
 	$returnPage = strtolower($returnPage);
-	$returnPage = trim(preg_replace(array('~[:;!?]|[.,](?![0-9])|\'s~', '~\s+~'), array('', ' '), $returnPage));
-	
 	return $returnPage;
 }
 

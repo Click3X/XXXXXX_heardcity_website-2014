@@ -1,11 +1,11 @@
-define(["jquery",
-        "util/config",
+define(["jquery", 
+        "util/config", 
         "flexnav",
         "util/grid",
         "util/feat-button"], function($, config, flexnav, grid ,featButton) {
     
     $(function() {
-        var device;
+
         // TEST FOR MOBILE DEVICE / TABLET
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             device = 'mobile';
@@ -16,20 +16,16 @@ define(["jquery",
             // console.log('this is device' + device);
         }
 
-        // SPINNER IS NOT WORKING RIGHT - DISABLE TEMPORARILY
-        // $('#ajax-loader').fadeOut(500);
-        // $('#ajax-loader').hide();
-
-
+        
         var $body = $('body'),
             $mainMenu = $("#page-fixed");
 
         $('#page-title').text('Projects');
-        $('#page-projects').addClass('mobile-hidden current');
+        $('#page-projects').addClass('mobile-hidden');
 
         window.onload = (function(){
             // HIDE SPINNER
-            // $('#ajax-loader').fadeOut(500);
+            $('#ajax-loader').fadeOut(500);
 
             // INITIALIZE MENU
             $mainMenu.flexNav({

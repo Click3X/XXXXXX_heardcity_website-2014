@@ -3,11 +3,6 @@
 }
 
 
-body {
-	position: relative;
-	width: 100%;
-	overflow-x: hidden;
-}
 
  video {
       width: 100%    !important;
@@ -27,7 +22,6 @@ body {
 		}
 	}
 }
-
 
 .container { position: relative; }
 svg { max-height: 100%; }
@@ -116,4 +110,64 @@ a { color:inherit; }
     -khtml-opacity: 0.5;      /* khtml, old safari */  
     -moz-opacity: 0.5;       /* mozilla, netscape */  
     opacity: 0.5;           /* fx, safari, opera */  
+}  
+
+
+
+.cl-effect-21:not(#phone-map) a {
+	// padding: 10px;
+	padding: 10px;
+	color: $grey-text;
+	position: relative;
+
+	@include prefix(transition, color 0.3s);
+
+}
+
+.current a::before, 
+.current a::after, 
+.cl-effect-21:not(#phone-map) a::before,
+.cl-effect-21:not(#phone-map) a::after {
+	content: '';
+	position: absolute;
+	left: 0; right: 0;
+	width: 9em;	height: 1px;
+	background: #000;
+	opacity: 0;
+	margin: auto;
+	
+	@include prefix(transition, all 0.3s);
+	@include prefix(transform, translateY(-6px));
+}
+
+.current a:before,
+.cl-effect-21:not(#phone-map) a::before {
+	top: 6px;
+
+	@include prefix(transform, translateY(-6px));
+}
+
+.current a:after,
+.cl-effect-21:not(#phone-map) a::after {
+	bottom: 6px;
+
+	@include prefix(transform, translateY(6px));
+}
+
+.cl-effect-21:not(#phone-map) a:hover,
+.cl-effect-21:not(#phone-map) a:focus {
+	color: #000;
+}
+
+
+.current a:before,
+.current a:after,
+.cl-effect-21:not(#phone-map) a:hover::before,
+.cl-effect-21:not(#phone-map) a:focus::before,
+.cl-effect-21:not(#phone-map) a:hover::after,
+.cl-effect-21:not(#phone-map) a:focus::after {
+	opacity: 1;
+
+	@include prefix(transition, all 0.2s);
+	@include prefix(transform, translateY(0px));
 }

@@ -20,18 +20,9 @@ if(!isset($_POST['selected_member'])) {
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
         <title>Heard City | Our Team</title>
-        <link rel="icon" href="favicon.ico">
-        
+
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-
-        <style>
-    /*            .item-list img {
-                      opacity: 0;
-                      transition: opacity .3s ease-in;
-                    } */
-        </style>
-
 
           <!--[if IE]>
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -50,20 +41,17 @@ if(!isset($_POST['selected_member'])) {
     </head>
 
     <body class="ourteam one-page">
+        
         <!-- PRELOADER -->
-        <!--  <div id="ajax-loader">
+         <div id="ajax-loader">
             <div class="ajax-spinner">
-                <img src="images/logo/logo-white.svg" width="150px" height="194px">
+                <img src="images/logo/logo-white.png" width="150px" height="194px">
                 <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
             </div>
-        </div> -->
+        </div>
 
         <?php include('php/main-nav.php'); ?>
     	 
-<!--    <div id="black-logo" class="logo"></div>	 -->
-<!--     	<div id="loader">
-            <div id="spinner" class="loading"></div>
-        </div> -->
 
         <div id="member-bio" class="container clearfix">
             <div class="team-member clearfix">
@@ -78,59 +66,11 @@ if(!isset($_POST['selected_member'])) {
         
 
         <div id="graph" class="clearfix">
-            <div id="item-list-holder" class="team-member-items">
-                <ul class="item-list">
-
-                    <?php 
-                        $blankGif = 'images/sprites/blank.gif';
-
-                        foreach ($members as $key => $member) { 
-                            $name = $member['name'];
-                            $bio = $member['bio'];
-                            $sex = $member['sex'];
-                            $items = $member['items'];
-                            $member_class = formatLink($member['name']);
-
-                            foreach ($items as $key => $item) {
-                                $iName = $item['name'];
-                                $itemName = formatLink($iName);
-                                $image = $item['image'];
-                                $itemBio = $item['bio'];
-                                $itemClass = 'item-holder '.$itemName .' ' .$member_class;
-                                $title =  "|" . "|" . $name . "'s" . "|" . $iName . "|" . $itemBio . "|" . "<label for='".$member_class."-".$itemName."' class='permalink'>> View " . $sex . " stuff</label><input type='radio' name='".$member_class."' id='".$member_class."-".$itemName."' value='".$member_class."'>";
-
-                                $usemap = explode('.', $image);
-                                $usemap = explode( '/', $usemap[0]);
-                                $usemap = $usemap[1];
-                                $usemap = formatLink($usemap);
-                                if(isset($item['coords'])) {
-                                    $coords = $item['coords'];
-                                    echo '<li class="'.$itemClass.'">
-                                            <img src="'.$image.'" alt="'.$iName.'">
-                                            <map id="'.$member_class.'" name="'.$member_class.'" class="map-link" data-person="'.$member_class.'">
-                                                <area href="#" shape="poly" coords="'.$coords.'" alt="'.$itemName.'" data-person="'.$member_class.'" data-item="'.$itemName.'" title="'.$title.'" class="cluetip-div">
-                                            </map>
-                                        </li>';
-                                } else {
-
-                                   echo '<li class="'.$itemClass.'">
-                                            <a href="#" data-person="'.$member_class.'" data-item="'.$itemName.'" title="'.$title.'" class="cluetip-div">
-                                                <img src="'.$image.'" alt="'.$iName.'">
-                                            </a>
-                                        </li>';
-                                }
-                                
-                            }
-
-                        } ?>
-
-
-                </ul>
-            </div>
+            <div id="item-list-holder" class="team-member-items"></div>
         </div>
 
+        <!-- SUB NAV -->
         <?php include('php/sub-nav.php'); ?>
-        <!-- <input id="out" type="button" value="Outline" style="position:fixed; right:5px; width:80px; bottom:100px; z-index:1000"/> -->
 
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>

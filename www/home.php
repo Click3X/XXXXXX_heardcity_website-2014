@@ -10,7 +10,6 @@ include('php/project-grid.php');
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Heard City | Home</title>
-        <link rel="icon" href="favicon.ico">
 
         <link href="stylesheets/vendor/royal/royalslider.css" media="screen, projection" rel="stylesheet" type="text/css">
     <!--     <link href="stylesheets/vendor/royal/rs-default.css" media="screen, projection" rel="stylesheet" type="text/css"> -->
@@ -31,7 +30,7 @@ include('php/project-grid.php');
              <!-- PRELOADER -->
              <div id="ajax-loader">
                 <div class="ajax-spinner">
-                    <img src="images/logo/logo-white.svg" width="150px">
+                    <img src="images/logo/logo-white.png" width="150px" height="194px">
                     <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
                 </div>
             </div>
