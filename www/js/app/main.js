@@ -257,7 +257,9 @@ define(["jquery",
                 });
             }
 
-        // })();
+        // HIDE SPINNER
+        // $('.preload-wrap').removeClass('preload-wrap');
+        $('#ajax-loader').fadeOut(500);
 
 
     });

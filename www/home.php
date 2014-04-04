@@ -26,15 +26,15 @@ include('php/project-grid.php');
     </head>
 
     <body class="home">
-        <div class="body-inner clearfix">
-             <!-- PRELOADER -->
-             <div id="ajax-loader">
-                <div class="ajax-spinner">
-                    <img src="images/logo/logo-white.png" width="150px" height="194px">
-                    <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
-                </div>
+        <!-- PRELOADER -->
+         <div id="ajax-loader">
+            <div class="ajax-spinner">
+                <img src="images/logo/logo-white.png" width="150px" height="194px">
+                <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
             </div>
-        	
+        </div>
+            
+        <div class="body-inner clearfix">
 
             <!-- MARQUEE -->
             <div id="black-logo" class="logo"></div>    
@@ -62,9 +62,6 @@ include('php/project-grid.php');
                     <div id="jean-jacket" class="image-spread half-image bg-img"></div>
                 </div>
             </div>
-
-
-
 
 
             <!-- FEATURED WORK -->
