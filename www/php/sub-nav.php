@@ -13,7 +13,7 @@
                     $member_name = $member['name'];
                     $member_class = formatLink($member_name);
                     $name = formatLink($member_name);
-                    echo '<li><a href="#'.$name.'" data-person="'.$member_class.'" class="sidebar-link">'.$member_name .'</a></li>';
+                    echo '<li><a href="'.$name.'" data-person="'.$member_class.'" class="sidebar-link">'.$member_name .'</a></li>';
                 }
             ?>
         </ul>

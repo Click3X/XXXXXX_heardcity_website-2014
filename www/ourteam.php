@@ -25,6 +25,16 @@ if(!isset($_POST['selected_member'])) {
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
+<<<<<<< HEAD
+=======
+        <style>
+                .item-list img {
+                      opacity: 0;
+                      transition: opacity .3s ease-in;
+                    } 
+        </style>
+
+>>>>>>> parent of 8aac456... Our team page working much smoother
           <!--[if IE]>
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->  
@@ -42,7 +52,6 @@ if(!isset($_POST['selected_member'])) {
     </head>
 
     <body class="ourteam one-page">
-        
         <!-- PRELOADER -->
         <!--  <div id="ajax-loader">
             <div class="ajax-spinner">
@@ -53,6 +62,10 @@ if(!isset($_POST['selected_member'])) {
 
         <?php include('php/main-nav.php'); ?>
     	 
+<!--    <div id="black-logo" class="logo"></div>	 -->
+<!--     	<div id="loader">
+            <div id="spinner" class="loading"></div>
+        </div> -->
 
         <div id="member-bio" class="container clearfix">
             <div class="team-member clearfix">
@@ -118,8 +131,8 @@ if(!isset($_POST['selected_member'])) {
             </div>
         </div>
 
-        <!-- SUB NAV -->
         <?php include('php/sub-nav.php'); ?>
+        <!-- <input id="out" type="button" value="Outline" style="position:fixed; right:5px; width:80px; bottom:100px; z-index:1000"/> -->
 
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>

@@ -34,10 +34,52 @@ define(["jquery",
             $subNav = $("#member-fixed"),
             $img = $("img"),
             $clickClose = $('#click-close'),
-            $sidebarLinks = $('#member-fixed .sidebar-link'),
-            $clueTipPermalink = $('.item-list .permalink'),
             $memberBioPermalink = $('#member-bio .permalink > a');
 
+<<<<<<< HEAD
+=======
+        // CHANGE SRC ON IMAGES
+        var toPngs = $('.item-holder img'); console.dir(toPngs);
+
+        var noJpg = [
+            'items/Peony_Rene_necklace.png',
+            'items/Elizabeth_McClanahan_guitar.png',
+            'items/Keith_Reynaud_Pot.png',
+            'items/Jeremy_Siegal_Jordans.png',
+            'items/Jeremy_Siegal_chain.png',
+            'items/Gary_Noel_plant.png',
+            'items/Sasha_Awn_dress.png',
+            'items/Sasha_Awn_moog.png',
+            'items/Sasha_Awn_gloves.png',
+            'items/Eric_Warzecha_guitar.png',
+            'items/Talia_Rodgers_tank_top.png'
+        ];
+
+        Array.prototype.contains = function ( needle ) {
+           for (i in this) {
+               if (this[i] == needle) return true;
+           }
+           return false;
+        }
+
+        function switchSrc(obj) {
+            var src = $(this).data('src'),
+            png = /png$/;
+
+            if (noJpg.contains(src)) {
+                // console.log('Not this one');
+            }
+            else {
+                src = src.replace(png, "jpg");
+                src = src.replace("items", "items/jpg");
+                $(this).attr('data-src', src);
+            }
+        }
+
+        $.each(toPngs, switchSrc);
+
+
+>>>>>>> parent of 8aac456... Our team page working much smoother
          // INITIALIZE MENU
         $mainMenu.flexNav({
             'hoverIntent': false,
@@ -98,13 +140,24 @@ define(["jquery",
         // JSON DATA
         // var jsonMembers = $body.configData().jsonMembers;
 
+        // console.table(jsonMembers);
+
         // SIDE BAR CLICK EVENT- get bios
+<<<<<<< HEAD
         // showMemberBio = function(member) {
         //     $(jsonMembers).each(function() {
         //         var name = this.name,
         //         member_class = this.member_class,
         //         bio = this.bio,
         //         memMatch;
+=======
+        var showMemberBio = function(member) {
+            $(jsonMembers).each(function() {
+                var name = this.name,
+                member_class = this.member_class,
+                bio = this.bio,
+                memMatch;
+>>>>>>> parent of 8aac456... Our team page working much smoother
                 
         //         if(member == member_class) {
         //             memMatch = member;
@@ -128,8 +181,8 @@ define(["jquery",
 
         
         window.onload = (function(){
-
             // HIDE SPINNER
+<<<<<<< HEAD
             // $('#ajax-loader').fadeOut(500);
      
 
@@ -260,6 +313,47 @@ define(["jquery",
             // function showSolo(elem) {
             //     event.preventDefault();
             //     $(document).trigger('hideCluetip');
+=======
+            $('#ajax-loader').fadeOut(500);
+            // SWITCH IMG SRC FOR LAZY LOADING            
+            // $img.unveil(600);
+
+            $("img").unveil(200, function() {
+              $(this).load(function() {
+                this.style.opacity = 1;
+              });
+            });
+            
+
+            // CHECK TO SEE IF SELECTED MEMBER HAS BEEN SENT FROM HOME.PHP
+            if(selectedMember) {
+                var target = '.item-holder.' + selectedMember,
+                siblings = $('.item-holder').not(target);
+                // Show individual items
+                $('.item-holder').show();
+                siblings.hide();    
+                $('body.ourteam').addClass('js-single-member');
+                $(target).show();
+                $memberBioPermalink.show();
+                // Show member Bio
+                showMemberBio(selectedMember);
+            }
+
+
+            // CLICK EVENTS - if MIN WIDTH - look to FLEX NAV FOR another option
+            $('#member-button').click( function() { 
+                $('#member-header').toggleClass('side-bar-closed');
+                $clickClose.toggleClass('hidden');
+                $clickClose.click(function() {
+                    $('#member-header').toggleClass('side-bar-closed');
+                });
+            });
+
+
+            function showSolo(elem) {
+                event.preventDefault();
+                $(document).trigger('hideCluetip');
+>>>>>>> parent of 8aac456... Our team page working much smoother
 
             //     var hreftarget = $(this).data('person'),
             //     target = '.item-holder.' + hreftarget,
@@ -273,6 +367,7 @@ define(["jquery",
             //     $memberBioPermalink.show();
             //     showMemberBio(hreftarget);
 
+<<<<<<< HEAD
             //     $("html, body").scrollTop(0);
             //     $(target).removeClass('item-hidden');
             //     $body.addClass('js-single-member');
@@ -283,6 +378,14 @@ define(["jquery",
             //     // OPEN / SHUT side bar NAV
             //     $('#member-header').addClass('side-bar-closed');
             // }
+=======
+                $("html, body").scrollTop(0);
+                $(target).removeClass('item-hidden');
+                $body.addClass('js-single-member');
+                // OPEN / SHUT side bar NAV
+                $('#member-header').addClass('side-bar-closed');
+            }
+>>>>>>> parent of 8aac456... Our team page working much smoother
 
 
 
@@ -294,12 +397,18 @@ define(["jquery",
             // allMembers.click(function(event) {
             //     event.preventDefault();
 
+<<<<<<< HEAD
             //     $('.item-holder').show().removeClass('hide-mem-items');
             //     $memberBioPermalink.hide();
             //     $body.removeClass('js-single-member');
 
             //     var $imgs = $(target).find('img');
             //     $imgs.trigger("unveil");
+=======
+                $('.item-holder').show();
+                $memberBioPermalink.hide();
+                $body.removeClass('js-single-member');
+>>>>>>> parent of 8aac456... Our team page working much smoother
             
             //     var defaultName = jsonDefaults[0].name;
             //     var defaultBio = jsonDefaults[0].bio;
@@ -354,6 +463,7 @@ define(["jquery",
                 
             });
 
+<<<<<<< HEAD
             // // ON MAP LINK CLICK - SHOW MEMBER SOLO
             // $('.map-link').click(function(event) {
             //     event.preventDefault();
@@ -371,6 +481,21 @@ define(["jquery",
             //     $('html, body').animate({scrollTop : 0},800);
             //     console.log('map link click');
             // });
+=======
+            // ON MAP LINK CLICK - SHOW MEMBER SOLO
+            $('.map-link').click(function(event) {
+                event.preventDefault();
+                var elem = $(this);
+                showSolo(elem);
+            });
+
+            // ON CLUE TIP LINK CLICK - SHOW MEMBER SOLO
+            $('.cluetip-div').click(function(event) {
+                event.preventDefault();
+                var elem = $(this);
+                showSolo(elem);
+            });
+>>>>>>> parent of 8aac456... Our team page working much smoother
 
 
         })();

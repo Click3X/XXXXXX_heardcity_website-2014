@@ -1,20 +1,16 @@
 /*
-Syntax error: Invalid CSS after "	background: #000;": expected "}", was "<<<<<<< HEAD"
-        on line 22 of /Users/charles/Documents/Works/heardcity_website-2014/www/sass/home/_home.scss
-        from line 46 of /Users/charles/Documents/Works/heardcity_website-2014/www/sass/screen.scss
+Syntax error: Invalid CSS after "}": expected selector or at-rule, was "<<<<<<< HEAD"
+        on line 5 of /Users/charles/Documents/Works/heardcity_website-2014/www/sass/base/_base.scss
+        from line 29 of /Users/charles/Documents/Works/heardcity_website-2014/www/sass/screen.scss
+
+1: /Users/charles/Documents/Works/heardcity_website-2014/www/sass/screen.scss
 
 Backtrace:
-/Users/charles/Documents/Works/heardcity_website-2014/www/sass/home/_home.scss:22
-/Users/charles/Documents/Works/heardcity_website-2014/www/sass/screen.scss:46
+/Users/charles/Documents/Works/heardcity_website-2014/www/sass/base/_base.scss:5
+/Users/charles/Documents/Works/heardcity_website-2014/www/sass/screen.scss:29
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.13/lib/sass/scss/parser.rb:1147:in `expected'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.13/lib/sass/scss/parser.rb:1085:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.13/lib/sass/scss/parser.rb:1080:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.13/lib/sass/scss/parser.rb:536:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.13/lib/sass/scss/parser.rb:529:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.13/lib/sass/scss/parser.rb:553:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.13/lib/sass/scss/parser.rb:546:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.13/lib/sass/scss/parser.rb:82:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.2.13/lib/sass/scss/parser.rb:27:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.13/lib/sass/scss/parser.rb:28:in `parse'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.13/lib/sass/engine.rb:342:in `_to_tree'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.13/lib/sass/engine.rb:274:in `to_tree'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
@@ -75,4 +71,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"	background: #000;\": expected \"}\", was \"<<<<<<< HEAD\"\A         on line 22 of /Users/charles/Documents/Works/heardcity_website-2014/www/sass/home/_home.scss\A         from line 46 of /Users/charles/Documents/Works/heardcity_website-2014/www/sass/screen.scss"; }
+  content: "Syntax error: Invalid CSS after \"}\": expected selector or at-rule, was \"<<<<<<< HEAD\"\A         on line 5 of /Users/charles/Documents/Works/heardcity_website-2014/www/sass/base/_base.scss\A         from line 29 of /Users/charles/Documents/Works/heardcity_website-2014/www/sass/screen.scss\A \A 1: /Users/charles/Documents/Works/heardcity_website-2014/www/sass/screen.scss"; }
