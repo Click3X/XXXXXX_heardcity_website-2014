@@ -23,7 +23,7 @@ define(["jquery",
 
         // CURRENT PAGE
         $('#page-title').text('Our Team');
-        // $('#page-ourteam').addClass('current');
+        $('#page-ourteam').addClass('current');
         // $('.menu-ourteam > a').hide();
         $('#page-ourteam').addClass('mobile-hidden');
 
