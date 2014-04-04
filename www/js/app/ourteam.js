@@ -78,7 +78,6 @@ define(["jquery",
         $.each(toPngs, switchSrc);
 
 
-
          // INITIALIZE MENU
         $mainMenu.flexNav({
             'hoverIntent': false,
@@ -142,31 +141,31 @@ define(["jquery",
         // console.table(jsonMembers);
 
         // SIDE BAR CLICK EVENT- get bios
-<<<<<<< HEAD
-        // showMemberBio = function(member) {
-        //     $(jsonMembers).each(function() {
-        //         var name = this.name,
-        //         member_class = this.member_class,
-        //         bio = this.bio,
-        //         memMatch;
-=======
+
+        showMemberBio = function(member) {
+            $(jsonMembers).each(function() {
+                var name = this.name,
+                member_class = this.member_class,
+                bio = this.bio,
+                memMatch;
+
         var showMemberBio = function(member) {
             $(jsonMembers).each(function() {
                 var name = this.name,
                 member_class = this.member_class,
                 bio = this.bio,
                 memMatch;
->>>>>>> parent of 8aac456... Our team page working much smoother
-                
-        //         if(member == member_class) {
-        //             memMatch = member;
 
-        //             $('#member-bio .bio > p').html(bio).css('opacity',0).show().animate({opacity:1});
-        //             $('#member-bio .name').html(name).css('opacity',0).show().animate({opacity:1});
-        //             $('#sidebar-name').html(name).css('opacity',0).show().animate({opacity:1});
-        //         }
-        //     });
-        // }
+                
+                if(member == member_class) {
+                    memMatch = member;
+
+                    $('#member-bio .bio > p').html(bio).css('opacity',0).show().animate({opacity:1});
+                    $('#member-bio .name').html(name).css('opacity',0).show().animate({opacity:1});
+                    $('#sidebar-name').html(name).css('opacity',0).show().animate({opacity:1});
+                }
+            });
+        }
 
 
         // var $pImgs = $("img");
