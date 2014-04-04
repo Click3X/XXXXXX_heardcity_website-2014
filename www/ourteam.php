@@ -17,9 +17,12 @@ if(!isset($_POST['selected_member'])) {
     <head>
     	<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
-
         <title>Heard City | Our Team</title>
+        <meta http-equiv="x-ua-compatible" content="IE=edge" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-touch-fullscreen" content="yes">
+
         <link rel="icon" href="favicon.ico">
 
         <link href="stylesheets/vendor/snap/snap.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -45,100 +48,7 @@ if(!isset($_POST['selected_member'])) {
        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     
     </head>
-
-    <body class="ourteam one-page">
-        
-        <!-- PRELOADER -->
-        <!--  <div id="ajax-loader">
-            <div class="ajax-spinner">
-                <img src="images/logo/logo-white.png" width="150px" height="194px">
-                <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
-            </div>
-        </div> -->
-
-        <?php include('php/main-nav.php'); ?>
-    	 
-
-        <!-- <div id="member-bio" class="container clearfix">
-            <div class="team-member clearfix">
-                <ul class="member-text">
-                    <li class="misc-text">This belongs to</li>
-                    <li class="name"><?php echo $de_name; ?></li>
-                    <li class="bio"><p><?php echo $de_bio; ?></p></li>
-                    <li class="permalink"><a href="<?php echo $de_permalink; ?>" class="all-members" style="display: none;">View everyones stuff</a></li>
-                </ul>
-            </div>
-        </div>
-        
-
-        <div id="graph" class="clearfix">
-            <div id="item-list-holder" class="team-member-items">
-                <ul class="item-list">
-
-                    <?php 
-                        $blankGif = 'images/sprites/blank.gif';
-
-                        foreach ($members as $key => $member) { 
-                            $name = $member['name'];
-                            $bio = $member['bio'];
-                            $sex = $member['sex'];
-                            $items = $member['items'];
-                            $member_class = formatLink($member['name']);
-
-                            foreach ($items as $key => $item) {
-                                $iName = $item['name'];
-                                $itemName = formatLink($iName);
-                                $image = $item['image'];
-                                $itemBio = $item['bio'];
-                                $itemClass = 'item-holder '.$itemName .' ' .$member_class;
-                                $title =  "|" . "|" . $name . "'s" . "|" . $iName . "|" . $itemBio . "|" . "<label for='".$member_class."-".$itemName."' class='permalink'>> View " . $sex . " stuff</label><input type='radio' name='".$member_class."' id='".$member_class."-".$itemName."' value='".$member_class."'>";
-
-                                $usemap = explode('.', $image);
-                                $usemap = explode( '/', $usemap[0]);
-                                $usemap = $usemap[1];
-                                $usemap = formatLink($usemap);
-                                if(isset($item['coords'])) {
-                                    $coords = $item['coords'];
-                                    echo '<li class="'.$itemClass.'">
-                                            <img src="'.$image.'" alt="'.$iName.'">
-                                            <map id="'.$member_class.'" name="'.$member_class.'" class="map-link" data-person="'.$member_class.'">
-                                                <area href="#" shape="poly" coords="'.$coords.'" alt="'.$itemName.'" data-person="'.$member_class.'" data-item="'.$itemName.'" title="'.$title.'" class="cluetip-div">
-                                            </map>
-                                        </li>';
-                                } else {
-
-                                   echo '<li class="'.$itemClass.'">
-                                            <a href="#" data-person="'.$member_class.'" data-item="'.$itemName.'" title="'.$title.'" class="cluetip-div">
-                                                <img src="'.$image.'" alt="'.$iName.'">
-                                            </a>
-                                        </li>';
-                                }
-                                
-                            }
-
-                        } ?>
-
-
-                </ul>
-            </div>
-        </div> -->
-
-        
-
-
-        
-        <div id="content" class="snap-content">
-            <div id="toolbar">
-                <a href="#" id="open-left"></a>
-                <h1>Toggles</h1>
-            </div>
-            <div class="toggler" id="ol">Open Left</div>
-            <div class="toggler" id="or">Open Right</div>
-        </div>
-
-
-
-
+    <body>
         <div class="snap-drawers">
             <div class="snap-drawer snap-drawer-left">
                 <div>
@@ -152,8 +62,15 @@ if(!isset($_POST['selected_member'])) {
                     <ul>
                         <li><a href="default.html">Default</a></li>
                         <li><a href="noDrag.html">No Drag</a></li>
+                        <li><a href="dragElement.html">Drag Element</a></li>
+                        <li><a href="rightDisabled.html">Right Disabled</a></li>
+                        <li><a href="hyperextend.html">Hyperextension Disabled</a></li>
                         <li><a href="skinnyThreshold.html">Skinny Threshold</a></li>
                         <li><a href="toggles.html">Toggles</a></li>
+                        <li><a href="classNames.html">Class Names</a></li>
+                        <li><a href="expand.html">Expanding</a></li>
+                        <li><a href="settings.html">Settings</a></li>
+                        <li><a href="ratchet/template.html">Ratchet</a></li>
                     </ul>
                     <div>
                         <p>Toggles are easy to create. Snap.js gives you the state of the pane and allows you to make decisions simply.</p>
@@ -163,21 +80,44 @@ if(!isset($_POST['selected_member'])) {
             </div>
             <div class="snap-drawer snap-drawer-right"></div>
         </div>
-
+        
+        <div id="content" class="snap-content">
+            <div id="toolbar">
+                <a href="#" id="open-left"></a>
+                <h1>Toggles</h1>
+            </div>
+            <div class="toggler" id="ol">Open Left</div>
+            <div class="toggler" id="or">Open Right</div>
+        </div>
 
 
         <!-- SUB NAV -->
         <?php // include('php/sub-nav.php'); ?>
 
         <!-- FOOTER -->
-        <?php include('php/footer.php'); ?>
+        <?php // include('php/footer.php'); ?>
 
         <!-- SCRIPTS -->
          <script src="js-new/lib/jquery.flexnav.min.js"></script>
          <script src="js-new/lib/jquery.unveil.min.js"></script>
          <script src="js-new/lib/snap/snap.min.js"></script>
          <script src="js-new/lib/snap/demo.js"></script>
-         <script src="js-new/ourteam/index.js"></script>
+        
+         <script type="text/javascript">
+            var snapper = new Snap({
+                element: document.getElementById('content')
+            });
+            addEvent(document.getElementById('ol'), 'click', function(){
+                snapper.open('left');
+            });
+
+            addEvent(document.getElementById('or'), 'click', function(){
+                snapper.open('right');
+            });
+            
+        </script>
+
+         <!-- <script src="js-new/ourteam/index.js"></script> -->
         
     </body>
 
