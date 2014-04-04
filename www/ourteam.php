@@ -48,54 +48,103 @@ if(!isset($_POST['selected_member'])) {
        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     
     </head>
-    <body>
-        <div class="snap-drawers">
-            <div class="snap-drawer snap-drawer-left">
-                <div>
-                    <h3>Snap.js</h3>
-                    <div class="demo-social">
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Snap.js - A Library for creating beautiful mobile shelfs in Javascript" data-url="http://jakiestfu.github.com/Snap.js/" data-count="none" data-via="jakiestfu">Tweet</a>
-                        <a href="https://twitter.com/jakiestfu" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @jakiestfu</a>
-                        <iframe src="http://ghbtns.com/github-btn.html?user=jakiestfu&amp;repo=Snap.js&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="120" height="20"></iframe>
-                    </div>
-                    <h4>Demos</h4>
-                    <ul>
-                        <li><a href="default.html">Default</a></li>
-                        <li><a href="noDrag.html">No Drag</a></li>
-                        <li><a href="dragElement.html">Drag Element</a></li>
-                        <li><a href="rightDisabled.html">Right Disabled</a></li>
-                        <li><a href="hyperextend.html">Hyperextension Disabled</a></li>
-                        <li><a href="skinnyThreshold.html">Skinny Threshold</a></li>
-                        <li><a href="toggles.html">Toggles</a></li>
-                        <li><a href="classNames.html">Class Names</a></li>
-                        <li><a href="expand.html">Expanding</a></li>
-                        <li><a href="settings.html">Settings</a></li>
-                        <li><a href="ratchet/template.html">Ratchet</a></li>
-                    </ul>
-                    <div>
-                        <p>Toggles are easy to create. Snap.js gives you the state of the pane and allows you to make decisions simply.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non erat ac leo ultrices blandit sed vel risus. Pellentesque facilisis blandit auctor. Maecenas vestibulum vulputate tincidunt. Mauris nec quam libero. Fusce eget ligula non leo varius condimentum quis ac elit. Donec id urna ut neque semper ultrices. Proin ut suscipit felis. Nullam neque felis, ullamcorper scelerisque volutpat vel, vehicula vehicula neque. Aenean scelerisque elit ac erat sagittis ullamcorper.</p>
+    <body class="ourteam">
+        <?php include('php/main-nav.php'); ?>
+
+        <div id="content" class="snap-content">
+            
+            <div class="content-container">
+
+                <div id="toolbar">
+                    <a href="#" id="open-left"></a>
+                    <a href="#" class="toggler" id="or"></a>
+                </div>
+
+                <div id="member-bio" class="container clearfix">
+                    <div class="team-member clearfix">
+                        <ul class="member-text">
+                            <li class="misc-text">This belongs to</li>
+                            <li class="name"><?php echo $de_name; ?></li>
+                            <li class="bio"><p><?php echo $de_bio; ?></p></li>
+                            <li class="permalink"><a href="<?php echo $de_permalink; ?>" class="all-members" style="display: none;">View everyones stuff</a></li>
+                        </ul>
                     </div>
                 </div>
+
+
+                <!-- // MEMBER ITEMS -->
+                <div id="graph" class="clearfix">
+                    <div id="item-list-holder" class="team-member-items">
+                        <ul class="item-list">
+
+                            <?php 
+                                $blankGif = 'images/sprites/blank.gif';
+
+                                foreach ($members as $key => $member) { 
+                                    $name = $member['name'];
+                                    $bio = $member['bio'];
+                                    $sex = $member['sex'];
+                                    $items = $member['items'];
+                                    $member_class = formatLink($member['name']);
+
+                                    foreach ($items as $key => $item) {
+                                        $iName = $item['name'];
+                                        $itemName = formatLink($iName);
+                                        $image = $item['image'];
+                                        $itemBio = $item['bio'];
+                                        $itemClass = 'item-holder '.$itemName .' ' .$member_class;
+                                        $title =  "|" . "|" . $name . "'s" . "|" . $iName . "|" . $itemBio . "|" . "<label for='".$member_class."-".$itemName."' class='permalink'>> View " . $sex . " stuff</label><input type='radio' name='".$member_class."' id='".$member_class."-".$itemName."' value='".$member_class."'>";
+
+                                        $usemap = explode('.', $image);
+                                        $usemap = explode( '/', $usemap[0]);
+                                        $usemap = $usemap[1];
+                                        $usemap = formatLink($usemap);
+                                        if(isset($item['coords'])) {
+                                            $coords = $item['coords'];
+                                            echo '<li class="'.$itemClass.'">
+                                                    <img src="'.$image.'" alt="'.$iName.'">
+                                                    <map id="'.$member_class.'" name="'.$member_class.'" class="map-link" data-person="'.$member_class.'">
+                                                        <area href="#" shape="poly" coords="'.$coords.'" alt="'.$itemName.'" data-person="'.$member_class.'" data-item="'.$itemName.'" title="'.$title.'" class="cluetip-div">
+                                                    </map>
+                                                </li>';
+                                        } else {
+
+                                           echo '<li class="'.$itemClass.'">
+                                                    <a href="#" data-person="'.$member_class.'" data-item="'.$itemName.'" title="'.$title.'" class="cluetip-div">
+                                                        <img src="'.$image.'" alt="'.$iName.'">
+                                                    </a>
+                                                </li>';
+                                        }
+                                        
+                                    }
+
+                                } ?>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
             </div>
-            <div class="snap-drawer snap-drawer-right"></div>
-        </div>
-        
-        <div id="content" class="snap-content">
-            <div id="toolbar">
-                <a href="#" id="open-left"></a>
-                <h1>Toggles</h1>
-            </div>
-            <div class="toggler" id="ol">Open Left</div>
-            <div class="toggler" id="or">Open Right</div>
+            <!-- FOOTER -->
+            <?php include('php/footer.php'); ?>
+
         </div>
 
-
-        <!-- SUB NAV -->
-        <?php // include('php/sub-nav.php'); ?>
-
-        <!-- FOOTER -->
         <?php // include('php/footer.php'); ?>
+
+        <div class="snap-drawers">
+            <div class="snap-drawer snap-drawer-right">
+                <div>
+                    <?php include('php/sub-nav-new.php'); ?>
+                </div>
+            </div>
+        </div>
+
+
 
         <!-- SCRIPTS -->
          <script src="js-new/lib/jquery.flexnav.min.js"></script>
@@ -104,17 +153,58 @@ if(!isset($_POST['selected_member'])) {
          <script src="js-new/lib/snap/demo.js"></script>
         
          <script type="text/javascript">
+         $(document).ready(function() {
             var snapper = new Snap({
-                element: document.getElementById('content')
-            });
-            addEvent(document.getElementById('ol'), 'click', function(){
-                snapper.open('left');
+                element: document.getElementById('content'),
+                disable: 'left',
+                minPosition: -266,
+                maxPosition: 266
             });
 
             addEvent(document.getElementById('or'), 'click', function(){
                 snapper.open('right');
             });
-            
+
+
+            var device;
+                // CHECK FOR MOBILE
+             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+                    device = 'mobile';
+                    $body.addClass('mobile');
+             } else {
+                    device = 'desk';
+             }
+
+             // VARS
+             var $body = $("body"),
+                $mainMenu = $("#page-fixed"),
+                $subNav = $("#member-fixed"),
+                $img = $("img"),
+                $clickClose = $('#click-close'),
+                $sidebarLinks = $('.sidebar-link'),
+                $clueTipPermalink = $('.item-list .permalink'),
+                $memberBioPermalink = $('#member-bio .permalink > a');
+
+             // INITIALIZE MENU
+             $mainMenu.flexNav({
+              'hoverIntent': false,
+              'hover':false,
+              'buttonSelector': '#page-button'
+             });
+
+             // SUB MENU
+             $subNav.flexNav({
+              'hoverIntent': false,
+              'hover':false,
+              'buttonSelector': '#member-button'
+             });
+             
+             // TOGGLE SIDE BAR
+             $sidebarLinks.click( function() {
+                    var clicked = $(this).data('person');
+                    console.log('I have been clicked!' + clicked); console.dir(clicked);
+               });
+        });
         </script>
 
          <!-- <script src="js-new/ourteam/index.js"></script> -->

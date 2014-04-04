@@ -44,20 +44,4 @@ $(document).ready(function() {
        });
    });
 
-
-
- var snapper = new Snap({
-    element: document.getElementById('content')
-});
-addEvent(document.getElementById('ol'), 'click', function(){
-    snapper.open('left');
-});
-
-addEvent(document.getElementById('or'), 'click', function(){
-    snapper.open('right');
-});
-
-
-
-
 });
