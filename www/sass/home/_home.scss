@@ -19,11 +19,23 @@ body.home {
 	top: 0;
 	left: 0;
 	background: #000;
+<<<<<<< HEAD
 	// display: none;
 
 	// @media(min-width: 768px) {
 	// 	display: block;
 	// }
+=======
+	display: none;
+	@media(min-width: 768px) {
+		display: block;
+	}
+>>>>>>> parent of 48b170d... loader svg fix
+
+	.logo-spin {
+		width:150px;
+		height: 194px;
+	}
 
 	.ajax-spinner {
 		// max-width: 150px; max-height: 150px;
@@ -32,12 +44,8 @@ body.home {
 		top:0; left:0; right:0; bottom:0;
 		margin:auto; text-align: center;
 		
-		#spin-wheel { width: 50px; height:50px;}
-
-		.logo-spin {
-			width:150px;
-			height: 194px;
-		}
+		img { width:100%; }
+		#spin-wheel { max-width: 50px; }
 	}
 }
 
