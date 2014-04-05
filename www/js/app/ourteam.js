@@ -228,8 +228,8 @@ define(["jquery",
                 // HIDE CLUE TIP
                 $(document).trigger('hideCluetip');
                 
-                var member = $(this);
-                toggleMemberItems(member);
+                var clickMember = $(this);
+                toggleMemberItems(clickMember);
 
             });
             
