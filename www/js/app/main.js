@@ -8,20 +8,20 @@ define(['jquery',
     
     'use strict';
 
-    $(function() {
-        $.ajax({
-            url: '/',
-            xhrFields: {
-                onprogress: function (e) {
-                    if (e.lengthComputable) {
-                        console.log(e.loaded / e.total * 100 + '%');
-                    }
-                }
-            },
-            success: function (response) {
-                console.log('This is what success looks like. Does it feel like this too?' + response);
-            }
-        });
+    // $(function() {
+    //     $.ajax({
+    //         url: '/',
+    //         xhrFields: {
+    //             onprogress: function (e) {
+    //                 if (e.lengthComputable) {
+    //                     console.log(e.loaded / e.total * 100 + '%');
+    //                 }
+    //             }
+    //         },
+    //         success: function (response) {
+    //             console.log('This is what success looks like. Does it feel like this too?' + response);
+    //         }
+    //     });
 
         var $body = $('body'),
         $mainMenu = $('#page-fixed'),
