@@ -1,7 +1,8 @@
 // SIDE BAR CONTROLLER
-define(["jquery", 
-        "util/config"], function($, config) {
+define(['jquery',
+        'util/config'], function($, config) {
         // SET UP WORKING VARS
+    'use strict';
     var body = $('body'),
     teamMembers = [],
     liArray = [];
@@ -18,7 +19,7 @@ define(["jquery",
         }
 
         function nameShoes(itemName) {
-            if(itemName == 's1991 Nike Air Jordan VI Sport Blue') {
+            if(itemName === 's1991 Nike Air Jordan VI Sport Blue') {
                 itemName = itemName.substring(1);
             }
             return itemName;
@@ -46,11 +47,10 @@ define(["jquery",
 
 
             $.each(items, function(j, item) {
-                var itemName = item.name.replace(/[^\w\s]|_/g, "").replace(/\s+/g, ""),
+                var itemName = item.name.replace(/[^\w\s]|_/g, '').replace(/\s+/g, ''),
                 image = item.image,
                 itemClass = 'item-hidden item-holder ' + itemName.toLowerCase() + ' ' + member_class,
                 usemap = (image.split('.')[0]).split('/')[1],
-                usemap = validateString(usemap),
                 coords = item.coords,
                 r=0,
                 map, area, a, img,
@@ -61,6 +61,8 @@ define(["jquery",
                     // "data-pos-solo":""
                 });
 
+                usemap = validateString(usemap);
+
                 // ON THE FLY DEBUGGING
                 var cleanItemName = nameShoes(item.name),
                 reallyCleanItemName = validateString(cleanItemName),
@@ -68,7 +70,7 @@ define(["jquery",
 
                 if(r < 12) {
                     imageSource = image;
-                } else { 
+                } else {
                     imageSource = blankGif;
                 }
 
@@ -80,23 +82,23 @@ define(["jquery",
                         alt:item.name,
                         usemap:'#'+usemap,
                         // "data-src":blankGif
-                        "data-src":image
+                        'data-src':image
                     }),
                     map = $('<map/>', {
                         id:usemap,
                         name:usemap,
-                        class:"map-link",
-                        "data-person":member_class
+                        class:'map-link',
+                        'data-person':member_class
                     }),
                     area = $('<area/>', {
-                        href:"#",
-                        shape:"poly",
+                        href:'#',
+                        shape:'poly',
                         coords:coords,
                         alt: itemName.toLowerCase(),
-                        "data-person":member_class,
-                        "data-item": itemName.toLowerCase(),
+                        'data-person':member_class,
+                        'data-item': itemName.toLowerCase(),
                         "title": "|" + "|" + name + "\'s" + "|" + cleanItemName + "|" + item.bio + "|" + "<label for='"+member_class+"-"+reallyCleanItemName+"' class='permalink'>> View " + sex + " stuff</label><input type='radio' name='"+member_class+"' id='"+member_class+"-"+reallyCleanItemName+"' value='"+member_class+"'>",
-                        class:"cluetip-div"
+                        class:'cluetip-div'
                     });
 
                     map.append(area);
@@ -110,16 +112,15 @@ define(["jquery",
                         src:imageSource,
                         alt:item.name,
                         // "data-src":blankGif
-                        "data-src":image
+                        'data-src':image
                     }),
                     a = $('<a/>', {
-                        href:"#",
-                        "data-person":member_class,
-                        "data-item": itemName.toLowerCase(),
+                        href:'#',
+                        'data-person':member_class,
+                        'data-item': itemName.toLowerCase(),
                         "title": "|" + "|" + name + "\'s" + "|" + cleanItemName + "|" + item.bio + "|" + "<label for='"+member_class+"-"+reallyCleanItemName+"' class='permalink'>> View " + sex + " stuff</label><input type='radio' name='"+member_class+"' id='"+member_class+"-"+reallyCleanItemName+"' value='"+member_class+"'>",
-                        class:"cluetip-div"
+                        class:'cluetip-div'
                     });
-
                     a.append(img);
                     li.append(a);
                 }
@@ -133,7 +134,6 @@ define(["jquery",
             teamMembers.push(teamMember);
 
         });
-
 
 
 	});

@@ -9,13 +9,6 @@ define(["jquery",
         "util/clue-hover",
         "hover"], function($, config, flexnav, teamMemberFactory, subMenu, unveil, clueTip, clueHover, hover) {
     $(function() {
-        // JSON DATA
-        var $body = $("body");
-        var jsonMembers = $body.configData().jsonMembers;
-
-        // SHOW MEMBER BIO, NAME, LINK
-        var jsonDefaults = $body.configData().jsonDefaults;
-        var allMembers = $('.all-members');
 
         // // TEST FOR MOBILE DEVICE / TABLET
         // var device;
@@ -35,19 +28,18 @@ define(["jquery",
         $('#page-ourteam').addClass('mobile-hidden');
 
         // VARS
-        
-        var $mainMenu = $("#page-fixed"),
+        var $body = $("body"),
+            $mainMenu = $("#page-fixed"),
             $subNav = $("#member-fixed"),
             $img = $("img"),
             $clickClose = $('#click-close'),
             $sidebarLinks = $('#member-fixed .sidebar-link'),
             $clueTipPermalink = $('.item-list .permalink'),
-            $memberBioPermalink = $('#member-bio .permalink > a'),
-            i;
+            $memberBioPermalink = $('#member-bio .permalink > a');
 
         // CHANGE SRC ON IMAGES
         var toPngs = $('.item-holder img');
-        console.dir(toPngs);
+        // console.dir(toPngs);
 
         var noJpg = [
             'items/Peony_Rene_necklace.png',
@@ -102,10 +94,11 @@ define(["jquery",
             'buttonSelector': '#member-button'
         });
         
-        
+        // JSON DATA
+        var jsonMembers = $body.configData().jsonMembers;
 
         // SIDE BAR CLICK EVENT- get bios
-        function showMemberBio(member) {
+        showMemberBio = function(member) {
             $(jsonMembers).each(function() {
                 var name = this.name,
                 member_class = this.member_class,
@@ -291,9 +284,9 @@ define(["jquery",
 
 
 
-            // // SHOW MEMBER BIO, NAME, LINK
-            // var jsonDefaults = $body.configData().jsonDefaults;
-            // var allMembers = $('.all-members');
+            // SHOW MEMBER BIO, NAME, LINK
+            var jsonDefaults = $body.configData().jsonDefaults;
+            var allMembers = $('.all-members');
 
             allMembers.click(function(event) {
                 event.preventDefault();
