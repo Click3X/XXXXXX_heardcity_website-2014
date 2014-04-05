@@ -4,6 +4,7 @@
 // except 'app' ones, 
 requirejs.config({
     "baseUrl": "js/lib",
+    "waitSeconds": 200,
     "paths": {
       "app": "../app",
       "flexnav":"jquery.flexnav.min"

@@ -47,12 +47,12 @@
 	background-position: 0 100%;
 	background-size: 150%;
 	@media(min-width:600px) {
-		background-size: auto;
-	}
-
-	@media(min-width:1240px) {
 		background-size: cover;
 	}
+
+	// @media(min-width:1240px) {
+	// 	background-size: cover;
+	// }
 }
 
 
@@ -60,7 +60,7 @@
 	background-position: 0 50%;
 	background-size: 150%;
 	@media(min-width:600px) {
-		background-size: auto;
+		background-size: cover;
 	}
 	@media(min-width:1240px) {
 		background-position: 0 35%;

@@ -1,5 +1,6 @@
 requirejs.config({
-    // "urlArgs": "bust=" + (new Date()).getTime(),
+    "urlArgs": "bust=" + (new Date()).getTime(),
+    "waitSeconds": 200,
     "baseUrl": "js/lib",
     "paths": {
       "app": "../app",

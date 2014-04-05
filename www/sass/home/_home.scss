@@ -103,19 +103,14 @@ body.home {
 	height: 64px;
 	top: 50%;
 	left: 50%;
-	margin-top:-16px;	
+	// margin-top:-16px;
+	margin-top:-32px;	
 	// margin-left: -16px; 
 	margin-left: -32px;
 
 	position: absolute;	
 	cursor: pointer;	
 	background: url('vendor/royal/rs-default.png');
-
-	// background-color: #000;
-	// background-color: rgba(0,0,0,0.75);
-	// *background-color: #000;
-	
-	// border-radius: 2px;
 }
 
 
@@ -153,7 +148,10 @@ body.home {
 }
 
 
-#featured-slider.rsDefault .rsArrowIcn { top: 25%; }
+#featured-slider.rsDefault .rsArrowIcn { 
+	// top: 25%; 
+	top: 31%; 
+}
 
 @media(min-width:980px) {
 	#featured-slider.rsDefault .rsArrowIcn {top: 220px; }

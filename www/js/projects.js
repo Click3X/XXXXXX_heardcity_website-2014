@@ -4,6 +4,7 @@
 // except 'app' ones, 
 requirejs.config({
     "urlArgs": "bust=" + (new Date()).getTime(),
+    "waitSeconds": 200,
     "baseUrl": "js/lib",
     "paths": {
       "app": "../app",
