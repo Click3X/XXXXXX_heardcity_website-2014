@@ -9,7 +9,7 @@ define(["jquery",
 
 		$(window).ready(function() {
 
-		showMemberBioAgain = function(member) {
+		function showMemberBioAgain(member) {
             $(members).each(function() {
                 var name = this.name,
                 member_class = this.member_class,
@@ -27,7 +27,7 @@ define(["jquery",
             });
         }
 
-		clueTipSoloMemberItems = function() {
+		function clueTipSoloMemberItems() {
 			$(document).trigger('hideCluetip');
 			$('html, body').animate({scrollTop : 0},800);
 			

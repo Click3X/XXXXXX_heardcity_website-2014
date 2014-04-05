@@ -1614,8 +1614,8 @@ a {
 
 /* line 46, ../sass/home/_image-spread.scss */
 #guitar-nord {
-  background-position: 0 100%;
-  background-size: 150%;
+  background-position: 12% 100%;
+  background-size: 150% auto;
 }
 @media (min-width: 600px) {
   /* line 46, ../sass/home/_image-spread.scss */

@@ -44,6 +44,7 @@ define(["jquery",
             var items = this.items;
             var member_class = this.member_class;
 
+
             $.each(items, function(j, item) {
                 var itemName = item.name.replace(/[^\w\s]|_/g, "").replace(/\s+/g, ""),
                 image = item.image,
@@ -51,7 +52,9 @@ define(["jquery",
                 usemap = (image.split('.')[0]).split('/')[1],
                 usemap = validateString(usemap),
                 coords = item.coords,
+                r=0,
                 map, area, a, img,
+                imageSource,
                 li = $('<li/>', {
                     class:itemClass
                     // "data-pos-all":"",
@@ -63,10 +66,16 @@ define(["jquery",
                 reallyCleanItemName = validateString(cleanItemName),
                 blankGif = 'images/sprites/blank.gif';
 
+                if(r < 12) {
+                    imageSource = image;
+                } else { 
+                    imageSource = blankGif;
+                }
+
                 // check for Coords, else link shape is regular
                 if(coords) {
                     img = $('<img/>', {
-                        src:blankGif,
+                        src:imageSource,
                         // src:image,
                         alt:item.name,
                         usemap:'#'+usemap,
@@ -98,7 +107,7 @@ define(["jquery",
                 } else {
                     img = $('<img/>', {
                         // src:image,
-                        rc:blankGif,
+                        src:imageSource,
                         alt:item.name,
                         // "data-src":blankGif
                         "data-src":image
@@ -115,8 +124,9 @@ define(["jquery",
                     li.append(a);
                 }
 
-            liArray.push(li);
 
+                liArray.push(li);
+                r++;
             });
 
             var teamMember = new Member(name, bio, sex, items, member_class);
