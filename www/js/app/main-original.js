@@ -3,103 +3,25 @@ define(['jquery',
         'unveil',
         'flexnav',
         'controller/request-anim',
-        'royalslider',
-        'imgLoaded'], function($, config, unveil, flexnav, anim, royalslider, imgLoaded) {
+        'royalslider'], function($, config, unveil, flexnav, anim, royalslider) {
 
+    
     'use strict';
 
     $(function() {
-        var $imgs = $('img');
-        var imgCount = $imgs.length;
-        var imgLoaded = 0;
-        var animHolder = $('#anim-holder');
-        var preloadAnim = $('#preload-anim');
-
-        // var percent = function() {
-        //     var percent = imgLoaded/100;
-        //     return percent;
-        // }
-
-        
-        // $('body').imagesLoaded( function() {
-        //     // images have loaded
-        //     console.log('All images have loaded!');
-        // });
-        $('body').imagesLoaded()
-          .always( function( instance ) {
-            console.log('all images loaded');
-          })
-          .done( function( instance ) {
-            console.log('all images successfully loaded');
-          })
-          .fail( function() {
-            console.log('all images loaded, at least one is broken');
-          })
-          .progress( function( instance, image ) {
-            var result = image.isLoaded ? 'loaded' : 'broken';
-            console.log( 'image is ' + result + ' for ' + image.img.src );
-            if(result == 'loaded') {
-                imgLoaded++;
-                console.log('This is imgLoaded: ' + imgLoaded);
-            }
-          });
-        // imagesLoaded( elem, callback );
-        // // you can use `new` if you like
-        // new imagesLoaded( elem, callback );
-        // // IMAGES LOADED
-        // imgLoad.on( 'progress', function( instance, image ) {
-        //     var result = image.isLoaded ? 'loaded' : 'broken';
-        //     console.log( 'image is ' + result + ' for ' + image.img.src );
-        // });
-
-        // GET all images count
-        // $(function() {
-            
-        //     console.dir($imgs);
-        //     console.log('These are your vars: ' + $imgs, imgCount, imgLoaded);
-
-        //     $.each($imgs, function() {
-        //         $(this).load(function() {
-        //             console.dir(this);
-        //             ++imgLoaded;
-        //             console.log('This is imgLoaded: ' + imgLoaded);
-        //             if(imgLoaded == imgCount) {
-        //                 console.log('All images loaded!');
+        // $.ajax({
+        //     url: '/',
+        //     xhrFields: {
+        //         onprogress: function (e) {
+        //             if (e.lengthComputable) {
+        //                 console.log(e.loaded / e.total * 100 + '%');
         //             }
-        //         });
-        //     });
-
+        //         }
+        //     },
+        //     success: function (response) {
+        //         console.log('This is what success looks like. Does it feel like this too?' + response);
+        //     }
         // });
-
-        // animHolder.fadeOut(250);
-
-        // ANIMATION function
-        $(function() {
-            var preSrc = preloadAnim.attr('src');
-            var dir = 'preloader/pre_loader';
-            var count = 20001;
-            var finalFrame = 20133;
-            var ext = '.png';
-
-            function animPreLoader() {
-                count++;
-                if(count > finalFrame - 1) {
-                    preloadAnim.fadeOut(250);
-                    animHolder.fadeOut(250);
-                    clearInterval(timeout);
-                }
-
-                var countStr = count.toString();
-                preSrc = dir + countStr + ext;
-                preloadAnim.attr('src', preSrc);
-
-            }
-            var timeout = setInterval(animPreLoader, 32);
-            animPreLoader();
-
-
-        });
-        
 
         var $body = $('body'),
         $mainMenu = $('#page-fixed'),

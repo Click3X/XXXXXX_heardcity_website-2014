@@ -11,10 +11,12 @@ requirejs.config({
       "royalslider": "jquery.royalslider.min",
       "flexnav":"jquery.flexnav.min",
       "unveil":"jquery.unveil.min",
+      "imgLoaded":"jquery.imagesLoaded.min"
       // "preloader":"queryLoader"
       // "spin":"spin"
     },
     "shim": {
+      "imgLoaded": ["jquery"],
       "util/config": ["jquery"],
       "unveil":['jquery'],
     	"flexnav":["jquery"],

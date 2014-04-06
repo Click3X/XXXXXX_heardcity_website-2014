@@ -2,46 +2,7 @@
 define(['jquery',
         'util/config',
         'controller/team-member-factory'], function($, config, teamMemberFactory) {
-        
-        // DEV PAGE WORK
-        // SORT POSITIONS FOR ALL PAGE
-        // var newItems = []
-        // i=0;
-        // posAll.forEach(function() {
-        //     var item = posAll[i]; 
-        //     var nameSplit = item.split('{');
-        //     var names =nameSplit[0].split('.');
-        //     var positions =nameSplit[1].split(' ');
-            
-        //     var top = positions[1];
-        //     var left = positions[3];
-        //     var item = names[0];
-        //     var name = names[1];
-        //     top = top.substring(0, top.length - 1);
-        //     left = left.substring(0, left.length - 2);
-
-        //     var itemObj = {
-        //         name:name,
-        //         item:item,
-        //         top:top,
-        //         left:left
-        //     }
-
-        //     newItems.push(itemObj);
-        //     // console.log('this is name: ' + name + ' this is the item: ' + item);
-        //     i++;
-        // });
-        // console.log('these are the new items: ' + newItems);
-        // console.dir(newItems);
-
-        // newItems.forEach(function(i, item) {
-        // 	var item = JSON.stringify(newItems[item]);
-        // 	document.write(item+',');
-        // });
-
-
-
-
+      
     'use strict';
     var length = teamMemberFactory.length;
 	// ATTACH SIDEBAR TO DOM
@@ -54,9 +15,6 @@ define(['jquery',
         // winWidth = $(window).width(),
         i =0;
  
-        // CHECK WIN - WIDTH
-        // if(winWidth < 600) { length = 36; } 
-        // else { length = teamMemberFactory.length; }
         var device;
 	    if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             device = 'mobile';

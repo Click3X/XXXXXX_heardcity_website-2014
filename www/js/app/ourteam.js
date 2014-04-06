@@ -1,13 +1,16 @@
 // OUR TEAM
-define(["jquery", 
-		"util/config", 
-        "flexnav",
-        "controller/team-member-factory",
-        "controller/sub-menu",
-        "unveil",
-        "clue-tip",
-        "util/clue-hover",
-        "hover"], function($, config, flexnav, teamMemberFactory, subMenu, unveil, clueTip, clueHover, hover) {
+define(['jquery',
+    'util/config',
+    'flexnav',
+    'controller/team-member-factory',
+    'controller/sub-menu',
+    'unveil',
+    'clue-tip',
+    'util/clue-hover',
+    'hover'], function($, config, flexnav, teamMemberFactory, subMenu, unveil, clueTip, clueHover, hover) {
+    
+    'use strict';
+
     $(function() {
 
         // // TEST FOR MOBILE DEVICE / TABLET
@@ -28,10 +31,10 @@ define(["jquery",
         $('#page-ourteam').addClass('mobile-hidden');
 
         // VARS
-        var $body = $("body"),
-            $mainMenu = $("#page-fixed"),
-            $subNav = $("#member-fixed"),
-            $img = $("img"),
+        var $body = $('body'),
+            $mainMenu = $('#page-fixed'),
+            $subNav = $('#member-fixed'),
+            $img = $('img'),
             $clickClose = $('#click-close'),
             $sidebarLinks = $('#member-fixed .sidebar-link'),
             $clueTipPermalink = $('.item-list .permalink'),
@@ -57,11 +60,12 @@ define(["jquery",
         ];
         // CHECK ARRAY FUNCTION
         Array.prototype.contains = function ( needle ) {
-           for (i in this) {
-               if (this[i] == needle) return true;
-           }
-           return false;
-        }
+            var i;
+            for (i in this) {
+                if (this[i] === needle) { return true; }
+            }
+            return false;
+        };
 
         function switchSrc(obj) {
             var src = $(this).data('src'),
@@ -71,8 +75,8 @@ define(["jquery",
                 // console.log('Not this one');
             }
             else {
-                src = src.replace(png, "jpg");
-                src = src.replace("items", "items/jpg");
+                src = src.replace(png, 'jpg');
+                src = src.replace('items', 'items/jpg');
                 $(this).attr('data-src', src);
             }
         }
@@ -98,7 +102,7 @@ define(["jquery",
         var jsonMembers = $body.configData().jsonMembers;
 
         // SIDE BAR CLICK EVENT- get bios
-        showMemberBio = function(member) {
+        function showMemberBio(member) {
             $(jsonMembers).each(function() {
                 var name = this.name,
                 member_class = this.member_class,
@@ -118,89 +122,91 @@ define(["jquery",
 
             
          // SHOW IMAGES ON SCROLL
-            $("img").unveil(1200, function() {
-              $(this).load(function() {
-                // this.style.opacity = 1;
-              });
+        $('img').unveil(1200, function() {
+            $(this).load(function() {
+            // this.style.opacity = 1;
             });
+        });
 
-            // $("img").trigger("unveil");
+        // $("img").trigger("unveil");
 
-     
-            // TOGGLE SIDE BAR
-            $('#member-button').click( function() { 
+ 
+        // TOGGLE SIDE BAR
+        $('#member-button').click( function() {
+            $('#member-header').toggleClass('side-bar-closed');
+            $clickClose.toggleClass('hidden');
+            $clickClose.click(function() {
                 $('#member-header').toggleClass('side-bar-closed');
-                $clickClose.toggleClass('hidden');
-                $clickClose.click(function() {
-                    $('#member-header').toggleClass('side-bar-closed');
-                });
             });
+        });
 
-            $("a[href='#top']").click(function() {
-                  $("html, body").animate({ scrollTop: 0 }, "slow");
-                  return false;
-                });
+        $("a[href='#top']").click(function() {
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+            return false;
+        });
 
 
-            // SIDEBAR LINKS
+        // SIDEBAR LINKS
 
-            function toggleMemberItems(member) {
-                var member = $(member).eq(0).data('person');
-                var memberItems = '.item-holder'+'.'+member;
-                var $allOtherMembers = $('.item-holder').not(memberItems);
-                var $memberItems = $(memberItems);
-                var k = 0; var l=0;
-                var length = $allOtherMembers.length;
-                var mlength = $memberItems.length;
+        function toggleMemberItems(member) {
+            var member = $(member).eq(0).data('person');
+            var memberItems = '.item-holder'+'.'+member;
+            var $allOtherMembers = $('.item-holder').not(memberItems);
+            var $memberItems = $(memberItems);
+            var k = 0;
+            var l=0;
+            var length = $allOtherMembers.length;
+            var mlength = $memberItems.length;
 
-                $('html, body').animate({scrollTop : 0},800);
+            $('html, body').animate({scrollTop : 0},800);
 
-                // HIDE OTHERS
-                function hideMember(obj) {
-                    var showed = []; var i= 0; 
-                    setTimeout(function() {
-                        $(obj).removeClass('item-show').hide().addClass('hide-mem-items', 250);
-                    }, 80 * ( l + 1 ));
+            // HIDE OTHERS
+            function hideMember(obj) {
+                var showed = [];
+                var i= 0;
+                setTimeout(function() {
+                    $(obj).removeClass('item-show').hide().addClass('hide-mem-items', 250);
+                }, 80 * ( l + 1 ));
 
-                    setTimeout(function() {
-                        $body.addClass('js-single-member'); 
-                    }, 280);
-                }
-
-                // SHOW MEMBER
-                function showMember(obj, l) {
-                    setTimeout(function() {
-                        $(obj).removeClass('hide-mem-items').show().addClass('item-show', 500);
-                    }, 120 * ( l + 1 ));
-                }           
-
-                // UNVIEL ALL IMAGES 
-                var $imgs = $memberItems.find('img');
-                $imgs.trigger("unveil");
-
-                // if click = CLOSE
-                $clickClose.addClass('hidden');
-                // CLOSE SIDEBAR
-                $('#member-header').addClass('side-bar-closed');
-
-                $('#member-bio .permalink > a').show();
-                showMemberBio(member);
-                
-                // TOGGLE HIDE - SHOW CLASS ON EACH MEMBER LI
-                function init() {
-                     for( k=0; k < length; k++) {
-                        var obj = $allOtherMembers[k];
-                        hideMember(obj, k);
-                    }
-
-                    for(l=0; l < mlength; l++) {
-                        var obj = $memberItems[l];
-                        showMember(obj, l); 
-                    }
-                }
-
-               init();
+                setTimeout(function() {
+                    $body.addClass('js-single-member');
+                }, 280);
             }
+
+            // SHOW MEMBER
+            function showMember(obj, l) {
+                setTimeout(function() {
+                    $(obj).removeClass('hide-mem-items').show().addClass('item-show', 500);
+                }, 120 * ( l + 1 ));
+            }
+
+            // UNVIEL ALL IMAGES 
+            var $imgs = $memberItems.find('img');
+            $imgs.trigger('unveil');
+
+            // if click = CLOSE
+            $clickClose.addClass('hidden');
+            // CLOSE SIDEBAR
+            $('#member-header').addClass('side-bar-closed');
+
+            $('#member-bio .permalink > a').show();
+            showMemberBio(member);
+            
+            // TOGGLE HIDE - SHOW CLASS ON EACH MEMBER LI
+            function init() {
+                for( k=0; k < length; k++) {
+                    var obj = $allOtherMembers[k];
+                    hideMember(obj, k);
+                }
+
+                for(l=0; l < mlength; l++) {
+                    var obj = $memberItems[l];
+                    showMember(obj, l);
+                }
+            }
+
+           init();
+        }
 
 
 
@@ -235,76 +241,76 @@ define(["jquery",
             
 
             // CHECK TO SEE IF SELECTED MEMBER HAS BEEN SENT FROM HOME.PHP
-            if(selectedMember) {
-                var target = '.item-holder.' + selectedMember,
-                siblings = $('.item-holder').not(target);
-                // Show individual items
-                $('.item-holder').show();
+        if(selectedMember) {
+            var target = '.item-holder.' + selectedMember,
+            siblings = $('.item-holder').not(target);
+            // Show individual items
+            $('.item-holder').show();
 
-                siblings.hide();    
-                $('body.ourteam').addClass('js-single-member');
-                $(target).show();
+            siblings.hide();
+            $('body.ourteam').addClass('js-single-member');
+            $(target).show();
 
-                var $imgs = $(target).find('img');
-                $imgs.trigger("unveil");
+            var $imgs = $(target).find('img');
+            $imgs.trigger('unveil');
 
-                $memberBioPermalink.show();
-                // Show member Bio
-                showMemberBio(selectedMember);
-            }
-
-
-            function showSolo(elem) {
-                event.preventDefault();
-                $(document).trigger('hideCluetip');
-
-                var hreftarget = $(this).data('person'),
-                target = '.item-holder.' + hreftarget,
-                siblings = $('.item-holder').not(target);
-
-                // $("html, body").animate({ scrollTop: 0 });
-                $body.removeClass('js-single-member'); 
-                siblings.hide();
-
-                // SHOW member BIO
-                $memberBioPermalink.show();
-                showMemberBio(hreftarget);
-
-                $("html, body").scrollTop(0);
-                $(target).removeClass('item-hidden');
-                $body.addClass('js-single-member');
-                
-                var $imgs = $(target).find('img');
-                $imgs.trigger("unveil");
-
-                // OPEN / SHUT side bar NAV
-                $('#member-header').addClass('side-bar-closed');
-            }
+            $memberBioPermalink.show();
+            // Show member Bio
+            showMemberBio(selectedMember);
+        }
 
 
+        function showSolo(elem) {
+            event.preventDefault();
+            $(document).trigger('hideCluetip');
 
+            var hreftarget = $(this).data('person'),
+            target = '.item-holder.' + hreftarget,
+            siblings = $('.item-holder').not(target);
 
-            // SHOW MEMBER BIO, NAME, LINK
-            var jsonDefaults = $body.configData().jsonDefaults;
-            var allMembers = $('.all-members');
+            // $("html, body").animate({ scrollTop: 0 });
+            $body.removeClass('js-single-member');
+            siblings.hide();
 
-            allMembers.click(function(event) {
-                event.preventDefault();
+            // SHOW member BIO
+            $memberBioPermalink.show();
+            showMemberBio(hreftarget);
 
-                $('.item-holder').show().removeClass('hide-mem-items');
-                $memberBioPermalink.hide();
-                $body.removeClass('js-single-member');
-
-                var $imgs = $(target).find('img');
-                $imgs.trigger("unveil");
+            $('html, body').scrollTop(0);
+            $(target).removeClass('item-hidden');
+            $body.addClass('js-single-member');
             
-                var defaultName = jsonDefaults[0].name;
-                var defaultBio = jsonDefaults[0].bio;
+            var $imgs = $(target).find('img');
+            $imgs.trigger('unveil');
 
-                $('#member-bio .bio > p').html(defaultBio);
-                $('#member-bio .name').html(defaultName);
-                $('#sidebar-name').html(defaultName);
-            });
+            // OPEN / SHUT side bar NAV
+            $('#member-header').addClass('side-bar-closed');
+        }
+
+
+
+
+        // SHOW MEMBER BIO, NAME, LINK
+        var jsonDefaults = $body.configData().jsonDefaults;
+        var allMembers = $('.all-members');
+
+        allMembers.click(function(event) {
+            event.preventDefault();
+
+            $('.item-holder').show().removeClass('hide-mem-items');
+            $memberBioPermalink.hide();
+            $body.removeClass('js-single-member');
+
+            var $imgs = $(target).find('img');
+            $imgs.trigger('unveil');
+        
+            var defaultName = jsonDefaults[0].name;
+            var defaultBio = jsonDefaults[0].bio;
+
+            $('#member-bio .bio > p').html(defaultBio);
+            $('#member-bio .name').html(defaultName);
+            $('#sidebar-name').html(defaultName);
+        });
 
 
             // TEAM MEMBER CLICK
@@ -352,22 +358,22 @@ define(["jquery",
             // });
 
             // // ON MAP LINK CLICK - SHOW MEMBER SOLO
-            $('.map-link').click(function(event) {
-                event.preventDefault();
-                var elem = $(this);
-                // showSolo(elem);
-                $('html, body').animate({scrollTop : 0},800);
-                console.log('map link click');
-            });
+        $('.map-link').click(function(event) {
+            event.preventDefault();
+            var elem = $(this);
+            // showSolo(elem);
+            $('html, body').animate({scrollTop : 0},800);
+            console.log('map link click');
+        });
 
-            // // ON CLUE TIP LINK CLICK - SHOW MEMBER SOLO
-            $('.cluetip-div').click(function(event) {
-                event.preventDefault();
-                var elem = $(this);
-                // showSolo(elem);
-                $('html, body').animate({scrollTop : 0},800);
-                console.log('map link click');
-            });
+        // // ON CLUE TIP LINK CLICK - SHOW MEMBER SOLO
+        $('.cluetip-div').click(function(event) {
+            event.preventDefault();
+            var elem = $(this);
+            // showSolo(elem);
+            $('html, body').animate({scrollTop : 0},800);
+            console.log('map link click');
+        });
 
 
 
