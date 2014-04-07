@@ -113,7 +113,8 @@ body.home {
 
 	position: absolute;	
 	cursor: pointer;	
-	background: url('vendor/royal/rs-default.png');
+	// background: url('vendor/royal/rs-default.png');
+	background: url('../images/sprites/grey-arrow.svg');
 }
 
 
@@ -124,15 +125,21 @@ body.home {
 
 .rsDefault.rsHor .rsArrowLeft .rsArrowIcn { 
 	// background-position: -64px -32px; 
-	background-position: -109px -52px;
-	background-size: 540%;
+	// background-position: -109px -52px;
+	// background-size: 540%;
+	background-position: 18px -1px;
+	background-size: 50%;
+	background-repeat: no-repeat;
 }
 
 .rsDefault.rsHor .rsArrowRight .rsArrowIcn { 
 	// background-position: -64px -64px; 
-	background-position: -109px -108px;
-	background-size: 540%;
-
+	// background-position: -109px -108px;
+	// background-size: 540%;
+	background: url('../images/sprites/grey-arrow-right.svg');
+	background-position: 12px -1px;
+	background-size: 50%;
+	background-repeat: no-repeat;	
 }
 
 .rsDefault.rsVer .rsArrowLeft .rsArrowIcn { background-position: -96px -32px; }
