@@ -668,13 +668,13 @@ a {
 #member-button > div:after {
   content: '';
   display: block;
-  background-image: url("../images/sprites/toggle-arrow.png");
+  background-image: url("../images/sprites/toggle-arrow.svg");
   background-repeat: no-repeat;
   width: 23px;
   height: 29px;
   position: absolute;
-  left: 7px;
-  top: 7px;
+  left: 12px;
+  top: 4px;
   z-index: 70;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -690,17 +690,17 @@ a {
 @media (min-width: 600px) {
   /* line 208, ../sass/base/_flex-nav-c.scss */
   #member-button > div:after {
-    -webkit-transform: rotate(-180deg);
-    -moz-transform: rotate(-180deg);
-    -o-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-    top: -41px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    top: -34px;
     left: 0;
   }
 }
 
-/* line 230, ../sass/base/_flex-nav-c.scss */
+/* line 232, ../sass/base/_flex-nav-c.scss */
 #member-header {
   background-color: #ffffff;
   width: 100%;
@@ -726,7 +726,7 @@ a {
   transform: translateZ(98);
 }
 @media (min-width: 600px) {
-  /* line 230, ../sass/base/_flex-nav-c.scss */
+  /* line 232, ../sass/base/_flex-nav-c.scss */
   #member-header {
     width: 260px;
     height: 100%;
@@ -736,7 +736,7 @@ a {
     right: 0;
     left: auto;
   }
-  /* line 250, ../sass/base/_flex-nav-c.scss */
+  /* line 252, ../sass/base/_flex-nav-c.scss */
   #member-header .page-title {
     display: none;
     position: relative;
@@ -746,7 +746,7 @@ a {
     text-align: left;
   }
 }
-/* line 260, ../sass/base/_flex-nav-c.scss */
+/* line 262, ../sass/base/_flex-nav-c.scss */
 #member-header .menu-button {
   background: #ffffff;
   border: none;
@@ -754,12 +754,12 @@ a {
   letter-spacing: .15em;
   color: #333333;
 }
-/* line 265, ../sass/base/_flex-nav-c.scss */
+/* line 267, ../sass/base/_flex-nav-c.scss */
 #member-header .menu-button > span.touch-button {
   display: none;
 }
 @media (min-width: 600px) {
-  /* line 268, ../sass/base/_flex-nav-c.scss */
+  /* line 270, ../sass/base/_flex-nav-c.scss */
   #member-header .flexnav {
     width: 250px;
     text-align: left;
@@ -767,7 +767,7 @@ a {
     margin-top: 0;
   }
 }
-/* line 276, ../sass/base/_flex-nav-c.scss */
+/* line 278, ../sass/base/_flex-nav-c.scss */
 #member-header .flexnav li a {
   background-color: #ffffff;
   border: none;
@@ -784,12 +784,12 @@ a {
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 285, ../sass/base/_flex-nav-c.scss */
+/* line 287, ../sass/base/_flex-nav-c.scss */
 #member-header .flexnav li a:hover {
   color: #333333;
 }
 @media (min-width: 600px) {
-  /* line 276, ../sass/base/_flex-nav-c.scss */
+  /* line 278, ../sass/base/_flex-nav-c.scss */
   #member-header .flexnav li a {
     padding: 2px 0;
     text-align: left;
@@ -798,19 +798,19 @@ a {
   }
 }
 @media (min-width: 600px) {
-  /* line 275, ../sass/base/_flex-nav-c.scss */
+  /* line 277, ../sass/base/_flex-nav-c.scss */
   #member-header .flexnav li {
     float: right;
     clear: right;
     width: 190px;
   }
 }
-/* line 302, ../sass/base/_flex-nav-c.scss */
+/* line 304, ../sass/base/_flex-nav-c.scss */
 #member-header .flexnav li:last-of-type {
   margin-bottom: 10px;
 }
 
-/* line 306, ../sass/base/_flex-nav-c.scss */
+/* line 308, ../sass/base/_flex-nav-c.scss */
 #site-header {
   background-color: #e0e0e2;
   width: 100%;
@@ -834,12 +834,12 @@ a {
   transform: translateZ(100);
 }
 @media (min-width: 600px) {
-  /* line 306, ../sass/base/_flex-nav-c.scss */
+  /* line 308, ../sass/base/_flex-nav-c.scss */
   #site-header {
     height: 50px;
   }
 }
-/* line 320, ../sass/base/_flex-nav-c.scss */
+/* line 322, ../sass/base/_flex-nav-c.scss */
 #site-header .menu-button {
   background: #e0e0e2;
   border: none;
@@ -847,11 +847,11 @@ a {
   letter-spacing: .15em;
   color: #333333;
 }
-/* line 325, ../sass/base/_flex-nav-c.scss */
+/* line 327, ../sass/base/_flex-nav-c.scss */
 #site-header .menu-button > span.touch-button {
   display: none;
 }
-/* line 330, ../sass/base/_flex-nav-c.scss */
+/* line 332, ../sass/base/_flex-nav-c.scss */
 #site-header .flexnav li a {
   border: none;
   text-align: center;
@@ -867,34 +867,34 @@ a {
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 337, ../sass/base/_flex-nav-c.scss */
+/* line 339, ../sass/base/_flex-nav-c.scss */
 #site-header .flexnav li a:hover {
   color: #333333;
 }
 @media (min-width: 600px) {
-  /* line 330, ../sass/base/_flex-nav-c.scss */
+  /* line 332, ../sass/base/_flex-nav-c.scss */
   #site-header .flexnav li a {
     font-size: .8em;
     line-height: auto;
   }
 }
-/* line 342, ../sass/base/_flex-nav-c.scss */
+/* line 344, ../sass/base/_flex-nav-c.scss */
 #site-header .flexnav li .current-page {
   color: #333333;
 }
 @media (min-width: 600px) {
-  /* line 328, ../sass/base/_flex-nav-c.scss */
+  /* line 330, ../sass/base/_flex-nav-c.scss */
   #site-header .flexnav li {
     width: 25%;
   }
 }
-/* line 347, ../sass/base/_flex-nav-c.scss */
+/* line 349, ../sass/base/_flex-nav-c.scss */
 #site-header nav {
   max-width: 700px;
   margin: 0 auto;
 }
 
-/* line 353, ../sass/base/_flex-nav-c.scss */
+/* line 355, ../sass/base/_flex-nav-c.scss */
 .page-title {
   display: inline-block;
   position: absolute;
@@ -908,7 +908,7 @@ a {
   color: #333333;
 }
 @media (min-width: 600px) {
-  /* line 353, ../sass/base/_flex-nav-c.scss */
+  /* line 355, ../sass/base/_flex-nav-c.scss */
   .page-title {
     display: none;
   }
