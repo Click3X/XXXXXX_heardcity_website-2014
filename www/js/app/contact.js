@@ -22,7 +22,7 @@ define(["jquery",
         
         // $('#page-contact').addClass('current');
         $('#page-title').text('Contact');
-        $('#page-contact').addClass('mobile-hidden');
+        $('#page-contact').addClass('mobile-hidden current');
 
         // MAIN MENU
         $mainMenu.flexNav({
