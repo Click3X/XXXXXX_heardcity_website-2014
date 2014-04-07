@@ -9,11 +9,11 @@ define(['jquery',
     'use strict';
 
     $(function() {
-        // var $imgs = $('img');
-        // var imgCount = $imgs.length;
-        // var imgLoaded = 0;
-        // var animHolder = $('#anim-holder');
-        // var preloadAnim = $('#preload-anim');
+        var $imgs = $('img');
+        var imgCount = $imgs.length;
+        var imgLoaded = 0;
+        var animHolder = $('#anim-holder');
+        var preloadAnim = $('#preload-anim');
 
         // var percent = function() {
         //     var percent = imgLoaded/100;
@@ -25,31 +25,24 @@ define(['jquery',
         //     // images have loaded
         //     console.log('All images have loaded!');
         // });
-
-////////////////////////////////////////////////////////////////////////
-        // $('body').imagesLoaded()
-        //   .always( function( instance ) {
-        //     console.log('all images loaded');
-        //   })
-        //   .done( function( instance ) {
-        //     console.log('all images successfully loaded');
-        //   })
-        //   .fail( function() {
-        //     console.log('all images loaded, at least one is broken');
-        //   })
-        //   .progress( function( instance, image ) {
-        //     var result = image.isLoaded ? 'loaded' : 'broken';
-        //     console.log( 'image is ' + result + ' for ' + image.img.src );
-        //     if(result == 'loaded') {
-        //         imgLoaded++;
-        //         console.log('This is imgLoaded: ' + imgLoaded);
-        //     }
-        //   });
-
-////////////////////////////////////////////////////////////////////////
-
-
-
+        $('body').imagesLoaded()
+          .always( function( instance ) {
+            console.log('all images loaded');
+          })
+          .done( function( instance ) {
+            console.log('all images successfully loaded');
+          })
+          .fail( function() {
+            console.log('all images loaded, at least one is broken');
+          })
+          .progress( function( instance, image ) {
+            var result = image.isLoaded ? 'loaded' : 'broken';
+            console.log( 'image is ' + result + ' for ' + image.img.src );
+            if(result == 'loaded') {
+                imgLoaded++;
+                console.log('This is imgLoaded: ' + imgLoaded);
+            }
+          });
         // imagesLoaded( elem, callback );
         // // you can use `new` if you like
         // new imagesLoaded( elem, callback );
@@ -77,32 +70,33 @@ define(['jquery',
         //     });
 
         // });
+
         // animHolder.fadeOut(250);
 
         // ANIMATION function
-        // $(function() {
-        //     var preSrc = preloadAnim.attr('src');
-        //     var dir = 'preloader/pre_loader';
-        //     var count = 20001;
-        //     var finalFrame = 20133;
-        //     var ext = '.png';
+        $(function() {
+            var preSrc = preloadAnim.attr('src');
+            var dir = 'preloader/pre_loader';
+            var count = 20001;
+            var finalFrame = 20133;
+            var ext = '.png';
 
-        //     function animPreLoader() {
-        //         count++;
-        //         if(count > finalFrame - 1) {
-        //             preloadAnim.fadeOut(250);
-        //             animHolder.fadeOut(250);
-        //             clearInterval(timeout);
-        //         }
+            function animPreLoader() {
+                count++;
+                if(count > finalFrame - 1) {
+                    preloadAnim.fadeOut(250);
+                    animHolder.fadeOut(250);
+                    clearInterval(timeout);
+                }
 
-        //         var countStr = count.toString();
-        //         preSrc = dir + countStr + ext;
-        //         preloadAnim.attr('src', preSrc);
+                var countStr = count.toString();
+                preSrc = dir + countStr + ext;
+                preloadAnim.attr('src', preSrc);
 
-        //     }
-        //     var timeout = setInterval(animPreLoader, 32);
-        //     animPreLoader();
-        // });
+            }
+            var timeout = setInterval(animPreLoader, 32);
+            animPreLoader();
+        });
         
 
         var $body = $('body'),

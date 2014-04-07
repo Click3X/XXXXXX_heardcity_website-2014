@@ -2290,9 +2290,9 @@ body.home {
   height: 100%;
   display: block;
   z-index: 1100;
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
 }
-/* line 23, ../sass/home/_home.scss */
+/* line 24, ../sass/home/_home.scss */
 #anim-holder #preload-anim {
   position: absolute;
   top: 0;
@@ -2300,9 +2300,11 @@ body.home {
   bottom: 0;
   right: 0;
   margin: auto;
+  display: block;
+  z-index: 1101;
 }
 
-/* line 34, ../sass/home/_home.scss */
+/* line 37, ../sass/home/_home.scss */
 #ajax-loader {
   width: 100%;
   height: 100%;
@@ -2318,7 +2320,7 @@ body.home {
   -ms-transition: all 750ms;
   transition: all 750ms;
 }
-/* line 46, ../sass/home/_home.scss */
+/* line 49, ../sass/home/_home.scss */
 #ajax-loader .ajax-spinner {
   width: 150px;
   height: 150px;
@@ -2330,19 +2332,19 @@ body.home {
   margin: auto;
   text-align: center;
 }
-/* line 53, ../sass/home/_home.scss */
+/* line 56, ../sass/home/_home.scss */
 #ajax-loader .ajax-spinner #spin-wheel {
   width: 50px;
   height: 50px;
 }
-/* line 55, ../sass/home/_home.scss */
+/* line 58, ../sass/home/_home.scss */
 #ajax-loader .ajax-spinner .logo-spin {
   width: 150px;
   height: 194px;
 }
 
 /* Background */
-/* line 67, ../sass/home/_home.scss */
+/* line 70, ../sass/home/_home.scss */
 .rsDefault,
 .rsDefault .rsOverflow,
 .rsDefault .rsSlide,
@@ -2358,7 +2360,7 @@ body.home {
 *  1. Arrows
 *
 ****************/
-/* line 80, ../sass/home/_home.scss */
+/* line 83, ../sass/home/_home.scss */
 .rsDefault .rsArrow {
   height: 100%;
   width: 44px;
@@ -2368,37 +2370,37 @@ body.home {
   z-index: 21;
 }
 
-/* line 88, ../sass/home/_home.scss */
+/* line 91, ../sass/home/_home.scss */
 .rsDefault.rsVer .rsArrow {
   width: 100%;
   height: 44px;
 }
 
-/* line 93, ../sass/home/_home.scss */
+/* line 96, ../sass/home/_home.scss */
 .rsDefault.rsVer .rsArrowLeft {
   top: 0;
   left: 0;
 }
 
-/* line 94, ../sass/home/_home.scss */
+/* line 97, ../sass/home/_home.scss */
 .rsDefault.rsVer .rsArrowRight {
   bottom: 0;
   left: 0;
 }
 
-/* line 96, ../sass/home/_home.scss */
+/* line 99, ../sass/home/_home.scss */
 .rsDefault.rsHor .rsArrowLeft {
   left: 0;
   top: 0;
 }
 
-/* line 97, ../sass/home/_home.scss */
+/* line 100, ../sass/home/_home.scss */
 .rsDefault.rsHor .rsArrowRight {
   right: 0;
   top: 0;
 }
 
-/* line 99, ../sass/home/_home.scss */
+/* line 102, ../sass/home/_home.scss */
 .rsDefault .rsArrowIcn {
   width: 64px;
   height: 64px;
@@ -2411,64 +2413,64 @@ body.home {
   background: url("vendor/royal/rs-default.png");
 }
 
-/* line 122, ../sass/home/_home.scss */
+/* line 125, ../sass/home/_home.scss */
 .rsDefault.rsHor .rsArrowLeft .rsArrowIcn {
   background-position: -109px -52px;
   background-size: 540%;
 }
 
-/* line 128, ../sass/home/_home.scss */
+/* line 131, ../sass/home/_home.scss */
 .rsDefault.rsHor .rsArrowRight .rsArrowIcn {
   background-position: -109px -108px;
   background-size: 540%;
 }
 
-/* line 135, ../sass/home/_home.scss */
+/* line 138, ../sass/home/_home.scss */
 .rsDefault.rsVer .rsArrowLeft .rsArrowIcn {
   background-position: -96px -32px;
 }
 
-/* line 136, ../sass/home/_home.scss */
+/* line 139, ../sass/home/_home.scss */
 .rsDefault.rsVer .rsArrowRight .rsArrowIcn {
   background-position: -96px -64px;
 }
 
-/* line 138, ../sass/home/_home.scss */
+/* line 141, ../sass/home/_home.scss */
 .rsDefault .rsArrowDisabled .rsArrowIcn {
   opacity: .2;
   filter: alpha(opacity=20);
 }
 
 /******************* CHARLES STYLES */
-/* line 145, ../sass/home/_home.scss */
+/* line 148, ../sass/home/_home.scss */
 .rsDefault .rsArrowIcn {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 147, ../sass/home/_home.scss */
+  /* line 150, ../sass/home/_home.scss */
   .rsDefault .rsArrowIcn {
     display: block;
   }
 }
-/* line 151, ../sass/home/_home.scss */
+/* line 154, ../sass/home/_home.scss */
 #featured-slider.rsDefault .rsArrowIcn {
   top: 31%;
 }
 
 @media (min-width: 980px) {
-  /* line 157, ../sass/home/_home.scss */
+  /* line 160, ../sass/home/_home.scss */
   #featured-slider.rsDefault .rsArrowIcn {
     top: 220px;
   }
 }
-/* line 162, ../sass/home/_home.scss */
+/* line 165, ../sass/home/_home.scss */
 #marquee-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
 #marquee-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div {
   border-radius: 0;
 }
 
-/* line 170, ../sass/home/_home.scss */
+/* line 173, ../sass/home/_home.scss */
 #grey-text-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
 #grey-text-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div,
 #team-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
