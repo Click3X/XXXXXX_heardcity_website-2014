@@ -3,7 +3,7 @@
 // Defaults
 $defaults = array(
 	'name'=>'Heard City',
-	'bio'=>'Many people collect things and those things say a lot about a person. Our stuff can be something that remind us of a moment in our past or just something we enjoy having. They remind us a bit of who we are. Which can includes almost everything you can imagine – from photos, souvenirs, tools, things that reminding us of a person or place we care about. Our team at Heard City is made up of some pretty incredible people. Get to know us by checking out our stuff. You\'ll see what kinds of things we do in our free time? What our hobbies are, what kinds of music/movies/books we like. It\'s an honest way to see what we as a collective enjoy in life.'
+	'bio'=>'People collect things and those things say a lot about a person. Our stuff can be something that reminds us of our past or just something that we enjoy having. They inevitably become a piece of who we are. Which can includes almost everything you can imagine – from photos, souvenirs, tools, things from a person or place that we care about. Our team at Heard City is made up of some pretty incredible people. Get to know us by checking out our stuff. You\'ll see what passions we have and what kind of things we do in our free time. It\'s an honest way to see who we are as a collective.'
 );
 
 // Site NAME

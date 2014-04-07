@@ -175,19 +175,61 @@
     }
 }
 
-// .footer .footer-inner .social-icons .icon-holder a {
-// display: block;
-// width: 100%;
-// max-width: 90px;
-// height: auto;
-// background-repeat: no-repeat;
-// margin: 0 auto;
-// padding-bottom: 100%;
-// }
 
-// .sprite-email {
-// width: 90px;
-// height: 90px;
-// background-position: 6% 82%;
-// background-size: 662%;
-// }
+// RESPONSIVE FOOTER
+.social-icons-fluid {
+	position: relative;
+	width: 100%; max-width:360px;
+	float: left;
+
+	@media(min-width: 768px) {
+		float:right;
+	}
+
+	.icon-holder {
+		width:25%; max-width: 90px;
+		height: auto; max-height: 90px;
+		float:left;
+		// background: red;
+	}
+
+	.sprite {
+	    background-image: url(../images/social-icons/social_svg.svg);
+	    background-repeat: no-repeat;
+	    display: block;
+
+	    background-size: 690%;
+		width: 100%;
+		height: auto;
+		padding-bottom: 100%;
+	}
+
+	.sprite-email {
+		background-position: 6.5% 18.75%;
+		&:hover {
+			background-position: 6.5% 82%;
+		}
+	}
+
+	.sprite-map {
+		background-position: 24% 18.75%;
+		&:hover {
+			background-position: 24% 82%;
+		}
+	}
+
+	.sprite-facebook {
+		background-position: 59.25% 18.75%;
+		&:hover {
+			background-position: 59.25% 82%;
+		}
+	}
+
+	.sprite-twitter {
+		background-position: 77% 18.75%;
+		&:hover {
+			background-position: 77% 82%;
+		}
+	}
+
+}

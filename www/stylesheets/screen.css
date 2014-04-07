@@ -1106,6 +1106,70 @@ a {
   background-position: -504px -146px;
 }
 
+/* line 180, ../sass/base/_footer.scss */
+.social-icons-fluid {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  float: left;
+}
+@media (min-width: 768px) {
+  /* line 180, ../sass/base/_footer.scss */
+  .social-icons-fluid {
+    float: right;
+  }
+}
+/* line 189, ../sass/base/_footer.scss */
+.social-icons-fluid .icon-holder {
+  width: 25%;
+  max-width: 90px;
+  height: auto;
+  max-height: 90px;
+  float: left;
+}
+/* line 196, ../sass/base/_footer.scss */
+.social-icons-fluid .sprite {
+  background-image: url(../images/social-icons/social_svg.svg);
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 690%;
+  width: 100%;
+  height: auto;
+  padding-bottom: 100%;
+}
+/* line 207, ../sass/base/_footer.scss */
+.social-icons-fluid .sprite-email {
+  background-position: 6.5% 18.75%;
+}
+/* line 209, ../sass/base/_footer.scss */
+.social-icons-fluid .sprite-email:hover {
+  background-position: 6.5% 82%;
+}
+/* line 214, ../sass/base/_footer.scss */
+.social-icons-fluid .sprite-map {
+  background-position: 24% 18.75%;
+}
+/* line 216, ../sass/base/_footer.scss */
+.social-icons-fluid .sprite-map:hover {
+  background-position: 24% 82%;
+}
+/* line 221, ../sass/base/_footer.scss */
+.social-icons-fluid .sprite-facebook {
+  background-position: 59.25% 18.75%;
+}
+/* line 223, ../sass/base/_footer.scss */
+.social-icons-fluid .sprite-facebook:hover {
+  background-position: 59.25% 82%;
+}
+/* line 228, ../sass/base/_footer.scss */
+.social-icons-fluid .sprite-twitter {
+  background-position: 77% 18.75%;
+}
+/* line 230, ../sass/base/_footer.scss */
+.social-icons-fluid .sprite-twitter:hover {
+  background-position: 77% 82%;
+}
+
 /* line 2, ../sass/home/_marquee.scss */
 .contentSlider {
   width: 100%;
@@ -3515,6 +3579,7 @@ html, body {
 /* line 85, ../sass/ourteam/_ourteam-base.scss */
 .ourteam .footer {
   margin-top: 160%;
+  z-index: 100;
 }
 @media (min-width: 1044px) {
   /* line 85, ../sass/ourteam/_ourteam-base.scss */
@@ -3524,46 +3589,55 @@ html, body {
 }
 
 @media (min-width: 768px) {
-  /* line 93, ../sass/ourteam/_ourteam-base.scss */
+  /* line 94, ../sass/ourteam/_ourteam-base.scss */
   .ourteam #member-bio .member-text {
     width: 74%;
     float: none;
     margin-left: 13%;
   }
 }
-/* line 103, ../sass/ourteam/_ourteam-base.scss */
+/* line 104, ../sass/ourteam/_ourteam-base.scss */
 .ourteam input[type="radio"] {
   position: absolute;
   opacity: 0;
 }
-/* line 112, ../sass/ourteam/_ourteam-base.scss */
+/* line 113, ../sass/ourteam/_ourteam-base.scss */
 .ourteam #member-bio .team-member {
   width: 100%;
   max-width: 1024px;
 }
-/* line 117, ../sass/ourteam/_ourteam-base.scss */
+/* line 118, ../sass/ourteam/_ourteam-base.scss */
 .ourteam #member-bio .member-text {
   margin-left: 3%;
   margin-top: 0;
 }
 @media (min-width: 768px) {
-  /* line 124, ../sass/ourteam/_ourteam-base.scss */
+  /* line 125, ../sass/ourteam/_ourteam-base.scss */
   .ourteam #member-bio .member-text {
     width: 74%;
     float: none;
     margin-left: 13%;
     margin-top: 1em;
   }
-  /* line 131, ../sass/ourteam/_ourteam-base.scss */
+  /* line 132, ../sass/ourteam/_ourteam-base.scss */
   .ourteam #member-bio .bio {
     max-width: none;
     font-size: 1em;
     line-height: 1.6em;
   }
-  /* line 137, ../sass/ourteam/_ourteam-base.scss */
+  /* line 138, ../sass/ourteam/_ourteam-base.scss */
   .ourteam #member-bio .name {
     font-size: 1.4rem;
   }
+}
+
+/* line 146, ../sass/ourteam/_ourteam-base.scss */
+#deeplink .main-content {
+  min-height: 400px;
+}
+/* line 149, ../sass/ourteam/_ourteam-base.scss */
+#deeplink .footer {
+  margin-top: 50%;
 }
 
 /* line 2, ../sass/ourteam/_items_width.scss */

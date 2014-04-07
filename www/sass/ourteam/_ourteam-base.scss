@@ -84,6 +84,7 @@ html, body { height: 100%; }
 
 .ourteam .footer { 
 	margin-top: 160%; 
+	z-index: 100;
 	@media(min-width: 1044px) {
 		margin-top:1600px;
 	}
@@ -136,5 +137,16 @@ html, body { height: 100%; }
 
 			.name { font-size: 1.4rem; }
 		}
+	}
+}
+
+
+
+#deeplink {
+	.main-content {
+		min-height: 400px;
+	}
+	.footer {
+		margin-top:50%;
 	}
 }
