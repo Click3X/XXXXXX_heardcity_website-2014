@@ -21,15 +21,16 @@ include('php/project-grid.php');
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->
 
-        <script data-main="js/app" src="js/lib/require.js"></script>
+        <script data-main="js/animation" src="js/lib/require.js"></script>
     
     </head>
 
     <body class="home">
         <!-- ANIMATED PRE LOADER -->
-        <div id="anim-holder" class="anim-holder">
+        <div id="anim-holder" class="anim-holder preload-anim">
           <!--   <div id="text-scroller" style="background:black; color:red;">0</div> -->
-            <img id="preload-anim" class="preload-anim" src="preloader/pre_loader20001.png">
+            <!-- <img id="preload-anim" class="sprite-pre_loader20000"> --> <!-- src="preloader/pre_loader20001.png" -->
+            <div id="preload-anim" class="sprite-pre_loader20001"></div>
         </div>
         <!-- PRELOADER -->
 <!--          <div id="ajax-loader">

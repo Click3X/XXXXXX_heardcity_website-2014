@@ -15,6 +15,9 @@ define(['jquery',
         var animHolder = $('#anim-holder');
         var preloadAnim = $('#preload-anim');
 
+        // Hide body - to fade in after preload animation
+        $('#body-inner').hide();
+
         // var percent = function() {
         //     var percent = imgLoaded/100;
         //     return percent;
@@ -75,28 +78,31 @@ define(['jquery',
 
         // ANIMATION function
         $(function() {
-            var preSrc = preloadAnim.attr('src');
-            var dir = 'preloader/pre_loader';
             var count = 20001;
+            var spritePre = 'sprite-pre_loader';
             var finalFrame = 20133;
-            var ext = '.png';
+
+            // $('#body-inner').hide();
 
             function animPreLoader() {
-                count++;
-                if(count > finalFrame - 1) {
-                    preloadAnim.fadeOut(250);
-                    animHolder.fadeOut(250);
-                    clearInterval(timeout);
-                }
+               count++;
+               if(count > finalFrame - 1) {
+                preloadAnim.fadeOut(500);
+                animHolder.fadeOut(500);
+                $('#body-inner').show(750);
+                clearInterval(timeout);
+               }
+               var preCount = count-1;
+               var preCountStr = preCount.toString();
+               var countStr = count.toString();
+               var preAnimClass = spritePre + preCountStr;
+               var animClass = spritePre + countStr;
+               preloadAnim.removeClass(preAnimClass).addClass(animClass);
 
-                var countStr = count.toString();
-                preSrc = dir + countStr + ext;
-                preloadAnim.attr('src', preSrc);
-
-            }
+              }
             var timeout = setInterval(animPreLoader, 32);
             animPreLoader();
-        });
+           });
         
 
         var $body = $('body'),
