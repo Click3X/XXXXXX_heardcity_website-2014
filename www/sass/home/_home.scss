@@ -169,9 +169,8 @@ body.home {
 
 
 #marquee-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
-#marquee-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div {
-	// background-color: rgba(0,0,0,0.35);
-	border-radius:0;
+#marquee-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div {	
+	display: none;
 }
 
 #grey-text-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,

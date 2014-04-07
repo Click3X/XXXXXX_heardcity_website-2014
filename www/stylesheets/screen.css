@@ -2470,10 +2470,10 @@ body.home {
 /* line 172, ../sass/home/_home.scss */
 #marquee-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
 #marquee-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div {
-  border-radius: 0;
+  display: none;
 }
 
-/* line 180, ../sass/home/_home.scss */
+/* line 179, ../sass/home/_home.scss */
 #grey-text-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
 #grey-text-slider > div.rsOverflow > div.rsArrow.rsArrowRight > div,
 #team-slider > div.rsOverflow > div.rsArrow.rsArrowLeft > div,
