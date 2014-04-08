@@ -69,10 +69,11 @@ var Members = {
 		var i, allItems = "<ul id='all-items' class='all-items'>";
 		for (i = 0; i < data.members.length; i++) {
 			allItems += Members.list(data.members[i]);
+			// console.log('This is data.members[i]' + data.members[i]); console.dir(data.members[i]);
 		}
 
 		allItems += '</ul>';
-		$("#all-items-holder").append(allItems); 
+		$("#all-items-holder").append(allItems);
 
 	},
 
@@ -101,16 +102,47 @@ var Members = {
 
 			// CHECK TO SEE IF HEARDCITY WAS CLICKED
 			if(target == 'heardcity') {
+				// var topItems=[];
+				// var bottomItems = [];
 				$items = $('.item');
+				
+				// $.each($('.item'), function() { 
+				// 	var elem = $(this);
+				// 	elem = elem[0];
+				// 	var position = $(elem).css('top');
+				// 	var top = position.substring(0, position.length - 1);
+				// 	top= parseInt(top);
+				// 	if(top < 10) { topItems.push(elem) } else {bottomItems.push(elem);}
+				// });
+
+				// console.log('These are top items' + topItems); console.dir(topItems);
+				// console.log('These are bottom items' + bottomItems); console.dir(bottomItems);
+
+				// HIDE ALL ITEMS
+				// $('#all-items-holder .item').hide();
+
 				$('body').removeClass('js-single-member');
+
+				$('.item').css('opacity', 0).show(250).animate({opacity:1}, 250);
+
+				// $(topItems).each(function(index, element) {
+				// 	$(element).delay(index*250).fadeIn(400);
+				// });
+				// $(bottomItems).show();
 			} else {
+
 				$('body').addClass('js-single-member');
+
+				$items.each(function(index, element) {
+			    	$(element).delay(index*250).fadeIn(400); // delays each subsequent fade by 50ms.
+			    	// Change 50 to match the duration of the fade and they will fade in one after the other.
+				});
 			}
 
-			$items.each(function(index, element) {
-		    	$(element).delay(index*250).fadeIn(400); // delays each subsequent fade by 50ms.
-		    	// Change 50 to match the duration of the fade and they will fade in one after the other.
-			});
+			// $items.each(function(index, element) {
+		 //    	$(element).delay(index*250).fadeIn(400); // delays each subsequent fade by 50ms.
+		 //    	// Change 50 to match the duration of the fade and they will fade in one after the other.
+			// });
 		
 		});
 
