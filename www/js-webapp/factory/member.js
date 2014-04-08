@@ -60,7 +60,7 @@ var Members = {
 	},
 
 	getData: function() {
-		$.getJSON("/www/js-webapp/data/members.json", function(data) {
+		$.getJSON(base + "js-webapp/data/members.json", function(data) {
 			Members.appendSubnavToPage(data);
 			// Members.appendItemsToPage(data);
 			Members.appendMembersToPage(data);
