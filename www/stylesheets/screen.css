@@ -5422,6 +5422,20 @@ li.item.sampler.jeremysiegal {
   letter-spacing: .07em;
 }
 
+@media (min-width: 600px) {
+  /* line 43, ../sass/items-webapp/_newbase.scss */
+  .ourteam #page-wrap,
+  .js-single-member #page-wrap {
+    padding-right: 60px;
+  }
+}
+
+/* line 50, ../sass/items-webapp/_newbase.scss */
+#deeplink .footer {
+  margin-top: 160%;
+  z-index: 100;
+}
+
 /* line 3, ../sass/base/_clue-tip.scss */
 .js-single-member .split-body:last-of-type {
   display: none;

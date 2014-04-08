@@ -74,33 +74,32 @@ if(!isset($_POST['selected_member'])) {
         	 
             <!-- SUB NAV -->
             <?php include('php/sub-nav.php'); ?>
-            <!-- FOOTER -->
-            <?php include('php/footer.php'); ?>
-
-            <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js'></script>
-
-            <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
-
-
-            <script src="js-webapp/lib/jquery.browser.js"></script>
-            <script src="js-webapp/lib/jquery.ba-hashchange.min.js"></script>
-            <script src="js-webapp/lib/jquery.onscreen.js"></script>
-
-            <script src="js-webapp/lib/jquery.unveil.min.js"></script>
-            <script src="js-webapp/lib/jquery.cluetip.js"></script>
-            <script src="js-webapp/lib/jquery.hoverIntent.js"></script>
-
-
-            <script src="js-webapp/setup.js"></script>
-            <script src="js-webapp/factory/member.js"></script>
-            <script src="js-webapp/controller/hash-change.js"></script>
-
-
-            <script src="js-webapp/controller/hover.js"></script>
-
-
         </div>
+        <!-- FOOTER -->
+        <?php include('php/footer.php'); ?>
+
+        <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js'></script>
+
+        <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
+
+
+        <script src="js-webapp/lib/jquery.browser.js"></script>
+        <script src="js-webapp/lib/jquery.ba-hashchange.min.js"></script>
+        <script src="js-webapp/lib/jquery.onscreen.js"></script>
+
+        <script src="js-webapp/lib/jquery.unveil.min.js"></script>
+        <script src="js-webapp/lib/jquery.cluetip.js"></script>
+        <script src="js-webapp/lib/jquery.hoverIntent.js"></script>
+
+
+        <script src="js-webapp/setup.js"></script>
+        <script src="js-webapp/factory/member.js"></script>
+        <script src="js-webapp/controller/hash-change.js"></script>
+
+
+        <script src="js-webapp/controller/hover.js"></script>
+        
     </body>
 
 </html>

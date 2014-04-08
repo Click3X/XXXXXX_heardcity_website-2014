@@ -37,3 +37,17 @@
 .team-member-new .member-text .permalink a {
   margin-left:0; letter-spacing: .07em;
 }
+
+.ourteam,
+.js-single-member {
+  #page-wrap {
+    @media(min-width: 600px) {
+        padding-right:60px;
+    }
+  }
+}
+
+#deeplink .footer {
+margin-top: 160%;
+z-index:100;
+}
