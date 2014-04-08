@@ -88,17 +88,25 @@ var Members = {
 			$items = $('.'+target),
 			$siblings = $('.item').not(target);
 
-			if(target == 'heardcity') {
-				$items = $('.item');
-			}
-
+			// AJAX DEEP LINKING (start -- needs more!)
 			window.location.hash = target;
         
 			// SHOW BIO
 			$('.module-member').hide();
 			$bio = $('#'+target+'-bio').removeClass('hidden').fadeIn(400);
-			
+	
+			// HIDE ALL ITEMS
 			$('#all-items-holder .item').hide();
+
+
+			// CHECK TO SEE IF HEARDCITY WAS CLICKED
+			if(target == 'heardcity') {
+				$items = $('.item');
+				$('body').removeClass('js-single-member');
+			} else {
+				$('body').addClass('js-single-member');
+			}
+
 			$items.each(function(index, element) {
 		    	$(element).delay(index*250).fadeIn(400); // delays each subsequent fade by 50ms.
 		    	// Change 50 to match the duration of the fade and they will fade in one after the other.

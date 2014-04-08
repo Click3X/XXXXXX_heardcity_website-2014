@@ -79,8 +79,13 @@ h2 {
   position: relative;
 }
 .members {
-  width:80%; min-width: 400px;
-  float:left;
+  // width:80%; min-width: 400px;
+  // float:left;
+	width: 100%;
+	// min-width: 400px;
+	/* float: left; */
+	max-width: 1024px;
+	margin: 0 auto;
 }
 .sub-nav {
   width:20%; min-width: 200px;
@@ -107,11 +112,22 @@ h2 {
 }
 
 .all-items {
-  height: 12000px;
+  // height: 12000px;
+  padding-bottom:  1100%;
   position:relative;
-  width:100%;
+  width:100%; max-width:1024px;
+  margin:0 auto;
+
+  @media(min-width:1024px) {
+  	padding-bottom: 12000px;
+  }
 }
 
 .item {
   position: absolute;
+
+  img {
+  	width:100%; max-width: 100%;
+  	height: auto;
+  }
 }
