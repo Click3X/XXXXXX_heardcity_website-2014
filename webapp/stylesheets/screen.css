@@ -296,12 +296,6 @@ td, th {
   box-sizing: border-box;
 }
 
-/* line 2, ../sass/base/_base.scss */
-body {
-  padding: 1rem;
-  background: #333;
-}
-
 /* line 7, ../sass/base/_base.scss */
 section {
   background: white;
