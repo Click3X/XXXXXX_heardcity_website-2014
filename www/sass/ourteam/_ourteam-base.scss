@@ -150,3 +150,51 @@ html, body { height: 100%; }
 		margin-top:50%;
 	}
 }
+
+#members {
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+.team-member-new {
+	.member-text {
+		.misc-text {
+			color: #989899;
+			letter-spacing: .15em;
+			font-size: .8rem;
+			margin-bottom: .75rem;
+		}
+		.name {
+			font-size: 1.4rem;
+			letter-spacing: .15em;
+			line-height: 1.2rem;
+			margin-bottom: .938rem;
+		}
+		.bio {
+			text-transform: none;
+			font-family: 'Times New Roman', serif;
+			max-width: none;
+			font-size: 1em;
+			line-height: 1.6em;
+			margin-bottom: .938rem;
+		}
+		.permalink {
+			margin-top: 2rem;
+			margin-bottom: .938rem;
+
+			a {
+				font-size: .750em;
+				color: #333333;
+				position: relative;
+				margin-left: 0.875rem;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

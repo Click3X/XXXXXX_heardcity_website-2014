@@ -7,7 +7,7 @@
     </div>
     <nav>
         <ul id="member-fixed" data-breakpoint="600" class="flexnav with-js opacity sm-screen flexnav-hide one-page">
-            <li><a href="#" id="all-members" class="all-members">Our Team</a></li>
+            <li><a href="#" id="all-members" class="all-members" data-person="heardcity">Our Team</a></li>
             <?php 
                 foreach ($members as $key => $member) {
                     $member_name = $member['name'];

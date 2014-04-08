@@ -23,6 +23,16 @@
   <![endif]-->
 
 
+   <script>
+        // TEST FOR MOBILE DEVICE / TABLET
+        var device;
+        if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            device = 'mobile';
+        } else {
+            device = 'desk';
+        }
+    </script>
+
 </head>
 
 <body>
@@ -54,9 +64,16 @@
   <script src="js/lib/jquery.ba-hashchange.min.js"></script>
   <script src="js/lib/jquery.onscreen.js"></script>
 
+  <script src="js/lib/jquery.cluetip.js"></script>
+  <script src="js/lib/jquery.hoverIntent.js"></script>
+
+
   <script src="js/setup.js"></script>
   <script src="js/factory/member.js"></script>
   <script src="js/controller/hash-change.js"></script>
+
+
+  <script src="js/controller/hover.js"></script>
 
 
 

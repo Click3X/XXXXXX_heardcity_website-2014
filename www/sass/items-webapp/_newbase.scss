@@ -1,0 +1,35 @@
+.ourteam {
+	background: #fff;
+}
+.all-items {
+  // height: 12000px;
+  padding-bottom:  1100%;
+  position:relative;
+  width:100%; max-width:1024px;
+  margin:0 auto;
+
+  @media(min-width:1024px) {
+  	padding-bottom: 12000px;
+  }
+}
+
+.individual {
+
+}
+
+.item {
+  position: absolute;
+
+  img {
+  	width:100%; max-width: 100%;
+  	height: auto;
+  }
+}
+
+.side-bar-closed + #click-close {
+  display: none;
+}
+
+#members {
+  padding:1em;
+}

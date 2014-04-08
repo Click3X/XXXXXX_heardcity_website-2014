@@ -32,8 +32,22 @@ var Members = {
 		);
 	},
 
-	setUpItems: function() {
-		Members.list = _.template("<% _.each(items, function(item) { var itemId = formatLink(item.name.toLowerCase()); %> <li class='item <%= itemId + ' ' + id %>'><span><%= item.name %></span><img src='<%= item.image %>' alt='<%= item.name %>'></li> <% }); %>");
+	setUpItems: function() {		
+		Members.list = _.template("<% _.each(items, function(item) { if(item.coords) { var itemId = formatLink(item.name.toLowerCase()); %><li class=\'item <%= itemId + ' ' + id %>\'><img src='<%= item.image %>' alt='<%= item.name %>'><map id=\'<%= id %>\' name=\'<%= id %>\' class='map-link' data-person='<%= id %>'><area href='#' class='cluetip-div' shape='poly' coords='<%= item.coords %>' alt='<%= item.name %>' data-person='<%= id %>' data-item='<%= itemId %>' title=''></map></li> <%; } else { var itemId = formatLink(item.name.toLowerCase()); %> <li class='item <%= itemId + ' ' + id %>'><a class='cluetip-div' href='#' data-person=\'<%= id %>\' data-item='<%= itemId %>' title=''></a></li><%; } }); %>");
+		
+		// var members;
+		// // $(function() {
+	 //    $.ajax({
+	 //        type: "POST",
+	 //        url: "js/data/members.json",
+	 //        data: members,
+	 //        success: function(data){
+	 //            // alert(data);
+	 //            var json = $.parseJSON(data); 
+	 //            console.log('This is json' + json); console.dir(data);
+	 //        }
+	 //    });     
+
 	},
 
 	getData: function() {
@@ -103,11 +117,19 @@ var Members = {
 			if(target == 'heardcity') {
 				// var topItems=[];
 				// var bottomItems = [];
-				$('html, body').animate({scrollTop:0});
 
-				$('body').removeClass('js-single-member');
+				$(function() {
+					$('html, body').animate({scrollTop:0}, 500, function() {
+						$('body').removeClass('js-single-member');
+						$('.item').css('opacity', 0).show(250).animate({opacity:1}, 250);
+					});
 
-				$('.item').css('opacity', 0).show(250).animate({opacity:1}, 250);
+					
+
+					
+
+				});
+				
 
 				// $(topItems).each(function(index, element) {
 				// 	$(element).delay(index*250).fadeIn(400);
