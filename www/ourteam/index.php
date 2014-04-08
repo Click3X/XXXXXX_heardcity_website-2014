@@ -53,9 +53,11 @@ if(!isset($_POST['selected_member'])) {
     </head>
 
     <body id="deeplink" class="ourteam deeplink one-page">
-        <?php  var_dump($_SERVER["DOCUMENT_ROOT"]);
-        var_dump($_SERVER['SERVER_ADDR']);
-         die(); ?>
+        <?php  
+        // var_dump($_SERVER["DOCUMENT_ROOT"]);
+        // var_dump($_SERVER['SERVER_ADDR']);
+        //  die(); 
+         ?>
         <div id="page-wrap" class="page-wrap">
             
             <?php include('../php/main-nav.php'); ?>

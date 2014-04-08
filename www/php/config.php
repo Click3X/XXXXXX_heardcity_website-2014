@@ -1,7 +1,14 @@
 <?php  // CONFIG
 
 // SERVER SETTINGS
-define("BASE_URL", "/www/");
+$address = $_SERVER['SERVER_ADDR'];
+if($address == '69.25.178.3') {
+	$base = '/heardcity/www/';
+} else {
+	$base = '/www/';
+}
+
+define("BASE_URL",$base);
 define("ROOT_PATH", $_SERVER["DOCUMENT_ROOT"] . "/www/");
 // $_BASE_URL = "/www/";
 
