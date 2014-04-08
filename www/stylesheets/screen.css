@@ -5416,6 +5416,12 @@ li.item.sampler.jeremysiegal {
   padding: 1em;
 }
 
+/* line 37, ../sass/items-webapp/_newbase.scss */
+.team-member-new .member-text .permalink a {
+  margin-left: 0;
+  letter-spacing: .07em;
+}
+
 /* line 3, ../sass/base/_clue-tip.scss */
 .js-single-member .split-body:last-of-type {
   display: none;
