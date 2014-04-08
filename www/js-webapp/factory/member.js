@@ -1,5 +1,3 @@
-// $(document).on("click", "#members .permalink .all-members", function() {
-
 function clueTipSoloMemberItems() {
 	$(document).trigger('hideCluetip');
 
@@ -12,19 +10,16 @@ function clueTipSoloMemberItems() {
 	$('#member-bio').hide();
 
 	$(function() {
-		// $('#member-bio').hide();
 		$('html, body').animate({scrollTop:0}, 'slow', function() {
 			$('body').addClass('js-single-member');
 		});
-		// $('body').addClass('js-single-member');
+
 		$items.each(function(index, element) {
-	    	$(element).delay(index*250).fadeIn(400); // delays each subsequent fade by 50ms.
+			$(element).delay(index*250).fadeIn(400); // delays each subsequent fade by 50ms.
 		});
 		$(bio).fadeIn(400);
 	});
 }
-
-	// });
 
 var Members = {
 
@@ -65,7 +60,7 @@ var Members = {
 	},
 
 	getData: function() {
-		$.getJSON("js-webapp/data/members.json", function(data) {
+		$.getJSON("/www/js-webapp/data/members.json", function(data) {
 			Members.appendSubnavToPage(data);
 			// Members.appendItemsToPage(data);
 			Members.appendMembersToPage(data);
@@ -91,21 +86,20 @@ var Members = {
 			$.each(items, function() {
 				var item = $(this);
 				
-				// console.log('These are the items'); console.dir(this);
 				var bio = this.bio;
 				var src = this.image;
 				var name = this.name;
 				var coords = this.coords;
 				var id = formatLink(name);
 				var usemap = '#' + member.id + id;
-				// console.log(bio +' '+src+' '+name+' '+id+ ' ' + usemap);
 
 				var img, map, area, li, a;
 
 				var li = $('<li/>', {
                     'class':'item' + ' ' + id + ' ' + member.id
                 });
-
+				console.log('This is src:' + src);
+				src = '/www/' + src;
 				if(coords) {
                     img = $('<img/>', {
                         'src':src,
@@ -168,7 +162,7 @@ var Members = {
 		var deviceWidth;
 		if(device == 'desk') {
 			deviceWidth = 400;
-		} else { deviceWidth = 200;}
+		} else { deviceWidth = 280;}
 		$('.cluetip-div').cluetip({
 		    splitTitle: '|', // use the invoking element's title attribute to populate the clueTip...
 		                     // ...and split the contents into separate divs where there is a "|"

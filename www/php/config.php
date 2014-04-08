@@ -1,5 +1,10 @@
 <?php  // CONFIG
 
+// SERVER SETTINGS
+define("BASE_URL", "/www/");
+define("ROOT_PATH", $_SERVER["DOCUMENT_ROOT"] . "/www/");
+// $_BASE_URL = "/www/";
+
 // Defaults
 $defaults = array(
 	'name'=>'Heard City',

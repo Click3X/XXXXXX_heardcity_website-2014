@@ -1,7 +1,7 @@
 <?php 
-include('php/config.php'); 
-include('php/functions.php'); 
-include('php/project-grid.php'); 
+include('../php/config.php'); 
+include(ROOT_PATH.'php/functions.php'); 
+// include('../php/project-grid.php'); 
 
 if(!isset($_POST['selected_member'])) { 
     $de_name = $defaults['name'];
@@ -20,11 +20,11 @@ if(!isset($_POST['selected_member'])) {
 
         <title>Heard City | Our Team</title>
 
-        <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+        <link href="../stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="../stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
           <!--[if IE]>
-              <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+              <link href="../stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->  
         <style>
             #deeplink {color:black;}
@@ -41,7 +41,6 @@ if(!isset($_POST['selected_member'])) {
                 device = 'desk';
             }
         </script>
-
             <?php  // If the Team Member Form has been submitted, echo the variable between script tags for JS
             if(isset($_POST['selected_member']) && ($_POST['selected_member'] != '')) { 
                     $selected_member = $_POST['selected_member']; 
@@ -54,9 +53,10 @@ if(!isset($_POST['selected_member'])) {
     </head>
 
     <body id="deeplink" class="ourteam deeplink one-page">
+        <?php // var_dump($_SERVER["DOCUMENT_ROOT"]); die(); ?>
         <div id="page-wrap" class="page-wrap">
             
-            <?php include('php/main-nav.php'); ?>
+            <?php include('../php/main-nav.php'); ?>
 
             <div id="member-bio" class="container clearfix">
                 <div class="team-member clearfix">
@@ -74,32 +74,32 @@ if(!isset($_POST['selected_member'])) {
             <div id="all-items-holder"></div>
         	 
             <!-- SUB NAV -->
-            <?php include('php/sub-nav.php'); ?>
+            <?php include('../php/sub-nav.php'); ?>
         </div>
         <!-- FOOTER -->
-        <?php include('php/footer.php'); ?>
+        <?php include('../php/footer.php'); ?>
 
         <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js'></script>
 
-        <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
+        <script src="../js-webapp/lib/jquery.flexnav.min.js"></script>
 
 
-        <script src="js-webapp/lib/jquery.browser.js"></script>
-        <script src="js-webapp/lib/jquery.ba-hashchange.min.js"></script>
-        <script src="js-webapp/lib/jquery.onscreen.js"></script>
+        <script src="../js-webapp/lib/jquery.browser.js"></script>
+        <script src="../js-webapp/lib/jquery.ba-hashchange.min.js"></script>
+        <script src="../js-webapp/lib/jquery.onscreen.js"></script>
 
-        <script src="js-webapp/lib/jquery.unveil.min.js"></script>
-        <script src="js-webapp/lib/jquery.cluetip.js"></script>
-        <script src="js-webapp/lib/jquery.hoverIntent.js"></script>
-
-
-        <script src="js-webapp/setup.js"></script>
-        <script src="js-webapp/factory/member.js"></script>
-        <script src="js-webapp/controller/hash-change.js"></script>
+        <script src="../js-webapp/lib/jquery.unveil.min.js"></script>
+        <script src="../js-webapp/lib/jquery.cluetip.js"></script>
+        <script src="../js-webapp/lib/jquery.hoverIntent.js"></script>
 
 
-        <script src="js-webapp/controller/hover.js"></script>
+        <script src="../js-webapp/setup.js"></script>
+        <script src="../js-webapp/factory/member.js"></script>
+        <script src="../js-webapp/controller/hash-change.js"></script>
+
+
+        <script src="../js-webapp/controller/hover.js"></script>
         
     </body>
 
