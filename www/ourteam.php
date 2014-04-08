@@ -40,6 +40,10 @@ if(!isset($_POST['selected_member'])) {
             } else {
                 device = 'desk';
             }
+
+
+
+            <?php echo 'var base="'.$base.'";'; ?>
         </script>
             <?php  // If the Team Member Form has been submitted, echo the variable between script tags for JS
             if(isset($_POST['selected_member']) && ($_POST['selected_member'] != '')) { 
