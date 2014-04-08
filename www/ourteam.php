@@ -16,7 +16,6 @@ if(!isset($_POST['selected_member'])) {
 <html>
     <head>
     	<meta charset="UTF-8">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
         <title>Heard City | Our Team</title>
@@ -27,66 +26,79 @@ if(!isset($_POST['selected_member'])) {
           <!--[if IE]>
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->  
-
+        <style>
+            #deeplink {color:black;}
+            #holder .item-holder {
+                position: static;
+            }
+        </style>
         <script>
-              // TEST FOR MOBILE DEVICE / TABLET
+            // TEST FOR MOBILE DEVICE / TABLET
             var device;
             if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
                 device = 'mobile';
-                // console.log('this is device' + device);
-                // $body.addClass('mobile');
             } else {
                 device = 'desk';
-                // console.log('this is device' + device);
             }
         </script>
-
             <?php  // If the Team Member Form has been submitted, echo the variable between script tags for JS
-           
             if(isset($_POST['selected_member']) && ($_POST['selected_member'] != '')) { 
                     $selected_member = $_POST['selected_member']; 
                     echo "<script>var selectedMember = '$selected_member';</script>"; } 
                 else { echo "<script>var selectedMember = '';</script>"; } 
             ?>
 
-        <script data-main="js/ourteam" src="js/lib/require.js"></script>
+       <!-- <script data-main="js/deeplink" src="js-webapp/lib/require.js"></script> -->
     
     </head>
 
-    <body class="ourteam one-page">
-        
-        <!-- PRELOADER -->
-<!--          <div id="ajax-loader">
-            <div class="ajax-spinner">
-                <img src="images/logo/logo-white.png" width="150px" height="194px">
-                <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
+    <body id="deeplink" class="ourteam deeplink one-page">
+        <div id="page-wrap" class="page-wrap">
+            
+            <?php include('php/main-nav.php'); ?>
+
+            <div id="member-bio" class="container clearfix">
+                <div class="team-member clearfix">
+                    <ul class="member-text">
+                        <li class="misc-text">This belongs to</li>
+                        <li class="name"><?php echo $de_name; ?></li>
+                        <li class="bio"><p><?php echo $de_bio; ?></p></li>
+                        <li class="permalink"><a href="<?php echo $de_permalink; ?>" class="all-members" style="display: none;">View everyones stuff</a></li>
+                    </ul>
+                </div>
             </div>
-        </div> -->
 
-        <?php include('php/main-nav.php'); ?>
-    	 
+            <div id="members" class="members"></div>
 
-        <div id="member-bio" class="container clearfix">
-            <div class="team-member clearfix">
-                <ul class="member-text">
-                    <li class="misc-text">This belongs to</li>
-                    <li class="name"><?php echo $de_name; ?></li>
-                    <li class="bio"><p><?php echo $de_bio; ?></p></li>
-                    <li class="permalink"><a href="<?php echo $de_permalink; ?>" class="all-members" style="display: none;">View everyones stuff</a></li>
-                </ul>
-            </div>
+            <div id="all-items-holder"></div>
+        	 
+            <!-- SUB NAV -->
+            <?php include('php/sub-nav.php'); ?>
         </div>
-        
-
-        <div id="graph" class="clearfix">
-            <div id="item-list-holder" class="team-member-items"></div>
-        </div>
-
-        <!-- SUB NAV -->
-        <?php include('php/sub-nav.php'); ?>
-
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>
+
+        <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js'></script>
+
+        <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
+
+
+        <script src="js-webapp/lib/jquery.browser.js"></script>
+        <script src="js-webapp/lib/jquery.ba-hashchange.min.js"></script>
+        <script src="js-webapp/lib/jquery.onscreen.js"></script>
+
+        <script src="js-webapp/lib/jquery.unveil.min.js"></script>
+        <script src="js-webapp/lib/jquery.cluetip.js"></script>
+        <script src="js-webapp/lib/jquery.hoverIntent.js"></script>
+
+
+        <script src="js-webapp/setup.js"></script>
+        <script src="js-webapp/factory/member.js"></script>
+        <script src="js-webapp/controller/hash-change.js"></script>
+
+
+        <script src="js-webapp/controller/hover.js"></script>
         
     </body>
 

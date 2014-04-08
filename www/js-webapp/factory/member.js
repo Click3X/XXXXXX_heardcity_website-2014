@@ -182,7 +182,7 @@ var Members = {
 		    closeText:'x',
 		    fx: {
 		        open: 'fadeIn', // can be 'show' or 'slideDown' or 'fadeIn'
-		        openSpeed: 250
+		        openSpeed: 400
 		    },
 		    hoverIntent: {
 		        sensitivity:  5,
