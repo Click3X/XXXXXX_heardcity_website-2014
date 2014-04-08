@@ -99,7 +99,7 @@ var Members = {
                     'class':'item' + ' ' + id + ' ' + member.id
                 });
 				console.log('This is src:' + src);
-				src = '/www/' + src;
+				src = base + src;
 				if(coords) {
                     img = $('<img/>', {
                         'src':src,
