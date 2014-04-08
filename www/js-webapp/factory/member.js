@@ -28,9 +28,8 @@ var Members = {
 		this.setUpTemplate();
 		this.getData();
 		// this.setUpItems();
-		
 		// this.appendMembersToPage();
-		this.isOnScreen();
+		// this.isOnScreen();
 		this.bindUIActions();
 	},
 
@@ -62,7 +61,6 @@ var Members = {
 	getData: function() {
 		$.getJSON(base + "js-webapp/data/members.json", function(data) {
 			Members.appendSubnavToPage(data);
-			// Members.appendItemsToPage(data);
 			Members.appendMembersToPage(data);
 			Members.prepMaps(data);
 		});
@@ -71,7 +69,6 @@ var Members = {
 	setUpItems: function() {	
 		Members.list = _.template("<% _.each(items, function(item) { if(item.coords) { var itemId = formatLink(item.name.toLowerCase()); %><li class=\'item <%= itemId + ' ' + id %>\'><img src='<%= item.image %>' alt='<%= item.name %>'><map id=\'<%= id %>\' name=\'<%= id %>\' class='map-link' data-person='<%= id %>'><area href='#' class='cluetip-div' shape='poly' coords='<%= item.coords %>' alt='<%= item.name %>' data-person='<%= id %>' data-item='<%= itemId %>' title=''></map></li> <%; } else { var itemId = formatLink(item.name.toLowerCase()); %> <li class='item <%= itemId + ' ' + id %>'><a class='cluetip-div' href='#' data-person=\'<%= id %>\' data-item='<%= itemId %>' title=''><img src='<%= item.image %>' alt='<%= item.name %>'></a></li><%; } }); %>");
 		for(var i=0; i< Members.length; i++) {
-			console.log('This is templage: ' + Members[i]);
 		}
 	},
 
@@ -79,8 +76,7 @@ var Members = {
 		var liArray = [];
 		var ul = $('<ul/>', {'id': 'all-items', 'class': 'all-items'});
 		for (i = 0; i < data.members.length; i++) {
-			var member = data.members[i]; 
-			// console.log('This is member:' + member); console.dir(member);
+			var member = data.members[i];
 			var items = member.items;
 			var sex = member.sex;
 			$.each(items, function() {
@@ -92,13 +88,12 @@ var Members = {
 				var coords = this.coords;
 				var id = formatLink(name);
 				var usemap = '#' + member.id + id;
-
 				var img, map, area, li, a;
 
 				var li = $('<li/>', {
-                    'class':'item' + ' ' + id + ' ' + member.id
+                    'class':'item hidden' + ' ' + id + ' ' + member.id
                 });
-				console.log('This is src:' + src);
+				// console.log('This is src:' + src);
 				src = base + src;
 				if(coords) {
                     img = $('<img/>', {
@@ -129,7 +124,6 @@ var Members = {
                     map.append(area);
                     li.append(img);
                     li.append(map);
-
                     li.appendTo(ul);
 
 
@@ -150,15 +144,46 @@ var Members = {
                     });
                     a.append(img);
                     li.append(a);
-                    // liArray.push(li);
-
                     li.appendTo(ul);
                 }
 
 			});
+			
+
+			$(function() {
+				$("#all-items-holder").append(ul);	
+				var lis = $('.item'),
+		        k =0;
+
+				if(selectedMember) {
+					var target = selectedMember,
+					lis = $('.'+target);
+					$('body').addClass('js-single-member');
+					$('.module-member').hide();
+					$('#'+target+'-bio').removeClass('hidden').fadeIn(400);
+				}
+		        
+		        // REVEAL FUNCTION
+		        function reveal(li) {
+		            $(li).removeClass('hidden').fadeIn(300);
+		        }
+		        // SHOW AFTER TIMEOUT
+		        function showLi(li, k) {
+		            setTimeout(function() {
+		                reveal(li);
+		            }, 12 * ( k + 1 ));
+		        }
+		        // SHOW all lis
+		        for( k=0; k < lis.length; k++) {
+		            var li2 = lis[k];
+		            showLi(li2, k);
+		        }
+
+			});
 
 		}
-		$("#all-items-holder").append(ul);
+		
+
 		var deviceWidth;
 		if(device == 'desk') {
 			deviceWidth = 400;
@@ -213,55 +238,14 @@ var Members = {
 
 	},
 
-	appendItemsToPage: function(data) {
-		var i, allItems = "<ul id='all-items' class='all-items'>";
-		for (i = 0; i < data.members.length; i++) {
-			// allItems += Members.list(data.members[i]);
-		}
-
-		allItems += '</ul>';
-		$("#all-items-holder").append(allItems);
-		
-		var deviceWidth = 400;
-		$('.cluetip-div').cluetip({
-		    splitTitle: '|', // use the invoking element's title attribute to populate the clueTip...
-		                     // ...and split the contents into separate divs where there is a "|"
-		    showTitle: false, // hide the clueTip's heading
-		    sticky: true,
-		    dropShadow: true,
-		    arrows: true,
-		    dropShadowSteps:16,
-		    width:deviceWidth,
-		    positionBy: 'bottomTop',
-		    closeText:'x',
-		    fx: {
-		        open: 'fadeIn', // can be 'show' or 'slideDown' or 'fadeIn'
-		        openSpeed: 250
-		    },
-		    hoverIntent: {
-		        sensitivity:  5,
-		        interval:     30,
-		        timeout:      0
-		    },
-		    onShow: function(ct, ci){
-		        // $('label').click(clueTipSoloMemberItems);
-		        $('.cluetip-close').click(function() {
-		            $(document).trigger('hideCluetip');
-		        });
-		    }
-		});
-
-	},
-
-	isOnScreen: function() {
-		/* THIS MAY NOT BE WORKING */
-		// var visibility = $(this).onScreen;
-		var visibility = VISIBILITY.isVisible(this);
-		return visibility;
-	},
-
 	bindUIActions: function() {
 		$(document).on("click", "#member-header a", function() {
+			if ( window.history && window.history.pushState ) { 
+			    window.history.pushState('', '', window.location.pathname) 
+			} else { 
+			    window.location.href = window.location.href.replace(/#.*$/, '#'); 
+			}
+			
 			$(document).trigger('hideCluetip');
 
 			var target = $(this).data('person'),
@@ -307,6 +291,7 @@ var Members = {
 
 		$(document).on("click", "#members .permalink .all-members", function() {
 			$(document).trigger('hideCluetip');
+			window.location.hash = target;
 
 			var target = $(this).data('person'),
 			$items = $('.'+target),
@@ -324,24 +309,6 @@ var Members = {
 
 			}
 		});
-
-
-		// $(document).on("click", "#members .permalink .all-members", function() {
-		// 	$(document).trigger('hideCluetip');
-
-		// 	var target = $('#' + $(this).attr('for')).val();
-		// 	$items = $('.'+target);
-
-		// 	$(function() {
-		// 		$('#member-bio').hide();
-		// 		$('html, body').animate({scrollTop:0}, 'slow');
-		// 		$('body').addClass('js-single-member');
-		// 		$items.each(function(index, element) {
-		// 	    	$(element).delay(index*250).fadeIn(400); // delays each subsequent fade by 50ms.
-		// 		});
-		// 	});
-
-		// });
 
 	}
 };

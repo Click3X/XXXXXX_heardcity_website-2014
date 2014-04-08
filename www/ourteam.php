@@ -3,7 +3,7 @@ include('php/config.php');
 include('php/functions.php'); 
 include('php/project-grid.php'); 
 
-if(!isset($_POST['selected_member'])) { 
+if(!isset($_GET['selected_member'])) { 
     $de_name = $defaults['name'];
     $de_bio = $defaults['bio'];
     $de_permalink = '#';
@@ -46,10 +46,14 @@ if(!isset($_POST['selected_member'])) {
             <?php echo 'var base="'.$base.'";'; ?>
         </script>
             <?php  // If the Team Member Form has been submitted, echo the variable between script tags for JS
-            if(isset($_POST['selected_member']) && ($_POST['selected_member'] != '')) { 
-                    $selected_member = $_POST['selected_member']; 
-                    echo "<script>var selectedMember = '$selected_member';</script>"; } 
+            // $selected_member ='';
+            if(isset($_GET['selected_member']) && ($_GET['selected_member'] != '')) { 
+                    // if(isset($_POST['selected_member'])) { 
+                        $selected_member = $_GET['selected_member'];
+                        echo "<script>var selectedMember = '$selected_member';</script>";
+                    } 
                 else { echo "<script>var selectedMember = '';</script>"; } 
+            // }
             ?>
 
        <!-- <script data-main="js/deeplink" src="js-webapp/lib/require.js"></script> -->
@@ -103,6 +107,7 @@ if(!isset($_POST['selected_member'])) {
 
 
         <script src="js-webapp/controller/hover.js"></script>
+        <script scr="js-webapp/last-js.js"></script>
         
     </body>
 

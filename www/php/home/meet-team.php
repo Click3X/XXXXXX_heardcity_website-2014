@@ -7,7 +7,7 @@
 	</div>
 	
 	<div> 
-	  <form id="myForm" action="ourteam.php"  method="POST">
+	  <form id="myForm" action="ourteam.php"  method="GET">
 		<ul id="team-slider" class="team-members royalSlider contentSlider rsDefault"> 
 
 		<?php 
