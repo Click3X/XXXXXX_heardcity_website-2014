@@ -69,7 +69,6 @@ var Members = {
 		var i, allItems = "<ul id='all-items' class='all-items'>";
 		for (i = 0; i < data.members.length; i++) {
 			allItems += Members.list(data.members[i]);
-			// console.log('This is data.members[i]' + data.members[i]); console.dir(data.members[i]);
 		}
 
 		allItems += '</ul>';
@@ -78,6 +77,7 @@ var Members = {
 	},
 
 	isOnScreen: function() {
+		/* THIS MAY NOT BE WORKING */
 		// var visibility = $(this).onScreen;
 		var visibility = VISIBILITY.isVisible(this);
 		return visibility;
@@ -99,27 +99,11 @@ var Members = {
 			// HIDE ALL ITEMS
 			$('#all-items-holder .item').hide();
 
-
 			// CHECK TO SEE IF HEARDCITY WAS CLICKED
 			if(target == 'heardcity') {
 				// var topItems=[];
 				// var bottomItems = [];
-				$items = $('.item');
-				
-				// $.each($('.item'), function() { 
-				// 	var elem = $(this);
-				// 	elem = elem[0];
-				// 	var position = $(elem).css('top');
-				// 	var top = position.substring(0, position.length - 1);
-				// 	top= parseInt(top);
-				// 	if(top < 10) { topItems.push(elem) } else {bottomItems.push(elem);}
-				// });
-
-				// console.log('These are top items' + topItems); console.dir(topItems);
-				// console.log('These are bottom items' + bottomItems); console.dir(bottomItems);
-
-				// HIDE ALL ITEMS
-				// $('#all-items-holder .item').hide();
+				$('html, body').animate({scrollTop:0});
 
 				$('body').removeClass('js-single-member');
 
@@ -130,24 +114,14 @@ var Members = {
 				// });
 				// $(bottomItems).show();
 			} else {
-
+				$('html, body').animate({scrollTop:0}, 'slow');
 				$('body').addClass('js-single-member');
-
 				$items.each(function(index, element) {
 			    	$(element).delay(index*250).fadeIn(400); // delays each subsequent fade by 50ms.
-			    	// Change 50 to match the duration of the fade and they will fade in one after the other.
 				});
 			}
-
-			// $items.each(function(index, element) {
-		 //    	$(element).delay(index*250).fadeIn(400); // delays each subsequent fade by 50ms.
-		 //    	// Change 50 to match the duration of the fade and they will fade in one after the other.
-			// });
-		
 		});
-
 	}
-
 };
 
 Members.init();
