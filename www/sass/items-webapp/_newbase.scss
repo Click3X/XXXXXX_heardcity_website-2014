@@ -51,3 +51,13 @@
 margin-top: 160%;
 z-index:100;
 }
+
+
+
+@media (min-width: 480px) {
+  /* line 340, ../sass/home/_teammember.scss */
+  .module-member .member-text {
+    width: 74%;
+    margin-left: 13%;
+  }
+}

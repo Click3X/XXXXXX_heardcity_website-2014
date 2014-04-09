@@ -285,9 +285,6 @@ var Grid = (function() {
 		} ).children( 'a' ).on( 'click', function(e) {
 
 			var $item = $( this ).parent();
-			// console.log('this is item' + $item); console.log($item);
-			var siblings = $($item).siblings(); console.dir(siblings);
-			siblings.toggleClass('popup');
 			// check if item already opened
 			current === $item.index() ? hidePreview() : showPreview( $item );
 			return false;
@@ -304,8 +301,6 @@ var Grid = (function() {
 		var preview = $.data( this, 'preview' ),
 			// item´s offset top
 			position = $item.data( 'offsetTop' );
-			console.log('THis is position: ' + position);
-			console.log('Thisis previewPos: ' + previewPos);
 
 		scrollExtra = 0;
 

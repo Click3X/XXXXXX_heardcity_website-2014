@@ -82,7 +82,7 @@ include('php/project-grid.php');
 
                             ?>
 
-                            <li class="og-vid-holder clearfix <?php echo formatLink($value["type"]);?>">
+                            <li class="og-vid-holder popup clearfix <?php echo formatLink($value["type"]);?>">
                             
                             <?php 
                             echo '<a id="'.$cleanTitle.'" class="no-delay" href="'.$dir.'" data-title="'.$value["title"].'" data-director="'.$value["director"].'" data-mixer="'.$value["mixer"].'" data-poster="'.$thumbsrc.'" data-mp4="'.$value["mp4"].'">';

@@ -1,6 +1,6 @@
 <?php 
 include('../php/config.php'); 
-include(ROOT_PATH.'php/functions.php'); 
+include('../php/functions.php'); 
 // include('../php/project-grid.php'); 
 
 if(!isset($_POST['selected_member'])) { 

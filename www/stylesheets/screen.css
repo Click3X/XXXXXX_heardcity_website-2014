@@ -4,7 +4,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p448@railstutorial_rails_4_0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,45 +26,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p448@railstutorial_rails_4_0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p448@railstutorial_rails_4_0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p448@railstutorial_rails_4_0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p448@railstutorial_rails_4_0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p448@railstutorial_rails_4_0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p448@railstutorial_rails_4_0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p448@railstutorial_rails_4_0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p448@railstutorial_rails_4_0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -5436,6 +5436,14 @@ li.item.sampler.jeremysiegal {
   z-index: 100;
 }
 
+@media (min-width: 480px) {
+  /* line 340, ../sass/home/_teammember.scss */
+  /* line 59, ../sass/items-webapp/_newbase.scss */
+  .module-member .member-text {
+    width: 74%;
+    margin-left: 13%;
+  }
+}
 /* line 3, ../sass/base/_clue-tip.scss */
 .js-single-member .split-body:last-of-type {
   display: none;
@@ -5754,8 +5762,17 @@ li.item.sampler.jeremysiegal {
   transition: all 500ms;
 }
 
-/* line 179, ../sass/projects/_projects-video.scss */
-#og-grid .og-vid-holder.desk:hover a.img-link {
+/* line 190, ../sass/projects/_projects-video.scss */
+.og-expanded a.img-link {
+  -webkit-transform: translate(0, -26.54088%);
+  -moz-transform: translate(0, -26.54088%);
+  -o-transform: translate(0, -26.54088%);
+  -ms-transform: translate(0, -26.54088%);
+  transform: translate(0, -26.54088%);
+}
+
+/* line 197, ../sass/projects/_projects-video.scss */
+#og-grid .popup:hover a.img-link {
   -webkit-transform: translate(0, -26.54088%);
   -moz-transform: translate(0, -26.54088%);
   -o-transform: translate(0, -26.54088%);
@@ -5767,8 +5784,8 @@ li.item.sampler.jeremysiegal {
   -ms-transition: all 500ms;
   transition: all 500ms;
 }
-/* line 184, ../sass/projects/_projects-video.scss */
-#og-grid .og-vid-holder.desk:hover .vid-title-holder {
+/* line 202, ../sass/projects/_projects-video.scss */
+#og-grid .popup:hover .vid-title-holder {
   -webkit-transform: translate(0, -100%);
   -moz-transform: translate(0, -100%);
   -o-transform: translate(0, -100%);
@@ -5776,7 +5793,47 @@ li.item.sampler.jeremysiegal {
   transform: translate(0, -100%);
 }
 
-/* line 190, ../sass/projects/_projects-video.scss */
+/* line 211, ../sass/projects/_projects-video.scss */
+#og-grid .og-expanded a.img-link {
+  -webkit-transform: translate(0, -26.54088%);
+  -moz-transform: translate(0, -26.54088%);
+  -o-transform: translate(0, -26.54088%);
+  -ms-transform: translate(0, -26.54088%);
+  transform: translate(0, -26.54088%);
+  -webkit-transition: all 0ms;
+  -moz-transition: all 0ms;
+  -o-transition: all 0ms;
+  -ms-transition: all 0ms;
+  transition: all 0ms;
+}
+/* line 215, ../sass/projects/_projects-video.scss */
+#og-grid .og-expanded .vid-title-holder {
+  -webkit-transform: translate(0, -26.54088%);
+  -moz-transform: translate(0, -26.54088%);
+  -o-transform: translate(0, -26.54088%);
+  -ms-transform: translate(0, -26.54088%);
+  transform: translate(0, -26.54088%);
+  -webkit-transition: all 0ms;
+  -moz-transition: all 0ms;
+  -o-transition: all 0ms;
+  -ms-transition: all 0ms;
+  transition: all 0ms;
+}
+/* line 222, ../sass/projects/_projects-video.scss */
+#og-grid .og-expanded + .popup:hover a.img-link {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: all 0ms;
+  -moz-transition: all 0ms;
+  -o-transition: all 0ms;
+  -ms-transition: all 0ms;
+  transition: all 0ms;
+}
+
+/* line 231, ../sass/projects/_projects-video.scss */
 .active-vid {
   -webkit-transform: translate(0, -100%);
   -moz-transform: translate(0, -100%);
@@ -5785,7 +5842,7 @@ li.item.sampler.jeremysiegal {
   transform: translate(0, -100%);
 }
 
-/* line 198, ../sass/projects/_projects-video.scss */
+/* line 239, ../sass/projects/_projects-video.scss */
 .og-grid .og-vid-holder {
   padding: 0 .25em 0 .25em;
   margin-bottom: .25em;
@@ -5795,29 +5852,29 @@ li.item.sampler.jeremysiegal {
   padding-bottom: 57%;
 }
 @media (min-width: 480px) {
-  /* line 198, ../sass/projects/_projects-video.scss */
+  /* line 239, ../sass/projects/_projects-video.scss */
   .og-grid .og-vid-holder {
     padding-bottom: 29%;
   }
 }
 @media (min-width: 960px) {
-  /* line 198, ../sass/projects/_projects-video.scss */
+  /* line 239, ../sass/projects/_projects-video.scss */
   .og-grid .og-vid-holder {
     padding-bottom: 19%;
   }
 }
 @media (min-width: 1480px) {
-  /* line 198, ../sass/projects/_projects-video.scss */
+  /* line 239, ../sass/projects/_projects-video.scss */
   .og-grid .og-vid-holder {
     padding-bottom: 14%;
   }
 }
-/* line 219, ../sass/projects/_projects-video.scss */
+/* line 260, ../sass/projects/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder {
   width: 100%;
   background-color: #ffffff;
 }
-/* line 223, ../sass/projects/_projects-video.scss */
+/* line 264, ../sass/projects/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder .title {
   max-width: 80%;
   display: table;
@@ -5826,17 +5883,17 @@ li.item.sampler.jeremysiegal {
   height: 90px;
 }
 @media (min-width: 480px) {
-  /* line 223, ../sass/projects/_projects-video.scss */
+  /* line 264, ../sass/projects/_projects-video.scss */
   .og-grid .og-vid-holder .vid-title-holder .title {
     height: 110px;
   }
 }
-/* line 235, ../sass/projects/_projects-video.scss */
+/* line 276, ../sass/projects/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder .title div {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 239, ../sass/projects/_projects-video.scss */
+/* line 280, ../sass/projects/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder .title div a {
   color: #000000;
   line-height: 1.4em;
@@ -5850,7 +5907,7 @@ li.item.sampler.jeremysiegal {
   text-align: center;
 }
 
-/* line 257, ../sass/projects/_projects-video.scss */
+/* line 298, ../sass/projects/_projects-video.scss */
 .og-grid li.og-expanded > a::after {
   top: auto;
   left: 50%;
@@ -5864,7 +5921,7 @@ li.item.sampler.jeremysiegal {
   margin: -20px 0 0 -15px;
 }
 
-/* line 267, ../sass/projects/_projects-video.scss */
+/* line 308, ../sass/projects/_projects-video.scss */
 .og-expander {
   position: absolute;
   top: auto;
@@ -5882,12 +5939,12 @@ li.item.sampler.jeremysiegal {
   transform: translateZ(0);
   margin-top: -8%;
 }
-/* line 280, ../sass/projects/_projects-video.scss */
+/* line 321, ../sass/projects/_projects-video.scss */
 .og-expander .section-title {
   background-color: white;
   position: relative;
 }
-/* line 284, ../sass/projects/_projects-video.scss */
+/* line 325, ../sass/projects/_projects-video.scss */
 .og-expander .section-title .credits {
   display: block;
   max-width: 30em;
@@ -5897,20 +5954,20 @@ li.item.sampler.jeremysiegal {
   padding-bottom: 37px;
 }
 
-/* line 296, ../sass/projects/_projects-video.scss */
+/* line 337, ../sass/projects/_projects-video.scss */
 .og-expander-inner {
   padding: 50px 0;
   text-align: center;
 }
 
-/* line 301, ../sass/projects/_projects-video.scss */
+/* line 342, ../sass/projects/_projects-video.scss */
 .og-fullimg video {
   margin-bottom: 1em;
   width: 100%;
   max-width: 940px;
 }
 
-/* line 309, ../sass/projects/_projects-video.scss */
+/* line 350, ../sass/projects/_projects-video.scss */
 .p-name {
   font-size: 1em;
   text-align: center;
@@ -5922,14 +5979,14 @@ li.item.sampler.jeremysiegal {
   max-width: 30em;
   margin: 0 auto .5em;
 }
-/* line 320, ../sass/projects/_projects-video.scss */
+/* line 361, ../sass/projects/_projects-video.scss */
 .p-name:before {
   content: '';
   display: block;
   border-top: 1px solid #404040;
   height: 14px;
 }
-/* line 327, ../sass/projects/_projects-video.scss */
+/* line 368, ../sass/projects/_projects-video.scss */
 .p-name:after {
   content: '';
   display: block;
@@ -5937,7 +5994,7 @@ li.item.sampler.jeremysiegal {
   height: 12px;
 }
 
-/* line 337, ../sass/projects/_projects-video.scss */
+/* line 378, ../sass/projects/_projects-video.scss */
 .og-close {
   position: absolute;
   width: 28px;
@@ -5949,7 +6006,7 @@ li.item.sampler.jeremysiegal {
   background-repeat: no-repeat;
 }
 
-/* line 348, ../sass/projects/_projects-video.scss */
+/* line 389, ../sass/projects/_projects-video.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -5964,58 +6021,67 @@ li.item.sampler.jeremysiegal {
 }
 
 @keyframes loader {
-  /* line 360, ../sass/projects/_projects-video.scss */
+  /* line 401, ../sass/projects/_projects-video.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 361, ../sass/projects/_projects-video.scss */
+  /* line 402, ../sass/projects/_projects-video.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 362, ../sass/projects/_projects-video.scss */
+  /* line 403, ../sass/projects/_projects-video.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
   }
 }
 
-/* line 366, ../sass/projects/_projects-video.scss */
+/* line 407, ../sass/projects/_projects-video.scss */
 #og-grid > li {
   width: 100%;
   float: left;
 }
 
-/* line 371, ../sass/projects/_projects-video.scss */
+/* line 412, ../sass/projects/_projects-video.scss */
 #og-grid > li img {
   width: 100%;
 }
 
 @media screen and (min-width: 480px) {
-  /* line 376, ../sass/projects/_projects-video.scss */
+  /* line 417, ../sass/projects/_projects-video.scss */
   #og-grid > li {
     width: 50%;
   }
 }
 @media screen and (min-width: 960px) {
-  /* line 382, ../sass/projects/_projects-video.scss */
+  /* line 423, ../sass/projects/_projects-video.scss */
   #og-grid > li {
     width: 33%;
   }
 }
 @media (min-width: 1480px) {
-  /* line 388, ../sass/projects/_projects-video.scss */
+  /* line 429, ../sass/projects/_projects-video.scss */
   #og-grid > li {
     width: 25%;
   }
 }
-/* line 395, ../sass/projects/_projects-video.scss */
+/* line 436, ../sass/projects/_projects-video.scss */
 .sec-image {
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
+}
+
+/* line 447, ../sass/projects/_projects-video.scss */
+.projects .main {
+  z-index: 10;
+}
+/* line 448, ../sass/projects/_projects-video.scss */
+.projects .footer {
+  z-index: 0;
 }
 
 /* line 3, ../sass/contact/_contact.scss */
