@@ -2257,7 +2257,7 @@ input[type="submit"],
 .ourteam .team-member .member-text .bio {
   text-transform: none;
   font-family: 'Times New Roman', serif;
-  max-width: 400px;
+  max-width: 500px;
   font-size: .938em;
   line-height: 1.5em;
 }
@@ -5441,12 +5441,29 @@ li.item.sampler.jeremysiegal {
   display: none;
 }
 
+/* line 62, ../sass/items-webapp/_newbase.scss */
+*:focus {
+  outline: 0;
+}
+
+/* line 66, ../sass/items-webapp/_newbase.scss */
+input {
+  background-color: transparent;
+  border: 0px solid;
+  height: 30px;
+  width: 260px;
+}
+
+/* line 72, ../sass/items-webapp/_newbase.scss */
+input:focus {
+  outline: none;
+}
+
 @media (min-width: 480px) {
   /* line 340, ../sass/home/_teammember.scss */
-  /* line 64, ../sass/items-webapp/_newbase.scss */
-  .module-member .member-text {
-    width: 74%;
-    margin-left: 13%;
+  /* line 87, ../sass/items-webapp/_newbase.scss */
+  .ourteam .member-text {
+    margin-top: 1em;
   }
 }
 /* line 3, ../sass/base/_clue-tip.scss */

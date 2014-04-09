@@ -1,11 +1,4 @@
-define(["jquery", 
-        // "util/config", 
-        "flexnav",
-        "util/grid",
-        "util/feat-button"], function($, flexnav, grid ,featButton) {
-    
-    $(function() {
-        // $body = $('body');
+$(function() {
 
         // TEST FOR MOBILE DEVICE / TABLET
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
@@ -36,14 +29,25 @@ define(["jquery",
             });
 
             // INITIANLIZE GRID
-            Grid.init();
+            $(function() {
+                 Grid.init();
 
-            if(selectedProject) {
-                $(selectedProject).click();
-            }
+                 if(selectedProject) {
+                    setTimeout(function() {
+                        var target = '#'+selectedProject;
+                        var parent = $(target).parent();
+                        // parent.addClass('og-expanded');
+                        $(target).click();
+
+                    }, 100);
+                   
+                }
+
+            });
+           
+
+            
 
 
-        // })();
 
     });
-});

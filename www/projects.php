@@ -11,24 +11,37 @@ include('php/project-grid.php');
 
         <title>Heard City | Projects</title>
 
-        <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+        <link href="<?php echo $BASE; ?>stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="<?php echo $BASE; ?>stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
           <!--[if IE]>
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->
         
-        <?php
-            if(isset($_POST['selected_project'])) { 
-                $selected_project = $_POST['selected_project'];
-                echo '<script>var selectedProject ="#'.$selected_project.'";</script>';
+        <script>
+            // TEST FOR MOBILE DEVICE / TABLET
+            var device;
+            if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+                device = 'mobile';
             } else {
-                echo '<script>var selectedProject ="";</script>';
+                device = 'desk';
             }
-        ?>  
 
-        <script data-main="js/projects" src="js/lib/require.js"></script>
-    
+            <?php echo 'var base="'.$BASE.'";'; ?>
+        </script>
+
+        <?php  // If the SELECTED PROJECT Form has been submitted, echo the variable between script tags for JS
+                if(isset($_POST['selected_project']) && ($_POST['selected_project'] != '')) { 
+                    $selected_project = $_POST['selected_project'];
+                    echo "<script>var selectedProject = '$selected_project';</script>";
+                } elseif(isset($_REQUEST['selected_project'])) {
+                    $selected_project = $_REQUEST['selected_project'];
+                    echo "<script>var selectedProject = '$selected_project';</script>";
+                } else { 
+                    echo "<script>var selectedProject = '';</script>";
+                } 
+            ?>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/modernizr.js"></script>
     </head>
 
     <body class="projects">
@@ -85,9 +98,9 @@ include('php/project-grid.php');
                             <li class="og-vid-holder popup clearfix <?php echo formatLink($value["type"]);?>">
                             
                             <?php 
-                            echo '<a id="'.$cleanTitle.'" class="no-delay" href="'.$dir.'" data-title="'.$value["title"].'" data-director="'.$value["director"].'" data-mixer="'.$value["mixer"].'" data-poster="'.$thumbsrc.'" data-mp4="'.$value["mp4"].'">';
+                            echo '<a id="'.$cleanTitle.'" class="no-delay" href="'.$dir.'" data-title="'.$value["title"].'" data-director="'.$value["director"].'" data-mixer="'.$value["mixer"].'" data-poster="'.$BASE.$thumbsrc.'" data-mp4="'.$BASE.$value["mp4"].'">';
                                 echo '<div class="vid-thumb-holder img-link clearfix">';
-                                    echo '<div class="project-thumb-bg" style="background-image:url('.$thumbsrc.'); background-size:cover;"></div>';
+                                    echo '<div class="project-thumb-bg" style="background-image:url('.$BASE . $thumbsrc.'); background-size:cover;"></div>';
                                 echo '</div>'; ?>
 
                                     <div class="vid-title-holder clearfix">
@@ -110,6 +123,19 @@ include('php/project-grid.php');
         
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>
+
+        <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js'></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.flexnav.min.js"></script>
+
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.browser.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.ba-hashchange.min.js"></script>
+
+        <script src="<?php echo $BASE; ?>js-webapp/projects/grid.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/projects/feat-button.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/projects/projects-setup.js"></script>
+
+
 
     </body>
 

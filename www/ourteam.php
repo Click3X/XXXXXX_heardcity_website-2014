@@ -46,8 +46,6 @@ if(!isset($_GET['selected_member'])) {
                 device = 'desk';
             }
 
-
-
             <?php echo 'var base="'.$BASE.'";'; ?>
         </script>
             <?php  // If the Team Member Form has been submitted, echo the variable between script tags for JS
