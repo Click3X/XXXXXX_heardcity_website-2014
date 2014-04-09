@@ -11,6 +11,11 @@ if(!isset($_GET['selected_member'])) {
     $de_name = ''; $de_bio = ''; $de_permalink = '#';
 }
 
+// if(isset($_REQUEST['selected_member'])) {
+
+// }
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,8 +25,8 @@ if(!isset($_GET['selected_member'])) {
 
         <title>Heard City | Our Team</title>
 
-        <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+        <link href="<?php echo $BASE; ?>stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="<?php echo $BASE; ?>stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
           <!--[if IE]>
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -43,17 +48,18 @@ if(!isset($_GET['selected_member'])) {
 
 
 
-            <?php echo 'var base="'.$base.'";'; ?>
+            <?php echo 'var base="'.$BASE.'";'; ?>
         </script>
             <?php  // If the Team Member Form has been submitted, echo the variable between script tags for JS
-            // $selected_member ='';
-            if(isset($_GET['selected_member']) && ($_GET['selected_member'] != '')) { 
-                    // if(isset($_POST['selected_member'])) { 
-                        $selected_member = $_GET['selected_member'];
-                        echo "<script>var selectedMember = '$selected_member';</script>";
-                    } 
-                else { echo "<script>var selectedMember = '';</script>"; } 
-            // }
+                if(isset($_GET['selected_member']) && ($_GET['selected_member'] != '')) { 
+                    $selected_member = $_GET['selected_member'];
+                    echo "<script>var selectedMember = '$selected_member';</script>";
+                } elseif(isset($_REQUEST['selected_member'])) {
+                    $selected_member = $_REQUEST['selected_member'];
+                    echo "<script>var selectedMember = '$selected_member';</script>";
+                } else { 
+                    echo "<script>var selectedMember = '';</script>";
+                } 
             ?>
 
        <!-- <script data-main="js/deeplink" src="js-webapp/lib/require.js"></script> -->
@@ -89,25 +95,25 @@ if(!isset($_GET['selected_member'])) {
         <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js'></script>
 
-        <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.flexnav.min.js"></script>
 
 
-        <script src="js-webapp/lib/jquery.browser.js"></script>
-        <script src="js-webapp/lib/jquery.ba-hashchange.min.js"></script>
-        <script src="js-webapp/lib/jquery.onscreen.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.browser.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.ba-hashchange.min.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.onscreen.js"></script>
 
-        <script src="js-webapp/lib/jquery.unveil.min.js"></script>
-        <script src="js-webapp/lib/jquery.cluetip.js"></script>
-        <script src="js-webapp/lib/jquery.hoverIntent.js"></script>
-
-
-        <script src="js-webapp/setup.js"></script>
-        <script src="js-webapp/factory/member.js"></script>
-        <script src="js-webapp/controller/hash-change.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.unveil.min.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.cluetip.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.hoverIntent.js"></script>
 
 
-        <script src="js-webapp/controller/hover.js"></script>
-        <script scr="js-webapp/last-js.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/setup.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/factory/member.js"></script>
+    <!--    <script src="<?php echo $BASE; ?>js-webapp/controller/hash-change.js"></script>-->
+
+
+        <script src="<?php echo $BASE; ?>js-webapp/controller/hover.js"></script>
+        <script scr="<?php echo $BASE; ?>js-webapp/last-js.js"></script>
         
     </body>
 

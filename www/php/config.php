@@ -3,13 +3,14 @@
 // SERVER SETTINGS
 $address = $_SERVER['SERVER_ADDR'];
 if($address == '69.25.178.3') {
-	$base = '/heardcity/www/';
+	// $base = '/heardcity/www/';
+	$BASE = '/heardcity/www/';
 } else {
-	$base = '/www/';
+	// $base = '/www/';
+	$BASE = 'http://heard-stage.dev/www/';
 }
 
-define("BASE_URL",$base);
-define("ROOT_PATH", $_SERVER["DOCUMENT_ROOT"] . "/www/");
+// $BASE = 'http://heard-stage.dev/www';
 // $_BASE_URL = "/www/";
 
 // Defaults

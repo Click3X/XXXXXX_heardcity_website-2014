@@ -27,9 +27,6 @@ var Members = {
 		this.setUpNav();
 		this.setUpTemplate();
 		this.getData();
-		// this.setUpItems();
-		// this.appendMembersToPage();
-		// this.isOnScreen();
 		this.bindUIActions();
 	},
 
@@ -243,8 +240,20 @@ var Members = {
 			if ( window.history && window.history.pushState ) { 
 			    window.history.pushState('', '', window.location.pathname) 
 			} else { 
-			    window.location.href = window.location.href.replace(/#.*$/, '#'); 
+			    window.location.href = window.location.href.replace(/#.*$/, '#');
 			}
+
+			$(function() {
+    var hash = document.location.hash.replace(/^#\//, '');
+    if(hash) {
+        console.log('We have a hash!' + hash);
+        // $('#sub-nav a[href="#' + hash + '"]').trigger('click');
+        $(hash + '-link').trigger('click');
+    }
+});
+
+			var local = window.location.href;
+			console.log('This is local: ' + local);
 			
 			$(document).trigger('hideCluetip');
 
@@ -254,6 +263,7 @@ var Members = {
 
 			// AJAX DEEP LINKING (start -- needs more!)
 			window.location.hash = target;
+			console.log('This is target: ' + target);
         
 			// SHOW BIO
 			$('.module-member').hide();
@@ -275,6 +285,8 @@ var Members = {
 				});
 				
 				$('#member-bio').fadeIn(500);
+				$('#member-bio .name').html('Heard City');
+				$('#member-bio .bio p').text('People collect things and those things say a lot about a person. Our stuff can be something that reminds us of our past or just something that we enjoy having. They inevitably become a piece of who we are. Which can includes almost everything you can imagine – from photos, souvenirs, tools, things from a person or place that we care about. Our team at Heard City is made up of some pretty incredible people. Get to know us by checking out our stuff. You\'ll see what passions we have and what kind of things we do in our free time. It\'s an honest way to see who we are as a collective.');
 
 			} else {
 				$('#member-bio').hide();
@@ -292,7 +304,7 @@ var Members = {
 		$(document).on("click", "#members .permalink .all-members", function() {
 			$(document).trigger('hideCluetip');
 			window.location.hash = target;
-
+			console.log('This is target:' + target);
 			var target = $(this).data('person'),
 			$items = $('.'+target),
 			$siblings = $('.item').not(target);
@@ -304,9 +316,10 @@ var Members = {
 						$('.item').css('opacity', 0).fadeIn(250).animate({opacity:1}, 250);
 					});
 				});
-			$('#members > div').hide();
-			$('#member-bio').fadeIn(500);
-
+				$('.module-member').hide();
+				$('#member-bio').fadeIn(500);
+				$('#member-bio .name').html('Heard City');
+				$('#member-bio .bio p').text('People collect things and those things say a lot about a person. Our stuff can be something that reminds us of our past or just something that we enjoy having. They inevitably become a piece of who we are. Which can includes almost everything you can imagine – from photos, souvenirs, tools, things from a person or place that we care about. Our team at Heard City is made up of some pretty incredible people. Get to know us by checking out our stuff. You\'ll see what passions we have and what kind of things we do in our free time. It\'s an honest way to see who we are as a collective.');
 			}
 		});
 

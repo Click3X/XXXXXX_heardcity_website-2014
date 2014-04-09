@@ -1,7 +1,10 @@
+<IfModule mod_rewrite.c>
+
+	RewriteEngine on
+
+	RewriteRule ^ourteam/([a-z]+)?$ ourteam.php?selected_member=$1 [NC]
+	
+</IfModule>
+
 AddType image/svg+xml svg
 AddType image/svg+xml svgz
-
-RewriteEngine  on
-RewriteBase    /~ourteam/
-RewriteRule    /ourteam/ourteam.php   [R]
-# RewriteRule ^ourteam/([a-z]+)/$ /ourteam/ourteam.php?selected_member=$1

@@ -3642,25 +3642,25 @@ html, body {
 
 /* line 154, ../sass/ourteam/_ourteam-base.scss */
 #members {
-  max-width: 750px;
+  max-width: 768px;
   margin: 0 auto;
 }
 
-/* line 161, ../sass/ourteam/_ourteam-base.scss */
+/* line 162, ../sass/ourteam/_ourteam-base.scss */
 .team-member-new .member-text .misc-text {
   color: #989899;
   letter-spacing: .15em;
   font-size: .8rem;
   margin-bottom: .75rem;
 }
-/* line 167, ../sass/ourteam/_ourteam-base.scss */
+/* line 168, ../sass/ourteam/_ourteam-base.scss */
 .team-member-new .member-text .name {
   font-size: 1.4rem;
   letter-spacing: .15em;
   line-height: 1.2rem;
   margin-bottom: .938rem;
 }
-/* line 173, ../sass/ourteam/_ourteam-base.scss */
+/* line 174, ../sass/ourteam/_ourteam-base.scss */
 .team-member-new .member-text .bio {
   text-transform: none;
   font-family: 'Times New Roman', serif;
@@ -3669,12 +3669,12 @@ html, body {
   line-height: 1.6em;
   margin-bottom: .938rem;
 }
-/* line 181, ../sass/ourteam/_ourteam-base.scss */
+/* line 182, ../sass/ourteam/_ourteam-base.scss */
 .team-member-new .member-text .permalink {
   margin-top: 2rem;
   margin-bottom: .938rem;
 }
-/* line 185, ../sass/ourteam/_ourteam-base.scss */
+/* line 186, ../sass/ourteam/_ourteam-base.scss */
 .team-member-new .member-text .permalink a {
   font-size: .750em;
   color: #333333;
@@ -5434,6 +5434,11 @@ li.item.sampler.jeremysiegal {
 #deeplink .footer {
   margin-top: 160%;
   z-index: 100;
+}
+
+/* line 56, ../sass/items-webapp/_newbase.scss */
+.js-single-member #member-bio {
+  display: none;
 }
 
 /* line 3, ../sass/base/_clue-tip.scss */
