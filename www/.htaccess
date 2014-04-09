@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <IfModule mod_rewrite.c>
 
 	RewriteEngine on
@@ -8,3 +9,12 @@
 
 AddType image/svg+xml svg
 AddType image/svg+xml svgz
+=======
+Options +FollowSymlinks
+RewriteEngine on
+
+AddType image/svg+xml svg
+AddType image/svg+xml svgz
+
+RewriteRule ^ourteam.php?selected_member=/$[a-zA-Z0-9] /ourteam/$1
+>>>>>>> 7064f35503fa046fc26f1acd4c4e2e4139206e15

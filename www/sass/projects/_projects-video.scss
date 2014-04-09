@@ -175,7 +175,25 @@
 .vid-title-holder {	@include prefix(transition, all 500ms); }
 
 
-#og-grid .og-vid-holder.desk:hover {
+// #og-grid .og-vid-holder:hover {
+// 	a.img-link {
+// 		@include prefix(transform, translate(0, -26.54088%));
+// 		@include prefix(transition, all 500ms);
+// 	}
+
+// 	.vid-title-holder {
+// 		@include prefix(transform, translate(0, -100%)); 
+// 		// @include prefix(transition, all 500ms);
+// 	}
+// }
+.og-expanded {
+	a.img-link {
+		@include prefix(transform, translate(0, -26.54088%));
+	}
+}
+
+
+#og-grid .popup:hover {
 	a.img-link {
 		@include prefix(transform, translate(0, -26.54088%));
 		@include prefix(transition, all 500ms);
@@ -186,6 +204,29 @@
 		// @include prefix(transition, all 500ms);
 	}
 }
+
+#og-grid {
+
+	.og-expanded {
+		a.img-link {
+			@include prefix(transform, translate(0, -26.54088%));
+			@include prefix(transition, all 0ms);
+		}
+	 	.vid-title-holder {
+			@include prefix(transform, translate(0, -26.54088%));
+			@include prefix(transition, all 0ms);
+		}
+	}
+
+	.og-expanded + .popup:hover {
+		a.img-link {
+			@include prefix(transform, translate(0, 0));
+			@include prefix(transition, all 0ms);
+		}
+	}
+}
+
+
 
 .active-vid {
 	@include prefix(transform, translate(0, -100%)); 
@@ -401,3 +442,8 @@
 // @media(min-width: 1480px) and (min-height: 1200px) {
 // 	.footer { position: absolute; bottom: 0;}
 // }
+
+.projects {
+	.main {z-index: 10;}
+	.footer { z-index: 0;}
+}

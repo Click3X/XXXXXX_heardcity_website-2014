@@ -56,7 +56,7 @@ var Members = {
 	},
 
 	getData: function() {
-		$.getJSON(base + "js-webapp/data/members.json", function(data) {
+		$.getJSON("js-webapp/data/members.json", function(data) {
 			Members.appendSubnavToPage(data);
 			Members.appendMembersToPage(data);
 			Members.prepMaps(data);
@@ -91,7 +91,7 @@ var Members = {
                     'class':'item hidden' + ' ' + id + ' ' + member.id
                 });
 				// console.log('This is src:' + src);
-				src = base + src;
+				// src = base + src;
 				if(coords) {
                     img = $('<img/>', {
                         'src':src,

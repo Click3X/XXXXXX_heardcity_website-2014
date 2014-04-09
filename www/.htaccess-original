@@ -1,0 +1,7 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+AddType image/svg+xml svg
+AddType image/svg+xml svgz
+
+RewriteRule ^ourteam.php?selected_member=/$[a-zA-Z0-9] /ourteam/$1
