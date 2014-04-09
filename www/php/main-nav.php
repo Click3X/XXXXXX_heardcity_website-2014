@@ -8,7 +8,6 @@
     <nav>
         <ul data-breakpoint="600" class="flexnav with-js opacity flexnav-hide lg-screen" id="page-fixed">
             <li id="page-home" class="menu-home cl-effect-21">
-<<<<<<< HEAD
                 <a href="<?php echo $BASE; ?>home.php" data-hover="Home">Home</a>
             </li>
             <li id="page-projects" class="menu-projects cl-effect-21">
@@ -17,18 +16,8 @@
             <li id="page-ourteam" class="menu-our-team cl-effect-21">
                 <a href="<?php echo $BASE; ?>ourteam.php" data-hover="Our Team">Our Team</a>
             </li>
-            <li id="page-contact" class="menu-dev cl-effect-21"><a href="<?php echo $BASE; ?>contact.php" data-hover="Contact">Contact</a>
-=======
-                <a href="home.php" data-hover="Home">Home</a>
-            </li>
-            <li id="page-projects" class="menu-projects cl-effect-21">
-                <a href="projects.php" data-hover="Projects">Projects</a>
-            </li>
-            <li id="page-ourteam" class="menu-our-team cl-effect-21">
-                <a href="ourteam.php" data-hover="Our Team">Our Team</a>
-            </li>
-            <li id="page-contact" class="menu-dev cl-effect-21"><a href="contact.php" data-hover="Contact">Contact</a>
->>>>>>> 7064f35503fa046fc26f1acd4c4e2e4139206e15
+            <li id="page-contact" class="menu-dev cl-effect-21">
+                <a href="<?php echo $BASE; ?>contact.php" data-hover="Contact">Contact</a>
             </li>
             <li id="phone-map" class="mobile-map-link cl-effect-21">
                 <div class="mobile-icon-holder"><a href="tel:2122556737"><span class="sprite sprite-phone"></span><span>Call</span></a></div>
