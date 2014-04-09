@@ -21,6 +21,19 @@ function clueTipSoloMemberItems() {
 	});
 }
 
+function getOffsetSum(elem) {
+  var top=0, left=0
+ 
+  while(elem) {
+    top = top + parseInt(elem.offsetTop)
+    left = left + parseInt(elem.offsetLeft)
+    elem = elem.offsetParent       
+  }
+    
+  return {top: top, left: left}
+}
+
+
 var Members = {
 
 	init: function() {
@@ -87,20 +100,23 @@ var Members = {
 				var usemap = '#' + member.id + id;
 				var img, map, area, li, a;
 
+				var blankGif = 'images/sprites/blank.gif';
+
 				src = base + src;
 
 				var li = $('<li/>', {
                     'class':'item hidden' + ' ' + id + ' ' + member.id
-                });
+                });            
+
+
 				// console.log('This is src:' + src);
 				// src = base + src;
 				if(coords) {
                     img = $('<img/>', {
                         'src':src,
-                        // src:image,
+                        // 'src':blankGif,
                         'alt':item.name,
                         'usemap':usemap,
-                        // "data-src":blankGif
                         'data-src':src
                     }),
                     map = $('<map/>', {
@@ -128,10 +144,9 @@ var Members = {
 
                 } else {
                     img = $('<img/>', {
-                        // src:image,
                         src:src,
+                        // src:blankGif,
                         alt:item.name,
-                        // "data-src":blankGif
                         'data-src':src
                     }),
                     a = $('<a/>', {
@@ -173,9 +188,29 @@ var Members = {
 		            }, 12 * ( k + 1 ));
 		        }
 		        // SHOW all lis
+		        var topItems=[], bottomItems = [];
+		        var blankGif = 'images/sprites/blank.gif';
 		        for( k=0; k < lis.length; k++) {
-		            var li2 = lis[k];
-		            showLi(li2, k);
+		            var currentLi = lis[k];
+		            var li = $(currentLi)[0];
+
+		            var perTop = $(li).css('top');
+		            perTop= parseInt(perTop.substr(0, perTop.length-1)); 
+		            if(parseInt(perTop) > 10) { 
+		            	// var img = $(li).find('img');
+		            	// img.attr('src', blankGif);
+		            	bottomItems.push(li);
+		            }
+		            if(parseInt(perTop) < 10) { 
+		            	topItems.push(li);
+		            }
+
+		            for(var i=0; i < topItems.length; i++) {
+		            	showLi(topItems[i], i);
+		            }
+
+		            $(bottomItems).show();
+
 		        }
 
 			});
