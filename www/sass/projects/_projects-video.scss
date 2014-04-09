@@ -174,63 +174,49 @@
 
 .vid-title-holder {	@include prefix(transition, all 500ms); }
 
+#og-grid .og-vid-holder {
+.vid-title-holder {
+	// opacity: 0;
+		@include prefix(transform, translate(0,0));
+	}
+}
 
-// #og-grid .og-vid-holder:hover {
-// 	a.img-link {
-// 		@include prefix(transform, translate(0, -26.54088%));
-// 		@include prefix(transition, all 500ms);
-// 	}
-
-// 	.vid-title-holder {
-// 		@include prefix(transform, translate(0, -100%)); 
-// 		// @include prefix(transition, all 500ms);
-// 	}
-// }
-.og-expanded {
-	a.img-link {
-		@include prefix(transform, translate(0, -26.54088%));
+#og-grid .og-vid-holder.og-expanded {
+ 	.vid-title-holder {
+ 		// opacity: 1;
+		@include prefix(transform, translate(0, -100%));
 	}
 }
 
 
-#og-grid .popup:hover {
+
+.desk #og-grid .og-vid-holder a:hover {
 	a.img-link {
 		@include prefix(transform, translate(0, -26.54088%));
-		@include prefix(transition, all 500ms);
 	}
 
 	.vid-title-holder {
+		// opacity: 1;
 		@include prefix(transform, translate(0, -100%)); 
 		// @include prefix(transition, all 500ms);
 	}
 }
 
-#og-grid {
-
-	.og-expanded {
-		a.img-link {
-			@include prefix(transform, translate(0, -26.54088%));
-			@include prefix(transition, all 0ms);
-		}
-	 	.vid-title-holder {
-			@include prefix(transform, translate(0, -26.54088%));
-			@include prefix(transition, all 0ms);
-		}
-	}
-
-	.og-expanded + .popup:hover {
-		a.img-link {
-			@include prefix(transform, translate(0, 0));
-			@include prefix(transition, all 0ms);
-		}
-	}
-}
-
-
-
-.active-vid {
-	@include prefix(transform, translate(0, -100%)); 
-}
+// #og-grid .og-expanded {
+// 	a {
+// 		.vid-thumb-holder:after {
+// 				content: '';
+// 				display: block;
+// 				background:black;
+// 				width: 100%;
+// 				height: 50px;
+// 				left:0;
+// 				position: absolute;
+// 				z-index: 1;
+			
+// 		}
+// 	}
+// }
 
 
 .og-grid {
@@ -297,7 +283,7 @@
 // CODE DROP STYLES  -  for expanding VIDEO
 .og-grid li.og-expanded > a::after {
     top: auto; left: 50%;
-    border: solid transparent; border-width: 15px;
+    // border: solid transparent; border-width: 15px;
     content: " ";
     height: 0; width: 0;
     position: absolute;
@@ -316,7 +302,13 @@
     overflow: hidden;
 
     @include prefix(transform, translateZ(0));
-    margin-top: -8%;
+    // margin-top:-110px;
+    // margin-top: -8%;
+    margin-top: -15%;
+
+    @media(min-width: 769px) {
+    	margin-top: -8.5%;
+    }
 
     .section-title {
     	background-color:$white;

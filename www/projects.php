@@ -21,7 +21,7 @@ include('php/project-grid.php');
         <script>
             // TEST FOR MOBILE DEVICE / TABLET
             var device;
-            if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            if( /Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent) ) {
                 device = 'mobile';
             } else {
                 device = 'desk';
@@ -95,7 +95,7 @@ include('php/project-grid.php');
 
                             ?>
 
-                            <li class="og-vid-holder popup clearfix <?php echo formatLink($value["type"]);?>">
+                            <li class="og-vid-holder clearfix <?php echo formatLink($value["type"]);?>">
                             
                             <?php 
                             echo '<a id="'.$cleanTitle.'" class="no-delay" href="'.$dir.'" data-title="'.$value["title"].'" data-director="'.$value["director"].'" data-mixer="'.$value["mixer"].'" data-poster="'.$BASE.$thumbsrc.'" data-mp4="'.$BASE.$value["mp4"].'">';

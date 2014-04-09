@@ -14,6 +14,8 @@ $(function() {
         var $body = $('body'),
             $mainMenu = $("#page-fixed");
 
+        $body.addClass(device);
+
         $('#page-title').text('Projects');
         $('#page-projects').addClass('mobile-hidden current');
 

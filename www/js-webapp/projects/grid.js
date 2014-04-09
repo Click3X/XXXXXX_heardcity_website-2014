@@ -286,8 +286,7 @@ var Grid = (function() {
 
 			var $item = $( this ).parent();
 			// console.log('this is item' + $item); console.log($item);
-			var siblings = $($item).siblings(); console.dir(siblings);
-			siblings.toggleClass('popup');
+
 			// check if item already opened
 			current === $item.index() ? hidePreview() : showPreview( $item );
 			return false;

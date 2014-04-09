@@ -4,12 +4,12 @@
 $address = $_SERVER['SERVER_ADDR'];
 if($address == '69.25.178.3') {
 	// $base = '/heardcity/www/';
-	$BASE = '/heardcity/www/';
+	// $BASE = '/heardcity/www/';
 } else {
 	// $base = '/www/';
-	$BASE = 'http://heard-stage.dev/www/';
+	// $BASE = 'http://heard-stage.dev/www/';
 }
-
+$BASE='';
 // $BASE = 'http://heard-stage.dev/www';
 // $_BASE_URL = "/www/";
 
