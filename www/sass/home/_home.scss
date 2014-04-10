@@ -5,6 +5,19 @@ body.home {
 	}
 }
 
+.mobile #anim-holder {
+	display: none;
+}
+
+.hidden {
+	display: none;
+}
+.home.desk {
+	#ajax-loader {
+		display: none;
+	}
+}
+
 //SPINNER
 .preload-wrap {
 	display: none;

@@ -9,6 +9,18 @@ define(['jquery',
     'use strict';
 
     $(function() {
+        // TEST FOR MOBILE DEVICE / TABLET
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            device = 'mobile';
+            // console.log('this is device' + device);
+            // $body.addClass('mobile');
+        } else {
+            device = 'desk';
+            // console.log('this is device' + device);
+        }
+
+        $('body').addClass(device);
+
         var $imgs = $('img');
         var imgCount = $imgs.length;
         var imgLoaded = 0;
@@ -28,24 +40,24 @@ define(['jquery',
         //     // images have loaded
         //     console.log('All images have loaded!');
         // });
-        $('body').imagesLoaded()
-          .always( function( instance ) {
-            console.log('all images loaded');
-          })
-          .done( function( instance ) {
-            console.log('all images successfully loaded');
-          })
-          .fail( function() {
-            console.log('all images loaded, at least one is broken');
-          })
-          .progress( function( instance, image ) {
-            var result = image.isLoaded ? 'loaded' : 'broken';
-            console.log( 'image is ' + result + ' for ' + image.img.src );
-            if(result == 'loaded') {
-                imgLoaded++;
-                console.log('This is imgLoaded: ' + imgLoaded);
-            }
-          });
+        // $('body').imagesLoaded()
+        //   .always( function( instance ) {
+        //     console.log('all images loaded');
+        //   })
+        //   .done( function( instance ) {
+        //     console.log('all images successfully loaded');
+        //   })
+        //   .fail( function() {
+        //     console.log('all images loaded, at least one is broken');
+        //   })
+        //   .progress( function( instance, image ) {
+        //     var result = image.isLoaded ? 'loaded' : 'broken';
+        //     console.log( 'image is ' + result + ' for ' + image.img.src );
+        //     if(result == 'loaded') {
+        //         imgLoaded++;
+        //         console.log('This is imgLoaded: ' + imgLoaded);
+        //     }
+        //   });
         // imagesLoaded( elem, callback );
         // // you can use `new` if you like
         // new imagesLoaded( elem, callback );
@@ -76,33 +88,39 @@ define(['jquery',
 
         // animHolder.fadeOut(250);
 
+        if(device == 'mobile') {
+            $('body').append('<div id="ajax-loader" class="hidden"><div class="ajax-spinner"><img src="images/logo/logo-white.png" width="150px" height="194px"><img src="images/sprites/ajaxSpinner.gif" id="spin-wheel"></div></div>');
+        }
+
         // ANIMATION function
-        $(function() {
-            var count = 20001;
-            var spritePre = 'sprite-pre_loader';
-            var finalFrame = 20133;
+        if(device == 'desk') {
+            $(function() {
+                var count = 20001;
+                var spritePre = 'sprite-pre_loader';
+                var finalFrame = 20133;
 
-            // $('#body-inner').hide();
+                // $('#body-inner').hide();
 
-            function animPreLoader() {
-               count++;
-               if(count > finalFrame - 1) {
-                preloadAnim.fadeOut(500);
-                animHolder.fadeOut(500);
-                $('#body-inner').show(750);
-                clearInterval(timeout);
-               }
-               var preCount = count-1;
-               var preCountStr = preCount.toString();
-               var countStr = count.toString();
-               var preAnimClass = spritePre + preCountStr;
-               var animClass = spritePre + countStr;
-               preloadAnim.removeClass(preAnimClass).addClass(animClass);
+                function animPreLoader() {
+                   count++;
+                   if(count > finalFrame - 1) {
+                    preloadAnim.fadeOut(500);
+                    animHolder.fadeOut(500);
+                    $('#body-inner').show(750);
+                    clearInterval(timeout);
+                   }
+                   var preCount = count-1;
+                   var preCountStr = preCount.toString();
+                   var countStr = count.toString();
+                   var preAnimClass = spritePre + preCountStr;
+                   var animClass = spritePre + countStr;
+                   preloadAnim.removeClass(preAnimClass).addClass(animClass);
 
-              }
-            var timeout = setInterval(animPreLoader, 32);
-            animPreLoader();
-           });
+                  }
+                var timeout = setInterval(animPreLoader, 32);
+                animPreLoader();
+               });
+            }
         
 
         var $body = $('body'),

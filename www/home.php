@@ -28,15 +28,10 @@ include('php/project-grid.php');
     <body class="home">
         <!-- ANIMATED PRE LOADER -->
         <div id="anim-holder" class="anim-holder preload-anim">
-            <div id="preload-anim" class="sprite-pre_loader20001"></div>
+            <div id="preload-anim" class="sprite-pre_loader20000"></div>
         </div>
         <!-- PRELOADER -->
-<!--          <div id="ajax-loader">
-            <div class="ajax-spinner">
-                <img src="images/logo/logo-white.png" width="150px" height="194px">
-                <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
-            </div>
-        </div> -->
+        
             
         <div class="body-inner clearfix">
 
