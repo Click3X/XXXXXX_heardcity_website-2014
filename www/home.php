@@ -21,7 +21,7 @@ include('php/project-grid.php');
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->
 
-        <script data-main="js/app" src="js/lib/require.js"></script>
+<!--        <script data-main="js/app" src="js/lib/require.js"></script> -->
     
     </head>
 
@@ -106,6 +106,15 @@ include('php/project-grid.php');
 
             <!-- FOOTER -->
             <?php include('php/footer.php'); ?>
+
+        <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js'></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.unveil.min.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.flexnav.min.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.royalslider.min.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.flexnav.min.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.easing-1.3.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/home/setup.js"></script>
 
         </div>
     </body>

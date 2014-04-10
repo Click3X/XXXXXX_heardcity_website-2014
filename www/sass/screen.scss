@@ -36,6 +36,10 @@
 
 @import "base/footer";
 
+
+// FLEX NAV STYLES
+@import "vendor/flexnav/flexnav.css";
+
 // PAGE STYLES
 // HOME
 @import "home/marquee";
@@ -74,7 +78,7 @@
 // @import "vendor/royal/royalslider.css";
 // @import "vendor/royal/rs-default.css";
 
-// FLEX NAV STYLES
-@import "vendor/flexnav/flexnav.css";
+// // FLEX NAV STYLES
+// @import "vendor/flexnav/flexnav.css";
 // PRELOADER
-@import "vendor/preload/queryLoader.css"
+// @import "vendor/preload/queryLoader.css"

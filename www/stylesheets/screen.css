@@ -1,5 +1,4 @@
 @import url(vendor/flexnav/flexnav.css);
-@import url(vendor/preload/queryLoader.css);
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -3704,6 +3703,15 @@ html, body {
   margin-left: 0.875rem;
 }
 
+/* line 197, ../sass/ourteam/_ourteam-base.scss */
+.item {
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+  transition: all 500ms;
+}
+
 /* line 1, ../sass/items-webapp/_items.scss */
 li.item.beardoll.philiploeb {
   top: 31.8%;
@@ -5452,23 +5460,38 @@ li.item.sampler.jeremysiegal {
   }
 }
 
-/* line 50, ../sass/items-webapp/_newbase.scss */
+/* line 51, ../sass/items-webapp/_newbase.scss */
+.ourteam .all-items {
+  padding-bottom: 1100%;
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  /* line 51, ../sass/items-webapp/_newbase.scss */
+  .ourteam .all-items {
+    padding-bottom: 12000px;
+  }
+}
+
+/* line 63, ../sass/items-webapp/_newbase.scss */
 #deeplink .footer {
   margin-top: 160%;
   z-index: 100;
 }
 
-/* line 56, ../sass/items-webapp/_newbase.scss */
+/* line 69, ../sass/items-webapp/_newbase.scss */
 .js-single-member #member-bio {
   display: none;
 }
 
-/* line 62, ../sass/items-webapp/_newbase.scss */
+/* line 75, ../sass/items-webapp/_newbase.scss */
 *:focus {
   outline: 0;
 }
 
-/* line 66, ../sass/items-webapp/_newbase.scss */
+/* line 79, ../sass/items-webapp/_newbase.scss */
 input {
   background-color: transparent;
   border: 0px solid;
@@ -5476,18 +5499,26 @@ input {
   width: 260px;
 }
 
-/* line 72, ../sass/items-webapp/_newbase.scss */
+/* line 85, ../sass/items-webapp/_newbase.scss */
 input:focus {
   outline: none;
 }
 
 @media (min-width: 480px) {
   /* line 340, ../sass/home/_teammember.scss */
-  /* line 87, ../sass/items-webapp/_newbase.scss */
+  /* line 100, ../sass/items-webapp/_newbase.scss */
   .ourteam .member-text {
     margin-top: 1em;
   }
 }
+/* line 105, ../sass/items-webapp/_newbase.scss */
+#page-wrap #all-items {
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 /* line 3, ../sass/base/_clue-tip.scss */
 .js-single-member .split-body:last-of-type {
   display: none;

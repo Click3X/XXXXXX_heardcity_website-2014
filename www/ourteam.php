@@ -93,6 +93,8 @@ if(!isset($_GET['selected_member'])) {
         <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js'></script>
 
+        <script src="<?php echo $BASE; ?>js-webapp/lib/hammer.js"></script>
+
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.flexnav.min.js"></script>
         
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.cluetip.js"></script>

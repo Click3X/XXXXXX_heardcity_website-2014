@@ -32,10 +32,20 @@ if(!isset($_GET['selected_member'])) {
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->  
         <style>
-            #deeplink {color:black;}
+ /*           #deeplink {color:black;}
             #holder .item-holder {
                 position: static;
+            }*/
+
+            .page-wrap .all-itmes-holder .all-items { 
+                position:relative; width: 100%; max-width: 1024px !important; margin:0 auto !important; padding-bottom:100% !important;
             }
+
+            .js-single-member #member-bio {
+                    display: block;
+                }
+            
+
         </style>
         <script>
             // TEST FOR MOBILE DEVICE / TABLET
@@ -64,19 +74,29 @@ if(!isset($_GET['selected_member'])) {
     
     </head>
 
-    <body class="ourteam deeplink one-page">
+    <body class="ourteam one-page">
         <div id="page-wrap" class="page-wrap">
             
             <?php include('php/main-nav.php'); ?>
 
-            <div id="all-items-holder" class="all-items-holder">
-
+            <div id="member-bio" class="container clearfix">
+                <div class="team-member clearfix">
+                    <ul class="member-text">
+                        <li class="misc-text">This belongs to</li>
+                        <li class="name"><?php echo $de_name; ?></li>
+                        <li class="bio"><p><?php echo $de_bio; ?></p></li>
+                        <li class="permalink"><a href="<?php echo $de_permalink; ?>" class="all-members" style="display: none;">View everyones stuff</a></li>
+                    </ul>
+                </div>
             </div>
 
-<!-- 
             <div id="members" class="members"></div>
 
-            <div id="all-items-holder"></div> -->
+            <div id="all-items-holder" class="all-items-holder clearfix">
+                <!-- <ul id="items-holder" class="items-holder"></ul> -->
+            </div>
+
+            <div id="members" class="members"></div>
         	 
             <!-- SUB NAV -->
             <?php include('php/sub-nav.php'); ?>

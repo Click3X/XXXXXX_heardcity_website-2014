@@ -23,7 +23,7 @@ function Members(data) {
                 var name = this.name;
                 var coords = this.coords;
                 var id = formatLink(name);
-                var usemap = '#' + member.id + id;
+                var usemap = member.id + id;
                 var img, map, area, li, a;
 
                 var blankGif = 'images/sprites/blank.gif';
@@ -31,7 +31,8 @@ function Members(data) {
                 src = base + src;
 
                 var li = $('<li/>', {
-                    'class':'item' + ' ' + id + ' ' + member.id
+                    'class':'item' + ' ' + id + ' ' + member.id,
+                    'style':'opacity:0'
                 });
 
 
@@ -42,7 +43,7 @@ function Members(data) {
                         'src':src,
                         // 'src':blankGif,
                         'alt':item.name,
-                        'usemap':usemap,
+                        'usemap':'#' + usemap,
                         'data-src':src
                     }),
                     map = $('<map/>', {
@@ -65,7 +66,9 @@ function Members(data) {
                     map.append(area);
                     li.append(img);
                     li.append(map);
-                    li.appendTo($ul);
+                    // li.appendTo($ul);
+
+                    liArray.push(li);
 
 
                 } else {
@@ -95,20 +98,21 @@ function Members(data) {
     };
 
     this.attachToDom=function(data) {
-        var ul = $('<ul/>', {'id':'item-holder', 'class':'item-holder'});
+        var ul = $('<ul/>', {'id':'all-items', 'class':'all-items'});
+        $('#all-items-holder').append(ul);
+        
         for(var i=0; i< data.length; i++) {
             var li = data[i];
             $(li).appendTo(ul);
+            $(li).delay(60*i).animate({opacity: "1"}, "fast");
         }
-        $('#all-items-holder').append(ul);
+
     };
 
     this.removeFromDom=function(data) {
         $('#all-items-holder').remove(data);
     };
 }
-
-
 
 var setupMembers = {
 
@@ -126,16 +130,33 @@ var setupMembers = {
         for (i = 0; i < data.members.length; i++) {
             var memberInfo = data.members[i];
             var member = new Members(memberInfo);
-            console.dir(member.items); 
-
             memberArray.push(member);
-
-            // console.log('This is member' + member); console.dir(member);
         }
+        // ATTACH MEMBERS ON PAGE LOAD
+        var ul;
+        ul = $('<ul/>', {'id':'all-items', 'class':'all-items'});
+        $.each(memberArray, function() {
+            var heard = $(this)[0];
+            var items = heard.buildLi();
+            $.each(items, function(i) { 
+            $(this).appendTo(ul);
+            $(this).animate({opacity: "1"}, "fast");
+            });
+        });
+        ul.appendTo($('#all-items-holder'));
+
+        $.each($('.item'), function() {
+            var offset = $(this).offset();
+            // console.log('this is offset ' + offset ); console.dir(offset);
+
+
+        });
+
+        $('.item').addClass('heardcity');
     }
 
 };
 
 setupMembers.init();
 
-console.log('These are your members: ' + memberArray); console.dir(memberArray);
+// console.log('These are your members: ' + memberArray); console.dir(memberArray);

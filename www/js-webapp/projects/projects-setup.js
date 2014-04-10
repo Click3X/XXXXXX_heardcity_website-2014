@@ -20,33 +20,38 @@ $(function() {
         $('#page-projects').addClass('mobile-hidden current');
 
         // window.onload = (function(){
-            // HIDE SPINNER
-            // $('#ajax-loader').fadeOut(500);
+        // HIDE SPINNER
+        // $('#ajax-loader').fadeOut(500);
 
-            // INITIALIZE MENU
-            $mainMenu.flexNav({
-                'hoverIntent': false,
-                'hover':false,
-                'buttonSelector': '#page-button'
-            });
+        // INITIALIZE MENU
+        $mainMenu.flexNav({
+            'hoverIntent': false,
+            'hover':false,
+            'buttonSelector': '#page-button'
+        });
 
-            // INITIANLIZE GRID
-            $(function() {
-                 Grid.init();
+        // INITIANLIZE GRID
+        $(function() {
+             Grid.init();
 
-                 if(selectedProject) {
-                    setTimeout(function() {
-                        var target = '#'+selectedProject;
-                        var parent = $(target).parent();
-                        // parent.addClass('og-expanded');
-                        $(target).click();
+             if(selectedProject) {
+                setTimeout(function() {
+                    var target = '#'+selectedProject;
+                    var parent = $(target).parent();
+                    // parent.addClass('og-expanded');
+                    $(target).click();
 
-                    }, 100);
-                   
-                }
+                }, 100);
+               
+            }
 
-            });
+        });
            
+        // CLOSE ON TAP
+        // $('.og-close').on("tap", function(event) {
+        //     console.log('Touch!')
+        // });
+
 
             
 

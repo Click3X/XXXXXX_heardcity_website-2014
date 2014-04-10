@@ -47,6 +47,19 @@
   }
 }
 
+
+.ourteam .all-items {
+  padding-bottom: 1100%;
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+
+  @media(min-width: 1024px) {
+     padding-bottom: 12000px;
+  }
+
+}
 #deeplink .footer {
 margin-top: 160%;
 z-index:100;
@@ -88,3 +101,28 @@ input:focus {
     margin-top: 1em;
   }
 }
+
+#page-wrap #all-items {
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+
+
+// .ourteam.deeplink {
+//   // background: red !important;
+//     #all-items {
+//     position: relative;
+//     max-width: 1024px;
+//     margin:0 auto;
+//     // background: blue;
+//     padding-bottom: 100%;
+//   }
+
+//   .js-single-member .page-wrap #all-items-holder .all-items {
+//     padding-bottom: 1000px;
+//   }
+
+// }
