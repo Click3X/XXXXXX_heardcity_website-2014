@@ -94,25 +94,30 @@ if(!isset($_GET['selected_member'])) {
         <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js'></script>
 
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.flexnav.min.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.unveil.min.js"></script>
-
-        <script src="<?php echo $BASE; ?>js-webapp/factory/member.js"></script>
-
-
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.browser.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.ba-hashchange.min.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.onscreen.js"></script>
-
         
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.cluetip.js"></script>
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.hoverIntent.js"></script>
 
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.unveil.min.js"></script>
+
 
         <script src="<?php echo $BASE; ?>js-webapp/setup.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/factory/member.js"></script>
+
+
+<!--        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.browser.js"></script> -->
+<!--        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.ba-hashchange.min.js"></script> -->
+<!---        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.onscreen.js"></script> -->
+
+        
+        
+
+
+        
         
     <!--    <script src="<?php // echo $BASE; ?>js-webapp/controller/hash-change.js"></script>-->
 
-        <script src="<?php echo $BASE; ?>js-webapp/controller/hover.js"></script>
+        <!--<script src="<?php echo $BASE; ?>js-webapp/controller/hover.js"></script>-->
 
         
     </body>

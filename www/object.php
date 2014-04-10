@@ -64,25 +64,19 @@ if(!isset($_GET['selected_member'])) {
     
     </head>
 
-    <body id="deeplink" class="ourteam deeplink one-page">
+    <body class="ourteam deeplink one-page">
         <div id="page-wrap" class="page-wrap">
             
             <?php include('php/main-nav.php'); ?>
 
-            <div id="member-bio" class="container clearfix">
-                <div class="team-member clearfix">
-                    <ul class="member-text">
-                        <li class="misc-text">This belongs to</li>
-                        <li class="name"><?php echo $de_name; ?></li>
-                        <li class="bio"><p><?php echo $de_bio; ?></p></li>
-                        <li class="permalink"><a href="<?php echo $de_permalink; ?>" class="all-members" style="display: none;">View everyones stuff</a></li>
-                    </ul>
-                </div>
+            <div id="all-items-holder" class="all-items-holder">
+
             </div>
 
+<!-- 
             <div id="members" class="members"></div>
 
-            <div id="all-items-holder"></div>
+            <div id="all-items-holder"></div> -->
         	 
             <!-- SUB NAV -->
             <?php include('php/sub-nav.php'); ?>
@@ -96,23 +90,25 @@ if(!isset($_GET['selected_member'])) {
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.flexnav.min.js"></script>
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.unveil.min.js"></script>
 
-        <script src="<?php echo $BASE; ?>js-webapp/factory/member.js"></script>
+    <!--    <script src="<?php echo $BASE; ?>js-webapp/factory/member.js"></script> -->
 
 
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.browser.js"></script>
+<!--        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.browser.js"></script>
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.ba-hashchange.min.js"></script>
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.onscreen.js"></script>
 
         
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.cluetip.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.hoverIntent.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.hoverIntent.js"></script> -->
 
 
         <script src="<?php echo $BASE; ?>js-webapp/setup.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/object.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/object-events.js"></script>
         
     <!--    <script src="<?php // echo $BASE; ?>js-webapp/controller/hash-change.js"></script>-->
 
-        <script src="<?php echo $BASE; ?>js-webapp/controller/hover.js"></script>
+<!--        <script src="<?php echo $BASE; ?>js-webapp/controller/hover.js"></script> -->
 
         
     </body>

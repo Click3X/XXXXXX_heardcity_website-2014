@@ -76,12 +76,6 @@ var Members = {
 		});
 	},
 
-	// setUpItems: function() {	
-	// 	Members.list = _.template("<% _.each(items, function(item) { if(item.coords) { var itemId = formatLink(item.name.toLowerCase()); %><li class=\'item <%= itemId + ' ' + id %>\'><img src='<%= item.image %>' alt='<%= item.name %>'><map id=\'<%= id %>\' name=\'<%= id %>\' class='map-link' data-person='<%= id %>'><area href='#' class='cluetip-div' shape='poly' coords='<%= item.coords %>' alt='<%= item.name %>' data-person='<%= id %>' data-item='<%= itemId %>' title=''></map></li> <%; } else { var itemId = formatLink(item.name.toLowerCase()); %> <li class='item <%= itemId + ' ' + id %>'><a class='cluetip-div' href='#' data-person=\'<%= id %>\' data-item='<%= itemId %>' title=''><img src='<%= item.image %>' alt='<%= item.name %>'></a></li><%; } }); %>");
-	// 	for(var i=0; i< Members.length; i++) {
-	// 	}
-	// },
-
 	prepMaps: function(data) {
 		var liArray = [];
 		var ul = $('<ul/>', {'id': 'all-items', 'class': 'all-items'});
