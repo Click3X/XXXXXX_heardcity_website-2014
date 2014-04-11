@@ -12,7 +12,7 @@ include('php/project-grid.php');
         <title>Heard City | Home</title>
 
         <link rel="shortcut icon" href="favicon.ico">
-        
+
         <link href="stylesheets/vendor/royal/royalslider.css" media="screen, projection" rel="stylesheet" type="text/css">
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -20,14 +20,18 @@ include('php/project-grid.php');
           <!--[if IE]>
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->
-
+          <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
           <script>
             // TEST FOR MOBILE DEVICE / TABLET
             var device;
             if( /Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent) ) {
                 device = 'mobile';
+                $('#anim-holder').hide();
+                // var preload = document.getElementById("preload-anim");
             } else {
                 device = 'desk';
+                // var blackLogoPre = document.getElementById("black-logo-pre");
+                // var blackLogoPre = document.getElementById("black-logo-pre").style.display = 'none';
             }
 
             <?php echo 'var base="'.$BASE.'";'; ?>
@@ -38,9 +42,9 @@ include('php/project-grid.php');
 
     <body class="home">
         <!-- ANIMATED PRE LOADER -->
-    <!--     <div id="anim-holder" class="anim-holder preload-anim">
+        <div id="anim-holder" class="anim-holder preload-anim">
             <div id="preload-anim" class="sprite-pre_loader20000"></div>
-        </div> -->
+        </div>
         <!-- PRELOADER -->
         
             
@@ -118,14 +122,14 @@ include('php/project-grid.php');
             <!-- FOOTER -->
             <?php include('php/footer.php'); ?>
 
-        <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+<!--        <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script> -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js'></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.unveil.min.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.flexnav.min.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.royalslider.min.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.flexnav.min.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.easing-1.3.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/home/setup.js"></script>
+        <script src="js-webapp/lib/jquery.unveil.min.js"></script>
+        <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
+        <script src="js-webapp/lib/jquery.royalslider.min.js"></script>
+        <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
+        <script src="js-webapp/lib/jquery.easing-1.3.js"></script>
+        <script src="js-webapp/home/setup.js"></script>
 
         </div>
     </body>

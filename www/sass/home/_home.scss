@@ -195,7 +195,47 @@ body.home {
 }
 
 
+// @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+//     /* Put your iPhone 4g styles in here */
+//     #anim-holder  {display:none;}
+// }
 
+@media only screen and (max-device-width: 480px) {
+    /* Put your iPhone 3G styles in here */
+    #anim-holder {display:none;}
+}
+
+
+@media only screen and (device-width: 768px) {
+    /* Put CSS for general iPad layouts in here */
+    #anim-holder {display:none;}
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* Put CSS for iPad PORTRAIT layouts in here */
+    #anim-holder {display:none;}
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* Put CSS for iPad LANDSCAPE layouts in here */
+    #anim-holder {display:none;}
+}
+
+
+// @media only screen and (-webkit-device-pixel-ratio:.75){
+//     /* Put CSS for low density (ldpi) Android layouts in here */
+//     #anim-holder {display:none;}
+// }
+
+// @media only screen and (-webkit-device-pixel-ratio:1){
+//     /* Put CSS for medium density (mdpi) Android layouts in here */
+//     #anim-holder {display:none;}
+// }
+
+// @media only screen and (-webkit-device-pixel-ratio:1.5){
+//     /* Put CSS for high density (hdpi) Android layouts in here */
+//     #anim-holder {display:none;}
+// }
 
 
 

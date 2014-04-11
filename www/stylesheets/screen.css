@@ -2577,6 +2577,34 @@ body.home {
   border-radius: 0;
 }
 
+@media only screen and (max-device-width: 480px) {
+  /* Put your iPhone 3G styles in here */
+  /* line 205, ../sass/home/_home.scss */
+  #anim-holder {
+    display: none;
+  }
+}
+@media only screen and (device-width: 768px) {
+  /* Put CSS for general iPad layouts in here */
+  /* line 211, ../sass/home/_home.scss */
+  #anim-holder {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Put CSS for iPad PORTRAIT layouts in here */
+  /* line 216, ../sass/home/_home.scss */
+  #anim-holder {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Put CSS for iPad LANDSCAPE layouts in here */
+  /* line 221, ../sass/home/_home.scss */
+  #anim-holder {
+    display: none;
+  }
+}
 /* line 1, ../sass/base/_sprite-preload.scss */
 #preload-anim {
   background-image: url("../images/sprites/preload-sprite.jpg");
