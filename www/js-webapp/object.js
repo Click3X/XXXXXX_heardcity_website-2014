@@ -222,15 +222,6 @@ var setupMembers = {
         });
         ul.appendTo($('#all-items-holder'));
 
-        // $.each($('.item'), function(i) {
-        //     var offset = $(this).offset();
-        //     console.log('this is offset ' + offset ); console.dir(offset);
-        //     data.members[i].pos = offset.top;
-        //     console.dir(data.members[i]);
-        // });
-
-        // console.dir(data.members);
-
         $('.item').addClass('heardcity');
 
         // ADD CLUE TIP

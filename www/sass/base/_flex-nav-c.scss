@@ -232,29 +232,11 @@
 
 @media(min-width: 600px) {
 #member-button.rotate > div:after {
-	// content: '';
-	// display: block;
-	// // background-image: url("../images/sprites/toggle-arrow.png");
-	// background-image: url("../images/sprites/toggle-arrow.svg");
-	// background-repeat: no-repeat;
-	// width: 23px;
-	// height: 29px;
-	// position: absolute;
-	// //left: 7px; top: 7px;
-	// left: 12px; top: 4px;
-	// z-index: 70;
-
-	// @include prefix(transform, rotate(0deg));
 	transform-origin: center center;
-	// @include prefix(transform-origin, center center);
-	@include prefix(transition, all 400ms);
-
-		
-		@include prefix(transform, rotate(180deg));
-		// transform-origin: center center;
-		// top: -41px;
-		top: -34px;
-		left: 0;
+	@include prefix(transition, all 400ms);	
+	@include prefix(transform, rotate(180deg));
+	top: -34px;
+	left: 0;
 	}
 }
 

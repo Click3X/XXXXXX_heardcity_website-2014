@@ -11,6 +11,8 @@ include('php/project-grid.php');
 
         <title>Heard City | Contact</title>
 
+        <link rel="shortcut icon" href="favicon.ico">
+
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
@@ -18,7 +20,7 @@ include('php/project-grid.php');
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->
 
-        <script data-main="js/contact" src="js/lib/require.js"></script>
+     <!--   <script data-main="js/contact" src="js/lib/require.js"></script> -->
 
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
         <script>
@@ -138,6 +140,10 @@ include('php/project-grid.php');
         </div>
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>
+
+        <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.flexnav.min.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/contact/setup.js"></script>
 
     </body>
 

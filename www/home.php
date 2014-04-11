@@ -11,9 +11,9 @@ include('php/project-grid.php');
 
         <title>Heard City | Home</title>
 
-        <link href="stylesheets/vendor/royal/royalslider.css" media="screen, projection" rel="stylesheet" type="text/css">
-    <!--     <link href="stylesheets/vendor/royal/rs-default.css" media="screen, projection" rel="stylesheet" type="text/css"> -->
+        <link rel="shortcut icon" href="favicon.ico">
         
+        <link href="stylesheets/vendor/royal/royalslider.css" media="screen, projection" rel="stylesheet" type="text/css">
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
@@ -21,7 +21,18 @@ include('php/project-grid.php');
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->
 
-<!--        <script data-main="js/app" src="js/lib/require.js"></script> -->
+          <script>
+            // TEST FOR MOBILE DEVICE / TABLET
+            var device;
+            if( /Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent) ) {
+                device = 'mobile';
+            } else {
+                device = 'desk';
+            }
+
+            <?php echo 'var base="'.$BASE.'";'; ?>
+        </script>
+
     
     </head>
 

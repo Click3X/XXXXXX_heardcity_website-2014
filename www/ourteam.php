@@ -25,6 +25,8 @@ if(!isset($_GET['selected_member'])) {
 
         <title>Heard City | Our Team</title>
         <base href="<?php echo $BASE; ?>ourteam.php">
+        
+        <link rel="shortcut icon" href="favicon.ico">
 
         <link href="<?php echo $BASE; ?>stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="<?php echo $BASE; ?>stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
