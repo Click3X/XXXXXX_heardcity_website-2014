@@ -357,6 +357,23 @@
             }
         });
 
+        var sliderInstance = $featuredSlider.data('royalSlider');
+        // console.log("this is sliderInstance" + sliderInstance); console.dir(sliderInstance);
+       
+        sliderInstance.ev.on('rsAfterSlideChange', function() {
+             // if ($('.rsActiveSlide img').attr('alt') == 'tShirtGreen') {
+             //      setTimeout("alert('Your message')",1000)
+             // } else {
+             //      //Do nothing
+             // }
+             console.log('There has been a slide change!');
+             console.log(myVideo); console.dir(myVideo);
+              var myVideo = $('video');
+            $('video').remove();
+            $('.work-slide img').show();
+
+        });
+
         $teamSlider.royalSlider({
             imageScaleMode:'none',
             imageAlignCenter:false,

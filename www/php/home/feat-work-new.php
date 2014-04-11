@@ -6,6 +6,20 @@
 
 ?>
 
+<!-- <div class="royalSlider rsMinW">
+ 	<div class="rsContent">
+      <a class="rsImg" data-rsVideo="movies/jgpearslogo.mp4" href="fff.png"></a>  
+    </div>
+
+    <div class="rsContent">
+      <a class="rsImg" data-rsVideo="movies/jgpearslogo.mp4" href="fff.png"></a>  
+    </div>
+        
+    <div class="rsContent">
+    SLIDE 3
+    </div>
+ </div> -->
+
 <!-- ####################   Featured Work: CAROUSEL for FEATURED work    ############################# -->
 <div class="container clearfix black-theme featured-work">
 	<!-- <div class="noise"></div> -->
@@ -31,10 +45,10 @@
 					if($tablet) { $thumbsrc = $tablet; } else { $thumbsrc = $mobile;}
 					?>
 
-				<li class="work-slide clearfix">
+				<li class="rsContent work-slide clearfix">
 					<div class="img-holder">
-						<a href="#" class="open-vid" data-rsVideo="<?php echo $vidmp4 = $project["mp4"];?>">
-							<img src="<?php echo $thumbsrc[0]; ?>" alt="<?php echo $project['title']; ?>" class="rsImg">
+						<a href="<?php echo $thumbsrc[0]; ?>" class="rsImg" data-rsVideo="<?php echo $vidmp4 = $project["mp4"];?>">
+							<!-- <img src="<?php echo $thumbsrc[0]; ?>" alt="<?php echo $project['title']; ?>" class="rsImg"> -->
 							<!-- <img src="images/sprites/blank.gif" alt="<?php echo $project['title']; ?>" class="rsImg" data-src="<?php echo $thumbsrc[0]; ?>" > -->
 						</a>
 					<!-- 
