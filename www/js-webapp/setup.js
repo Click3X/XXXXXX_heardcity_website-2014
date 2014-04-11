@@ -81,6 +81,7 @@ var $body = $('body'),
  // TOGGLE SIDE BAR
         $('#member-button').click( function() {
             $('#member-header').toggleClass('side-bar-closed');
+            $('#member-button').toggleClass('rotate');
             $clickClose.toggleClass('hidden');
             $clickClose.click(function() {
                 $('#member-header').toggleClass('side-bar-closed');
@@ -91,6 +92,9 @@ var $body = $('body'),
             $('html, body').animate({ scrollTop: 0 }, 'slow');
             return false;
         });
+
+// IF SELECTED MEMBER
+
 /*
  * Get Viewport Dimensions
  * returns object with viewport dimensions to match css in width and height properties

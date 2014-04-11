@@ -104,8 +104,8 @@ if(!isset($_GET['selected_member'])) {
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>
 
-        <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js-webapp/lib/underscore-min.js"></script>
 
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.flexnav.min.js"></script>
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.unveil.min.js"></script>
@@ -115,11 +115,11 @@ if(!isset($_GET['selected_member'])) {
 
 <!--        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.browser.js"></script>
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.ba-hashchange.min.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.onscreen.js"></script>
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.onscreen.js"></script>-->
 
         
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.cluetip.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.hoverIntent.js"></script> -->
+        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.hoverIntent.js"></script> 
 
 
         

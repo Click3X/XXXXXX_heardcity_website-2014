@@ -24,9 +24,10 @@ if(!isset($_GET['selected_member'])) {
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
         <title>Heard City | Our Team</title>
+        <base href="<?php echo $BASE; ?>ourteam.php">
 
-        <link href="<?php echo $BASE; ?>stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <link href="<?php echo $BASE; ?>stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
           <!--[if IE]>
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -90,29 +91,36 @@ if(!isset($_GET['selected_member'])) {
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>
 
-        <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js-webapp/lib/underscore-min.js"></script>
 
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.flexnav.min.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.unveil.min.js"></script>
+        <script src="js-webapp/lib/hammer.js"></script>
 
-        <script src="<?php echo $BASE; ?>js-webapp/factory/member.js"></script>
+        <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
+        
+        <script src="js-webapp/lib/jquery.cluetip.js"></script>
+        <script src="js-webapp/lib/jquery.hoverIntent.js"></script>
+
+        <script src="js-webapp/lib/jquery.unveil.min.js"></script>
 
 
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.browser.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.ba-hashchange.min.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.onscreen.js"></script>
+        <script src="js-webapp/setup.js"></script>
+        <script src="js-webapp/factory/member.js"></script>
+
+
+<!--        <script src="js-webapp/lib/jquery.browser.js"></script> -->
+<!--        <script src="js-webapp/lib/jquery.ba-hashchange.min.js"></script> -->
+<!---        <script src="js-webapp/lib/jquery.onscreen.js"></script> -->
 
         
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.cluetip.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.hoverIntent.js"></script>
-
-
-        <script src="<?php echo $BASE; ?>js-webapp/setup.js"></script>
         
-    <!--    <script src="<?php // echo $BASE; ?>js-webapp/controller/hash-change.js"></script>-->
 
-        <script src="<?php echo $BASE; ?>js-webapp/controller/hover.js"></script>
+
+        
+        
+    <!--    <script src="js-webapp/controller/hash-change.js"></script>-->
+
+        <!--<script src="js-webapp/controller/hover.js"></script>-->
 
         
     </body>
