@@ -29,7 +29,7 @@ $(function() {
 
 
     // HIDE SPINNER
-    $('.preload-wrap').removeClass('preload-wrap');
+    // $('.preload-wrap').removeClass('preload-wrap');
     $('#ajax-loader').fadeOut(500);
     
 

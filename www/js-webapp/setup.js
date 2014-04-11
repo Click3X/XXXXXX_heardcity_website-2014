@@ -19,6 +19,14 @@ var $body = $('body'),
     $clueTipPermalink = $('.item-list .permalink'),
     $memberBioPermalink = $('#member-bio .permalink > a');
 
+    $(document).ready(function() {
+          // HIDE SPINNER
+        $('.preload-wrap').removeClass('preload-wrap');
+        $('#ajax-loader').fadeOut(500);
+
+    });
+  
+
 
 // CHANGE SRC ON IMAGES
         // var toPngs = $('.item img');

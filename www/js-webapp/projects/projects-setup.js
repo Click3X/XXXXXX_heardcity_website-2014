@@ -19,9 +19,9 @@ $(function() {
         $('#page-title').text('Projects');
         $('#page-projects').addClass('mobile-hidden current');
 
-        // window.onload = (function(){
         // HIDE SPINNER
-        // $('#ajax-loader').fadeOut(500);
+        // $('.preload-wrap').removeClass('preload-wrap');
+        $('#ajax-loader').fadeOut(500);
 
         // INITIALIZE MENU
         $mainMenu.flexNav({
@@ -47,14 +47,5 @@ $(function() {
 
         });
            
-        // CLOSE ON TAP
-        // $('.og-close').on("tap", function(event) {
-        //     console.log('Touch!')
-        // });
-
-
-            
-
-
 
     });
