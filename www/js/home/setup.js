@@ -254,6 +254,13 @@ $(function() {
             enabled: true,
             pauseOnHover: true,
             delay:6000
+        },
+        block: {
+            fadeEffect: false,
+            moveEffect: 'right',
+            moveOffset: 500,
+            easing:'easeOutSine',
+            delay:200
         }
     });
 

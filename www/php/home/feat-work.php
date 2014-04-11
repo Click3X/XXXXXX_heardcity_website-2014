@@ -1,11 +1,3 @@
-<?php
-// include('php/config.php');
-// include('php/functions.php');
-// include('php/project-grid.php');
-
-
-?>
-
 <!-- ####################   Featured Work: CAROUSEL for FEATURED work    ############################# -->
 <div class="container clearfix black-theme featured-work">
 	<!-- <div class="noise"></div> -->
@@ -47,9 +39,8 @@
 					<div class="grey-theme" class="rsABlock" data-delay="400" data-easing="easeOutSine">
 						<!-- <div class="noise"></div> -->
 
-						<div class="sec-wrap">
+						<div class="sec-wrap rsABlock">
 							<div class="section-title">
-
 								<label for="<?php echo $projectLink; ?>-input" class="project-video-link"><?php echo $title; ?></label>
 								<input type="radio" name="selected_project" id="<?php echo $projectLink; ?>-input" tabindex="2" value="<?php echo $projectLink; ?>">
 							</div>
