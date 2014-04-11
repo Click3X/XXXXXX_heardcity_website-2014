@@ -101,7 +101,6 @@ include('php/project-grid.php');
 
                 <div class="contact-section-holder">
                     <div class="img-holder contact-logo">
-                        <!-- <div class="footer-logo"></div> -->
                         <img src="images/logo/logo-black.svg" alt="Heard City logo">
                     </div>
 
@@ -138,8 +137,8 @@ include('php/project-grid.php');
         <?php include('php/footer.php'); ?>
 
         <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.flexnav.min.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/contact/setup.js"></script>
+        <script src="<?php echo $BASE; ?>js/lib/jquery.flexnav.min.js"></script>
+        <script src="<?php echo $BASE; ?>js/contact/setup.js"></script>
 
     </body>
 

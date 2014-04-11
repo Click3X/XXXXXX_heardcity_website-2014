@@ -116,17 +116,17 @@ if(!isset($_GET['selected_member'])) {
         <?php include('php/footer.php'); ?>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js-webapp/lib/underscore-min.js"></script>
+        <script src="<?php echo $BASE; ?>js/lib/underscore-min.js"></script>
 
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.flexnav.min.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.unveil.min.js"></script>
+        <script src="<?php echo $BASE; ?>js/lib/jquery.flexnav.min.js"></script>
+        <script src="<?php echo $BASE; ?>js/lib/jquery.unveil.min.js"></script>
         
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.cluetip.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.hoverIntent.js"></script> 
+        <script src="<?php echo $BASE; ?>js/lib/jquery.cluetip.js"></script>
+        <script src="<?php echo $BASE; ?>js/lib/jquery.hoverIntent.js"></script> 
 
-        <script src="<?php echo $BASE; ?>js-webapp/object.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/object-events.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/setup.js"></script>
+        <script src="<?php echo $BASE; ?>js/object.js"></script>
+        <script src="<?php echo $BASE; ?>js/object-events.js"></script>
+        <script src="<?php echo $BASE; ?>js/setup.js"></script>
 
         
     </body>

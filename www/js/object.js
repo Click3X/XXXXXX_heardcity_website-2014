@@ -198,7 +198,7 @@ var setupMembers = {
     },
 
     getData: function() {
-        $.getJSON(base + "js-webapp/data/members.json", function(data) {
+        $.getJSON(base + "js/data/members.json", function(data) {
             setupMembers.buildNewMember(data);
         });
     },

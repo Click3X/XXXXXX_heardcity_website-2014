@@ -33,7 +33,7 @@
 
 				<li class="work-slide clearfix">
 					<div class="img-holder">
-						<a href="#" class="open-vid" data-vid="<?php echo $vidmp4 = $project["mp4"];?>">
+						<a href="#" class="open-vid" data-vid="<?php echo $vidmp4 = $project["mp4"];?>" data-poster="<?php echo $thumbsrc[0]; ?>">
 							<img src="<?php echo $thumbsrc[0]; ?>" alt="<?php echo $project['title']; ?>" class="rsImg">
 							<!-- <img src="images/sprites/blank.gif" alt="<?php echo $project['title']; ?>" class="rsImg" data-src="<?php echo $thumbsrc[0]; ?>" > -->
 						</a>

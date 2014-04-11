@@ -44,7 +44,7 @@ include('php/project-grid.php');
                     echo "<script>var selectedProject = '';</script>";
                 } 
             ?>
-        <script src="js-webapp/lib/modernizr.js"></script>
+        <script src="js/lib/modernizr.js"></script>
     </head>
 
     <body class="projects">
@@ -127,11 +127,11 @@ include('php/project-grid.php');
         <?php include('php/footer.php'); ?>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
+        <script src="js/lib/jquery.flexnav.min.js"></script>
 
-        <script src="js-webapp/projects/grid.js"></script>
-        <script src="js-webapp/projects/feat-button.js"></script>
-        <script src="js-webapp/projects/projects-setup.js"></script>
+        <script src="js/projects/grid.js"></script>
+        <script src="js/projects/feat-button.js"></script>
+        <script src="js/projects/projects-setup.js"></script>
 
     </body>
 

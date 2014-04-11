@@ -121,13 +121,13 @@ include('php/project-grid.php');
             <!-- FOOTER -->
             <?php include('php/footer.php'); ?>
 
-            <script src="js-webapp/lib/underscore-min.js"></script>
-            <script src="js-webapp/lib/jquery.unveil.min.js"></script>
-            <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
-            <script src="js-webapp/lib/jquery.royalslider.min.js"></script>
-            <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
-            <script src="js-webapp/lib/jquery.easing-1.3.js"></script>
-            <script src="js-webapp/home/setup.js"></script>
+            <script src="js/lib/underscore-min.js"></script>
+            <script src="js/lib/jquery.unveil.min.js"></script>
+            <script src="js/lib/jquery.flexnav.min.js"></script>
+            <script src="js/lib/jquery.royalslider.min.js"></script>
+            <script src="js/lib/jquery.flexnav.min.js"></script>
+            <script src="js/lib/jquery.easing-1.3.js"></script>
+            <script src="js/home/setup.js"></script>
 
         </div>
     </body>

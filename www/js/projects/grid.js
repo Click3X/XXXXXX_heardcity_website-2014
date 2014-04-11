@@ -303,8 +303,8 @@ var Grid = (function() {
 		var preview = $.data( this, 'preview' ),
 			// item´s offset top
 			position = $item.data( 'offsetTop' );
-			console.log('THis is position: ' + position);
-			console.log('Thisis previewPos: ' + previewPos);
+			// console.log('THis is position: ' + position);
+			// console.log('Thisis previewPos: ' + previewPos);
 
 		scrollExtra = 0;
 
@@ -355,7 +355,7 @@ var Grid = (function() {
 		create : function() {
 			// create Preview structure:
 			this.$title = $( '<li class="p-name"></li>' );
-			this.$videoTag = $('<video controls class="feat-video"><source src="" type="video/mp4" /></video>');
+			this.$videoTag = $('<video controls class="feat-video" poster=""><source src="" type="video/mp4" /></video>');
 
 			this.$director = $('<span class="p-director"></span>');
 			this.$directorList = $('<li><span class="bold">Directed by: </span></li>').append(this.$director);
@@ -410,6 +410,7 @@ var Grid = (function() {
 
 			// Charles new data attributes
 			this.$videoTag.attr('src', eldata.mp4);
+			this.$videoTag.attr('poster', eldata.poster);
 			this.$director.html( eldata.director );
 			this.$mixer.html( eldata.mixer );
 			
