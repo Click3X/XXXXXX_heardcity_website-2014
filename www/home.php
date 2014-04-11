@@ -20,18 +20,17 @@ include('php/project-grid.php');
           <!--[if IE]>
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->
-          <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
-          <script>
-            // TEST FOR MOBILE DEVICE / TABLET
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        
+        <script>
+        // TEST FOR MOBILE DEVICE / TABLET
             var device;
             if( /Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent) ) {
                 device = 'mobile';
                 $('#anim-holder').hide();
-                // var preload = document.getElementById("preload-anim");
             } else {
                 device = 'desk';
-                // var blackLogoPre = document.getElementById("black-logo-pre");
-                // var blackLogoPre = document.getElementById("black-logo-pre").style.display = 'none';
             }
 
             <?php echo 'var base="'.$BASE.'";'; ?>
@@ -63,7 +62,7 @@ include('php/project-grid.php');
             <?php include('php/main-nav.php'); ?>
 
             <!-- BLACK TEXT 1 -->
-            <?php include('php/home/black-text-new.php'); ?>
+            <?php include('php/home/black-text.php'); ?>
 
 
 
@@ -122,14 +121,13 @@ include('php/project-grid.php');
             <!-- FOOTER -->
             <?php include('php/footer.php'); ?>
 
-<!--        <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script> -->
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js'></script>
-        <script src="js-webapp/lib/jquery.unveil.min.js"></script>
-        <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
-        <script src="js-webapp/lib/jquery.royalslider.min.js"></script>
-        <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
-        <script src="js-webapp/lib/jquery.easing-1.3.js"></script>
-        <script src="js-webapp/home/setup.js"></script>
+            <script src="js-webapp/lib/underscore-min.js"></script>
+            <script src="js-webapp/lib/jquery.unveil.min.js"></script>
+            <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
+            <script src="js-webapp/lib/jquery.royalslider.min.js"></script>
+            <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
+            <script src="js-webapp/lib/jquery.easing-1.3.js"></script>
+            <script src="js-webapp/home/setup.js"></script>
 
         </div>
     </body>

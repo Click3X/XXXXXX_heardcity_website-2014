@@ -11,11 +11,6 @@ if(!isset($_GET['selected_member'])) {
     $de_name = ''; $de_bio = ''; $de_permalink = '#';
 }
 
-// if(isset($_REQUEST['selected_member'])) {
-
-// }
-
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -35,10 +30,6 @@ if(!isset($_GET['selected_member'])) {
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->  
         <style>
- /*           #deeplink {color:black;}
-            #holder .item-holder {
-                position: static;
-            }*/
 
             .page-wrap .all-itmes-holder .all-items { 
                 position:relative; width: 100%; max-width: 1024px !important; margin:0 auto !important; padding-bottom:100% !important;
@@ -48,7 +39,6 @@ if(!isset($_GET['selected_member'])) {
                     display: block;
                 }
             
-
         </style>
         <script>
             // TEST FOR MOBILE DEVICE / TABLET
@@ -130,26 +120,13 @@ if(!isset($_GET['selected_member'])) {
 
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.flexnav.min.js"></script>
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.unveil.min.js"></script>
-
-    <!--    <script src="<?php echo $BASE; ?>js-webapp/factory/member.js"></script> -->
-
-
-<!--        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.browser.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.ba-hashchange.min.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.onscreen.js"></script>-->
-
         
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.cluetip.js"></script>
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.hoverIntent.js"></script> 
 
-
-        
         <script src="<?php echo $BASE; ?>js-webapp/object.js"></script>
         <script src="<?php echo $BASE; ?>js-webapp/object-events.js"></script>
         <script src="<?php echo $BASE; ?>js-webapp/setup.js"></script>
-    <!--    <script src="<?php // echo $BASE; ?>js-webapp/controller/hash-change.js"></script>-->
-
-<!--        <script src="<?php echo $BASE; ?>js-webapp/controller/hover.js"></script> -->
 
         
     </body>

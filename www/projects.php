@@ -68,7 +68,6 @@ include('php/project-grid.php');
 
             <div class="button-holder middle-button-holder">
                 <div class="clearfix">
-                    <!-- <a id="all-btn" href="#" title="All">&plus;</a> -->
                     <a id="all-btn" href="#" title="All">All</a>
                 </div>
             </div>
@@ -127,21 +126,12 @@ include('php/project-grid.php');
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>
 
-        <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js'></script>
-        
-        <script src="js-webapp/lib/hammer.js"></script>
-
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
-
-    <!--<script src="js-webapp/lib/jquery.browser.js"></script>
-        <script src="js-webapp/lib/jquery.ba-hashchange.min.js"></script> -->
 
         <script src="js-webapp/projects/grid.js"></script>
         <script src="js-webapp/projects/feat-button.js"></script>
         <script src="js-webapp/projects/projects-setup.js"></script>
-
-
 
     </body>
 
