@@ -28,6 +28,8 @@ foreach ($members as $key => $member) {
             $image = $item['image'];
             $info = pathinfo($image);
             $usemap = $info['filename'];
+
+            echo print_r($image);
         }
         if($item['bio']) {
             $bio = $item['bio'];

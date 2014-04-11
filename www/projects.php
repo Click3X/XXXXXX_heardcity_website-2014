@@ -10,9 +10,10 @@ include('php/project-grid.php');
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Heard City | Projects</title>
+         <base href="<?php echo $BASE; ?>projects.php">
 
-        <link href="<?php echo $BASE; ?>stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <link href="<?php echo $BASE; ?>stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
           <!--[if IE]>
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -41,7 +42,7 @@ include('php/project-grid.php');
                     echo "<script>var selectedProject = '';</script>";
                 } 
             ?>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/modernizr.js"></script>
+        <script src="js-webapp/lib/modernizr.js"></script>
     </head>
 
     <body class="projects">
@@ -98,7 +99,7 @@ include('php/project-grid.php');
                             <li class="og-vid-holder clearfix <?php echo formatLink($value["type"]);?>">
                             
                             <?php 
-                            echo '<a id="'.$cleanTitle.'" class="no-delay" href="'.$dir.'" data-title="'.$value["title"].'" data-director="'.$value["director"].'" data-mixer="'.$value["mixer"].'" data-poster="'.$BASE.$thumbsrc.'" data-mp4="'.$BASE.$value["mp4"].'">';
+                            echo '<a id="'.$cleanTitle.'" class="no-delay" href="#'.$cleanTitle.'" data-dir="'.$dir.'" data-title="'.$value["title"].'" data-director="'.$value["director"].'" data-mixer="'.$value["mixer"].'" data-poster="'.$BASE.$thumbsrc.'" data-mp4="'.$BASE.$value["mp4"].'">';
                                 echo '<div class="vid-thumb-holder img-link clearfix">';
                                     echo '<div class="project-thumb-bg" style="background-image:url('.$BASE . $thumbsrc.'); background-size:cover;"></div>';
                                 echo '</div>'; ?>
@@ -127,16 +128,16 @@ include('php/project-grid.php');
         <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js'></script>
         
-        <script src="<?php echo $BASE; ?>js-webapp/lib/hammer.js"></script>
+        <script src="js-webapp/lib/hammer.js"></script>
 
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.flexnav.min.js"></script>
+        <script src="js-webapp/lib/jquery.flexnav.min.js"></script>
 
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.browser.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.ba-hashchange.min.js"></script>
+    <!--<script src="js-webapp/lib/jquery.browser.js"></script>
+        <script src="js-webapp/lib/jquery.ba-hashchange.min.js"></script> -->
 
-        <script src="<?php echo $BASE; ?>js-webapp/projects/grid.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/projects/feat-button.js"></script>
-        <script src="<?php echo $BASE; ?>js-webapp/projects/projects-setup.js"></script>
+        <script src="js-webapp/projects/grid.js"></script>
+        <script src="js-webapp/projects/feat-button.js"></script>
+        <script src="js-webapp/projects/projects-setup.js"></script>
 
 
 

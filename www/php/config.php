@@ -7,9 +7,9 @@ if($address == '69.25.178.3') {
 	// $BASE = '/heardcity/www/';
 } else {
 	// $base = '/www/';
-	// $BASE = 'http://heard-stage.dev/www/';
+	$BASE = 'http://heard-stage.dev/www/';
 }
-$BASE='';
+// $BASE='';
 // $BASE = 'http://heard-stage.dev/www';
 // $_BASE_URL = "/www/";
 

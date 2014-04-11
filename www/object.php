@@ -122,10 +122,10 @@ if(!isset($_GET['selected_member'])) {
         <script src="<?php echo $BASE; ?>js-webapp/lib/jquery.hoverIntent.js"></script> -->
 
 
-        <script src="<?php echo $BASE; ?>js-webapp/setup.js"></script>
+        
         <script src="<?php echo $BASE; ?>js-webapp/object.js"></script>
         <script src="<?php echo $BASE; ?>js-webapp/object-events.js"></script>
-        
+        <script src="<?php echo $BASE; ?>js-webapp/setup.js"></script>
     <!--    <script src="<?php // echo $BASE; ?>js-webapp/controller/hash-change.js"></script>-->
 
 <!--        <script src="<?php echo $BASE; ?>js-webapp/controller/hover.js"></script> -->

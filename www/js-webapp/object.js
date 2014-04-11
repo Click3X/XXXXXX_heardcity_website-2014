@@ -6,6 +6,7 @@ function Members(data) {
     this.sex = data.sex;
     this.id = data.id;
     this.items = data.items;
+    this.pos = ''
     this.buildLi = function() {
         var liArray = [];
         var $ul = $('<ul/>', {
@@ -145,12 +146,14 @@ var setupMembers = {
         });
         ul.appendTo($('#all-items-holder'));
 
-        $.each($('.item'), function() {
+        $.each($('.item'), function(i) {
             var offset = $(this).offset();
-            // console.log('this is offset ' + offset ); console.dir(offset);
-
-
+            console.log('this is offset ' + offset ); console.dir(offset);
+            data.members[i].pos = offset.top;
+            console.dir(data.members[i]);
         });
+
+        console.dir(data.members);
 
         $('.item').addClass('heardcity');
     }

@@ -21,47 +21,47 @@ var $body = $('body'),
 
 
 // CHANGE SRC ON IMAGES
-        var toPngs = $('.item-holder img');
-        // console.dir(toPngs);
+        // var toPngs = $('.item img');
+        // // console.dir(toPngs);
 
-        var noJpg = [
-            'items/Peony_Rene_necklace.png',
-            'items/Eric_Warzecha_jersey.png',
-            'items/Elizabeth_McClanahan_guitar.png',
-            'items/Keith_Reynaud_Pot.png',
-            'items/Jeremy_Siegal_Jordans.png',
-            'items/Jeremy_Siegal_chain.png',
-            'items/Gary_Noel_plant.png',
-            'items/Sasha_Awn_dress.png',
-            'items/Sasha_Awn_moog.png',
-            'items/Sasha_Awn_gloves.png',
-            'items/Eric_Warzecha_guitar.png',
-            'items/Talia_Rodgers_tank_top.png'
-        ];
-        // CHECK ARRAY FUNCTION
-        Array.prototype.contains = function ( needle ) {
-            var i;
-            for (i in this) {
-                if (this[i] === needle) { return true; }
-            }
-            return false;
-        };
+        // var noJpg = [
+        //     'items/Peony_Rene_necklace.png',
+        //     'items/Eric_Warzecha_jersey.png',
+        //     'items/Elizabeth_McClanahan_guitar.png',
+        //     'items/Keith_Reynaud_Pot.png',
+        //     'items/Jeremy_Siegal_Jordans.png',
+        //     'items/Jeremy_Siegal_chain.png',
+        //     'items/Gary_Noel_plant.png',
+        //     'items/Sasha_Awn_dress.png',
+        //     'items/Sasha_Awn_moog.png',
+        //     'items/Sasha_Awn_gloves.png',
+        //     'items/Eric_Warzecha_guitar.png',
+        //     'items/Talia_Rodgers_tank_top.png'
+        // ];
+        // // CHECK ARRAY FUNCTION
+        // Array.prototype.contains = function ( needle ) {
+        //     var i;
+        //     for (i in this) {
+        //         if (this[i] === needle) { return true; }
+        //     }
+        //     return false;
+        // };
 
-        function switchSrc(obj) {
-            var src = $(this).data('src'),
-            png = /png$/;
+        // function switchSrc(obj) {
+        //     var src = $(this).data('src'),
+        //     png = /png$/;
 
-            if (noJpg.contains(src)) {
-                // console.log('Not this one');
-            }
-            else {
-                src = src.replace(png, 'jpg');
-                src = src.replace('items', 'items/jpg');
-                $(this).attr('data-src', src);
-            }
-        }
-        // SWITCH SRC
-        $.each(toPngs, switchSrc);
+        //     if (noJpg.contains(src)) {
+        //         // console.log('Not this one');
+        //     }
+        //     else {
+        //         src = src.replace(png, 'jpg');
+        //         src = src.replace('items', 'items/jpg');
+        //         $(this).attr('data-src', src);
+        //     }
+        // }
+        // // SWITCH SRC
+        // $.each(toPngs, switchSrc);
 
 
          // INITIALIZE MENU
