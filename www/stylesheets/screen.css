@@ -2031,6 +2031,7 @@ input[type="submit"],
   padding-top: 1.75em;
   padding-bottom: 1.25em;
   background: #fff;
+  min-height: 430px;
 }
 @media (min-width: 480px) {
   /* line 89, ../sass/home/_teammember.scss */
@@ -2039,11 +2040,11 @@ input[type="submit"],
     padding-bottom: 3em;
   }
 }
-/* line 95, ../sass/home/_teammember.scss */
+/* line 96, ../sass/home/_teammember.scss */
 .home .home .team-member .image img {
   max-height: 198px;
 }
-/* line 97, ../sass/home/_teammember.scss */
+/* line 98, ../sass/home/_teammember.scss */
 .home .team-member {
   max-width: 700px;
   position: relative;
@@ -2051,12 +2052,12 @@ input[type="submit"],
   margin: 0 auto;
 }
 @media (min-width: 700px) {
-  /* line 97, ../sass/home/_teammember.scss */
+  /* line 98, ../sass/home/_teammember.scss */
   .home .team-member {
     margin: 0 auto;
   }
 }
-/* line 106, ../sass/home/_teammember.scss */
+/* line 107, ../sass/home/_teammember.scss */
 .home .team-member .image {
   margin: 0 auto 10px;
   height: 198px;
@@ -2064,7 +2065,7 @@ input[type="submit"],
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 106, ../sass/home/_teammember.scss */
+  /* line 107, ../sass/home/_teammember.scss */
   .home .team-member .image {
     margin: auto;
     padding-right: 1em;
@@ -2075,7 +2076,7 @@ input[type="submit"],
     width: 198px;
   }
 }
-/* line 122, ../sass/home/_teammember.scss */
+/* line 123, ../sass/home/_teammember.scss */
 .home .team-member .image img {
   max-width: 100%;
   position: absolute;
@@ -2086,19 +2087,19 @@ input[type="submit"],
   margin: auto;
 }
 @media (min-width: 480px) {
-  /* line 122, ../sass/home/_teammember.scss */
+  /* line 123, ../sass/home/_teammember.scss */
   .home .team-member .image img {
     width: auto;
   }
 }
 @media (min-width: 768px) {
-  /* line 122, ../sass/home/_teammember.scss */
+  /* line 123, ../sass/home/_teammember.scss */
   .home .team-member .image img {
     padding-right: 1em;
     position: static;
   }
 }
-/* line 138, ../sass/home/_teammember.scss */
+/* line 139, ../sass/home/_teammember.scss */
 .home .team-member .member-text {
   text-transform: uppercase;
   float: left;
@@ -2106,7 +2107,7 @@ input[type="submit"],
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 138, ../sass/home/_teammember.scss */
+  /* line 139, ../sass/home/_teammember.scss */
   .home .team-member .member-text {
     width: auto;
     float: none;
@@ -2114,17 +2115,17 @@ input[type="submit"],
     display: table-cell;
   }
 }
-/* line 153, ../sass/home/_teammember.scss */
+/* line 154, ../sass/home/_teammember.scss */
 .home .team-member .member-text li {
   margin-bottom: .5rem;
 }
 @media (min-width: 480px) {
-  /* line 153, ../sass/home/_teammember.scss */
+  /* line 154, ../sass/home/_teammember.scss */
   .home .team-member .member-text li {
     margin-bottom: .938rem;
   }
 }
-/* line 158, ../sass/home/_teammember.scss */
+/* line 159, ../sass/home/_teammember.scss */
 .home .team-member .member-text .misc-text {
   color: #989899;
   letter-spacing: .15em;
@@ -2132,25 +2133,25 @@ input[type="submit"],
   font-size: .6rem;
 }
 @media (min-width: 480px) {
-  /* line 158, ../sass/home/_teammember.scss */
+  /* line 159, ../sass/home/_teammember.scss */
   .home .team-member .member-text .misc-text {
     font-size: .8rem;
     margin-bottom: .75rem;
   }
 }
-/* line 170, ../sass/home/_teammember.scss */
+/* line 171, ../sass/home/_teammember.scss */
 .home .team-member .member-text .name {
   font-size: .8rem;
   letter-spacing: .15em;
   line-height: 1.2rem;
 }
 @media (min-width: 480px) {
-  /* line 170, ../sass/home/_teammember.scss */
+  /* line 171, ../sass/home/_teammember.scss */
   .home .team-member .member-text .name {
     font-size: 1rem;
   }
 }
-/* line 178, ../sass/home/_teammember.scss */
+/* line 179, ../sass/home/_teammember.scss */
 .home .team-member .member-text .bio {
   text-transform: none;
   font-family: 'Times New Roman', serif;
@@ -2158,11 +2159,11 @@ input[type="submit"],
   font-size: .938em;
   line-height: 1.5em;
 }
-/* line 184, ../sass/home/_teammember.scss */
+/* line 185, ../sass/home/_teammember.scss */
 .home .team-member .member-text .permalink {
   margin-top: 1rem;
 }
-/* line 189, ../sass/home/_teammember.scss */
+/* line 190, ../sass/home/_teammember.scss */
 .home .team-member .member-text .permalink a,
 .home .team-member .member-text .permalink label {
   font-size: .750em;
@@ -2170,7 +2171,7 @@ input[type="submit"],
   position: relative;
   margin-left: 0.875rem;
 }
-/* line 195, ../sass/home/_teammember.scss */
+/* line 196, ../sass/home/_teammember.scss */
 .home .team-member .member-text .permalink a:before,
 .home .team-member .member-text .permalink label:before {
   content: '>\0000a0';
@@ -2181,7 +2182,7 @@ input[type="submit"],
   font-size: 1.5em;
 }
 
-/* line 210, ../sass/home/_teammember.scss */
+/* line 211, ../sass/home/_teammember.scss */
 .ourteam .team-member {
   max-width: 700px;
   padding: 1em;
@@ -2190,12 +2191,12 @@ input[type="submit"],
   margin: 0 auto;
 }
 @media (min-width: 700px) {
-  /* line 210, ../sass/home/_teammember.scss */
+  /* line 211, ../sass/home/_teammember.scss */
   .ourteam .team-member {
     margin: 0 auto;
   }
 }
-/* line 222, ../sass/home/_teammember.scss */
+/* line 223, ../sass/home/_teammember.scss */
 .ourteam .team-member .image {
   margin: 0 auto 10px;
   width: 30%;
@@ -2204,47 +2205,47 @@ input[type="submit"],
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 222, ../sass/home/_teammember.scss */
+  /* line 223, ../sass/home/_teammember.scss */
   .ourteam .team-member .image {
     margin: auto;
     display: table-cell;
   }
 }
-/* line 234, ../sass/home/_teammember.scss */
+/* line 235, ../sass/home/_teammember.scss */
 .ourteam .team-member .image img {
   max-width: 100%;
 }
 @media (min-width: 480px) {
-  /* line 234, ../sass/home/_teammember.scss */
+  /* line 235, ../sass/home/_teammember.scss */
   .ourteam .team-member .image img {
     width: auto;
   }
 }
-/* line 241, ../sass/home/_teammember.scss */
+/* line 242, ../sass/home/_teammember.scss */
 .ourteam .team-member .member-text {
   text-transform: uppercase;
   float: left;
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 241, ../sass/home/_teammember.scss */
+  /* line 242, ../sass/home/_teammember.scss */
   .ourteam .team-member .member-text {
     float: right;
     width: auto;
     margin-left: 6%;
   }
 }
-/* line 255, ../sass/home/_teammember.scss */
+/* line 256, ../sass/home/_teammember.scss */
 .ourteam .team-member .member-text li {
   margin-bottom: .5rem;
 }
 @media (min-width: 480px) {
-  /* line 255, ../sass/home/_teammember.scss */
+  /* line 256, ../sass/home/_teammember.scss */
   .ourteam .team-member .member-text li {
     margin-bottom: .938rem;
   }
 }
-/* line 260, ../sass/home/_teammember.scss */
+/* line 261, ../sass/home/_teammember.scss */
 .ourteam .team-member .member-text .misc-text {
   color: #989899;
   letter-spacing: .15em;
@@ -2252,25 +2253,25 @@ input[type="submit"],
   font-size: .6rem;
 }
 @media (min-width: 480px) {
-  /* line 260, ../sass/home/_teammember.scss */
+  /* line 261, ../sass/home/_teammember.scss */
   .ourteam .team-member .member-text .misc-text {
     font-size: .8rem;
     margin-bottom: .75rem;
   }
 }
-/* line 272, ../sass/home/_teammember.scss */
+/* line 273, ../sass/home/_teammember.scss */
 .ourteam .team-member .member-text .name {
   font-size: .8rem;
   letter-spacing: .15em;
   line-height: 1.2rem;
 }
 @media (min-width: 480px) {
-  /* line 272, ../sass/home/_teammember.scss */
+  /* line 273, ../sass/home/_teammember.scss */
   .ourteam .team-member .member-text .name {
     font-size: 1rem;
   }
 }
-/* line 280, ../sass/home/_teammember.scss */
+/* line 281, ../sass/home/_teammember.scss */
 .ourteam .team-member .member-text .bio {
   text-transform: none;
   font-family: 'Times New Roman', serif;
@@ -2278,17 +2279,17 @@ input[type="submit"],
   font-size: .938em;
   line-height: 1.5em;
 }
-/* line 286, ../sass/home/_teammember.scss */
+/* line 287, ../sass/home/_teammember.scss */
 .ourteam .team-member .member-text .permalink {
   margin-top: 1rem;
 }
 @media (min-width: 480px) {
-  /* line 286, ../sass/home/_teammember.scss */
+  /* line 287, ../sass/home/_teammember.scss */
   .ourteam .team-member .member-text .permalink {
     margin-top: 2rem;
   }
 }
-/* line 291, ../sass/home/_teammember.scss */
+/* line 292, ../sass/home/_teammember.scss */
 .ourteam .team-member .member-text .permalink a,
 .ourteam .team-member .member-text .permalink label {
   font-size: .750em;
@@ -2296,7 +2297,7 @@ input[type="submit"],
   position: relative;
   margin-left: 0.875rem;
 }
-/* line 297, ../sass/home/_teammember.scss */
+/* line 298, ../sass/home/_teammember.scss */
 .ourteam .team-member .member-text .permalink a:before,
 .ourteam .team-member .member-text .permalink label:before {
   content: '>\0000a0';
@@ -2307,12 +2308,12 @@ input[type="submit"],
   font-size: 1.5em;
 }
 
-/* line 313, ../sass/home/_teammember.scss */
+/* line 314, ../sass/home/_teammember.scss */
 .all-heard .team-member .member-text .permalink {
   display: none;
 }
 
-/* line 321, ../sass/home/_teammember.scss */
+/* line 322, ../sass/home/_teammember.scss */
 .arrow {
   width: 30px;
   height: 30px;
@@ -2321,7 +2322,7 @@ input[type="submit"],
   top: 50%;
 }
 
-/* line 327, ../sass/home/_teammember.scss */
+/* line 328, ../sass/home/_teammember.scss */
 .grey-arrow-left {
   left: .5em;
   background-image: url(../img/build/sprites/grey-left.png);
@@ -2333,7 +2334,7 @@ input[type="submit"],
   transform: rotate(0deg);
 }
 
-/* line 334, ../sass/home/_teammember.scss */
+/* line 335, ../sass/home/_teammember.scss */
 .grey-arrow-right {
   right: .5em;
   background-image: url(../img/build/sprites/grey-right.png);
@@ -2341,7 +2342,7 @@ input[type="submit"],
 }
 
 @media (min-width: 480px) {
-  /* line 340, ../sass/home/_teammember.scss */
+  /* line 341, ../sass/home/_teammember.scss */
   .member-text {
     margin-top: 2em;
   }
@@ -2579,28 +2580,28 @@ body.home {
 
 @media only screen and (max-device-width: 480px) {
   /* Put your iPhone 3G styles in here */
-  /* line 205, ../sass/home/_home.scss */
+  /* line 209, ../sass/home/_home.scss */
   #anim-holder {
     display: none;
   }
 }
 @media only screen and (device-width: 768px) {
   /* Put CSS for general iPad layouts in here */
-  /* line 211, ../sass/home/_home.scss */
+  /* line 215, ../sass/home/_home.scss */
   #anim-holder {
     display: none;
   }
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* Put CSS for iPad PORTRAIT layouts in here */
-  /* line 216, ../sass/home/_home.scss */
+  /* line 220, ../sass/home/_home.scss */
   #anim-holder {
     display: none;
   }
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* Put CSS for iPad LANDSCAPE layouts in here */
-  /* line 221, ../sass/home/_home.scss */
+  /* line 225, ../sass/home/_home.scss */
   #anim-holder {
     display: none;
   }

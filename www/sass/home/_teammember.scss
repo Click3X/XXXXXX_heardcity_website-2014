@@ -90,6 +90,7 @@ input[type="submit"],
 		padding-top: 1.75em; padding-bottom: 1.25em;
 		background: #fff;
 		@media(min-width: 480px) { padding-top: 3em; padding-bottom: 3em; }
+		min-height: 430px;
 	}
 
 	.home .team-member .image img { max-height: 198px;}
