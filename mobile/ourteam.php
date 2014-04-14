@@ -28,7 +28,7 @@ $page = 'Our Team';
 	.outline { outline: 1px solid rgba(255, 0, 0, 0.2);}
 	.outline-button {position: fixed; z-index: 1000; bottom:100px; left:100px;}
 	/* Swipe works with mouse as well but often causes text selection. */
-	#demo-page * {
+	#ourteam * {
 	    -webkit-user-select: none;
 	    -moz-user-select: none;
 	    -ms-user-select: none;
@@ -50,6 +50,9 @@ $page = 'Our Team';
 	<script src="js/"></script>
 
 	<script src="heard/js/lib/underscore-min.js"></script>
+
+	<script src="heard/js/lib/jquery.unveil.min.js"></script>
+
 	<script src="heard/js/lib/jquery.hoverIntent.js"></script>
 	<script src="heard/js/lib/jquery.cluetip.js"></script>
 	<script src="heard/js/functions.js"></script>
@@ -82,9 +85,9 @@ $page = 'Our Team';
 	</script>
 </head>
 
-<body class="ui-mobile-viewport ui-overlay-a">
+<body class="ui-mobile-viewport ui-overlay-a ourteam">
 
-	<div data-role="page" id="demo-page" data-url="demo-page">
+	<div data-role="page" id="ourteam" data-url="ourteam">
 	    
 	    <!-- MAIN NAV -->
 	    <?php include('heard/php/new-main-nav.php'); ?>
@@ -114,7 +117,7 @@ $page = 'Our Team';
 	</div>
 
 	<script>
-	$( document ).on( "pagecreate", "#demo-page", function() {
+	$( document ).on( "pagecreate", "#ourteam", function() {
 
 		// INIT VARS
 		var $memBioName = $('#member-bio .name');
@@ -166,6 +169,8 @@ $page = 'Our Team';
 
 			// ADD CLUE TIP
 	        initClueTip();
+
+	        $("img").unveil(1200);
 	    });
 
 

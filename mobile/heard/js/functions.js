@@ -46,19 +46,21 @@ function Item(data) {
     this.ownerId = data.ownerId;
     this.ownerSex = data.ownerSex;
 
+    var blankGif = '../images/sprites/loader.gif';
+
     //  TEST IF ITEM HAS COORDS
     if(data.coords) { 
         this.coords = data.coords;
         usemap = this.ownerId + this.id;
         li = $('<li/>', {'class':this.id + ' '+'item'});
-        img = $('<img/>', { 'src':this.image,/*'src':blankGif,*/'alt':this.name, 'usemap':'#' + usemap, 'data-src':this.image});
+        img = $('<img/>', { 'src':blankGif,/*'src':blankGif,*/'alt':this.name, 'usemap':'#' + usemap, 'data-src':this.image});
         map = $('<map/>', {'id':usemap,'name':usemap,'class':'map-link','data-person':this.ownerId});
         area = $('<area/>', {'href':'#','shape':'poly','coords':this.coords,'alt':this.id,'data-person':this.ownerId,'data-item':this.id,"title": "|" + "|" + this.owner + "\'s" + "|" + this.owner + "|" + this.bio + "|" + "<label for='"+this.ownerId+"-"+this.id+"' class='permalink'>> View " + this.ownerSex + " stuff</label><input type='radio' name='"+this.owner+"' id='"+this.ownerId+"-"+this.id+"' value='"+this.ownerId+"'>",'class':'cluetip-div'});
         // APPEND TO LI
         map.append(area); img.appendTo(li); li.append(map);
     } else {
         li = $('<li/>', {'class':this.id + ' '+'item'});
-        img = $('<img/>', { 'src':this.image,/*'src':blankGif,*/'alt':this.name, 'data-src':this.image});
+        img = $('<img/>', { 'src':blankGif,/*'src':blankGif,*/'alt':this.name, 'data-src':this.image});
         a = $('<a/>', {href:'#','data-person':this.ownerId,'data-item': this.id,"title": "|" + "|" + this.owner + "\'s" + "|" + this.name + "|" + this.bio + "|" + "<label for='"+this.ownerId+"-"+this.id+"' class='permalink'>> View " + this.ownerSex + " stuff</label><input type='radio' name='"+this.owner+"' id='"+this.ownerId+"-"+this.id+"' value='"+this.ownerId+"'>",'class':'cluetip-div'});
         // APPEND TO LI
         img.appendTo(a);

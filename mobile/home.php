@@ -132,7 +132,7 @@ $page = 'Home';
 		var preloadAnim = $('#preload-anim');
 		var animHolder = $('#anim-holder');
 		// CHECK FOR MOBILE OR DESK SIZE
-	    // if(device == 'desk') {
+	    if(device == 'desk') {
         $(function() {
             var count = 20001;
             var spritePre = 'sprite-pre_loader';
@@ -157,7 +157,7 @@ $page = 'Home';
             var timeout = setInterval(animPreLoader, 32);
             animPreLoader();
            });
-        // }
+        }
 
 		// INIT VARS
 		var $marqueeSlider = $('#marquee-slider');
