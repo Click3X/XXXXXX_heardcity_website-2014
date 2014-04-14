@@ -1,0 +1,431 @@
+.all-items-holder {
+	position: relative;
+}
+
+.all-items {
+	height: 12390px;
+	padding:0; margin: 0;
+}
+
+.js-sinlge-member .all-items {
+	height: 863px;
+}
+
+.item { position: absolute; }
+
+li.item.beardoll.philiploeb {
+	top: 31.8%; left: 14.9%;
+}
+
+li.item.baseball.garynoel {
+	top: 0.87%; left: 40%;
+}
+
+li.item.skiboots.corymelious {
+	top: 2.1%; left: 26%;	
+}
+
+li.item.poster.gloriapitagorsky {
+	top: 0.5%; left: 56%;
+}
+
+li.item.lipstick.peonyrene {
+	top: 3%; left: 62.5%;
+}
+
+li.item.fishinglure.keithreynaud {
+	top: 3.2%; left: 78%;
+}
+
+li.item.hasselblad.garynoel {
+	top: 3.9%; left: 62%;
+}
+
+li.item.taiwanbeer.jeremysiegal {
+	top: 0.45%; left: 79.1%;
+}
+
+li.item.guitar.elizabethmcclanahan {
+	top: 5.3%; left: 7.5%;
+}
+
+li.item.coral.garynoel {
+	top: 7.6%; left: 66%;
+}
+
+li.item.readingglasses.elizabethmcclanahan {
+	top: 7.1%; left: 51%;
+}
+
+li.item.book.jodilevine {
+	top: 8.4%; left: 13.5%;
+}
+
+li.item.montaukmagnet.gloriapitagorsky {
+	top: 8.4%; left: 41.5%;
+}
+
+li.item.zagat.gloriapitagorsky {
+	top: 9.8%; left: 35.5%;
+}
+
+li.item.passport.sashaawn {
+	top: 9.65%; left: 76.5%;
+}
+
+li.item.librarycard.elizabethmcclanahan {
+	top: 10.3%; left: 67%;
+}
+
+li.item.recorder.corymelious {
+	top: 11.2%; left: 14.5%;
+}
+
+li.item.rings.jodilevine {
+	top: 11.4%; left: 33%;
+}
+
+li.item.bapexbyabathingape.jeremysiegal {
+	top: 11.8%; left: 57%;
+}
+
+li.item.tvguide.elizabethmcclanahan {
+	top: 14.4%; left: 19%;
+}
+
+li.item.wacom.garynoel {
+	top: 14.48%; left: 41%;
+}
+
+li.item.boo.ericwarzecha {
+	top: 14.1%; left: 48%;
+}
+
+li.item.barn.keithreynaud {
+	top: 14.1%; left: 75%;
+}
+
+li.item.fly.corymelious {
+	top: 15.65%; left: 77.2%;
+}
+
+li.item.yogamat.elizabethmcclanahan {
+	top: 16.95%; left: 15%;
+}
+
+li.item.watch.danflosdorf {
+	top: 16.9%; left: 78.9%;
+}
+
+li.item.drumsticks.evanmangiamele {
+	top: 18.2%; left: 10%;
+}
+
+li.item.castironpan.keithreynaud {
+	top: 19.3%; left: 10.7%;
+}
+
+li.item.smashedpenny.philiploeb {
+	top: 19.175%; left: 53.5%;
+}
+
+li.item.leela.evanmangiamele {
+	top: 20.1%; left: 47.5%
+}
+
+li.item.campingstove.corymelious {
+	top: 18.65%; left: 66%;
+}
+
+li.item.sabresjersey.ericwarzecha {
+	top: 22.1%; left: 15%;
+}
+
+li.item.mouse.garynoel {
+	top: 25.9%; left: 19%;
+}
+
+li.item.amctrailguide.garynoel {
+	left: 78.5%; top: 26.75%;
+}
+
+li.item.homebrewbook.corymelious {
+	top: 11.7%; left: 75%;
+}
+
+li.item.s1991nikeairjordanvi.jeremysiegal {
+	top: 27.7%; left: 29.8%;
+}
+
+li.item.drumsticks.corymelious {
+	top: 28.6%; left: 20%;
+}
+
+li.item.gameboy.evanmangiamele {
+	top: 29%; left: 75.6%;
+}
+
+li.item.rug.jodilevine {
+	top: 31.4%; left: 43%;
+}
+
+li.item.growler.evanmangiamele {
+	top:.57%; left:11.5%;
+}
+
+li.item.bracelet.gloriapitagorsky {
+	top: 34.8%; left: 40%;
+}
+
+li.item.snowboard.danflosdorf {
+	top: 35%; left: 62.5%;
+}
+
+li.item.firesticks.garynoel {
+	top: 36.2%; left: 13%;
+}
+
+li.item.ambushpowchain.jeremysiegal {
+	top: 36.6%; left: 40.3%;
+}
+
+li.item.controller.evanmangiamele {
+	// top: 43.85%; left: 35.7%;
+	top: 43.7%; left: 37%;
+}
+
+li.item.soccerclete.katieflynn {
+	top: 43.4%; left: 15%;
+}
+
+li.item.linushueycassette.philiploeb {
+	top: 47.1%; left: 70.2%;
+}
+
+li.item.q102tshirt.philiploeb {
+	top: 47.1%; left: 19%;
+}
+
+li.item.yuengling.danflosdorf {
+	top: 47.9%; left: 49.5%;
+}
+
+li.item.cassette.philiploeb {
+	top: 48.7%; left: 67.2%;
+}
+
+li.item.brunomars.peonyrene {
+	top: 50.7%; left: 27%;
+}
+
+li.item.film.katieflynn {
+	top: 50%; left: 60%;
+}
+
+li.item.floraldress.sashaawn {
+	top: 52.5%; left: 12%;
+}
+
+li.item.scarf.gloriapitagorsky {
+	top: 52.25%; left: 52%;
+}
+
+li.item.minorthreat.ericwarzecha {
+	top: 54.8%; left: 54%;
+}
+
+li.item.pouch.jodilevine {
+	top: 57.3%; left: 59%;
+}
+
+li.item.retinamacbookpro.jeremysiegal {
+	top: 59%; left: 9.5%;
+}
+
+li.item.turkey.philiploeb {
+	top: 59%; left: 57%;
+}
+
+li.item.pandorabracelet.peonyrene {
+	top: 61.3%; left: 51%;
+}
+
+li.item.beachbum.taliarodgers {
+	top: 61.2%; left: 65%;
+}
+
+li.item.trapezegrips.sashaawn {
+	top: 62.25%; left: 55.5%;
+}
+
+li.item.painting.philiploeb {
+	top: 62%; left: 11%;
+}
+
+li.item.theremin.sashaawn {
+	top: 63.55%; left: 12.5%;
+}
+
+li.item.bag.peonyrene {
+	top: 64.6%; left: 63%;
+}
+
+li.item.carfridge.keithreynaud {
+	top: 66.3%; left: 42.5%;
+}
+
+li.item.ipadipodiphone.peonyrene {
+	top: 66.2%; left: 16%;
+}
+
+li.item.necklace.peonyrene {
+	top: 67.8%; left: 5%;
+}
+
+li.item.rum.keithreynaud {
+	top: 70.9%; left: 15%;
+}
+
+li.item.jayson.gloriapitagorsky {
+	top: 70.6%; left: 55%;		
+}
+
+li.item.guitar.ericwarzecha {
+	top: 71.9%; left: 14.5%;
+}
+
+li.item.kanyewest.jeremysiegal {
+	top: 74%; left: 8.5%;
+}
+
+li.item.hockeystick.danflosdorf {
+	top: 74.7%; left: 70%;
+}
+
+li.item.tanktop.taliarodgers {
+	top: 76.7%; left: 41%;
+}
+
+li.item.elephantfigure.gloriapitagorsky {
+	top: 76.5%; left: 15%;
+}
+
+li.item.books.taliarodgers {
+	top: 78.15%; left: 16%;
+}
+
+li.item.hammer.corymelious {
+	top: 80.45%; left: 13.5%;
+}
+
+li.item.pizza.katieflynn {
+	top: 81.15%; left: 35%;
+}
+
+li.item.necklace.katieflynn {
+	top: 83.7%; left: 18.25%;
+}
+
+li.item.yogamat.jodilevine {
+	top: 84.5%; left: 40%;
+}
+
+li.item.knittingneedle.jodilevine {
+	top: 86.6%; left: 19%;
+}
+
+li.item.blade.keithreynaud {
+	top: 87.3%; left: 19%;
+}
+
+li.item.minnieripperton.taliarodgers {
+	top: 86.5%; left: 55%;
+}
+
+li.item.flowers.gloriapitagorsky {
+	top: 88.8%; left: 49.5%;
+}
+
+li.item.ring.gloriapitagorsky {
+	top: 89.45%; left: 43.5%;
+}
+
+li.item.boardbinder.gloriapitagorsky {
+	top: 90.4%; left: 18.5%;
+}
+
+li.item.nikefreehyperfeels.taliarodgers {
+	top: 91%; left: 52.5%;
+}
+
+li.item.chargersjersey.katieflynn {
+	top: 93.15%; left: 20%;
+}
+
+li.item.comics.taliarodgers {
+	top: 93.6%; left: 60%;
+}
+
+li.item.plasticbaby.keithreynaud {
+	top: 97%; left: 44.5%;
+}
+
+li.item.bikepedal.sashaawn {
+	top: 96.65%; left: 57.5%;
+}
+
+li.item.grillutensils.garynoel {
+	top: 97%; left: 23%;
+}
+
+li.item.seeds.jodilevine {
+	top: 97.8%; left: 53%;
+}
+
+li.item.carkeys.peonyrene {
+	top: 100.25%; left: 39.5%;
+}
+
+li.item.nytimes.gloriapitagorsky {
+	top: 100.1%; left: 70.5%;
+}
+
+li.item.necklace.gloriapitagorsky {
+	top: 102%; left: 44.5%;
+}
+
+li.item.saintsjersey.elizabethmcclanahan {
+	top: 104.35%; left: 41.5%;
+}
+
+li.item.skateboard.danflosdorf {
+	top: 102.35%; left: 72.5%;
+}
+
+li.item.toy.taliarodgers {
+	top: 104.4%; left: 21.5%;
+}
+
+li.item.sneakers.jodilevine {
+	top: 108.4%; left: 20%;
+}
+
+li.item.drill.katieflynn {
+	top: 108.7%; left: 59%;
+}
+
+li.item.whisk.katieflynn {
+	top: 109.6%; left: 58%;
+}
+
+li.item.telluridepicture.ericwarzecha {
+	top: 112%; left: 18%;
+}
+
+li.item.shaker.corymelious {
+	top: 12.5%; left: 35%;
+}
+
+li.item.sampler.jeremysiegal {
+	top: 101.85%; left: 20%;
+}

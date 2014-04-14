@@ -21,6 +21,7 @@ $page = 'Our Team';
 	<link rel="stylesheet" href="heard/css/footer.css">
 	<link rel="stylesheet" href="heard/css/nav.css">
 	<link rel="stylesheet" href="heard/css/items.css">
+	<link rel="stylesheet" href="heard/css/items-positions.css">
 	<link rel="stylesheet" href="heard/css/cluetip.css">
 
 
@@ -200,6 +201,9 @@ $page = 'Our Team';
 				recentlyClicked.push(items[i]);
 			}
 
+			$('.all-items').css('height', '863px');
+			// $('img').trigger('unveil');
+
 			// ADD CLUE TIP
 	        initClueTip();
 		});
@@ -230,9 +234,48 @@ $page = 'Our Team';
 				}
 			}
 
+			$('.all-items').css('height', '12390px');
+			// $('img').unveil(1200);
+
 			// ADD CLUE TIP
 	        initClueTip();
 		});
+
+
+
+		////////////////////// RANK POSITIONS
+		// $(function() {
+		// 	setTimeout(	function() {
+		// 		var items = $('#all-items li');
+
+		// 		$.each(items, function(i) { 
+		// 			var classes = items[i].className;
+		// 			classes = classes.split(" ");
+		// 			console.log('These are classes: ' + classes); console.dir(classes);
+
+		// 			// build combo num
+		// 			var item = items[i]; 
+		// 			console.log( 'This is item: ' + item); console.dir(item); 
+		// 			var top = item.offsetTop; 
+		// 			console.log('This is top: '+top); 
+		// 			var left = item.offsetLeft; 
+		// 			console.log('This is left: ' + left); 
+		// 			var combo = top + left; 
+		// 			console.log('This is combo: '+combo); 
+
+		// 			$.each(memberArray, function(i) {
+		// 				console.log('This is memberArray' + memberArray); console.dir(memberArray);
+		// 				var memId = memberArray[i].id;
+
+						
+
+		// 			})
+		// 		});
+
+
+
+		// 	}, 5000);
+		// });
 
 
  
