@@ -5,7 +5,7 @@ require_once('heard/php/functions.php');
 <!DOCTYPE html>
 <html class="ui-mobile">
 	<head>
-	<base href="http://mobile.dev/">
+	<base href="<?php echo $BASE; ?>">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Heard City Mobile Tests</title>
