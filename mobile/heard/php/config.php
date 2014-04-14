@@ -6,6 +6,7 @@ if($address == '69.25.178.3') {
 	
 	$BASE = 'http://staging.click3x.com/heardcity/mobile/';      
 } else {
+	// $BASE = 'http://heard-stage.dev/mobile/';
 	$BASE = 'http://mobile.dev/';
 }
 

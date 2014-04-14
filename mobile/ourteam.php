@@ -1,14 +1,16 @@
 <?php 
 require_once('heard/php/config.php');
 require_once('heard/php/functions.php');
+
+$page = 'Our Team';
 ?>
 <!DOCTYPE html>
 <html class="ui-mobile">
 	<head>
-	<base href="<?php echo $BASE; ?>">
+	<!-- <base href="<?php echo $BASE; ?>"> -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Heard City Mobile Tests</title>
+	<title>Heard City | <?php echo $page; ?></title>
 	
 	<link rel="shortcut icon" href="demos/favicon.ico">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
@@ -67,7 +69,7 @@ require_once('heard/php/functions.php');
 	<script>
 		$(function(){
 			$("[data-role='navbar']").navbar();
-			$("[data-role='header'], [data-role='footer']").toolbar();
+			// $("[data-role='header'], [data-role='footer']").toolbar();
 		});
 	</script>
 
@@ -83,23 +85,9 @@ require_once('heard/php/functions.php');
 <body class="ui-mobile-viewport ui-overlay-a">
 
 	<div data-role="page" id="demo-page" data-url="demo-page">
-	    <div data-role="header" data-theme="b" class="clearfix">
-	        <nav id="mobile">
-
-			    <div id="toggle-bar">
-			    	<a class="navicon mtoggle" href="#">☰</a>
-			        <a href="#right-panel" data-icon="carat-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="right-arrow">&lt;</a>
-			    </div>
-			 
-			    <ul id="mmenu">
-			        <li><a href="#">Home</a></li>
-			        <li><a href="#">Products</a></li>
-			        <li><a href="#">About</a></li>
-			        <li><a href="#">Contact</a></li>           
-			    </ul>
-			 
-			</nav>
-	    </div><!-- /header -->
+	    
+	    <!-- MAIN NAV -->
+	    <?php include('heard/php/new-main-nav.php'); ?>
 
 
 	    <!-- MAIN CONTENT -->
