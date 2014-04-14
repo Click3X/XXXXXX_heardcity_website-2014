@@ -4,7 +4,7 @@
 $address = $_SERVER['SERVER_ADDR'];
 if($address == '69.25.178.3') {
 	
-	$BASE = 'http://staging.click3x.com/heardcity/';      
+	$BASE = 'http://staging.click3x.com/heardcity/mobile/';      
 } else {
 	$BASE = 'http://mobile.dev/';
 }
