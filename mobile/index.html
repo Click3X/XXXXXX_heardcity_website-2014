@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="ui-mobile">
+	<head>
+	<base href="http://mobile.dev/">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Heard City Mobile Tests</title>
+	
+	<link rel="shortcut icon" href="demos/favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile.css">
+	<link rel="stylesheet" href="demos/_assets/css/jqm-demos.css">
+
+	<style>
+	.outline { outline: 1px solid rgba(255, 0, 0, 0.2);}
+	.outline-button {position: fixed; z-index: 100; bottom:100px; left:100px;}
+	</style>
+	
+	<script src="external/jquery/jquery.js"></script>
+	<script src="demos/_assets/js/"></script>
+	<script src="js/"></script>
+	<script>
+		$(function(){
+			$("[data-role='navbar']").navbar();
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+	</script>
+
+	<script>
+		$(function() {
+			$('<input/>', {'id':'outline','type':'button', 'value':'outline', 'class':'outline-button'}).appendTo('body').click(function() {
+				$('*').toggleClass('outline');
+			})
+		});
+	</script>
+</head>
+
+<body class="ui-mobile-viewport ui-overlay-a">
+
+    <div data-role="header" data-position="fixed" data-theme="a" role="banner" class="ui-header ui-bar-a ui-header-fixed slidedown">
+        <div data-role="collapsible">
+        	<h4>Heading</h4>
+		    <ul class="ui-grid-c">
+				<li class="ui-block-a"><a href="index.php" data-prefetch="true" data-transition="none" class="ui-btn">Home</a></li>
+				<li class="ui-block-b"><a href="page-b.php" data-prefetch="true" data-transition="flip" class="ui-btn">Projects</a></li>
+				<li class="ui-block-c"><a href="page-c.php" data-prefetch="true" data-transition="turn" class="ui-btn">Our Team</a></li>
+				<li class="ui-block-d"><a href="page-d.php" data-prefetch="true" data-transition="slide" class="ui-btn">Contact</a></li>
+			</ul>
+		</div>
+    </div><!-- /header -->
+
+
+	<div data-role="page" class="jqm-demos ui-page ui-page-theme-a ui-page-active ui-page-header-fixed ui-page-footer-fixed" data-url="/demos/toolbar-fixed-persistent-optimized/" tabindex="0" style="padding-top: 44px; padding-bottom: 35px; min-height: 584px;">
+
+	    <div class="ui-content jqm-content jqm-fullwidth" role="main">
+
+			<h1>Heard City Mobile Tests</h1>
+
+			<p>These pages have been optimized on the server side to check if the request is coming from an Ajax request and if so they only send the actual page div instead fo the entire page. If you navigate to any of the pages in the nav bar at the bottom and inspect the return data you will see it contains no head, toolbars, html tag, or body tag.</p>
+
+			<p>However if you refresh the page all of these things will be present. This is done by checking the HTTP_X_REQUESTED_WITH header </p>
+
+			<p>All of the markup not needed when being requested via Ajax is wrapped in if statements like the one above.</p>
+
+		</div><!-- /content -->
+
+	</div><!-- /page -->
+
+	<!-- /footer -->
+
+	<div class="ui-loader ui-corner-all ui-body-a ui-loader-default">
+		<span class="ui-icon-loading"></span>
+		<h1>loading</h1>
+	</div>
+
+<!-- 	<div data-role="footer" data-position="fixed" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a ui-footer-fixed slideup">
+		<div data-role="navbar" class="ui-navbar" role="navigation">
+			<ul class="ui-grid-c">
+				<li class="ui-block-a"><a href="index.php" data-prefetch="true" data-transition="none" class="ui-btn">Info</a></li>
+				<li class="ui-block-b"><a href="page-b.php" data-prefetch="true" data-transition="flip" class="ui-btn">Friends</a></li>
+				<li class="ui-block-c"><a href="page-c.php" data-prefetch="true" data-transition="turn" class="ui-btn">Albums</a></li>
+				<li class="ui-block-d"><a href="page-d.php" data-prefetch="true" data-transition="slide" class="ui-btn">Emails</a></li>
+			</ul>
+		</div> --><!-- /navbar -->
+	</div>
+</body>
+</html>
