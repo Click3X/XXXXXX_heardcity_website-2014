@@ -4,6 +4,10 @@
 	/*height: 11895px;*/
 }
 
+#home #main {
+	max-width:none;
+}
+
 #toggle-bar {
 	text-align: center;
 }
@@ -20,7 +24,7 @@
 	background-color: #222;
 
 }
-
+/*
 .ourteam #main {
 	padding-top:50px;
-}
+}*/

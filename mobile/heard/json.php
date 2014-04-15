@@ -21,11 +21,12 @@ foreach ($members as $key => $member) {
   $jsonMembers[$key]['bio'] = $member_bio;
   $jsonMembers[$key]['sex'] = $sex;
   $jsonMembers[$key]['items'] = $items;
-  $jsonMembers[$key]['member_class'] = $member_class;
+  $jsonMembers[$key]['id'] = $member_class;
     
   foreach ($items as $key => $item) {
         if($item['image']) {
             $image = $item['image'];
+            $position = $item['position'];
             $info = pathinfo($image);
             $usemap = $info['filename'];
 

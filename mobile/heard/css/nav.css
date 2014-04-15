@@ -13,6 +13,10 @@ a.right-arrow.ui-link {
 position: absolute; right:0;
 }
 
+.center-toggle {
+	cursor: pointer;
+}
+
 nav#mobile .navicon {
 	padding: 0 12px;
 	position: absolute; left:0;
@@ -47,9 +51,10 @@ nav#mobile #toggle-bar a {
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
-	line-height: 50px;
+	line-height: 35px;
 	text-shadow:none;
 	color:black;
+	letter-spacing: .2em;
 }
 
 #mobile {

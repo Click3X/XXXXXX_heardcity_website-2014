@@ -3,8 +3,15 @@
 }
 
 .all-items {
-	height: 12390px;
-	padding:0; margin: 0;
+	/*height: 12390px;*/
+	padding-bottom:1209.96%;
+	margin: 0;
+}
+
+@media(min-width:1020px) {
+	.all-items {
+		padding-bottom:12390px;
+	}
 }
 
 .js-sinlge-member .all-items {
