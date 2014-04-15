@@ -48,20 +48,25 @@ function Item(data) {
     this.ownerSex = data.ownerSex;
 
     var blankGif = '../images/sprites/loader.gif';
+    var imgSource = '';
+
+    if(this.position < 20) {
+        imgSource = this.image;
+    } else { imgSoure = blankGif;}
 
     //  TEST IF ITEM HAS COORDS
     if(data.coords) { 
         this.coords = data.coords;
         usemap = this.ownerId + this.id;
         li = $('<li/>', {'class':this.id + ' ' + this.ownerId +' item'});
-        img = $('<img/>', { 'src':blankGif,/*'src':blankGif,*/'alt':this.name, 'usemap':'#' + usemap, 'data-blank':blankGif, 'class':'lazy', 'data-src':this.image});
+        img = $('<img/>', { 'src':imgSource,/*'src':blankGif,*/'alt':this.name, 'usemap':'#' + usemap, 'data-blank':blankGif, 'class':'lazy', 'data-original':this.image});
         map = $('<map/>', {'id':usemap,'name':usemap,'class':'map-link','data-person':this.ownerId});
         area = $('<area/>', {'href':'#','shape':'poly','coords':this.coords,'alt':this.id,'data-person':this.ownerId,'data-item':this.id,"title": "|" + "|" + this.owner + "\'s" + "|" + this.owner + "|" + this.bio + "|" + "<label for='"+this.ownerId+"-"+this.id+"' class='permalink'>> View " + this.ownerSex + " stuff</label><input type='radio' name='"+this.owner+"' id='"+this.ownerId+"-"+this.id+"' value='"+this.ownerId+"'>",'class':'cluetip-div'});
         // APPEND TO LI
         map.append(area); img.appendTo(li); li.append(map);
     } else {
         li = $('<li/>', {'class':this.id + ' ' + this.ownerId +' item'});
-        img = $('<img/>', { 'src':blankGif,/*'src':blankGif,*/'alt':this.name, 'data-blank':blankGif, 'class':'lazy', 'data-src':this.image});
+        img = $('<img/>', { 'src':imgSource,/*'src':blankGif,*/'alt':this.name, 'data-blank':blankGif, 'class':'lazy', 'data-original':this.image});
         a = $('<a/>', {href:'#','data-person':this.ownerId,'data-item': this.id,"title": "|" + "|" + this.owner + "\'s" + "|" + this.name + "|" + this.bio + "|" + "<label for='"+this.ownerId+"-"+this.id+"' class='permalink'>> View " + this.ownerSex + " stuff</label><input type='radio' name='"+this.owner+"' id='"+this.ownerId+"-"+this.id+"' value='"+this.ownerId+"'>",'class':'cluetip-div'});
         // APPEND TO LI
         img.appendTo(a);
