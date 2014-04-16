@@ -655,16 +655,21 @@ a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
 }
 
 /* line 11, ../sass/ourteam/_ourteam-base.scss */
+a {
+  font-weight: 400;
+}
+
+/* line 13, ../sass/ourteam/_ourteam-base.scss */
 #ourteam > div.ui-panel-content-wrap.ui-body-b.ui-panel-animate.ui-panel-content-wrap-closed {
   background: #ffffff;
 }
 
-/* line 16, ../sass/ourteam/_ourteam-base.scss */
+/* line 18, ../sass/ourteam/_ourteam-base.scss */
 #rightpanel {
   z-index: 999;
 }
 
-/* line 20, ../sass/ourteam/_ourteam-base.scss */
+/* line 22, ../sass/ourteam/_ourteam-base.scss */
 #rightpanel,
 .ui-panel-inner {
   background-image: none;
@@ -672,59 +677,59 @@ a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
 }
 
 @media (min-width: 600px) {
-  /* line 27, ../sass/ourteam/_ourteam-base.scss */
+  /* line 29, ../sass/ourteam/_ourteam-base.scss */
   .desk-hidden {
     display: none;
   }
 
-  /* line 31, ../sass/ourteam/_ourteam-base.scss */
+  /* line 33, ../sass/ourteam/_ourteam-base.scss */
   #member-fixed {
     padding-top: 50px;
   }
 }
-/* line 38, ../sass/ourteam/_ourteam-base.scss */
+/* line 40, ../sass/ourteam/_ourteam-base.scss */
 #ourteam > div.ui-panel-content-wrap {
   background: #fff;
   background-image: none;
 }
 
-/* line 43, ../sass/ourteam/_ourteam-base.scss */
+/* line 45, ../sass/ourteam/_ourteam-base.scss */
 #rightpanel {
   border-left: 1px solid #999999;
 }
 
-/* line 47, ../sass/ourteam/_ourteam-base.scss */
+/* line 49, ../sass/ourteam/_ourteam-base.scss */
 #toppaneloverlay {
   max-height: none;
   padding-top: 42px;
 }
 
-/* line 52, ../sass/ourteam/_ourteam-base.scss */
+/* line 54, ../sass/ourteam/_ourteam-base.scss */
 #toppaneloverlay > div {
   padding: 0;
 }
 
-/* line 57, ../sass/ourteam/_ourteam-base.scss */
+/* line 59, ../sass/ourteam/_ourteam-base.scss */
 #ourteam > div.ui-header {
   border-bottom: 1px solid #999999 !important;
   z-index: 2000;
 }
 
-/* line 62, ../sass/ourteam/_ourteam-base.scss */
+/* line 64, ../sass/ourteam/_ourteam-base.scss */
 #ourteam > div.ui-header h1 {
   font-size: 13px;
   margin: 0;
   line-height: 42px;
 }
 
-/* line 69, ../sass/ourteam/_ourteam-base.scss */
+/* line 71, ../sass/ourteam/_ourteam-base.scss */
 #ourteam > div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-panel-content-fixed-toolbar-closed.ui-header-fixed.slidedown > a,
 #ourteam > div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-panel-content-fixed-toolbar-closed.ui-header-fixed.slidedown > a > span {
   border: 0;
   border-image: none;
 }
 
-/* line 87, ../sass/ourteam/_ourteam-base.scss */
+/* line 89, ../sass/ourteam/_ourteam-base.scss */
 div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-header-fixed.slidedown.ui-panel-content-fixed-toolbar-position-right.ui-panel-content-fixed-toolbar-display-overlay.ui-panel-content-fixed-toolbar-open,
 #ourteam > div.ui-header > a,
 #ourteam > div.ui-header,
@@ -748,7 +753,7 @@ div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-header
   border-radius: 0;
 }
 
-/* line 103, ../sass/ourteam/_ourteam-base.scss */
+/* line 105, ../sass/ourteam/_ourteam-base.scss */
 #page-ourteam > p > a,
 #page-projects > p > a,
 #page-contact > p > a,
