@@ -98,10 +98,14 @@ function initClueTip() {
     if(device == 'desk') {
         deviceWidth = 400;
         openSpeed = 400;
+    } else if(device == 'ipad') {
+        deviceWidth = 400;
+        openSpeed = 0;
     } else { 
         deviceWidth = 280;
         openSpeed = 0;
     }
+    
     $('.cluetip-div').cluetip({
         splitTitle: '|', // use the invoking element's title attribute to populate the clueTip...
                          // ...and split the contents into separate divs where there is a "|"
