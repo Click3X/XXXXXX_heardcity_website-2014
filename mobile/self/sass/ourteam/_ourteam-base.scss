@@ -1,0 +1,105 @@
+a.ui-btn.ui-btn-inline.ui-btn-up-b.sidebar-link,
+a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
+	font-family: 'trackregular' sans-serif;
+	color: #989899;
+	font-size: 12px;
+	text-shadow:none;
+	border: 0;
+	background: none;
+}
+
+#ourteam > div.ui-panel-content-wrap.ui-body-b.ui-panel-animate.ui-panel-content-wrap-closed {
+	background: #ffffff;
+}
+
+
+#rightpanel {
+	z-index:999;
+}
+#rightpanel,
+.ui-panel-inner {
+	background-image: none;
+	background-color:#fff;
+}
+
+
+@media(min-width: 600px) {
+	.desk-hidden {
+		display: none;
+	}
+
+	#member-fixed {
+		padding-top:50px;
+	}
+}
+
+
+
+#ourteam > div.ui-panel-content-wrap {
+	background: #fff;
+	background-image:none;
+}
+
+#rightpanel {
+	border-left: 1px solid #999999;
+}
+/////////////////////////////// NAVIGATION ///////////////////////////
+#toppaneloverlay {
+	max-height: none;
+	padding-top: 42px;
+}
+
+#toppaneloverlay > div {
+	padding:0;
+}
+
+// #ourteam > div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-header-fixed.slidedown.ui-panel-content-fixed-toolbar-position-right.ui-panel-content-fixed-toolbar-display-overlay.ui-panel-content-fixed-toolbar-open,
+#ourteam > div.ui-header {
+border-bottom: 1px solid rgb(153, 153, 153) !important;
+z-index: 2000;
+}
+
+#ourteam > div.ui-header h1 {
+	font-size: 13px;
+	margin: 0;
+	line-height: 42px;
+}
+
+#ourteam > div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-panel-content-fixed-toolbar-closed.ui-header-fixed.slidedown > a,
+#ourteam > div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-panel-content-fixed-toolbar-closed.ui-header-fixed.slidedown > a > span {
+	border:0;
+	border-image:none;
+}
+
+div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-header-fixed.slidedown.ui-panel-content-fixed-toolbar-position-right.ui-panel-content-fixed-toolbar-display-overlay.ui-panel-content-fixed-toolbar-open,
+// #ourteam > div.ui-header.ay.ui-panel-content-fixed-toolbar-open,
+// #ourteam > div.ui-header > a,
+#ourteam > div.ui-header > a,
+#ourteam > div.ui-header,
+// #ourteam > div.ui-header.-display-overlay,
+#ourteam > div.ui-header > a > span > span,
+#ourteam > div.ui-header > a > span,
+#page-ourteam > p > a > span,
+#page-projects > p > a > span,
+#page-contact > p > a > span,
+#page-home > p > a > span,
+div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-header-fixed.slidedown.ui-panel-content-fixed-toolbar-closed,
+#ourteam > div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-header-fixed.slidedown.ui-fixed-hidden.ui-panel-content-fixed-toolbar-position-top.ui-panel-content-fixed-toolbar-display-overlay.ui-panel-content-fixed-toolbar-open {
+	border:0;
+	background-color: #e0e0e2;
+	background-image: none;
+	text-shadow: none;
+	color:#222;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-family: 'trackregular' sans-serif;
+	border-radius: 0;
+}
+
+#page-ourteam > p > a,
+#page-projects > p > a,
+#page-contact > p > a,
+#page-home > p > a {
+	border:0;
+}

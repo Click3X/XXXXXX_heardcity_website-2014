@@ -5,4 +5,26 @@
 
 @import "compass/reset";
 
+@import "compass";
+
+
+// FONTS
+@font-face {
+    font-family: 'trackregular';
+    src: url('fonts/track-webfont.eot');
+    src: url('fonts/track-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/track-webfont.woff') format('woff'),
+         url('fonts/track-webfont.ttf') format('truetype'),
+         url('fonts/track-webfont.svg#trackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+// BASE 
+@import "base";
+
+// OURTEAM
 @import "ourteam/items-solo";
+
+@import "ourteam/ourteam-base";

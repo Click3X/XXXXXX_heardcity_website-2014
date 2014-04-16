@@ -4,7 +4,7 @@
     <div id="member-button" class="menu-button one-page active">
         <!-- <div>☰</div> -->
         <!-- <div>&nbsp;</div> -->
-        <span id="member-title" class="page-title all-members">Heard City</span>
+        <span id="member-title" class="page-title all-members desk-hidden">Heard City</span>
     </div>
     <nav>
         <ul id="member-fixed" data-breakpoint="600" class="flexnav with-js opacity sm-screen flexnav-hide one-page">

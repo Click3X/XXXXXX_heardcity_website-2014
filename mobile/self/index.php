@@ -145,7 +145,7 @@ $class = formatLink($page);
 			
 			<!-- HEADER -->
 			<div data-role="header" data-position="fixed">
-				<a href="#toppaneloverlay" data-role="button" data-rel="panel" data-dismissible="true">Open top overlay</a>
+				<a href="#toppaneloverlay" data-role="button" data-rel="panel" data-dismissible="true">☰</a>
 				<h1><?php echo $page; ?></h1>
 			</div><!-- /header --> 
 	
