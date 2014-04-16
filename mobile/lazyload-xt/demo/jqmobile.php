@@ -26,7 +26,7 @@ $page = 'Our Team';
 
     <script src="../libs/jquery/jquery.js"></script>
     <script src="../libs/jquery-mobile/jquery.mobile-1.3.2.js"></script>
-    <script src="../dist/jquery.lazyloadxt.js"></script>
+    <script src="../new-dist/jquery.lazyloadxt.js"></script>
 
     
 </head>
