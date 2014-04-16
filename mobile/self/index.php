@@ -24,6 +24,12 @@ $class = formatLink($page);
 		<link rel="stylesheet" href="css/cluetip/jquery.cluetip.css" />
 		<link rel="stylesheet" href="css/cluetip.css" />
 
+		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+		<!--[if IE]>
+		  <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<![endif]-->
+
 		<style>
 		ul {padding-left:0; margin:0;}
 		li {list-style-type: none;}
@@ -50,6 +56,9 @@ $class = formatLink($page);
 			color:#000;
 		}
 
+		#ourteam > div.ui-panel-content-wrap.ui-body-b.ui-panel-animate.ui-panel-content-wrap-closed > div.ui-content {
+				padding-top:42px;
+			}
 
 		@media(min-width: 600px) {
 			.sidebar-button-holder {
@@ -58,6 +67,11 @@ $class = formatLink($page);
 				right: 0; 
 				top: 0;
 				border-left: 1px solid rgb(89, 90, 92); border-top: 0; border-bottom: 0; border-right: 0;
+			}
+
+			#ourteam > div.ui-panel-content-wrap.ui-body-b.ui-panel-animate.ui-panel-content-wrap-closed > div.ui-content {
+				padding-right:60px;
+				padding-top:0;
 			}
 		}
 
@@ -72,7 +86,7 @@ $class = formatLink($page);
 			width: 100%;
 		}
 
-		.member-items-holder {
+		.all-items-holder {
 			position: relative;
 		}
 
@@ -146,7 +160,7 @@ $class = formatLink($page);
 					<?php include('php/ourteam/bio.php'); ?>
 
 					<!-- MEMBER ITEMS -->
-					<div id="member-items-holder" class="member-items-holder">
+					<div id="all-items-holder" class="all-items-holder">
 						<ul id="all-items" class="all-items"></ul>
 					</div>
 				
@@ -156,7 +170,9 @@ $class = formatLink($page);
 			<div data-role="footer"><!-- data-position="fixed" -->
 				<?php include('php/footer.php'); ?>
 			</div>
+		
 		</div><!-- /page menu  -->
+
 		<script src="js/ourteam/functions.js"></script>
 		<script src="js/ourteam/index.js"></script>
 
@@ -165,6 +181,7 @@ $class = formatLink($page);
 
 	        setTimeout(function() {
 	            $(window).lazyLoadXT();
+
 	        }, 50);
 
 	        $.lazyLoadXT.onload.addClass = 'animated fadeIn';

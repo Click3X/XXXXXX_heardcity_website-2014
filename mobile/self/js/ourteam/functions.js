@@ -61,7 +61,7 @@ function Item(data) {
         usemap = this.ownerId + this.id;
         li = $('<li/>', {'class':this.id + ' ' + this.ownerId +' item'});
         // li = $('<p/>', {'class':this.id + ' ' + this.ownerId +' item'});
-        img = $('<img/>', {/*'src':imgSource, */'data-src':imgSource, 'alt':this.name, 'usemap':'#' + usemap, 'class':'lazy'});
+        img = $('<img/>', {/*'src':imgSource, */'data-src':imgSource, 'alt':this.name, 'usemap':'#' + usemap});
         map = $('<map/>', {'id':usemap,'name':usemap,'class':'map-link','data-person':this.ownerId});
         area = $('<area/>', {'href':'#','shape':'poly','coords':this.coords,'alt':this.id,'data-person':this.ownerId,'data-item':this.id,"title": "|" + "|" + this.owner + "\'s" + "|" + this.owner + "|" + this.bio + "|" + "<label for='"+this.ownerId+"-"+this.id+"' class='permalink'>> View " + this.ownerSex + " stuff</label><input type='radio' name='"+this.owner+"' id='"+this.ownerId+"-"+this.id+"' value='"+this.ownerId+"'>",'class':'cluetip-div'});
         // APPEND TO LI
@@ -71,8 +71,8 @@ function Item(data) {
     } else {
         li = $('<li/>', {'class':this.id + ' ' + this.ownerId +' item'});
         // li = $('<p/>', {'class':this.id + ' ' + this.ownerId +' item'});
-        img = $('<img/>', {/*'src':imgSource, */'data-src':imgSource, 'alt':this.name, 'class':'lazy'});
-        a = $('<a/>', {href:'#','data-person':this.ownerId,'data-item': this.id,"title": "|" + "|" + this.owner + "\'s" + "|" + this.name + "|" + this.bio + "|" + "<label for='"+this.ownerId+"-"+this.id+"' class='permalink'>> View " + this.ownerSex + " stuff</label><input type='radio' name='"+this.owner+"' id='"+this.ownerId+"-"+this.id+"' value='"+this.ownerId+"'>",'class':'cluetip-div'});
+        img = $('<img/>', {/*'src':imgSource, */'data-src':imgSource, 'alt':this.name});
+        a = $('<a/>', {href:'#','data-person':this.ownerId, 'data-item': this.id, "title": "|" + "|" + this.owner + "\'s" + "|" + this.name + "|" + this.bio + "|" + "<label for='"+this.ownerId+"-"+this.id+"' class='permalink'>> View " + this.ownerSex + " stuff</label><input type='radio' name='"+this.owner+"' id='"+this.ownerId+"-"+this.id+"' value='"+this.ownerId+"'>",'class':'cluetip-div'});
         // APPEND TO LI
         img.appendTo(a);
         a.appendTo(li);
@@ -81,6 +81,8 @@ function Item(data) {
     
     this.build = function(elem) {
     	li.appendTo(elem);
+        var $li = $(li);
+        return $li;
     }
 
     this.remove = function() {

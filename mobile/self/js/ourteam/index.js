@@ -1,19 +1,19 @@
 $(document).ready(function() {
-    // var $mMenu = $("#mmenu");
-    //     // HEADER MENU OPEN CLOSE
-    // $mMenu.hide();
-    // $(".mtoggle").click(function() {
-    //     $mMenu.slideToggle(200);
-    // });
 
-    // $('#mmenu a').click(function() {
-    //     var target = $(this).attr('href');
-    //     target = target.substr(1);
-    //     console.log('This is your target: ' + target);
-    //     $('#page-title').text(target);
+	// example for how you might do this with touch devices
+	$('body').bind('touchstart', function(event) {
+		event = event.originalEvent;
+		var tgt = event.touches[0] && event.touches[0].target,
+		$tgt = $(tgt);
 
-    //     $mMenu.slideToggle(200);
-    // });
+		if (tgt.nodeName !== 'A' && !$tgt.closest('div.cluetip').length ) {
+			$(document).trigger('hideCluetip');
+		}
+	});
+
+	window.onscroll = function (e) {  
+		$(document).trigger('hideCluetip');
+	}
 
 	var $memBioName = $('#member-bio .name');
     var $memBioBio = $('#member-bio .bio');
@@ -60,60 +60,13 @@ $(document).ready(function() {
         initClueTip();
     });
 
-
-});
-
-
-$( document ).on( "pagecreate", "ourteam", function() {
-
-	
-
-    // SWITCH PAGE TITLE
-    $('#page-title').text('Our Team');
-    // $('#mmenu li').show();
-    // $('#page-ourteam').hide();
-
-    $('#sub-nav-trigger').click(function() {
-    	$(document).trigger('hideCluetip');
-    });
-
-    $('.mtoggle').click(function() {
-		$(document).trigger('hideCluetip');
-    });
-
-    
-
-	// INIT VARS
-	var $memBioName = $('#member-bio .name');
-    var $memBioBio = $('#member-bio .bio');
-    var heardBio = "People collect things and those things say a lot about a person. Our stuff can be something that reminds us of our past or just something that we enjoy having. They inevitably become a piece of who we are. Which can includes almost everything you can imagine – from photos, souvenirs, tools, things from a person or place that we care about. Our team at Heard City is made up of some pretty incredible people. Get to know us by checking out our stuff. You\'ll see what passions we have and what kind of things we do in our free time. It\'s an honest way to see who we are as a collective.";
-    var heardName = "Heard City";
-    var $allItems = $('#page1 > div.ui-content');
+///////////////////////////////////////////////////////// CLICK EVENTS //////////////////////////////////////////////////////////////////
+ var $allItems = $('#all-items');
     
     var $body = $('body');
 
-    $body.addClass('ourteam');
+ //    $body.addClass('ourteam');
 
-	// SIDE PANEL OPEN CLOSE
-    $( document ).on( "swipeleft", "#ourteam", function( e ) {
-        // We check if there is no open panel on the page because otherwise
-        // a swipe to close the left panel would also open the right panel (and v.v.).
-        // We do this by checking the data that the framework stores on the page element (panel: open).
-        $(document).trigger('hideCluetip');
-
-        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
-            if ( e.type === "swipeleft" ) {
-                $( "#right-panel" ).panel( "open" );
-            } 
-        }
-    });
-
-
-
-
-
-
-///////////////////////////////////////////////////////// CLICK EVENTS //////////////////////////////////////////////////////////////////
     // SIDEBAR CLICK EVENT
     $('.sidebar-link').click(function() {
     	// HIDE CLUETIP
@@ -128,6 +81,7 @@ $( document ).on( "pagecreate", "ourteam", function() {
 
 		// STORE MATCHING MEMBER - PUT IN NAME
 		var memberId = $(this).data('person');
+		// console.log('I have been clicked! ' + memberId); console.dir(memberId);
 		var selectMember = _.where(memberArray, {id:memberId});
 
 		// ADD MEMBER BIO
@@ -136,17 +90,25 @@ $( document ).on( "pagecreate", "ourteam", function() {
 
 		// GET MEMBER ITEMS ADD TO PAGE
 		var items = selectMember[0].items;
-		console.log('These are the items!'); console.dir(items);
+		// console.log('These are the items!'); console.dir(items);
 		for(var i=0; i<items.length; i++) {
 			items[i].build($allItems);
+			var $itemEl = items[i].build($allItems).get(0);
+			// console.log('This is this: ' + $itemEl); console.dir($itemEl);
+
+			var rImg = $($itemEl).find('img').get(0);
+
+			// console.log('This is this: ' + rImg); console.dir(rImg);
+
+			var rSrc = $(rImg).data('src');
+			$(rImg).attr('src', rSrc);
+
 			recentlyClicked.push(items[i]);
-			$('.lazy').lazyload({
-    			effect : 'fadeIn'
-  			});
+
 		}
 
-		$('.all-items').css('padding-bottom', '863px');
-		// $('img').trigger('unveil');
+		// $('#all-items').css('padding-bottom', '863px');
+		$body.addClass('js-single-member');
 
 		// ADD CLUE TIP
         initClueTip();
@@ -183,28 +145,17 @@ $( document ).on( "pagecreate", "ourteam", function() {
 			recentlyClicked.push(sortedItems[k]);
 		});
 
-		$('.all-items').css('padding-bottom', '1299%');
+		// $('#all-items').css('padding-bottom', '1299%');
+		$body.removeClass('js-single-member');
 
 		// ADD CLUE TIP
         initClueTip();
 	});
 
 
-	// var scrollDiv = $('.ui-content').get(2);
-	// console.log('This is scrollDiv' + scrollDiv); console.dir(scrollDiv);
-
-	// var scrollDivTop =  function() {
-	// 	return scrollDiv.scrollTop;
-	// }
 
 
-	// window.onscroll = function (event) {
-	// 	var divTop = scrollDiv.scrollTop;
-	// 	if(divTop > 1000) {
-	// 		$('.item img').trigger('unveil');
-	// 	}
-	//   // called when the window is scrolled.
-	// }
-	
+
+
 
 });
