@@ -39,7 +39,7 @@ $class = formatLink($page);
 		<script>
 	        // TEST FOR MOBILE DEVICE / TABLET
 	        var device;
-	        if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+	        if( /Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent) ) {
 	            device = 'mobile';
 	        } else {
 	            device = 'desk';
