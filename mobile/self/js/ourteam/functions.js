@@ -143,7 +143,7 @@ function initClueTip() {
         showTitle: false, // hide the clueTip's heading
         sticky: true,
         dropShadow: true,
-        arrows: true,
+        arrows: false,
         dropShadowSteps:16,
         width:deviceWidth,
         positionBy: 'bottomTop',

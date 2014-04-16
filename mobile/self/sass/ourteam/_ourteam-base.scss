@@ -1,3 +1,29 @@
+span.ui-btn-inner {
+	background-image:url('../images/sprites/toggle-arrow.svg');
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#all-members-bio {
+	letter-spacing: .075em;
+}
+
+#rightpanel {
+	padding-top:42px;
+
+	@media(min-width: 600px) {
+		padding-top:0;
+	}
+}
+
+#sidebar-button-holder {
+	box-shadow: none;
+}
+
+#all-items-holder {
+	margin-left:-30px;
+}
+
 a.ui-btn.ui-btn-inline.ui-btn-up-b.sidebar-link,
 a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
 	font-family: 'trackregular' sans-serif;

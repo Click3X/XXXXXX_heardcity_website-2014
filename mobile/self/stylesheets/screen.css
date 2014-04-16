@@ -724,7 +724,40 @@ ul {
   left: 70%;
 }
 
-/* line 2, ../sass/ourteam/_ourteam-base.scss */
+/* line 1, ../sass/ourteam/_ourteam-base.scss */
+span.ui-btn-inner {
+  background-image: url("../images/sprites/toggle-arrow.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 7, ../sass/ourteam/_ourteam-base.scss */
+#all-members-bio {
+  letter-spacing: .075em;
+}
+
+/* line 11, ../sass/ourteam/_ourteam-base.scss */
+#rightpanel {
+  padding-top: 42px;
+}
+@media (min-width: 600px) {
+  /* line 11, ../sass/ourteam/_ourteam-base.scss */
+  #rightpanel {
+    padding-top: 0;
+  }
+}
+
+/* line 19, ../sass/ourteam/_ourteam-base.scss */
+#sidebar-button-holder {
+  box-shadow: none;
+}
+
+/* line 23, ../sass/ourteam/_ourteam-base.scss */
+#all-items-holder {
+  margin-left: -30px;
+}
+
+/* line 28, ../sass/ourteam/_ourteam-base.scss */
 a.ui-btn.ui-btn-inline.ui-btn-up-b.sidebar-link,
 a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
   font-family: 'trackregular' sans-serif;
@@ -739,35 +772,35 @@ a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
   letter-spacing: .05em;
 }
 
-/* line 14, ../sass/ourteam/_ourteam-base.scss */
+/* line 40, ../sass/ourteam/_ourteam-base.scss */
 #ourteam a {
   font-weight: 400 !important;
   text-shadow: none !important;
   text-decoration: none !important;
 }
 
-/* line 16, ../sass/ourteam/_ourteam-base.scss */
+/* line 42, ../sass/ourteam/_ourteam-base.scss */
 #ourteam > div.ui-panel-content-wrap.ui-body-b.ui-panel-animate.ui-panel-content-wrap-closed {
   background: #ffffff;
 }
 
-/* line 20, ../sass/ourteam/_ourteam-base.scss */
+/* line 46, ../sass/ourteam/_ourteam-base.scss */
 #member-fixed {
   margin-top: -4px;
 }
 @media (min-width: 600px) {
-  /* line 20, ../sass/ourteam/_ourteam-base.scss */
+  /* line 46, ../sass/ourteam/_ourteam-base.scss */
   #member-fixed {
     margin-top: 38px;
   }
 }
 
-/* line 28, ../sass/ourteam/_ourteam-base.scss */
+/* line 54, ../sass/ourteam/_ourteam-base.scss */
 #rightpanel {
   z-index: 999;
 }
 
-/* line 32, ../sass/ourteam/_ourteam-base.scss */
+/* line 58, ../sass/ourteam/_ourteam-base.scss */
 #rightpanel,
 .ui-panel-inner {
   background-image: none;
@@ -775,29 +808,29 @@ a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
 }
 
 @media (min-width: 600px) {
-  /* line 39, ../sass/ourteam/_ourteam-base.scss */
+  /* line 65, ../sass/ourteam/_ourteam-base.scss */
   .desk-hidden {
     display: none;
   }
 }
-/* line 47, ../sass/ourteam/_ourteam-base.scss */
+/* line 73, ../sass/ourteam/_ourteam-base.scss */
 #ourteam > div.ui-panel-content-wrap {
   background: #fff;
   background-image: none;
 }
 
-/* line 52, ../sass/ourteam/_ourteam-base.scss */
+/* line 78, ../sass/ourteam/_ourteam-base.scss */
 #rightpanel {
   border-left: 1px solid #999999;
 }
 @media (min-width: 600px) {
-  /* line 52, ../sass/ourteam/_ourteam-base.scss */
+  /* line 78, ../sass/ourteam/_ourteam-base.scss */
   #rightpanel {
     border-left: 0;
   }
 }
 
-/* line 62, ../sass/ourteam/_ourteam-base.scss */
+/* line 88, ../sass/ourteam/_ourteam-base.scss */
 .ourteam .team-member .member-text .misc-text {
   font-size: .8rem;
   margin-bottom: .75rem;
@@ -806,7 +839,7 @@ a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
   letter-spacing: .15em;
 }
 
-/* line 69, ../sass/ourteam/_ourteam-base.scss */
+/* line 95, ../sass/ourteam/_ourteam-base.scss */
 .ourteam .team-member .member-text .name {
   font-size: 22px;
   letter-spacing: .15em;
@@ -815,7 +848,7 @@ a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
   margin-bottom: .75em;
 }
 
-/* line 78, ../sass/ourteam/_ourteam-base.scss */
+/* line 104, ../sass/ourteam/_ourteam-base.scss */
 #cluetip > div.cluetip-outer > div > div:nth-child(4),
 .ourteam #member-bio .bio {
   max-width: none;
@@ -825,12 +858,12 @@ a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
   font-family: 'Times New Roman', serif;
 }
 
-/* line 85, ../sass/ourteam/_ourteam-base.scss */
+/* line 111, ../sass/ourteam/_ourteam-base.scss */
 .ourteam .team-member .member-text .permalink {
   margin-top: 1.5rem;
 }
 
-/* line 89, ../sass/ourteam/_ourteam-base.scss */
+/* line 115, ../sass/ourteam/_ourteam-base.scss */
 .ourteam .team-member .member-text .permalink a,
 .ourteam .team-member .member-text .permalink label {
   font-size: .750em;
@@ -839,13 +872,13 @@ a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
   font-family: 'trackregular';
   text-decoration: none;
 }
-/* line 97, ../sass/ourteam/_ourteam-base.scss */
+/* line 123, ../sass/ourteam/_ourteam-base.scss */
 .ourteam .team-member .member-text .permalink a:before,
 .ourteam .team-member .member-text .permalink label:before {
   content: '> ';
 }
 
-/* line 105, ../sass/ourteam/_ourteam-base.scss */
+/* line 131, ../sass/ourteam/_ourteam-base.scss */
 #cluetip {
   background: #fff;
   background-image: none;
@@ -853,33 +886,33 @@ a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
   text-shadow: none;
   font-weight: 400;
 }
-/* line 112, ../sass/ourteam/_ourteam-base.scss */
+/* line 138, ../sass/ourteam/_ourteam-base.scss */
 #cluetip .cluetip-outer {
   background: #fff;
 }
 
-/* line 117, ../sass/ourteam/_ourteam-base.scss */
+/* line 143, ../sass/ourteam/_ourteam-base.scss */
 .cluetip-close {
   text-align: right;
   float: right;
 }
-/* line 121, ../sass/ourteam/_ourteam-base.scss */
+/* line 147, ../sass/ourteam/_ourteam-base.scss */
 .cluetip-close a {
   color: #222;
   text-decoration: none;
 }
 
-/* line 126, ../sass/ourteam/_ourteam-base.scss */
+/* line 152, ../sass/ourteam/_ourteam-base.scss */
 #cluetip > div.cluetip-outer > div {
   padding: 21px;
 }
 
-/* line 130, ../sass/ourteam/_ourteam-base.scss */
+/* line 156, ../sass/ourteam/_ourteam-base.scss */
 #cluetip > div.cluetip-outer > div > div:nth-child(5) > label {
   cursor: pointer;
 }
 
-/* line 134, ../sass/ourteam/_ourteam-base.scss */
+/* line 160, ../sass/ourteam/_ourteam-base.scss */
 .ourteam .split-body:nth-of-type(2) {
   font-size: 13px;
   margin-bottom: 12px;
@@ -887,7 +920,7 @@ a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
   color: #989899;
 }
 
-/* line 141, ../sass/ourteam/_ourteam-base.scss */
+/* line 167, ../sass/ourteam/_ourteam-base.scss */
 .ourteam .split-body:nth-of-type(3) {
   font-size: 21px;
   color: #333333;
@@ -895,7 +928,7 @@ a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
   letter-spacing: .15em;
 }
 
-/* line 148, ../sass/ourteam/_ourteam-base.scss */
+/* line 174, ../sass/ourteam/_ourteam-base.scss */
 .ourteam .split-body:nth-of-type(4) {
   margin-top: 0;
   margin-bottom: 12px;
@@ -906,7 +939,7 @@ a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
   text-transform: none;
 }
 
-/* line 158, ../sass/ourteam/_ourteam-base.scss */
+/* line 184, ../sass/ourteam/_ourteam-base.scss */
 .ourteam .split-body:nth-of-type(5) {
   font-size: .750em;
   color: #1f1f1f;
@@ -915,50 +948,50 @@ a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
   cursor: pointer;
 }
 
-/* line 167, ../sass/ourteam/_ourteam-base.scss */
+/* line 193, ../sass/ourteam/_ourteam-base.scss */
 #cluetip input[type="radio"] {
   opacity: 0;
 }
 
-/* line 176, ../sass/ourteam/_ourteam-base.scss */
+/* line 202, ../sass/ourteam/_ourteam-base.scss */
 #toppaneloverlay {
   max-height: none;
   padding-top: 42px;
 }
 
-/* line 181, ../sass/ourteam/_ourteam-base.scss */
+/* line 207, ../sass/ourteam/_ourteam-base.scss */
 #toppaneloverlay > div {
   padding: 0;
 }
 
-/* line 184, ../sass/ourteam/_ourteam-base.scss */
+/* line 210, ../sass/ourteam/_ourteam-base.scss */
 #cluetip > div.cluetip-outer > div > div.cluetip-close {
   float: right;
   color: #222;
   text-decoration: none;
 }
 
-/* line 190, ../sass/ourteam/_ourteam-base.scss */
+/* line 216, ../sass/ourteam/_ourteam-base.scss */
 #ourteam > div.ui-header {
   border-bottom: 1px solid #999999 !important;
   z-index: 2000;
 }
 
-/* line 195, ../sass/ourteam/_ourteam-base.scss */
+/* line 221, ../sass/ourteam/_ourteam-base.scss */
 #ourteam > div.ui-header h1 {
   font-size: 13px;
   margin: 0;
   line-height: 42px;
 }
 
-/* line 202, ../sass/ourteam/_ourteam-base.scss */
+/* line 228, ../sass/ourteam/_ourteam-base.scss */
 #ourteam > div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-panel-content-fixed-toolbar-closed.ui-header-fixed.slidedown > a,
 #ourteam > div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-panel-content-fixed-toolbar-closed.ui-header-fixed.slidedown > a > span {
   border: 0;
   border-image: none;
 }
 
-/* line 220, ../sass/ourteam/_ourteam-base.scss */
+/* line 246, ../sass/ourteam/_ourteam-base.scss */
 div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-header-fixed.slidedown.ui-panel-content-fixed-toolbar-position-right.ui-panel-content-fixed-toolbar-display-overlay.ui-panel-content-fixed-toolbar-open,
 #ourteam > div.ui-header > a,
 #ourteam > div.ui-header,
@@ -982,7 +1015,7 @@ div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-header
   border-radius: 0;
 }
 
-/* line 236, ../sass/ourteam/_ourteam-base.scss */
+/* line 262, ../sass/ourteam/_ourteam-base.scss */
 #page-ourteam > p > a,
 #page-projects > p > a,
 #page-contact > p > a,

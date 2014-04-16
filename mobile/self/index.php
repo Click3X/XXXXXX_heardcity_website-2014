@@ -29,13 +29,6 @@ $class = formatLink($page);
 		  <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
 		<![endif]-->
 
-		<style>
-
-
-
-		</style>
-
-
 		<script>
 	        // TEST FOR MOBILE DEVICE / TABLET
 	        var device;
@@ -69,7 +62,7 @@ $class = formatLink($page);
 			
 
 			<!-- SIDEBAR -->
-			<div data-role="panel" data-position="right" data-display="push" id="rightpanel" data-theme="a">
+			<div data-role="panel" data-position="right" data-display="overlay" id="rightpanel" data-theme="a">
 				<?php include('php/sub-nav.php'); ?>
 			</div>
 
@@ -85,7 +78,7 @@ $class = formatLink($page);
 			<div data-role="content">
 				<div id="content-inner" class="content-inner">
 					<!-- SIDEBAR LINK -->
-					<a id="sidebar-button-holder" class="sidebar-button-holder" href="#rightpanel" data-role="button" data-rel="panel" data-dismissible="true">&lt;</a>
+					<a id="sidebar-button-holder" class="sidebar-button-holder" href="#rightpanel" data-role="button" data-rel="panel" data-dismissible="true">&nbsp;</a>
 
 					<!-- BIO -->
 					<?php include('php/ourteam/bio.php'); ?>

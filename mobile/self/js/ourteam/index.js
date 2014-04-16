@@ -16,7 +16,7 @@ $(document).ready(function() {
 	}
 
 	var $memBioName = $('#member-bio .name');
-    var $memBioBio = $('#member-bio .bio');
+    var $memBioBio = $('#member-bio .bio p');
     var heardBio = "People collect things and those things say a lot about a person. Our stuff can be something that reminds us of our past or just something that we enjoy having. They inevitably become a piece of who we are. Which can includes almost everything you can imagine – from photos, souvenirs, tools, things from a person or place that we care about. Our team at Heard City is made up of some pretty incredible people. Get to know us by checking out our stuff. You\'ll see what passions we have and what kind of things we do in our free time. It\'s an honest way to see who we are as a collective.";
     var heardName = "Heard City";
     var recentlyClicked = [];
