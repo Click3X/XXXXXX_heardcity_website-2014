@@ -8,6 +8,10 @@ span.ui-btn-inner {
 	letter-spacing: .075em;
 }
 
+.member-text p {
+	padding-right:60px;
+}
+
 #rightpanel {
 	padding-top:42px;
 
@@ -21,7 +25,8 @@ span.ui-btn-inner {
 }
 
 #all-items-holder {
-	margin-left:-30px;
+	// margin-left:-30px;
+	margin-left:-60px;
 }
 
 a.ui-btn.ui-btn-inline.ui-btn-up-b.sidebar-link,

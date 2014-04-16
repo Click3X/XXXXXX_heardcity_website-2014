@@ -42,12 +42,9 @@ $(document).ready(function() {
 
     	var sortsItems = sortItems(memberArray);
 		var sortedItems = _.indexBy(sortsItems, 'position');
-		// console.log('These are your sorted items: ' + sortedItems); console.dir(sortedItems);
 
 		$.each(sortedItems, function(k) {
-			// console.log('built!');
 			sortedItems[k].build('#all-items');
-			// console.dir(sortedItems[k]);
 			recentlyClicked.push(sortedItems[k]);
 
 		});
@@ -62,10 +59,7 @@ $(document).ready(function() {
 
 ///////////////////////////////////////////////////////// CLICK EVENTS //////////////////////////////////////////////////////////////////
  var $allItems = $('#all-items');
-    
-    var $body = $('body');
-
- //    $body.addClass('ourteam');
+ var $body = $('body');
 
     // SIDEBAR CLICK EVENT
     $('.sidebar-link').click(function() {
@@ -81,7 +75,6 @@ $(document).ready(function() {
 
 		// STORE MATCHING MEMBER - PUT IN NAME
 		var memberId = $(this).data('person');
-		// console.log('I have been clicked! ' + memberId); console.dir(memberId);
 		var selectMember = _.where(memberArray, {id:memberId});
 
 		// ADD MEMBER BIO
@@ -90,24 +83,16 @@ $(document).ready(function() {
 
 		// GET MEMBER ITEMS ADD TO PAGE
 		var items = selectMember[0].items;
-		// console.log('These are the items!'); console.dir(items);
 		for(var i=0; i<items.length; i++) {
 			items[i].build($allItems);
 			var $itemEl = items[i].build($allItems).get(0);
-			// console.log('This is this: ' + $itemEl); console.dir($itemEl);
-
 			var rImg = $($itemEl).find('img').get(0);
-
-			// console.log('This is this: ' + rImg); console.dir(rImg);
-
 			var rSrc = $(rImg).data('src');
 			$(rImg).attr('src', rSrc);
-
 			recentlyClicked.push(items[i]);
 
 		}
 
-		// $('#all-items').css('padding-bottom', '863px');
 		$body.addClass('js-single-member');
 
 		// ADD CLUE TIP
@@ -141,11 +126,9 @@ $(document).ready(function() {
 
 		$.each(sortedItems, function(k) {
 			sortedItems[k].build($allItems);
-			// console.dir(sortedItems[k]);
 			recentlyClicked.push(sortedItems[k]);
 		});
 
-		// $('#all-items').css('padding-bottom', '1299%');
 		$body.removeClass('js-single-member');
 
 		// ADD CLUE TIP
