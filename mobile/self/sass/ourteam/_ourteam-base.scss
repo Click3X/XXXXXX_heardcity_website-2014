@@ -11,7 +11,7 @@ a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
 	letter-spacing: .05em;
 }
 
-a {font-weight: 400;}
+#ourteam a {font-weight: 400 !important; text-shadow:none !important; text-decoration: none !important;}
 
 #ourteam > div.ui-panel-content-wrap.ui-body-b.ui-panel-animate.ui-panel-content-wrap-closed {
 	background: #ffffff;
