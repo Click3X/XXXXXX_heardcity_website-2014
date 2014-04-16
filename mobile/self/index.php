@@ -22,7 +22,6 @@ $class = formatLink($page);
 		<link rel="stylesheet" href="css/ourteam/items-positions.css" />
 
 		<link rel="stylesheet" href="css/cluetip/jquery.cluetip.css" />
-		<link rel="stylesheet" href="css/cluetip.css" />
 
 		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 		<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -31,78 +30,8 @@ $class = formatLink($page);
 		<![endif]-->
 
 		<style>
-		ul {padding-left:0; margin:0;}
-		li {list-style-type: none;}
 
-		.sidebar-button-holder {
-			display: block; 
-			margin-top: 0; margin-bottom: 0;
-			text-align: left;
-			width: 100%; 
-			height: 42px;
-			position: absolute;
-			left: 0; 
-			top: 0;
-			background: white;
-			border-left: 0; border-top: 0; border-bottom: 1px solid rgb(89, 90, 92); border-right: 0;
-			border-radius: 0;
 
-			text-shadow: none;
-			color: #222;
-			font-weight: 400;
-		}
-
-		.sidebar-button-holder:hover {
-			color:#000;
-		}
-
-		#ourteam > div.ui-panel-content-wrap.ui-body-b.ui-panel-animate.ui-panel-content-wrap-closed > div.ui-content {
-				padding-top:42px;
-			}
-
-		@media(min-width: 600px) {
-			.sidebar-button-holder {
-				width: 60px; height: 100%;
-				left:auto;
-				right: 0; 
-				top: 0;
-				border-left: 1px solid rgb(89, 90, 92); border-top: 0; border-bottom: 0; border-right: 0;
-			}
-
-			#ourteam > div.ui-panel-content-wrap.ui-body-b.ui-panel-animate.ui-panel-content-wrap-closed > div.ui-content {
-				padding-right:60px;
-				padding-top:0;
-			}
-		}
-
-		#toppaneloverlay {
-			max-height: none;
-		}
-
-		#new-mmenu #page-home, 
-		#new-mmenu #page-ourteam, 
-		#new-mmenu #page-contact, 
-		#new-mmenu #page-projects {
-			width: 100%;
-		}
-
-		.all-items-holder {
-			position: relative;
-		}
-
-		.content-inner {
-			width:100%; max-width: 1024px;
-			margin: 0 auto;
-		}
-
-		#menu > div.ui-panel-content-wrap.ui-body-b.ui-panel-animate.ui-panel-content-wrap-closed {
-			padding-top: 42px
-		}
-
-		@media(min-width: 600px) {
-			#menu > div.ui-panel-content-wrap.ui-body-b.ui-panel-animate.ui-panel-content-wrap-closed { 
-				padding-top:0; }
-		}
 
 		</style>
 
@@ -138,7 +67,7 @@ $class = formatLink($page);
 			
 
 			<!-- SIDEBAR -->
-			<div data-role="panel" data-position="right" data-display="overlay" id="rightpanel" data-theme="a">
+			<div data-role="panel" data-position="right" data-display="push" id="rightpanel" data-theme="a">
 				<?php include('php/sub-nav.php'); ?>
 			</div>
 

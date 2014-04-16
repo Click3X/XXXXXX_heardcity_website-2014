@@ -81,7 +81,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 1.5em;
 }
 
-/* line 33, ../sass/_base.scss */
+/* line 32, ../sass/_base.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 37, ../sass/_base.scss */
 body {
   font-size: .938em;
   line-height: 1.4em;
@@ -89,10 +94,86 @@ body {
   background-color: #222;
 }
 @media (min-width: 768px) {
-  /* line 33, ../sass/_base.scss */
+  /* line 37, ../sass/_base.scss */
   body {
     font-size: 1em;
   }
+}
+
+/* line 48, ../sass/_base.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 51, ../sass/_base.scss */
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+/* line 54, ../sass/_base.scss */
+.sidebar-button-holder {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+  height: 42px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: white;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+  border-radius: 0;
+  text-shadow: none;
+  color: #222;
+  font-weight: 400;
+}
+
+/* line 70, ../sass/_base.scss */
+.sidebar-button-holder:hover {
+  color: #000;
+}
+
+@media (min-width: 600px) {
+  /* line 76, ../sass/_base.scss */
+  .sidebar-button-holder {
+    width: 60px;
+    height: 100%;
+    left: auto;
+    right: 0;
+    top: 0;
+    border-left: 1px solid #999999;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+  }
+}
+/* line 84, ../sass/_base.scss */
+#toppaneloverlay {
+  max-height: none;
+}
+
+/* line 91, ../sass/_base.scss */
+#new-mmenu #page-home,
+#new-mmenu #page-ourteam,
+#new-mmenu #page-contact,
+#new-mmenu #page-projects {
+  width: 100%;
+}
+
+/* line 95, ../sass/_base.scss */
+.all-items-holder {
+  position: relative;
+}
+
+/* line 99, ../sass/_base.scss */
+.content-inner {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 /* line 6, ../sass/ourteam/_items-solo.scss */
@@ -651,26 +732,40 @@ a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
   font-size: 12px;
   text-shadow: none;
   border: 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
   background: none;
   font-weight: 400;
+  letter-spacing: .05em;
 }
 
-/* line 12, ../sass/ourteam/_ourteam-base.scss */
+/* line 14, ../sass/ourteam/_ourteam-base.scss */
 a {
   font-weight: 400;
 }
 
-/* line 14, ../sass/ourteam/_ourteam-base.scss */
+/* line 16, ../sass/ourteam/_ourteam-base.scss */
 #ourteam > div.ui-panel-content-wrap.ui-body-b.ui-panel-animate.ui-panel-content-wrap-closed {
   background: #ffffff;
 }
 
-/* line 19, ../sass/ourteam/_ourteam-base.scss */
+/* line 20, ../sass/ourteam/_ourteam-base.scss */
+#member-fixed {
+  margin-top: -4px;
+}
+@media (min-width: 600px) {
+  /* line 20, ../sass/ourteam/_ourteam-base.scss */
+  #member-fixed {
+    margin-top: 38px;
+  }
+}
+
+/* line 28, ../sass/ourteam/_ourteam-base.scss */
 #rightpanel {
   z-index: 999;
 }
 
-/* line 23, ../sass/ourteam/_ourteam-base.scss */
+/* line 32, ../sass/ourteam/_ourteam-base.scss */
 #rightpanel,
 .ui-panel-inner {
   background-image: none;
@@ -678,59 +773,190 @@ a {
 }
 
 @media (min-width: 600px) {
-  /* line 30, ../sass/ourteam/_ourteam-base.scss */
+  /* line 39, ../sass/ourteam/_ourteam-base.scss */
   .desk-hidden {
     display: none;
   }
-
-  /* line 34, ../sass/ourteam/_ourteam-base.scss */
-  #member-fixed {
-    padding-top: 50px;
-  }
 }
-/* line 41, ../sass/ourteam/_ourteam-base.scss */
+/* line 47, ../sass/ourteam/_ourteam-base.scss */
 #ourteam > div.ui-panel-content-wrap {
   background: #fff;
   background-image: none;
 }
 
-/* line 46, ../sass/ourteam/_ourteam-base.scss */
+/* line 52, ../sass/ourteam/_ourteam-base.scss */
 #rightpanel {
   border-left: 1px solid #999999;
 }
+@media (min-width: 600px) {
+  /* line 52, ../sass/ourteam/_ourteam-base.scss */
+  #rightpanel {
+    border-left: 0;
+  }
+}
 
-/* line 50, ../sass/ourteam/_ourteam-base.scss */
+/* line 62, ../sass/ourteam/_ourteam-base.scss */
+.ourteam .team-member .member-text .misc-text {
+  font-size: .8rem;
+  margin-bottom: .75rem;
+  font-family: 'trackregular';
+  color: #989899;
+  letter-spacing: .15em;
+}
+
+/* line 69, ../sass/ourteam/_ourteam-base.scss */
+.ourteam .team-member .member-text .name {
+  font-size: 22px;
+  letter-spacing: .15em;
+  line-height: 1.2rem;
+  font-family: 'trackregular';
+  margin-bottom: .75em;
+}
+
+/* line 78, ../sass/ourteam/_ourteam-base.scss */
+#cluetip > div.cluetip-outer > div > div:nth-child(4),
+.ourteam #member-bio .bio {
+  max-width: none;
+  font-size: 16px;
+  line-height: 1.6em;
+  text-transform: none;
+  font-family: 'Times New Roman', serif;
+}
+
+/* line 85, ../sass/ourteam/_ourteam-base.scss */
+.ourteam .team-member .member-text .permalink {
+  margin-top: 1.5rem;
+}
+
+/* line 89, ../sass/ourteam/_ourteam-base.scss */
+.ourteam .team-member .member-text .permalink a,
+.ourteam .team-member .member-text .permalink label {
+  font-size: .750em;
+  color: #333333;
+  position: relative;
+  font-family: 'trackregular';
+  text-decoration: none;
+}
+/* line 97, ../sass/ourteam/_ourteam-base.scss */
+.ourteam .team-member .member-text .permalink a:before,
+.ourteam .team-member .member-text .permalink label:before {
+  content: '> ';
+}
+
+/* line 105, ../sass/ourteam/_ourteam-base.scss */
+#cluetip {
+  background: #fff;
+  background-image: none;
+  border-radius: 0;
+  text-shadow: none;
+  font-weight: 400;
+}
+/* line 112, ../sass/ourteam/_ourteam-base.scss */
+#cluetip .cluetip-outer {
+  background: #fff;
+}
+
+/* line 117, ../sass/ourteam/_ourteam-base.scss */
+.cluetip-close {
+  text-align: right;
+  float: right;
+}
+/* line 121, ../sass/ourteam/_ourteam-base.scss */
+.cluetip-close a {
+  color: #222;
+  text-decoration: none;
+}
+
+/* line 126, ../sass/ourteam/_ourteam-base.scss */
+#cluetip > div.cluetip-outer > div {
+  padding: 21px;
+}
+
+/* line 130, ../sass/ourteam/_ourteam-base.scss */
+#cluetip > div.cluetip-outer > div > div:nth-child(5) > label {
+  cursor: pointer;
+}
+
+/* line 134, ../sass/ourteam/_ourteam-base.scss */
+.ourteam .split-body:nth-of-type(2) {
+  font-size: 13px;
+  margin-bottom: 12px;
+  letter-spacing: .15em;
+  color: #989899;
+}
+
+/* line 141, ../sass/ourteam/_ourteam-base.scss */
+.ourteam .split-body:nth-of-type(3) {
+  font-size: 21px;
+  color: #333333;
+  margin-bottom: 12px;
+  letter-spacing: .15em;
+}
+
+/* line 148, ../sass/ourteam/_ourteam-base.scss */
+.ourteam .split-body:nth-of-type(4) {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #646465;
+  line-height: 1.4em;
+  letter-spacing: .02em;
+  font-family: 'Times New Roman' serif;
+  text-transform: none;
+}
+
+/* line 158, ../sass/ourteam/_ourteam-base.scss */
+.ourteam .split-body:nth-of-type(5) {
+  font-size: .750em;
+  color: #1f1f1f;
+  position: relative;
+  letter-spacing: .15em;
+  cursor: pointer;
+}
+
+/* line 167, ../sass/ourteam/_ourteam-base.scss */
+#cluetip input[type="radio"] {
+  opacity: 0;
+}
+
+/* line 176, ../sass/ourteam/_ourteam-base.scss */
 #toppaneloverlay {
   max-height: none;
   padding-top: 42px;
 }
 
-/* line 55, ../sass/ourteam/_ourteam-base.scss */
+/* line 181, ../sass/ourteam/_ourteam-base.scss */
 #toppaneloverlay > div {
   padding: 0;
 }
 
-/* line 60, ../sass/ourteam/_ourteam-base.scss */
+/* line 184, ../sass/ourteam/_ourteam-base.scss */
+#cluetip > div.cluetip-outer > div > div.cluetip-close {
+  float: right;
+  color: #222;
+  text-decoration: none;
+}
+
+/* line 190, ../sass/ourteam/_ourteam-base.scss */
 #ourteam > div.ui-header {
   border-bottom: 1px solid #999999 !important;
   z-index: 2000;
 }
 
-/* line 65, ../sass/ourteam/_ourteam-base.scss */
+/* line 195, ../sass/ourteam/_ourteam-base.scss */
 #ourteam > div.ui-header h1 {
   font-size: 13px;
   margin: 0;
   line-height: 42px;
 }
 
-/* line 72, ../sass/ourteam/_ourteam-base.scss */
+/* line 202, ../sass/ourteam/_ourteam-base.scss */
 #ourteam > div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-panel-content-fixed-toolbar-closed.ui-header-fixed.slidedown > a,
 #ourteam > div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-panel-content-fixed-toolbar-closed.ui-header-fixed.slidedown > a > span {
   border: 0;
   border-image: none;
 }
 
-/* line 90, ../sass/ourteam/_ourteam-base.scss */
+/* line 220, ../sass/ourteam/_ourteam-base.scss */
 div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-header-fixed.slidedown.ui-panel-content-fixed-toolbar-position-right.ui-panel-content-fixed-toolbar-display-overlay.ui-panel-content-fixed-toolbar-open,
 #ourteam > div.ui-header > a,
 #ourteam > div.ui-header,
@@ -754,7 +980,7 @@ div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-header
   border-radius: 0;
 }
 
-/* line 106, ../sass/ourteam/_ourteam-base.scss */
+/* line 236, ../sass/ourteam/_ourteam-base.scss */
 #page-ourteam > p > a,
 #page-projects > p > a,
 #page-contact > p > a,

@@ -5,8 +5,10 @@ a.ui-btn.ui-btn-inline.ui-btn-up-b.all-members {
 	font-size: 12px;
 	text-shadow:none;
 	border: 0;
+	margin-top:2px; margin-bottom:2px;
 	background: none;
 	font-weight: 400;
+	letter-spacing: .05em;
 }
 
 a {font-weight: 400;}
@@ -15,6 +17,13 @@ a {font-weight: 400;}
 	background: #ffffff;
 }
 
+#member-fixed {
+	margin-top: -4px;
+
+	@media(min-width: 600px) {
+		margin-top: 38px;
+	}
+}
 
 #rightpanel {
 	z-index:999;
@@ -31,9 +40,6 @@ a {font-weight: 400;}
 		display: none;
 	}
 
-	#member-fixed {
-		padding-top:50px;
-	}
 }
 
 
@@ -45,7 +51,127 @@ a {font-weight: 400;}
 
 #rightpanel {
 	border-left: 1px solid #999999;
+
+	@media(min-width: 600px) {
+		border-left:0;
+	}
 }
+
+
+
+.ourteam .team-member .member-text .misc-text {
+	font-size: .8rem;
+	margin-bottom: .75rem;
+	font-family: 'trackregular';
+	color: #989899;
+	letter-spacing: .15em;
+}
+.ourteam .team-member .member-text .name {
+	font-size: 22px;
+	letter-spacing: .15em;
+	line-height: 1.2rem;
+	font-family: 'trackregular';
+	margin-bottom: .75em;
+}
+
+#cluetip > div.cluetip-outer > div > div:nth-child(4),
+.ourteam #member-bio .bio {
+	max-width: none;
+	font-size: 16px;
+	line-height: 1.6em;
+	text-transform: none;
+	font-family: 'Times New Roman', serif;
+}
+.ourteam .team-member .member-text .permalink {
+	margin-top: 1.5rem;
+}
+.ourteam .team-member .member-text .permalink a, 
+.ourteam .team-member .member-text .permalink label {
+	font-size: .750em;
+	color: #333333;
+	position: relative;
+	// margin-left: 0.875rem;
+	font-family: 'trackregular';
+	text-decoration: none;
+
+	&:before {
+		content: '> ';
+	}
+}
+
+
+//////////////////////////// CLUE TIP ////////////////////////
+
+#cluetip {
+	background: #fff;
+background-image: none;
+border-radius: 0;
+text-shadow: none;
+font-weight: 400;
+
+	.cluetip-outer {
+		background: #fff;
+	}
+}
+
+.cluetip-close {
+	text-align: right;
+	float: right;
+	
+	a {
+		color:#222; text-decoration: none;
+	}
+}
+
+#cluetip > div.cluetip-outer > div {
+	padding: 21px;
+}
+
+#cluetip > div.cluetip-outer > div > div:nth-child(5) > label {
+	cursor: pointer;
+}
+
+.ourteam .split-body:nth-of-type(2) {
+	font-size: 13px;
+	margin-bottom: 12px;
+	letter-spacing: .15em;
+	color: #989899;
+}
+
+.ourteam .split-body:nth-of-type(3) {
+	font-size:21px;
+	color: #333333;
+	margin-bottom: 12px;
+	letter-spacing: .15em;
+}
+
+.ourteam .split-body:nth-of-type(4) {
+	margin-top: 0;
+	margin-bottom: 12px;
+	color: #646465;
+	line-height: 1.4em;
+	letter-spacing: .02em;
+	font-family: 'Times New Roman' serif;
+	text-transform: none;
+}
+
+.ourteam .split-body:nth-of-type(5) {
+	font-size: .750em;
+	color: #1f1f1f;
+	position: relative;
+	letter-spacing: .15em;
+	cursor: pointer;
+}
+
+#cluetip {
+	input[type="radio"] {
+		opacity: 0;
+	}
+}
+
+
+
+
 /////////////////////////////// NAVIGATION ///////////////////////////
 #toppaneloverlay {
 	max-height: none;
@@ -55,7 +181,11 @@ a {font-weight: 400;}
 #toppaneloverlay > div {
 	padding:0;
 }
-
+#cluetip > div.cluetip-outer > div > div.cluetip-close {
+	float: right;
+	color:#222;
+	text-decoration: none;
+}
 // #ourteam > div.ui-header.ui-bar-a.ui-panel-content-fixed-toolbar.ui-panel-animate.ui-header-fixed.slidedown.ui-panel-content-fixed-toolbar-position-right.ui-panel-content-fixed-toolbar-display-overlay.ui-panel-content-fixed-toolbar-open,
 #ourteam > div.ui-header {
 border-bottom: 1px solid rgb(153, 153, 153) !important;
