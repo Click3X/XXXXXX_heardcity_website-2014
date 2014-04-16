@@ -541,7 +541,7 @@ $members = array(
 				'bio' => 'Whenever I travel to a new destination, I bring my recorder with me so I can capture new sounds that I use in my every day work. The process is almost therapeutic as it forces me to sit still and observe the environment around me.',
 				'image' => 'items/Cory_Melious_recorder.png',
 				'coords' => '11,211,32,224,71,222,92,149,119,158,261,254,291,242,308,220,308,216,190,149,307,164,309,125,201,110,307,91,309,82,309,62,291,57,120,83,79,80,76,23,60,-1,17,2,9,14,7,25',
-				'position' => 16
+				'position' => 101
 			),
 			array(
 				'name' => 'Home Brew Book', 
@@ -687,7 +687,7 @@ $members = array(
 				'name' => 'Passport', 
 				'bio' => 'I love to travel, I try to go on one crazy adventure every year. This year I\'m going to Nepal with Habitat for Humanity. ',
 				'image' => 'items/Sasha_Awn_passport.png',
-				'position' => 16
+				'position' => 101
 			),
 
 			array(

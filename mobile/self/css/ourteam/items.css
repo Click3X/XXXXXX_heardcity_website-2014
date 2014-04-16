@@ -11,6 +11,10 @@ li {
 	height: auto;
 }
 
+.whisk {
+	z-index: 1;
+}
+
 .all-items .blade.keithreynaud{ width:25%;}
 .all-items .carfridge.keithreynaud{ width:47.55859375%;}
 .all-items .plasticbaby.keithreynaud{ width:10.05859375%;}
@@ -30,7 +34,7 @@ li {
 .all-items .scarf.gloriapitagorsky{ width:39.6484375%;}
 .all-items .zagat.gloriapitagorsky{ width:26.07421875%;}
 .all-items .nytimes.gloriapitagorsky{ width:22.36328125%;}
-.all-items .linushueycassette7case.philiploeb{ width:9.66796875%;}
+.all-items .linushueycassettecase.philiploeb{ width:9.66796875%;}
 .all-items .cassette.philiploeb{ width:13.0859375%;}
 .all-items .beardoll.philiploeb{ width:25.9765625%;}
 .all-items .painting.philiploeb{ width:37.890625%;}
@@ -76,7 +80,7 @@ li {
 .all-items .guitar.ericwarzecha{ width:78.3203125%;}
 .all-items .sabresjersey.ericwarzecha{ width: 70.511719%;}
 .all-items .minorthreatourofstep.ericwarzecha{ width:33.69140625%;}
-.all-items .floralpatterneddress.sashaawn{ width:40.625%;}
+.all-items .floraldress.sashaawn{ width:40.625%;}
 .all-items .trapezegrips.sashaawn{ width:32.6171875%;}
 .all-items .theremin.sashaawn{ width:41.6015625%;}
 .all-items .passport.sashaawn{ width:10.7421875%;}
@@ -98,7 +102,7 @@ li {
 .all-items .whisk.katieflynn{ width:7.421875%;}
 .all-items .taiwanbeer.jeremysiegal{ width:8.7890625%;}
 .all-items .ambushpowchain.jeremysiegal{ width:16.89453125%;}
-.all-items .s1991nikeairjordanvisportblue.jeremysiegal{ width:36.62109375%;}
+.all-items .s1991nikeairjordanvi.jeremysiegal{ width:36.62109375%;}
 .all-items .retinamacbookpro.jeremysiegal{ width:40.8203125%;}
 .all-items .kanyewest.jeremysiegal{ width:35.05859375%;}
 .all-items .sampler.jeremysiegal{ width:17.67578125%;}
@@ -108,7 +112,7 @@ li {
 .all-items .readingglasses.elizabethmcclanahan{ width:17.7734375%;}
 .all-items .saintsjersey.elizabethmcclanahan{ width:25.1953125%;}
 .all-items .yogamat.elizabethmcclanahan{ width:58.88671875%;}
-.all-items .goldengirlstvguidecover.elizabethmcclanahan{ width:14.16015625%;}
+.all-items .tvguide.elizabethmcclanahan{ width:14.16015625%;}
 .all-items .yuengling.danflosdorf{ width:7.2265625%;}
 .all-items .hockeystick.danflosdorf{ width:13.4765625%;}
 .all-items .skateboard.danflosdorf{ width:16.89453125%;}
