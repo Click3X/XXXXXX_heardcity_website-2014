@@ -33,7 +33,7 @@ $page = 'Our Team';
 <body>
     <div data-role="page" id="page1">
         <div data-role="header">
-            <h1>Page 1</h1>
+            <h1>Page 1 Testing this out</h1>
             <a href="#page2">2</a>
         </div>
         <div data-role="content">
