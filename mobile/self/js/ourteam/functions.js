@@ -37,6 +37,34 @@ function Members(data) {
 
 // ITEM OBJECT
 function Item(data) {
+
+    // 'CONTAINS' FUNCTIONALITY FOR ARRAY
+    Array.prototype.contains = function ( needle ) {
+        var i;
+        for (i in this) {
+            if (this[i] === needle) { return true; }
+        }
+        return false;
+    };
+
+    // LEAVE THESE ITEMS AS PNG
+    var noJpg = [
+        'items/Peony_Rene_necklace.png',
+        'items/Eric_Warzecha_jersey.png',
+        'items/Elizabeth_McClanahan_guitar.png',
+        'items/Keith_Reynaud_Pot.png',
+        'items/Jeremy_Siegal_Jordans.png',
+        'items/Jeremy_Siegal_chain.png',
+        'items/Gary_Noel_plant.png',
+        'items/Sasha_Awn_dress.png',
+        'items/Sasha_Awn_moog.png',
+        'items/Sasha_Awn_gloves.png',
+        'items/Eric_Warzecha_guitar.png',
+        'items/Talia_Rodgers_tank_top.png',
+        'items/Cory_Melious_Boot.png'
+    ];
+
+
     var li, img, area, map, usemap, a;
     this.name = data.name;
     this.bio = data.bio;
@@ -46,22 +74,26 @@ function Item(data) {
     this.owner = data.owner;
     this.ownerId = data.ownerId;
     this.ownerSex = data.ownerSex;
+    
+    // SWITCH FROM PNG TO JPEG WHERE APPLICABLE
+    var src;
+    var imgSource = JSON.stringify(this.image);
 
-    // var blankGif = '../images/sprites/loader.gif';
-    var imgSource = '';
+    if (noJpg.contains(this.image)) {
+        src = this.image;
+    } else {
+        src = imgSource.replace(/png/g, 'jpg');
+        src = src.replace(/items/g, 'items/jpg');
+        src = src.replace(/"/g, ""); 
+    }
 
-    // if(this.position < 20) {
-        // imgSource = '../../' + this.image;
-        imgSource = this.image;
-    // } else { imgSoure = blankGif;}
 
     //  TEST IF ITEM HAS COORDS
     if(data.coords) { 
         this.coords = data.coords;
         usemap = this.ownerId + this.id;
         li = $('<li/>', {'class':this.id + ' ' + this.ownerId +' item'});
-        // li = $('<p/>', {'class':this.id + ' ' + this.ownerId +' item'});
-        img = $('<img/>', {/*'src':imgSource, */'data-src':imgSource, 'alt':this.name, 'usemap':'#' + usemap});
+        img = $('<img/>', {/*'src':imgSource, */'data-src':src, 'alt':this.name, 'usemap':'#' + usemap});
         map = $('<map/>', {'id':usemap,'name':usemap,'class':'map-link','data-person':this.ownerId});
         area = $('<area/>', {'href':'#','shape':'poly','coords':this.coords,'alt':this.id,'data-person':this.ownerId,'data-item':this.id,"title": "|" + "|" + this.owner + "\'s" + "|" + this.owner + "|" + this.bio + "|" + "<label for='"+this.ownerId+"-"+this.id+"' class='permalink'>> View " + this.ownerSex + " stuff</label><input type='radio' name='"+this.owner+"' id='"+this.ownerId+"-"+this.id+"' value='"+this.ownerId+"'>",'class':'cluetip-div'});
         // APPEND TO LI
@@ -70,8 +102,7 @@ function Item(data) {
         li.append(map);
     } else {
         li = $('<li/>', {'class':this.id + ' ' + this.ownerId +' item'});
-        // li = $('<p/>', {'class':this.id + ' ' + this.ownerId +' item'});
-        img = $('<img/>', {/*'src':imgSource, */'data-src':imgSource, 'alt':this.name});
+        img = $('<img/>', {/*'src':imgSource, */'data-src':src, 'alt':this.name});
         a = $('<a/>', {href:'#','data-person':this.ownerId, 'data-item': this.id, "title": "|" + "|" + this.owner + "\'s" + "|" + this.name + "|" + this.bio + "|" + "<label for='"+this.ownerId+"-"+this.id+"' class='permalink'>> View " + this.ownerSex + " stuff</label><input type='radio' name='"+this.owner+"' id='"+this.ownerId+"-"+this.id+"' value='"+this.ownerId+"'>",'class':'cluetip-div'});
         // APPEND TO LI
         img.appendTo(a);
