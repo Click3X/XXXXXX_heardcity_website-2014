@@ -46,7 +46,7 @@ $(document).ready(function() {
 
 		$.each(sortedItems, function(k) {
 			// console.log('built!');
-			sortedItems[k].build('#menu > div.ui-panel-content-wrap.ui-body-b.ui-panel-animate.ui-panel-content-wrap-closed > div.ui-content');
+			sortedItems[k].build('#all-items');
 			// console.dir(sortedItems[k]);
 			recentlyClicked.push(sortedItems[k]);
 
@@ -61,18 +61,10 @@ $(document).ready(function() {
     });
 
 
-
-
-    // HASH TAG - ENABLE DEEP LINKING
-    // $('a[href^="#"]').not('.all-members, .navicon, #sub-nav-trigger').bind('click vclick', function () {
-    //     location.hash = $(this).attr('href');
-    //     return false;
-    // });
-
 });
 
 
-$( document ).on( "pagecreate", "#page1", function() {
+$( document ).on( "pagecreate", "ourteam", function() {
 
 	
 

@@ -18,17 +18,27 @@ $class = formatLink($page);
 		<link rel="stylesheet" href="css/jquery-mobile.css" />
 		<link rel="stylesheet" href="css/lazyload-animate.css" />
 
+		<link rel="stylesheet" href="css/ourteam/items.css" />
+		<link rel="stylesheet" href="css/ourteam/items-positions.css" />
+
 		<link rel="stylesheet" href="css/cluetip/jquery.cluetip.css" />
 		<link rel="stylesheet" href="css/cluetip.css" />
 
 		<style>
+		ul {padding-left:0; margin:0;}
+		li {list-style-type: none;}
+
 		.sidebar-button-holder {
-			display: block; margin-top: 0;
-			width: 60px; height: 100%;
+			display: block; 
+			margin-top: 0; margin-bottom: 0;
+			text-align: left;
+			width: 100%; 
+			height: 42px;
 			position: absolute;
-			right: 0; top: 0;
+			left: 0; 
+			top: 0;
 			background: white;
-			border-left: 1px solid rgb(89, 90, 92); border-top: 0; border-bottom: 0; border-right: 0;
+			border-left: 0; border-top: 0; border-bottom: 1px solid rgb(89, 90, 92); border-right: 0;
 			border-radius: 0;
 
 			text-shadow: none;
@@ -36,6 +46,49 @@ $class = formatLink($page);
 			font-weight: 400;
 		}
 
+		.sidebar-button-holder:hover {
+			color:#000;
+		}
+
+
+		@media(min-width: 600px) {
+			.sidebar-button-holder {
+				width: 60px; height: 100%;
+				left:auto;
+				right: 0; 
+				top: 0;
+				border-left: 1px solid rgb(89, 90, 92); border-top: 0; border-bottom: 0; border-right: 0;
+			}
+		}
+
+		#toppaneloverlay {
+			max-height: none;
+		}
+
+		#new-mmenu #page-home, 
+		#new-mmenu #page-ourteam, 
+		#new-mmenu #page-contact, 
+		#new-mmenu #page-projects {
+			width: 100%;
+		}
+
+		.member-items-holder {
+			position: relative;
+		}
+
+		.content-inner {
+			width:100%; max-width: 1024px;
+			margin: 0 auto;
+		}
+
+		#menu > div.ui-panel-content-wrap.ui-body-b.ui-panel-animate.ui-panel-content-wrap-closed {
+			padding-top: 42px
+		}
+
+		@media(min-width: 600px) {
+			#menu > div.ui-panel-content-wrap.ui-body-b.ui-panel-animate.ui-panel-content-wrap-closed { 
+				padding-top:0; }
+		}
 
 		</style>
 
@@ -60,7 +113,7 @@ $class = formatLink($page);
 	
 	</head>
 	<body class="<?php echo $class; ?>">
-		<div data-role="page" id="menu" data-theme="b">
+		<div data-role="page" id="ourteam" data-theme="b">
 
 			<!-- TOP OVERLAY -->
 			<div data-role="panel" data-dark-modal="true" data-position="top" data-display="overlay" id="toppaneloverlay" data-theme="a">
@@ -84,14 +137,20 @@ $class = formatLink($page);
 	
 
 			<!-- CONTENT -->
-			<div data-role="content">	
-				<!-- SIDEBAR LINK -->
-				<a id="sidebar-button-holder" class="sidebar-button-holder" href="#rightpanel" data-role="button" data-rel="panel" data-dismissible="true">&lt;</a>
+			<div data-role="content">
+				<div id="content-inner" class="content-inner">
+					<!-- SIDEBAR LINK -->
+					<a id="sidebar-button-holder" class="sidebar-button-holder" href="#rightpanel" data-role="button" data-rel="panel" data-dismissible="true">&lt;</a>
 
-				<!-- BIO -->
-				<?php include('php/ourteam/bio.php'); ?>
+					<!-- BIO -->
+					<?php include('php/ourteam/bio.php'); ?>
+
+					<!-- MEMBER ITEMS -->
+					<div id="member-items-holder" class="member-items-holder">
+						<ul id="all-items" class="all-items"></ul>
+					</div>
 				
-
+				</div>
 			</div><!-- /content -->
 			
 			<div data-role="footer"><!-- data-position="fixed" -->
