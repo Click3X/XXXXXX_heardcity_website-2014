@@ -81,9 +81,14 @@ function Item(data) {
     if (noJpg.contains(this.image)) {
         src = this.image;
     } else {
-        src = imgSource.replace(/png/g, 'jpg');
-        src = src.replace(/items/g, 'items/jpg');
-        src = src.replace(/"/g, ""); 
+        if(device == 'mobile') {
+            src = imgSource.replace(/items/g, 'items/small/');
+            src = src.replace(/"/g, ""); 
+        } else {
+            src = imgSource.replace(/png/g, 'jpg');
+            src = src.replace(/items/g, 'items/jpg');
+            src = src.replace(/"/g, ""); 
+        }
     }
 
 

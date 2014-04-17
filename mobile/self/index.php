@@ -100,17 +100,17 @@ $class = formatLink($page);
 		<script src="js/ourteam/index.js"></script>
 
 		<script>
-		$(document).ready(function () {
-		    $('#marker').on('lazyshow', function () {
-		        $.ajax({}).done(function (responseText) {
-		            // add new elements:
-		            // ...
-		            // process new elements:
-		            $(window).lazyLoadXT();
-		            $('#marker').lazyLoadXT({visibleOnly: false, checkDuplicates: false});
-		        });
-		    }).lazyLoadXT({visibleOnly: false});
-		});
+		// $(document).ready(function () {
+		//     $('#marker').on('lazyshow', function () {
+		//         $.ajax({}).done(function (responseText) {
+		//             // add new elements:
+		//             // ...
+		//             // process new elements:
+		//             $(window).lazyLoadXT();
+		//             $('#marker').lazyLoadXT({visibleOnly: false, checkDuplicates: false});
+		//         });
+		//     }).lazyLoadXT({visibleOnly: false});
+		// });
 
 	    $(window).on('ajaxComplete', function() {
 
@@ -118,7 +118,7 @@ $class = formatLink($page);
 	            $(window).lazyLoadXT();
 	            $.lazyLoadXT.scrollContainer = '.all-items';
 
-	        }, 50);
+	        }, 500);
 
 	        // $.lazyLoadXT.onload.addClass = 'animated fadeIn';
 
