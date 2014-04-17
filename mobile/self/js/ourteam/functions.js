@@ -129,11 +129,8 @@ function initClueTip() {
     if(device == 'desk') {
         deviceWidth = 400;
         openSpeed = 400;
-    } else if(device == 'ipad') {
-        deviceWidth = 400;
-        openSpeed = 0;
-    } else if(device == 'mobile') { 
-        deviceWidth = 280;
+    } else { 
+        deviceWidth = 300;
         openSpeed = 0;
     }
     
