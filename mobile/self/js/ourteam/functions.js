@@ -82,7 +82,7 @@ function Item(data) {
         src = this.image;
     } else {
         if(device == 'mobile') {
-            src = imgSource.replace(/items/g, 'items/small/');
+            src = imgSource.replace(/items/g, 'items/small');
             src = src.replace(/"/g, ""); 
         } else {
             src = imgSource.replace(/png/g, 'jpg');
