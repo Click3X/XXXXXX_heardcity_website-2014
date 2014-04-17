@@ -53,7 +53,13 @@ $class = formatLink($page);
 	<body class="<?php echo $class; ?>">
 		<div data-role="page" id="ourteam" data-theme="b">
 
-			<!-- TOP OVERLAY -->
+			<!-- HEADER -->
+			<div data-role="header" data-position="fixed">
+				<a href="#toppaneloverlay" data-role="button" data-rel="panel" data-dismissible="true">☰</a>
+				<h1><?php echo $page; ?></h1>
+			</div><!-- /header --> 
+
+			<!-- TOP NAV -->
 			<div data-role="panel" data-dark-modal="true" data-position="top" data-display="overlay" id="toppaneloverlay" data-theme="a">
 				<div data-role="navbar">
 					<?php include('php/nav-template.php'); ?>
@@ -65,13 +71,6 @@ $class = formatLink($page);
 			<div data-role="panel" data-position="right" data-display="overlay" id="rightpanel" data-theme="a">
 				<?php include('php/sub-nav.php'); ?>
 			</div>
-
-			
-			<!-- HEADER -->
-			<div data-role="header" data-position="fixed">
-				<a href="#toppaneloverlay" data-role="button" data-rel="panel" data-dismissible="true">☰</a>
-				<h1><?php echo $page; ?></h1>
-			</div><!-- /header --> 
 	
 
 			<!-- CONTENT -->
@@ -84,7 +83,7 @@ $class = formatLink($page);
 					<?php include('php/ourteam/bio.php'); ?>
 
 					<!-- MEMBER ITEMS -->
-					<div id="all-items-holder" class="all-items-holder">
+					<div id="all-items-holder" class="all-items-holder container clearfix">
 						<ul id="all-items" class="all-items"></ul>
 					</div>
 				
@@ -105,10 +104,11 @@ $class = formatLink($page);
 
 	        setTimeout(function() {
 	            $(window).lazyLoadXT();
+	            $.lazyLoadXT.scrollContainer = '.all-items';
 
 	        }, 50);
 
-	        $.lazyLoadXT.onload.addClass = 'animated fadeIn';
+	        // $.lazyLoadXT.onload.addClass = 'animated fadeIn';
 
 	    });
 	    </script>

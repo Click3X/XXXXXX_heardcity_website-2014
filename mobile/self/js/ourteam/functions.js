@@ -9,7 +9,6 @@ function formatLink(string) {
     return string;
 }
 
-
 ///////////////////////////// TEAM MEMBER OBJECT ---- CONTAINS AN ARRAY OF ITEM OBJECTS ////////////////////////////
 
 // MEMBER OBJECT
@@ -95,7 +94,7 @@ function Item(data) {
         li = $('<li/>', {'class':this.id + ' ' + this.ownerId +' item'});
         img = $('<img/>', {/*'src':imgSource, */'data-src':src, 'alt':this.name, 'usemap':'#' + usemap});
         map = $('<map/>', {'id':usemap,'name':usemap,'class':'map-link','data-person':this.ownerId});
-        area = $('<area/>', {'href':'#','shape':'poly','coords':this.coords,'alt':this.id,'data-person':this.ownerId,'data-item':this.id,"title": "|" + "|" + this.owner + "\'s" + "|" + this.owner + "|" + this.bio + "|" + "<label for='"+this.ownerId+"-"+this.id+"' class='permalink'>> View " + this.ownerSex + " stuff</label><input type='radio' name='"+this.owner+"' id='"+this.ownerId+"-"+this.id+"' value='"+this.ownerId+"'>",'class':'cluetip-div'});
+        area = $('<area/>', {'href':'#','shape':'poly','coords':this.coords,'alt':this.id,'data-person':this.ownerId,'data-item':this.id,"title": "|" + "|" + this.owner + "\'s" + "|" + this.name + "|" + this.bio + "|" + "<label for='"+this.ownerId+"-"+this.id+"' class='permalink'>> View " + this.ownerSex + " stuff</label><input type='radio' name='"+this.owner+"' id='"+this.ownerId+"-"+this.id+"' value='"+this.ownerId+"'>",'class':'cluetip-div'});
         // APPEND TO LI
         map.append(area); 
         img.appendTo(li); 
@@ -125,6 +124,7 @@ function Item(data) {
 
 /////////////////////////////////////////////// INIT CLUETIP /////////////////////////////////////////
 function initClueTip() {
+
     var deviceWidth;
     if(device == 'desk') {
         deviceWidth = 400;
@@ -132,15 +132,14 @@ function initClueTip() {
     } else if(device == 'ipad') {
         deviceWidth = 400;
         openSpeed = 0;
-    } else { 
+    } else if(device == 'mobile') { 
         deviceWidth = 280;
         openSpeed = 0;
     }
     
     $('.cluetip-div').cluetip({
-        splitTitle: '|', // use the invoking element's title attribute to populate the clueTip...
-                         // ...and split the contents into separate divs where there is a "|"
-        showTitle: false, // hide the clueTip's heading
+        splitTitle: '|',
+        showTitle: false, 
         sticky: true,
         dropShadow: true,
         arrows: false,
@@ -157,12 +156,67 @@ function initClueTip() {
             interval:     30,
             timeout:      0
         },
+
         onShow: function(ct, ci){
-            $("#cluetip").css('z-index',1200); return true;
-            // $('label').click(clueTipSoloMemberItems);
+            $("#cluetip").css('z-index',1200); 
+            $('#cluetip label').click(function() {
+                var $memBioName = $('#member-bio .name');
+                var $memBioBio = $('#member-bio .bio p');
+
+                $(document).trigger('hideCluetip');
+                var memberId = $('#' + $(this).attr('for')).val();
+                $items = $('.'+memberId);
+                console.log('This is $items: ' + $items); console.dir($items);
+
+                var otherItems = $('.item').not($items);
+                console.dir(otherItems);
+
+                // $(otherItems).remove();
+                // $(otherItems).hide();
+
+                // REMOVE EXISING ITEMS
+                // if(recentlyClicked.length > 0) {
+                //     for(var i=0; i<recentlyClicked.length; i++) {
+                //         recentlyClicked[i].remove();
+                //     }
+                // }
+
+                // STORE MATCHING MEMBER - PUT IN NAME
+                // var memberId = $(this).data('person');
+                // var selectMember = _.where(memberArray, {id:memberId});
+
+                // console.dir(selectMember);
+
+                // ADD MEMBER BIO
+                // $memBioName.text(selectMember[0].name);
+                // $memBioBio.text(selectMember[0].bio);
+
+                // // GET MEMBER ITEMS ADD TO PAGE
+                // var items = selectMember[0].items;
+                // for(var i=0; i<items.length; i++) {
+                //     items[i].build($allItems);
+                //     var $itemEl = items[i].build($allItems).get(0);
+                //     var rImg = $($itemEl).find('img').get(0);
+                //     var rSrc = $(rImg).data('src');
+                //     $(rImg).attr('src', rSrc);
+                //     recentlyClicked.push(items[i]);
+
+                // }
+
+                // var lastLi =  '<li><div id="marker-end" class="lazy-hidden"></div></li>';
+                // $(lastLi).appendTo('#all-items');
+
+                $('body').addClass('js-single-member');
+
+                // // ADD CLUE TIP
+                // initClueTip();
+
+            });
             $('.cluetip-close').click(function() {
                 $(document).trigger('hideCluetip');
             });
+
+            return true;
         }
     });
 }

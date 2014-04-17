@@ -11,9 +11,9 @@ $(document).ready(function() {
 		}
 	});
 
-	window.onscroll = function (e) {  
-		$(document).trigger('hideCluetip');
-	}
+	// window.onscroll = function (e) {  
+	// 	$(document).trigger('hideCluetip');
+	// }
 
 	var $memBioName = $('#member-bio .name');
     var $memBioBio = $('#member-bio .bio p');
@@ -46,8 +46,10 @@ $(document).ready(function() {
 		$.each(sortedItems, function(k) {
 			sortedItems[k].build('#all-items');
 			recentlyClicked.push(sortedItems[k]);
-
 		});
+
+		var lastLi =  '<li><div id="marker-end" class="lazy-hidden"></div></li>';
+		$(lastLi).appendTo('#all-items');
 
 
 		$memBioName.text(heardName);
@@ -93,11 +95,23 @@ $(document).ready(function() {
 
 		}
 
+		var lastLi =  '<li><div id="marker-end" class="lazy-hidden"></div></li>';
+		$(lastLi).appendTo('#all-items');
+
 		$body.addClass('js-single-member');
 
 		// ADD CLUE TIP
         initClueTip();
 	});
+
+
+	// CLUE TIP HOVER CLICK
+	$('.ourteam #cluetip label').click(function() {
+		console.log('I have been clicked!');
+	});
+
+
+
 
 	// ALL MEMBER CLICK
 	$('#all-members, #all-members-bio').click(function() {
@@ -128,6 +142,9 @@ $(document).ready(function() {
 			sortedItems[k].build($allItems);
 			recentlyClicked.push(sortedItems[k]);
 		});
+
+		var lastLi =  '<li><div id="marker-end" class="lazy-hidden"></div></li>';
+		$(lastLi).appendTo('#all-items');
 
 		$body.removeClass('js-single-member');
 

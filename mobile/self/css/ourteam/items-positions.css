@@ -6,6 +6,7 @@
 	/*height: 12390px;*/
 	padding-bottom:1209.96%;
 	margin: 0;
+	overflow: scroll;
 }
 
 .js-single-member .all-items { 
