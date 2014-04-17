@@ -46,11 +46,11 @@ $class = formatLink($page);
 		<script src="js/lib/jquery-mobile.js"></script>
 		<script src="js/lib/lazyloadxt.js"></script>
 		<script src="js/lib/underscore-min.js"></script>
-		<script src="js/lib/jquery.hoverIntent.js"></script>
-		<script src="js/lib/jquery.cluetip.js"></script>
+		<script src="js/lib/fastclick.js"></script>
 	
 	</head>
-	<body class="<?php echo $class; ?>">
+	<body class="<?php echo $class; ?>" onLoad="initFastButtons();">
+	  <span id="fastclick">
 		<div data-role="page" id="ourteam" data-theme="b">
 
 			<!-- HEADER -->
@@ -96,6 +96,10 @@ $class = formatLink($page);
 		
 		</div><!-- /page menu  -->
 
+
+		<script src="js/lib/jquery.hoverIntent.js"></script>
+		<script src="js/lib/jquery.cluetip.js"></script>
+
 		<script src="js/ourteam/functions.js"></script>
 		<script src="js/ourteam/index.js"></script>
 
@@ -124,7 +128,7 @@ $class = formatLink($page);
 
 	    });
 	    </script>
-
+	  </span>
 	</body>
 </html>
 
