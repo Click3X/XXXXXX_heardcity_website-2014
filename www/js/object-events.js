@@ -12,6 +12,9 @@ $(document).ready(function() {
             $('#all-items').remove();
             var memberId = selectedMember;
 
+            $('a[href="#'+selectedMember+'"]').addClass('current');
+            // $('.sidebar-link data[person="'+memberId+'"]').addClass('current');
+
             var selectMember = _.where(memberArray, {id:memberId});
             var lis = selectMember[0].buildLi();
             selectMember[0].attachToDom(lis);
@@ -25,7 +28,7 @@ $(document).ready(function() {
             $('body').addClass('js-single-member');
 
             // ADD MEMBER NAME TO TOP OF SUB NAV
-            console.log('THIS IS selectedMember: ' + selectedMember);
+            // console.log('THIS IS selectedMember: ' + selectedMember);
             $('#member-title').text(selectMember[0].name);
 
             // ADD CLUE TIP
@@ -79,16 +82,21 @@ $(document).ready(function() {
 
 
     // SUB NAV MEMBER CLICKS
-    $sidebarLinks.click(function() {
+    $sidebarLinks.click(function(event) {
+        event.stopPropagation();
         $(document).trigger('hideCluetip');
         // REMOVE OBJECTS
         $('#all-items').remove();
         
+        $('.sidebar-link.current').removeClass('current');
+        $(this).addClass('current');
+
         var memberId = $(this).data('person');
 
         if(clickedMembers.length > 0) {
             var lastMemId = clickedMembers.pop();
             var lastMember = _.where(memberArray, {id:memberId});
+            // console.log('This is lastMember' + lastMemId);
             $('#all-items-holder ul').remove();
 
         }
@@ -108,7 +116,7 @@ $(document).ready(function() {
         $('body').addClass('js-single-member');
 
         // ADD MEMBER NAME TO TOP OF SUB NAV
-        console.log('THIS IS selectedMember: ' + selectMember[0].name);
+        // console.log('THIS IS selectedMember: ' + selectMember[0].name);
         $('#member-title').text(selectMember[0].name);
 
         // ADD CLUE TIP
@@ -158,7 +166,7 @@ $(document).ready(function() {
     $allMembers.click(function() {
         $(document).trigger('hideCluetip');
 
-        console.log('All members has been clicked!');
+        // console.log('All members has been clicked!');
 
         var memberId = $(this).data('person');
         if(clickedMembers.length > 0) {

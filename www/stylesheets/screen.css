@@ -6317,3 +6317,22 @@ input:focus {
 #member-title {
   width: 18em;
 }
+
+/* line 26, ../sass/_new-styles.scss */
+#member-fixed a.sidebar-link {
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+  transition: all 500ms;
+}
+
+/* line 30, ../sass/_new-styles.scss */
+#member-fixed a.sidebar-link.current {
+  color: #333333;
+}
+
+/* line 34, ../sass/_new-styles.scss */
+.permalink .all-members {
+  letter-spacing: .075em;
+}
