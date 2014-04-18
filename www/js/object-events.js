@@ -59,19 +59,33 @@ $(document).ready(function() {
 
         clickedMembers.push(memberId);
 
-        var selectMember = _.where(memberArray, {id:memberId});
-        var lis = selectMember[0].buildLi();
-        selectMember[0].attachToDom(lis);
+        $(function() {
+            $('html, body').animate({scrollTop:0}, 'slow', function() {
+                $('body').addClass('js-single-member');
+            });
 
-        $('#member-bio .bio > p').html(selectMember[0].bio).css('opacity',0).show().animate({opacity:1}, 500);
-        $('#member-bio .name').html(selectMember[0].name).css('opacity',0).show().animate({opacity:1}, 500);
-        $('#sidebar-name').html(selectMember[0].name).css('opacity',0).show().animate({opacity:1}, 500);
-        $('#member-bio .permalink a').show().animate({opacity:1}, 500);
+            // $items.each(function(index, element) {
+            //     $(element).delay(index*250).fadeIn(400); // delays each subsequent fade by 50ms.
+            // });
 
-        $('body').addClass('js-single-member');
+            var selectMember = _.where(memberArray, {id:memberId});
+            var lis = selectMember[0].buildLi();
+            selectMember[0].attachToDom(lis);
 
-        // ADD MEMBER NAME TO TOP OF SUB NAV
-        $('#member-title').text(selectMember[0].name);
+            $('#member-bio .bio > p').html(selectMember[0].bio).css('opacity',0).show().animate({opacity:1}, 500);
+            $('#member-bio .name').html(selectMember[0].name).css('opacity',0).show().animate({opacity:1}, 500);
+            $('#sidebar-name').html(selectMember[0].name).css('opacity',0).show().animate({opacity:1}, 500);
+            $('#member-bio .permalink a').show().animate({opacity:1}, 500);
+
+            $('body').addClass('js-single-member');
+
+            // ADD MEMBER NAME TO TOP OF SUB NAV
+            $('#member-title').text(selectMember[0].name);
+        });
+
+        
+
+        
     });
 
 
