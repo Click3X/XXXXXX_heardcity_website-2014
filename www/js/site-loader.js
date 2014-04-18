@@ -30,7 +30,9 @@ $(document).ready(function () {
     	bottom:0,
     	left:0,
     	right:0,
-    	background:'#fff'
+        color:'#333333',
+    	background:'#fff',
+        'z-index':3000
     }).appendTo('body');
 
     //Searching all elemnts in the page for image
@@ -64,6 +66,7 @@ $(document).ready(function () {
     function completeImageLoading(){
     	count++;
     	percentage = Math.floor(count / imgArray.length * 100);
+        console.log('This is your percentage load!: ' + percentage);
     	$('#loaderMask').html('<span>'+percentage + '%'+'</span>');
     	if(percentage === 100){
     		$('#loaderMask').html('<span>100%</span>')

@@ -11,8 +11,8 @@ $(function() {
     var $imgs = $('img');
     var imgCount = $imgs.length;
     var imgLoaded = 0;
-    var animHolder = $('#anim-holder');
-    var preloadAnim = $('#preload-anim');
+    // var animHolder = $('#anim-holder');
+    // var preloadAnim = $('#preload-anim');
 
     // Hide body - to fade in after preload animation
     $('#body-inner').hide();
@@ -32,32 +32,32 @@ $(function() {
 
 
     // CHECK FOR MOBILE OR DESK SIZE
-    if(device == 'desk') {
-        $(function() {
-            var count = 20001;
-            var spritePre = 'sprite-pre_loader';
-            var finalFrame = 20133;
+    // if(device == 'desk') {
+    //     $(function() {
+    //         var count = 20001;
+    //         var spritePre = 'sprite-pre_loader';
+    //         var finalFrame = 20133;
 
-            function animPreLoader() {
-               count++;
-               if(count > finalFrame - 1) {
-                preloadAnim.fadeOut(500);
-                animHolder.fadeOut(500);
-                $('#body-inner').show(750);
-                clearInterval(timeout);
-               }
-               var preCount = count-1;
-               var preCountStr = preCount.toString();
-               var countStr = count.toString();
-               var preAnimClass = spritePre + preCountStr;
-               var animClass = spritePre + countStr;
-               preloadAnim.removeClass(preAnimClass).addClass(animClass);
+    //         function animPreLoader() {
+    //            count++;
+    //            if(count > finalFrame - 1) {
+    //             preloadAnim.fadeOut(500);
+    //             animHolder.fadeOut(500);
+    //             $('#body-inner').show(750);
+    //             clearInterval(timeout);
+    //            }
+    //            var preCount = count-1;
+    //            var preCountStr = preCount.toString();
+    //            var countStr = count.toString();
+    //            var preAnimClass = spritePre + preCountStr;
+    //            var animClass = spritePre + countStr;
+    //            preloadAnim.removeClass(preAnimClass).addClass(animClass);
 
-              }
-            var timeout = setInterval(animPreLoader, 32);
-            animPreLoader();
-           });
-        }
+    //           }
+    //         var timeout = setInterval(animPreLoader, 32);
+    //         animPreLoader();
+    //        });
+    //     }
 
 
     // SET UP VARS
@@ -128,11 +128,6 @@ $(function() {
         $(selectedInput).prop('checked', true);
         $('#myForm').submit();
     });
-
-
-    // WINDOW ON LOAD        
-    // HIDE SPINNER
-    // $('#ajax-loader').fadeOut(500);
 
     // SWITCH IMG SRC FOR LAZY LOADING
     $img.unveil(600);
