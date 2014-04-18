@@ -40,13 +40,21 @@
 			if (($fileInfo["extension"] == "php")) {
 				include($file);
 
-				$projects[$i]["mixer"] = $info["mixer"];
-				$projects[$i]["director"] = $info["director"];
-				$projects[$i]["type"] = $info["type"];
-				$projects[$i]["title"] = $info["title"];
+				// $projects[$i]["mixer"] = $info["mixer"];
+				// $projects[$i]["director"] = $info["director"];
+				// $projects[$i]["type"] = $info["type"];
+				// $projects[$i]["title"] = $info["title"];
+
+				if(isset($info["agnecy"])) { $projects[$i]["agnecy"] = $info["agnecy"]; }
+				if(isset($info["mixer"])) { $projects[$i]["mixer"] = $info["mixer"]; }
+				if(isset($info["director"])) { $projects[$i]["director"] = $info["director"]; }
+				if(isset($info["type"])) { $projects[$i]["type"] = $info["type"]; }
+				if(isset($info["title"])) { $projects[$i]["title"] = $info["title"]; }
 			}
 	 	}
 	$i++;
 	}
+
+// echo '<pre>'.print_r($projects).'</pre>';
 
 ?>

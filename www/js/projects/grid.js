@@ -361,7 +361,8 @@ var Grid = (function() {
 			this.$directorList = $('<li><span class="bold">Directed by: </span></li>').append(this.$director);
 			this.$mixer = $('<span class="p-mixer"></span>');
 			this.$mixerList = $('<li><span class="bold">Mixed by: </span><span class="p-mixer"></span></li>').append(this.$mixer);
-			this.$projectInfo = $('<ul class="credits"></ul>').append(this.$title, this.$directorList, this.$mixerList);
+			this.$agencyList = $('<li><span class="bold">Agency: </span><span class="p-agency"></span></li>').append(this.$agency);
+			this.$projectInfo = $('<ul class="credits"></ul>').append(this.$title, this.$directorList, this.$mixerList, this.$agencyList);
 			this.$sectionTitle = $('<div class="section-title grey-theme"><div class="noise"></div></div>').append(this.$projectInfo);
 
 			this.$details = $( '<div class="og-details"></div>' );
@@ -403,7 +404,8 @@ var Grid = (function() {
 					mp4: $itemEl.data( 'mp4' ),
 					director: $itemEl.data( 'director' ),
 					mixer: $itemEl.data( 'mixer' ),
-					poster: $itemEl.data( 'poster' )
+					poster: $itemEl.data( 'poster' ),
+					agency: $itemEl.data( 'agency' )
 				};
 
 			this.$title.html( eldata.title );

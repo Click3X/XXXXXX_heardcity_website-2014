@@ -112,7 +112,7 @@ include('php/project-grid.php');
                             <li class="og-vid-holder clearfix <?php echo formatLink($value["type"]);?>">
                             
                             <?php 
-                            echo '<a id="'.$cleanTitle.'" class="no-delay" href="#'.$cleanTitle.'" data-dir="'.$dir.'" data-title="'.$value["title"].'" data-director="'.$value["director"].'" data-mixer="'.$value["mixer"].'" data-poster="'.$BASE.$thumbsrc.'" data-mp4="'.$BASE.$value["mp4"].'">';
+                            echo '<a id="'.$cleanTitle.'" class="no-delay" href="#'.$cleanTitle.'" data-dir="'.$dir.'" data-title="'.$value["title"].'"'; if(isset($value["director"])) {echo 'data-director="'.$value["director"].'"';} elseif(isset($value["mixer"])) { echo 'data-mixer="'.$value["mixer"].'"';} elseif(isset($value["agency"])) {echo 'data-agency="'.$value["agency"].'"';} echo 'data-poster="'.$BASE.$thumbsrc.'" data-mp4="'.$BASE.$value["mp4"].'">';
                                 echo '<div class="vid-thumb-holder img-link clearfix">';
                                     echo '<div class="project-thumb-bg" style="background-image:url('.$BASE . $thumbsrc.'); background-size:cover;"></div>';
                                 echo '</div>'; ?>

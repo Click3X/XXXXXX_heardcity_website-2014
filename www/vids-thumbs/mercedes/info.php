@@ -1,8 +1,10 @@
 <?php // info
 
 $info = array(
-	'title' => 'Mercedes Patents',
-	'director'=>'Mercenary McDonald',
-	'mixer'=> 'Hope Floats',
+	'client' => 'Mercedes',
+	'title' => 'Derby',
+	// 'director'=>'Merkley & Partners',
+	// 'mixer'=> 'Hope Floats',
+	'agency' => 'Merkley & Partners',
 	'type' => 'commercial'
 	);

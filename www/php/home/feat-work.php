@@ -45,8 +45,9 @@
 								<input type="radio" name="selected_project" id="<?php echo $projectLink; ?>-input" tabindex="2" value="<?php echo $projectLink; ?>">
 							</div>
 							<ul class="credits">
-								<li><span class="bold">Directed by: </span><?php echo $project['director']; ?></li>
-								<li><span class="bold">Mixed by: </span><?php echo $project['mixer']; ?></li>
+								<?php if(isset($project['director'])) { ?><li><span class="bold">Directed by: </span><?php echo $project['director']; ?></li><?php } ?>
+								<?php if(isset($project['mixer'])) { ?><li><span class="bold">Mixed by: </span><?php echo $project['mixer']; ?></li><?php } ?>
+								<?php if(isset($project['agency'])) { ?><li><span class="bold">Agency: </span><?php echo $project['agency']; ?></li><?php } ?>
 							</ul>
 						</div>
 					</div>

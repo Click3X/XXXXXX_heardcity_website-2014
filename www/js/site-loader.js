@@ -1,5 +1,18 @@
 $(document).ready(function () {
 	"use strict"
+
+    //Creating loader overlay
+    $('<div id="loaderMask"><span>0%</span><div id="anim-holder" class="anim-holder preload-anim"><div id="preload-anim" class="sprite-pre_loader20040"></div></div></div>').css({
+        position:"fixed",
+        top:0,
+        bottom:0,
+        left:0,
+        right:0,
+        color:'#333333',
+        background:'#fff',
+        'z-index':3000
+    }).appendTo('body');
+
 	//indexOf is not supported by IE9>. 
 	if (!Array.prototype.indexOf){
 	  Array.prototype.indexOf = function(elt /*, from*/){
@@ -22,18 +35,6 @@ $(document).ready(function () {
 	}
     
     var bgImg = [], img = [], count=0, percentage = 0;
-
-    //Creating loader overlay
-    $('<div id="loaderMask"><span>0%</span><div id="anim-holder" class="anim-holder preload-anim"><div id="preload-anim" class="sprite-pre_loader20040"></div></div></div>').css({
-    	position:"fixed",
-    	top:0,
-    	bottom:0,
-    	left:0,
-    	right:0,
-        color:'#333333',
-    	background:'#fff',
-        'z-index':3000
-    }).appendTo('body');
 
     //Searching all elemnts in the page for image
     $('*').filter(function() {
@@ -61,13 +62,13 @@ $(document).ready(function () {
         $("<img />").attr("src", val).bind("error", function () {
             imgError(this);
         });
-    })
+    });
 
     function completeImageLoading(){
     	count++;
     	percentage = Math.floor(count / imgArray.length * 100);
-        console.log('This is your percentage load!: ' + percentage);
-    	$('#loaderMask').html('<span>'+percentage + '%'+'</span>');
+        // console.log('This is your percentage load!: ' + percentage);
+    	$('#loaderMask span').text(percentage + '%');
     	if(percentage === 100){
     		$('#loaderMask').html('<span>100%</span>')
     		$('#loaderMask').fadeOut(function(){

@@ -63,8 +63,14 @@
 		letter-spacing: .15em;
 		cursor: pointer;
 
+		.permalink,
 		a {
 			cursor: pointer;
+			@include prefix(transition, all 500ms);
+
+			&:hover {
+				color:#989899;
+			}
 		}
 	}
 }
