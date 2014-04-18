@@ -45,17 +45,19 @@ include('php/project-grid.php');
         </script>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/site-loader.js"></script>
 
         <script>
-            $('#body-inner').hide();
+            $('#preload-mask').hide();
         </script>
+
+        <script src="js/site-loader.js"></script>
 
     </head>
 
     <body class="home">
+      <div id="preload-mask">
         <!-- BODY INNER WILL BE HIDDEN TILL PRE LOADING IS DONE -->
-        <div id="body-inner" class="body-inner clearfix">
+        <div class="body-inner clearfix">
 
             <!-- MARQUEE -->
             <div id="black-logo" class="logo"></div>    
@@ -132,5 +134,6 @@ include('php/project-grid.php');
             <script src="js/home/setup.js"></script>
 
         </div>
+      </div> <!-- /#PRELOAD-MASK -->
     </body>
 </html>

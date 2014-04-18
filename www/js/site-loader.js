@@ -71,7 +71,8 @@ $(document).ready(function () {
     	if(percentage === 100){
     		$('#loaderMask').html('<span>100%</span>')
     		$('#loaderMask').fadeOut(function(){
-    			$('#loaderMask').remove()
+    			$('#loaderMask').remove();
+                $('#preload-mask').show();
     		})
     	}
     }
