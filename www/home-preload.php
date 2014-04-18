@@ -47,6 +47,9 @@ include('php/project-grid.php');
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/site-loader.js"></script>
+        <script>
+            $('#body-inner').hide();
+        </script>
 
     
     </head>
@@ -133,7 +136,7 @@ include('php/project-grid.php');
             <!-- FOOTER -->
             <?php include('php/footer.php'); ?>
 
-            <script src="js/lib/underscore-min.js"></script>
+<!--        <script src="js/lib/underscore-min.js"></script>        -->
             <script src="js/lib/jquery.unveil.min.js"></script>
             <script src="js/lib/jquery.flexnav.min.js"></script>
             <script src="js/lib/jquery.royalslider.min.js"></script>
