@@ -10,7 +10,7 @@ $(function() {
 
     var $imgs = $('img');
     var imgCount = $imgs.length;
-    var imgLoaded = 0;
+    // var imgLoaded = 0;
     // var animHolder = $('#anim-holder');
     // var preloadAnim = $('#preload-anim');
 
@@ -199,7 +199,6 @@ $(function() {
         keyboardNavEnabled: true,
         usePreloader:false,
         autoPlay: {
-            // autoplay options go gere
             enabled: true,
             pauseOnHover: true
         }
@@ -220,11 +219,6 @@ $(function() {
         loopRewind:false,
         keyboardNavEnabled: true,
         usePreloader:false
-        // autoPlay: {
-        //     // autoplay options go gere
-        //     enabled: true,
-        //     pauseOnHover: true
-        // }
     });
 
     $featuredSlider.royalSlider({
@@ -245,7 +239,6 @@ $(function() {
         usePreloader: true,
         navigateByClick: false,
         autoPlay: {
-            // autoplay options go gere
             enabled: true,
             pauseOnHover: true,
             delay:6000
@@ -286,7 +279,6 @@ $(function() {
         usePreloader:false,
         navigateByClick: false,
         autoPlay: {
-            // autoplay options go gere
             enabled: true,
             pauseOnHover: true
         }

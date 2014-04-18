@@ -140,7 +140,6 @@ include('php/project-grid.php');
             <script src="js/lib/jquery.unveil.min.js"></script>
             <script src="js/lib/jquery.flexnav.min.js"></script>
             <script src="js/lib/jquery.royalslider.min.js"></script>
-            <script src="js/lib/jquery.flexnav.min.js"></script>
             <script src="js/lib/jquery.easing-1.3.js"></script>
             <script src="js/home/setup.js"></script>
 

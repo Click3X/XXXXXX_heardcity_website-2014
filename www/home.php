@@ -21,10 +21,18 @@ include('php/project-grid.php');
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <style>
+            #loaderMask{
+                text-align: center;
+                padding-top: 20%;
+            }
+            #loaderMask span{
+                font-size: 5em;
+            }
+        </style>
         
         <script>
-        // TEST FOR MOBILE DEVICE / TABLET
+            // TEST FOR MOBILE DEVICE / TABLET
             var device;
             if( /Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent) ) {
                 device = 'mobile';
@@ -36,17 +44,17 @@ include('php/project-grid.php');
             <?php echo 'var base="'.$BASE.'";'; ?>
         </script>
 
-    
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/site-loader.js"></script>
+        
+        <script>
+            $('#body-inner').hide();
+        </script>
+
     </head>
 
     <body class="home">
-        <!-- ANIMATED PRE LOADER -->
-        <div id="anim-holder" class="anim-holder preload-anim">
-            <div id="preload-anim" class="sprite-pre_loader20000"></div>
-        </div>
-        <!-- PRELOADER -->
-        
-            
+        <!-- BODY INNER WILL BE HIDDEN TILL PRE LOADING IS DONE -->
         <div class="body-inner clearfix">
 
             <!-- MARQUEE -->
@@ -63,7 +71,6 @@ include('php/project-grid.php');
 
             <!-- BLACK TEXT 1 -->
             <?php include('php/home/black-text.php'); ?>
-
 
 
             <!-- // GUTIAR-NORD JEAN-JACKET -->
@@ -100,10 +107,8 @@ include('php/project-grid.php');
             </div>
 
 
-
             <!--GREY TEXT -->
             <?php include('php/home/grey-text.php'); ?>
-
 
 
             <!-- // STAIRS - GIRL -->
@@ -117,16 +122,13 @@ include('php/project-grid.php');
             </div>
 
 
-
             <!-- FOOTER -->
             <?php include('php/footer.php'); ?>
 
-            <script src="js/lib/underscore-min.js"></script>
             <script src="js/lib/jquery.unveil.min.js"></script>
             <script src="js/lib/jquery.flexnav.min.js"></script>
-            <script src="js/lib/jquery.royalslider.min.js"></script>
-            <script src="js/lib/jquery.flexnav.min.js"></script>
             <script src="js/lib/jquery.easing-1.3.js"></script>
+            <script src="js/lib/jquery.royalslider.min.js"></script>
             <script src="js/home/setup.js"></script>
 
         </div>
