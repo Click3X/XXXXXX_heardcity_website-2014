@@ -1,0 +1,24 @@
+.project-video-link {
+	cursor:pointer;
+}
+
+
+.project-video-link:hover {
+	color: #555;
+	@include prefix(transition, all 500ms);
+}
+
+
+// CONTACT PAGE MAP HIDE GOOGLE STUFF
+#map-canvas > div > div:nth-child(7),
+#map-canvas > div > div.gmnoprint.gm-style-cc,
+#map-canvas > div > div:nth-child(3) {
+	display: none;
+}
+
+
+// OURTEAM PAGE TITLE CHANGE
+
+#member-title {
+	width:18em;
+}

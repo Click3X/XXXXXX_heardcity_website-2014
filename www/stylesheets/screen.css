@@ -6290,3 +6290,30 @@ input:focus {
   color: #c84938;
   text-decoration: none;
 }
+
+/* line 1, ../sass/_new-styles.scss */
+.project-video-link {
+  cursor: pointer;
+}
+
+/* line 6, ../sass/_new-styles.scss */
+.project-video-link:hover {
+  color: #555;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+  transition: all 500ms;
+}
+
+/* line 15, ../sass/_new-styles.scss */
+#map-canvas > div > div:nth-child(7),
+#map-canvas > div > div.gmnoprint.gm-style-cc,
+#map-canvas > div > div:nth-child(3) {
+  display: none;
+}
+
+/* line 22, ../sass/_new-styles.scss */
+#member-title {
+  width: 18em;
+}

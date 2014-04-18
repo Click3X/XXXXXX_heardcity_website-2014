@@ -24,6 +24,10 @@ $(document).ready(function() {
 
             $('body').addClass('js-single-member');
 
+            // ADD MEMBER NAME TO TOP OF SUB NAV
+            console.log('THIS IS selectedMember: ' + selectedMember);
+            $('#member-title').text(selectMember[0].name);
+
             // ADD CLUE TIP
             var deviceWidth;
             if(device == 'desk') {
@@ -102,6 +106,10 @@ $(document).ready(function() {
         $('#member-bio .permalink a').show().animate({opacity:1}, 500);
 
         $('body').addClass('js-single-member');
+
+        // ADD MEMBER NAME TO TOP OF SUB NAV
+        console.log('THIS IS selectedMember: ' + selectMember[0].name);
+        $('#member-title').text(selectMember[0].name);
 
         // ADD CLUE TIP
         var deviceWidth;
@@ -185,6 +193,9 @@ $(document).ready(function() {
         $('#member-bio .name').html('Heard City').css('opacity',0).show().animate({opacity:1}, 500);
         $('#sidebar-name').html('Heard City').css('opacity',0).show().animate({opacity:1}, 500);
         $('#member-bio .permalink a').hide();
+
+        // ADD MEMBER NAME TO TOP OF SUB NAV
+        $('#member-title').text('Heard City');
 
         // ADD CLUE TIP
         var deviceWidth;

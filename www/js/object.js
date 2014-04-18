@@ -54,7 +54,7 @@ function Members(data) {
         var member = this;
         var sex = this.sex;
         $.each(items, function() {
-            console.dir(this);
+            // console.dir(this);
                 var item = $(this);
                 
                 var bio = this.bio;
