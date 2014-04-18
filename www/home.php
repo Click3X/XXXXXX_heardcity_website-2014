@@ -45,17 +45,12 @@ include('php/project-grid.php');
         </script>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-        <script>
-            $('#preload-mask').hide();
-        </script>
-
         <script src="js/site-loader.js"></script>
 
     </head>
 
     <body class="home">
-      <div id="preload-mask">
+      <div id="preload-mask" style="visibility:hidden">
         <!-- BODY INNER WILL BE HIDDEN TILL PRE LOADING IS DONE -->
         <div class="body-inner clearfix">
 

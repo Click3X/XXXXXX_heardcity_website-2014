@@ -72,7 +72,7 @@ $(document).ready(function () {
     		$('#loaderMask').html('<span>100%</span>')
     		$('#loaderMask').fadeOut(function(){
     			$('#loaderMask').remove();
-                $('#preload-mask').show();
+                $('#preload-mask').css('visibility','visible');
     		})
     	}
     }

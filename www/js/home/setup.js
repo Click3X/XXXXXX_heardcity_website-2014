@@ -10,13 +10,6 @@ $(function() {
 
     var $imgs = $('img');
     var imgCount = $imgs.length;
-    // var imgLoaded = 0;
-    // var animHolder = $('#anim-holder');
-    // var preloadAnim = $('#preload-anim');
-
-    // Hide body - to fade in after preload animation
-    $('#body-inner').hide();
-
 
     // REQUEST ANIMATION FRAME
     window.requestAnimFrame = (function(){
@@ -29,36 +22,6 @@ $(function() {
                 window.setTimeout(callback, 1000 / 60);
               };
     })();
-
-
-    // CHECK FOR MOBILE OR DESK SIZE
-    // if(device == 'desk') {
-    //     $(function() {
-    //         var count = 20001;
-    //         var spritePre = 'sprite-pre_loader';
-    //         var finalFrame = 20133;
-
-    //         function animPreLoader() {
-    //            count++;
-    //            if(count > finalFrame - 1) {
-    //             preloadAnim.fadeOut(500);
-    //             animHolder.fadeOut(500);
-    //             $('#body-inner').show(750);
-    //             clearInterval(timeout);
-    //            }
-    //            var preCount = count-1;
-    //            var preCountStr = preCount.toString();
-    //            var countStr = count.toString();
-    //            var preAnimClass = spritePre + preCountStr;
-    //            var animClass = spritePre + countStr;
-    //            preloadAnim.removeClass(preAnimClass).addClass(animClass);
-
-    //           }
-    //         var timeout = setInterval(animPreLoader, 32);
-    //         animPreLoader();
-    //        });
-    //     }
-
 
     // SET UP VARS
     var $body = $('body'),
@@ -76,8 +39,6 @@ $(function() {
     $firstCon = $('#first-container'),
     $siteHeader = $('#site-header');
 
-    // HIDE MAN NAV to prevent flickr?
-    $siteHeader.hide();
 
     // PAGE TITLE
     $('#page-title').text('Home');
@@ -110,7 +71,6 @@ $(function() {
     $('.project-video-link').click(function() {
         var selectedProjectLink = $(this),
         selectedInput = $(selectedProjectLink).siblings('input');
-
         selectedInput = selectedInput[0];
         // Check the input associated with Project
         $(selectedInput).prop('checked', true);
@@ -122,7 +82,6 @@ $(function() {
     $('.member-permalink').click(function() {
         var selectedMemberLink = $(this),
         selectedInput = $(selectedMemberLink).siblings('input');
-
         selectedInput = selectedInput[0];
         // Check the input associated with team member
         $(selectedInput).prop('checked', true);
