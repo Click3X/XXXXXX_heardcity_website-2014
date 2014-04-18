@@ -24,7 +24,7 @@ $(document).ready(function () {
     var bgImg = [], img = [], count=0, percentage = 0;
 
     //Creating loader overlay
-    $('<div id="loaderMask"><span>0%</span></div>').css({
+    $('<div id="loaderMask"><span>0%</span><div id="anim-holder" class="anim-holder preload-anim"><div id="preload-anim" class="sprite-pre_loader20040"></div></div></div>').css({
     	position:"fixed",
     	top:0,
     	bottom:0,
