@@ -10,18 +10,51 @@ $(function() {
 
     var $imgs = $('img');
     var imgCount = $imgs.length;
+    var animHolder = $('#anim-holder');
+    var preloadAnim = $('#preload-anim');
 
     // REQUEST ANIMATION FRAME
     window.requestAnimFrame = (function(){
-      return  window.requestAnimationFrame       || 
-              window.webkitRequestAnimationFrame || 
-              window.mozRequestAnimationFrame    || 
-              window.oRequestAnimationFrame      || 
+      return  window.requestAnimationFrame       ||
+              window.webkitRequestAnimationFrame ||
+              window.mozRequestAnimationFrame    ||
+              window.oRequestAnimationFrame      ||
               window.msRequestAnimationFrame     ||
               function( callback ){
                 window.setTimeout(callback, 1000 / 60);
               };
     })();
+
+
+    // CHECK FOR MOBILE OR DESK SIZE
+    if(device == 'desk') {
+        $(function() {
+            var count = 20001;
+            var spritePre = 'sprite-pre_loader';
+            var finalFrame = 20133;
+            function animPreLoader() {
+                count++;
+
+                if(count > finalFrame - 1) {
+                    preloadAnim.fadeOut(500);
+                    animHolder.fadeOut(500);
+                    $('#body-inner').show(750);
+                    clearInterval(timeout);
+                }
+
+                var preCount = count-1;
+                var preCountStr = preCount.toString();
+                var countStr = count.toString();
+                var preAnimClass = spritePre + preCountStr;
+                var animClass = spritePre + countStr;
+                preloadAnim.removeClass(preAnimClass).addClass(animClass);
+            }
+
+            var timeout = setInterval(animPreLoader, 32);
+            animPreLoader();
+        });
+    }
+    
 
     // SET UP VARS
     var $body = $('body'),
