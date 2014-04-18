@@ -21,7 +21,7 @@ include('php/project-grid.php');
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->
 
-          <style>
+        <style>
                 #loaderMask{
                     text-align: center;
                     padding-top: 20%;
@@ -54,15 +54,8 @@ include('php/project-grid.php');
     
     </head>
 
-    <body class="home">
-        <!-- ANIMATED PRE LOADER -->
-<!--         <div id="anim-holder" class="anim-holder preload-anim">
-            <div id="preload-anim" class="sprite-pre_loader20000"></div>
-        </div> -->
-        <!-- PRELOADER -->
-        
-            
-        <div class="body-inner clearfix">
+    <body class="home">            
+        <div id="body-inner" class="body-inner clearfix">
 
             <!-- MARQUEE -->
             <div id="black-logo" class="logo"></div>    

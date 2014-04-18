@@ -46,7 +46,7 @@ include('php/project-grid.php');
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/site-loader.js"></script>
-        
+
         <script>
             $('#body-inner').hide();
         </script>
@@ -55,7 +55,7 @@ include('php/project-grid.php');
 
     <body class="home">
         <!-- BODY INNER WILL BE HIDDEN TILL PRE LOADING IS DONE -->
-        <div class="body-inner clearfix">
+        <div id="body-inner" class="body-inner clearfix">
 
             <!-- MARQUEE -->
             <div id="black-logo" class="logo"></div>    
