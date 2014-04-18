@@ -27,6 +27,7 @@
 	@include prefix(transition, all 500ms);
 }
 
+#member-fixed a#all-members.current,
 #member-fixed a.sidebar-link.current {
 	color:#333333;
 }
@@ -34,3 +35,4 @@
 .permalink .all-members {
 	letter-spacing: .075em;
 }
+

@@ -44,6 +44,18 @@ include('php/project-grid.php');
                     echo "<script>var selectedProject = '';</script>";
                 } 
             ?>
+
+        <script>
+          if(window.location.hash) {
+              var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+              console.log(hash);
+              var selectedProject = hash;
+              // hash found
+          } else {
+              // No hash found
+          }
+        </script>
+
         <script src="js/lib/modernizr.js"></script>
     </head>
 

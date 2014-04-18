@@ -6327,12 +6327,13 @@ input:focus {
   transition: all 500ms;
 }
 
-/* line 30, ../sass/_new-styles.scss */
+/* line 31, ../sass/_new-styles.scss */
+#member-fixed a#all-members.current,
 #member-fixed a.sidebar-link.current {
   color: #333333;
 }
 
-/* line 34, ../sass/_new-styles.scss */
+/* line 35, ../sass/_new-styles.scss */
 .permalink .all-members {
   letter-spacing: .075em;
 }

@@ -259,7 +259,7 @@ $(function() {
             fadeEffect: false,
             moveEffect: 'right',
             moveOffset: 500,
-            easing:'easeOutSine',
+            easing:'easeInOutSine',
             delay:200
         }
     });
@@ -267,8 +267,6 @@ $(function() {
     // PAUSE VIDEO ON SLIDE CHANGE
     var sliderInstance = $featuredSlider.data('royalSlider');
     sliderInstance.ev.on('rsAfterSlideChange', function() {
-         // console.log('There has been a slide change!');
-         // console.log(myVideo); console.dir(myVideo);
           var myVideo = $('video');
         $('video').remove();
         $('.work-slide img').show();

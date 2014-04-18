@@ -66,9 +66,6 @@ function Members(data) {
                 var img, map, area, li, a;
 
                 var pos = this.position;
-                // var owner = this.owner;
-                // var ownerId = this.ownerId;
-                // var ownerSex = this.ownerSex;
 
                 var blankGif = 'images/sprites/blank.gif';
 
@@ -161,9 +158,8 @@ function Members(data) {
             openSpeed = 0;
         }
         $('.cluetip-div').cluetip({
-            splitTitle: '|', // use the invoking element's title attribute to populate the clueTip...
-                             // ...and split the contents into separate divs where there is a "|"
-            showTitle: false, // hide the clueTip's heading
+            splitTitle: '|',
+            showTitle: false,
             sticky: true,
             dropShadow: true,
             arrows: true,
@@ -172,7 +168,7 @@ function Members(data) {
             positionBy: 'bottomTop',
             closeText:'x',
             fx: {
-                open: 'fadeIn', // can be 'show' or 'slideDown' or 'fadeIn'
+                open: 'fadeIn',
                 openSpeed:openSpeed
             },
             hoverIntent: {
@@ -204,8 +200,6 @@ var setupMembers = {
 
     getData: function() {
         $.getJSON(base + "js/data/members.json", function(data) {
-        // $.getJSON(base + "json.php", function(data) {
-            // console.log('This is data: ' + data); console.dir(data);
             setupMembers.buildNewMember(data);
         });
     },
@@ -242,9 +236,8 @@ var setupMembers = {
         }
 
         $('.cluetip-div').cluetip({
-            splitTitle: '|', // use the invoking element's title attribute to populate the clueTip...
-                             // ...and split the contents into separate divs where there is a "|"
-            showTitle: false, // hide the clueTip's heading
+            splitTitle: '|',
+            showTitle: false,
             sticky: true,
             dropShadow: true,
             arrows: true,
@@ -273,7 +266,3 @@ var setupMembers = {
 };
 
 setupMembers.init();
-
-
-
-// console.log('These are your members: ' + memberArray); console.dir(memberArray);

@@ -13,13 +13,11 @@ $(document).ready(function() {
             var memberId = selectedMember;
 
             $('a[href="#'+selectedMember+'"]').addClass('current');
-            // $('.sidebar-link data[person="'+memberId+'"]').addClass('current');
 
             var selectMember = _.where(memberArray, {id:memberId});
             var lis = selectMember[0].buildLi();
             selectMember[0].attachToDom(lis);
 
-            // console.log(selectMember[0]); console.dir(selectMember[0]);
             $('#member-bio .bio > p').html(selectMember[0].bio).css('opacity',0).show().animate({opacity:1}, 500);
             $('#member-bio .name').html(selectMember[0].name).css('opacity',0).show().animate({opacity:1}, 500);
             $('#sidebar-name').html(selectMember[0].name).css('opacity',0).show().animate({opacity:1}, 500);
@@ -28,46 +26,7 @@ $(document).ready(function() {
             $('body').addClass('js-single-member');
 
             // ADD MEMBER NAME TO TOP OF SUB NAV
-            // console.log('THIS IS selectedMember: ' + selectedMember);
             $('#member-title').text(selectMember[0].name);
-
-            // ADD CLUE TIP
-            var deviceWidth;
-            if(device == 'desk') {
-                deviceWidth = 400;
-                openSpeed = 400;
-            } else { 
-                deviceWidth = 280;
-                openSpeed = 0;
-            }
-
-            $('.cluetip-div').cluetip({
-                splitTitle: '|', // use the invoking element's title attribute to populate the clueTip...
-                                 // ...and split the contents into separate divs where there is a "|"
-                showTitle: false, // hide the clueTip's heading
-                sticky: true,
-                dropShadow: true,
-                arrows: true,
-                dropShadowSteps:16,
-                width:deviceWidth,
-                positionBy: 'bottomTop',
-                closeText:'x',
-                fx: {
-                    open: 'fadeIn', // can be 'show' or 'slideDown' or 'fadeIn'
-                    openSpeed:openSpeed
-                },
-                hoverIntent: {
-                    sensitivity:  5,
-                    interval:     30,
-                    timeout:      0
-                },
-                onShow: function(ct, ci){
-                    $('label').click(clueTipSoloMemberItems);
-                    $('.cluetip-close').click(function() {
-                        $(document).trigger('hideCluetip');
-                    });
-                }
-            });
         }, 50);
 
     } else {
@@ -79,8 +38,6 @@ $(document).ready(function() {
     }
     
 
-
-
     // SUB NAV MEMBER CLICKS
     $sidebarLinks.click(function(event) {
         event.stopPropagation();
@@ -88,7 +45,7 @@ $(document).ready(function() {
         // REMOVE OBJECTS
         $('#all-items').remove();
         
-        $('.sidebar-link.current').removeClass('current');
+        $('.sidebar-link.current, .all-members.current').removeClass('current');
         $(this).addClass('current');
 
         var memberId = $(this).data('person');
@@ -96,7 +53,6 @@ $(document).ready(function() {
         if(clickedMembers.length > 0) {
             var lastMemId = clickedMembers.pop();
             var lastMember = _.where(memberArray, {id:memberId});
-            // console.log('This is lastMember' + lastMemId);
             $('#all-items-holder ul').remove();
 
         }
@@ -107,7 +63,6 @@ $(document).ready(function() {
         var lis = selectMember[0].buildLi();
         selectMember[0].attachToDom(lis);
 
-        // console.log(selectMember[0]); console.dir(selectMember[0]);
         $('#member-bio .bio > p').html(selectMember[0].bio).css('opacity',0).show().animate({opacity:1}, 500);
         $('#member-bio .name').html(selectMember[0].name).css('opacity',0).show().animate({opacity:1}, 500);
         $('#sidebar-name').html(selectMember[0].name).css('opacity',0).show().animate({opacity:1}, 500);
@@ -116,47 +71,7 @@ $(document).ready(function() {
         $('body').addClass('js-single-member');
 
         // ADD MEMBER NAME TO TOP OF SUB NAV
-        // console.log('THIS IS selectedMember: ' + selectMember[0].name);
         $('#member-title').text(selectMember[0].name);
-
-        // ADD CLUE TIP
-        var deviceWidth;
-        if(device == 'desk') {
-            deviceWidth = 400;
-            openSpeed = 400;
-        } else { 
-            deviceWidth = 280;
-            openSpeed = 0;
-        }
-
-        $('.cluetip-div').cluetip({
-            splitTitle: '|', // use the invoking element's title attribute to populate the clueTip...
-                             // ...and split the contents into separate divs where there is a "|"
-            showTitle: false, // hide the clueTip's heading
-            sticky: true,
-            dropShadow: true,
-            arrows: true,
-            dropShadowSteps:16,
-            width:deviceWidth,
-            positionBy: 'bottomTop',
-            closeText:'x',
-            fx: {
-                open: 'fadeIn', // can be 'show' or 'slideDown' or 'fadeIn'
-                openSpeed:openSpeed
-            },
-            hoverIntent: {
-                sensitivity:  5,
-                interval:     30,
-                timeout:      0
-            },
-            onShow: function(ct, ci){
-                $('label').click(clueTipSoloMemberItems);
-                $('.cluetip-close').click(function() {
-                    $(document).trigger('hideCluetip');
-                });
-            }
-        });
-
     });
 
 
@@ -166,14 +81,15 @@ $(document).ready(function() {
     $allMembers.click(function() {
         $(document).trigger('hideCluetip');
 
-        // console.log('All members has been clicked!');
-
         var memberId = $(this).data('person');
         if(clickedMembers.length > 0) {
             var lastMemId = clickedMembers.pop();
             $('#all-items-holder .'+lastMemId).remove();
         }
         clickedMembers.push(memberId);
+
+        $('.sidebar-link.current').removeClass('current');
+        $('#all-members').addClass('current');
 
         // build heardcity ul
         var ul;
@@ -216,9 +132,8 @@ $(document).ready(function() {
         }
 
         $('.cluetip-div').cluetip({
-            splitTitle: '|', // use the invoking element's title attribute to populate the clueTip...
-                             // ...and split the contents into separate divs where there is a "|"
-            showTitle: false, // hide the clueTip's heading
+            splitTitle: '|',
+            showTitle: false,
             sticky: true,
             dropShadow: true,
             arrows: true,
@@ -227,7 +142,7 @@ $(document).ready(function() {
             positionBy: 'bottomTop',
             closeText:'x',
             fx: {
-                open: 'fadeIn', // can be 'show' or 'slideDown' or 'fadeIn'
+                open: 'fadeIn',
                 openSpeed:openSpeed
             },
             hoverIntent: {
