@@ -21,15 +21,13 @@ foreach ($members as $key => $member) {
   $jsonMembers[$key]['bio'] = $member_bio;
   $jsonMembers[$key]['sex'] = $sex;
   $jsonMembers[$key]['items'] = $items;
-  $jsonMembers[$key]['member_class'] = $member_class;
+  $jsonMembers[$key]['id'] = $member_class;
     
   foreach ($items as $key => $item) {
         if($item['image']) {
             $image = $item['image'];
             $info = pathinfo($image);
             $usemap = $info['filename'];
-
-            echo print_r($image);
         }
         if($item['bio']) {
             $bio = $item['bio'];
@@ -48,6 +46,7 @@ foreach ($members as $key => $member) {
         }
   }
 }
+$jsonMembers = json_encode($jsonMembers);
 ?>
 <!DOCTYPE html>
 <html>
@@ -55,32 +54,13 @@ foreach ($members as $key => $member) {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Heard City | Home</title>
-
-        <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-
-          <!--[if IE]>
-              <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-          <![endif]-->
-
-        <script data-main="js/app" src="js/lib/require.js"></script>
+        <title>Heard City | JSON</title>
     
     </head>
 
-    <body class="">
+    <body>
 
-
-      <?php $jsonMembers = json_encode($jsonMembers);
-
-          echo '<pre>'.$jsonMembers.'</pre>';
-
-          echo '<script>var newJsonMembers = JSON.stringify('.$jsonMembers.'); console.dir(newJsonMembers); </script>';
-?>
-
-          <script> console.log(newJsonMembers);</script>
-
-  <?php include('php/footer.php'); ?>
+      <?php echo '{"members":'.$jsonMembers.'}'; ?>
         
     </body>
 </html>

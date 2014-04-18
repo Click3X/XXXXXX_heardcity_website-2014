@@ -54,7 +54,6 @@ function Members(data) {
         var member = this;
         var sex = this.sex;
         $.each(items, function() {
-            console.dir(this);
                 var item = $(this);
                 
                 var bio = this.bio;
@@ -64,11 +63,6 @@ function Members(data) {
                 var id = formatLink(name);
                 var usemap = member.id + id;
                 var img, map, area, li, a;
-
-                var pos = this.position;
-                // var owner = this.owner;
-                // var ownerId = this.ownerId;
-                // var ownerSex = this.ownerSex;
 
                 var blankGif = 'images/sprites/blank.gif';
 
@@ -103,7 +97,7 @@ function Members(data) {
                         alt: id,
                         'data-person':member.id,
                         'data-item':id,
-                        "title": "|" + "|" + member.name + "\'s" + "|" + name + "|" + bio + "|" + "<label for='"+member.id+"-"+id+"' class='permalink'>> View " + sex + " stuff</label><input type='radio' name='"+member.id+"' id='"+member.id+"-"+id+"' value='"+member.id+"'>",
+                        "title": "|" + "|" + name + "\'s" + "|" + name + "|" + bio + "|" + "<label for='"+member.id+"-"+id+"' class='permalink'>> View " + sex + " stuff</label><input type='radio' name='"+member.id+"' id='"+member.id+"-"+id+"' value='"+member.id+"'>",
                         'class':'cluetip-div'
                     });
 
@@ -126,7 +120,7 @@ function Members(data) {
                         href:'#',
                         'data-person':member.id,
                         'data-item': id,
-                        "title": "|" + "|" + member.name + "\'s" + "|" + name + "|" + bio + "|" + "<label for='"+member.id+"-"+id+"' class='permalink'>> View " + sex + " stuff</label><input type='radio' name='"+member.id+"' id='"+member.id+"-"+id+"' value='"+member.id+"'>",
+                        "title": "|" + "|" + name + "\'s" + "|" + name + "|" + bio + "|" + "<label for='"+member.id+"-"+id+"' class='permalink'>> View " + sex + " stuff</label><input type='radio' name='"+member.id+"' id='"+member.id+"-"+id+"' value='"+member.id+"'>",
                         class:'cluetip-div'
                     });
                     a.append(img);
