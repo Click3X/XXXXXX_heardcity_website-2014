@@ -1,8 +1,8 @@
 <?php // info
 
 $info = array(
-	'title' => 'Whatever\'s Comfortable',
-	'director'=>'Whomever Could',
-	'mixer'=> 'Y. Bother',
+	'client' => 'Southern Comfort',
+	'title' => 'Beach',
+	'agency'=>'Wieden & Kennedy',
 	'type' => 'commercial'
 	);

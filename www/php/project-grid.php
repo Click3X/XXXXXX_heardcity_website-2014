@@ -45,7 +45,7 @@
 				// $projects[$i]["type"] = $info["type"];
 				// $projects[$i]["title"] = $info["title"];
 
-				if(isset($info["agnecy"])) { $projects[$i]["agnecy"] = $info["agnecy"]; }
+				if(isset($info["agency"])) { $projects[$i]["agency"] = $info["agency"]; }
 				if(isset($info["mixer"])) { $projects[$i]["mixer"] = $info["mixer"]; }
 				if(isset($info["director"])) { $projects[$i]["director"] = $info["director"]; }
 				if(isset($info["type"])) { $projects[$i]["type"] = $info["type"]; }

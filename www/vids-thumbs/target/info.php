@@ -1,8 +1,8 @@
 <?php // info
 
 $info = array(
-	'title' => 'Target Adele',
-	'director'=>'The Swift Foxx',
-	'mixer'=> 'B. Easy',
+	'clent' => 'Target',
+	'title' => 'Color Changes Everything',
+	'agency'=>'Wieden & Kennedy',
 	'type' => 'commercial'
 	);

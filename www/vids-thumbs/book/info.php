@@ -2,7 +2,7 @@
 
 $info = array(
 	'title' => 'Book People Unite',
-	'director'=>'Samuel Books',
+	'director'=>'Heard City',
 	'mixer'=> 'Master Mixin',
 	'type' => 'feature'
 	);

@@ -2,7 +2,6 @@
 
 $info = array(
 	'title' => 'Revel Launch',
-	'director'=>'Randy Rhodes',
-	'mixer'=> 'Gimmie an Oscar',
+	'director'=>'Heard City',
 	'type' => 'commercial'
 	);

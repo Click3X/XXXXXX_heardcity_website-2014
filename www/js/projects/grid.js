@@ -358,11 +358,15 @@ var Grid = (function() {
 			this.$videoTag = $('<video controls class="feat-video" poster=""><source src="" type="video/mp4" /></video>');
 
 			this.$director = $('<span class="p-director"></span>');
-			this.$directorList = $('<li><span class="bold">Directed by: </span></li>').append(this.$director);
+			this.$directorList = $('<li class="p-director"><span class="bold">Directed by: </span></li>').append(this.$director);
+			
 			this.$mixer = $('<span class="p-mixer"></span>');
-			this.$mixerList = $('<li><span class="bold">Mixed by: </span><span class="p-mixer"></span></li>').append(this.$mixer);
-			this.$agencyList = $('<li><span class="bold">Agency: </span><span class="p-agency"></span></li>').append(this.$agency);
-			this.$projectInfo = $('<ul class="credits"></ul>').append(this.$title, this.$directorList, this.$mixerList, this.$agencyList);
+			// this.$mixerList = $('<li><span class="bold">Mixed by: </span><span class="p-mixer"></span></li>').append(this.$mixer);
+			
+			this.$agency = $('<span class="p-agency"></span>');
+			this.$agencyList = $('<li class="p-agency"><span class="bold">Agency: </span><span class="p-agency"></span></li>').append(this.$agency);
+			
+			this.$projectInfo = $('<ul class="credits"></ul>').append(this.$title, this.$directorList, this.$agencyList); //this.$mixerList,
 			this.$sectionTitle = $('<div class="section-title grey-theme"><div class="noise"></div></div>').append(this.$projectInfo);
 
 			this.$details = $( '<div class="og-details"></div>' );
@@ -415,6 +419,7 @@ var Grid = (function() {
 			this.$videoTag.attr('poster', eldata.poster);
 			this.$director.html( eldata.director );
 			this.$mixer.html( eldata.mixer );
+			this.$agency.html( eldata.agency );
 			
 
 			var self = this;

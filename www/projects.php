@@ -99,6 +99,8 @@ include('php/project-grid.php');
                         $projectJSON = array();
                         include('php/project-grid.php');
 
+                     //   helper($projects);
+
                         foreach ($projects as $key => $value) { 
                             array_push($projectJSON, $value);
                             $thumbsrc = $value["images"]["mobile"][0];
