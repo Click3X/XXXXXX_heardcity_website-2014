@@ -7,7 +7,8 @@ if($address == '69.25.178.3') {
 	$BASE = 'http://staging.click3x.com/heardcity/www/';      
 } else {
 	
-	$BASE = 'http://heard-stage.dev/www/';
+	// $BASE = 'http://heard-stage.dev/www/';
+	$BASE = 'http://localhost/~charliedavis/heard-var/XXXXXX_heardcity_website-2014/www/';
 }
 
 // Defaults
@@ -229,7 +230,7 @@ $members = array(
 		'permalink' => '#',
 		'image' => '',
 		'silo' => '',
-		'bio' => 'Phil is a good mixer.',
+		'bio' => 'Phil is an industry leader in the field of audio post-production.  He has mixed a countless number of spots for the Super Bowl, Grammies, Oscars and just about every major event on television.  The clients have included IBM, Coke, Pepsi, Budweiser, Diageo, American Express, ESPN, Skittles, M&MS, ATT, Exxon, Nike and many more.  Phil graduated from the University of Texas in Austin.  He enjoys spending time upstate and traveling with his two daughters, Daisy and Maple, and his fiancé Jodi.',
 		'title' => 'President &sol; Partner',
 		'items' => array(
 			array(
