@@ -20,17 +20,6 @@ include('php/project-grid.php');
         <!--[if IE]>
           <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <![endif]-->
-
-        <style>
-                #loaderMask{
-                    text-align: center;
-                    padding-top: 20%;
-                }
-                #loaderMask span{
-                    font-size: 5em;
-                    
-                }
-        </style>
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/site-loader.js"></script>

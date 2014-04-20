@@ -1071,18 +1071,18 @@ a {
   background-position: -222px -146px;
 }
 
-/* line 135, ../sass/base/_footer.scss */
+/* line 142, ../sass/base/_footer.scss */
 .sprite-map {
   width: 90px;
   height: 90px;
   background-position: -128px -35px;
 }
-/* line 139, ../sass/base/_footer.scss */
+/* line 146, ../sass/base/_footer.scss */
 .sprite-map:hover {
   background-position: -128px -146px;
 }
 
-/* line 144, ../sass/base/_footer.scss */
+/* line 152, ../sass/base/_footer.scss */
 #site-header .flexnav li a.sprite-phone {
   background-image: url(../images/social-icons/phone.svg);
   background-repeat: no-repeat;
@@ -1096,34 +1096,34 @@ a {
   -ms-transition: all 0;
   transition: all 0;
 }
-/* line 153, ../sass/base/_footer.scss */
+/* line 161, ../sass/base/_footer.scss */
 #site-header .flexnav li a.sprite-phone:hover {
   background-position: -15px -122px;
 }
 
-/* line 158, ../sass/base/_footer.scss */
+/* line 166, ../sass/base/_footer.scss */
 .sprite-twitter {
   width: 90px;
   height: 90px;
   background-position: -410px -35px;
 }
-/* line 163, ../sass/base/_footer.scss */
+/* line 171, ../sass/base/_footer.scss */
 .sprite-twitter:hover {
   background-position: -410px -146px;
 }
 
-/* line 168, ../sass/base/_footer.scss */
+/* line 176, ../sass/base/_footer.scss */
 .sprite-you-tube {
   width: 90px;
   height: 90px;
   background-position: -504px -35px;
 }
-/* line 173, ../sass/base/_footer.scss */
+/* line 181, ../sass/base/_footer.scss */
 .sprite-you-tube:hover {
   background-position: -504px -146px;
 }
 
-/* line 180, ../sass/base/_footer.scss */
+/* line 188, ../sass/base/_footer.scss */
 .social-icons-fluid {
   position: relative;
   width: 100%;
@@ -1131,12 +1131,12 @@ a {
   float: left;
 }
 @media (min-width: 768px) {
-  /* line 180, ../sass/base/_footer.scss */
+  /* line 188, ../sass/base/_footer.scss */
   .social-icons-fluid {
     float: right;
   }
 }
-/* line 189, ../sass/base/_footer.scss */
+/* line 197, ../sass/base/_footer.scss */
 .social-icons-fluid .icon-holder {
   width: 25%;
   max-width: 90px;
@@ -1144,7 +1144,7 @@ a {
   max-height: 90px;
   float: left;
 }
-/* line 196, ../sass/base/_footer.scss */
+/* line 204, ../sass/base/_footer.scss */
 .social-icons-fluid .sprite {
   background-image: url(../images/social-icons/social_svg.svg);
   background-repeat: no-repeat;
@@ -1154,35 +1154,35 @@ a {
   height: auto;
   padding-bottom: 100%;
 }
-/* line 207, ../sass/base/_footer.scss */
+/* line 215, ../sass/base/_footer.scss */
 .social-icons-fluid .sprite-email {
   background-position: 6.5% 18.75%;
 }
-/* line 209, ../sass/base/_footer.scss */
+/* line 217, ../sass/base/_footer.scss */
 .social-icons-fluid .sprite-email:hover {
   background-position: 6.5% 82%;
 }
-/* line 214, ../sass/base/_footer.scss */
+/* line 222, ../sass/base/_footer.scss */
 .social-icons-fluid .sprite-map {
   background-position: 24% 18.75%;
 }
-/* line 216, ../sass/base/_footer.scss */
+/* line 224, ../sass/base/_footer.scss */
 .social-icons-fluid .sprite-map:hover {
   background-position: 24% 82%;
 }
-/* line 221, ../sass/base/_footer.scss */
+/* line 229, ../sass/base/_footer.scss */
 .social-icons-fluid .sprite-facebook {
   background-position: 59.25% 18.75%;
 }
-/* line 223, ../sass/base/_footer.scss */
+/* line 231, ../sass/base/_footer.scss */
 .social-icons-fluid .sprite-facebook:hover {
   background-position: 59.25% 82%;
 }
-/* line 228, ../sass/base/_footer.scss */
+/* line 236, ../sass/base/_footer.scss */
 .social-icons-fluid .sprite-twitter {
   background-position: 77% 18.75%;
 }
-/* line 230, ../sass/base/_footer.scss */
+/* line 238, ../sass/base/_footer.scss */
 .social-icons-fluid .sprite-twitter:hover {
   background-position: 77% 82%;
 }

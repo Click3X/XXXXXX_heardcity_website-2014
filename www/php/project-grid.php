@@ -40,11 +40,6 @@
 			if (($fileInfo["extension"] == "php")) {
 				include($file);
 
-				// $projects[$i]["mixer"] = $info["mixer"];
-				// $projects[$i]["director"] = $info["director"];
-				// $projects[$i]["type"] = $info["type"];
-				// $projects[$i]["title"] = $info["title"];
-
 				if(isset($info["agency"])) { $projects[$i]["agency"] = $info["agency"]; }
 				if(isset($info["mixer"])) { $projects[$i]["mixer"] = $info["mixer"]; }
 				if(isset($info["director"])) { $projects[$i]["director"] = $info["director"]; }

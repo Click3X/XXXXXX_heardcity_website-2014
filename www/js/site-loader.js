@@ -2,7 +2,7 @@ $(document).ready(function () {
 	"use strict"
 
     //Creating loader overlay
-    $('<div id="loaderMask"><span>0%</span><div id="anim-holder" class="anim-holder preload-anim"><div id="preload-anim" class="sprite-pre_loader20040"></div></div></div>').css({
+    $('<div id="loaderMask"><div id="anim-holder" class="anim-holder preload-anim"><div id="preload-anim" class="sprite-pre_loader20001"></div></div></div>').css({
         position:"fixed",
         top:0,
         bottom:0,
@@ -55,28 +55,82 @@ $(document).ready(function () {
     var imgArray = bgImg.concat(img); 
 
     $.each(imgArray, function(i,val){ //Adding load and error event
-		$("<img />").attr("src", val).bind("load", function () {
-            completeImageLoading();
-        });
+        setTimeout(function() { 
+    		$("<img />").attr("src", val).bind("load", function () {
+                completeImageLoading();
+            });
 
-        $("<img />").attr("src", val).bind("error", function () {
-            imgError(this);
-        });
+            $("<img />").attr("src", val).bind("error", function () {
+                imgError(this);
+            });
+        }, 100 * i);
     });
 
+    var frameCount = 20001;
+    var spritePre = 'sprite-pre_loader';
+    var finalFrame = 20133;
+    var preloadAnim = $('#preload-anim');
+    var animHolder = $('#anim-holder');
+
     function completeImageLoading(){
+        // frameCount++;
     	count++;
+
+        frameCount = frameCount + count;
+
     	percentage = Math.floor(count / imgArray.length * 100);
-        // console.log('This is your percentage load!: ' + percentage);
-    	$('#loaderMask span').text(percentage + '%');
+     //    console.log('This is your percentage load!: ' + percentage);
+    	// $('#loaderMask span').text(percentage + '%');
+
+        var preCount = frameCount-1;
+        var preCountStr = preCount.toString();
+        var countStr = frameCount.toString();
+        var preAnimClass = spritePre + preCountStr;
+        var animClass = spritePre + countStr;
+        // console.log('This is animClass: ' + animClass); console.dir(animClass);
+        preloadAnim.removeClass(preAnimClass).addClass(animClass);
+
     	if(percentage === 100){
-    		$('#loaderMask').html('<span>100%</span>')
+    		// $('#loaderMask').html('<span>100%</span>')
     		$('#loaderMask').fadeOut(function(){
     			$('#loaderMask').remove();
                 $('#preload-mask').css('visibility','visible');
-    		})
+    		});
+            preloadAnim.fadeOut(500);
+            animHolder.fadeOut(500);
     	}
     }
+
+    // if(device == 'desk') {
+    //     $(function() {
+    //         var count = 20001;
+    //         var spritePre = 'sprite-pre_loader';
+    //         var finalFrame = 20133;
+    //         function animPreLoader() {
+    //             count++;
+
+    //             if(count > finalFrame - 1) {
+    //                 preloadAnim.fadeOut(500);
+    //                 animHolder.fadeOut(500);
+    //                 $('#body-inner').show(750);
+    //                 clearInterval(timeout);
+    //             }
+
+    //             var preCount = count-1;
+    //             var preCountStr = preCount.toString();
+    //             var countStr = count.toString();
+    //             var preAnimClass = spritePre + preCountStr;
+    //             var animClass = spritePre + countStr;
+    //             preloadAnim.removeClass(preAnimClass).addClass(animClass);
+    //         }
+
+    //         var timeout = setInterval(animPreLoader, 32);
+    //         animPreLoader();
+    //     });
+    // }
+    
+
+
 
     //Error handling
     function imgError (arg) {

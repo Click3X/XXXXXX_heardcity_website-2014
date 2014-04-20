@@ -56,17 +56,20 @@ include('php/project-grid.php');
           }
         </script>
 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/site-loader.js"></script>
+
         <script src="js/lib/modernizr.js"></script>
     </head>
 
     <body class="projects">
 <!-- PRELOADER -->
-         <div id="ajax-loader">
+<!--          <div id="ajax-loader">
             <div class="ajax-spinner">
                 <img src="images/logo/logo-white.png" width="150px" height="194px">
                 <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
             </div>
-        </div>
+        </div> -->
 
         <?php include('php/main-nav.php');?>
 
@@ -140,7 +143,6 @@ include('php/project-grid.php');
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/lib/jquery.flexnav.min.js"></script>
 
         <script src="js/projects/grid.js"></script>

@@ -132,14 +132,22 @@
 
 }
 
-.sprite-map {
-    width: 90px; height: 90px;    
-    background-position: -128px -35px;
+// .sprite-map {
+// 	width: 70px; height: 70px;
+//     background-position: -110px -32px;
+// 	background-size: 750%;
+// }
 
-    &:hover {
-    	background-position: -128px -146px;
-    }
-}
+// @media(min-width: 400px) {
+	.sprite-map {
+	    width: 90px; height: 90px;    
+	    background-position: -128px -35px;
+
+	    &:hover {
+	    	background-position: -128px -146px;
+	    }
+	}
+// }
 
 #site-header .flexnav li a.sprite-phone {
 	 background-image: url(../images/social-icons/phone.svg);

@@ -75,17 +75,19 @@ if(!isset($_GET['selected_member'])) {
           }
         </script>
 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/site-loader.js"></script>
     
     </head>
 
     <body class="ourteam one-page">
         <!-- PRELOADER -->
-        <div id="ajax-loader">
+<!--         <div id="ajax-loader">
             <div class="ajax-spinner">
                 <img src="images/logo/logo-white.png" width="150px" height="194px">
                 <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
             </div>
-        </div>
+        </div> -->
         
         <div id="page-wrap" class="page-wrap">
             
@@ -115,7 +117,6 @@ if(!isset($_GET['selected_member'])) {
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="<?php echo $BASE; ?>js/lib/underscore-min.js"></script>
 
         <script src="<?php echo $BASE; ?>js/lib/jquery.flexnav.min.js"></script>

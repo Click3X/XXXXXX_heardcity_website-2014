@@ -81,18 +81,21 @@ include('php/project-grid.php');
             google.maps.event.addDomListener(window, "load", initialize);
 
         </script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/site-loader.js"></script>
     </head>
 
     <body class="contact">
         <!-- PRELOADER -->
-        <div id="ajax-loader">
+        <!-- <div id="ajax-loader">
             <div class="ajax-spinner">
                 <img src="images/logo/logo-white.png" width="150px" height="194px">
                 <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
             </div>
         </div>
-
-        <div class="preload-wrap">
+ -->
+        <!-- <div class="preload-wrap"> -->
 
             <?php include('php/main-nav.php'); ?>
             <div class="container clearfix contact-container">
@@ -132,7 +135,7 @@ include('php/project-grid.php');
                 <div class="city"></div>
 
             </div>
-        </div>
+        <!-- </div> -->
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>
 
