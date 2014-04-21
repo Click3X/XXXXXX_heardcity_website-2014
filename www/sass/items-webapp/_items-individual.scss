@@ -1,24 +1,17 @@
 
 .js-single-member {
-	// @include prefix(transition, all 500ms);
 
-
-	// @media(min-width:768px) {
-
+	.footer {
+		margin-top:0;
+	}
 		#all-items-holder {
  
 			.all-items { 
 				padding-bottom: 100%;
-				// @media(min-width: 768px) {
-				// 	padding-bottom:100%;	
-				// }
-				
 				@media(min-width: 1024px) {
 					padding-bottom:1000px;
 				}
 			
-
-
 
 			// CORY MELIOUS
 			li.item.skiboots.corymelious {
@@ -562,9 +555,6 @@
 			li.item.comics.taliarodgers {
 				top: 38.6%; left: 70%;
 			}
-
-		}
-
 		}
 	}
-// }
+}

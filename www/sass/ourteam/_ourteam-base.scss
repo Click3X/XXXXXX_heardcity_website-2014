@@ -64,13 +64,6 @@ html, body { height: 100%; }
 	@include prefix(transition, all 750ms);
 }
 
-// OUR TEAM
-// SPACE FOR FOOTER
-// html {
-// 	width:100% !important;
-// }
-
-
 
 .name,
 .bio > p {
@@ -88,6 +81,9 @@ html, body { height: 100%; }
 .ourteam .footer { 
 	margin-top: 160%; 
 	z-index: 100;
+	
+	margin-bottom: -6px;
+
 	@media(min-width: 1044px) {
 		margin-top:1600px;
 	}
@@ -140,7 +136,7 @@ html, body { height: 100%; }
 
 			.name { 
 				font-size: 1.4rem; 
-				margin-bottom: .3rem;
+				margin-bottom: .3	rem;
 			}			
 		}
 	}
