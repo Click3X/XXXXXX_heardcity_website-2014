@@ -2244,12 +2244,6 @@ input[type="submit"],
 .ourteam .team-member .member-text li {
   margin-bottom: .5rem;
 }
-@media (min-width: 480px) {
-  /* line 256, ../sass/home/_teammember.scss */
-  .ourteam .team-member .member-text li {
-    margin-bottom: .938rem;
-  }
-}
 /* line 261, ../sass/home/_teammember.scss */
 .ourteam .team-member .member-text .misc-text {
   color: #989899;
