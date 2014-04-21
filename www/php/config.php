@@ -7,8 +7,8 @@ if($address == '69.25.178.3') {
 	$BASE = 'http://staging.click3x.com/heardcity/www/';      
 } else {
 	
-	// $BASE = 'http://heard-stage.dev/www/';
-	$BASE = 'http://localhost/~charliedavis/heard-var/XXXXXX_heardcity_website-2014/www/';
+	$BASE = 'http://heard-stage.dev/www/';
+	// $BASE = 'http://localhost/~charliedavis/heard-var/XXXXXX_heardcity_website-2014/www/';
 }
 
 // Defaults
