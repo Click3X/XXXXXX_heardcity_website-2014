@@ -27,6 +27,12 @@ $(function() {
         'buttonSelector': '#page-button'
     });
 
+    // HASH on CLICK
+    $("a").click(function(e) {
+        window.location.hash = $(this).attr("id");
+        e.preventDefault();
+    });
+
     // INITIANLIZE GRID
     $(function() {
          Grid.init();
@@ -37,6 +43,9 @@ $(function() {
                 var parent = $(target).parent();
                 // parent.addClass('og-expanded');
                 $(target).click();
+
+                var winHash = window.location.hash;
+                console.log("THis is" + winHash);
 
             }, 100);
            
