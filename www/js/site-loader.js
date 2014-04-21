@@ -1,7 +1,7 @@
 $(document).ready(function () {
-	if(device === 'desk') {
-    // "use strict"    
+    "use strict"    
 
+    function preload() {
         //Creating loader overlay
         $('<div id="loaderMask"><div id="anim-holder" class="anim-holder preload-anim"><div id="preload-anim" class="sprite-pre_loader20001"></div></div></div>').css({
             position:"fixed",
@@ -80,8 +80,8 @@ $(document).ready(function () {
             frameCount = frameCount + count;
 
         	percentage = Math.floor(count / imgArray.length * 100);
-            console.log('This is your percentage load!: ' + percentage);
-        	$('#loaderMask span').text(percentage + '%');
+            // console.log('This is your percentage load!: ' + percentage);
+        	// $('#loaderMask span').text(percentage + '%');
 
             var preCount = frameCount-1;
             var preCountStr = preCount.toString();
@@ -140,7 +140,9 @@ $(document).ready(function () {
         		$('#loaderMask').remove();
         	})
         }
-    } else {
+    } 
+
+    if(device === 'desk') { preload(); } else {
         $('#preload-mask').css('visibility','visible');
     }
 
