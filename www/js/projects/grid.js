@@ -403,7 +403,6 @@ var Grid = (function() {
 			var $itemEl = this.$item.children( 'a' ),
 				eldata = {
 					href : $itemEl.attr( 'href' ),
-					// largesrc : $itemEl.data( 'largesrc' ),
 					title : $itemEl.data( 'title' ),
 					mp4: $itemEl.data( 'mp4' ),
 					director: $itemEl.data( 'director' ),

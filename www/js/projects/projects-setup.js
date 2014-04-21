@@ -16,9 +16,6 @@ $(function() {
     $('#page-title').text('Projects');
     $('#page-projects').addClass('mobile-hidden current');
 
-    // HIDE SPINNER
-    // $('.preload-wrap').removeClass('preload-wrap');
-    // $('#ajax-loader').fadeOut(500);
 
     // INITIALIZE MENU
     $mainMenu.flexNav({
@@ -28,7 +25,7 @@ $(function() {
     });
 
     // HASH on CLICK
-    $("a").click(function(e) {
+    $("#og-grid a").click(function(e) {
         window.location.hash = $(this).attr("id");
         e.preventDefault();
     });
@@ -43,9 +40,6 @@ $(function() {
                 var parent = $(target).parent();
                 // parent.addClass('og-expanded');
                 $(target).click();
-
-                var winHash = window.location.hash;
-                console.log("THis is" + winHash);
 
             }, 100);
            
