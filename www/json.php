@@ -15,6 +15,7 @@ foreach ($members as $key => $member) {
   $possesive = explode(' ', $member_name);
   $possesive = $possesive[0]."'s";
   $items = $member['items'];
+  $title = $member['title'];
 
   // Array for JSON
   $jsonMembers[$key]['name'] = $member_name;
@@ -22,6 +23,7 @@ foreach ($members as $key => $member) {
   $jsonMembers[$key]['sex'] = $sex;
   $jsonMembers[$key]['items'] = $items;
   $jsonMembers[$key]['id'] = $member_class;
+  $jsonMembers[$key]['title'] = $title;
     
   foreach ($items as $key => $item) {
         if($item['image']) {

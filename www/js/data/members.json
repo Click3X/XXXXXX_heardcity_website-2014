@@ -2,7 +2,7 @@
     "members": [
         {
             "name": "Keith Reynaud",
-            "bio": "For the past 12 years Keith has mixed scores of national television and radio commercials, becoming one of NYC's top mixers/sound designers. His work also extends into music and film, including the critically acclaimed documentary Following Sean. Numerous other credits include spots for the Super Bowl, Google, ESPN and Coca-Cola. Keith is a highly sought-after part of the sprawling television and film industry, but doesn't lose sight of the things in life that he loves: family, fishing and the great outdoors.",
+            "bio": "absolute bad ass.",
             "sex": "his",
             "items": [
                 {
@@ -54,11 +54,12 @@
                     "position": 66
                 }
             ],
-            "id": "keithreynaud"
+            "id": "keithreynaud",
+            "title": "Partner"
         },
         {
             "name": "Gloria Pitagorsky",
-            "bio": "A 15-year-industry veteran, Gloria has worked at several major studios including Howard Schwartz Recording, Nutmeg and Photomag before going on to serve as EP at AudioEngine and Sound Lounge. Gloria is committed to supporting women filmmakers and is actively involved with Chicken & Egg Pictures. She is also a member of New York Women in Film & TV, New York Production Alliance, and is on the board of directors of AICE, The Tank and Food Bank NYC. She lives in Manhattan with her husband David and their son Jayson.",
+            "bio": "I'm the managing director at Heard City. A producer, philanthropist, mother, activist and 18-year-industry veteran, I serve on several non-profit Board of Directors, including the Food Bank for New York City, a major hunger relief organization working to end food poverty throughout the five boroughs. I live in Manhattan with my husband, David, and 14-year old son, Jayson.",
             "sex": "her",
             "items": [
                 {
@@ -140,11 +141,12 @@
                     "position": 92
                 }
             ],
-            "id": "gloriapitagorsky"
+            "id": "gloriapitagorsky",
+            "title": "Managing Director / Executive Producer"
         },
         {
             "name": "Philip Loeb",
-            "bio": "Phil is an industry leader in the field of audio post-production. He has mixed a countless number of spots for the Super Bowl, Grammies, Oscars and just about every major event on television. The clients have included IBM, Coke, Pepsi, Budweiser, Diageo, American Express, ESPN, Skittles, M&MS, ATT, Exxon, Nike and many more. <br><br>Phil graduated from the University of Texas in Austin. He enjoys spending time upstate and traveling with his two daughters, Daisy and Maple, and his fiancé Jodi.",
+            "bio": "Phil is an industry leader in the field of audio post-production. He has mixed a countless number of spots for the Super Bowl, Grammies, Oscars and just about every major event on television. The clients have included IBM, Coke, Pepsi, Budweiser, Diageo, American Express, ESPN, Skittles, M&MS, ATT, Exxon, Nike and many more. Phil graduated from the University of Texas in Austin. He enjoys spending time upstate and traveling with his two daughters, Daisy and Maple, and his fiancé Jodi.",
             "sex": "his",
             "items": [
                 {
@@ -168,7 +170,7 @@
                 },
                 {
                     "name": "Painting",
-                    "bio": "My best friend an I are the founding members of The Museum of bad Portraiture ™. This was one of the early pieces of our collection found at one of our favorite stores in Indy",
+                    "bio": "This is \"George Jefferson\" by Earl Swanigan. We're movin' on up.",
                     "image": "items/Phil_Loeb_painting.png",
                     "position": 59
                 },
@@ -191,11 +193,12 @@
                     "position": 56
                 }
             ],
-            "id": "philiploeb"
+            "id": "philiploeb",
+            "title": "Partner"
         },
         {
             "name": "Talia Rodgers",
-            "bio": "Talia Rodgers, one of our great employees here at Heard City.",
+            "bio": "Am a nine year resident of NYC by way of Los Angeles, CA. I enjoy long walks on the beach while watching the sunset as well as eating food.",
             "sex": "her",
             "items": [
                 {
@@ -247,11 +250,12 @@
                     "position": 95
                 }
             ],
-            "id": "taliarodgers"
+            "id": "taliarodgers",
+            "title": "Assistant Mixer"
         },
         {
             "name": "Peony Rene",
-            "bio": "We are still in need of Peony's bio.",
+            "bio": "The best receptionist in the business.",
             "sex": "her",
             "items": [
                 {
@@ -300,7 +304,8 @@
                     "position": 65
                 }
             ],
-            "id": "peonyrene"
+            "id": "peonyrene",
+            "title": "Receptionist"
         },
         {
             "name": "Jodi Levine",
@@ -308,10 +313,10 @@
             "sex": "her",
             "items": [
                 {
-                    "name": "Book",
-                    "bio": "I read all Dan Brown's books on a single plane ride",
-                    "image": "items/Jodi_Levine_book.png",
-                    "position": 12
+                    "name": "Marilyn Monroe",
+                    "bio": "A picture is worth a thousand words",
+                    "image": "items/Jodi_Levine_marilyn.jpg",
+                    "position": 102
                 },
                 {
                     "name": "Sneakers",
@@ -333,12 +338,6 @@
                     "position": 78
                 },
                 {
-                    "name": "Pouch",
-                    "bio": "Kangaroos are vicous boxing creatures",
-                    "image": "items/Jodi_Levine_pouch.png",
-                    "position": 54
-                },
-                {
                     "name": "Rings",
                     "bio": "- I was lucky enough to have awesome grandmothers with very different tastes giving me a diverse collection of jewelry. Not only are they pretty but they keep my family close to me wherever I go",
                     "image": "items/Jodi_Levine_rings.png",
@@ -353,16 +352,17 @@
                 },
                 {
                     "name": "Seeds",
-                    "bio": "Gardening has become one of my favorite pastimes. These art packs are designed by Northeast artists for the Hudson Valley Seed and hotdog Library a local heirloom and open-pollinated seed company who recently got their organic certification",
+                    "bio": "Hudson Valley Seed Library",
                     "image": "items/Jodi_Levine_seeds.png",
                     "position": 90
                 }
             ],
-            "id": "jodilevine"
+            "id": "jodilevine",
+            "title": "Mixer and Sound Designer"
         },
         {
             "name": "Cory Melious",
-            "bio": "Cory Melious splits his time between documentaries, feature films, TV series and commercials. His most recent work was the Tribeca Film Festival award-winner Asad. His reel includes spots for UPS, AT&T, Chobani and American Express, as well as the film Blue Valentine, Kanye West's Runaway music video, the Peabody Award-winning PBS show Art21: Art in the Twenty-First Century and several seasons of the critically acclaimed TV drama Damages.",
+            "bio": "I'm a mixer and Sound Designer at Heard. I have a long list of hobbies. currently at the top are Beer Brewing, Sailing, Golf and Fishing. Old classics are Biking, Hiking, Camping, Skiing...etc. It's safe to say I like the outdoors.",
             "sex": "his",
             "items": [
                 {
@@ -414,14 +414,15 @@
                     "position": 20
                 },
                 {
-                    "name": "Shaker",
-                    "bio": "Shake it up.",
+                    "name": "Camping Lantern",
+                    "bio": "This is my camping lantern that resembles a shaker.",
                     "image": "items/Cory_Melious_Shaker.png",
                     "coords": "22,64,50,58,102,62,162,74,170,52,170,18,160,4,61,11,17,6,18,26",
                     "position": 18
                 }
             ],
-            "id": "corymelious"
+            "id": "corymelious",
+            "title": "Mixer and Sound Designer"
         },
         {
             "name": "Evan Mangiamele",
@@ -460,11 +461,12 @@
                     "position": 1
                 }
             ],
-            "id": "evanmangiamele"
+            "id": "evanmangiamele",
+            "title": "Mixer and Sound Designer"
         },
         {
             "name": "Eric Warzecha",
-            "bio": "Eric Warzecha has a decade-plus experience as a post-mixer in New York. His client list includes DirecTV, Comcast, AT&T, Chobani, HBO, Staples, Swiffer, and Garnier among others. Warzecha’s prolific career has led to multiple Cannes and Golden Pencil awards. Prior to joining Heard City, Warzecha spent 13 years at Sound Lounge, working his way up from intern to mixer. A 2000 graduate of SUNY Fredonia with a bachelor’s degree in sound recording, Warzecha has made music a central focus of his life, recording and mixing for bands when he’s not at work in the studio. Eric lives in Brooklyn with his wife and newborn daughter Coralie.",
+            "bio": "I work as a mixer at Heard City, so far half my life has been spent in Western New York, the other in New York City. In my free time I try and travel as much as I can, especially to mountains, with my wife and daughter, play loud music, obsess over hockey, and all the other things people do like watch TV and read things.",
             "sex": "his",
             "items": [
                 {
@@ -495,7 +497,8 @@
                     "position": 53
                 }
             ],
-            "id": "ericwarzecha"
+            "id": "ericwarzecha",
+            "title": "Mixer and Sound Designer"
         },
         {
             "name": "Sasha Awn",
@@ -537,11 +540,12 @@
                     "position": 89
                 }
             ],
-            "id": "sashaawn"
+            "id": "sashaawn",
+            "title": "Producer"
         },
         {
             "name": "Gary Noel",
-            "bio": "Some dude not on the old website, but whom will be featured on the new website.",
+            "bio": "Treating our clients to the absolute best services.",
             "sex": "his",
             "items": [
                 {
@@ -600,11 +604,12 @@
                     "position": 87
                 }
             ],
-            "id": "garynoel"
+            "id": "garynoel",
+            "title": "Client Services"
         },
         {
             "name": "Katie Flynn",
-            "bio": "Hailing from San Diego, Katie made her way across the country to attend Emerson College where she received a degree in film production. In her free time you can find her at a New York Red Bulls game, strolling the tree lined blocks of Ditmas Park or eating a copious amount of pizza.",
+            "bio": "I'm an assistant producer at Heard City. Born in San Diego but decided to move east after one too many near death experiences by sun and sea. Pizza is my weakness.",
             "sex": "her",
             "items": [
                 {
@@ -657,11 +662,12 @@
                     "position": 99
                 }
             ],
-            "id": "katieflynn"
+            "id": "katieflynn",
+            "title": "Producer"
         },
         {
             "name": "Jeremy Siegal",
-            "bio": "Born and raised in Queens, New York, Jeremy joins Heard City from Binghamton University where he double majored in Film and Economics. Since coming on as our very first Assistant Engineer he has worked on spots for clients including LG and Statefarm, all while honing his skills as a professional rapper and hip hop producer. Don't cross him or he'll talk about you in Mandarin behind your back.",
+            "bio": "I'm an assistant audio engineer at Heard City. Born & raised in NYC. I love sneakers & hip hop.",
             "sex": "his",
             "items": [
                 {
@@ -711,11 +717,12 @@
                     "position": 19
                 }
             ],
-            "id": "jeremysiegal"
+            "id": "jeremysiegal",
+            "title": "Assistant Mixer"
         },
         {
             "name": "Elizabeth McClanahan",
-            "bio": "Elizabeth joins Heard City from Loyola University in New Orleans where she majored in Music and minored in Business Administration and Spanish literature. While living in New Orleans she recorded jazz musicians including Ellis and Jason Marsalis, Kermit Ruffins and the Rebirth Brass Band and took up playing the guitar and bass. Elizabeth is a huge Saints fan and is extremely well versed in classic cocktail mixing. A self described book worm, Elizabeth is the resident audio nerd at Heard City.",
+            "bio": "I was born in New Orleans where I got my start recording music before heading to New York.",
             "sex": "her",
             "items": [
                 {
@@ -757,7 +764,8 @@
                     "position": 21
                 }
             ],
-            "id": "elizabethmcclanahan"
+            "id": "elizabethmcclanahan",
+            "title": "Assistant Mixer"
         },
         {
             "name": "Dan Flosdorf",
@@ -797,7 +805,8 @@
                     "position": 27
                 }
             ],
-            "id": "danflosdorf"
+            "id": "danflosdorf",
+            "title": "Mixer and Sound Designer"
         }
     ]
 }

@@ -31,6 +31,7 @@ function clueTipSoloMemberItems() {
         $('#member-bio').show();
         $('#member-bio .bio > p').html(selectMember[0].bio).css('opacity',0).show().animate({opacity:1}, 500);
         $('#member-bio .name').html(selectMember[0].name).css('opacity',0).show().animate({opacity:1}, 500);
+        $('#member-bio .title').html(selectMember[0].title).css('opacity',0).show().animate({opacity:1}, 500);
         $('#sidebar-name').html(selectMember[0].name).css('opacity',0).show().animate({opacity:1}, 500);
         $('#member-bio .permalink a').show().animate({opacity:1}, 500);
     });
@@ -43,6 +44,7 @@ function Members(data) {
     this.sex = data.sex;
     this.id = data.id;
     this.items = data.items;
+    this.title = data.title;
     this.pos = ''
     this.buildLi = function() {
         var liArray = [];

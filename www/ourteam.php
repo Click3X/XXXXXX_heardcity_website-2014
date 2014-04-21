@@ -38,6 +38,12 @@ if(!isset($_GET['selected_member'])) {
             .js-single-member #member-bio {
                     display: block;
                 }
+
+            #member-bio > div > ul > li.title {
+                font-size: .750em;
+                color: #333333;
+                letter-spacing: .15em;
+            }
             
         </style>
         <script>
@@ -98,6 +104,7 @@ if(!isset($_GET['selected_member'])) {
                     <ul class="member-text">
                         <li class="misc-text">This belongs to</li>
                         <li class="name"><?php // echo $de_name; ?></li>
+                        <li class="title"></li>
                         <li class="bio"><p><?php // echo $de_bio; ?></p></li>
                         <li class="permalink"><a href="<?php echo $de_permalink; ?>" class="all-members" style="display: none;">View everyones stuff</a></li>
                     </ul>

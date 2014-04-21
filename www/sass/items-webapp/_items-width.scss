@@ -45,7 +45,12 @@
 .item.yogamat.jodilevine{ width:54.8828125%;}
 .item.knittingneedle.jodilevine{ width:26.26953125%;}
 .item.pouch.jodilevine{ width:23.53515625%;}
-.item.rings.jodilevine{ width:6.640625%;}
+.item.rings.jodilevine{ 
+	// width:6.640625%;
+	width: 11.640625%;
+}
+.item.marilynmonroe.jodilevine { width: 22%; }
+
 .item.rug.jodilevine{ width:43.26171875%;}
 .item.seeds.jodilevine{ width:28.80859375%;}
 .item.fly.corymelious{ width:8.88671875%;}
@@ -55,6 +60,7 @@
 .item.hammer.corymelious{ width:17.87109375%;}
 .item.recorder.corymelious{ width:15.8203125%;}
 .item.homebrewbook.corymelious{ width:15.0390625%;}
+.item.campinglantern.corymelious,
 .item.shaker.corymelious{ width:17.578125%;}
 .item.leela.evanmangiamele{ width:14.6484375%;}
 .item.drumsticks.evanmangiamele{ width:15.91796875%;}

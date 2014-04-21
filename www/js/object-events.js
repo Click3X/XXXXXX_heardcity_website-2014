@@ -20,6 +20,7 @@ $(document).ready(function() {
 
             $('#member-bio .bio > p').html(selectMember[0].bio).css('opacity',0).show().animate({opacity:1}, 500);
             $('#member-bio .name').html(selectMember[0].name).css('opacity',0).show().animate({opacity:1}, 500);
+            $('#member-bio .title').html(selectMember[0].title).css('opacity',0).show().animate({opacity:1}, 500);
             $('#sidebar-name').html(selectMember[0].name).css('opacity',0).show().animate({opacity:1}, 500);
             $('#member-bio .permalink a').show().animate({opacity:1}, 500);
 
@@ -33,6 +34,7 @@ $(document).ready(function() {
         // SHOW HEARDCITY BIO
         $('#member-bio .bio > p').html('People collect things and those things say a lot about a person. Our stuff can be something that reminds us of our past or just something that we enjoy having. They inevitably become a piece of who we are. Which can includes almost everything you can imagine – from photos, souvenirs, tools, things from a person or place that we care about. Our team at Heard City is made up of some pretty incredible people. Get to know us by checking out our stuff. You\'ll see what passions we have and what kind of things we do in our free time. It\'s an honest way to see who we are as a collective.').css('opacity',0).show().animate({opacity:1}, 500);
         $('#member-bio .name').html('Heard City').css('opacity',0).show().animate({opacity:1}, 500);
+        $('#member-bio .title').html('').css('opacity',0).show().animate({opacity:1}, 500);
         $('#sidebar-name').html('Heard City').css('opacity',0).show().animate({opacity:1}, 500);
         $('#member-bio .permalink a').hide();
     }
@@ -75,6 +77,7 @@ $(document).ready(function() {
             $('#member-bio .bio > p').html(selectMember[0].bio).css('opacity',0).show().animate({opacity:1}, 500);
             $('#member-bio .name').html(selectMember[0].name).css('opacity',0).show().animate({opacity:1}, 500);
             $('#sidebar-name').html(selectMember[0].name).css('opacity',0).show().animate({opacity:1}, 500);
+            $('#member-bio .title').html(selectMember[0].title).css('opacity',0).show().animate({opacity:1}, 500);
             $('#member-bio .permalink a').show().animate({opacity:1}, 500);
 
             $('body').addClass('js-single-member');
@@ -129,6 +132,7 @@ $(document).ready(function() {
         // SHOW HEARDCITY BIO
         $('#member-bio .bio > p').html('People collect things and those things say a lot about a person. Our stuff can be something that reminds us of our past or just something that we enjoy having. They inevitably become a piece of who we are. Which can includes almost everything you can imagine – from photos, souvenirs, tools, things from a person or place that we care about. Our team at Heard City is made up of some pretty incredible people. Get to know us by checking out our stuff. You\'ll see what passions we have and what kind of things we do in our free time. It\'s an honest way to see who we are as a collective.').css('opacity',0).show().animate({opacity:1}, 500);
         $('#member-bio .name').html('Heard City').css('opacity',0).show().animate({opacity:1}, 500);
+        $('#member-bio .title').html('').css('opacity',0).show().animate({opacity:1}, 500);
         $('#sidebar-name').html('Heard City').css('opacity',0).show().animate({opacity:1}, 500);
         $('#member-bio .permalink a').hide();
 
