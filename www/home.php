@@ -21,9 +21,6 @@ include('php/project-grid.php');
           <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <![endif]-->
         
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/site-loader.js"></script>
-        
         <script>
             // TEST FOR MOBILE DEVICE / TABLET
             var device;
@@ -36,6 +33,10 @@ include('php/project-grid.php');
 
             <?php echo 'var base="'.$BASE.'";'; ?>
         </script>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/site-loader.js"></script>
+        
     </head>
 
     <body class="home">
