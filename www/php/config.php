@@ -439,7 +439,8 @@ $members = array(
 
 			array(
 				'name' => 'Marilyn Monroe', 
-				'bio' => 'A picture is worth a thousand words',
+				// 'bio' => 'A picture is worth a thousand words',
+				'bio' => 'My best friend an I are the founding members of The Museum of bad Portraiture ™. This was one of the early pieces of our collection found at one of our favorite stores in Indy',
 				'image' => 'items/Jodi_Levine_marilyn.jpg',
 				'position' => 102
 			),

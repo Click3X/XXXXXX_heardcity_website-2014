@@ -314,7 +314,7 @@
             "items": [
                 {
                     "name": "Marilyn Monroe",
-                    "bio": "A picture is worth a thousand words",
+                    "bio": "My best friend an I are the founding members of The Museum of bad Portraiture ™. This was one of the early pieces of our collection found at one of our favorite stores in Indy",
                     "image": "items/Jodi_Levine_marilyn.jpg",
                     "position": 102
                 },
@@ -415,7 +415,7 @@
                 },
                 {
                     "name": "Camping Lantern",
-                    "bio": "This is my camping lantern that resembles a shaker.",
+                    "bio": "This is my camping lantern, I like camping.",
                     "image": "items/Cory_Melious_Shaker.png",
                     "coords": "22,64,50,58,102,62,162,74,170,52,170,18,160,4,61,11,17,6,18,26",
                     "position": 18
