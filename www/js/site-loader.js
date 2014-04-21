@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	"use strict"
 
-    if(device != 'mobile') {
+    // if(device != 'mobile') {
 
         //Creating loader overlay
         $('<div id="loaderMask"><div id="anim-holder" class="anim-holder preload-anim"><div id="preload-anim" class="sprite-pre_loader20001"></div></div></div>').css({
@@ -140,6 +140,6 @@ $(document).ready(function () {
         		$('#loaderMask').remove();
         	})
         }
-    }
+    // }
 
 });
