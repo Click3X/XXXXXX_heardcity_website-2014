@@ -6358,3 +6358,8 @@ input:focus {
 .feature .p-agency {
   display: none;
 }
+
+/* line 48, ../sass/_new-styles.scss */
+.mobile#preload-mask {
+  visibility: visible;
+}

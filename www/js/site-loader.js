@@ -1,7 +1,6 @@
 $(document).ready(function () {
-	"use strict"
-
-    // if(device != 'mobile') {
+	if(device === 'desk') {
+    "use strict"    
 
         //Creating loader overlay
         $('<div id="loaderMask"><div id="anim-holder" class="anim-holder preload-anim"><div id="preload-anim" class="sprite-pre_loader20001"></div></div></div>').css({
@@ -81,8 +80,8 @@ $(document).ready(function () {
             frameCount = frameCount + count;
 
         	percentage = Math.floor(count / imgArray.length * 100);
-         //    console.log('This is your percentage load!: ' + percentage);
-        	// $('#loaderMask span').text(percentage + '%');
+            console.log('This is your percentage load!: ' + percentage);
+        	$('#loaderMask span').text(percentage + '%');
 
             var preCount = frameCount-1;
             var preCountStr = preCount.toString();
@@ -92,7 +91,8 @@ $(document).ready(function () {
             // console.log('This is animClass: ' + animClass); console.dir(animClass);
             preloadAnim.removeClass(preAnimClass).addClass(animClass);
 
-        	if(percentage === 100){
+        	// if(percentage === 100){
+            if(percentage >= 60){
         		// $('#loaderMask').html('<span>100%</span>')
         		$('#loaderMask').fadeOut(function(){
         			$('#loaderMask').remove();
@@ -140,6 +140,8 @@ $(document).ready(function () {
         		$('#loaderMask').remove();
         	})
         }
-    // }
+    } else {
+        $('#preload-mask').css('visibility','visible');
+    }
 
 });

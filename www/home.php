@@ -26,7 +26,6 @@ include('php/project-grid.php');
             var device;
             if( /Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent) ) {
                 device = 'mobile';
-                $('#anim-holder').hide();
             } else {
                 device = 'desk';
             }
