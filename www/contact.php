@@ -20,6 +20,19 @@ include('php/project-grid.php');
               <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
           <![endif]-->
 
+        <script>
+            // TEST FOR MOBILE DEVICE / TABLET
+            var device;
+            if( /Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent) ) {
+                device = 'mobile';
+            } else {
+                device = 'desk';
+            }
+
+            <?php echo 'var base="'.$BASE.'";'; ?>
+        </script>
+
+
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
         <script>
             var clickLatLong = new google.maps.LatLng(40.741244, -73.991320),
@@ -87,15 +100,6 @@ include('php/project-grid.php');
     </head>
 
     <body class="contact">
-        <!-- PRELOADER -->
-        <!-- <div id="ajax-loader">
-            <div class="ajax-spinner">
-                <img src="images/logo/logo-white.png" width="150px" height="194px">
-                <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
-            </div>
-        </div>
- -->
-        <!-- <div class="preload-wrap"> -->
 
             <?php include('php/main-nav.php'); ?>
             <div class="container clearfix contact-container">
@@ -135,13 +139,15 @@ include('php/project-grid.php');
                 <div class="city"></div>
 
             </div>
-        <!-- </div> -->
+
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>
 
-        <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
-        <script src="<?php echo $BASE; ?>js/lib/jquery.flexnav.min.js"></script>
-        <script src="<?php echo $BASE; ?>js/contact/setup.js"></script>
+        <!--
+        <script src="js/lib/jquery.flexnav.min.js"></script>
+        <script src="js/contact/setup.js"></script>
+        -->
+        <script src="js/build/contact-production.min.js"></script>
 
     </body>
 

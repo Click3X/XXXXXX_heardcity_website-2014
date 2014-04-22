@@ -26,11 +26,7 @@ if(!isset($_GET['selected_member'])) {
         <link href="<?php echo $BASE; ?>stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="<?php echo $BASE; ?>stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
-          <!--[if IE]>
-              <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-          <![endif]-->  
         <style>
-
             .page-wrap .all-itmes-holder .all-items { 
                 position:relative; width: 100%; max-width: 1024px !important; margin:0 auto !important; padding-bottom:100% !important;
             }
@@ -44,8 +40,8 @@ if(!isset($_GET['selected_member'])) {
                 color: #333333;
                 letter-spacing: .15em;
             }
-            
         </style>
+
         <script>
             // TEST FOR MOBILE DEVICE / TABLET
             var device;
@@ -95,9 +91,9 @@ if(!isset($_GET['selected_member'])) {
                 <div class="team-member clearfix">
                     <ul class="member-text">
                         <li class="misc-text">This belongs to</li>
-                        <li class="name"><?php // echo $de_name; ?></li>
+                        <li class="name"></li>
                         <li class="title"></li>
-                        <li class="bio"><p><?php // echo $de_bio; ?></p></li>
+                        <li class="bio"><p></p></li>
                         <li class="permalink"><a href="<?php echo $de_permalink; ?>" class="all-members" style="display: none;">View everyones stuff</a></li>
                     </ul>
                 </div>
@@ -113,17 +109,20 @@ if(!isset($_GET['selected_member'])) {
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>
 
-        <script src="<?php echo $BASE; ?>js/lib/underscore-min.js"></script>
+        <!--
+        <script src="<?php // echo $BASE; ?>js/lib/underscore-min.js"></script>
 
-        <script src="<?php echo $BASE; ?>js/lib/jquery.flexnav.min.js"></script>
-        <script src="<?php echo $BASE; ?>js/lib/jquery.unveil.min.js"></script>
+        <script src="<?php // echo $BASE; ?>js/lib/jquery.flexnav.min.js"></script>
+        <script src="<?php // echo $BASE; ?>js/lib/jquery.unveil.min.js"></script>
         
-        <script src="<?php echo $BASE; ?>js/lib/jquery.cluetip.js"></script>
-        <script src="<?php echo $BASE; ?>js/lib/jquery.hoverIntent.js"></script> 
+        <script src="<?php // echo $BASE; ?>js/lib/jquery.cluetip.js"></script>
+        <script src="<?php // echo $BASE; ?>js/lib/jquery.hoverIntent.js"></script> 
 
-        <script src="<?php echo $BASE; ?>js/object.js"></script>
-        <script src="<?php echo $BASE; ?>js/object-events.js"></script>
-        <script src="<?php echo $BASE; ?>js/setup.js"></script>
+        <script src="<?php // echo $BASE; ?>js/object.js"></script>
+        <script src="<?php // echo $BASE; ?>js/object-events.js"></script>
+        <script src="<?php // echo $BASE; ?>js/setup.js"></script>
+    -->
+        <script src="js/build/ourteam-production.min.js"></script>
 
         
     </body>

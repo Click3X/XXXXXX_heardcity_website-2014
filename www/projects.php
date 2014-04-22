@@ -138,13 +138,13 @@ include('php/project-grid.php');
         
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>
-
+        <!--
         <script src="js/lib/jquery.flexnav.min.js"></script>
-
         <script src="js/projects/grid.js"></script>
         <script src="js/projects/feat-button.js"></script>
         <script src="js/projects/projects-setup.js"></script>
-
+        -->
+        <script src="js/build/projects-production.min.js"></script>
     </body>
 
 </html>

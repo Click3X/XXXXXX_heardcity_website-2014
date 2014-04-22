@@ -48,17 +48,10 @@ if(!isset($_POST['selected_member'])) {
                     echo "<script>var selectedMember = '$selected_member';</script>"; } 
                 else { echo "<script>var selectedMember = '';</script>"; } 
             ?>
-
-       <!-- <script data-main="js/deeplink" src="js-webapp/lib/require.js"></script> -->
     
     </head>
 
     <body id="deeplink" class="ourteam deeplink one-page">
-        <?php  
-        // var_dump($_SERVER["DOCUMENT_ROOT"]);
-        // var_dump($_SERVER['SERVER_ADDR']);
-        //  die(); 
-         ?>
         <div id="page-wrap" class="page-wrap">
             
             <?php include('../php/main-nav.php'); ?>

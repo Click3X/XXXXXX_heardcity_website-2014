@@ -111,12 +111,14 @@ include('php/project-grid.php');
 
             <!-- FOOTER -->
             <?php include('php/footer.php'); ?>
-
+            <!--
             <script src="js/lib/jquery.unveil.min.js"></script>
             <script src="js/lib/jquery.flexnav.min.js"></script>
             <script src="js/lib/jquery.easing-1.3.js"></script>
             <script src="js/lib/jquery.royalslider.min.js"></script>
             <script src="js/home/setup.js"></script>
+            -->
+            <script src="js/build/home-production.min.js"></script>
 
         </div>
       </div> <!-- /#PRELOAD-MASK -->
