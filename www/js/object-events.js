@@ -85,10 +85,6 @@ $(document).ready(function() {
             // ADD MEMBER NAME TO TOP OF SUB NAV
             $('#member-title').text(selectMember[0].name);
         });
-
-        
-
-        
     });
 
 

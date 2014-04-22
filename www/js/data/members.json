@@ -70,7 +70,7 @@
                 },
                 {
                     "name": "Jewels",
-                    "bio": "Jewels are a woman's best friend.",
+                    "bio": "Grandma's pearls and other favorite designers..",
                     "image": "items/Gloria_Pitagorsky_bracelet.png",
                     "position": 39
                 },
@@ -241,7 +241,7 @@
         },
         {
             "name": "Peony Rene",
-            "bio": "The best receptionist in the business.",
+            "bio": "Things I like: Fashion and beauty. Things I don't like: Surprises and coffee flavored jelly beans.",
             "sex": "her",
             "items": [
                 {
@@ -348,7 +348,7 @@
         },
         {
             "name": "Cory Melious",
-            "bio": "I'm a mixer and Sound Designer at Heard. I have a long list of hobbies. currently at the top are Beer Brewing, Sailing, Golf and Fishing. Old classics are Biking, Hiking, Camping, Skiing...etc. It's safe to say I like the outdoors.",
+            "bio": "I have a long list of hobbies. currently at the top are Beer Brewing, Sailing, Golf and Fishing. Old classics are Biking, Hiking, Camping, Skiing...etc. It's safe to say I like the outdoors.",
             "sex": "his",
             "items": [
                 {
@@ -412,7 +412,7 @@
         },
         {
             "name": "Evan Mangiamele",
-            "bio": "Evan Mangiamele, since moving to Heard City, has worked with Puma, eMusic, Microsoft and American Express. Evan studied audio engineering at SUNY Fredonia and now lives with his wife Christine and dog Leela. Not only was he the Pro Tools system design expert for Heard City, but he likes chicken too.",
+            "bio": "Evan Mangiamele, since moving to Heard City, has worked with Puma, eMusic, Microsoft, Apple and American Express. Evan studied audio engineering at SUNY Fredonia and now lives with his wife Christine and dog Leela. Not only was he the Pro Tools system design expert for Heard City, but he likes chicken too., since moving to Heard City, has worked with Puma, eMusic, Microsoft, Apple and American Express.",
             "sex": "his",
             "items": [
                 {
@@ -488,7 +488,7 @@
         },
         {
             "name": "Sasha Awn",
-            "bio": "Producer and trapeze artist extraordinaire, Sasha comes to Heard City with several years of audio engineering experience under her belt. She graduated with a Bachelor of Music from NYU's Music Technology program and has since worked in the sound department on numerous award winning feature films, including Wendy & Lucy, Treeless Mountain & Another Earth. Her technical knowledge in the field of commercial audio allows her to work closely with the mixers of Heard City. When she's at home in New York, you can find her riding her bike around the East Village.",
+            "bio": "Sasha is from New Jersey but don't hold that against her. She loves the circus.",
             "sex": "her",
             "items": [
                 {
@@ -595,7 +595,7 @@
         },
         {
             "name": "Katie Flynn",
-            "bio": "I'm an assistant producer at Heard City. Born in San Diego but decided to move east after one too many near death experiences by sun and sea. Pizza is my weakness.",
+            "bio": "Born in San Diego but decided to move east after one too many near death experiences by sun and sea. Pizza is my weakness.",
             "sex": "her",
             "items": [
                 {
@@ -652,7 +652,7 @@
             "title": "Producer"
         },
         {
-            "name": "Jeremy Siegal",
+            "name": "Jeremy Siegel",
             "bio": "I'm an assistant audio engineer at Heard City. Born & raised in NYC. I love sneakers & hip hop.",
             "sex": "his",
             "items": [
@@ -703,7 +703,7 @@
                     "position": 19
                 }
             ],
-            "id": "jeremysiegal",
+            "id": "jeremysiegel",
             "title": "Assistant Mixer"
         },
         {

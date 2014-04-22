@@ -60,9 +60,6 @@ $members = array(
 		'name' => 'Keith Reynaud',
 		'sex' => 'his',
 		'permalink' => '#',
-		'image' => 'img/build/team-members/keith.png',
-		'silo' => 'img/build/team-members/keith-silo.png',
-		// 'bio' => 'For the past 12 years Keith has mixed scores of national television and radio commercials, becoming one of NYC\'s top mixers/sound designers. His work also extends into music and film, including the critically acclaimed documentary Following Sean. Numerous other credits include spots for the Super Bowl, Google, ESPN and Coca-Cola. Keith is a highly sought-after part of the sprawling television and film industry, but doesn\'t lose sight of the things in life that he loves: family, fishing and the great outdoors.',
 		'bio' =>'absolute bad ass.',
 		'title' => 'Partner',
 		'items' => array(
@@ -128,9 +125,6 @@ $members = array(
 		'name' => 'Gloria Pitagorsky',
 		'sex' => 'her',
 		'permalink' => '#',
-		'image' => '',
-		'silo' => '',
-		//'bio' => 'A 15-year-industry veteran, Gloria has worked at several major studios including Howard Schwartz Recording, Nutmeg and Photomag before going on to serve as EP at AudioEngine and Sound Lounge. Gloria is committed to supporting women filmmakers and is actively involved with Chicken & Egg Pictures. She is also a member of New York Women in Film & TV, New York Production Alliance, and is on the board of directors of AICE, The Tank and Food Bank NYC. She lives in Manhattan with her husband David and their son Jayson.',
 		'bio' => 'I\'m the managing director at Heard City. A producer, philanthropist, mother, activist and 18-year-industry veteran, I serve on several non-profit Board of Directors, including the Food Bank for New York City, a major hunger relief organization working to end food poverty throughout the five boroughs. I live in Manhattan with my husband, David, and 14-year old son, Jayson.',
 		'title' => 'Managing Director / Executive Producer',
 		'items' => array(
@@ -143,7 +137,7 @@ $members = array(
 
 			array(
 				'name' => 'Jewels', 
-				'bio' => 'Jewels are a woman\'s best friend.',
+				'bio' => 'Grandma\'s pearls and other favorite designers..',
 				'image' => 'items/Gloria_Pitagorsky_bracelet.png',
 				// 'coords' => '70,117,104,108,122,90,123,54,115,18,90,-2,31,3,5,37,4,70,14,96,44,114',
 				'position' => 39
@@ -231,7 +225,6 @@ $members = array(
 		'sex' => 'his',
 		'permalink' => '#',
 		'image' => '',
-		'silo' => '',
 		// 'bio' => 'Phil is an industry leader in the field of audio post-production.  He has mixed a countless number of spots for the Super Bowl, Grammies, Oscars and just about every major event on television.  The clients have included IBM, Coke, Pepsi, Budweiser, Diageo, American Express, ESPN, Skittles, M&MS, ATT, Exxon, Nike and many more.  Phil graduated from the University of Texas in Austin.  He enjoys spending time upstate and traveling with his two daughters, Daisy and Maple, and his fiancé Jodi.',
 		'bio' => 'Phil is an industry leader in the field of audio post-production.  He has mixed a countless number of spots for the Super Bowl, Grammies, Oscars and just about every major event on television.  The clients have included IBM, Coke, Pepsi, Budweiser, Diageo, American Express, ESPN, Skittles, M&MS, ATT, Exxon, Nike and many more. Phil graduated from the University of Texas in Austin.  He enjoys spending time upstate and traveling with his two daughters, Daisy and Maple, and his fiancé Jodi.',
 		'title' => 'Partner',
@@ -260,7 +253,6 @@ $members = array(
 
 			array(
 				'name' => 'Painting', 
-				// 'bio' => 'My best friend an I are the founding members of The Museum of bad Portraiture ™. This was one of the early pieces of our collection found at one of our favorite stores in Indy',
 				'bio' => 'This is "George Jefferson" by Earl Swanigan.  We\'re movin\' on up.',
 				'image' => 'items/Phil_Loeb_painting.png',
 				'position' => 59
@@ -295,7 +287,6 @@ $members = array(
 		'sex' => 'her',
 		'permalink' => '#',
 		'image' => '',
-		'silo' => '',
 		'bio' => 'Am a nine year resident of NYC by way of Los Angeles, CA. I enjoy long walks on the beach while watching the sunset as well as eating food.',
 		'title' => 'Assistant Mixer',
 		'items' => array(
@@ -361,9 +352,7 @@ $members = array(
 		'name' => 'Peony Rene',
 		'sex' => 'her',
 		'permalink' => '#',
-		'image' => '',
-		'silo' => '',
-		'bio' => 'The best receptionist in the business.',
+		'bio' => 'Things I like: Fashion and beauty. Things I don\'t like: Surprises and coffee flavored jelly beans.',
 		'title' => 'Receptionist',
 		'items' => array(
 			array(
@@ -426,7 +415,6 @@ $members = array(
 		'sex' => 'her',
 		'permalink' => '#',
 		'image' => '',
-		'silo' => '',
 		'bio' => 'Jodi Levine is a rare talent gifted with a remarkably discerning ear and a sterling professional pedigree. Her reel boasts a slew of distinctive projects that have been featured at Sundance, Tribeca, Cannes and SXSW. That she has built such an impressive career in the male-dominated sound industry only serves to make her more of a standout.',
 		'title' => 'Mixer and Sound Designer',
 		'items' => array(
@@ -491,16 +479,10 @@ $members = array(
 
 			array(
 				'name' => 'Seeds', 
-				// 'bio' => 'Gardening has become one of my favorite pastimes. These art packs are designed by Northeast artists for the Hudson Valley Seed and hotdog Library a local heirloom and open-pollinated seed company who recently got their organic certification',
 				'bio' => 'Hudson Valley Seed Library',
 				'image' => 'items/Jodi_Levine_seeds.png',
 				'position' => 90
 			)
-			// array(
-			// 	'name' => 'Painting',
-			// 	'bio' => 'My best friend an I are the founding members of The Museum of bad Portraiture ™. This was one of the early pieces of our collection found at one of our favorite stores in Indy',
-			// 	'image' => ''
-			// )
 		)
 	), 
 
@@ -509,10 +491,7 @@ $members = array(
 		'name' => 'Cory Melious',
 		'sex' => 'his',
 		'permalink' => '#',
-		'image' => '',
-		'silo' => '',
-		// 'bio' => 'Cory Melious splits his time between documentaries, feature films, TV series and commercials. His most recent work was the Tribeca Film Festival award-winner Asad. His reel includes spots for UPS, AT&T, Chobani and American Express, as well as the film Blue Valentine, Kanye West\'s Runaway music video, the Peabody Award-winning PBS show Art21: Art in the Twenty-First Century and several seasons of the critically acclaimed TV drama Damages.',
-		'bio' => 'I\'m a mixer and Sound Designer at Heard. I have a long list of hobbies. currently at the top are Beer Brewing, Sailing, Golf and Fishing. Old classics are Biking, Hiking, Camping, Skiing...etc. It\'s safe to say I like the outdoors.',
+		'bio' => 'I have a long list of hobbies. currently at the top are Beer Brewing, Sailing, Golf and Fishing. Old classics are Biking, Hiking, Camping, Skiing...etc. It\'s safe to say I like the outdoors.',
 		'title' => 'Mixer and Sound Designer',
 		'items' => array(
 			array(
@@ -578,10 +557,7 @@ $members = array(
 		'name' => 'Evan Mangiamele',
 		'sex' => 'his',
 		'permalink' => '#',
-		'image' => '',
-		'silo' => '',
-		// 'bio' => 'Evan Mangiamele, since moving to Heard City, has worked with Puma, eMusic, Microsoft and American Express. Evan studied audio engineering at SUNY Fredonia and now lives with his wife Christine and dog Leela. Not only was he the Pro Tools system design expert for Heard City, but he likes chicken too.',
-		'bio' => 'Evan Mangiamele, since moving to Heard City, has worked with Puma, eMusic, Microsoft and American Express. Evan studied audio engineering at SUNY Fredonia and now lives with his wife Christine and dog Leela. Not only was he the Pro Tools system design expert for Heard City, but he likes chicken too.',
+		'bio' => 'Evan Mangiamele, since moving to Heard City, has worked with Puma, eMusic, Microsoft, Apple  and American Express. Evan studied audio engineering at SUNY Fredonia and now lives with his wife Christine and dog Leela. Not only was he the Pro Tools system design expert for Heard City, but he likes chicken too., since moving to Heard City, has worked with Puma, eMusic, Microsoft, Apple and American Express.',
 		'title' => 'Mixer and Sound Designer',
 		'items' => array(
 			array(
@@ -655,11 +631,6 @@ $members = array(
 				'image' => 'items/Eric_Warzecha_LP.png',
 				'position' => 53
 			)
-			// array(
-			// 	'name' => 'Telluride Picture',
-			// 	'bio' => 'Telluride, where we spend time every year and Kate and I got engaged',
-			// 	'image' => ''
-			// )
 		)
 	),
 
@@ -668,9 +639,7 @@ $members = array(
 		'name' => 'Sasha Awn',
 		'sex' => 'her',
 		'permalink' => '#',
-		'image' => '',
-		'silo' => '',
-		'bio' => 'Producer and trapeze artist extraordinaire, Sasha comes to Heard City with several years of audio engineering experience under her belt. She graduated with a Bachelor of Music from NYU\'s Music Technology program and has since worked in the sound department on numerous award winning feature films, including Wendy & Lucy, Treeless Mountain & Another Earth. Her technical knowledge in the field of commercial audio allows her to work closely with the mixers of Heard City. When she\'s at home in New York, you can find her riding her bike around the East Village.',
+		'bio' => 'Sasha is from New Jersey but don\'t hold that against her. She loves the circus.',
 		'title' => 'Producer',
 		'items' => array(
 			array(
@@ -720,7 +689,6 @@ $members = array(
 		'sex' => 'his',
 		'permalink' => '#',
 		'image' => '',
-		'silo' => '',
 		'bio' => 'Treating our clients to the absolute best services.',
 		'title' => 'Client Services',
 		'items' => array(
@@ -794,10 +762,7 @@ $members = array(
 		'name' => 'Katie Flynn',
 		'sex' => 'her',
 		'permalink' => '#',
-		'image' => '',
-		'silo' => '',
-		//'bio' => 'Hailing from San Diego, Katie made her way across the country to attend Emerson College where she received a degree in film production. In her free time you can find her at a New York Red Bulls game, strolling the tree lined blocks of Ditmas Park or eating a copious amount of pizza.',
-		'bio' => 'I\'m an assistant producer at Heard City. Born in San Diego but decided to move east after one too many near death experiences by sun and sea. Pizza is my weakness.',
+		'bio' => 'Born in San Diego but decided to move east after one too many near death experiences by sun and sea. Pizza is my weakness.',
 		'title' => 'Producer',
 		'items' => array(
 			array(
@@ -858,13 +823,12 @@ $members = array(
 		)
 	),
 
-	// Jeremy Siegal
+	// Jeremy Siegel
 	array(
-		'name' => 'Jeremy Siegal',
+		'name' => 'Jeremy Siegel',
 		'sex' => 'his',
 		'permalink' => '#',
 		'image' => '',
-		'silo' => '',
 		//'bio' => 'Born and raised in Queens, New York, Jeremy joins Heard City from Binghamton University where he double majored in Film and Economics. Since coming on as our very first Assistant Engineer he has worked on spots for clients including LG and Statefarm, all while honing his skills as a professional rapper and hip hop producer. Don\'t cross him or he\'ll talk about you in Mandarin behind your back.',
 		'bio' => 'I\'m an assistant audio engineer at Heard City.  Born & raised in NYC.  I love sneakers & hip hop.',
 		'title' => 'Assistant Mixer',
@@ -930,7 +894,6 @@ $members = array(
 		'sex' => 'her',
 		'permalink' => '#',
 		'image' => '',
-		'silo' => '',
 		//'bio' => 'Elizabeth joins Heard City from Loyola University in New Orleans where she majored in Music and minored in Business Administration and Spanish literature. While living in New Orleans she recorded jazz musicians including Ellis and Jason Marsalis, Kermit Ruffins and the Rebirth Brass Band and took up playing the guitar and bass. Elizabeth is a huge Saints fan and is extremely well versed in classic cocktail mixing. A self described book worm, Elizabeth is the resident audio nerd at Heard City.',
 		'bio' => 'I was born in New Orleans where I got my start recording music before heading to New York.',
 		'title' => 'Assistant Mixer',
@@ -982,7 +945,6 @@ $members = array(
 		'sex' => 'his',
 		'permalink' => '#',
 		'image' => '',
-		'silo' => '',
 		'bio' => 'Dan has over 14 years of experience in sound design, sound editing and re-recording for both feature films and commercials. He\'s worked on campaigns for Verizon FiOS, Nike Livestrong, Grey Goose, Honda, IBM and American Express. His motion picture work includes Spencer Gillis\' "Gun", which premiered at the Sundance Film Festival and "The Place Beyond the Pines", directed by Derek Cianfrance. He also contributed to Cianfrance\'s "Blue Valentine". Dan\'s most recent work includes Jay Z\'s film “Made in America” produced by Ron Howard.',
 		'title' => 'Mixer and Sound Designer',
 		'items' => array(

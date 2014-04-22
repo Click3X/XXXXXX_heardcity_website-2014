@@ -87,14 +87,6 @@ if(!isset($_GET['selected_member'])) {
     </head>
 
     <body class="ourteam one-page">
-        <!-- PRELOADER -->
-<!--         <div id="ajax-loader">
-            <div class="ajax-spinner">
-                <img src="images/logo/logo-white.png" width="150px" height="194px">
-                <img src="images/sprites/ajaxSpinner.gif" id="spin-wheel">
-            </div>
-        </div> -->
-        
         <div id="page-wrap" class="page-wrap">
             
             <?php include('php/main-nav.php'); ?>
@@ -111,10 +103,7 @@ if(!isset($_GET['selected_member'])) {
                 </div>
             </div>
 
-            <div id="members" class="members"></div>
-
-            <div id="all-items-holder" class="all-items-holder clearfix">
-            </div>
+            <div id="all-items-holder" class="all-items-holder clearfix"></div>
 
             <div id="members" class="members"></div>
         	 
