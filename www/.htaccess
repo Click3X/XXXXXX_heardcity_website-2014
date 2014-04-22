@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+
+	RewriteEngine on
+
+	RewriteRule ^ourteam/([a-z]+)?$ ourteam.php?selected_member=$1 [NC]
+
+	RewriteRule ^projects/([a-z]+)?$ projects.php?selected_project=$1 [NC]
+	
+</IfModule>
+
+AddType image/svg+xml svg
+AddType image/svg+xml svgz
+AddType video/ogg .ogv
+AddType video/mp4 .mp4
+AddType video/mp4 .mov
+AddType video/webm .webm

@@ -303,8 +303,8 @@ var Grid = (function() {
 		var preview = $.data( this, 'preview' ),
 			// item´s offset top
 			position = $item.data( 'offsetTop' );
-			console.log('THis is position: ' + position);
-			console.log('Thisis previewPos: ' + previewPos);
+			// console.log('THis is position: ' + position);
+			// console.log('Thisis previewPos: ' + previewPos);
 
 		scrollExtra = 0;
 
@@ -355,7 +355,13 @@ var Grid = (function() {
 		create : function() {
 			// create Preview structure:
 			this.$title = $( '<li class="p-name"></li>' );
-			this.$videoTag = $('<video controls class="feat-video" poster=""><source src="" type="video/mp4" /></video>');
+
+			this.$videoTagFile = $('<source src="" type="video/mp4" />');
+			this.$videoTag = $('<video controls class="feat-video" poster=""></video>');
+			this.$videoTag.append(this.$videoTagFile);
+
+			this.$vidOgg = $('<source src="" type="video/ogg" />');
+			this.$videoTag.append(this.$vidOgg);
 
 			this.$director = $('<span class="p-director"></span>');
 			this.$directorList = $('<li class="p-director"><span class="bold">Directed by: </span></li>').append(this.$director);
@@ -418,7 +424,10 @@ var Grid = (function() {
 			this.$title.html( eldata.title );
 
 			// Charles new data attributes
-			this.$videoTag.attr('src', eldata.mp4);
+			var newOgg = eldata.mp4;
+			newOgg = newOgg.replace('mp4', 'ogv');
+			this.$vidOgg.attr('src', newOgg);
+			this.$videoTagFile.attr('src', eldata.mp4);
 			this.$videoTag.attr('poster', eldata.poster);
 			this.$director.html( eldata.director );
 			this.$mixer.html( eldata.mixer );
