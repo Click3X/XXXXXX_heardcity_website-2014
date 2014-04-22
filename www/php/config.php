@@ -139,7 +139,6 @@ $members = array(
 				'name' => 'Jewels', 
 				'bio' => 'Grandma\'s pearls and other favorite designers..',
 				'image' => 'items/Gloria_Pitagorsky_bracelet.png',
-				// 'coords' => '70,117,104,108,122,90,123,54,115,18,90,-2,31,3,5,37,4,70,14,96,44,114',
 				'position' => 39
 			),
 
@@ -167,14 +166,6 @@ $members = array(
 				'position' => 13
 			),
 
-			// array(
-			// 	'name' => 'Necklace', 
-			// 	'bio' => '',
-			// 	'image' => 'items/Gloria_Pitagorsky_necklace.png',
-			// 	'coords' => '164,121,156,154,122,202,90,217,55,217,17,199,-4,158,5,94,8,46,70,7,84,-3,98,1,92,8,107,24,122,33,150,64,158,92',
-			// 	'position' => 94
-			// ),
-
 			array(
 				'name' => 'Jayson', 
 				'bio' => 'My son Jayson.',
@@ -188,13 +179,6 @@ $members = array(
 				'image' => 'items/Gloria_Pitagorsky_poster.png',
 				'position' => 3
 			),
-
-			// array(
-			// 	'name' => 'Ring', 
-			// 	'bio' => '',
-			// 	'image' => 'items/Gloria_Pitagorsky_ring.png',
-			// 	'position' => 81
-			// ),
 
 			array(
 				'name' => 'Scarf', 

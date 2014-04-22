@@ -3,7 +3,7 @@
 $info = array(
 	'client' => 'Asad',
 	'title' => 'Asad',
-	'agency' => 'Asad',
+	'director' => 'Bryan Buckley',
 	'type' => 'feature'
 	);
 

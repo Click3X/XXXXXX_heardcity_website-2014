@@ -5995,7 +5995,7 @@ input:focus {
   transform: translate(0, -100%);
 }
 
-/* line 225, ../sass/projects/_projects-video.scss */
+/* line 207, ../sass/projects/_projects-video.scss */
 .og-grid .og-vid-holder {
   padding: 0 .25em 0 .25em;
   margin-bottom: .25em;
@@ -6005,29 +6005,29 @@ input:focus {
   padding-bottom: 57%;
 }
 @media (min-width: 480px) {
-  /* line 225, ../sass/projects/_projects-video.scss */
+  /* line 207, ../sass/projects/_projects-video.scss */
   .og-grid .og-vid-holder {
     padding-bottom: 29%;
   }
 }
 @media (min-width: 960px) {
-  /* line 225, ../sass/projects/_projects-video.scss */
+  /* line 207, ../sass/projects/_projects-video.scss */
   .og-grid .og-vid-holder {
     padding-bottom: 19%;
   }
 }
 @media (min-width: 1480px) {
-  /* line 225, ../sass/projects/_projects-video.scss */
+  /* line 207, ../sass/projects/_projects-video.scss */
   .og-grid .og-vid-holder {
     padding-bottom: 14%;
   }
 }
-/* line 246, ../sass/projects/_projects-video.scss */
+/* line 228, ../sass/projects/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder {
   width: 100%;
   background-color: #ffffff;
 }
-/* line 250, ../sass/projects/_projects-video.scss */
+/* line 232, ../sass/projects/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder .title {
   max-width: 80%;
   display: table;
@@ -6036,17 +6036,17 @@ input:focus {
   height: 90px;
 }
 @media (min-width: 480px) {
-  /* line 250, ../sass/projects/_projects-video.scss */
+  /* line 232, ../sass/projects/_projects-video.scss */
   .og-grid .og-vid-holder .vid-title-holder .title {
     height: 110px;
   }
 }
-/* line 262, ../sass/projects/_projects-video.scss */
+/* line 244, ../sass/projects/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder .title div {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 266, ../sass/projects/_projects-video.scss */
+/* line 248, ../sass/projects/_projects-video.scss */
 .og-grid .og-vid-holder .vid-title-holder .title div a {
   color: #000000;
   line-height: 1.4em;
@@ -6060,7 +6060,7 @@ input:focus {
   text-align: center;
 }
 
-/* line 284, ../sass/projects/_projects-video.scss */
+/* line 266, ../sass/projects/_projects-video.scss */
 .og-grid li.og-expanded > a::after {
   top: auto;
   left: 50%;
@@ -6072,7 +6072,7 @@ input:focus {
   margin: -20px 0 0 -15px;
 }
 
-/* line 294, ../sass/projects/_projects-video.scss */
+/* line 276, ../sass/projects/_projects-video.scss */
 .og-expander {
   position: absolute;
   top: auto;
@@ -6091,17 +6091,17 @@ input:focus {
   margin-top: -15%;
 }
 @media (min-width: 769px) {
-  /* line 294, ../sass/projects/_projects-video.scss */
+  /* line 276, ../sass/projects/_projects-video.scss */
   .og-expander {
     margin-top: -8.5%;
   }
 }
-/* line 313, ../sass/projects/_projects-video.scss */
+/* line 295, ../sass/projects/_projects-video.scss */
 .og-expander .section-title {
   background-color: white;
   position: relative;
 }
-/* line 317, ../sass/projects/_projects-video.scss */
+/* line 299, ../sass/projects/_projects-video.scss */
 .og-expander .section-title .credits {
   display: block;
   max-width: 30em;
@@ -6111,20 +6111,20 @@ input:focus {
   padding-bottom: 37px;
 }
 
-/* line 329, ../sass/projects/_projects-video.scss */
+/* line 311, ../sass/projects/_projects-video.scss */
 .og-expander-inner {
   padding: 50px 0;
   text-align: center;
 }
 
-/* line 334, ../sass/projects/_projects-video.scss */
+/* line 316, ../sass/projects/_projects-video.scss */
 .og-fullimg video {
   margin-bottom: 1em;
   width: 100%;
   max-width: 940px;
 }
 
-/* line 342, ../sass/projects/_projects-video.scss */
+/* line 322, ../sass/projects/_projects-video.scss */
 .p-name {
   font-size: 1em;
   text-align: center;
@@ -6136,14 +6136,14 @@ input:focus {
   max-width: 30em;
   margin: 0 auto .5em;
 }
-/* line 353, ../sass/projects/_projects-video.scss */
+/* line 333, ../sass/projects/_projects-video.scss */
 .p-name:before {
   content: '';
   display: block;
   border-top: 1px solid #404040;
   height: 14px;
 }
-/* line 360, ../sass/projects/_projects-video.scss */
+/* line 340, ../sass/projects/_projects-video.scss */
 .p-name:after {
   content: '';
   display: block;
@@ -6151,7 +6151,7 @@ input:focus {
   height: 12px;
 }
 
-/* line 370, ../sass/projects/_projects-video.scss */
+/* line 350, ../sass/projects/_projects-video.scss */
 .og-close {
   position: absolute;
   width: 28px;
@@ -6163,7 +6163,7 @@ input:focus {
   background-repeat: no-repeat;
 }
 
-/* line 381, ../sass/projects/_projects-video.scss */
+/* line 361, ../sass/projects/_projects-video.scss */
 .og-loading {
   width: 20px;
   height: 20px;
@@ -6178,76 +6178,80 @@ input:focus {
 }
 
 @keyframes loader {
-  /* line 393, ../sass/projects/_projects-video.scss */
+  /* line 373, ../sass/projects/_projects-video.scss */
   0% {
     background: #ddd;
   }
 
-  /* line 394, ../sass/projects/_projects-video.scss */
+  /* line 374, ../sass/projects/_projects-video.scss */
   33% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
   }
 
-  /* line 395, ../sass/projects/_projects-video.scss */
+  /* line 375, ../sass/projects/_projects-video.scss */
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
   }
 }
 
-/* line 399, ../sass/projects/_projects-video.scss */
+/* line 379, ../sass/projects/_projects-video.scss */
 #og-grid > li {
   width: 100%;
   float: left;
 }
 
-/* line 404, ../sass/projects/_projects-video.scss */
+/* line 384, ../sass/projects/_projects-video.scss */
 #og-grid > li img {
   width: 100%;
 }
 
 @media screen and (min-width: 480px) {
-  /* line 409, ../sass/projects/_projects-video.scss */
+  /* line 389, ../sass/projects/_projects-video.scss */
   #og-grid > li {
     width: 50%;
   }
 }
 @media screen and (min-width: 960px) {
-  /* line 415, ../sass/projects/_projects-video.scss */
+  /* line 395, ../sass/projects/_projects-video.scss */
   #og-grid > li {
     width: 33%;
   }
 }
 @media (min-width: 1480px) {
-  /* line 421, ../sass/projects/_projects-video.scss */
+  /* line 401, ../sass/projects/_projects-video.scss */
   #og-grid > li {
     width: 25%;
   }
 }
-/* line 428, ../sass/projects/_projects-video.scss */
+/* line 408, ../sass/projects/_projects-video.scss */
 .sec-image {
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
-/* line 439, ../sass/projects/_projects-video.scss */
+/* line 415, ../sass/projects/_projects-video.scss */
 .projects .main {
   z-index: 10;
 }
-/* line 440, ../sass/projects/_projects-video.scss */
+/* line 416, ../sass/projects/_projects-video.scss */
 .projects .footer {
   z-index: 0;
 }
 
-/* line 444, ../sass/projects/_projects-video.scss */
+/* line 420, ../sass/projects/_projects-video.scss */
 .feature .credits li {
   display: none;
 }
-/* line 447, ../sass/projects/_projects-video.scss */
+/* line 423, ../sass/projects/_projects-video.scss */
 .feature .credits .p-name {
   display: block;
+}
+/* line 424, ../sass/projects/_projects-video.scss */
+.feature .credits .p-director {
+  display: inline-block;
 }
 
 /* line 3, ../sass/contact/_contact.scss */

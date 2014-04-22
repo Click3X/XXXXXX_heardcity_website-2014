@@ -369,7 +369,7 @@ var Grid = (function() {
 			this.$client = $('<span class="p-client"></span>');
 			this.$clientList = $('<li class="p-client"><span class="bold">Client: </span></li>').append(this.$client);
 
-			this.$projectInfo = $('<ul class="credits"></ul>').append(this.$title, this.$clientList, this.$agencyList); //this.$mixerList,
+			this.$projectInfo = $('<ul class="credits"></ul>').append(this.$title, this.$clientList, this.$agencyList, this.$directorList); //this.$mixerList,
 
 			this.$sectionTitle = $('<div class="section-title grey-theme"><div class="noise"></div></div>').append(this.$projectInfo);
 			this.$details = $( '<div class="og-details"></div>' );
