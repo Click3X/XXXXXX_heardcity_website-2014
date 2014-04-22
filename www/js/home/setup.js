@@ -26,36 +26,6 @@ $(function() {
     })();
 
 
-    // // CHECK FOR MOBILE OR DESK SIZE
-    // if(device == 'desk') {
-    //     $(function() {
-    //         var count = 20001;
-    //         var spritePre = 'sprite-pre_loader';
-    //         var finalFrame = 20133;
-    //         function animPreLoader() {
-    //             count++;
-
-    //             if(count > finalFrame - 1) {
-    //                 preloadAnim.fadeOut(500);
-    //                 animHolder.fadeOut(500);
-    //                 $('#body-inner').show(750);
-    //                 clearInterval(timeout);
-    //             }
-
-    //             var preCount = count-1;
-    //             var preCountStr = preCount.toString();
-    //             var countStr = count.toString();
-    //             var preAnimClass = spritePre + preCountStr;
-    //             var animClass = spritePre + countStr;
-    //             preloadAnim.removeClass(preAnimClass).addClass(animClass);
-    //         }
-
-    //         var timeout = setInterval(animPreLoader, 32);
-    //         animPreLoader();
-    //     });
-    // }
-    
-
     // SET UP VARS
     var $body = $('body'),
     $mainMenu = $('#page-fixed'),
@@ -96,7 +66,7 @@ $(function() {
                 opacity: 1
             }, 500, function() {
             // Animation complete.
-            });
+        });
     });
 
 
@@ -210,7 +180,11 @@ $(function() {
         loop: true,
         loopRewind:false,
         keyboardNavEnabled: true,
-        usePreloader:false
+        usePreloader:false,
+        autoPlay: {
+            enabled: true,
+            pauseOnHover: true
+        }
     });
 
     $featuredSlider.royalSlider({
@@ -238,7 +212,6 @@ $(function() {
         block: {
             fadeEffect: false,
             moveEffect: 'right',
-            // moveOffset: 500,
             moveOffset: 800,
             easing:'easeOutSine',
             delay:100

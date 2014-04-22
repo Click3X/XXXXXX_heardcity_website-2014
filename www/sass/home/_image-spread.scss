@@ -18,7 +18,6 @@
 .image-spread {
 	background-color: #fff;
 	.half-image {
-		// padding-bottom:125%;
 		padding-bottom:125%;
 
 		@media(min-width:1270px) { padding-bottom:850px; }
@@ -50,7 +49,6 @@
 	padding-bottom: 233px;
 
 	@media(min-width:600px) { 
-		// padding-bottom: 362px;
 		padding-bottom: 484px;
 	}
 
@@ -65,20 +63,16 @@
 
 
 #guitar-nord {
-	background-position: 12% 100%;
+	background-position: 22% 100%;
 	background-size: 150% auto;
 	@media(min-width:600px) {
 		background-size: cover;
 	}
-
-	// @media(min-width:1240px) {
-	// 	background-size: cover;
-	// }
 }
 
 
 #jean-jacket {
-	background-position: 0 50%;
+	background-position: 0 54%;
 	background-size: 150%;
 	@media(min-width:600px) {
 		background-size: cover;
