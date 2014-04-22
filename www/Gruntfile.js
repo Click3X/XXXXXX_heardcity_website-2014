@@ -4,8 +4,19 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        concat: {
-            // 2. Configuration for concatinating files goes here.
+        concat: {   
+            dist: {
+                src: [
+                    // 'js/*.js', // All JS in the libs folder
+                    // 'js/home/setup.js'  // This specific file
+                    'js/lib/jquery.unveil.min.js',
+                    'js/lib/jquery.flexnav.min.js',
+                    'js/lib/jquery.easing-1.3.js',
+                    'js/lib/jquery.royalslider.min.js',
+                    'js/home/setup.js'
+                ],
+                dest: 'js/build/production.js',
+            }
         }
 
     });
