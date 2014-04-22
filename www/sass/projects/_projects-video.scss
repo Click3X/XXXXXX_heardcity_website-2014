@@ -439,3 +439,10 @@
 	.main {z-index: 10;}
 	.footer { z-index: 0;}
 }
+
+.feature .credits {
+	li {
+		display: none;
+	}
+	.p-name { display: block; }
+}

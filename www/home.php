@@ -74,10 +74,11 @@ include('php/project-grid.php');
             <?php include('php/home/feat-work.php'); ?>
 
 
-            <!-- DUDE ON PHONE -->
+            <!-- WINDOWS -->
             <div class="container clearfix image-spread">
                 <div class="image-holder">
-                    <div id="dude-on-phone" class="image-spread full-image bg-img"></div>
+                    <!-- <div id="dude-on-phone" class="image-spread full-image bg-img"></div> -->
+                    <div id="windows" class="image-spread full-image bg-img"></div>
                 </div>
             </div>
 

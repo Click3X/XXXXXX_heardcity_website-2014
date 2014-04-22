@@ -1284,130 +1284,135 @@ a {
   background-image: url("../images/girl-large/girl-large-480.jpg");
 }
 
+/* line 44, ../sass/home/_marquee.scss */
+#windows {
+  background-image: url("../images/windows/windows-1440.jpg");
+}
+
 @media (min-width: 600px) {
-  /* line 46, ../sass/home/_marquee.scss */
+  /* line 48, ../sass/home/_marquee.scss */
   #sun-light {
     background-image: url("../images/marquee/sun-light/sun-light-960.jpg");
   }
 
-  /* line 47, ../sass/home/_marquee.scss */
+  /* line 49, ../sass/home/_marquee.scss */
   #sun-rays {
     background-image: url("../images/marquee/sun-rays/sun-rays-960.jpg");
   }
 
-  /* line 48, ../sass/home/_marquee.scss */
+  /* line 50, ../sass/home/_marquee.scss */
   #sun-chairs {
     background-image: url("../images/marquee/sun-chairs/sun-chairs-960.jpg");
   }
 
-  /* line 49, ../sass/home/_marquee.scss */
+  /* line 51, ../sass/home/_marquee.scss */
   #dog-windows {
     background-image: url("../images/dog/dog-960.jpg");
   }
 
-  /* line 50, ../sass/home/_marquee.scss */
+  /* line 52, ../sass/home/_marquee.scss */
   #dude-on-phone {
     background-image: url("../images/man-phone/man-phone-960.jpg");
   }
 
-  /* line 51, ../sass/home/_marquee.scss */
+  /* line 53, ../sass/home/_marquee.scss */
   #jean-jacket {
     background-image: url("../images/jean-jacket/jean-jacket-480.jpg");
   }
 
-  /* line 52, ../sass/home/_marquee.scss */
+  /* line 54, ../sass/home/_marquee.scss */
   #guitar-nord {
     background-image: url("../images/guitar-nord/guitar-nord-480.jpg");
   }
 
-  /* line 53, ../sass/home/_marquee.scss */
+  /* line 55, ../sass/home/_marquee.scss */
   #stairs {
     background-image: url("../images/stairs/stairs-480.jpg");
   }
 
-  /* line 54, ../sass/home/_marquee.scss */
+  /* line 56, ../sass/home/_marquee.scss */
   #girl-large {
     background-image: url("../images/girl-large/girl-large-480.jpg");
   }
 }
 @media (min-width: 1040px) {
-  /* line 59, ../sass/home/_marquee.scss */
+  /* line 61, ../sass/home/_marquee.scss */
   #sun-light {
     background-image: url("../images/marquee/sun-light/sun-light-1440.jpg");
   }
 
-  /* line 60, ../sass/home/_marquee.scss */
+  /* line 62, ../sass/home/_marquee.scss */
   #sun-rays {
     background-image: url("../images/marquee/sun-rays/sun-rays-1440.jpg");
   }
 
-  /* line 61, ../sass/home/_marquee.scss */
+  /* line 63, ../sass/home/_marquee.scss */
   #sun-chairs {
     background-image: url("../images/marquee/sun-chairs/sun-chairs-1440.jpg");
   }
 
-  /* line 62, ../sass/home/_marquee.scss */
+  /* line 64, ../sass/home/_marquee.scss */
   #dog-windows {
     background-image: url("../images/dog/dog-1440.jpg");
   }
 
-  /* line 63, ../sass/home/_marquee.scss */
+  /* line 65, ../sass/home/_marquee.scss */
   #dude-on-phone {
     background-image: url("../images/man-phone/man-phone-1440.jpg");
   }
 
-  /* line 64, ../sass/home/_marquee.scss */
+  /* line 66, ../sass/home/_marquee.scss */
   #jean-jacket {
     background-image: url("../images/jean-jacket/jean-jacket-768.jpg");
   }
 
-  /* line 65, ../sass/home/_marquee.scss */
+  /* line 67, ../sass/home/_marquee.scss */
   #guitar-nord {
     background-image: url("../images/guitar-nord/guitar-nord-768.jpg");
   }
 
-  /* line 66, ../sass/home/_marquee.scss */
+  /* line 68, ../sass/home/_marquee.scss */
   #stairs {
     background-image: url("../images/stairs/stairs-960.jpg");
   }
 
-  /* line 67, ../sass/home/_marquee.scss */
+  /* line 69, ../sass/home/_marquee.scss */
   #girl-large {
     background-image: url("../images/girl-large/girl-large-960.jpg");
   }
 }
 @media (min-width: 1440px) {
-  /* line 71, ../sass/home/_marquee.scss */
+  /* line 73, ../sass/home/_marquee.scss */
   #sun-light {
     background-image: url("../images/marquee/sun-light/sun-light-1920.jpg");
   }
 
-  /* line 72, ../sass/home/_marquee.scss */
+  /* line 74, ../sass/home/_marquee.scss */
   #sun-rays {
     background-image: url("../images/marquee/sun-rays/sun-rays-1920.jpg");
   }
 
-  /* line 73, ../sass/home/_marquee.scss */
+  /* line 75, ../sass/home/_marquee.scss */
   #sun-chairs {
     background-image: url("../images/marquee/sun-chairs/sun-chairs-1920.jpg");
   }
 
-  /* line 74, ../sass/home/_marquee.scss */
+  /* line 76, ../sass/home/_marquee.scss */
   #dog-windows {
     background-image: url("../images/dog/dog-1920.jpg");
   }
 
-  /* line 75, ../sass/home/_marquee.scss */
+  /* line 77, ../sass/home/_marquee.scss */
   #dude-on-phone {
     background-image: url("../images/man-phone/man-phone-1920.jpg");
   }
 
-  /* line 76, ../sass/home/_marquee.scss */
+  /* line 78, ../sass/home/_marquee.scss */
   #stairs {
     background-image: url("../images/stairs/stairs-1440.jpg");
   }
 
-  /* line 77, ../sass/home/_marquee.scss */
+  /* line 79, ../sass/home/_marquee.scss */
   #girl-large {
     background-image: url("../images/girl-large/girl-large-1440.jpg");
   }
@@ -1665,66 +1670,91 @@ a {
   }
 }
 
-/* line 29, ../sass/home/_image-spread.scss */
+/* line 31, ../sass/home/_image-spread.scss */
 #dog-windows,
 #dude-on-phone {
   background-position: 50% 100%;
   padding-bottom: 184px;
 }
 @media (min-width: 600px) {
-  /* line 29, ../sass/home/_image-spread.scss */
+  /* line 31, ../sass/home/_image-spread.scss */
   #dog-windows,
   #dude-on-phone {
     padding-bottom: 362px;
   }
 }
 @media (min-width: 1040px) {
-  /* line 29, ../sass/home/_image-spread.scss */
+  /* line 31, ../sass/home/_image-spread.scss */
   #dog-windows,
   #dude-on-phone {
     padding-bottom: 550px;
   }
 }
 @media (min-width: 1440px) {
-  /* line 29, ../sass/home/_image-spread.scss */
+  /* line 31, ../sass/home/_image-spread.scss */
   #dog-windows,
   #dude-on-phone {
     padding-bottom: 710px;
   }
 }
 
-/* line 46, ../sass/home/_image-spread.scss */
+/* line 47, ../sass/home/_image-spread.scss */
+#windows {
+  background-size: cover;
+  background-position: 100% 79%;
+  padding-bottom: 233px;
+}
+@media (min-width: 600px) {
+  /* line 47, ../sass/home/_image-spread.scss */
+  #windows {
+    padding-bottom: 484px;
+  }
+}
+@media (min-width: 1040px) {
+  /* line 47, ../sass/home/_image-spread.scss */
+  #windows {
+    padding-bottom: 550px;
+  }
+}
+@media (min-width: 1440px) {
+  /* line 47, ../sass/home/_image-spread.scss */
+  #windows {
+    padding-bottom: 710px;
+  }
+}
+
+/* line 67, ../sass/home/_image-spread.scss */
 #guitar-nord {
   background-position: 12% 100%;
   background-size: 150% auto;
 }
 @media (min-width: 600px) {
-  /* line 46, ../sass/home/_image-spread.scss */
+  /* line 67, ../sass/home/_image-spread.scss */
   #guitar-nord {
     background-size: cover;
   }
 }
 
-/* line 59, ../sass/home/_image-spread.scss */
+/* line 80, ../sass/home/_image-spread.scss */
 #jean-jacket {
   background-position: 0 50%;
   background-size: 150%;
 }
 @media (min-width: 600px) {
-  /* line 59, ../sass/home/_image-spread.scss */
+  /* line 80, ../sass/home/_image-spread.scss */
   #jean-jacket {
     background-size: cover;
   }
 }
 @media (min-width: 1240px) {
-  /* line 59, ../sass/home/_image-spread.scss */
+  /* line 80, ../sass/home/_image-spread.scss */
   #jean-jacket {
     background-position: 0 35%;
     background-size: cover;
   }
 }
 
-/* line 72, ../sass/home/_image-spread.scss */
+/* line 93, ../sass/home/_image-spread.scss */
 #girl-large,
 #stairs {
   background-position: 50% 50%;
@@ -6199,6 +6229,15 @@ input:focus {
 /* line 440, ../sass/projects/_projects-video.scss */
 .projects .footer {
   z-index: 0;
+}
+
+/* line 444, ../sass/projects/_projects-video.scss */
+.feature .credits li {
+  display: none;
+}
+/* line 447, ../sass/projects/_projects-video.scss */
+.feature .credits .p-name {
+  display: block;
 }
 
 /* line 3, ../sass/contact/_contact.scss */
