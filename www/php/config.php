@@ -688,8 +688,7 @@ $members = array(
 		'name' => 'Gary Noel',
 		'sex' => 'his',
 		'permalink' => '#',
-		'image' => '',
-		'bio' => 'Treating our clients to the absolute best services.',
+		'bio' => 'Hailing from the original Live Free or Die State, Gary has the firm belief that while you live you better enjoy it. So whether it is a delicious snack, a well mixed drink, or just a friendly smile... Gary will help you get it.',
 		'title' => 'Client Services',
 		'items' => array(
 			array(
