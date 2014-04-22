@@ -303,8 +303,8 @@ var Grid = (function() {
 		var preview = $.data( this, 'preview' ),
 			// item´s offset top
 			position = $item.data( 'offsetTop' );
-			// console.log('THis is position: ' + position);
-			// console.log('Thisis previewPos: ' + previewPos);
+			console.log('THis is position: ' + position);
+			console.log('Thisis previewPos: ' + previewPos);
 
 		scrollExtra = 0;
 
@@ -361,14 +361,17 @@ var Grid = (function() {
 			this.$directorList = $('<li class="p-director"><span class="bold">Directed by: </span></li>').append(this.$director);
 			
 			this.$mixer = $('<span class="p-mixer"></span>');
-			// this.$mixerList = $('<li><span class="bold">Mixed by: </span><span class="p-mixer"></span></li>').append(this.$mixer);
+			this.$mixerList = $('<li><span class="bold">Mixed by: </span><span class="p-mixer"></span></li>').append(this.$mixer);
 			
 			this.$agency = $('<span class="p-agency"></span>');
-			this.$agencyList = $('<li class="p-agency"><span class="bold">Agency: </span><span class="p-agency"></span></li>').append(this.$agency);
-			
-			this.$projectInfo = $('<ul class="credits"></ul>').append(this.$title, this.$directorList, this.$agencyList); //this.$mixerList,
-			this.$sectionTitle = $('<div class="section-title grey-theme"><div class="noise"></div></div>').append(this.$projectInfo);
+			this.$agencyList = $('<li class="p-agency"><span class="bold">Agency: </span></li>').append(this.$agency);
+		
+			this.$client = $('<span class="p-client"></span>');
+			this.$clientList = $('<li class="p-client"><span class="bold">Client: </span></li>').append(this.$client);
 
+			this.$projectInfo = $('<ul class="credits"></ul>').append(this.$title, this.$clientList, this.$agencyList); //this.$mixerList,
+
+			this.$sectionTitle = $('<div class="section-title grey-theme"><div class="noise"></div></div>').append(this.$projectInfo);
 			this.$details = $( '<div class="og-details"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$videoTag, this.$sectionTitle ); // , this.$credits 
 			this.$closePreview = $( '<span class="og-close"></span>' );
@@ -408,7 +411,8 @@ var Grid = (function() {
 					director: $itemEl.data( 'director' ),
 					mixer: $itemEl.data( 'mixer' ),
 					poster: $itemEl.data( 'poster' ),
-					agency: $itemEl.data( 'agency' )
+					agency: $itemEl.data( 'agency' ),
+					client: $itemEl.data( 'client' )
 				};
 
 			this.$title.html( eldata.title );
@@ -419,6 +423,7 @@ var Grid = (function() {
 			this.$director.html( eldata.director );
 			this.$mixer.html( eldata.mixer );
 			this.$agency.html( eldata.agency );
+			this.$client.html( eldata.client );
 			
 
 			var self = this;
@@ -449,7 +454,7 @@ var Grid = (function() {
 		},
 		open : function() {
 
-			setTimeout( $.proxy( function() {	
+			setTimeout( $.proxy( function() {
 				// set the height for the preview and the item
 				this.setHeights();
 				// scroll to position the preview in the right place

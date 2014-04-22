@@ -45,6 +45,8 @@
 				if(isset($info["director"])) { $projects[$i]["director"] = $info["director"]; }
 				if(isset($info["type"])) { $projects[$i]["type"] = $info["type"]; }
 				if(isset($info["title"])) { $projects[$i]["title"] = $info["title"]; }
+				if(isset($info["client"])) { $projects[$i]["client"] = $info["client"]; }
+				// 'client'
 			}
 	 	}
 	$i++;
