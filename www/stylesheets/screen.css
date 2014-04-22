@@ -1711,7 +1711,7 @@ a {
 /* line 46, ../sass/home/_image-spread.scss */
 #windows {
   background-size: cover;
-  background-position: 100% 79%;
+  background-position: 51% 79%;
   padding-bottom: 233px;
 }
 @media (min-width: 600px) {
@@ -1733,38 +1733,38 @@ a {
   }
 }
 
-/* line 65, ../sass/home/_image-spread.scss */
+/* line 66, ../sass/home/_image-spread.scss */
 #guitar-nord {
   background-position: 22% 100%;
   background-size: 150% auto;
 }
 @media (min-width: 600px) {
-  /* line 65, ../sass/home/_image-spread.scss */
+  /* line 66, ../sass/home/_image-spread.scss */
   #guitar-nord {
     background-size: cover;
   }
 }
 
-/* line 74, ../sass/home/_image-spread.scss */
+/* line 75, ../sass/home/_image-spread.scss */
 #jean-jacket {
   background-position: 0 54%;
   background-size: 150%;
 }
 @media (min-width: 600px) {
-  /* line 74, ../sass/home/_image-spread.scss */
+  /* line 75, ../sass/home/_image-spread.scss */
   #jean-jacket {
     background-size: cover;
   }
 }
 @media (min-width: 1240px) {
-  /* line 74, ../sass/home/_image-spread.scss */
+  /* line 75, ../sass/home/_image-spread.scss */
   #jean-jacket {
     background-position: 0 35%;
     background-size: cover;
   }
 }
 
-/* line 87, ../sass/home/_image-spread.scss */
+/* line 88, ../sass/home/_image-spread.scss */
 #girl-large,
 #stairs {
   background-position: 50% 50%;
