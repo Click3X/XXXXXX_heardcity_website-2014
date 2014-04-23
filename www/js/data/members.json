@@ -103,7 +103,7 @@
                 },
                 {
                     "name": "Poster",
-                    "bio": "Once you have everything you want, you will become bored. It should hurt so good, rather than not hurting at all. Take it from me.",
+                    "bio": "Yes you can.",
                     "image": "items/Gloria_Pitagorsky_poster.png",
                     "position": 3
                 },
@@ -599,8 +599,8 @@
             "sex": "her",
             "items": [
                 {
-                    "name": "Soccer Clete",
-                    "bio": ": I grew up playing soccer and its still a large part of my life. I follow the US National team and frequent New York Red Bulls games",
+                    "name": "Soccer Cleat",
+                    "bio": "I grew up playing soccer and its still a large part of my life. I follow the US National team and frequent New York Red Bulls games",
                     "image": "items/Katie_Flynn_clete.png",
                     "coords": "106,349,134,342,170,325,170,302,150,286,150,238,170,220,170,168,126,112,112,38,99,4,72,1,52,26,38,28,13,106,16,145,30,162,17,254,26,304,50,340",
                     "position": 43
@@ -760,32 +760,32 @@
             "items": [
                 {
                     "name": "YUENGLING",
-                    "bio": "HOMETOWN BREW",
+                    "bio": "Hometown Brew",
                     "image": "items/Dan_Flosdorf_beer.png",
                     "position": 46
                 },
                 {
                     "name": "Hockey Stick",
-                    "bio": " I'M A HOCKEY PLAYER .",
+                    "bio": " I'm a hockey player.",
                     "image": "items/Dan_Flosdorf_hockey_stick.png",
                     "coords": "137,3,107,0,112,825,101,870,70,902,10,930,-1,942,6,965,19,970,48,968,103,935,131,900",
                     "position": 73
                 },
                 {
                     "name": "Skateboard",
-                    "bio": "I LIKE TO RIDE. SNOW, STREET, WAVES.",
+                    "bio": "I like to ride. snow, street, waves.",
                     "image": "items/Dan_Flosdorf_skateboard.png",
                     "position": 97
                 },
                 {
                     "name": "Snowboard",
-                    "bio": "I LIKE TO RIDE. SNOW, STREET, WAVES.",
+                    "bio": "I like to ride. snow, street, waves.",
                     "image": "items/Dan_Flosdorf_snowboard.png",
                     "position": 42
                 },
                 {
                     "name": "Watch",
-                    "bio": " I LIKE TO COLLECT MECHANICAL WATCHES",
+                    "bio": " I like to collect mechanical watches",
                     "image": "items/Dan_Flosdorf_watch.png",
                     "coords": "23,-1,20,15,2,33,2,51,8,80,18,96,22,118,52,118,59,98,74,64,75,47,60,14,53,-2",
                     "position": 27
