@@ -11,6 +11,19 @@ include('php/project-grid.php');
 
         <title>Heard City | Contact</title>
 
+        <meta name="description" content="Heard City">
+        <meta name="author" content="Charles Davis">
+        <meta name="google-site-verification" content="UF6chmGt4khLOuoo1UJPKlZQhNqI2A_piOZs3tQU08Q" />
+        <meta property="og:title" content="Heard City"/>
+        <meta property="og:type" content="company"/>
+        <meta property="og:url" content="http://heardcity.com"/>
+        <meta property="og:image" content="http://heardcity.com/favicon.png"/>
+        <meta property="og:site_name" content="Heard City"/>
+        <meta property="fb:admins" content="631337813"/>
+        <meta property="og:description"
+              content="Get the latest insider information about the new audio company from the Have You Heard site."/>
+
+
         <link rel="shortcut icon" href="favicon.ico">
 
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -148,6 +161,18 @@ include('php/project-grid.php');
         <script src="js/contact/setup.js"></script>
         -->
         <script src="js/build/contact-production.min.js"></script>
+
+        <script>
+
+            var _gaq=[['_setAccount','UA-33922112-1'],['_trackPageview']];
+
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+
+        </script>
 
     </body>
 
