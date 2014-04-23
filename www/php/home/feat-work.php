@@ -11,7 +11,7 @@
 		
 		<?php
 			foreach ($projects as $key => $project) { 
-				if($project['type'] == 'feature') { 
+				// if($project['type'] == 'feature') { 
 					$tablet = $project["images"]["tablet"];
 					$mobile = $project["images"]["mobile"];
 					$vidsrc = $project["vidsrc"];
@@ -53,7 +53,7 @@
 					</div>
 				</li>
 		<?php   
-				}
+				// }
 			}
 		?>
 
