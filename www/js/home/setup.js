@@ -145,27 +145,6 @@ $(function() {
 
     });
 
-    $blackTextSlider.royalSlider({
-        autoHeight: true,
-        transitionSpeed:1200,
-        arrowsNav: true,
-        arrowsNavAutoHide:false,
-        fadeinLoadedSlide: false,
-        controlNavigationSpacing: 0,
-        slidesSpacing:0,
-        controlNavigation: 'none',
-        imageScaleMode: 'none',
-        imageAlignCenter:false,
-        loop: true,
-        loopRewind:false,
-        keyboardNavEnabled: true,
-        usePreloader:false,
-        autoPlay: {
-            enabled: true,
-            pauseOnHover: true
-        }
-    });
-
     $greyTextSlider.royalSlider({
         autoHeight: true,
         transitionSpeed:1200,
