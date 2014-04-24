@@ -544,7 +544,7 @@ $members = array(
 		'name' => 'Evan Mangiamele',
 		'sex' => 'his',
 		'permalink' => '#',
-		'bio' => 'Evan Mangiamele, since moving to Heard City, has worked with Puma, eMusic, Microsoft, Apple  and American Express. Evan studied audio engineering at SUNY Fredonia and now lives with his wife Christine and dog Leela. Not only was he the Pro Tools system design expert for Heard City, but he likes chicken too., since moving to Heard City, has worked with Puma, eMusic, Microsoft, Apple and American Express.',
+		'bio' => 'Evan Mangiamele, since moving to Heard City, has worked with Puma, eMusic, Microsoft, Apple  and American Express. Evan studied audio engineering at SUNY Fredonia and now lives with his wife Christine and dog Leela. Not only was he the Pro Tools system design expert for Heard City, but he likes chicken too.',
 		'title' => 'Mixer and Sound Designer',
 		'items' => array(
 			array(
@@ -558,7 +558,6 @@ $members = array(
 				'bio' => 'These are my drumsticks. Fried Chicken is one of mankind\'s greatest accomplishments, I\'ve never met a piece i didn\'t like.',
 				'image' => 'items/Evan_Mangiamele_chicken.png',
 				'position' => 27
-				// 'coords' => '49,113,108,99,156,74,195,82,210,69,210,52,211,37,207,17,190,10,170,14,150,10,120,12,81,-2,31,0,9,14,-3,40,-6,82,10,97'
 			),
 			array(
 				'name' => 'Controller', 
@@ -587,7 +586,6 @@ $members = array(
 		'name' => 'Eric Warzecha',
 		'sex' => 'his',
 		'permalink' => '#',
-		// 'bio' => 'Eric Warzecha has a decade-plus experience as a post-mixer in New York. His client list includes DirecTV, Comcast, AT&amp;T, Chobani, HBO, Staples, Swiffer, and Garnier among others. Warzecha’s prolific career has led to multiple Cannes and Golden Pencil awards. Prior to joining Heard City, Warzecha spent 13 years at Sound Lounge, working his way up from intern to mixer. A 2000 graduate of SUNY Fredonia with a bachelor’s degree in sound recording, Warzecha has made music a central focus of his life, recording and mixing for bands when he’s not at work in the studio. Eric lives in Brooklyn with his wife and newborn daughter Coralie.',
 		'bio' => 'I work as a mixer at Heard City, so far half my life has been spent in Western New York, the other in New York City.  In my free time I try and travel as much as I can, especially to mountains, with my wife and daughter, play loud music, obsess over hockey, and all the other things people do like watch TV and read things.',
 		'title' => 'Mixer and Sound Designer',
 		'items' => array(
