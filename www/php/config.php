@@ -63,7 +63,7 @@ $members = array(
 		'name' => 'Keith Reynaud',
 		'sex' => 'his',
 		'permalink' => '#',
-		'bio' =>'absolute bad ass.',
+		'bio' =>'People, places and things.  Oh, and mowing the lawn.',
 		'title' => 'Partner',
 		'items' => array(
 			array(
