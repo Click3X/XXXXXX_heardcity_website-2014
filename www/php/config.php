@@ -402,19 +402,13 @@ $members = array(
 		'sex' => 'her',
 		'permalink' => '#',
 		'image' => '',
-		'bio' => 'Jodi Levine is a rare talent gifted with a remarkably discerning ear and a sterling professional pedigree. Her reel boasts a slew of distinctive projects that have been featured at Sundance, Tribeca, Cannes and SXSW. That she has built such an impressive career in the male-dominated sound industry only serves to make her more of a standout.',
+		// 'bio' => 'Jodi Levine is a rare talent gifted with a remarkably discerning ear and a sterling professional pedigree. Her reel boasts a slew of distinctive projects that have been featured at Sundance, Tribeca, Cannes and SXSW. That she has built such an impressive career in the male-dominated sound industry only serves to make her more of a standout.',
+		'bio' => 'Jodi was born and raised in New York on a very long island. She has always loved music and singing (she starred in an off off off Broadway version of Katz - the Jewish version of Cats). After attending Northeastern University in Boston, she moved to New York City, and trained with some of the most well know commercial post-production mixers in the country. At Heard City, Jodi is one of the only female mixers in the business. When not mixing mixing she enjoys gardening, traveling, and hanging out upstate with her fiancée Philip and his daughters Daisy and Maple.',
 		'title' => 'Mixer and Sound Designer',
 		'items' => array(
-			// array(
-			// 	'name' => 'Book', 
-			// 	'bio' => 'I read all Dan Brown\'s books on a single plane ride',
-			// 	'image' => 'items/Jodi_Levine_book.png',
-			// 	'position' => 12
-			// ),
 
 			array(
 				'name' => 'Marilyn Monroe', 
-				// 'bio' => 'A picture is worth a thousand words',
 				'bio' => 'My best friend an I are the founding members of The Museum of bad Portraiture ™. This was one of the early pieces of our collection found at one of our favorite stores in Indy',
 				'image' => 'items/Jodi_Levine_marilyn.jpg',
 				'position' => 102
@@ -442,13 +436,6 @@ $members = array(
 				'position' => 78
 			),
 
-			// array(
-			// 	'name' => 'Pouch', 
-			// 	'bio' => 'Kangaroos are vicous boxing creatures',
-			// 	'image' => 'items/Jodi_Levine_pouch.png',
-			// 	'position' => 54
-			// ),
-
 			array(
 				'name' => 'Rings', 
 				'bio' => '- I was lucky enough to have awesome grandmothers with very different tastes giving me a diverse collection of jewelry. Not only are they pretty but they keep my family close to me wherever I go',
@@ -458,15 +445,15 @@ $members = array(
 			),
 
 			array(
-				'name' => 'Rug', 
-				'bio' => 'Not for your scalp or any other body part',
+				'name' => 'Mexican Blanket', 
+				'bio' => 'I got this blanket in Mexico while traveling with my fiancee Philip and his daughters Daisy and Maple. Traveling with them is one of my favorite things to do.',
 				'image' => 'items/Jodi_Levine_rug.png',
 				'position' => 38
 			),
 
 			array(
 				'name' => 'Seeds', 
-				'bio' => 'Hudson Valley Seed Library',
+				'bio' => 'Gardening has become one of my favorite pastimes. These art packs are designed by Northeast artists for the Hudson Valley Seed Library a local heirloom and open-pollinated seed company who recently got their organic certification.',
 				'image' => 'items/Jodi_Levine_seeds.png',
 				'position' => 90
 			)
