@@ -119,29 +119,17 @@
 }
 
 #site-header .flexnav .mobile-map-link {
-	// .icon-holder { width: 50%;}
-	// .icon-holder:first-of-type {
-	// 	float: left;
-	// 	padding-left:2px;
-	// }
-
-	// .icon-holder:nth-of-type(2) {
-	// 	float: right;
-	// 	padding-right:2px;
-	// }
 
 	text-align: center;
 
 	.mobile-icon-holder {
 		display: inline-block;
-		// width: 90px; height: 90px;
 
 		.sprite-map {
 			display: block;
 			width: 90px; height: 90px;
 			background-image: url(../images/social-icons/mobile-icons.svg);
 			background-repeat: no-repeat;
-			// background-position: -24px -28px;
 			background-position: -208px -28px;
 		}
 
@@ -158,7 +146,6 @@
 			width: 90px; height: 90px;
 			background-image: url(../images/social-icons/mobile-icons.svg);
 			background-repeat: no-repeat;
-			// background-position: -208px -28px;
 			background-position: -24px -28px;
 		}
 
@@ -181,8 +168,6 @@
 #site-header .flexnav li a.sprite-map {
 }
 
-
-// #site-header .flexnav li a.sprite-map:hover { background-position: -128px -146px; }
 
 @media(min-width:600px) {
 	#member-header {
@@ -209,13 +194,11 @@
 #member-button > div:after {
 	content: '';
 	display: block;
-	// background-image: url("../images/sprites/toggle-arrow.png");
 	background-image: url("../images/sprites/toggle-arrow.svg");
 	background-repeat: no-repeat;
 	width: 23px;
 	height: 29px;
 	position: absolute;
-	//left: 7px; top: 7px;
 	left: 12px; top: 4px;
 	z-index: 70;
 
@@ -224,7 +207,6 @@
 
 	@media(min-width: 600px) {
 		@include prefix(transform, rotate(0deg));
-		// top: -41px;
 		top: -34px;
 		left: 0;
 	}
@@ -255,7 +237,9 @@
 
 	@media(min-width: 600px) {
 		width: 260px; height: 100%;
-		border-bottom: 0; border-left: 1px solid rgb(192, 192, 192);
+		border-bottom: 0; 
+		border-left: 1px solid rgb(192, 192, 192);
+		box-sizing: content-box;
 		padding-top: 50px;
 
 		right: 0; left: auto;
