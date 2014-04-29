@@ -1,7 +1,3 @@
-// span#page-title {
-// padding: 0 !important;
-// }
-
 .mobile-hidden {
 	display: none;
 	@media(min-width: 600px) {
@@ -36,8 +32,6 @@
 	@media(min-width: 600px) { display: none; }
 }
 
-// CHARLES FLEX NAV STYLES
-// .home { padding-top: 45px; }
 
 // HEADER FIXED ON ALL PAGES sans HOME
 .ourteam,
@@ -175,11 +169,28 @@
 		@include prefix(transition, all 500ms);
 	}
 
+	#member-header .sidebar-link {
+		// visibility: visible;
+		opacity: 1;
+		@include prefix(transition, opacity 500ms);
+	}
+
 	#member-header.side-bar-closed {
-		@include prefix(transform, translateX(200px));
+		// @include prefix(transform, translateX(200px));
+		@include prefix(transform, translateX(100px));
+
+		.sidebar-link {
+			// visibility: hidden;
+			opacity: 0;
+		}
 	}
 }
 
+@media (min-width: 600px) {
+.flexnav li {
+	background-color:#ffffff;
+	}
+}
 // ARROW TOGGLE
 #member-button {
 	@media(min-width:600px) {
@@ -197,7 +208,8 @@
 	background-image: url("../images/sprites/toggle-arrow.svg");
 	background-repeat: no-repeat;
 	width: 23px;
-	height: 29px;
+	// height: 29px;
+	height: 20px;
 	position: absolute;
 	left: 12px; top: 4px;
 	z-index: 70;
@@ -217,6 +229,7 @@
 	transform-origin: center center;
 	@include prefix(transition, all 400ms);	
 	@include prefix(transform, rotate(180deg));
+
 	top: -34px;
 	left: 0;
 	}
