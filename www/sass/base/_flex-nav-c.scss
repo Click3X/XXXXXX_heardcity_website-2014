@@ -177,12 +177,18 @@
 
 	#member-header.side-bar-closed {
 		// @include prefix(transform, translateX(200px));
-		@include prefix(transform, translateX(100px));
-
+		@include prefix(transform, translateX(150px));
+		#member-header .flexnav {
+			width:170px;
+		}
 		.sidebar-link {
-			// visibility: hidden;
 			opacity: 0;
 		}
+	}
+
+	.side-bar-closed ul#member-fixed {
+		width: 170px;
+		@include prefix(transition, all 500ms);
 	}
 }
 
@@ -207,20 +213,26 @@
 	display: block;
 	background-image: url("../images/sprites/toggle-arrow.svg");
 	background-repeat: no-repeat;
-	width: 23px;
-	// height: 29px;
-	height: 20px;
 	position: absolute;
-	left: 12px; top: 4px;
+	// left: 8px; 
+	// top: 4px;
+	top: 15px;
 	z-index: 70;
 
+	// width: 23px; height: 20px;
+	// background-size: 45%;
+
+	width: 18px; height: 18px;
+	background-size: 45%;
+	background-position: 50% 50%;
 	@include prefix(transform, rotate(-90deg));
 	@include prefix(transition, all 400ms);
 
 	@media(min-width: 600px) {
 		@include prefix(transform, rotate(0deg));
 		top: -34px;
-		left: 0;
+		// left: -12px;
+		left: -14px;
 	}
 }
 
@@ -231,7 +243,8 @@
 	@include prefix(transform, rotate(180deg));
 
 	top: -34px;
-	left: 0;
+	// left: 0;
+	left: -10px;
 	}
 }
 
@@ -276,8 +289,12 @@
 	}
 
 	.flexnav {
+		@include prefix(transition, all 500ms);
 		@media(min-width: 600px) {
-				width:250px;
+				// width:250px;
+				// width:175px;
+				// width: 215px;
+				width: 190px;
 				text-align: left;
 				padding-bottom: 0; margin-top: 0;
 			}
