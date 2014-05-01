@@ -5,9 +5,7 @@ input[type="submit"],
 	position: absolute;
 }
 
-.member-text {
-	color:$black;
-}
+.member-text { color:$black; }
 
 .member-permalink {
 	cursor: pointer;
@@ -17,7 +15,6 @@ input[type="submit"],
 .section-title div { line-height: 1.4em; }
 
 .grey-theme {
-	// background: #ffffff;
 	color:$black;
 	.section-title {
 		margin-bottom:1em;
@@ -48,7 +45,6 @@ input[type="submit"],
 }
 
 .black-theme {
-	// background-color:$black;
 	background-color:#222;
 	color:$white;
 
@@ -184,7 +180,6 @@ input[type="submit"],
 			}
 			.permalink {
 				margin-top:1rem;
-				// @media(min-width:480px) { margin-top:2rem; }
 
 				a,
 				label {
@@ -193,12 +188,18 @@ input[type="submit"],
 					position: relative;
 					margin-left:0.875rem;
 
+					@include prefix(transition, all 500ms);
+
 					&:before {
 						content: '>\0000a0';
 						display: block;
 						position: absolute;
 						left: -14px; bottom: -1px;
 						font-size: 1.5em;
+					}
+
+					&:hover {
+						color: #989899;
 					}
 				}
 			}
@@ -213,21 +214,18 @@ input[type="submit"],
 		padding:1em;
 		position: relative;
 		display: table;
-		// margin-left:2.5%;
 		margin:0 auto;
 
 		@media(min-width:700px) { 
-			margin:0 auto; }
-
+			margin:0 auto; 
+		}
 
 		.image {
-			// margin-left:8px;
 			margin:0 auto 10px;
 			width:30%; max-width: 198px;
 			vertical-align: middle; text-align: center;
 
 			@media(min-width: 768px) {
-				// margin-left:8px;
 				margin:auto;
 				display: table-cell;
 			}
@@ -248,15 +246,11 @@ input[type="submit"],
 
 			@media(min-width:768px) { 
 				float: right; 
-				// width: 91%;
 				width:auto;
 				margin-left: 6%;
 			}
 			
-			li {
-				margin-bottom:.5rem;
-				// @media(min-width:480px) { margin-bottom:.938rem; }
-			}
+			li { margin-bottom:.5rem; }
 
 			.misc-text { 
 				color:$grey-text;			

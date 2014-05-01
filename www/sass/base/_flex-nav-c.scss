@@ -169,7 +169,8 @@
 		@include prefix(transition, all 500ms);
 	}
 
-	#member-header .sidebar-link {
+	#member-header .sidebar-link,
+	#member-header .all-members {
 		// visibility: visible;
 		opacity: 1;
 		@include prefix(transition, opacity 500ms);
@@ -181,6 +182,8 @@
 		#member-header .flexnav {
 			width:170px;
 		}
+		
+		.all-members,
 		.sidebar-link {
 			opacity: 0;
 		}
@@ -228,20 +231,30 @@
 	@media(min-width: 600px) {
 		@include prefix(transform, rotate(0deg));
 		top: -34px;
-		// left: -12px;
 		left: -14px;
 	}
 }
 
-@media(min-width: 600px) {
-#member-button.rotate > div:after {
-	transform-origin: center center;
-	@include prefix(transition, all 400ms);	
-	@include prefix(transform, rotate(180deg));
 
-	top: -34px;
-	// left: 0;
-	left: -10px;
+
+#our-team-button {
+	display: none;
+}
+
+@media(min-width: 600px) {
+
+	#our-team-button {
+		display:block;
+	}
+
+	#member-button.rotate > div:after {
+		transform-origin: center center;
+		@include prefix(transition, all 400ms);	
+		@include prefix(transform, rotate(180deg));
+
+		top: -34px;
+		// left: 0;
+		left: -10px;
 	}
 }
 

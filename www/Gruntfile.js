@@ -16,40 +16,40 @@ module.exports = function(grunt) {
                     // 'js/lib/jquery.royalslider.min.js',
                     // 'js/home/setup.js'
                     // OURTEAM
-                    // 'js/lib/underscore-min.js',
-                    // 'js/lib/jquery.flexnav.min.js',
-                    // 'js/lib/jquery.unveil.min.js',
-                    // 'js/lib/jquery.cluetip.js',
-                    // 'js/lib/jquery.hoverIntent.js',
-                    // 'js/object.js',
-                    // 'js/object-events.js',
-                    // 'js/setup.js'
+                    'js/lib/underscore-min.js',
+                    'js/lib/jquery.flexnav.min.js',
+                    'js/lib/jquery.unveil.min.js',
+                    'js/lib/jquery.cluetip.js',
+                    'js/lib/jquery.hoverIntent.js',
+                    'js/object.js',
+                    'js/object-events.js',
+                    'js/setup.js'
                     // PROJECTS
                     // 'js/lib/jquery.flexnav.min.js',
                     // 'js/projects/grid.js',
                     // 'js/projects/feat-button.js',
                     // 'js/projects/projects-setup.js'
                     // CONTACT
-                    'js/lib/jquery.flexnav.min.js',
-                    'js/contact/setup.js'
+                    // 'js/lib/jquery.flexnav.min.js',
+                    // 'js/contact/setup.js'
 
                 ],
                 // dest: 'js/build/home-production.js',
-                // dest: 'js/build/ourteam-production.js',
+                dest: 'js/build/ourteam-production.js'
                 // dest: 'js/build/projects-production.js',
-                dest: 'js/build/contact-production.js'
+                // dest: 'js/build/contact-production.js'
             }
         },
         uglify: {
             build: {
                 // src: 'js/build/home-production.js',
                 // dest: 'js/build/home-production.min.js'
-                // src: 'js/build/ourteam-production.js',
-                // dest: 'js/build/ourteam-production.min.js'
+                src: 'js/build/ourteam-production.js',
+                dest: 'js/build/ourteam-production.min.js'
                 // src: 'js/build/projects-production.js',
                 // dest: 'js/build/projects-production.min.js'
-                src: 'js/build/contact-production.js',
-                dest: 'js/build/contact-production.min.js'
+                // src: 'js/build/contact-production.js',
+                // dest: 'js/build/contact-production.min.js'
             }
         }
 

@@ -36,13 +36,10 @@
 				float:left;
 				width:auto;
 			}	
-			
-
 		}
 
 		.social-icons {
 			float:right;
-			// margin-top: 2.5em;
 			text-align: justify;
 			width: 100%;
 			margin-right:0; margin-left:0;
@@ -56,22 +53,16 @@
 
 			.icon-holder {
 				position: relative;
-				// width: 49%;
 				text-align: center;
 				display: inline-block;
 				float:none;
-				// padding: 8% 0;
-
-				// @media(min-width:360px) {
-					width: 24%;
-					padding:0;
-				// }
+				width: 24%;
+				padding:0;
 
 				@media(min-width: 682px) {
 					display:block; float:left;
 					width:auto;
 				}
-				
 				
 				a {
 					display: block;
@@ -138,16 +129,16 @@
 // 	background-size: 750%;
 // }
 
-// @media(min-width: 400px) {
-	.sprite-map {
-	    width: 90px; height: 90px;    
-	    background-position: -128px -35px;
 
-	    &:hover {
-	    	background-position: -128px -146px;
-	    }
-	}
-// }
+.sprite-map {
+    width: 90px; height: 90px;    
+    background-position: -128px -35px;
+
+    &:hover {
+    	background-position: -128px -146px;
+    }
+}
+
 
 #site-header .flexnav li a.sprite-phone {
 	 background-image: url(../images/social-icons/phone.svg);
@@ -198,11 +189,11 @@
 		width:25%; max-width: 90px;
 		height: auto; max-height: 90px;
 		float:left;
-		// background: red;
 	}
 
 	.sprite {
-	    background-image: url(../images/social-icons/social_svg.svg);
+	    // background-image: url(../images/social-icons/social_svg.svg);
+	    background-image: url(../images/social-icons/social_svg-new-map.svg);
 	    background-repeat: no-repeat;
 	    display: block;
 
@@ -234,11 +225,20 @@
 	}
 
 	.sprite-twitter {
-		// background-position: -410px -35px;
 		background-position: 77% 18.75%;
 		&:hover {
 			background-position: 77% 82%;
 		}
 	}
-
 }
+
+
+// a.sprite.sprite-map {
+// background-image: url(../images/social-icons/Map-Icon.svg);
+// background-repeat: no-repeat;
+// display: block;
+// background-size: 100%;
+// width: 100%;
+// height: auto;
+// padding-bottom: 100%;
+// }

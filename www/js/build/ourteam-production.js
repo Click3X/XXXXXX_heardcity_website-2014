@@ -1530,6 +1530,19 @@ var $body = $('body'),
         return false;
     });
 
+
+    // OUR TEAM SUB NAV
+    $('#our-team-button').click(function() {
+        // console.log('I am clicked!');
+        $('#member-header').toggleClass('side-bar-closed');
+        $('#member-button').toggleClass('rotate');
+        $clickClose.toggleClass('hidden');
+        $clickClose.click(function() {
+            $('#member-header').toggleClass('side-bar-closed');
+        });
+    });
+
+
 // IF SELECTED MEMBER
 
 /*
