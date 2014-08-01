@@ -1,7 +1,7 @@
 <?php // info
 
 $info = array(
-	'client' => 'Wieden & Kennedy',
+	'client' => 'Jordan',
 	'title' => 'Jordan',
 	'agency'=>'Wieden & Kennedy',
 	'type' => 'commercial'
