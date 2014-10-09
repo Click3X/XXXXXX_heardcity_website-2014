@@ -1,18 +1,25 @@
 
 .js-single-member {
 
-	.footer {
-		margin-top:0;
-	}
-		#all-items-holder {
- 
-			.all-items { 
-				padding-bottom: 100%;
-				@media(min-width: 1024px) {
-					padding-bottom:1000px;
-				}
-			
+	.footer { margin-top:0; }
 
+	#all-items-holder {
+
+		.all-items { 
+			padding-bottom: 100%;
+			
+			@media(min-width: 1024px) { padding-bottom:1000px; }
+
+			// MIKE VITACCO
+			li.item.maggie.mikevitacco { top:0; left: 9%; }
+			li.item.drum.mikevitacco { top: 5.5%; left: 52%; }
+			li.item.monocular.mikevitacco { top: 5%; left: 82.5%; }
+			li.item.reichrecord.mikevitacco { top: 34%; left: 7%; }
+			li.item.mask.mikevitacco { top: 30%; left: 44%; }
+			li.item.boot.mikevitacco { top: 33%; left: 67%; }
+			li.item.surfboard.mikevitacco { top: 61%; left: 10%; }
+			
+			
 			// CORY MELIOUS
 			li.item.skiboots.corymelious {
 				// top: 21.5%; left: 57%;

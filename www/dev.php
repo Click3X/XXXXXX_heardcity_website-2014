@@ -3,13 +3,7 @@ include('php/config.php');
 include('php/functions.php'); 
 include('php/project-grid.php'); 
 
-if(!isset($_GET['selected_member'])) { 
-    $de_name = $defaults['name'];
-    $de_bio = $defaults['bio'];
-    $de_permalink = '#';
-} else {
-    $de_name = ''; $de_bio = ''; $de_permalink = '#';
-}
+
 
 ?>
 <!DOCTYPE html>
@@ -96,64 +90,10 @@ if(!isset($_GET['selected_member'])) {
     </head>
 
     <body class="ourteam one-page">
+        <h1>BILLY HAYES AWESOME DEV PAGE</h1>
         <div id="page-wrap" class="page-wrap">
-            
-            <?php include('php/main-nav.php'); ?>
-
-            <div id="member-bio" class="container clearfix">
-                <div class="team-member clearfix">
-                    <ul class="member-text">
-                        <li class="misc-text">This belongs to</li>
-                        <li class="name"></li>
-                        <li class="title"></li>
-                        <li class="bio"><p></p></li>
-                        <li class="permalink"><a href="<?php echo $de_permalink; ?>" class="all-members" style="display: none;">View everyones stuff</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="all-items-holder" class="all-items-holder clearfix"></div>
-
-            <div id="members" class="members"></div>
-        	 
-            <!-- SUB NAV -->
-            <?php include('php/sub-nav.php'); ?>
+            <?php echo json_encode($members); ?>
         </div>
-        <!-- FOOTER -->
-        <?php include('php/footer.php'); ?>
-
-        
-        <script src="<?php // echo $BASE; ?>js/lib/underscore-min.js"></script>
-
-        <script src="<?php // echo $BASE; ?>js/lib/jquery.flexnav.min.js"></script>
-        <script src="<?php // echo $BASE; ?>js/lib/jquery.unveil.min.js"></script>
-        
-        <script src="<?php // echo $BASE; ?>js/lib/jquery.cluetip.js"></script>
-        <script src="<?php // echo $BASE; ?>js/lib/jquery.hoverIntent.js"></script> 
-
-        <script src="<?php // echo $BASE; ?>js/object.js"></script>
-        <script src="<?php // echo $BASE; ?>js/object-events.js"></script>
-        <script src="<?php // echo $BASE; ?>js/setup.js"></script>
-    
-        
-
-        <!--
-        <script src="js/build/ourteam-production.min.js"></script>
-        -->
-
-
-        <script>
-
-            var _gaq=[['_setAccount','UA-33922112-1'],['_trackPageview']];
-
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-
-        </script>
-
     </body>
 
 </html>

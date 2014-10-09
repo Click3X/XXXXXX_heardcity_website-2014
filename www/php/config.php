@@ -57,7 +57,6 @@ $social=array(
 
 // TEAM MEMBER ARRAY
 $members = array(
-
 	// Keith Reynaud
 	array(
 		'name' => 'Keith Reynaud',
@@ -950,6 +949,66 @@ $members = array(
 				'image' => 'items/Dan_Flosdorf_watch.png',
 				'coords' => '23,-1,20,15,2,33,2,51,8,80,18,96,22,118,52,118,59,98,74,64,75,47,60,14,53,-2',
 				'position' => 27
+			)
+		)
+	),
+
+	// Mike Vitacco
+	array(
+		'name' => 'Mike Vitacco',
+		'sex' => 'his',
+		'permalink' => '#',
+		'bio' => 'Mike is a Mixer and Sound Designer at Heardcity.',
+		'title' => 'Mixer and Sound Designer',
+		'items' => array(
+			array(
+				'name' => 'Surfboard', 
+				'bio' => 'Supporting my local shaper and good pal, Christian.  Now back to praying for a swell.',
+				'image' => 'items/Mike_Vitacco_surfboard.png',
+				'coords' => '0,102,52,60,152,38,278,4,508,2,692,20,794,72,806,136,800,198,746,248,606,296,444,300,286,300,156,272,130,278,90,248,46,256,56,234,6,214',
+				'position' => 103
+			),
+			array(
+				'name' => 'Boot', 
+				'bio' => 'The only thing better than a hurricane swell is fresh powder.',
+				'image' => 'items/Mike_Vitacco_boot.png',
+				'coords' => '7,195,-2,179,8,151,4,125,22,84,25,43,70,46,67,57,41,73,47,84,90,77,98,61,104,42,110,69,133,67,140,71,152,47,159,2,187,-3,208,9,219,55,219,83,219,123,219,163,219,193,209,215,75,198,49,216,24,212,26,197',
+				'position' => 104
+			),
+			array(
+				'name' => 'Drum', 
+				'bio' => 'Thanks to my folks for letting me play drums in my bedroom from 1989 to 1996. John Bonham never sounded so bad.',
+				'image' => 'items/Mike_Vitacco_drum.png',
+				'coords' => '4,121,25,55,66,6,124,-5,194,9,236,62,251,116,235,180,222,195,255,238,254,245,250,248,205,202,194,216,227,278,218,283,176,220,144,237,70,225,27,183',
+				'position' => 105
+			),
+			array(
+				'name' => 'Maggie', 
+				'bio' => 'Heard City\'s furriest employee. Will work for popcorn and avocado slices.',
+				'image' => 'items/Mike_Vitacco_maggie.png',
+				'coords' => '6,77,40,20,63,36,77,32,102,10,113,20,116,36,117,45,166,45,185,53,180,77,205,80,219,102,273,103,281,111,317,104,352,135,378,162,395,204,385,269,352,278,331,291,302,295,279,295,237,295,193,295,140,289,88,243,81,177,68,186,67,145,50,165,43,129,18,125',
+				'position' => 106
+			),
+			array(
+				'name' => 'Monocular', 
+				'bio' => 'Two friends and I inherited a 40 yr old sloop in 2009. Our summer weekends have never been the same.',
+				'image' => 'items/Mike_Vitacco_monocular.png',
+				'coords' => '0,1,32,237',
+				'position' => 107
+			),
+			array(
+				'name' => 'Mask', 
+				'bio' => 'Taking pucks to the face since 1990.',
+				'image' => 'items/Mike_Vitacco_mask.png',
+				'coords' => '13,75,23,47,59,12,97,3,133,14,162,40,173,71,178,79,170,131,157,160,151,182,140,195,130,225,118,261,93,273,70,260,44,186,32,173,23,131',
+				'position' => 108
+			),
+			array(
+				'name' => 'Reich record', 
+				'bio' => 'American Treasure.',
+				'image' => 'items/Mike_Vitacco_record.png',
+				'coords' => '3,65,33,22,75,-1,107,0,138,4,325,5,329,9,329,25,329,207,321,210,129,205,128,184,106,190,61,185,22,154,0,105,1,94',
+				'position' => 109
 			)
 		)
 	)

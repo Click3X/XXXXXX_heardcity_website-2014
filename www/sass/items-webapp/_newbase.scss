@@ -13,10 +13,6 @@
   }
 }
 
-.individual {
-
-}
-
 .item {
   position: absolute;
 
@@ -42,7 +38,6 @@
 .js-single-member {
   #page-wrap {
     @media(min-width: 600px) {
-        // padding-right:60px;
         padding-right:160px;
     }
 
@@ -51,7 +46,6 @@
     }
   }
 }
-
 
 .ourteam .all-items {
   padding-bottom: 1100%;
@@ -91,15 +85,6 @@ input:focus {
     outline:none;
 }
 
-
-// @media (min-width: 480px) {
-//   /* line 340, ../sass/home/_teammember.scss */
-//   .module-member .member-text {
-//     width: 74%;
-//     margin-left: 13%;
-//   }
-// }
-
 @media (min-width: 480px) {
   /* line 340, ../sass/home/_teammember.scss */
   .ourteam .member-text {
@@ -113,21 +98,3 @@ input:focus {
   max-width: 1024px;
   margin: 0 auto;
 }
-
-
-
-// .ourteam.deeplink {
-//   // background: red !important;
-//     #all-items {
-//     position: relative;
-//     max-width: 1024px;
-//     margin:0 auto;
-//     // background: blue;
-//     padding-bottom: 100%;
-//   }
-
-//   .js-single-member .page-wrap #all-items-holder .all-items {
-//     padding-bottom: 1000px;
-//   }
-
-// }
