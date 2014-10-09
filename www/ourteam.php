@@ -122,7 +122,7 @@ if(!isset($_GET['selected_member'])) {
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>
 
-        
+        <!--
         <script src="<?php // echo $BASE; ?>js/lib/underscore-min.js"></script>
 
         <script src="<?php // echo $BASE; ?>js/lib/jquery.flexnav.min.js"></script>
@@ -134,14 +134,10 @@ if(!isset($_GET['selected_member'])) {
         <script src="<?php // echo $BASE; ?>js/object.js"></script>
         <script src="<?php // echo $BASE; ?>js/object-events.js"></script>
         <script src="<?php // echo $BASE; ?>js/setup.js"></script>
-    
-        
-
-        <!--
-        <script src="js/build/ourteam-production.min.js"></script>
         -->
-
-
+        
+        <script src="js/build/ourteam-production.min.js"></script>
+        
         <script>
 
             var _gaq=[['_setAccount','UA-33922112-1'],['_trackPageview']];
