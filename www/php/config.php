@@ -958,7 +958,7 @@ $members = array(
 		'name' => 'Mike Vitacco',
 		'sex' => 'his',
 		'permalink' => '#',
-		'bio' => 'Mike is a Mixer and Sound Designer at Heardcity.',
+		'bio' => 'I love to sail, surf, and snowboard.  In other words, I spend most of my time just praying for wind, swell, and snow.',
 		'title' => 'Mixer and Sound Designer',
 		'items' => array(
 			array(
