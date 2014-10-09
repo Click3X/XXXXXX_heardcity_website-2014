@@ -136,7 +136,9 @@ if(!isset($_GET['selected_member'])) {
         <script src="<?php // echo $BASE; ?>js/setup.js"></script>
         -->
         
+        
         <script src="js/build/ourteam-production.min.js"></script>
+        
         
         <script>
 

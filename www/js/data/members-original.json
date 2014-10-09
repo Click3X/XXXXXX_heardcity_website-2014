@@ -793,6 +793,111 @@
             ],
             "id": "danflosdorf",
             "title": "Mixer and Sound Designer"
+        },
+        {  
+            "name":"Mike Vitacco",
+            "bio":"Mike is a Mixer and Sound Designer at Heardcity.",
+            "sex":"his",
+            "items": [  
+                {  
+                    "name":"Surfboard",
+                    "bio":"Supporting my local shaper and good pal, Christian.  Now back to praying for a swell.",
+                    "image":"items\/Mike_Vitacco_surfboard.png",
+                    "coords":"0,102,52,60,152,38,278,4,508,2,692,20,794,72,806,136,800,198,746,248,606,296,444,300,286,300,156,272,130,278,90,248,46,256,56,234,6,214",
+                    "position":103
+                },
+                {  
+                    "name":"Boot",
+                    "bio":"The only thing better than a hurricane swell is fresh powder.",
+                    "image":"items\/Mike_Vitacco_boot.png",
+                    "coords":"7,195,-2,179,8,151,4,125,22,84,25,43,70,46,67,57,41,73,47,84,90,77,98,61,104,42,110,69,133,67,140,71,152,47,159,2,187,-3,208,9,219,55,219,83,219,123,219,163,219,193,209,215,75,198,49,216,24,212,26,197",
+                    "position":104
+                },
+                {  
+                    "name":"Drum",
+                    "bio":"Thanks to my folks for letting me play drums in my bedroom from 1989 to 1996. John Bonham never sounded so bad.",
+                    "image":"items\/Mike_Vitacco_drum.png",
+                    "coords":"4,121,25,55,66,6,124,-5,194,9,236,62,251,116,235,180,222,195,255,238,254,245,250,248,205,202,194,216,227,278,218,283,176,220,144,237,70,225,27,183",
+                    "position":105
+                },
+                {  
+                    "name":"Maggie",
+                    "bio":"Heard City's furriest employee. Will work for popcorn and avocado slices.",
+                    "image":"items\/Mike_Vitacco_maggie.png",
+                    "coords":"6,77,40,20,63,36,77,32,102,10,113,20,116,36,117,45,166,45,185,53,180,77,205,80,219,102,273,103,281,111,317,104,352,135,378,162,395,204,385,269,352,278,331,291,302,295,279,295,237,295,193,295,140,289,88,243,81,177,68,186,67,145,50,165,43,129,18,125",
+                    "position":106
+                },
+                {  
+                    "name":"Monocular",
+                    "bio":"Two friends and I inherited a 40 yr old sloop in 2009. Our summer weekends have never been the same.",
+                    "image":"items\/Mike_Vitacco_monocular.png",
+                    "coords":"0,1,32,237",
+                    "position":107
+                },
+                {  
+                    "name":"Mask",
+                    "bio":"Taking pucks to the face since 1990.",
+                    "image":"items\/Mike_Vitacco_mask.png",
+                    "coords":"13,75,23,47,59,12,97,3,133,14,162,40,173,71,178,79,170,131,157,160,151,182,140,195,130,225,118,261,93,273,70,260,44,186,32,173,23,131",
+                    "position":108
+                },
+                {  
+                    "name":"Reich record",
+                    "bio":"American Treasure.",
+                    "image":"items\/Mike_Vitacco_record.png",
+                    "coords":"3,65,33,22,75,-1,107,0,138,4,325,5,329,9,329,25,329,207,321,210,129,205,128,184,106,190,61,185,22,154,0,105,1,94",
+                    "position":109
+                }
+            ],
+            "id":"mikevitacco",
+            "title":"Mixer and Sound Designer"
+        },
+        {  
+            "name":"Natasha Alden",
+            "bio":"Natasha is from Michigan, holding true to her Homestate she cherishes all seasons. She enjoys eating, traveling, and cats.",
+            "sex":"her",
+            "items": [  
+                {  
+                  "name":"Travel book",
+                  "bio":"I love going to faraway lands and experiencing different cultures.",
+                  "image":"items\/Natasha_Alden_book.png",
+                  "position":110
+                },
+                {  
+                  "name":"Titanic",
+                  "bio":"Call me lame, but I live life by Titanic quotes.",
+                  "image":"items\/Natasha_Alden_titanic.png",
+                  "position":111
+                },
+                {  
+                  "name":"Album",
+                  "bio":"I\u2019m a big swing and jazz fan.",
+                  "image":"items\/Natasha_Alden_LP.png",
+                  "coords":"10,362,348,352,404,326,456,272,464,210,464,118,404,28,348,2",
+                  "position":112
+                },
+                {  
+                  "name":"Sushi",
+                  "bio":"I have a huge weakness for Sushi.",
+                  "image":"items\/Natasha_Alden_sushi.png",
+                  "position":113
+                },
+                {  
+                  "name":"Volleyball",
+                  "bio":"I have been playing the sport for 14 years now, I love to pick up this ball any chance I can get.",
+                  "image":"items\/Natasha_Alden_volleyball.png",
+                  "coords":"24,150,35,89,74,33,125,6,171,4,230,16,274,56,298,109,293,195,259,231,212,261,164,274,117,261,84,247,39,203",
+                  "position":114
+                },
+                {  
+                  "name":"I Love Lucy",
+                  "bio":"Watching this show while drinking my morning coffee is my happy place.",
+                  "image":"items\/Natasha_Alden_i_love_lucy.png",
+                  "position":115
+                }
+            ],
+            "id":"natashaalden",
+            "title":"Assistant Producer"
         }
     ]
 }

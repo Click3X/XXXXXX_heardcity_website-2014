@@ -65,14 +65,16 @@ html, body { height: 100%; }
 
 .ourteam .footer { 
 	// margin-top: 160%; 
-	margin-top: 190%; 
+	// margin-top: 190%; 
+	margin-top: 220%; 
 	z-index: 100;
 	
 	margin-bottom: -6px;
 
 	@media(min-width: 1044px) {
 		// margin-top:1600px;
-		margin-top:1990px;
+		// margin-top:1990px;
+		margin-top:2400px;
 	}
 }
 

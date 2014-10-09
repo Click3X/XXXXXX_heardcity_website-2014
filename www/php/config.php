@@ -952,6 +952,58 @@ $members = array(
 			)
 		)
 	),
+	// Natasha Alden
+	array(
+		'name' => 'Natasha Alden',
+		'sex' => 'her',
+		'permalink' => '#',
+		'bio' => 'Natasha is from Michigan, holding true to her Homestate she cherishes all seasons. She enjoys eating, traveling, and cats.',
+		'title' => 'Assistant Producer',
+		'items' => array(
+			array(
+				'name' => 'Travel book', 
+				'bio' => 'I love going to faraway lands and experiencing different cultures.',
+				'image' => 'items/Natasha_Alden_book.png',
+				// 'coords' => '',
+				'position' => 110
+			),
+			array(
+				'name' => 'Titanic', 
+				'bio' => 'Call me lame, but I live life by Titanic quotes.',
+				'image' => 'items/Natasha_Alden_titanic.png',
+				// 'coords' => '',
+				'position' => 111
+			),
+			array(
+				'name' => 'Album', 
+				'bio' => 'I’m a big swing and jazz fan.',
+				'image' => 'items/Natasha_Alden_LP.png',
+				'coords' => '10,362,348,352,404,326,456,272,464,210,464,118,404,28,348,2',
+				'position' => 112
+			),
+			array(
+				'name' => 'Sushi', 
+				'bio' => 'I have a huge weakness for Sushi.',
+				'image' => 'items/Natasha_Alden_sushi.png',
+				// 'coords' => '',
+				'position' => 113
+			),
+			array(
+				'name' => 'Volleyball', 
+				'bio' => 'I have been playing the sport for 14 years now, I love to pick up this ball any chance I can get.',
+				'image' => 'items/Natasha_Alden_volleyball.png',
+				'coords' => '24,150,35,89,74,33,125,6,171,4,230,16,274,56,298,109,293,195,259,231,212,261,164,274,117,261,84,247,39,203',
+				'position' => 114
+			),
+			array(
+				'name' => 'I Love Lucy', 
+				'bio' => 'Watching this show while drinking my morning coffee is my happy place.',
+				'image' => 'items/Natasha_Alden_i_love_lucy.png',
+				// 'coords' => '',
+				'position' => 115
+			)
+		)
+	),
 
 	// Mike Vitacco
 	array(
@@ -993,7 +1045,6 @@ $members = array(
 				'name' => 'Monocular', 
 				'bio' => 'Two friends and I inherited a 40 yr old sloop in 2009. Our summer weekends have never been the same.',
 				'image' => 'items/Mike_Vitacco_monocular.png',
-				'coords' => '0,1,32,237',
 				'position' => 107
 			),
 			array(

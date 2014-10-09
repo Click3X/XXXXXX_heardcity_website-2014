@@ -2,9 +2,6 @@
 include('php/config.php'); 
 include('php/functions.php'); 
 include('php/project-grid.php'); 
-
-
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,8 +9,8 @@ include('php/project-grid.php');
     	<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-        <title>Heard City | Our Team</title>
-        <base href="<?php echo $BASE; ?>ourteam.php">
+        <title>Heard City | Dev</title>
+        <base href="<?php echo $BASE; ?>dev.php">
 
         <meta name="description" content="Heard City">
         <meta name="author" content="Charles Davis">
@@ -92,7 +89,7 @@ include('php/project-grid.php');
     <body class="ourteam one-page">
         <h1>BILLY HAYES AWESOME DEV PAGE</h1>
         <div id="page-wrap" class="page-wrap">
-            <?php echo json_encode($members); ?>
+            <?php echo '<pre>'. json_encode($members) .'</pre>'; ?>
         </div>
     </body>
 
