@@ -49,14 +49,18 @@ include('php/project-grid.php');
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
         <script>
             var clickLatLong = new google.maps.LatLng(40.741244, -73.991320),
+            dumboLatLong = new google.maps.LatLng(40.704007, -73.986759),
             map,
             mapOptions,
-            marker;
+            marker,
+            dumboMarker;
+
+
 
             function initialize() {
 
                 mapOptions = {
-                    zoom: 17,
+                    zoom: 12,
                     zoomControl: true,
                     scaleControl: false,
                     scrollwheel: false,
@@ -99,6 +103,11 @@ include('php/project-grid.php');
 
                 marker = new google.maps.Marker({
                     position: clickLatLong,
+                    map: map
+                });
+
+                dumboMarker = new google.maps.Marker({
+                    position: dumboLatLong,
                     map: map
                 });
 
