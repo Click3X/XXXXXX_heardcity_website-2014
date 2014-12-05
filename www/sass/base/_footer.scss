@@ -30,7 +30,7 @@
 		.address {
 			width: 40%; max-width: 10em;
 			float: left;
-			clear: none;
+			// clear: none;
 
 			@media(min-width:680px) {
 				float:left;
@@ -75,6 +75,19 @@
 	}
 }
 
+.footer {
+
+    .address {
+        max-width: 125px;
+        margin-left: 2em;
+        clear:left;
+
+        @media(min-width: 500px) {
+            clear:none;
+            margin-left: .5em;
+        }
+    }
+}
 
 .address {
 	// font-family: 'Lato', sans-serif;
@@ -86,8 +99,16 @@
 	ul li { line-height: 1.6em;}
 }
 
-// SOCIAL ICONS
+.address-two {
+    clear:none;
+    margin-right: 0;
+    margin-left:2em;
 
+    @media(min-width: 247px) { margin-left:.5em; }
+    @media(min-width: 850px) { margin-left:2em; }
+}
+
+// SOCIAL ICONS
 .sprite {
     // background-image: url(../img/social/spritesheet.png);
     background-image: url(../images/social-icons/social_svg.svg);
@@ -106,37 +127,23 @@
 
 .sprite-facebook {
     width: 90px; height: 90px;
-
     background-position: -316px -35px;
 
-    &:hover {
-    	background-position: -316px -146px;
-    }
+    &:hover { background-position: -316px -146px; }
 }
 
 .sprite-instagram {
     width: 90px; height: 90px;
     background-position: -222px -35px;
-    &:hover {
-    	background-position: -222px -146px;
-    }
+    &:hover { background-position: -222px -146px;}
 
 }
-
-// .sprite-map {
-// 	width: 70px; height: 70px;
-//     background-position: -110px -32px;
-// 	background-size: 750%;
-// }
-
 
 .sprite-map {
     width: 90px; height: 90px;    
     background-position: -128px -35px;
 
-    &:hover {
-    	background-position: -128px -146px;
-    }
+    &:hover { background-position: -128px -146px;}
 }
 
 
@@ -149,9 +156,7 @@
 
     @include prefix(transition, all 0);
 
-    &:hover {
-    	background-position: -15px -122px;
-    }
+    &:hover { background-position: -15px -122px; }
 }
 
 .sprite-twitter {
@@ -159,9 +164,7 @@
     height: 90px;
     background-position: -410px -35px;
 
-    &:hover {
-    	background-position: -410px -146px;
-    }
+    &:hover { background-position: -410px -146px; }
 }
 
 .sprite-you-tube {
@@ -169,9 +172,7 @@
     height: 90px;
     background-position: -504px -35px;
 
-    &:hover {
-    	background-position: -504px -146px;
-    }
+    &:hover { background-position: -504px -146px; }
 }
 
 
@@ -180,10 +181,10 @@
 	position: relative;
 	width: 100%; max-width:360px;
 	float: left;
+    margin-top:1em;
+    margin-bottom:1em;
 
-	@media(min-width: 768px) {
-		float:right;
-	}
+	@media(min-width: 768px) { float:right; }
 
 	.icon-holder {
 		width:25%; max-width: 90px;
