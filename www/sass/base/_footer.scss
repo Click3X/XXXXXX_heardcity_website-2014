@@ -28,8 +28,9 @@
 		}
 
 		.address {
-			width: 40%; max-width: 10em;
+			width: 40%; max-width: 10em; min-width: 135px;
 			float: left;
+
 			// clear: none;
 
 			@media(min-width:680px) {
