@@ -1,3 +1,290 @@
+$(function() {
+    // TEST FOR MOBILE DEVICE / TABLET
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+        device = 'mobile';
+    } else {
+        device = 'desk';
+    }
+
+    $('body').addClass(device);
+
+    var $imgs = $('img');
+    var imgCount = $imgs.length;
+    // var animHolder = $('#anim-holder');
+    // var preloadAnim = $('#preload-anim');
+
+    // REQUEST ANIMATION FRAME
+    window.requestAnimFrame = (function(){
+      return  window.requestAnimationFrame       ||
+              window.webkitRequestAnimationFrame ||
+              window.mozRequestAnimationFrame    ||
+              window.oRequestAnimationFrame      ||
+              window.msRequestAnimationFrame     ||
+              function( callback ){
+                window.setTimeout(callback, 1000 / 60);
+              };
+    })();
+
+
+    // SET UP VARS
+    var $body = $('body'),
+    $mainMenu = $('#page-fixed'),
+    $marqueeSlider = $('#marquee-slider'),
+    $blackTextSlider = $('#black-text-slider'),
+    $featuredSlider = $('#featured-slider'),
+    $greyTextSlider = $('#grey-text-slider'),
+    device, homePara,
+    $teamSlider = $('#team-slider'),
+    $img = $('img'),
+    $w = $(window),
+    $blackLogo = $('#black-logo'),
+    $slide = $('#marquee-slider .marquee-slide:first-of-type'),
+    $firstCon = $('#first-container'),
+    $siteHeader = $('#site-header');
+
+
+    // PAGE TITLE
+    $('#page-title').text('Home');
+    $('#page-home').addClass('mobile-hidden current');
+    
+
+    // OPEN VIDEO FUNCTION - FEATURED WORK
+    $('.open-vid').click(function(e) {
+        e.preventDefault();
+        var src= $(this).data('vid'),
+        poster = $(this).data('poster'),
+        parent = $(this).parent(),
+        img = $(this).children('img');
+
+        var vidDiv = $('<div/>', {'class':'og-fullimg home-video', style:'opacity:0' }),
+        vid = $('<video/>', {'src':src,'controls':'', 'class':'feat-video', 'type':'video/mp4', 'poster':poster});
+
+        vidDiv.append(vid);
+        var delImg = img[0];
+        $(delImg).fadeOut(50);
+        vidDiv.appendTo(parent[0]).animate({
+                opacity: 1
+            }, 500, function() {
+            // Animation complete.
+        });
+    });
+
+
+    // IF VIDEO TITLE IS CLICKED, SUBMIT FORM
+    $('.project-video-link').click(function() {
+        var selectedProjectLink = $(this),
+        selectedInput = $(selectedProjectLink).siblings('input');
+        selectedInput = selectedInput[0];
+        // Check the input associated with Project
+        $(selectedInput).prop('checked', true);
+        $('#projectForm').submit();
+    });
+
+
+    // IF MEMBER IS CLICKED, SUBMIT FORM   
+    $('.member-permalink').click(function() {
+        var selectedMemberLink = $(this),
+        selectedInput = $(selectedMemberLink).siblings('input');
+        selectedInput = selectedInput[0];
+        // Check the input associated with team member
+        $(selectedInput).prop('checked', true);
+        $('#myForm').submit();
+    });
+
+    // SWITCH IMG SRC FOR LAZY LOADING
+    $img.unveil(600);
+
+    // INITIALIZE MENU
+    $mainMenu.flexNav({
+        'hoverIntent': false,
+        'hover':false,
+        'buttonSelector': '#page-button'
+    });
+
+    $siteHeader.show();
+
+
+    // RANDOMIZE IMAGES before Marquee
+    // $(function() {
+        // $.fn.randomize = function(selector){
+        //     (selector ? this.find(selector) : this).parent().each(function(){
+        //         $(this).children(selector).sort(function(){
+        //             return Math.random() - 0.5;
+        //         }).detach().appendTo(this);
+        //     });
+
+        //     return this;
+        // };
+
+        // $('#marquee-slider li').randomize();
+
+        // INITIALIZE SLIDERS
+    $marqueeSlider.royalSlider({
+        autoHeight: true,
+        transitionSpeed:1200,
+        arrowsNav: true,
+        arrowsNavAutoHide:false,
+        fadeinLoadedSlide: false,
+        controlNavigationSpacing: 0,
+        controlNavigation: 'none',
+        imageScaleMode: 'none',
+        imageAlignCenter:false,
+        slidesSpacing:0,
+        loop: true,
+        loopRewind:false,
+        numImagesToPreload: 6,
+        keyboardNavEnabled: true,
+        usePreloader: true,
+        addActiveClass: true,
+        autoPlay: {
+            // autoplay options go gere
+            enabled: true,
+            pauseOnHover: true,
+            delay:6000
+        }
+    });
+
+    // Change logo color on slider change
+    var marqsliderInstance = $marqueeSlider.data('royalSlider');
+    marqsliderInstance.ev.on('rsAfterSlideChange', function() {
+        var curr_id = $('.rsActiveSlide').children().attr('id');
+        var element = document.getElementById(curr_id);
+        if (curr_id == 'bridge') {                
+            $('.logo').removeClass('logo-black');
+            element.offsetWidth = element.offsetWidth;
+            $('.logo').addClass('logo-white');
+        } else {
+            $('.logo').removeClass('logo-white');
+            element.offsetWidth = element.offsetWidth;
+            $('.logo').addClass('logo-black');
+        }
+
+    });
+
+    // });
+
+    $greyTextSlider.royalSlider({
+        autoHeight: true,
+        transitionSpeed:1200,
+        arrowsNav: true,
+        arrowsNavAutoHide:false,
+        fadeinLoadedSlide: false,
+        controlNavigationSpacing: 0,
+        slidesSpacing:0,
+        controlNavigation: 'none',
+        imageScaleMode: 'none',
+        imageAlignCenter:false,
+        loop: true,
+        loopRewind:false,
+        keyboardNavEnabled: true,
+        usePreloader:false,
+        autoPlay: {
+            enabled: true,
+            pauseOnHover: true
+        }
+    });
+
+    $featuredSlider.royalSlider({
+        autoHeight: true,
+        transitionSpeed:1200,
+        arrowsNav: true,
+        arrowsNavAutoHide:false,
+        fadeinLoadedSlide: false,
+        controlNavigationSpacing: 0,
+        controlNavigation: 'none',
+        imageScaleMode: 'none',
+        imageAlignCenter:false,
+        slidesSpacing:0,
+        loop: true,
+        loopRewind:false,
+        numImagesToPreload: 6,
+        keyboardNavEnabled: true,
+        usePreloader: true,
+        navigateByClick: false,
+        autoPlay: {
+            enabled: true,
+            pauseOnHover: true,
+            delay:6000
+        },
+        block: {
+            fadeEffect: false,
+            moveEffect: 'right',
+            moveOffset: 800,
+            easing:'easeOutSine',
+            delay:100
+        }
+    });
+
+    // PAUSE VIDEO ON SLIDE CHANGE
+    var sliderInstance = $featuredSlider.data('royalSlider');
+    sliderInstance.ev.on('rsAfterSlideChange', function() {
+          var myVideo = $('video');
+        $('video').remove();
+        $('.work-slide img').show();
+
+    });
+
+    $teamSlider.royalSlider({
+        imageScaleMode:'none',
+        imageAlignCenter:false,
+        autoHeight: true,
+        transitionSpeed:1200,
+        arrowsNav: true,
+        arrowsNavAutoHide:false,
+        fadeinLoadedSlide: false,
+        controlNavigationSpacing: 0,
+        controlNavigation: 'none',
+        slidesSpacing:0,
+        loop: true,
+        loopRewind:false,
+        numImagesToPreload: 6,
+        keyboardNavEnabled: true,
+        usePreloader:false,
+        navigateByClick: false,
+        autoPlay: {
+            enabled: true,
+            pauseOnHover: true
+        }
+    });
+
+
+    // STICKY NAV
+    $w.scroll(function(){
+        var offset, offsetY;
+        offset =  $firstCon.offset();
+        offsetY = offset.top-$w.scrollTop();
+        // STICKY NAV
+        if(offsetY <= 49) {
+            $siteHeader.addClass('sticky-top');
+        } else if(offsetY > 49) {
+            $siteHeader.removeClass('sticky-top');
+        }
+    });
+
+
+    // PARALLAX FUNCTION
+    function homeParallax() {
+        var top = $(this).scrollTop(),
+        ratio = top/2.825,
+        sRatio = top/1.85;
+
+        $blackLogo.css('transform', 'translateY(' + ratio + 'px)');
+        $slide.css('transform', 'translate3d(0,' + sRatio + 'px, 0)');
+    }
+    
+    if(device === 'desk') {
+        $w.scroll(function(){
+            var offset, offsetY;
+
+            offset =  $firstCon.offset();
+            offsetY = offset.top-$w.scrollTop();
+            if(offsetY >= -52) {
+                homePara = window.requestAnimFrame(homeParallax);
+            }
+        });
+    }
+
+});
 /**
  * jQuery Unveil
  * A very lightweight jQuery plugin to lazy load images
@@ -335,294 +622,3 @@ k.title)}catch(b){}})};c.stop=q;r=function(){return g(a.location.href)};p=functi
 // jquery.rs.visible-nearby v1.0.2
 (function(d){d.rsProto._g7=function(){var a=this;a.st.visibleNearby&&a.st.visibleNearby.enabled&&(a._h7={enabled:!0,centerArea:0.6,center:!0,breakpoint:0,breakpointCenterArea:0.8,hiddenOverflow:!0,navigateByCenterClick:!1},a.st.visibleNearby=d.extend({},a._h7,a.st.visibleNearby),a.ev.one("rsAfterPropsSetup",function(){a._i7=a._e1.css("overflow","visible").wrap('<div class="rsVisibleNearbyWrap"></div>').parent();a.st.visibleNearby.hiddenOverflow||a._i7.css("overflow","visible");a._o1=a.st.controlsInside?
 a._i7:a.slider}),a.ev.on("rsAfterSizePropSet",function(){var b,c=a.st.visibleNearby;b=c.breakpoint&&a.width<c.breakpoint?c.breakpointCenterArea:c.centerArea;a._h?(a._b4*=b,a._i7.css({height:a._c4,width:a._b4/b}),a._d=a._b4*(1-b)/2/b):(a._c4*=b,a._i7.css({height:a._c4/b,width:a._b4}),a._d=a._c4*(1-b)/2/b);c.navigateByCenterClick||(a._q=a._h?a._b4:a._c4);c.center&&a._e1.css("margin-"+(a._h?"left":"top"),a._d)}))};d.rsModules.visibleNearby=d.rsProto._g7})(jQuery);
-
-$(function() {
-    // TEST FOR MOBILE DEVICE / TABLET
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-        device = 'mobile';
-    } else {
-        device = 'desk';
-    }
-
-    $('body').addClass(device);
-
-    var $imgs = $('img');
-    var imgCount = $imgs.length;
-    // var animHolder = $('#anim-holder');
-    // var preloadAnim = $('#preload-anim');
-
-    // REQUEST ANIMATION FRAME
-    window.requestAnimFrame = (function(){
-      return  window.requestAnimationFrame       ||
-              window.webkitRequestAnimationFrame ||
-              window.mozRequestAnimationFrame    ||
-              window.oRequestAnimationFrame      ||
-              window.msRequestAnimationFrame     ||
-              function( callback ){
-                window.setTimeout(callback, 1000 / 60);
-              };
-    })();
-
-
-    // SET UP VARS
-    var $body = $('body'),
-    $mainMenu = $('#page-fixed'),
-    $marqueeSlider = $('#marquee-slider'),
-    $blackTextSlider = $('#black-text-slider'),
-    $featuredSlider = $('#featured-slider'),
-    $greyTextSlider = $('#grey-text-slider'),
-    device, homePara,
-    $teamSlider = $('#team-slider'),
-    $img = $('img'),
-    $w = $(window),
-    $blackLogo = $('#black-logo'),
-    $slide = $('#marquee-slider .marquee-slide:first-of-type'),
-    $firstCon = $('#first-container'),
-    $siteHeader = $('#site-header');
-
-
-    // PAGE TITLE
-    $('#page-title').text('Home');
-    $('#page-home').addClass('mobile-hidden current');
-    
-
-    // OPEN VIDEO FUNCTION - FEATURED WORK
-    $('.open-vid').click(function(e) {
-        e.preventDefault();
-        var src= $(this).data('vid'),
-        poster = $(this).data('poster'),
-        parent = $(this).parent(),
-        img = $(this).children('img');
-
-        var vidDiv = $('<div/>', {'class':'og-fullimg home-video', style:'opacity:0' }),
-        vid = $('<video/>', {'src':src,'controls':'', 'class':'feat-video', 'type':'video/mp4', 'poster':poster});
-
-        vidDiv.append(vid);
-        var delImg = img[0];
-        $(delImg).fadeOut(50);
-        vidDiv.appendTo(parent[0]).animate({
-                opacity: 1
-            }, 500, function() {
-            // Animation complete.
-        });
-    });
-
-
-    // IF VIDEO TITLE IS CLICKED, SUBMIT FORM
-    $('.project-video-link').click(function() {
-        var selectedProjectLink = $(this),
-        selectedInput = $(selectedProjectLink).siblings('input');
-        selectedInput = selectedInput[0];
-        // Check the input associated with Project
-        $(selectedInput).prop('checked', true);
-        $('#projectForm').submit();
-    });
-
-
-    // IF MEMBER IS CLICKED, SUBMIT FORM   
-    $('.member-permalink').click(function() {
-        var selectedMemberLink = $(this),
-        selectedInput = $(selectedMemberLink).siblings('input');
-        selectedInput = selectedInput[0];
-        // Check the input associated with team member
-        $(selectedInput).prop('checked', true);
-        $('#myForm').submit();
-    });
-
-    // SWITCH IMG SRC FOR LAZY LOADING
-    $img.unveil(600);
-
-    // INITIALIZE MENU
-    $mainMenu.flexNav({
-        'hoverIntent': false,
-        'hover':false,
-        'buttonSelector': '#page-button'
-    });
-
-    $siteHeader.show();
-
-
-    // RANDOMIZE IMAGES before Marquee
-    $(function() {
-        $.fn.randomize = function(selector){
-            (selector ? this.find(selector) : this).parent().each(function(){
-                $(this).children(selector).sort(function(){
-                    return Math.random() - 0.5;
-                }).detach().appendTo(this);
-            });
-
-            return this;
-        };
-
-        $('#marquee-slider li').randomize();
-
-        // INITIALIZE SLIDERS
-        $marqueeSlider.royalSlider({
-            autoHeight: true,
-            transitionSpeed:1200,
-            arrowsNav: true,
-            arrowsNavAutoHide:false,
-            fadeinLoadedSlide: false,
-            controlNavigationSpacing: 0,
-            controlNavigation: 'none',
-            imageScaleMode: 'none',
-            imageAlignCenter:false,
-            slidesSpacing:0,
-            loop: true,
-            loopRewind:false,
-            numImagesToPreload: 6,
-            keyboardNavEnabled: true,
-            usePreloader: true,
-            autoPlay: {
-                // autoplay options go gere
-                enabled: true,
-                pauseOnHover: true,
-                delay:6000
-            }
-        });
-
-    });
-
-    $blackTextSlider.royalSlider({
-        autoHeight: true,
-        transitionSpeed:1200,
-        arrowsNav: true,
-        arrowsNavAutoHide:false,
-        fadeinLoadedSlide: false,
-        controlNavigationSpacing: 0,
-        slidesSpacing:0,
-        controlNavigation: 'none',
-        imageScaleMode: 'none',
-        imageAlignCenter:false,
-        loop: true,
-        loopRewind:false,
-        keyboardNavEnabled: true,
-        usePreloader:false,
-        autoPlay: {
-            enabled: true,
-            pauseOnHover: true
-        }
-    });
-
-    $greyTextSlider.royalSlider({
-        autoHeight: true,
-        transitionSpeed:1200,
-        arrowsNav: true,
-        arrowsNavAutoHide:false,
-        fadeinLoadedSlide: false,
-        controlNavigationSpacing: 0,
-        slidesSpacing:0,
-        controlNavigation: 'none',
-        imageScaleMode: 'none',
-        imageAlignCenter:false,
-        loop: true,
-        loopRewind:false,
-        keyboardNavEnabled: true,
-        usePreloader:false,
-        autoPlay: {
-            enabled: true,
-            pauseOnHover: true
-        }
-    });
-
-    $featuredSlider.royalSlider({
-        autoHeight: true,
-        transitionSpeed:1200,
-        arrowsNav: true,
-        arrowsNavAutoHide:false,
-        fadeinLoadedSlide: false,
-        controlNavigationSpacing: 0,
-        controlNavigation: 'none',
-        imageScaleMode: 'none',
-        imageAlignCenter:false,
-        slidesSpacing:0,
-        loop: true,
-        loopRewind:false,
-        numImagesToPreload: 6,
-        keyboardNavEnabled: true,
-        usePreloader: true,
-        navigateByClick: false,
-        autoPlay: {
-            enabled: true,
-            pauseOnHover: true,
-            delay:6000
-        },
-        block: {
-            fadeEffect: false,
-            moveEffect: 'right',
-            moveOffset: 800,
-            easing:'easeOutSine',
-            delay:100
-        }
-    });
-
-    // PAUSE VIDEO ON SLIDE CHANGE
-    var sliderInstance = $featuredSlider.data('royalSlider');
-    sliderInstance.ev.on('rsAfterSlideChange', function() {
-          var myVideo = $('video');
-        $('video').remove();
-        $('.work-slide img').show();
-
-    });
-
-    $teamSlider.royalSlider({
-        imageScaleMode:'none',
-        imageAlignCenter:false,
-        autoHeight: true,
-        transitionSpeed:1200,
-        arrowsNav: true,
-        arrowsNavAutoHide:false,
-        fadeinLoadedSlide: false,
-        controlNavigationSpacing: 0,
-        controlNavigation: 'none',
-        slidesSpacing:0,
-        loop: true,
-        loopRewind:false,
-        numImagesToPreload: 6,
-        keyboardNavEnabled: true,
-        usePreloader:false,
-        navigateByClick: false,
-        autoPlay: {
-            enabled: true,
-            pauseOnHover: true
-        }
-    });
-
-
-    // STICKY NAV
-    $w.scroll(function(){
-        var offset, offsetY;
-        offset =  $firstCon.offset();
-        offsetY = offset.top-$w.scrollTop();
-        // STICKY NAV
-        if(offsetY <= 49) {
-            $siteHeader.addClass('sticky-top');
-        } else if(offsetY > 49) {
-            $siteHeader.removeClass('sticky-top');
-        }
-    });
-
-
-    // PARALLAX FUNCTION
-    function homeParallax() {
-        var top = $(this).scrollTop(),
-        ratio = top/2.825,
-        sRatio = top/1.85;
-
-        $blackLogo.css('transform', 'translateY(' + ratio + 'px)');
-        $slide.css('transform', 'translate3d(0,' + sRatio + 'px, 0)');
-    }
-    
-    if(device === 'desk') {
-        $w.scroll(function(){
-            var offset, offsetY;
-
-            offset =  $firstCon.offset();
-            offsetY = offset.top-$w.scrollTop();
-            if(offsetY >= -52) {
-                homePara = window.requestAnimFrame(homeParallax);
-            }
-        });
-    }
-
-});

@@ -58,9 +58,10 @@ include('php/project-grid.php');
             <div id="black-logo" class="logo"></div>    
             <div id="home-slider-holder" class="container clearfix">
                 <ul id="marquee-slider" class="royalSlider contentSlider rsDefault js-show">
+                    <li id="bridge" class="marquee-slide"></li>
                     <li id="sun-light" class="marquee-slide"></li>
                     <li id="sun-rays" class="marquee-slide"></li>
-                    <li id="sun-chairs" class="marquee-slide"></li>
+                    <!-- <li id="sun-chairs" class="marquee-slide"></li> -->
                 </ul>
             </div>
 
@@ -72,10 +73,16 @@ include('php/project-grid.php');
 
             <!-- // GUTIAR-NORD JEAN-JACKET -->
             <div id="image-spread-1" class="container clearfix image-spread">
-                <div class="image-holder half">
-                    <div id="guitar-nord" class="image-spread half-image bg-img"></div>
+                <div class="image-holder half grey-theme">
+                    <div class="section-title">
+                        <div>Manhattan</div>
+                    </div>
+                    <div id="dude-on-phone" class="image-spread half-image bg-img"></div>
                 </div>
-                <div class="image-holder half">
+                <div class="image-holder half grey-theme">
+                    <div class="section-title">
+                        <div>Brooklyn</div>
+                    </div>
                     <div id="jean-jacket" class="image-spread half-image bg-img"></div>
                 </div>
             </div>

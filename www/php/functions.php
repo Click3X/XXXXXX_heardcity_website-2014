@@ -94,3 +94,13 @@ function getRawName($marq_img) {
 	// echo 'This is rawName: '.$rawName."\n";
 	return $rawName;
 }
+
+// function sortProjects($projects_sorted, $order) {
+//     usort($projects_sorted, function ($a, $b) use ($order) {
+//         $pos_a = array_search($a['title'], $order);
+//         $pos_b = array_search($b['title'], $order);
+//         return $pos_a - $pos_b;
+//     });
+
+//     var_dump($projects_sorted);
+// }

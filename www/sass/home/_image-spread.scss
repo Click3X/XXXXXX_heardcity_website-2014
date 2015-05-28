@@ -20,14 +20,24 @@
 	.half-image {
 		padding-bottom:125%;
 
-		@media(min-width:1270px) { padding-bottom:850px; }
+		// @media(min-width:1270px) { padding-bottom:850px; }
+	}
+
+	.image-holder {
+		position: relative;
+	}
+
+	.section-title {
+		position: absolute;
+	    top: 50px;
+	    left: 0;
+	    right: 0;
 	}
 }
 
 
 
-#dog-windows,
-#dude-on-phone {
+#dog-windows {
 	background-position: 50% 100%;
 	padding-bottom: 184px;
 	@media(min-width:600px) { 
@@ -63,12 +73,19 @@
 
 
 
-#guitar-nord {
-	background-position: 22% 100%;
-	background-size: 150% auto;
-	@media(min-width:600px) {
-		background-size: cover;
-	}
+// #guitar-nord {
+	// background-position: 22% 100%;
+	// background-size: 150% auto;
+	// @media(min-width:600px) {
+	// 	background-size: cover;
+	// }
+// }
+
+#dude-on-phone {
+	background-position: 50% 50%;
+	padding-bottom: 125%;
+	width: 100%;
+	background-size:cover;
 }
 
 
@@ -85,7 +102,7 @@
 }
 
 #girl-large,
-#stairs {
+#stairs{
 	background-position: 50% 50%;
 	padding-bottom: 100%;
 	width: 100%;

@@ -801,7 +801,7 @@ $members = array(
 		'image' => '',
 		//'bio' => 'Born and raised in Queens, New York, Jeremy joins Heard City from Binghamton University where he double majored in Film and Economics. Since coming on as our very first Assistant Engineer he has worked on spots for clients including LG and Statefarm, all while honing his skills as a professional rapper and hip hop producer. Don\'t cross him or he\'ll talk about you in Mandarin behind your back.',
 		'bio' => 'I\'m an assistant audio engineer at Heard City.  Born & raised in NYC.  I love sneakers & hip hop.',
-		'title' => 'Assistant Mixer',
+		'title' => 'Mixer and Sound Designer',
 		'items' => array(
 			array(
 				'name' => 'Taiwan Beer', 
@@ -1109,9 +1109,10 @@ $text_carousel_black = array(
 // HOME PAGE MARQUEE CAROUSEL
 // Append '-$size' on the end of each 
 $marquee = array(
+	'../responsive-images/marquee/bridge-1920.jpg',
 	'../responsive-images/marquee/sun-light-1920.jpg',
-	'../responsive-images/marquee/sun-rays-1920.jpg',
-	'../responsive-images/marquee/sun-chairs-1920.jpg'
+	'../responsive-images/marquee/sun-rays-1920.jpg'
+
 	);
 
 // H O M E
@@ -1133,7 +1134,8 @@ $image_spreads = array(
 	),
 	array(
 		'class'=>'full-image',
-		'image'=>'responsive-images/man-phone/man-phone-1920.jpg',
+		// 'image'=>'responsive-images/man-phone/man-phone-1920.jpg',
+		'image'=>'responsive-images/man-phone/man-phone-480.jpg',
 		'id'=>'dude-on-phone'
 	)
 );

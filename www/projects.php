@@ -105,12 +105,19 @@ include('php/project-grid.php');
                 <ul id="og-grid" class="og-grid">
                     <?php 
                         // Set variable to catch Video Details
-                        $projectJSON = array();
+                        // $projectJSON = array();
                         include('php/project-grid.php');
 
-                        //   helper($projects);
+                        $order = array('Maker Street', 'Paintball', 'Conditions Box', 'Train', 'Puffy Tail', 'Remix', 'Spring is Weird: First Impression', 'Decisions', 'Childlike Imagination', 'Road to Ruin', 'Jordan', 'The Mixologist', 'Kumiko The Treasure Hunter', 'Made in America', 'Asad', 'Blue Ruin');
+                        $projects_sorted = $projects;
 
-                        foreach ($projects as $key => $value) { 
+                        usort($projects_sorted, function ($a, $b) use ($order) {
+                            $pos_a = array_search($a['title'], $order);
+                            $pos_b = array_search($b['title'], $order);
+                            return $pos_a - $pos_b;
+                        });
+
+                        foreach ($projects_sorted as $key => $value) { 
                             array_push($projectJSON, $value);
                             $thumbsrc = $value["images"]["mobile"][0];
                             $cleanTitle = $value["title"];
@@ -118,9 +125,9 @@ include('php/project-grid.php');
                             $cleanTitle = str_replace("'", "", $cleanTitle);
                             $cleanTitle = strtolower( $cleanTitle );
 
-                            // helper($value);
-
                             ?>
+
+
 
                             <li class="og-vid-holder clearfix <?php echo formatLink($value["type"]);?>">
                             
@@ -147,6 +154,9 @@ include('php/project-grid.php');
                 </ul>
             </div>
         </div><!-- /container -->
+
+        <pre>
+    </pre>
   
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>

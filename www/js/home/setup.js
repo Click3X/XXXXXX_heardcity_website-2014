@@ -105,45 +105,63 @@ $(function() {
 
 
     // RANDOMIZE IMAGES before Marquee
-    $(function() {
-        $.fn.randomize = function(selector){
-            (selector ? this.find(selector) : this).parent().each(function(){
-                $(this).children(selector).sort(function(){
-                    return Math.random() - 0.5;
-                }).detach().appendTo(this);
-            });
+    // $(function() {
+        // $.fn.randomize = function(selector){
+        //     (selector ? this.find(selector) : this).parent().each(function(){
+        //         $(this).children(selector).sort(function(){
+        //             return Math.random() - 0.5;
+        //         }).detach().appendTo(this);
+        //     });
 
-            return this;
-        };
+        //     return this;
+        // };
 
-        $('#marquee-slider li').randomize();
+        // $('#marquee-slider li').randomize();
 
         // INITIALIZE SLIDERS
-        $marqueeSlider.royalSlider({
-            autoHeight: true,
-            transitionSpeed:1200,
-            arrowsNav: true,
-            arrowsNavAutoHide:false,
-            fadeinLoadedSlide: false,
-            controlNavigationSpacing: 0,
-            controlNavigation: 'none',
-            imageScaleMode: 'none',
-            imageAlignCenter:false,
-            slidesSpacing:0,
-            loop: true,
-            loopRewind:false,
-            numImagesToPreload: 6,
-            keyboardNavEnabled: true,
-            usePreloader: true,
-            autoPlay: {
-                // autoplay options go gere
-                enabled: true,
-                pauseOnHover: true,
-                delay:6000
-            }
-        });
+    $marqueeSlider.royalSlider({
+        autoHeight: true,
+        transitionSpeed:1200,
+        arrowsNav: true,
+        arrowsNavAutoHide:false,
+        fadeinLoadedSlide: false,
+        controlNavigationSpacing: 0,
+        controlNavigation: 'none',
+        imageScaleMode: 'none',
+        imageAlignCenter:false,
+        slidesSpacing:0,
+        loop: true,
+        loopRewind:false,
+        numImagesToPreload: 6,
+        keyboardNavEnabled: true,
+        usePreloader: true,
+        addActiveClass: true,
+        autoPlay: {
+            // autoplay options go gere
+            enabled: true,
+            pauseOnHover: true,
+            delay:6000
+        }
+    });
+
+    // Change logo color on slider change
+    var marqsliderInstance = $marqueeSlider.data('royalSlider');
+    marqsliderInstance.ev.on('rsAfterSlideChange', function() {
+        var curr_id = $('.rsActiveSlide').children().attr('id');
+        var element = document.getElementById(curr_id);
+        if (curr_id == 'bridge') {                
+            $('.logo').removeClass('logo-black');
+            element.offsetWidth = element.offsetWidth;
+            $('.logo').addClass('logo-white');
+        } else {
+            $('.logo').removeClass('logo-white');
+            element.offsetWidth = element.offsetWidth;
+            $('.logo').addClass('logo-black');
+        }
 
     });
+
+    // });
 
     $greyTextSlider.royalSlider({
         autoHeight: true,

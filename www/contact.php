@@ -154,10 +154,10 @@ include('php/project-grid.php');
                             </ul>
                         </div>
                         <div class="address address-two">
-                            <ul>
+                            <ul class="address-info">
                                 <li class="phone"><a href="tel:5551234567">347.627.0950</a></li>
-                                <li>20 Jay St., Suite 618</li>
-                                <li>Brooklyn, NY 11201</li>
+                                <li class="street"><a href="https://www.google.com/maps/place/20+Jay+St+%23618,+Brooklyn,+NY+11201/@40.7040072,-73.986759,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25a324d8b7913:0x98ccf68c62ee3a6b" target="_blank" class="g-map-link">20 Jay St., Suite 618</a></li>
+                                <li class="city-li"><a href="https://www.google.com/maps/place/20+Jay+St+%23618,+Brooklyn,+NY+11201/@40.7040072,-73.986759,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25a324d8b7913:0x98ccf68c62ee3a6b" target="_blank" class="g-map-link">Brooklyn, NY 11201</a></li>
                             </ul>
                         </div>
                         <div class="contact-info-holder">

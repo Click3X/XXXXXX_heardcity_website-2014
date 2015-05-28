@@ -32,12 +32,45 @@
     transition: all 0.5s ease;
 }
 
-
 .logo {
 	// background-image: url("../images/logo/logo-heard-marquee.png");
-	background-image: url("../images/logo/logo-black.svg");
+	// background-image: url("../images/logo/logo-black.svg");
+	background-image: url("../images/logo/logo-white.svg");
 	background-position: 50% 50%; background-repeat: no-repeat;
 	background-size: contain;
 	position: absolute;
 	top: 0; bottom: 0; left: 0; right: 0;
+	
+}
+
+.logo-black {
+	background-image: url("../images/logo/logo-black.svg");
+	// opacity: 0;
+	@include prefix(animation, fadeIn 400ms ease);
+}
+
+.logo-white {
+	background-image: url("../images/logo/logo-white.svg");
+	// opacity: 0;
+	@include prefix(animation, fadeIn 400ms ease );
+}
+
+@-webkit-keyframes fadeIn{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-ms-keyframes fadeIn{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes fadeIn{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes fadeIn{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
 }
