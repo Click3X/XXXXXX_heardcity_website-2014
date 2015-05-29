@@ -108,7 +108,7 @@ include('php/project-grid.php');
                         // $projectJSON = array();
                         include('php/project-grid.php');
 
-                        $order = array('Maker Street', 'Paintball', 'Conditions Box', 'Train', 'Puffy Tail', 'Remix', 'Spring is Weird: First Impression', 'Decisions', 'Childlike Imagination', 'Road to Ruin', 'Jordan', 'The Mixologist', 'Kumiko The Treasure Hunter', 'Made in America', 'Asad', 'Blue Ruin');
+                        $order = array('Maker Street', 'Paintball', 'Conditions Box', 'Train', 'Puffy Tail', 'Remix', 'Spring is Weird: First Impression', 'Revenge', 'Childlike Imagination', 'Road to Ruin', 'Jordan', 'The Mixologist', 'Kumiko The Treasure Hunter', 'Made in America', 'Asad', 'Blue Ruin');
                         $projects_sorted = $projects;
 
                         usort($projects_sorted, function ($a, $b) use ($order) {
