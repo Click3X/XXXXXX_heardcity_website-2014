@@ -6757,12 +6757,12 @@ input:focus {
   display: none;
 }
 
-/* line 22, ../sass/_new-styles.scss */
+/* line 21, ../sass/_new-styles.scss */
 #member-title {
   width: 18em;
 }
 
-/* line 26, ../sass/_new-styles.scss */
+/* line 25, ../sass/_new-styles.scss */
 #member-fixed a.sidebar-link {
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
@@ -6771,25 +6771,15 @@ input:focus {
   transition: all 500ms;
 }
 
-/* line 30, ../sass/_new-styles.scss */
+/* line 29, ../sass/_new-styles.scss */
 #member-fixed a#all-members.current,
 #member-fixed a.sidebar-link.current {
   color: #333333;
 }
 
-/* line 35, ../sass/_new-styles.scss */
+/* line 34, ../sass/_new-styles.scss */
 .permalink .all-members {
   letter-spacing: .075em;
-}
-
-/* line 39, ../sass/_new-styles.scss */
-.commercial .p-director {
-  display: none;
-}
-
-/* line 44, ../sass/_new-styles.scss */
-.feature .p-agency {
-  display: none;
 }
 
 /* line 48, ../sass/_new-styles.scss */

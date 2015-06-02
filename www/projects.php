@@ -108,7 +108,7 @@ include('php/project-grid.php');
                         // $projectJSON = array();
                         include('php/project-grid.php');
 
-                        $order = array('Maker Street', 'Paintball', 'Conditions Box', 'Train', 'Puffy Tail', 'Remix', 'Spring is Weird: First Impression', 'Revenge', 'Childlike Imagination', 'Road to Ruin', 'Jordan', 'The Mixologist', 'Kumiko The Treasure Hunter', 'Made in America', 'Asad', 'Blue Ruin');
+                        $order = array("Paintball", "Conditions Box", "Train", "Puffy Tail", "Remix", "Spring is Weird: First Impression", "Revenge", "RE2PECT", "Kumiko The Treasure Hunter", "Made in America", "Asad", "Blue Ruin", "Invention Donkey", "Friends Furever", "Fables", "I Will What I Want", "Emily's Oz", "Heaven Knows What");
                         $projects_sorted = $projects;
 
                         usort($projects_sorted, function ($a, $b) use ($order) {
@@ -132,7 +132,11 @@ include('php/project-grid.php');
                             <li class="og-vid-holder clearfix <?php echo formatLink($value["type"]);?>">
                             
                             <?php 
-                            echo '<a id="'.$cleanTitle.'" class="no-delay" href="#'.$cleanTitle.'" data-dir="'.$dir.'" '; if(isset($value["client"])) {echo 'data-client="'.$value["client"].'"';} echo 'data-title="'.$value["title"].'"'; if(isset($value["director"])) {echo 'data-director="'.$value["director"].'"';} elseif(isset($value["mixer"])) { echo 'data-mixer="'.$value["mixer"].'"';} elseif(isset($value["agency"])) {echo 'data-agency="'.$value["agency"].'"';} echo 'data-poster="'.$BASE.$thumbsrc.'" data-mp4="'.$BASE.$value["mp4"].'">';
+                            echo '<a id="'.$cleanTitle.'" class="no-delay" href="#'.$cleanTitle.'" data-dir="'.$dir.'" '; 
+                            if(isset($value["client"])) {echo 'data-client="'.$value["client"].'"';} echo 'data-title="'.$value["title"].'"'; 
+                            if(isset($value["director"])) {echo 'data-director="'.$value["director"].'"';} 
+                            if(isset($value["mixer"])) { echo 'data-mixer="'.$value["mixer"].'"';} 
+                            if(isset($value["agency"])) {echo 'data-agency="'.$value["agency"].'"';} echo 'data-poster="'.$BASE.$thumbsrc.'" data-mp4="'.$BASE.$value["mp4"].'">';
                                 echo '<div class="vid-thumb-holder img-link clearfix">';
                                     echo '<div class="project-thumb-bg" style="background-image:url('.$BASE . $thumbsrc.'); background-size:cover;"></div>';
                                 echo '</div>'; ?>
@@ -160,12 +164,12 @@ include('php/project-grid.php');
   
         <!-- FOOTER -->
         <?php include('php/footer.php'); ?>
-        <!--
-        <script src="js/lib/jquery.flexnav.min.js"></script>
+        
+        <!--<script src="js/lib/jquery.flexnav.min.js"></script>
         <script src="js/projects/grid.js"></script>
         <script src="js/projects/feat-button.js"></script>
-        <script src="js/projects/projects-setup.js"></script>
-        -->
+        <script src="js/projects/projects-setup.js"></script>-->
+        
         <script src="js/build/projects-production.min.js"></script>
 
         <script>

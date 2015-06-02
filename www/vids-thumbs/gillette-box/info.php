@@ -3,7 +3,7 @@
 $info = array(
 	'client' => 'Gillette',
 	'title' => 'Conditions Box',
-	// 'director'=>'Merkley & Partners',
+	'director'=>'Bruce Hunt',
 	// 'mixer'=> 'Hope Floats',
 	'agency' => 'Grey New York',
 	'type' => 'commercial'

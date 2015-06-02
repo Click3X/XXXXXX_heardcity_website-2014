@@ -377,7 +377,7 @@ var Grid = (function() {
 			this.$client = $('<span class="p-client"></span>');
 			this.$clientList = $('<li class="p-client"><span class="bold">Client: </span></li>').append(this.$client);
 
-			this.$projectInfo = $('<ul class="credits"></ul>').append(this.$title, this.$clientList, this.$agencyList, this.$directorList); //this.$mixerList,
+			this.$projectInfo = $('<ul class="credits"></ul>').append(this.$title, this.$clientList, this.$agencyList, this.$directorList ); //this.$mixerList,
 
 			this.$sectionTitle = $('<div class="section-title grey-theme"><div class="noise"></div></div>').append(this.$projectInfo);
 			this.$details = $( '<div class="og-details"></div>' );
@@ -435,6 +435,17 @@ var Grid = (function() {
 			this.$mixer.html( eldata.mixer );
 			this.$agency.html( eldata.agency );
 			this.$client.html( eldata.client );
+
+
+			if(!eldata.director) {
+				$(this.$directorList[0]).hide();
+				// console.log('there is director: ' + eldata.director);
+			}
+
+			if(!eldata.agency) {
+				$(this.$agencyList[0]).hide();
+
+			}
 			
 
 			var self = this;

@@ -2,8 +2,9 @@
 
 $info = array(
 	'client' => 'Jordan',
-	'title' => 'Jordan',
+	'title' => 'RE2PECT',
 	'agency'=>'Wieden & Kennedy',
+	'director'=>'Matt Aselton',
 	'type' => 'commercial'
 	);
 

@@ -3,7 +3,7 @@
 $info = array(
 	'client' => 'Mountain Dew',
 	'title' => 'Paintball',
-	// 'director'=>'Merkley & Partners',
+	'director'=>'Justin Lin & Anthony Leonardi',
 	// 'mixer'=> 'Hope Floats',
 	'agency' => 'BBDO',
 	'type' => 'commercial'

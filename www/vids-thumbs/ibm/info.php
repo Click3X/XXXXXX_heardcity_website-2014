@@ -3,7 +3,7 @@
 $info = array(
 	'client' => 'IBM',
 	'title' => 'Train',
-	// 'director'=>'Merkley & Partners',
+	'director'=>'AG Rojas',
 	// 'mixer'=> 'Hope Floats',
 	'agency' => 'Ogilvy & Mather',
 	'type' => 'commercial'
