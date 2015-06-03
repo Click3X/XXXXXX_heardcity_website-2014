@@ -5,6 +5,6 @@ $info = array(
 	"title" => "Emily's Oz",
 	"director"=>"Andreas Nilsson",
 	// 'mixer'=> 'Hope Floats',
-	// 'agency' => 'Ogilvy & Mather',
+	'agency' => 'Goodby Silverstein & Partners',
 	"type" => "commercial"
 	);

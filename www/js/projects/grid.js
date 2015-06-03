@@ -444,6 +444,12 @@ var Grid = (function() {
 				$(this.$agencyList[0]).hide();
 
 			}
+
+			// Hide client for HEAVEN KNOWS WHAT
+			if (eldata.title == 'Heaven Knows What') {
+				$('#heavenknowswhat').next().find('.p-client').css('display', 'none');
+			}
+			
 			
 
 			var self = this;

@@ -2,7 +2,7 @@
 
 $info = array(
 	'client' => 'Mercedes',
-	'title' => 'Fables',
+	'title' => 'Fable',
 	'director'=>'Robert Stromberg',
 	// 'mixer'=> 'Hope Floats',
 	'agency' => 'Merkley & Partners',
